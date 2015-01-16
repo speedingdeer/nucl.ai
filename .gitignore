@@ -3,3 +3,5 @@ _site/
 .jekyll/
 node_modules/
 npm-debug.log
+lib/
+css/*.css
