@@ -1,0 +1,243 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+content,
+.content {
+  width: 960px;
+  margin: auto;
+  display: block;
+}
+.invisible {
+  height: 0px;
+}
+.transparent {
+  visibility: hidden;
+}
+.opacity0 {
+  opacity: 0;
+}
+section {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  overflow: hidden;
+}
+section title {
+  display: block;
+  font-size: 20px;
+}
+header {
+  display: block;
+  height: 50px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  line-height: 50px;
+  background-color: #c0c0c0;
+  text-align: center;
+  -webkit-animation-duration: 5s;
+}
+header content a {
+  display: block;
+  float: left;
+  font-size: 11px;
+  width: calc(137.14285714px);
+}
+header content a.nuclAi-go-top {
+  -webkit-animation-duration: 0.25s;
+}
+header content a.visible {
+  background-color: #6409a5;
+}
+section.splash-screen {
+  min-height: 100vh;
+}
+section.splash-screen splash {
+  margin-top: 100px;
+  min-height: calc(100vh - 2 * 50px);
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+}
+section.splash-screen splash content {
+  text-align: center;
+  padding-top: 50px 0;
+}
+section.splash-screen navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  background-color: #c0c0c0;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+section.splash-screen navigation content {
+  display: block;
+  min-height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+section.splash-screen navigation content a {
+  display: block;
+  width: calc(160px);
+  float: left;
+}
+section.splash-screen navigation content a.nuclAi-go-top {
+  display: none;
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+content,
+.content {
+  width: 960px;
+  margin: auto;
+  display: block;
+}
+.invisible {
+  height: 0px;
+}
+.transparent {
+  visibility: hidden;
+}
+.opacity0 {
+  opacity: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+content,
+.content {
+  width: 960px;
+  margin: auto;
+  display: block;
+}
+.invisible {
+  height: 0px;
+}
+.transparent {
+  visibility: hidden;
+}
+.opacity0 {
+  opacity: 0;
+}
+header {
+  display: block;
+  height: 50px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  line-height: 50px;
+  background-color: #c0c0c0;
+  text-align: center;
+  -webkit-animation-duration: 5s;
+}
+header content a {
+  display: block;
+  float: left;
+  font-size: 11px;
+  width: calc(137.14285714px);
+}
+header content a.nuclAi-go-top {
+  -webkit-animation-duration: 0.25s;
+}
+header content a.visible {
+  background-color: #6409a5;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+content,
+.content {
+  width: 960px;
+  margin: auto;
+  display: block;
+}
+.invisible {
+  height: 0px;
+}
+.transparent {
+  visibility: hidden;
+}
+.opacity0 {
+  opacity: 0;
+}
+section {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  overflow: hidden;
+}
+section title {
+  display: block;
+  font-size: 20px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+content,
+.content {
+  width: 960px;
+  margin: auto;
+  display: block;
+}
+.invisible {
+  height: 0px;
+}
+.transparent {
+  visibility: hidden;
+}
+.opacity0 {
+  opacity: 0;
+}
+section.splash-screen {
+  min-height: 100vh;
+}
+section.splash-screen splash {
+  margin-top: 100px;
+  min-height: calc(100vh - 2 * 50px);
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+}
+section.splash-screen splash content {
+  text-align: center;
+  padding-top: 50px 0;
+}
+section.splash-screen navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  background-color: #c0c0c0;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+section.splash-screen navigation content {
+  display: block;
+  min-height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+section.splash-screen navigation content a {
+  display: block;
+  width: calc(160px);
+  float: left;
+}
+section.splash-screen navigation content a.nuclAi-go-top {
+  display: none;
+}
