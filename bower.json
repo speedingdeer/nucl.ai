@@ -1,0 +1,9 @@
+{
+  "name": "nucl.ai",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "modernizr": "~2.7",
+    "animate.css": "~3.2.0"
+  }
+}

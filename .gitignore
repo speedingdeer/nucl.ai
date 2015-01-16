@@ -1,2 +1,5 @@
 _site/
 .sass-cache/
+.jekyll/
+node_modules/
+npm-debug.log
