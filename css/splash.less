@@ -1,0 +1,39 @@
+@import (once) "globals";
+@import (once) "colors";
+
+section.splash-screen {
+    min-height: 100vh;
+    splash {
+        margin-top: 2 * @HEADER_HEIGHT;
+        min-height: calc(~"100vh - 2 * @{HEADER_HEIGHT}");
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+        content {
+            text-align: center;
+            // make min-height to be more or less 200px
+            padding-top: 50px 0;
+        }
+    }
+    navigation {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+        background-color: @GREY;
+        width: 100%;
+        position: absolute;
+        z-index: 5;
+        content {
+            display: block;
+            min-height: 2 * @HEADER_HEIGHT;
+            line-height: 2 * @HEADER_HEIGHT;
+            text-align: center;
+            a {
+                display: block;
+                width: calc(@PAGE_WIDHT / 6);
+                float: left;
+                &.nuclAi-go-top { display: none }
+            }
+        }
+    }
+}

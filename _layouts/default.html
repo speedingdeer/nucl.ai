@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% include head.html %}
+    {% include scripts.html %}
+    {% include styles.html  %}
 
+  </head>
   <body>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
+    {{ content }}
 
   </body>
-
 </html>

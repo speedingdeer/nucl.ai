@@ -1,0 +1,28 @@
+@import (once) "globals";
+@import (once) "colors";
+
+
+header {
+    display: block;
+    height: @HEADER_HEIGHT;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    line-height:  @HEADER_HEIGHT;
+    background-color: @GREY;
+    text-align: center;
+    -webkit-animation-duration: 5s;
+    content a {
+        display: block;
+        float: left;
+        font-size: 11px;
+        width: calc(@PAGE_WIDHT / 7);
+        &.nuclAi-go-top {
+            -webkit-animation-duration: 0.25s;
+        }
+        &.visible {
+            background-color: @PURPLE
+        }
+    }
+}
+
