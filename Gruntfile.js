@@ -31,22 +31,15 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      //less: {
-      //  files: '<%= dir.app %>/css/**/*.less',
-      //  tasks: ['less:server', 'autoprefixer:server'],
-      //  options: {
-      //  livereload: true,
-      //    spawn: false
-      //}
-      //},
-      //coffee: {
-      //  files: ['<%= yeoman.app %>/_src/**/*.coffee'],
-      //  tasks: ['coffee:dist']
-      //}
-      //,
+      less: {
+        files: [
+          'css/**/*.less'
+        ],
+        tasks: ['less:server']
+      },
       jekyll: {
         files: [
-          '**/*.{html,yml,md,mkd,markdown}',
+          '**/*.{html,yml,md,mkd,markdown,coffee,css}'
         ],
         tasks: ['jekyll:server']
       },
@@ -56,10 +49,18 @@ module.exports = function (grunt) {
         },
         files: [
           '.jekyll/**/*.html',
-          'css/**/*.css',
-          'js/**/*.js',
-          'img/**/*.{gif,jpg,jpeg,png,svg,webp}'
         ]
+      }
+    },
+
+    less: {
+      options: {
+        paths:[""]
+      },
+      server: {
+        files: [{
+          'css/app.css': 'css/**/*.less',
+        }]
       }
     },
 
@@ -79,8 +80,7 @@ module.exports = function (grunt) {
 
     concurrent: {
       server: [
-        //'less:server',
-        //'coffee:dist',
+        'less:server',
         'jekyll:server'
       ],
       dist: [
