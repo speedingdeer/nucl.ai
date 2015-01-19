@@ -33,3 +33,27 @@ content, .content {
     justify-content: space-around;
     flex-flow: column nowrap;
 }
+
+// forms
+// @TODO: use better semantic-ui
+
+form {
+    .fieldgroup {
+        padding-bottom: 10px;
+    }
+    input {
+        border: none;
+        outline: none;
+        &[type="text"] {
+            padding: 5px 10px;
+            font-size: 11pt;
+        }
+        &[type="button"], &[type="submit"] {
+            padding: 15px 30px;
+            font-size: 11pt;
+            background-color: @ORANGE;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}

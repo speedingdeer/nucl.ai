@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "description": "Custom workflow for nucl.ai conference page developmenet and deployment",
-  "dependencies": {},
+  "dependencies": {
+    "bower": "^1.3.12"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-concurrent": "~0.4.3",
