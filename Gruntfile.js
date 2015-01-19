@@ -51,6 +51,14 @@ module.exports = function (grunt) {
       }
     },
 
+    clean: {
+      all: [ //clean all generated files
+       "js/lib", 
+        "css/lib",
+        "css/app.css"
+      ],
+    },
+
     watch: {
       less: {
         files: [
@@ -102,9 +110,6 @@ module.exports = function (grunt) {
         'sync:lib',
         'jekyll:server'
       ],
-      dist: [
-
-      ]
     }
 
   });
@@ -112,16 +117,20 @@ module.exports = function (grunt) {
   /**
   * Define tasks
   */
-  // Define Tasks
   grunt.registerTask('serve', function () {
     grunt.task.run([
-      //'clean:server',
       'concurrent:server',
       'connect:livereload',
       'watch'
     ]);
   });
 
+  grunt.registerTask('build', function () {
+    grunt.task.run([
+      'less:compile',
+      'sync:lib',
+    ]);
+  });
 
 
 }
