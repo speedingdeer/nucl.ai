@@ -37,6 +37,8 @@ content, .content {
 // forms
 // @TODO: use better semantic-ui
 
+@INPUT_FIELD_HORIZONTAL_PADDING: 10px;
+
 form {
     .fieldgroup {
         padding-bottom: 10px;
@@ -44,8 +46,8 @@ form {
     input {
         border: none;
         outline: none;
-        &[type="text"] {
-            padding: 5px 10px;
+        &[type="text"], &[type="email"] {
+            padding: 5px @INPUT_FIELD_HORIZONTAL_PADDING;
             font-size: 11pt;
         }
         &[type="button"], &[type="submit"] {

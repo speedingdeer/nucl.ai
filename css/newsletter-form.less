@@ -1,9 +1,12 @@
 form.newsletter-form {
-    label {
-        display: inline-block;
-        min-width: 50px;
+    input[type="text"], input[type="email"] {
+        width: calc(~"100% - 2 * @{INPUT_FIELD_HORIZONTAL_PADDING}");
     }
     input[type="submit"] {
         margin-top: 10px;
+    }
+
+    div.submit-holder {
+        text-align: center;
     }
 }
