@@ -30,12 +30,33 @@ module.exports = function (grunt) {
       }
     },
 
+    sync: {
+      lib: {
+        files: [
+          { src: [
+            'lib/**/*.min.js', 
+             'lib/**/modernizr.js', //thx modernizr for not calling file min :) 
+             '!**/test/**', //don't include test files
+             '!**/*migrate*', //don't include migration files
+             ], 
+             dest: 'js' 
+          }, // includes files in path and its subdirs
+          { src: [
+            'lib/**/*.min.css', 
+             ], 
+             dest: 'css' 
+          }, // includes files in path and its subdirs
+        ],
+        verbose: true,
+      }
+    },
+
     watch: {
       less: {
         files: [
           'css/**/*.less'
         ],
-        tasks: ['less:server']
+        tasks: ['less:compile']
       },
       jekyll: {
         files: [
@@ -54,10 +75,7 @@ module.exports = function (grunt) {
     },
 
     less: {
-      options: {
-        paths:[""]
-      },
-      server: {
+      compile: {
         files: [{
           'css/app.css': 'css/app.less',
         }]
@@ -80,7 +98,8 @@ module.exports = function (grunt) {
 
     concurrent: {
       server: [
-        'less:server',
+        'less:compile',
+        'sync:lib',
         'jekyll:server'
       ],
       dist: [
