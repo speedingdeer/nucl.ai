@@ -6,7 +6,7 @@ section.splash-screen{ background-image: url(" {{ '/img/audience.jpg' | prepend:
 
 /* footer social media images */
 footer a.twitter { background-image: url(" {{ '/img/social-media/AiGD_Icon_Twitter_Grey_30.png' | prepend: site.baseurl }} ");}
-footer a.twitter { background-image: url(" {{ '/img/social-media/AiGD_Icon_Twitter_Grey_30.png' | prepend: site.baseurl }} ");}
+footer a.twitter { background-image: url(" {{ '/img/social-media/AiGD_Icon_Twitter_Hover_30.png' | prepend: site.baseurl }} ");}
 footer a.twitter:hover { background-image-image: url(" {{ '/img//social-media/AiGD_Icon_Twitter_Hover_30.png'| prepend: site.baseurl }} ");}
 footer a.facebook { background: url(" {{ '/img//social-media/AiGD_Icon_FB_Grey_30.png'| prepend: site.baseurl }} ");}
 footer a.facebook:hover { background: url(" {{ '/img//social-media/AiGD_Icon_FB_Hover_30.png'| prepend: site.baseurl }} ");}
