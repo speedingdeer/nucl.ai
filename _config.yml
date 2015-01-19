@@ -2,7 +2,7 @@
 title: nucl.ai
 email: team@aigamdev.com
 description: > # this means to ignore newlines until "baseurl:"
-  The coolest european AI Confenerce's page.
+  The Biggest Independant Conference about Artificial Intelligence in Games and Industry.
 baseurl: "" # the subpath of your site, e.g. /blog/ <- in gh-pages must be a project name
 url: "http://nucl.ai" # the base hostname & protocol for your site
 twitter_username: aigamedev
