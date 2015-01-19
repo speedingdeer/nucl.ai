@@ -1,0 +1,24 @@
+@import (once) "globals";
+@import (once) "colors";
+@import (once) "sections";
+
+section.about {
+    titlebar {
+        .centered-flex();
+        min-height: calc(100vh / 3);
+        padding-left: @SECTION_PADDING_HORIZONTAL;
+    }
+    content {
+        min-height: calc(100vh * 2 / 3);
+        item {
+            display: block;
+            float: left;
+            &.about {
+                width: 2 * @THIRDS - 2 * @SECTION_PADDING_HORIZONTAL;
+            }
+            &.newsletter {
+                width: @THIRDS - 2 * @SECTION_PADDING_HORIZONTAL;
+            }
+        }
+    }
+}

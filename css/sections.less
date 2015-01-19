@@ -1,11 +1,26 @@
 @import (once) "globals";
+@import (once) "colors";
+
+@SECTION_PADDING_HORIZONTAL: 15px;
 
 section {
     width: 100%;
     min-height: calc(~"100vh - @{HEADER_HEIGHT}");
     overflow: hidden;
-    title {
-        display: block;
-        font-size: 20px;
+    &:nth-child(even) {
+        background-color: @BLUE;
+    }
+    &:nth-child(odd) {
+        background-color: @GREY;
+    }
+    item {
+        padding: 0 @SECTION_PADDING_HORIZONTAL;
+        p {
+            &:first-child {
+                font-weight: bold;
+                display: inline-block;
+                min-height: 30px
+            }
+        }
     }
 }

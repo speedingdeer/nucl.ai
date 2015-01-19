@@ -43,10 +43,12 @@ $ ->
     # show/hide header
     offset = $("navigation").offset()
     # check if is menu is unvisible with 1px tolerance
-    action = if offset.top + $("navigation").height() - scrollTop <= 1 then showHeader else hideHeader
+    action = if offset and offset.top + $("navigation").height() - scrollTop <= 1 then showHeader else hideHeader
     action()
 
     # set active menu element
+    # commented out - there is no menu yet
+    ### 
     sections = []
     $("section").each ->
       section = $(this)
@@ -57,7 +59,7 @@ $ ->
     sections = sections.sort (a, b) ->  a.abs > b.abs
     $("header a.visible").each -> $(this).removeClass("visible")
     $("header a[href=#" + sections[0].id + "]").addClass("visible")
-
+  ###
   $(window).scroll(detectPosition)
   detectPosition()
 

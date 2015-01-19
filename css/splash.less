@@ -2,23 +2,21 @@
 @import (once) "colors";
 
 section.splash-screen {
-    min-height: 100vh;
+    min-height: calc(100vh * 2 / 3 + 2px);
+    background: url("/img/audience.jpg") center;
+    background-size: cover;
     splash {
-        margin-top: 2 * @HEADER_HEIGHT;
-        min-height: calc(~"100vh - 2 * @{HEADER_HEIGHT}");
-        display: flex;
-        justify-content: space-around;
-        flex-flow: column nowrap;
+        background-color: fade(@BLUE, 40%);;
+        min-height: inherit;
+        .centered-flex();
         content {
             text-align: center;
             // make min-height to be more or less 200px
-            padding-top: 50px 0;
+            padding: 35px 0;
         }
     }
     navigation {
-        display: flex;
-        justify-content: space-around;
-        flex-flow: column nowrap;
+        .centered-flex();
         background-color: @GREY;
         width: 100%;
         position: absolute;

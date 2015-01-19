@@ -1,11 +1,13 @@
 @HEADER_HEIGHT: 50px;
 @HEADER_HEIGHT_EXPANDED: 150px;
-@PAGE_WIDHT: 960px;
-
+@PAGE_WIDHT: 978px;
+@THIRDS: @PAGE_WIDHT / 3;
 //setting up defaults
 html, body {
     padding: 0;
     margin: 0;
+    font-family: "Questrial", Questrial, sans-serif;
+    color: white;
 }
 
 content, .content {
@@ -24,4 +26,10 @@ content, .content {
 
 .opacity0 {
     opacity: 0;
+}
+
+.centered-flex() {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
 }
