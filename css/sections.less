@@ -2,6 +2,7 @@
 @import (once) "colors";
 
 @SECTION_PADDING_HORIZONTAL: 15px;
+@SECTION_PADDING_VERICAL: 20px;
 
 section {
     width: 100%;
@@ -13,14 +14,24 @@ section {
     &:nth-child(odd) {
         background-color: @GREY;
     }
-    item {
-        padding: 0 @SECTION_PADDING_HORIZONTAL;
-        p {
-            &:first-child {
-                font-weight: bold;
-                display: inline-block;
-                min-height: 30px
+    content {
+        padding: @SECTION_PADDING_VERICAL 0;
+        item {
+            padding: 0 @SECTION_PADDING_HORIZONTAL;
+            p {
+                &:first-child {
+                    font-weight: bold;
+                    display: inline-block;
+                    min-height: 30px
+                }
             }
         }
+        end {
+            display: block;
+            clear: both;
+        }
+    }
+    &:last-child {
+        min-height: calc(~"100vh - @{FOOTER_HEIGHT}");
     }
 }

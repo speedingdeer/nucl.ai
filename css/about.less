@@ -7,9 +7,17 @@ section.about {
         .centered-flex();
         min-height: calc(100vh / 3);
         padding-left: @SECTION_PADDING_HORIZONTAL;
+        h2 {
+            font-size: 30pt;
+            transition: all 0.1s;
+            &:hover {
+                font-size: 33pt;
+                cursor: pointer;
+            }
+        }
     }
     content {
-        min-height: calc(100vh * 2 / 3);
+        padding: 0 0 @SECTION_PADDING_VERICAL 0;
         item {
             display: block;
             float: left;
