@@ -59,7 +59,7 @@ module.exports = function (grunt) {
       },
       server: {
         files: [{
-          'css/app.css': 'css/**/*.less',
+          'css/app.css': 'css/app.less',
         }]
       }
     },
