@@ -4,10 +4,10 @@ Set up development enviroment
 ```
 npm install # for grunt and related
 bower install # for bower components (lib/)
-bundler install # to test against to gh-pages gem (includes jekyll)
+bundle install # to test against to gh-pages gem (includes jekyll)
 ```
 
-Deploy changes
+Deploy changes (assumed they are already in master)
 ```
 grunt clean # clean all generated/synced assets
 git commit # check in changes
