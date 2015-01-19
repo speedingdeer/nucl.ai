@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "description": "Custom workflow for nucl.ai conference page developmenet and deployment",
   "dependencies": {
-    "bower": "^1.3.12"
+    "bower": "^1.3.12",
+    "grunt-sync": "^0.2.3"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
