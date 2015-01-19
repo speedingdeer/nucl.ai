@@ -3,4 +3,5 @@ _site/
 .sass-cache/
 .jekyll/
 node_modules/
+lib/ # bower components
 npm-debug.log
