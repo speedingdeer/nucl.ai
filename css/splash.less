@@ -7,17 +7,28 @@ section.splash-screen {
         min-height: inherit;
         .centered-flex();
         content {
+            logo {
+                display: block;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 100%;
+                height: 200px;
+            }
             text-align: center;
             // make min-height to be more or less 200px
-            h1 {
-                font-size: 85pt;
-                padding-top: 15px;
-                margin: 0;
-            }
-            h2 {
-                margin: 0;
-                font-size: 15pt;
-                padding-bottom: 15px;
+            titles {
+                display: block;
+                h1 {
+                    font-size: 85pt;
+                    padding-top: 15px;
+                    margin: 0;
+                }
+                h2 {
+                    margin: 0;
+                    font-size: 15pt;
+                    padding-bottom: 15px;
+                }
             }
         }
     }
