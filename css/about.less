@@ -3,26 +3,15 @@ section.about {
         .centered-flex();
         min-height: calc(100vh / 3);
         padding-left: @SECTION_PADDING_HORIZONTAL;
+        background: none;
         h2 {
-            font-size: 30pt;
-            transition: all 0.1s;
-            &:hover {
-                font-size: 33pt;
-                cursor: pointer;
-            }
+            text-align: left
         }
     }
     content {
         padding: 0 0 @SECTION_PADDING_VERICAL 0;
         item {
-            display: block;
             float: left;
-            &.about {
-                width: 2 * @THIRDS - 2 * @SECTION_PADDING_HORIZONTAL;
-            }
-            &.newsletter {
-                width: @THIRDS - 2 * @SECTION_PADDING_HORIZONTAL;
-            }
         }
     }
 }

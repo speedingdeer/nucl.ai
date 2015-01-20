@@ -1,7 +1,8 @@
 ---
 ---
 
-
+### 
+Not used cause currently there is no header
 $ ->
 
   headerHeight = $("header").height()
@@ -45,7 +46,6 @@ $ ->
     # check if is menu is unvisible with 1px tolerance
     # set active menu element
     # commented out - there is no menu yet
-    ### 
     action = if offset.top + $("navigation").height() - scrollTop <= 1 then showHeader else hideHeader
     action()
 
@@ -60,8 +60,9 @@ $ ->
     sections = sections.sort (a, b) ->  a.abs > b.abs
     $("header a.visible").each -> $(this).removeClass("visible")
     $("header a[href=#" + sections[0].id + "]").addClass("visible")
-  ###
+
   $(window).scroll(detectPosition)
   detectPosition()
+###
 
 

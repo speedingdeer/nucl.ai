@@ -2,18 +2,40 @@
 @SECTION_PADDING_VERICAL: 20px;
 
 section {
-    width: 100%;
-    min-height: calc(~"100vh - @{HEADER_HEIGHT}");
+    min-height: calc(~"100vh");
     overflow: hidden;
     &:nth-child(even) {
         background-color: @BLUE;
     }
     &:nth-child(odd) {
         background-color: @GREY;
+        //if grey box is the last one add some shadow to separate from header
+        &:last-child {
+            box-shadow: inset 0 -22px 25px -20px @LIGHT_GREY;
+        }
+    }
+    titlebar {
+        display: block;
+        height: 100px;
+        background-color: fade(@DARK_GREY, 60%);
+        h2 {
+            margin: 0;
+            line-height: 100px;
+            text-align: center;
+            &.navigation {
+                font-size: 30pt;
+                transition: all 0.1s;
+                &:hover {
+                    font-size: 33pt;
+                    cursor: pointer;
+                }
+            }
+        }
     }
     content {
         padding: @SECTION_PADDING_VERICAL 0;
         item {
+            display: block;
             padding: 0 @SECTION_PADDING_HORIZONTAL;
             p {
                 &:first-child {
@@ -22,17 +44,21 @@ section {
                     min-height: 30px
                 }
             }
+            &.narrow {
+                width: @THIRDS - 2 * @SECTION_PADDING_HORIZONTAL;
+            }
+            &.wide {
+                width: 2 * @THIRDS - 2 * @SECTION_PADDING_HORIZONTAL;
+
+            }
         }
         end {
+            //just to clean up float if nothing else does it
             display: block;
             clear: both;
         }
     }
     &:last-child {
         min-height: calc(~"100vh - @{FOOTER_HEIGHT}");
-    }
-    title {
-        display: block;
-        font-size: 20px;
     }
 }
