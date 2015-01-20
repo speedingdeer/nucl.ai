@@ -1,14 +1,37 @@
 footer {
-    social-media {
-        padding-top: 60px;
-        display: block;
-        text-align: center;
-        a { 
-            width: 30px; height: 30px; display: inline-block; margin: 0 10px;
-        }
-    }
     display: block;
     background-color: @GREY;
     width: 100%;
     min-height: 150px;
+    * {
+        display: block;
+        text-align: center;
+    }
+    content {
+        links {
+            a {
+                opacity: 0.5; //they are temporary disabled
+                color: @LIGHT_GREY;
+                cursor: pointer;
+                display: inline-block;
+                margin-right: 125px;
+                line-height: 60px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        social-media {
+            padding: 10px 0;
+            a {
+                width: 30px; 
+                height: 30px; 
+                display: inline-block; 
+                margin: 0 10px;
+            }
+        }
+        copyrights {
+                line-height: 60px;
+        }
+    }
 }
