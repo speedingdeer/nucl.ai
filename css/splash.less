@@ -3,7 +3,7 @@ section.splash-screen {
     background: center;
     background-size: cover;
     splash {
-        background-color: fade(@DARK_BLUE, 60%);;
+        background-color: fade(@DARK_BLUE, 75%);
         min-height: inherit;
         .centered-flex();
         content {
@@ -11,13 +11,16 @@ section.splash-screen {
             // make min-height to be more or less 200px
             h1 {
                 font-size: 85pt;
-                padding-top: 15px;
+                padding: 15px 0;
                 margin: 0;
+                text-shadow: 0px 0px 4px #808080;
             }
             h2 {
                 margin: 0;
-                font-size: 15pt;
+                font-size: 14pt;
                 padding-bottom: 15px;
+                font-weight: normal;
+                opacity: 0.75;
             }
         }
     }
