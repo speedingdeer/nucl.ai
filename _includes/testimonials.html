@@ -1,0 +1,9 @@
+<section id="testimonials">
+    <content>
+        {% for tesimonial in site.data.testimonials %}
+            <p>{{ tesimonial.author }}</p>
+            <p>{{ tesimonial.text }}</p>
+            <p>{{ tesimonial.year }}</p>
+        {% endfor %}
+    </content>
+</section>
