@@ -5,7 +5,7 @@
 logo { background-image: url(" {{ '/img/logo.png' | prepend: site.baseurl }} ");}
 
 /* splash screen background image */
-section.splash-screen { background-image: url(" {{ '/img/audience_blurred.jpg' | prepend: site.baseurl }} ");}
+section.splash-screen { background-image: url(" {{ '/img/audience.gif' | prepend: site.baseurl }} ");}
 
 /* splash screen background image */
 section.topics .pen { background-image: url(" {{ '/img/icons/pen.png' | prepend: site.baseurl }} ");}
