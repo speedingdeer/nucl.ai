@@ -37,6 +37,12 @@ content, .content {
     flex-flow: column nowrap;
 }
 
+.rotate(@angle) {
+    -ms-transform: rotate(@angle); /* IE 9 */
+    -webkit-transform: rotate(@angle); /* Chrome, Safari, Opera */
+    transform: rotate(@angle);
+}
+
 // forms
 // @TODO: use better semantic-ui
 
