@@ -68,7 +68,7 @@ module.exports = function (grunt) {
       },
       jekyll: {
         files: [
-          '**/*.{html,yml,md,mkd,markdown,coffee,css}'
+          '**/*.{html,yml,md,mkd,markdown,coffee,css,png,jpg,ico}'
         ],
         tasks: ['jekyll:server']
       },
