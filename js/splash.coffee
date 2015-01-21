@@ -4,7 +4,9 @@
 $(window).load ->
   # make background gif animation to referesh each time the page is loaded
   backgroundImage = "{{'/img/audience.gif' | prepend: site.baseurl }}"
-  $("section.splash-screen").css('background-image', 'url("' + backgroundImage + "?time=" + Date.now() + '")')
+  $("<img />").attr('src', backgroundImage).load ->
+    #render gif when cached
+    $("section.splash-screen").css('background-image', 'url("' + backgroundImage + "?time=" + Date.now() + '")')
 
 $ ->
   $('logo-wrap').addClass("rotated")
