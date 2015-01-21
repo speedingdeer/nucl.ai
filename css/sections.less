@@ -2,11 +2,13 @@
 @SECTION_PADDING_VERICAL: 20px;
 
 section {
-    min-height: calc(~"100vh");
+    min-height: calc(~"85vh");
     overflow: hidden;
+
     &:nth-child(even) {
         background-color: @BLUE;
     }
+
     &:nth-child(odd) {
         background-color: @GREY;
         //if grey box is the last one add some shadow to separate from header
@@ -14,6 +16,7 @@ section {
             box-shadow: inset 0 -22px 25px -20px @LIGHT_GREY;
         }
     }
+
     titlebar {
         display: block;
         height: 100px;

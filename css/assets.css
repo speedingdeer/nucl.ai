@@ -13,13 +13,13 @@ section.topics .pen { background-image: url(" {{ '/img/icons/pen.png' | prepend:
 
 /* footer social media images */
 footer a.twitter { background-image: url(" {{ '/img/social-media/AiGD_Icon_Twitter_Grey_30.png' | prepend: site.baseurl }} ");}
-footer a.twitter:hover { background-image: url(" {{ '/img//social-media/AiGD_Icon_Twitter_Hover_30.png'| prepend: site.baseurl }} ");}
-.touch a.twitter { background-image: url(" {{ '/img//social-media/AiGD_Icon_Twitter_Hover_30.png'| prepend: site.baseurl }} ");}
+footer a.twitter:hover { background-image: url(" {{ '/img/social-media/AiGD_Icon_Twitter_Hover_30.png'| prepend: site.baseurl }} ");}
+.touch a.twitter { background-image: url(" {{ '/img/social-media/AiGD_Icon_Twitter_Hover_30.png'| prepend: site.baseurl }} ");}
 
-footer a.facebook { background: url(" {{ '/img//social-media/AiGD_Icon_FB_Grey_30.png'| prepend: site.baseurl }} ");}
-footer a.facebook:hover { background: url(" {{ '/img//social-media/AiGD_Icon_FB_Hover_30.png'| prepend: site.baseurl }} ");}
-.touch footer a.facebook { background: url(" {{ '/img//social-media/AiGD_Icon_FB_Hover_30.png'| prepend: site.baseurl }} ");}
+footer a.facebook { background: url(" {{ '/img/social-media/AiGD_Icon_FB_Grey_30.png'| prepend: site.baseurl }} ");}
+footer a.facebook:hover { background: url(" {{ '/img/social-media/AiGD_Icon_FB_Hover_30.png'| prepend: site.baseurl }} ");}
+.touch footer a.facebook { background: url(" {{ '/img/social-media/AiGD_Icon_FB_Hover_30.png'| prepend: site.baseurl }} ");}
 
 footer a.google { background: url(" {{ '/img/social-media/AiGD_Icon_Google_Grey_30.png'| prepend: site.baseurl }} ");}
-footer a.google:hover { background: url(" {{ '/img//social-media/AiGD_Icon_Google_Hover_30.png'| prepend: site.baseurl }} ");}
-.touch footer a.google { background: url(" {{ '/img//social-media/AiGD_Icon_Google_Hover_30.png'| prepend: site.baseurl }} ");}
+footer a.google:hover { background: url(" {{ '/img/social-media/AiGD_Icon_Google_Hover_30.png'| prepend: site.baseurl }} ");}
+.touch footer a.google { background: url(" {{ '/img/social-media/AiGD_Icon_Google_Hover_30.png'| prepend: site.baseurl }} ");}

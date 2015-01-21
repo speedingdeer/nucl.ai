@@ -32,6 +32,11 @@ for (var i=0; i<50; ++i) {
   ]);
 }
 
+$(".about").click(function(evt) {
+  var t = (new Date()).getTime();
+  console.log('rgba('+Math.floor(20+6*Math.cos(t/2997.0))+','+Math.floor(63+8*Math.sin(t/2991.0))+','+Math.floor(105+10*Math.cos(-t/2993.0))+',0.15)');
+});
+
 ticker(window, 30).on('tick', function() {
   boids.tick()
 }).on('draw', function() {
@@ -39,7 +44,12 @@ ticker(window, 30).on('tick', function() {
     , halfHeight = canvas.height/2
     , halfWidth = canvas.width/2
 
-  ctx.fillStyle = 'rgba(16,63,105,0.25)' // '#FFF1EB'
+function rint(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+  var t = (new Date()).getTime();
+  ctx.fillStyle = 'rgba('+Math.floor(20+6*Math.cos(t/2997.0))+','+Math.floor(63+8*Math.sin(t/2991.0))+','+Math.floor(105+10*Math.cos(-t/2993.0))+',0.15)'
   ctx.fillRect(0, 0, canvas.width, canvas.height)
 
   ctx.fillStyle = '#a5cce9'
@@ -495,7 +505,38 @@ Boids.prototype.tick = function() {
   this.emit('tick', boids)
 }
 
-},{"events":7,"inherits":8}],2:[function(require,module,exports){
+},{"events":7,"inherits":8}],8:[function(require,module,exports){
+module.exports = inherits
+
+function inherits (c, p, proto) {
+  proto = proto || {}
+  var e = {}
+  ;[c.prototype, proto].forEach(function (s) {
+    Object.getOwnPropertyNames(s).forEach(function (k) {
+      e[k] = Object.getOwnPropertyDescriptor(s, k)
+    })
+  })
+  c.prototype = Object.create(p.prototype, e)
+  c.super = p
+}
+
+//function Child () {
+//  Child.super.call(this)
+//  console.error([this
+//                ,this.constructor
+//                ,this.constructor === Child
+//                ,this.constructor.super === Parent
+//                ,Object.getPrototypeOf(this) === Child.prototype
+//                ,Object.getPrototypeOf(Object.getPrototypeOf(this))
+//                 === Parent.prototype
+//                ,this instanceof Child
+//                ,this instanceof Parent])
+//}
+//function Parent () {}
+//inherits(Child, Parent)
+//new Child
+
+},{}],2:[function(require,module,exports){
 var EventEmitter = require('events').EventEmitter
   , inherits = require('inherits')
 
@@ -536,38 +577,7 @@ fps.prototype.tick = function() {
 }
 
 
-},{"events":7,"inherits":8}],8:[function(require,module,exports){
-module.exports = inherits
-
-function inherits (c, p, proto) {
-  proto = proto || {}
-  var e = {}
-  ;[c.prototype, proto].forEach(function (s) {
-    Object.getOwnPropertyNames(s).forEach(function (k) {
-      e[k] = Object.getOwnPropertyDescriptor(s, k)
-    })
-  })
-  c.prototype = Object.create(p.prototype, e)
-  c.super = p
-}
-
-//function Child () {
-//  Child.super.call(this)
-//  console.error([this
-//                ,this.constructor
-//                ,this.constructor === Child
-//                ,this.constructor.super === Parent
-//                ,Object.getPrototypeOf(this) === Child.prototype
-//                ,Object.getPrototypeOf(Object.getPrototypeOf(this))
-//                 === Parent.prototype
-//                ,this instanceof Child
-//                ,this instanceof Parent])
-//}
-//function Parent () {}
-//inherits(Child, Parent)
-//new Child
-
-},{}],3:[function(require,module,exports){
+},{"events":7,"inherits":8}],3:[function(require,module,exports){
 var raf = require('raf')
   , EventEmitter = require('events').EventEmitter
 
