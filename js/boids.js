@@ -8,7 +8,7 @@ var attractors = [[
     Infinity // x
   , Infinity // y
   , 150 // dist
-  , 0.4 // spd
+  , 0.5 // spd
 ]]
 
 var canvas = document.getElementById('boids')
@@ -48,7 +48,12 @@ ticker(window, 30).on('tick', function() {
     // wrap around the screen
     boidData[i][0] = x > halfWidth ? -halfWidth : -x > halfWidth ? halfWidth : x
     boidData[i][1] = y > halfHeight ? -halfHeight : -y > halfHeight ? halfHeight : y
-    ctx.fillRect(x + halfWidth, y + halfHeight, 4, 4)
+    // ctx.fillRect(x + halfWidth, y + halfHeight, 4, 4)
+
+      ctx.beginPath();
+      ctx.arc(x+halfWidth, y+halfHeight, 2, 0, 2 * Math.PI, false);
+      ctx.fill();
+      ctx.closePath();
   }
 })
 
