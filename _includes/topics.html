@@ -1,17 +1,16 @@
 <section class="topics">
+    
     <titlebar>
-        <h2 class="navigation">
+        <h2>
             Topics
         </h2>
     </titlebar>
-    <content>
-        <item class="narrow pen">
-        </item>
-        <item class="wide">
-            <p>
-            Two Tracks, 9 Topics, 30 Sessisons
-            </p>
-        </item>
-        <end></end>
-    </content>
+    <grid>
+        </content>
+            {% for topic in site.data.topics %}
+                <p><b>{{ topic.title }}</b><p>
+                <p>{{topic.content}}</p>
+            {% endfor %}
+        </content>
+    </grid>
 </section>
