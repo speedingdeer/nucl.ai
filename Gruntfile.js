@@ -39,13 +39,19 @@ module.exports = function (grunt) {
              'lib/**/modernizr.js', //thx modernizr for not calling file min :) 
              '!**/test/**', //don't include test files
              '!**/*migrate*', //don't include migration files
+             '!**/less-*.min.js', //don't need less
              ], 
              dest: 'js' 
-          }, // includes files in path and its subdirs
+          },
           { src: [
             'lib/**/*.min.css', 
              ], 
              dest: 'css' 
+          }, // picking up grid.less from semantic.gs
+          { src: [
+            'lib/semantic.gs/stylesheets/less/grid.less', 
+             ], 
+             dest: 'css/' 
           }, // includes files in path and its subdirs
         ],
         verbose: true,
@@ -128,8 +134,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', function () {
     grunt.task.run([
-      'less:compile',
       'sync:lib',
+      'less:compile',
     ]);
   });
 
