@@ -25,7 +25,7 @@ $(document).ready(function() {
   canvas.height = $(canvas).height();
 });
 
-for (var i=0; i<50; ++i) {
+for (var i=0; i<100; ++i) {
   boids.boids.push([
       canvas.width * 4 * (Math.random()-0.5), canvas.height * 4 * (Math.random()-0.5),
       Math.random()*6-3,Math.random()*6-3,0,0
@@ -52,7 +52,7 @@ function rint(min, max) {
   ctx.fillStyle = 'rgba('+Math.floor(20+6*Math.cos(t/2997.0))+','+Math.floor(63+8*Math.sin(t/2991.0))+','+Math.floor(105+10*Math.cos(-t/2993.0))+',0.15)'
   ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-  ctx.fillStyle = '#a5cce9'
+  ctx.fillStyle = '#1463a3'
   for (var i = 0, l = boidData.length, x, y; i < l; i += 1) {
     x = boidData[i][0]; y = boidData[i][1]
     // wrap around the screen
