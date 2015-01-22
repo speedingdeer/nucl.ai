@@ -43,6 +43,14 @@ content, .content {
     transform: rotate(@angle);
 }
 
+.columns(@columns, @gap) {
+    -webkit-column-count: @columns; /* Chrome, Safari, Opera */
+    -moz-column-count: @columns; /* Firefox */
+    column-count: @columns;
+    -webkit-column-gap: @gap; /* Chrome, Safari, Opera */
+    -moz-column-gap: @gap; /* Firefox */
+    column-gap: @gap;
+}
 // forms
 // @TODO: use better semantic-ui
 
