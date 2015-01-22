@@ -1,7 +1,7 @@
 @HEADER_HEIGHT: 50px;
-@FOOTER_HEIGHT: 173px;
-@PAGE_WIDHT: 978px;
-@THIRDS: @PAGE_WIDHT / 3;
+@FOOTER_HEIGHT: 150px;
+// semanti grid widht
+@PAGE_WIDHT: @gridsystem-width;
 
 
 //setting up defaults
@@ -11,12 +11,6 @@ html, body {
     font-family: "Questrial", Questrial, sans-serif;
     color: white;
     min-width: @PAGE_WIDHT;
-}
-
-content, .content {
-    width: @PAGE_WIDHT;
-    margin: auto;
-    display: block;
 }
 
 .invisible {
@@ -51,6 +45,7 @@ content, .content {
     -moz-column-gap: @gap; /* Firefox */
     column-gap: @gap;
 }
+
 // forms
 // @TODO: use better semantic-ui
 
