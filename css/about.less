@@ -9,26 +9,39 @@ section.about {
             float: left;
         }
 
-        &.headline {
-            .centered-flex();
 
-            min-height: calc(100vh / 3);
-            padding-left: @SECTION_PADDING_HORIZONTAL;
-            background: none;
+        .centered-flex();
 
-            h2 {
-                font-size: 36px;
-                text-align: center;
-                line-height: 125%;
-                text-shadow: 0px 0px 8px @BLUE;
-            }
-            h3 {
-                font-size: 24px;
-                text-align: center;
-                font-weight: normal;
-                opacity: 0.75;
-                line-height: 125%;
-                text-shadow: 0px 0px 4px @BLUE;
+        min-height: calc(100vh / 3);
+        padding-left: @SECTION_PADDING_HORIZONTAL;
+        background: none;
+
+        h2 {
+            font-size: 36px;
+            text-align: center;
+            line-height: 125%;
+            text-shadow: 0px 0px 8px @BLUE;
+        }
+        h3 {
+            font-size: 24px;
+            text-align: center;
+            font-weight: normal;
+            opacity: 0.75;
+            line-height: 125%;
+            text-shadow: 0px 0px 4px @BLUE;
+        }
+
+        .columns { 
+            -webkit-column-count: 3;
+            -webkit-column-gap: 24px;
+            text-align: justify;
+            margin-top: 28ex;
+
+            p {
+                color: #ffffff;
+                font-size: 17px;
+                line-height: 1.25;
+                margin-top: 0;
             }
         }
     }
