@@ -10,6 +10,7 @@
             {% for topic in site.data.topics %}
                 <p><b>{{ topic.title }}</b><p>
                 <p>{{topic.content}}</p>
+                <p styele="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} )'"></p>
             {% endfor %}
         </content>
     </grid>
