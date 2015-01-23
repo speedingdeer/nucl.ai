@@ -1,4 +1,6 @@
 @THUMBNAIL_SIZE: 230px;
+@THUMBNAIL_MARGIN_BOTTOM: 20px;
+@THUMBNAIL_BORDER_SIZE: 4px;
 
 section.topics {
     content {
@@ -12,12 +14,21 @@ section.topics {
                 background-repeat: no-repeat;
                 background-size: cover;
                 margin: auto;
-                margin-bottom: 20px;
+                margin-bottom: @THUMBNAIL_MARGIN_BOTTOM;
+                margin-top: @THUMBNAIL_BORDER_SIZE;
+                &:hover {
+                    border: solid @THUMBNAIL_BORDER_SIZE;
+                    border-color: fade(@ORANGE, 80%);
+                    margin-bottom: @THUMBNAIL_MARGIN_BOTTOM - 2 * @THUMBNAIL_BORDER_SIZE;
+                    margin-top: 0px;
+                }
                 overlay {
-                    display: block;
                     .circular(@THUMBNAIL_SIZE);
                     background-color: fade(@DARK_GREY, 60%);
                     cursor: pointer;
+                    &:hover {
+                        background: none;
+                    }
                 }
             }
         }
