@@ -29,6 +29,16 @@ $(document).ready(function() {
   ctx.fillRect(0, 0, canvas.width, canvas.height)
 });
 
+$(document).mousemove(function (evt) {
+  var w = $(canvas).width() / 2,
+      h = $(canvas).height() / 2;
+
+  var p = $(canvas).offset();
+  attractors[0][0] = evt.pageX - p.left - w;
+  attractors[0][1] = evt.pageY - p.top - h;
+  attractors[0][3] = -15.0;
+});
+
 for (var i=0; i<100; ++i) {
   boids.boids.push([
       canvas.width * 4 * (Math.random()-0.5), canvas.height * 4 * (Math.random()-0.5),
@@ -59,9 +69,11 @@ ticker(window, 30).on('tick', function() {
       ctx.fill();
       ctx.closePath();
   }
+
+  attractors[0][3] *= 0.9;
 })
 
-},{"fps":2,"debounce":3,"ticker":4,"./":5}],3:[function(require,module,exports){
+},{"fps":2,"ticker":3,"debounce":4,"./":5}],4:[function(require,module,exports){
 /**
  * Debounces a function by the given threshold.
  *
@@ -530,7 +542,36 @@ function inherits (c, p, proto) {
 //inherits(Child, Parent)
 //new Child
 
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
+var raf = require('raf')
+  , EventEmitter = require('events').EventEmitter
+
+module.exports = ticker
+
+function ticker(element, rate, limit) {
+  var millisecondsPerFrame = 1000 / (rate || 60)
+    , time = 0
+    , emitter
+
+  limit = arguments.length > 2 ? +limit + 1 : 2
+  emitter = raf(element || window).on('data', function(dt) {
+    var n = limit
+
+    time += dt
+    while (time > millisecondsPerFrame && n) {
+      time -= millisecondsPerFrame
+      n -= 1
+      emitter.emit('tick')
+    }
+    time = (time + millisecondsPerFrame * 1000) % millisecondsPerFrame
+
+    if (n !== limit) emitter.emit('draw')
+  })
+
+  return emitter
+}
+
+},{"events":7,"raf":9}],2:[function(require,module,exports){
 var EventEmitter = require('events').EventEmitter
   , inherits = require('inherits')
 
@@ -571,36 +612,7 @@ fps.prototype.tick = function() {
 }
 
 
-},{"events":7,"inherits":8}],4:[function(require,module,exports){
-var raf = require('raf')
-  , EventEmitter = require('events').EventEmitter
-
-module.exports = ticker
-
-function ticker(element, rate, limit) {
-  var millisecondsPerFrame = 1000 / (rate || 60)
-    , time = 0
-    , emitter
-
-  limit = arguments.length > 2 ? +limit + 1 : 2
-  emitter = raf(element || window).on('data', function(dt) {
-    var n = limit
-
-    time += dt
-    while (time > millisecondsPerFrame && n) {
-      time -= millisecondsPerFrame
-      n -= 1
-      emitter.emit('tick')
-    }
-    time = (time + millisecondsPerFrame * 1000) % millisecondsPerFrame
-
-    if (n !== limit) emitter.emit('draw')
-  })
-
-  return emitter
-}
-
-},{"events":7,"raf":9}],9:[function(require,module,exports){
+},{"events":7,"inherits":8}],9:[function(require,module,exports){
 (function(){module.exports = raf
 
 var EE = require('events').EventEmitter
