@@ -1,12 +1,24 @@
+@THUMBNAIL_SIZE: 230px;
+
 section.topics {
     content {
         item {
             .column(4);
+            padding-top: 40px;
+            text-align: center;
             thumbnail {
-                .circular(230px);
+                .circular(@THUMBNAIL_SIZE);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                margin: auto;
+                margin-bottom: 20px;
+                overlay {
+                    display: block;
+                    .circular(@THUMBNAIL_SIZE);
+                    background-color: fade(@DARK_GREY, 60%);
+                    cursor: pointer;
+                }
             }
         }
     }
