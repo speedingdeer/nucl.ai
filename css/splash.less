@@ -1,11 +1,12 @@
 .splash-screen-wrap {
-    background-color: @AUDIENCE_COLOR;
+    min-height: inherit;
+    background: center;
+    background-size: cover;
 }
 
 section.splash-screen {
     min-height: calc(100vh * 2 / 3 + 2px);
-    background: center;
-    background-size: cover;
+    background-color: @AUDIENCE_COLOR;
     splash {
         display: block; //for this who doesn't know flex
         background-color: fade(@DARK_BLUE, 75%);

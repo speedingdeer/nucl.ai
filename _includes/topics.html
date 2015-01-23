@@ -6,7 +6,7 @@
         <content>
             {% for topic in site.data.topics %}
                 <item>
-                    <p styele="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} )'"></p>
+                    <thumbnail style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')"></thumbnail>
                     <p><b>{{ topic.title }}</b><p>
                     <p>{{topic.content}}</p>
                 </item>

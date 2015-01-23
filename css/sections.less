@@ -9,8 +9,12 @@ section {
 
     &:nth-child(odd) {
         background-color: @GREY;
-        &:last-child { box-shadow: inset 0 -22px 25px -20px @LIGHT_GREY; }
-        &:first-child { box-shadow: none; }
+        &:last-child { 
+            box-shadow: inset 0 -22px 25px -20px @LIGHT_GREY;
+            content {
+                padding-bottom: 3 * @CONTENT_PADDING_VERTICAL; // making some space for box shadow
+            }
+        }
     }
 
     grid {
@@ -19,8 +23,9 @@ section {
         display: block;
         content {
             padding: @CONTENT_PADDING_VERTICAL 0;
+            display: block;
+            overflow: hidden;
             item {
-                display: block;
                 p {
                     &:first-child {
                         font-weight: bold;
