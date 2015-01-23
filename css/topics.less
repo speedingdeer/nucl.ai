@@ -14,20 +14,28 @@ section.topics {
                 background-repeat: no-repeat;
                 background-size: cover;
                 margin: auto;
-                margin-bottom: @THUMBNAIL_MARGIN_BOTTOM;
-                margin-top: @THUMBNAIL_BORDER_SIZE;
-                &:hover {
-                    border: solid @THUMBNAIL_BORDER_SIZE;
-                    border-color: fade(@ORANGE, 80%);
-                    margin-bottom: @THUMBNAIL_MARGIN_BOTTOM - 2 * @THUMBNAIL_BORDER_SIZE;
-                    margin-top: 0px;
-                }
                 overlay {
                     .circular(@THUMBNAIL_SIZE);
+
+                    // removed border rough edges if appears
+                     /*
+                    width: calc(100% + 2px);
+                    height: calc(100% + 2px);
+                    position: relative;
+                    top: -2px;
+                    left: -2px;
+                    */
+
+                    box-sizing: border-box;
                     background-color: fade(@DARK_GREY, 60%);
                     cursor: pointer;
+                    margin-bottom: @THUMBNAIL_MARGIN_BOTTOM;
+                    border: solid @THUMBNAIL_BORDER_SIZE;
+                    border-color: fade(@DARK_GREY, 60%);
+                    transition: 0.5s;
                     &:hover {
                         background: none;
+                        border-color: fade(@ORANGE, 80%);
                     }
                 }
             }
