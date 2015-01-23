@@ -1,16 +1,15 @@
-<section class="topics">
-    
-    <titlebar>
-        <h2>
-            Topics
-        </h2>
-    </titlebar>
+<section class="topics">    
+    <h2>
+        Topics
+    </h2>
     <grid>
-        </content>
+        <content>
             {% for topic in site.data.topics %}
-                <p><b>{{ topic.title }}</b><p>
-                <p>{{topic.content}}</p>
-                <p styele="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} )'"></p>
+                <item>
+                    <p styele="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} )'"></p>
+                    <p><b>{{ topic.title }}</b><p>
+                    <p>{{topic.content}}</p>
+                </item>
             {% endfor %}
         </content>
     </grid>

@@ -1,6 +1,6 @@
 @HEADER_HEIGHT: 50px;
 @FOOTER_HEIGHT: 150px;
-// semanti grid widht
+// semantic grid widht
 @PAGE_WIDHT: @gridsystem-width;
 
 
@@ -13,12 +13,8 @@ html, body {
     min-width: @PAGE_WIDHT;
 }
 
-.invisible {
-    height: 0px;
-}
-
-.transparent {
-    visibility: hidden;
+h2 {
+    text-align: center;
 }
 
 .opacity0 {
@@ -44,6 +40,12 @@ html, body {
     -webkit-column-gap: @gap; /* Chrome, Safari, Opera */
     -moz-column-gap: @gap; /* Firefox */
     column-gap: @gap;
+}
+
+.border-radius(@radius) {
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
 }
 
 // forms

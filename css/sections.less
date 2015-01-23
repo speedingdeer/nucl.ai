@@ -13,23 +13,12 @@ section {
         &:first-child { box-shadow: none; }
     }
 
-    titlebar {
-        display: block;
-        height: 100px;
-        background-color: fade(@DARK_GREY, 60%);
-        h2 {
-            margin: 0;
-            line-height: 100px;
-            text-align: center;
-        }
-    }
     grid {
         width: @PAGE_WIDHT;
         margin: auto;
         display: block;
         content {
             padding: @CONTENT_PADDING_VERTICAL 0;
-            .column(12);
             item {
                 display: block;
                 p {
