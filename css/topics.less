@@ -1,41 +1,52 @@
 @THUMBNAIL_SIZE: 230px;
-@THUMBNAIL_MARGIN_BOTTOM: 20px;
+@THUMBNAIL_SIZE_HOVER: 270px;
 @THUMBNAIL_BORDER_SIZE: 4px;
+@THUMBNAIL_BORDER_SIZE_SELECTED: 6px;
+
 
 section.topics {
     content {
         item {
             .column(4);
-            padding-top: 40px;
             text-align: center;
-            thumbnail {
-                .circular(@THUMBNAIL_SIZE);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                margin: auto;
-                overlay {
+            thumbnail-wrap {
+                height: @THUMBNAIL_SIZE + 150px;
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                width: inherit;
+                thumbnail {
                     .circular(@THUMBNAIL_SIZE);
-
-                    // removed border rough edges if appears
-                     /*
-                    width: calc(100% + 2px);
-                    height: calc(100% + 2px);
-                    position: relative;
-                    top: -2px;
-                    left: -2px;
-                    */
-
-                    box-sizing: border-box;
-                    background-color: fade(@DARK_GREY, 60%);
                     cursor: pointer;
-                    margin-bottom: @THUMBNAIL_MARGIN_BOTTOM;
-                    border: solid @THUMBNAIL_BORDER_SIZE;
-                    border-color: fade(@DARK_GREY, 60%);
-                    transition: 0.5s;
-                    &:hover {
-                        background: none;
-                        border-color: fade(@ORANGE, 80%);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin: auto;
+                    display: inline-block;
+                    transition: 0.2s;
+                    &.selected {
+                        .circular(@THUMBNAIL_SIZE_HOVER);
+                        overlay {
+                            .circular(@THUMBNAIL_SIZE_HOVER);
+                            border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
+                            border-color: fade(@ORANGE, 70%);
+                            background-color: fade(@DARK_GREY, 0%);
+                        }
+                    }
+                    overlay {
+                        .circular(@THUMBNAIL_SIZE);
+                        // removed border rough edges if appears
+                         /*
+                        width: calc(100% + 2px);
+                        height: calc(100% + 2px);
+                        position: relative;
+                        top: -2px;
+                        left: -2px;
+                        */
+                        box-sizing: border-box;
+                        background-color: fade(@DARK_GREY, 50%);
+                        border: solid @THUMBNAIL_BORDER_SIZE;
+                        border-color: fade(@DARK_GREY, 60%);
                     }
                 }
             }

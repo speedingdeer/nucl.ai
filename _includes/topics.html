@@ -6,9 +6,11 @@
         <content>
             {% for topic in site.data.topics %}
                 <item>
-                    <thumbnail style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
+                    <thumbnail-wrap>
+                    <thumbnail name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
                         <overlay></overlay>
                     </thumbnail>
+                    </thumbnail-wrap>
                     <p><b>{{ topic.title }}</b></p>
                 </item>
             {% endfor %}
