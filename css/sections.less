@@ -6,7 +6,6 @@ section {
     &:nth-child(even) {
         background-color: @BLUE;
     }
-
     &:nth-child(odd) {
         background-color: @GREY;
         &:last-child { 
@@ -19,10 +18,11 @@ section {
 
     grid {
         width: @PAGE_WIDHT;
+        max-width: @PAGE_MAX_WIDTH;
         margin: auto;
         display: block;
+        .clearfix();
         content {
-            padding: @CONTENT_PADDING_VERTICAL 0;
             display: block;
             overflow: hidden;
             item {

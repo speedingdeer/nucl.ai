@@ -1,7 +1,10 @@
 @HEADER_HEIGHT: 50px;
 @FOOTER_HEIGHT: 150px;
 // semantic grid widht
-@PAGE_WIDHT: @gridsystem-width;
+
+@total-width: 100%;
+@PAGE_WIDHT: @total-width;
+@PAGE_MAX_WIDTH: @gridsystem-width;
 
 
 //setting up defaults
@@ -10,7 +13,6 @@ html, body {
     margin: 0;
     font-family: "Questrial", Questrial, sans-serif;
     color: white;
-    min-width: @PAGE_WIDHT;
 }
 
 h2 {
