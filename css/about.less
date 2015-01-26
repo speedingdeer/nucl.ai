@@ -12,6 +12,7 @@ section.about {
             text-align: center;
             line-height: 125%;
             text-shadow: 0px 0px 8px @BLUE;
+            .ios & { text-shadow: none; } // ios struggles with our fonts
         }
 
         h3 {
@@ -21,6 +22,7 @@ section.about {
             opacity: 0.75;
             line-height: 125%;
             text-shadow: 0px 0px 4px @BLUE;
+            .ios & { text-shadow: none; } // ios struggles with our fonts
         }
 
         .columns { 
