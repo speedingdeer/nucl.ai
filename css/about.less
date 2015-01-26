@@ -3,7 +3,6 @@ section.about {
     position: relative;
 
     content {
-        .column(12);
         min-height: calc(100vh / 3);
         background: none;
 
@@ -26,15 +25,17 @@ section.about {
         }
 
         .columns { 
-            .columns(3, 24px);
-            text-align: justify;
-            margin-top: 28ex;
-
             p {
+                .column(4);
+                text-align: justify;
                 color: #ffffff;
                 font-size: 17px;
                 line-height: 1.25;
-                margin-top: 0;
+                margin-top: 28ex;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    .column(12);
+                    margin-top: 4ex;
+                }
             }
         }
 
