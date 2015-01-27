@@ -6,7 +6,7 @@
 
 section.topics {
     content {
-        item {
+        item.thumbnail {
             .column(4);
             text-align: center;
             padding-bottom: 50px;
@@ -57,6 +57,14 @@ section.topics {
                 .colored {
                     color: @BLUE;
                 }
+            }
+        }
+        item.description {
+            .column(12);
+            display: none;
+            text-align: justify;
+            &.selected {
+                display: block;
             }
         }
     }

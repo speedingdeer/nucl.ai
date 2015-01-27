@@ -5,14 +5,46 @@
     <grid>
         <content>
             {% for topic in site.data.topics %}
-                <item>
+                <item class="thumbnail">
                     <thumbnail-wrap>
-                    <thumbnail name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
+                    {% if forloop.first == true %}
+                        <thumbnail class="selected" name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
+                    {% else %}
+                        <thumbnail  name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
+                    {% endif %}
                         <overlay></overlay>
                     </thumbnail>
                     </thumbnail-wrap>
                     <p class="thumbnail-title"><b>{{ topic.title }}</b></p>
                 </item>
+
+                {% comment %}
+                <!--
+                    Add three description for three already printed titles 
+                -->
+                {% endcomment %}
+
+                {% capture modulo %}{{ forloop.index | mod:3 }}{% endcapture %}
+                {% assign topicsIndex = forloop.index %}
+
+                {% if modulo == '0' %}
+                    {% for num in (1...3) %}
+                        {% assign descIndex = topicsIndex | minus:4 | plus:forloop.index %}
+                        {% if descIndex == 0 %}
+                            <item class="description selected" name="{{site.data.topics[descIndex].title}}">
+                        {% else %}
+                            <item class="description" name="{{site.data.topics[descIndex].title}}">
+                        {% endif %}
+                            <p>
+                            {{ site.data.topics[descIndex].content }}
+                            {{ site.data.topics[descIndex].title }}
+                            {% include lorem-ipsum.html %}
+                            </p>
+                        </item>
+                    {% endfor %}
+                {% endif %}
+
+
             {% endfor %}
         </content>
     </grid>
