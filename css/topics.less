@@ -1,5 +1,5 @@
 @THUMBNAIL_SIZE: 230px;
-@THUMBNAIL_SIZE_HOVER: 270px;
+@THUMBNAIL_SIZE_LARGE: 270px;
 @THUMBNAIL_BORDER_SIZE: 4px;
 @THUMBNAIL_BORDER_SIZE_SELECTED: 6px;
 
@@ -10,7 +10,7 @@ section.topics {
             .column(4);
             text-align: center;
             thumbnail-wrap {
-                height: @THUMBNAIL_SIZE + 150px;
+                height: @THUMBNAIL_SIZE_LARGE ;
                 display: table-cell;
                 text-align: center;
                 vertical-align: middle;
@@ -25,9 +25,9 @@ section.topics {
                     display: inline-block;
                     transition: 0.2s;
                     &.selected {
-                        .circular(@THUMBNAIL_SIZE_HOVER);
+                        .circular(@THUMBNAIL_SIZE_LARGE);
                         overlay {
-                            .circular(@THUMBNAIL_SIZE_HOVER);
+                            .circular(@THUMBNAIL_SIZE_LARGE);
                             border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
                             border-color: fade(@ORANGE, 70%);
                             background-color: fade(@DARK_GREY, 0%);
@@ -48,6 +48,13 @@ section.topics {
                         border: solid @THUMBNAIL_BORDER_SIZE;
                         border-color: fade(@DARK_GREY, 60%);
                     }
+                }
+            }
+            p.thumbnail-title {
+                font-weight: bold;
+                color: @BLACK;
+                .colored {
+                    color: @BLUE;
                 }
             }
         }
