@@ -15,7 +15,11 @@
                         <overlay></overlay>
                     </thumbnail>
                     </thumbnail-wrap>
-                    <p class="thumbnail-title"><b>{{ topic.title }}</b></p>
+                    {% if forloop.first == true %}
+                        <p class="thumbnail-title selected" name="{{topic.title}}"><b>{{ topic.title }}</b></p>
+                    {% else %}
+                        <p class="thumbnail-title" name="{{topic.title}}"><b>{{ topic.title }}</b></p>
+                    {% endif %}
                 </item>
 
                 {% comment %}
@@ -35,6 +39,7 @@
                         {% else %}
                             <item class="description" name="{{site.data.topics[descIndex].title}}">
                         {% endif %}
+                            <p class="thumbnail-title"><b>{{ site.data.topics[descIndex].title }}</b></p>
                             <p>
                             {{ site.data.topics[descIndex].content }}
                             {{ site.data.topics[descIndex].title }}

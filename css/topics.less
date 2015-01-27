@@ -9,9 +9,8 @@ section.topics {
         item.thumbnail {
             .column(4);
             text-align: center;
-            padding-bottom: 50px;
             thumbnail-wrap {
-                height: @THUMBNAIL_SIZE_LARGE + 5px;
+                height: @THUMBNAIL_SIZE_LARGE;
                 display: table-cell;
                 text-align: center;
                 vertical-align: middle;
@@ -54,17 +53,30 @@ section.topics {
             p.thumbnail-title {
                 font-weight: bold;
                 color: @BLACK;
+                &.selected {
+                    display: none;
+                }
                 .colored {
                     color: @BLUE;
                 }
             }
         }
         item.description {
-            .column(12);
+            .column(10);
+            .push();
             display: none;
             text-align: justify;
+            padding-bottom: 75px;
+
             &.selected {
                 display: block;
+            }
+            .colored {
+                color: @BLUE;
+            }
+            .thumbnail-title {
+                font-size: 1.7em;
+                text-align: center;
             }
         }
     }
