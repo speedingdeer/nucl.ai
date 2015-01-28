@@ -1,8 +1,8 @@
 @THUMBNAIL_SIZE: 230px;
-@THUMBNAIL_SIZE_LARGE: 270px;
+@THUMBNAIL_SIZE_LARGE: 250px;
 @THUMBNAIL_BORDER_SIZE: 4px;
 @THUMBNAIL_BORDER_SIZE_SELECTED: 6px;
-
+@THUMBNAIL_LINE_SCREEN_MIN_SIZE: 800px;
 
 section.topics {
     position: relative;
@@ -85,6 +85,7 @@ section.topics {
         position: absolute !important;
         z-index: -1;
         path {
+            @media screen and (max-width: @THUMBNAIL_LINE_SCREEN_MIN_SIZE) { display: none; }
             stroke: @ORANGE;
             stroke-width: 1px;
         }
