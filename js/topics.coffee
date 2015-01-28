@@ -3,7 +3,10 @@
 
 $ ->
 
-    ## draw line between selected thumbnail and text
+  ## if section isn't included - don't bother
+  if $("section.topics").length == 0 then return
+
+  ## draw line between selected thumbnail and text
   paper = Raphael('section-topics', "100%", "100%") # draw within the whole section
 
   clearLine = () ->
