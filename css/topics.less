@@ -74,7 +74,7 @@ section.topics {
             h2 {
                 color: @ORANGE;
                 &.left { text-align: left; }
-                &.middle { text-align: middle; }
+                &.middle { text-align: center; }
                 &.right { text-align: right; }
                 padding: 2em 0 0.8em;
             }
@@ -85,7 +85,6 @@ section.topics {
         position: absolute !important;
         z-index: -1;
         path {
-            @media screen and (max-width: @THUMBNAIL_LINE_SCREEN_MIN_SIZE) { display: none; }
             stroke: @ORANGE;
             stroke-width: 1px;
         }

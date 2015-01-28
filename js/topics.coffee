@@ -12,20 +12,29 @@ $ ->
   clearLine = () ->
     $("svg path").remove()
 
-  drawLine = () ->
-    if $("thumbnail.selected").length == 0 then return
-    startY = $("thumbnail.selected").offset().top - $("section.topics").offset().top + $("thumbnail.selected").height()
-    startX = $("thumbnail.selected").offset().left + $("thumbnail.selected").width() / 2
-    endY = startY + 150
-    ## @TODO remove hardcoded offsetY value
-    # draw leftLine
-    if $("thumbnail.selected").hasClass("left") then endX = startX + 300
-    if $("thumbnail.selected").hasClass("right") then endX = startX - 300
-    if $("thumbnail.selected").hasClass("middle") then endY = endY - 42
+  drawLine = (thumbnail) ->
+    thumbnail = $("thumbnail.selected")
+    if thumbnail.length == 0 then return
+    title = $("item.description[name='" + thumbnail.attr('name') + "'] .thumbnail-title")
+
+    startY = thumbnail.offset().top - $("section.topics").offset().top + thumbnail.height()
+    startX = thumbnail.offset().left + thumbnail.width() / 2
+
+    #check if line intersects title
+    if thumbnail.hasClass("left") and title.offset().left <= startX then return
+    if thumbnail.hasClass("right") and title.offset().left >= startX then return
+
+    #calculate vertical line
+    endY = title.offset().top + title.outerHeight() - $("section.topics").offset().top
+    
+    # calculate horizontal leftLine
+    if thumbnail.hasClass("left") then endX = title.offset().left + title.width()
+    if thumbnail.hasClass("right") then endX = title.offset().left
+    if thumbnail.hasClass("middle") then endY = endY - title.height() - title.css("padding-top").split("px")[0]  * 0.66
 
     line = paper.path("M" + startX + " " + startY + "L " + startX + " " + endY + " L " + endX + " " + endY)
 
-  drawLine();
+  drawLine()
   
   ## listen when window resizes to clear lines and redrew them once finished
   resizeEnd = null
@@ -74,7 +83,7 @@ $ ->
     thumbnail.bind animate.onTransitonEnd, (event) ->
       if event.originalEvent.propertyName == "height"
         overlay.show()
-        drawLine();
+        drawLine()
 
   ## color name / surname
   applyColors = (title, text, last) ->
