@@ -34,7 +34,7 @@ module.exports = function (grunt) {
       lib: {
         files: [
           { src: [
-            'lib/**/*.min.js',
+            'lib/**/*[\.-]min.js',
             'lib/**/*.min.map', 
              'lib/**/modernizr.js', //thx modernizr for not calling file min :) 
              '!**/test/**', //don't include test files

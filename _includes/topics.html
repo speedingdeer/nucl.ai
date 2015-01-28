@@ -1,4 +1,4 @@
-<section class="topics">    
+<section class="topics" id="section-topics">
     <h2>
         Topics
     </h2>
@@ -8,9 +8,9 @@
                 <item class="thumbnail">
                     <thumbnail-wrap>
                     {% if forloop.first == true %}
-                        <thumbnail class="selected" name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
+                        <thumbnail class="selected {% cycle 'left', 'middle', 'right' %}" name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
                     {% else %}
-                        <thumbnail  name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
+                        <thumbnail class="{% cycle 'left', 'middle', 'right' %}" name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
                     {% endif %}
                         <overlay></overlay>
                     </thumbnail>
@@ -39,7 +39,7 @@
                         {% else %}
                             <item class="description" name="{{site.data.topics[descIndex].title}}">
                         {% endif %}
-                            <h2 class="thumbnail-title">{{ site.data.topics[descIndex].title }}</h2>
+                            <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ site.data.topics[descIndex].title }}</h2>
                             <p>
                             {{ site.data.topics[descIndex].content }}
                             {{ site.data.topics[descIndex].title }}
