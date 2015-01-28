@@ -5,7 +5,7 @@
     <grid>
         <content>
             {% for topic in site.data.topics %}
-                <item class="thumbnail">
+                <item class="thumbnail {% cycle 'left', 'middle', 'right' %}">
                     <thumbnail-wrap>
                     {% if forloop.first == true %}
                         <thumbnail class="selected {% cycle 'left', 'middle', 'right' %}" name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">

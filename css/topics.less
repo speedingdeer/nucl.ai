@@ -9,6 +9,7 @@ section.topics {
     z-index: 1;
     content {
         item.thumbnail {
+            overflow: hidden;
             .column(4);
             text-align: center;
             thumbnail-wrap {
@@ -51,6 +52,9 @@ section.topics {
                         border-color: fade(@DARK_GREY, 60%);
                     }
                 }
+            }
+            &.left {
+                clear: both; //left starts alwyas from 'left'...
             }
             p.thumbnail-title {
                 font-weight: bold;
