@@ -9,7 +9,7 @@ section {
     &:nth-child(odd) {
         background-color: @GREY;
         &:last-child { 
-            box-shadow: inset 0 -22px 25px -20px @LIGHT_GREY;
+            box-shadow: inset 0 -22px 25px -20px fade(@LIGHT_GREY, 80%);
             content {
                 padding-bottom: 5 * @CONTENT_PADDING_VERTICAL; // making some space for box shadow
             }

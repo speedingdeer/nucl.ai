@@ -27,12 +27,19 @@ $ ->
     #calculate vertical line
     endY = title.offset().top + title.outerHeight() - $("section.topics").offset().top
     
+    # preserve original values
+    originalEndY = endY
+
     # calculate horizontal leftLine
     if thumbnail.hasClass("left") then endX = title.offset().left + title.width()
     if thumbnail.hasClass("right") then endX = title.offset().left
     if thumbnail.hasClass("middle") then endY = endY - title.height() - title.css("padding-top").split("px")[0]  * 0.66
 
     line = paper.path("M" + startX + " " + startY + "L " + startX + " " + endY + " L " + endX + " " + endY)
+
+    if thumbnail.hasClass("middle")
+      #draw disconnected horizontal line
+      paper.path("M " + title.offset().left + " " + originalEndY + "L " + (title.offset().left + title.width()) + " " + originalEndY)
 
   drawLine()
   

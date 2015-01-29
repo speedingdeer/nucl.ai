@@ -10,6 +10,7 @@ section.topics {
     content {
         item.thumbnail {
             overflow: hidden;
+            padding-bottom: 30px;
             .column(4);
             text-align: center;
             thumbnail-wrap {
@@ -44,7 +45,7 @@ section.topics {
                         height: calc(100% + 2px);
                         position: relative;
                         top: -2px;
-                        left: -2px;
+                        : -2px;
                         */
                         box-sizing: border-box;
                         background-color: fade(@DARK_GREY, 50%);
@@ -58,12 +59,12 @@ section.topics {
             }
             p.thumbnail-title {
                 font-weight: bold;
-                color: @BLACK;
                 &.selected {
                     display: none;
                 }
+                color: @MID_BLUE;
                 .colored {
-                    color: @BLUE;
+                    color: @WHITE;
                 }
             }
         }
@@ -76,6 +77,7 @@ section.topics {
 
             &.selected { display: block; }
             h2 {
+                font-size: 36px; //it's this same like section above maybe abstract somewhere
                 color: @ORANGE;
                 &.left { text-align: left; }
                 &.middle { text-align: center; }
