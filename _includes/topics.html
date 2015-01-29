@@ -30,14 +30,23 @@
 
                 {% capture modulo %}{{ forloop.index | mod:3 }}{% endcapture %}
                 {% assign topicsIndex = forloop.index %}
+                {% assign lastRow = forloop.last %}
 
                 {% if modulo == '0' %}
                     {% for num in (1...3) %}
                         {% assign descIndex = topicsIndex | minus:4 | plus:forloop.index %}
                         {% if descIndex == 0 %}
-                            <item class="description selected" name="{{site.data.topics[descIndex].title}}">
+                            {% if lastRow %}
+                                <item class="description selected last-row" name="{{site.data.topics[descIndex].title}}">
+                            {% else %}
+                                <item class="description selected last-row" name="{{site.data.topics[descIndex].title}}">
+                            {% endif %}
                         {% else %}
-                            <item class="description" name="{{site.data.topics[descIndex].title}}">
+                            {% if lastRow %}
+                                <item class="description last-row" name="{{site.data.topics[descIndex].title}}">
+                            {% else %}
+                                <item class="description" name="{{site.data.topics[descIndex].title}}">
+                            {% endif %}
                         {% endif %}
                             <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ site.data.topics[descIndex].title }}</h2>
                             <p>

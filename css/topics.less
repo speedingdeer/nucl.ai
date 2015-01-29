@@ -73,7 +73,7 @@ section.topics {
             .push(2);
             display: none;
             text-align: justify;
-            padding-bottom: 75px;
+            &:not(.last-row) { padding-bottom: 75px; }
 
             &.selected { display: block; }
             h2 {
