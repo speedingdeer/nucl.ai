@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html class="no-js">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include head.html %}
 
     {% include lib.html  %}
+    {% include styles.html  %}
+    {% include page/scripts.html %}
 
   </head>
-
   <body>
-    <h1>
-        @TODO: Implement page layout.
-    </h1>
-    <page>
+
     {{ content }}
-    </page>
 
   </body>
-
 </html>
