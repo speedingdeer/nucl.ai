@@ -15,7 +15,9 @@
     {% endcomment %}
   <sections class="page">
     {% include splash.html %}
- 
+    {% include navigation.html %}
+    {% comment %} empty section to start from blue background (navigation is a section too) {% endcomment %}
+    <section class="empty-section"></section>
     {{ content }}
  
   </sections>
