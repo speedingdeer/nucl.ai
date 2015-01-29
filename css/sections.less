@@ -9,12 +9,14 @@ section {
     &:nth-child(odd) {
         background-color: @GREY;
         &:last-child { 
-            box-shadow: inset 0 -22px 25px -20px fade(@LIGHT_GREY, 80%);
+            box-shadow: inset 0 -22px 25px -20px fade(@LIGHT_GREY, 70%);
             content {
                 padding-bottom: 5 * @CONTENT_PADDING_VERTICAL; // making some space for box shadow
             }
         }
     }
+
+    & > h2 { box-shadow: inset 0 -22px 25px -20px fade(@LIGHT_GREY, 70%); }
 
     grid {
         width: @PAGE_WIDHT;

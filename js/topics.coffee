@@ -33,7 +33,7 @@ $ ->
     # calculate horizontal leftLine
     if thumbnail.hasClass("left") then endX = title.offset().left + title.width()
     if thumbnail.hasClass("right") then endX = title.offset().left
-    if thumbnail.hasClass("middle") then endY = endY - title.height() - title.css("padding-top").split("px")[0]  * 0.66
+    if thumbnail.hasClass("middle") then endY = endY - title.outerHeight()
 
     line = paper.path("M" + startX + " " + startY + "L " + startX + " " + endY + " L " + endX + " " + endY)
 
