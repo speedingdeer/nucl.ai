@@ -7,7 +7,11 @@
 @PAGE_MAX_WIDTH: @gridsystem-width;
 
 //consts
-@SMARTPHONE_MAX_PORTRAIT: 432px; //should cover iphone 6 and galaxy s5 too
+@SMARTPHONE_MAX_PORTRAIT: 432px; //should cover iphone 6 and galaxy s5 toos
+
+//page layout
+@PAGE_FIRST_SECTION_HEIGHT: 100vh - 100vh / 4;
+
 
 //setting up defaults
 html, body {
@@ -16,6 +20,8 @@ html, body {
     font-family: "Questrial", Questrial, sans-serif;
     color: white;
 }
+
+body:after, body:before {}
 
 h2 {
     text-align: center;

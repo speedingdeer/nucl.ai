@@ -10,14 +10,16 @@
 
   </head>
   <body>
-
+    {% comment %}
+    {% include header.html %}
+    {% endcomment %}
   <sections class="page">
-
     {% include splash.html %}
-
+ 
     {{ content }}
-
+ 
   </sections>
+    {% include footer.html %}
 
   </body>
 </html>
