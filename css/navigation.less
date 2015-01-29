@@ -1,20 +1,11 @@
 section.navigation {
+    min-height: @PAGE_NAVIGATION_HEIGHT;
     content {
-        .centered-flex();
-        background-color: @GREY;
         width: 100%;
-        position: absolute;
-        z-index: 5;
-        content {
-            display: block;
-            min-height: 2 * @HEADER_HEIGHT;
-            line-height: 2 * @HEADER_HEIGHT;
+        item {
+            .column(2);
             text-align: center;
             a {
-                display: block;
-                width: calc(@PAGE_WIDHT / 6);
-                float: left;
-                &.nuclAi-go-top { display: none }
             }
         }
     }
