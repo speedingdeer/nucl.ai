@@ -34,11 +34,6 @@ h2 {
     opacity: 0;
 }
 
-.centered-flex() {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-}
 
 .rotate(@angle) {
     -ms-transform: rotate(@angle); /* IE 9 */
@@ -96,4 +91,16 @@ icon {
     background-size: contain;
     background-position: center;
     display: block;
+}
+
+div.table {
+    min-height: inherit;
+    display: table;
+    margin: auto;
+}
+
+div.centered-cell {
+    min-height: inherit;
+    display: table-cell;
+    vertical-align: middle;
 }
