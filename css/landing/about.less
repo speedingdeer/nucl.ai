@@ -3,29 +3,29 @@
     position: relative;
 
     content {
-        min-height: calc(100vh / 3);
         background: none;
-
-        h2 {
+        titles {
+            display: block;
             .column(12);
-            font-size: 36px;
-            text-align: center;
-            line-height: 125%;
-            text-shadow: 0px 0px 8px @BLUE;
-            .ios & { text-shadow: none; } // ios struggles with our fonts
-        }
+            h2 {
+                text-align: center;
+                line-height: 125%;
+                text-shadow: 0px 0px 8px @BLUE;
+                .ios & { text-shadow: none; } // ios struggles with our fonts
+            }
 
-        h3 {
-            .column(12);
-            font-size: 24px;
-            text-align: center;
-            font-weight: normal;
-            opacity: 0.75;
-            line-height: 125%;
-            text-shadow: 0px 0px 4px @BLUE;
-            .ios & { text-shadow: none; } // ios struggles with our fonts
+            h3 {
+                .column(12);
+                font-size: 24px;
+                text-align: center;
+                font-weight: normal;
+                text-align: center;
+                opacity: 0.75;
+                line-height: 125%;
+                text-shadow: 0px 0px 4px @BLUE;
+                .ios & { text-shadow: none; } // ios struggles with our fonts
+            }
         }
-
         .columns { 
             p {
                 .column(4);
@@ -33,7 +33,6 @@
                 color: #ffffff;
                 font-size: 17px;
                 line-height: 1.25;
-                margin-top: 28ex;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                     .column(12);
                     margin-top: 4ex;
