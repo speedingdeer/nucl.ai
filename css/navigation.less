@@ -1,11 +1,22 @@
 section.navigation {
     min-height: @PAGE_NAVIGATION_HEIGHT;
-    content {
-        width: 100%;
-        item {
-            .column(2);
-            text-align: center;
-            a {
+    grid {
+        overflow: hidden;
+        marign: 0;
+        padding: 0;
+        content {
+            width: 100%;
+            item {
+                .column(2);
+                text-align: center;
+                overflow: hidden;
+                a {
+                    width: inherit;
+                    height: @PAGE_NAVIGATION_HEIGHT;
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                }
             }
         }
     }
