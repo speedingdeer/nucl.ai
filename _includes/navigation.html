@@ -1,24 +1,34 @@
 <section class="navigation">
-    <grid>
-    <content>
-        <item>
-            <a href="#top">LOGO</a>
-        </item>
-        <item>
-            <a href="#about"> ABOUT </a>
-        </item>
-        <item>
-            <a href="#tickets"> TICKETS </a>
-        </item>
-        <item>
-            <a href="#speakers"> SPEAKERS </a>
-        </item>
-        <item>
-            <a href="#call-for-papers"> CALL FOR PAPERS </a>
-        </item>
-        <item>
-            <a href="/news"> NEWS </a>
-        </item>
-    </content>
-    </grid>
+    <div class="layer-color">
+        <grid>
+            <content>
+                <item class="logo">
+                    <a href="/" id="nav-logo" class="logo"> LOGO 
+                    <logo></logo>
+                    </a>
+                </item>
+                {% if page.name == "about.html" %}
+                <item class="selected">
+                    <a href="/about"> ABOUT </a>
+                </item>
+                {% else %}
+                <item>
+                    <a href="/about"> ABOUT </a>
+                </item>
+                {% endif %}
+                <item>
+                    <a href="#tickets"> TICKETS </a>
+                </item>
+                <item>
+                    <a href="#speakers"> SPEAKERS </a>
+                </item>
+                <item>
+                    <a href="#call-for-papers"> CALL FOR PAPERS </a>
+                </item>
+                <item>
+                    <a href="#news"> NEWS </a>
+                </item>
+            </content>
+        </grid>
+    </div>
 </section>

@@ -2,7 +2,7 @@
 ---
 
 /* logo */
-logo { background-image: url(" {{ '/img/logo.png' | prepend: site.baseurl }} ");}
+logo, .logo { background-image: url(" {{ '/img/logo.png' | prepend: site.baseurl }} ");}
 
 /* splash screen background image (before gif is loaded) */
 div.splash-screen-wrap { background-image: url(" {{ '/img/audience-0.png' | prepend: site.baseurl }} ");}

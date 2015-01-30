@@ -1,5 +1,10 @@
+@LOGO_NAV_MARGIN: 5px;
+
 section.navigation {
     min-height: @PAGE_NAVIGATION_HEIGHT;
+    div.layer-color {
+        background-color: fade(@DARK_GREY, 70%);
+    }
     grid {
         overflow: hidden;
         marign: 0;
@@ -10,12 +15,26 @@ section.navigation {
                 .column(2);
                 text-align: center;
                 overflow: hidden;
+                #nav-logo {
+                    color: transparent;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 100%;
+                    background-position: center @LOGO_NAV_MARGIN;
+                    background-size: @PAGE_NAVIGATION_HEIGHT - 2 * @LOGO_NAV_MARGIN;
+                }
                 a {
                     width: inherit;
                     height: @PAGE_NAVIGATION_HEIGHT;
                     display: table-cell;
                     vertical-align: middle;
                     text-align: center;
+                    text-decoration: none;
+                    color: @WHITE;
+                }
+                &.selected {
+                    background-color: @ORANGE;
                 }
             }
         }
