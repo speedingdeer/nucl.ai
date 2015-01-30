@@ -12,6 +12,7 @@ section.topics .pen { background-image: url(" {{ '/img/icons/pen.png' | prepend:
 
 /* icons */
 icon.megaphone {  background-image: url(" {{ '/img/icons/megaphone.png'| prepend: site.baseurl }} ");}
+.icon-and-title:hover icon.megaphone {  background-image: url(" {{ '/img/icons/megaphone_hover2.png'| prepend: site.baseurl }} ");}
 
 
 /* footer social media images */
