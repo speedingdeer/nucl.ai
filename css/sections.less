@@ -1,25 +1,36 @@
 @CONTENT_PADDING_VERTICAL: 20px;
 
+.theme_blue() {
+    background-color: @BLUE;
+    a { color: @LIGHT_BLUE; }
+}
+
+.theme_grey() {
+    background-color: @GREY;
+    a { color: @MID_BLUE; }
+    &:last-child { 
+        box-shadow: @GRADIENT_GREY;
+        content {
+            padding-bottom: 2 * @CONTENT_PADDING_VERTICAL; // making some space for box shadow
+        }
+    }
+}
+
 section {
     min-height: calc(~"85vh");
     overflow: hidden;
     &:nth-child(even) {
-        background-color: @BLUE;
-        a { color: @LIGHT_BLUE; }
+        .theme_blue();
     }
     &:nth-child(odd) {
-        background-color: @GREY;
-        a { color: @MID_BLUE; }
-        &:last-child { 
-            box-shadow: @GRADIENT_GREY;
-            content {
-                padding-bottom: 2 * @CONTENT_PADDING_VERTICAL; // making some space for box shadow
-            }
-        }
+        .theme_grey();
     }
 
     .titlebar {
         margin-bottom: 0.6em;
+        &.small {
+            padding: 0.4em 0;
+        }
     }
 
     & > h2 { box-shadow: @GRADIENT_GREY; }
@@ -39,15 +50,19 @@ section {
     &:last-child {
         min-height: calc(~"100vh - @{FOOTER_HEIGHT}");
     }
-
-    /* take the whole page if there is only one section */
-    &:first-child:last-child {
-            min-height: calc(~"@{PAGE_FIRST_SECTION_HEIGHT} - @{FOOTER_HEIGHT} - @{PAGE_NAVIGATION_HEIGHT}");
-    }
 }
 
 
-section.empty-section {
-    //for switching coors order
-    display: none;
+sections.page .page-content-sections section {
+    min-height: initial;
+    // reveresed color schema for page layout
+    &:nth-child(even) {
+        .theme_grey();
+    }
+    &:nth-child(odd) {
+        .theme_blue();
+    }
+    &:only-child {
+        min-height: calc(~"@{PAGE_FIRST_SECTION_HEIGHT} - @{FOOTER_HEIGHT} - @{PAGE_NAVIGATION_HEIGHT}");
+    }
 }
