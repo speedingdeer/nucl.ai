@@ -12,19 +12,5 @@ section.topics .pen { background-image: url(" {{ '/img/icons/pen.png' | prepend:
 
 /* icons */
 icon.megaphone {  background-image: url(" {{ '/img/icons/megaphone.png'| prepend: site.baseurl }} ");}
-.icon-and-title:hover icon.megaphone {  background-image: url(" {{ '/img/icons/megaphone_hover2.png'| prepend: site.baseurl }} ");}
 
-
-/* footer social media images */
-footer a.twitter { background-image: url(" {{ '/img/social-media/AiGD_Icon_Twitter_Grey_30.png' | prepend: site.baseurl }} ");}
-footer a.twitter:hover { background-image: url(" {{ '/img/social-media/AiGD_Icon_Twitter_Hover_30.png'| prepend: site.baseurl }} ");}
-.touch a.twitter { background-image: url(" {{ '/img/social-media/AiGD_Icon_Twitter_Hover_30.png'| prepend: site.baseurl }} ");}
-
-footer a.facebook {  background-image: url(" {{ '/img/social-media/AiGD_Icon_FB_Grey_30.png'| prepend: site.baseurl }} ");}
-footer a.facebook:hover {  background-image: url(" {{ '/img/social-media/AiGD_Icon_FB_Hover_30.png'| prepend: site.baseurl }} ");}
-.touch footer a.facebook {  background-image: url(" {{ '/img/social-media/AiGD_Icon_FB_Hover_30.png'| prepend: site.baseurl }} ");}
-
-footer a.google {  background-image: url(" {{ '/img/social-media/AiGD_Icon_Google_Grey_30.png'| prepend: site.baseurl }} ");}
-footer a.google:hover {  background-image: url(" {{ '/img/social-media/AiGD_Icon_Google_Hover_30.png'| prepend: site.baseurl }} ");}
-.touch footer a.google {  background-image: url(" {{ '/img/social-media/AiGD_Icon_Google_Hover_30.png'| prepend: site.baseurl }} ");}
-
+footer a.social { background-image: url(" {{ '/img/icons/social.png'| prepend: site.baseurl }} "); } 

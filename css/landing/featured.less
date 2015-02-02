@@ -10,14 +10,18 @@ featured {
                 cursor: pointer; 
                 icon.megaphone {
                     .rotate(-15deg);
+                    background-position-y: -100px;
                 }
             }
             icon.megaphone {
-                width: 100px;
+                background-size: initial;
+                background-position: initial;
+                width: 105px;
                 height: 100px;
                 margin-top: -100px;
-                padding-left: 15%;
+                margin-left: 10%;
                 transition: 0.5s;
+                transition-property: transform;
             }
         }
     }
