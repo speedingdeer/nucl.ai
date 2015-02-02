@@ -7,19 +7,11 @@
             {% for topic in site.data.topics %}
                 <item class="thumbnail {% cycle 'clear', 'no', 'no' %}">
                     <thumbnail-wrap>
-                    {% if forloop.first == true %}
-                        <thumbnail class="selected {% cycle 'left', 'middle', 'right' %}" name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
-                    {% else %}
-                        <thumbnail class="{% cycle 'left', 'middle', 'right' %}" name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
-                    {% endif %}
+                    <thumbnail class="{% cycle 'left', 'middle', 'right' %}" name="{{topic.title}}" style="background-image: url('{{ topic.thumbnail |  prepend: site.baseurl }} ')">
                         <overlay></overlay>
                     </thumbnail>
                     </thumbnail-wrap>
-                    {% if forloop.first == true %}
-                        <p class="thumbnail-title selected" name="{{topic.title}}"><b>{{ topic.title }}</b></p>
-                    {% else %}
-                        <p class="thumbnail-title" name="{{topic.title}}"><b>{{ topic.title }}</b></p>
-                    {% endif %}
+                    <p class="thumbnail-title" name="{{topic.title}}"><b>{{ topic.title }}</b></p>
                 </item>
 
                 {% comment %}
@@ -35,25 +27,17 @@
                 {% if modulo == '0' %}
                     {% for num in (1...3) %}
                         {% assign descIndex = topicsIndex | minus:4 | plus:forloop.index %}
-                        {% if descIndex == 0 %}
-                            {% if lastRow %}
-                                <item class="description selected last-row" name="{{site.data.topics[descIndex].title}}">
-                            {% else %}
-                                <item class="description selected last-row" name="{{site.data.topics[descIndex].title}}">
-                            {% endif %}
+                        {% if lastRow %}
+                            <item class="description last-row" name="{{site.data.topics[descIndex].title}}">
                         {% else %}
-                            {% if lastRow %}
-                                <item class="description last-row" name="{{site.data.topics[descIndex].title}}">
-                            {% else %}
-                                <item class="description" name="{{site.data.topics[descIndex].title}}">
-                            {% endif %}
+                            <item class="description" name="{{site.data.topics[descIndex].title}}">
                         {% endif %}
-                            <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ site.data.topics[descIndex].title }}</h2>
-                            <p>
+                        <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ site.data.topics[descIndex].title }}</h2>
+                        <p>
                             {{ site.data.topics[descIndex].content }}
                             {{ site.data.topics[descIndex].title }}
                             {% include lorem-ipsum.html %}
-                            </p>
+                        </p>
                         </item>
                     {% endfor %}
                 {% endif %}

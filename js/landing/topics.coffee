@@ -64,7 +64,6 @@ $ ->
       selectedTxt = $(".description[name='" + selected.attr('name') + "']")
       selectedTitle = $("item.thumbnail .thumbnail-title[name='" + selected.attr('name') + "']")
 
-    initialHeight = thumbnail.height()
     overlay = thumbnail.children("overlay")
 
     thumbnail.click ->
@@ -84,7 +83,6 @@ $ ->
         selected = null
         selectedTitle - null
         selectedTxt = null
-      overlay.hide();
       clearLine();
 
     thumbnail.bind animate.onTransitonEnd, (event) ->
