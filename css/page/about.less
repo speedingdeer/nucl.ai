@@ -1,5 +1,25 @@
 sections.page section.about {
-    min-height: calc(~"@{PAGE_FIRST_SECTION_HEIGHT} - @{FOOTER_HEIGHT} - @{PAGE_NAVIGATION_HEIGHT}");
+    min-height: initial;
+    content {
+        .column(12);
+    }
+}
+
+sections.page section.stay-informed {
+    min-height: initial;
+    p { 
+        .column(12);
+     }
+    .form-wrap {
+        .push(3);
+        form.newsletter-form { 
+            padding-top: 1.5em;
+            .column(6);
+        }
+    }
+}
+
+sections.page section.contact-details {
     content {
         .column(12);
     }

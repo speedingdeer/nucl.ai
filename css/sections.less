@@ -39,7 +39,13 @@ section {
     &:last-child {
         min-height: calc(~"100vh - @{FOOTER_HEIGHT}");
     }
+
+    /* take the whole page if there is only one section */
+    &:first-child:last-child {
+            min-height: calc(~"@{PAGE_FIRST_SECTION_HEIGHT} - @{FOOTER_HEIGHT} - @{PAGE_NAVIGATION_HEIGHT}");
+    }
 }
+
 
 section.empty-section {
     //for switching coors order
