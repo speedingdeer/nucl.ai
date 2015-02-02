@@ -41,6 +41,10 @@ $ ->
       #draw disconnected horizontal line
       paper.path("M " + title.offset().left + " " + originalEndY + "L " + (title.offset().left + title.width()) + " " + originalEndY)
 
+    $('svg').hide();
+    $('svg').get(0).offsetHeight; # no need to store this anywhere, the reference is enough
+    $('svg').show();
+
   drawLine()
   
   ## listen when window resizes to clear lines and redrew them once finished
