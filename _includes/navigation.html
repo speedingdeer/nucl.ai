@@ -2,32 +2,53 @@
     <div class="layer-color">
         <grid>
             <content>
+
                 <item class="logo">
                     <a href="/" id="nav-logo" class="logo"> LOGO 
                     <logo></logo>
                     </a>
                 </item>
+
                 {% if page.name == "about.html" %}
                     <item class="selected">
-                        <a href="/about"> About </a>
-                    </item>
                 {% else %}
                     <item>
-                        <a href="/about"> About </a>
-                    </item>
                 {% endif %}
-                <item>
+                    <a href="/about"> About </a>
+                </item>
+
+                {% if page.name == "tickets.html" %}
+                    <item class="selected">
+                {% else %}
+                    <item>
+                {% endif %}
                     <a href="#tickets"> Tickets </a>
                 </item>
-                <item>
-                    <a href="#speakers"> Speakers </a>
+                
+                {% if page.name == "people.html" %}
+                    <item class="selected">
+                {% else %}
+                    <item>
+                {% endif %}
+                    <a href="/people" > People </a>
                 </item>
-                <item>
-                    <a href="#call-for-papers"> Call For Papers</a>
+                
+                {% if page.name == "call-for-papers.html" %}
+                    <item class="selected">
+                {% else %}
+                    <item>
+                {% endif %}
+                    <a href="/call-for-papers"> Call For Papers </a>
                 </item>
-                <item>
+        
+                {% if page.name == "tickets.html" %}
+                    <item  class="selected">
+                {% else %}
+                    <item>
+                {% endif %}
                     <a href="#news"> News </a>
                 </item>
+
             </content>
         </grid>
     </div>
