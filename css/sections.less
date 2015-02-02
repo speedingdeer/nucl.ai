@@ -5,9 +5,11 @@ section {
     overflow: hidden;
     &:nth-child(even) {
         background-color: @BLUE;
+        a { color: @LIGHT_BLUE; }
     }
     &:nth-child(odd) {
         background-color: @GREY;
+        a { color: @MID_BLUE; }
         &:last-child { 
             box-shadow: @GRADIENT_GREY;
             content {
