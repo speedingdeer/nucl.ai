@@ -35,22 +35,25 @@ section.topics {
                             border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
                             border-color: fade(@ORANGE, 70%);
                             background-color: fade(@DARK_GREY, 0%);
+                            width: calc(100%);
+                            height: calc(100%);
+                            top: 0px;
+                            left: 0px;
                         }
                     }
                     overlay {
                         .circular(@THUMBNAIL_SIZE);
-                        // removed border rough edges if appears
-                         /*
+                        //2 pxs to shift borde and hide ragged edge
                         width: calc(100% + 2px);
                         height: calc(100% + 2px);
                         position: relative;
                         top: -2px;
-                        : -2px;
-                        */
+                        left: -2px;
+                        
                         box-sizing: border-box;
                         background-color: fade(@DARK_GREY, 50%);
-                        border: solid @THUMBNAIL_BORDER_SIZE;
-                        border-color: fade(@DARK_GREY, 60%);
+                        border: solid @THUMBNAIL_BORDER_SIZE + 3px;
+                        border-color: fade(@DARK_GREY, 80%);
                     }
                 }
             }

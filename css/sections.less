@@ -11,9 +11,13 @@ section {
         &:last-child { 
             box-shadow: @GRADIENT_GREY;
             content {
-                padding-bottom: 5 * @CONTENT_PADDING_VERTICAL; // making some space for box shadow
+                padding-bottom: 2 * @CONTENT_PADDING_VERTICAL; // making some space for box shadow
             }
         }
+    }
+
+    .titlebar {
+        margin-bottom: 0.6em;
     }
 
     & > h2 { box-shadow: @GRADIENT_GREY; }
