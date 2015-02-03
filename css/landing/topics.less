@@ -38,7 +38,7 @@ section.topics {
                         overlay {
                             .circular(@THUMBNAIL_SIZE_LARGE);
                             border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
-                            border-color: fade(@DARK_GREY, 80%);
+                            border-color: lighten(@BLUE, 25%);
                             width: calc(100%);
                             height: calc(100%);
                             top: 0px;
@@ -60,8 +60,7 @@ section.topics {
                         top: -2px;
                         left: -2px;
                         
-                        box-sizing: border-box;
-                        background-color: fade(@DARK_GREY, 50%);
+                        box-sizing: border-box;                        
                         border: solid @THUMBNAIL_BORDER_SIZE + 3px;
                         border-color: fade(@DARK_GREY, 80%);
                     }
