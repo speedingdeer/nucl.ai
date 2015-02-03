@@ -94,7 +94,7 @@ $ ->
         selected = null
         selectedTitle - null
         selectedTxt = null
-      clearLine();
+      clearLine()
       if thumbnail.height() == config.thumbnails.large
         overlay.show()
         drawLine()
