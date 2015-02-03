@@ -69,7 +69,6 @@ $ ->
       selectedTitle = $("item.thumbnail .thumbnail-title[name='" + selected.attr('name') + "']")
 
     overlay = thumbnail.children("overlay")
-
     thumbnail.click ->
       thumbnail.toggleClass("selected")
       $(".description[name='" + thumbnail.attr('name') + "']").toggleClass("selected")
@@ -80,6 +79,14 @@ $ ->
           selectedTxt.toggleClass("selected")
           selectedTitle.toggleClass("selected")
           selected.children("overlay").hide() # hide overlay during the animation
+          ## if selected has minimum size show overlay, otherwise wait for it
+          if selected.height() == originalHeight
+             selected.children("overlay").show()
+          else
+            selected.one animate.onTransitonEnd, (event) ->
+              if event.originalEvent.propertyName == "width" and selected.height() == originalHeight
+                selected.children("overlay").show()
+
         selected = thumbnail
         selectedTxt = $(".description[name='" + selected.attr('name') + "']")
         selectedTitle = $("item.thumbnail .thumbnail-title[name='" + selected.attr('name') + "']")
