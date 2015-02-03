@@ -1,0 +1,44 @@
+- id: analytics
+  title: "Analytics & Data-Mining"
+  overview: 
+  takeaway:
+
+- id: decision
+  title: "Real-time Decision Systems"
+  overview: 
+  takeaway:
+
+- id: characters
+  title: "Character Behavior/Animation"
+  overview: 
+  takeaway:
+
+- id: ambient
+  title: "Ambient Life and Crowds"
+  overview: 
+  takeaway:
+
+- id: simulations
+  title: "Training Simulations"
+  overview: 
+  takeaway:
+
+- id: procedural
+  title: "Procedural Generation"
+  overview: 
+  takeaway:
+
+- id: alternate
+  title: "Virtual & Augmented Reality"
+  overview: 
+  takeaway:
+
+- id: cognitive
+  title: "Cognitive Assistants"
+  overview: 
+  takeaway:
+
+- id: systems
+  title: "Systematic Design"
+  overview: 
+  takeaway:
