@@ -23,6 +23,10 @@ section.topics {
                 text-align: center;
                 vertical-align: middle;
                 width: inherit;
+                &:hover + p.thumbnail-title {
+                    /* @TODO: set up color */
+                    //color: white;
+                }
                 thumbnail {
                     .circular(@THUMBNAIL_SIZE);
                     cursor: pointer;
