@@ -11,6 +11,11 @@
 section.topics {
     position: relative;
     z-index: 1;
+
+    h2 {
+        margin-top: 20px;
+    }
+
     content {
         item.thumbnail {
             overflow: hidden;
@@ -32,6 +37,7 @@ section.topics {
                     margin: auto;
                     display: inline-block;
                     -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
                     // transition: 0.2s;
                     &:hover, &.selected {
                         .circular(@THUMBNAIL_SIZE_LARGE);
@@ -45,6 +51,7 @@ section.topics {
                             left: 0px;
                         }
                         -webkit-filter: none;
+                        filter: none;
                     }
                     &.selected {
                         overlay {
@@ -74,9 +81,6 @@ section.topics {
                 font-weight: bold;
                 &.selected {
                     display: none;
-                }
-                thumbnail:hover & {
-                    border-color: @ORANGE !important;
                 }
                 color: lighten(@BLUE, 25%);
                 /* .colored {
