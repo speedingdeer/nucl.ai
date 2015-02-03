@@ -9,6 +9,10 @@ $ ->
   ## draw line between selected thumbnail and text
   paper = Raphael('section-topics', "100%", "100%") # draw within the whole section
 
+
+  ## get original thumbnail size
+  originalHeight = $("thumbnail").first().height()
+
   clearLine = () ->
     $("svg path").remove()
 
@@ -41,12 +45,8 @@ $ ->
       #draw disconnected horizontal line
       paper.path("M " + title.offset().left + " " + originalEndY + "L " + (title.offset().left + title.width()) + " " + originalEndY)
 
-    $('svg').hide();
-    $('svg').get(0).offsetHeight; # no need to store this anywhere, the reference is enough
-    $('svg').show();
-
   drawLine()
-  
+
   ## listen when window resizes to clear lines and redrew them once finished
   resizeEnd = null
   $(window).resize ->
@@ -88,11 +88,15 @@ $ ->
         selectedTitle - null
         selectedTxt = null
       clearLine();
-
-    thumbnail.bind animate.onTransitonEnd, (event) ->
-      if event.originalEvent.propertyName == "height"
+      if thumbnail.height() == config.thumbnails.large
         overlay.show()
         drawLine()
+      else 
+        thumbnail.one animate.onTransitonEnd, (event) ->
+          if event.originalEvent.propertyName == "width" and thumbnail.height() == config.thumbnails.large
+            overlay.show()
+            drawLine()
+
 
   ## color name / surname
   applyColors = (title, text, last) ->
