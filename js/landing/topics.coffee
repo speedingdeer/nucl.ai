@@ -68,7 +68,6 @@ $ ->
       selectedTxt = $(".description[name='" + selected.attr('name') + "']")
       selectedTitle = $("item.thumbnail .thumbnail-title[name='" + selected.attr('name') + "']")
 
-    overlay = thumbnail.children("overlay")
     thumbnail.click ->
       thumbnail.toggleClass("selected")
       $(".description[name='" + thumbnail.attr('name') + "']").toggleClass("selected")
@@ -78,7 +77,6 @@ $ ->
           selected.toggleClass("selected")
           selectedTxt.toggleClass("selected")
           selectedTitle.toggleClass("selected")
-          selected.children("overlay").hide() # hide overlay during the animation
           ## if selected has minimum size show overlay, otherwise wait for it
           if selected.height() == originalHeight
              selected.children("overlay").show()
@@ -95,17 +93,11 @@ $ ->
         selectedTitle - null
         selectedTxt = null
       clearLine()
-      if thumbnail.height() == config.thumbnails.large
-        overlay.show()
-        drawLine()
-      else 
-        thumbnail.one animate.onTransitonEnd, (event) ->
-          if event.originalEvent.propertyName == "width" and thumbnail.height() == config.thumbnails.large
-            overlay.show()
-            drawLine()
+      drawLine()
 
 
   ## color name / surname
+  ## @TODO: move me to liquid filter
   applyColors = (title, text, last) ->
     text =  "<span class='colored'>" + text + "</span>"
     if last then text += last

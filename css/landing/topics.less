@@ -35,38 +35,19 @@ section.topics {
                     background-size: cover;
                     margin: auto;
                     display: inline-block;
+                    box-sizing: border-box;
+                    border: solid @THUMBNAIL_BORDER_SIZE;
+                    border-color: lighten(@GREY, 5%);
                     -webkit-filter: grayscale(100%);
                     // transition: 0.2s;
                     &:hover, &.selected {
                         .circular(@THUMBNAIL_SIZE_LARGE);
-                        overlay {
-                            .circular(@THUMBNAIL_SIZE_LARGE);
-                            border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
-                            border-color: lighten(@BLUE, 25%);
-                            width: calc(100%);
-                            height: calc(100%);
-                            top: 0px;
-                            left: 0px;
-                        }
+                        border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
+                        border-color: lighten(@BLUE, 25%);
                         -webkit-filter: none;
                     }
                     &.selected {
-                        overlay {
-                            border-color: @ORANGE;
-                        }
-                    }
-                    overlay {
-                        .circular(@THUMBNAIL_SIZE);
-                        //2 pxs to shift borde and hide ragged edge
-                        width: calc(100% + 2px);
-                        height: calc(100% + 2px);
-                        position: relative;
-                        top: -2px;
-                        left: -2px;
-                        
-                        box-sizing: border-box;                        
-                        border: solid @THUMBNAIL_BORDER_SIZE + 3px;
-                        border-color: fade(@DARK_GREY, 80%);
+                        border-color: @ORANGE;
                     }
                 }
             }
