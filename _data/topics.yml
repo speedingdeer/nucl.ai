@@ -83,7 +83,8 @@
 - id: alternate
   title: "Virtual & Augmented Reality"
   content: >
-    This track focuses on AI for emerging technology such as augmented and virtual reality.
+    This track focuses on AI for emerging technology such as augmented and virtual
+    reality.
   keywords:
   thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
 
@@ -106,4 +107,16 @@
 - id: systems
   title: "Systemic Design"
   content: >
+    Creating emergent simulations that go beyond scripted linear experiences has
+    proven a great way of engaging audiences.  However, there are huge challenges
+    in both design and technology for implementing these.  How to combine top-down
+    control and bottom-up behaviors?  What's required to keep the player experience
+    entertaining?  Which design tools can be used to assist the process?  This
+    track will dig further into each of these topics.
+  keywords:
+    - open world simulation
+    - ai directors
+    - emergent behavior
+    - complex systems
+    - design methodologies
   thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
