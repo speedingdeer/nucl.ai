@@ -37,12 +37,16 @@ section.topics {
                         overlay {
                             .circular(@THUMBNAIL_SIZE_LARGE);
                             border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
-                            border-color: @ORANGE;
-                            background-color: fade(@DARK_GREY, 0%);
+                            border-color: fade(@DARK_GREY, 80%);
                             width: calc(100%);
                             height: calc(100%);
                             top: 0px;
                             left: 0px;
+                        }
+                    }
+                    &.selected {
+                        overlay {
+                            border-color: @ORANGE;
                         }
                     }
                     overlay {
