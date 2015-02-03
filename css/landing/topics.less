@@ -31,6 +31,7 @@ section.topics {
                     background-size: cover;
                     margin: auto;
                     display: inline-block;
+                    -webkit-filter: grayscale(100%);
                     // transition: 0.2s;
                     &:hover, &.selected {
                         .circular(@THUMBNAIL_SIZE_LARGE);
@@ -43,6 +44,7 @@ section.topics {
                             top: 0px;
                             left: 0px;
                         }
+                        -webkit-filter: none;
                     }
                     &.selected {
                         overlay {
@@ -69,14 +71,18 @@ section.topics {
                 clear: both; //left starts alwyas from 'left'...
             }
             p.thumbnail-title {
+                font-size: 24px;
                 font-weight: bold;
                 &.selected {
                     display: none;
                 }
-                color: @MID_BLUE;
-                .colored {
-                    color: @WHITE;
+                thumbnail:hover & {
+                    border-color: @ORANGE !important;
                 }
+                color: lighten(@BLUE, 25%);
+                /* .colored {
+                    color: @WHITE;
+                } */
             }
         }
         item.description {
@@ -98,6 +104,7 @@ section.topics {
             p {
                 color: @LIGHT_GREY;
                 line-height: 1.25;
+                font-size: 19px;
             }
         }
     }

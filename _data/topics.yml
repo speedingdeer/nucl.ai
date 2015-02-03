@@ -1,18 +1,17 @@
-- id: analytics
-  title: "Analytics & Data-Mining"
+- id: animation
+  title: "Character Animation"
   content: >
-    Understanding user behavior is a component that's critical to application
-    development, and also increasingly important at runtime.  This track will
-    cover essential concepts in behavioral analytics and user profiling and
-    in particular how machine learning can help.  Whether you're building
-    complex simulations, interactive applications or games, this will help you
-    gain a better understanding of the tricks and techniques to apply on your
-    project!
+    Portraying characters is one of the most challenging aspects of building an
+    engaging 3D world.  While many low-level aspects of character animation technology
+    have been resolved, there are many questions that remain open as the industry
+    pushes towards more procedural blend trees.  How should gestures be controlled by
+    AI?  What's a way to maintain believable yet flexible locomotion?  For developers
+    building simulations or games that rely heavily on characters, this track is 
+    intended for you!
   keywords:
-    - machine learning
-    - deep neural networks
-    - pattern recognition
-    - real-time profiling
+    - physics-based controllers
+    - procedural animation
+    - modern blend trees
   thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
 
 - id: decisions
@@ -30,24 +29,14 @@
     - tactics and strategy
   thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
 
-- id: animation
-  title: "Character Animation"
+- id: simulations
+  title: "Training Simulations"
   content: >
-    Portraying characters is one of the most challenging aspects of building an
-    engaging 3D world.  While many low-level aspects of character animation technology
-    have been resolved, there are many questions that remain open as the industry
-    pushes towards more procedural blend trees.  How should gestures be controlled by
-    AI?  What's a way to maintain believable yet flexible locomotion?  For developers
-    building simulations or games that rely heavily on characters, this track is 
-    intended for you!
-  keywords:
-    - physics-based controllers
-    - procedural animation
-    - modern blend trees
+    This track focuses on AI in serious games, such as simulations for training.
   thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
 
 - id: behavior
-  title: "Agent Bahavior"
+  title: "Agent Behavior"
   content: >
     As virtual worlds become more engaging, their number of agents is going up
     tremendously. From AI directors that supervise a scene, to interactive tutors, as
@@ -57,12 +46,6 @@
   keywords:
     - behavior trees
     - utility systems
-  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
-
-- id: simulations
-  title: "Training Simulations"
-  content: >
-    This track focuses on AI in serious games, such as simulations for training.
   thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
 
 - id: procedural
@@ -102,6 +85,23 @@
     - obstacle avoidance
     - smart objects
     - virtual effects
+  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+
+- id: analytics
+  title: "Analytics & Data-Mining"
+  content: >
+    Understanding user behavior is a component that's critical to application
+    development, and also increasingly important at runtime.  This track will
+    cover essential concepts in behavioral analytics and user profiling and
+    in particular how machine learning can help.  Whether you're building
+    complex simulations, interactive applications or games, this will help you
+    gain a better understanding of the tricks and techniques to apply on your
+    project!
+  keywords:
+    - machine learning
+    - deep neural networks
+    - pattern recognition
+    - real-time profiling
   thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
 
 - id: systems
