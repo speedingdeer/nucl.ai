@@ -3,6 +3,8 @@
 
 $ ->
 
+  thumbnails = new Thumbnails "section.topics"
+
   ## if section isn't included - don't bother
   if $("section.topics").length == 0 then return
 
