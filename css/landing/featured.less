@@ -1,29 +1,30 @@
-featured {
-    .column(12);
-    min-height: calc(100vh / 3);
+div.featured-wrap {
     display: table;
-    .call-for-speakers {
+    height: calc(100vh / 3);
+    width: 100%;
+    featured {
         display: table-cell;
         vertical-align: middle;
-        .icon-and-title {
-            &:hover { 
-                cursor: pointer; 
-                icon.megaphone {
-                    .rotate(-15deg);
-                    background-position-y: -100px;
+        .call-for-speakers {
+            .icon-and-title {
+                &:hover { 
+                    cursor: pointer; 
+                    icon.megaphone {
+                        .rotate(-15deg);
+                        background-position-y: -100px;
+                    }
                 }
-            }
-            icon.megaphone {
-                background-size: initial;
-                background-position: initial;
-                width: 105px;
-                height: 100px;
-                margin-top: -100px;
-                margin-left: 10%;
-                transition: 0.5s;
-                transition-property: transform;
+                icon.megaphone {
+                    background-size: initial;
+                    background-position: initial;
+                    width: 105px;
+                    height: 100px;
+                    margin-top: -100px;
+                    margin-left: 10%;
+                    transition: 0.5s;
+                    transition-property: transform;
+                }
             }
         }
     }
-
 }
