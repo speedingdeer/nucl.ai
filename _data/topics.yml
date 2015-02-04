@@ -41,7 +41,7 @@
   thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
   credit:
     title: Banished
-    url: http://www.banishedgame.com/
+    url: http://www.shiningrocksoftware.com/game/
 
 - id: behavior
   title: "Agent Behavior"
@@ -56,7 +56,7 @@
     - utility systems
   credit:
     title: The Sims 4
-    url: http://sims.ea.com/
+    url: http://www.thesims.com/
 
 - id: procedural
   title: "Procedural Content Generation"
@@ -73,7 +73,7 @@
     - procedural algorithms
   credit:
     title: "Sir, You're Being Hunted"
-    url: http://sirbeinghunted.com/
+    url: http://www.big-robot.com/
 
 - id: alternate
   title: "Virtual & Augmented Reality"
@@ -125,8 +125,8 @@
     - pattern recognition
     - real-time profiling
   credit:
-    title: Dmitriy Noznin
-    url: 
+    title: Dmitry Nozhnin
+    url: http://www.gamasutra.com/blogs/DmitryNozhnin/417356/
 
 - id: systems
   title: "Systemic Design"
@@ -145,4 +145,4 @@
     - design methodologies
   credit:
     title: Far Cry 4
-    url: http://ubisoft.com/farcry/
+    url: http://far-cry.ubi.com/
