@@ -58,9 +58,8 @@ $ ->
   resizeEnd = null
   $(window).resize ->
     clearLine()
-    clearTimeout(resizeEnd)
     setThumbnailSize()
-    resizeEnd = setTimeout(drawLine,100)
+    drawLine()
 
 
   ## hide/show overlay on animation start/end

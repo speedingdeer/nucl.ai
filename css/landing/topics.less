@@ -14,7 +14,7 @@ section.topics {
     content {
         item.thumbnail {
             overflow: hidden;
-            padding-bottom: 30px;
+            padding-bottom: 1em;
             .column(4);
             text-align: center;
             thumbnail-wrap {
@@ -23,7 +23,7 @@ section.topics {
                 overflow: hidden;
                 &:hover + p.thumbnail-title {
                     /* @TODO: set up color */
-                    //color: white;
+                    color: lighten(@BLUE, 25%);
                 }
                 thumbnail {
                     margin: (100% - @THUMBNAIL_SIZE) / 2;
@@ -60,7 +60,7 @@ section.topics {
                 &.selected {
                     display: none;
                 }
-                color: lighten(@BLUE, 25%);
+                color: lighten(white, 25%);
                 /* .colored {
                     color: @WHITE;
                 } */
