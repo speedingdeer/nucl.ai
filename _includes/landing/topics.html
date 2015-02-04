@@ -19,8 +19,7 @@
                     Add three description for three already printed titles 
                 -->
                 {% endcomment %}
-
-                {% capture modulo %}{{ forloop.index | mod:3 }}{% endcapture %}
+                {% capture modulo %}{{ forloop.index | modulo:3 }}{% endcapture %}
                 {% assign topicsIndex = forloop.index %}
                 {% assign lastRow = forloop.last %}
 
