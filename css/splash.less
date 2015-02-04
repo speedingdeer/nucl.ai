@@ -6,6 +6,10 @@
 
 section.splash-screen {
     min-height: calc(100vh * 2 / 3);
+    //firefox table doesn't know min-height
+    .table {
+         height: calc(100vh * 2 / 3);
+    } 
     background-color: @AUDIENCE_COLOR;
     splash {
         display: block; //for this who doesn't know flex

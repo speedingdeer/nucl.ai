@@ -1,9 +1,3 @@
-- name: Filip Wisniewski
-  role: org
-  title: "Developer"
-  twitter: speedingdeer
-  picture: http://www.technocrazed.com/wp-content/uploads/2013/08/Animals-More-Smartly-Dressed-Than-Human-Beings-32.jpg
-
 - name: Alex J. Champandard
   role: org
   title: "Co-Founder & Co-Ordinator"
@@ -14,3 +8,9 @@
   role: org
   title: "Director & Co-Founder"
   picture: https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHbbbjRb8hAUZONL782pLYkOoSiDBsjxTw88RQUZCoBJZ1e6XR
+
+- name: Filip Wisniewski
+  role: org
+  title: "Developer"
+  twitter: speedingdeer
+  picture: http://www.technocrazed.com/wp-content/uploads/2013/08/Animals-More-Smartly-Dressed-Than-Human-Beings-32.jpg

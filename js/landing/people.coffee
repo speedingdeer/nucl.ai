@@ -2,22 +2,21 @@
 ---
 
 $ ->
-
   ## if section isn't included - don't bother
-  if $("section.topics").length == 0 then return
+  if $("section.people").length == 0 then return
 
   ## draw line between selected thumbnail and text
-  paper = Raphael('section-topics', "100%", "100%") # draw within the whole section
+  paper = Raphael('section-people', "100%", "100%") # draw within the whole section
 
   clearLine = () ->
-    $("section.topics svg path").remove()
+    $("section.people svg path").remove()
 
   drawLine = () ->
-    thumbnail = $("section.topics thumbnail.selected")
+    thumbnail = $("section.people thumbnail.selected")
     if thumbnail.length == 0 then return
     title = $("item.description[name='" + thumbnail.attr('name') + "'] .thumbnail-title")
 
-    startY = thumbnail.offset().top - $("section.topics").offset().top + thumbnail.height()
+    startY = thumbnail.offset().top - $("section.people").offset().top + thumbnail.height()
     startX = thumbnail.offset().left + thumbnail.width() / 2
 
     #check if line intersects title
@@ -25,7 +24,7 @@ $ ->
     if thumbnail.hasClass("right") and title.offset().left >= startX then return
 
     #calculate vertical line
-    endY = title.offset().top + title.outerHeight() - $("section.topics").offset().top
+    endY = title.offset().top + title.outerHeight() - $("section.people").offset().top
     
     # preserve original values
     originalEndY = endY
@@ -44,7 +43,7 @@ $ ->
   drawLine()
 
   setThumbnailSize = () ->
-    $("section.topics thumbnail-wrap").each ->
+    $("section.people thumbnail-wrap").each ->
       wrap = $(this)
       wrap.height(wrap.width())
 
@@ -63,7 +62,7 @@ $ ->
   selectedTxt = null
   selectedTitle = null
 
-  $("section.topics thumbnail").each ->
+  $("section.people thumbnail").each ->
     thumbnail = $(this)
     if thumbnail.hasClass("selected")
       # discover selected by default
@@ -99,24 +98,3 @@ $ ->
         selectedTxt = null
       clearLine()
       drawLine()
-
-
-  ## color name / surname
-  ## @TODO: move me to liquid filter
-  applyColors = (title, text, last) ->
-    text =  "<span class='colored'>" + text + "</span>"
-    if last then text += last
-    title.html(text)
-
-  $("section.topics item .thumbnail-title").each ->
-    title = $(this)
-    titleText = title.text()
-    words = titleText.trim().split(/\s+/)
-    if words.length == 1
-      return applyColors(title, words[0])
-
-    text = ""
-    for word in words.slice(0, -1)
-      text += word + " "
-    applyColors(title, text, words.slice(-1))
-
