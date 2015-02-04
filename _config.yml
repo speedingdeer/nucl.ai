@@ -1,8 +1,9 @@
 # Site settings
 title: nucl.ai
 email: team@aigamdev.com
-description: > # this means to ignore newlines until "baseurl:"
-  The Biggest Independant Conference about Artificial Intelligence in Games and Industry.
+description: >
+  The largest worldwide conference about Artificial Intelligence applications
+in interactive media, training & simulations, and digital entertainment.
 baseurl: "" # the subpath of your site, e.g. /blog/ <- in gh-pages must be a project name
 url: "http://nucl.ai" # the base hostname & protocol for your site
 twitter_username: aigamedev

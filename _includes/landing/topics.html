@@ -7,7 +7,7 @@
             {% for topic in site.data.topics %}
                 <item class="thumbnail {% cycle 'clear', 'no', 'no' %}">
                     <thumbnail-wrap>
-                    {% capture thumbnail %}/img/topics/{{ topic.id }}.jpg{% endcapture %}
+                    {% capture thumbnail %}/img/topics/{{ topic.id }}.jpeg{% endcapture %}
                     <thumbnail class="{% cycle 'left', 'middle', 'right' %}" name="{{topic.title}}" style="background-image: url('{{ thumbnail |  prepend: site.baseurl }}')">
                     </thumbnail>
                     </thumbnail-wrap>
