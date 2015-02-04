@@ -14,11 +14,6 @@
                     <p class="thumbnail-title" name="{{topic.title}}"><b>{{ topic.title }}</b></p>
                 </item>
 
-                {% comment %}
-                <!--
-                    Add three description for three already printed titles 
-                -->
-                {% endcomment %}
                 {% capture modulo %}{{ forloop.index | modulo:3 }}{% endcapture %}
                 {% assign topicsIndex = forloop.index %}
                 {% assign lastRow = forloop.last %}
