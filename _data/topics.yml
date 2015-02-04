@@ -14,8 +14,8 @@
     - modern blend trees
     - animation pipelines
   credit:
-    - title: Marvin Rig
-    - url: http://aigamedev.com/
+    title: Marvin Rig
+    url: http://aigamedev.com/
 
 - id: decisions
   title: "Real-time Decision Systems"
@@ -31,8 +31,8 @@
     - deep neural networks
     - tactics and strategy
   credit:
-    - title: The AI Sandbox
-    - url: http://aisandbox.com/
+    title: The AI Sandbox
+    url: http://aisandbox.com/
 
 - id: simulations
   title: "Training & Simulations"
@@ -40,8 +40,8 @@
     This track focuses on AI in serious games, such as simulations for training.
   thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
   credit:
-    - title: Banished
-    - url: http://www.banishedgame.com/
+    title: Banished
+    url: http://www.banishedgame.com/
 
 - id: behavior
   title: "Agent Behavior"
@@ -55,8 +55,8 @@
     - behavior trees
     - utility systems
   credit:
-    - title: The Sims 4
-    - url: http://sims.ea.com/
+    title: The Sims 4
+    url: http://sims.ea.com/
 
 - id: procedural
   title: "Procedural Content Generation"
@@ -72,8 +72,8 @@
     - modern content pipelines
     - procedural algorithms
   credit:
-    - title: "Sir, You're Being Hunted"
-    - url: http://sirbeinghunted.com/
+    title: "Sir, You're Being Hunted"
+    url: http://sirbeinghunted.com/
 
 - id: alternate
   title: "Virtual & Augmented Reality"
@@ -88,8 +88,8 @@
     - object identification
     - motion tracking
   credit:
-    - title: Project Trains
-    - url: http://project-trains.tumblr.com/
+    title: Project Trains
+    url: http://project-trains.tumblr.com/
 
 - id: ambient
   title: "Crowds & Ambient Life"
@@ -106,8 +106,8 @@
     - smart objects
     - virtual effects
   credit:
-    - title: Golaem Crowd
-    - url: http://golaem.com/
+    title: Golaem Crowd
+    url: http://golaem.com/
 
 - id: analytics
   title: "Analytics & Data-Mining"
@@ -125,8 +125,8 @@
     - pattern recognition
     - real-time profiling
   credit:
-    - title: Dmitriy Noznin
-    - url: 
+    title: Dmitriy Noznin
+    url: 
 
 - id: systems
   title: "Systemic Design"
@@ -144,5 +144,5 @@
     - complex systems
     - design methodologies
   credit:
-    - title: Far Cry 4
-    - url: http://ubisoft.com/farcry/
+    title: Far Cry 4
+    url: http://ubisoft.com/farcry/

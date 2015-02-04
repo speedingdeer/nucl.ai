@@ -1,8 +1,8 @@
-@THUMBNAIL_SIZE: 270px;
+@THUMBNAIL_SIZE: 80%;
 /** 
 * This value must be replicated it config.coffee. Thumbnail needs to know its final size to listen for transitionEnd if size isn't final 
 */
-@THUMBNAIL_SIZE_LARGE: 300px;
+@THUMBNAIL_SIZE_LARGE: 90%;
 /****************************/
 @THUMBNAIL_BORDER_SIZE: 4px;
 @THUMBNAIL_BORDER_SIZE_SELECTED: 4px;
@@ -19,64 +19,45 @@ section.topics {
     content {
         item.thumbnail {
             overflow: hidden;
-            padding-bottom: 30px;
+            padding-bottom: 1em;
             .column(4);
             text-align: center;
             thumbnail-wrap {
-                height: @THUMBNAIL_SIZE_LARGE + 3px; //to clean jump effect and provide smooth transition
-                display: table-cell;
+                display: block;
                 text-align: center;
-                vertical-align: middle;
-                width: inherit;
+                overflow: hidden;
                 &:hover + p.thumbnail-title {
                     /* @TODO: set up color */
-                    //color: white;
+                    color: lighten(@BLUE, 25%);
                 }
                 thumbnail {
-                    .circular(@THUMBNAIL_SIZE);
+                    margin: (100% - @THUMBNAIL_SIZE) / 2;
+                    .circular(@THUMBNAIL_SIZE, 100%);
                     cursor: pointer;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    margin: auto;
                     display: inline-block;
+                    box-sizing: border-box;
+                    border: solid @THUMBNAIL_BORDER_SIZE;
+                    border-color: lighten(@GREY, 5%);
                     -webkit-filter: grayscale(100%);
                     filter: grayscale(100%);
                     // transition: 0.2s;
                     &:hover, &.selected {
-                        .circular(@THUMBNAIL_SIZE_LARGE);
-                        overlay {
-                            .circular(@THUMBNAIL_SIZE_LARGE);
-                            border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
-                            border-color: lighten(@BLUE, 25%);
-                            width: calc(100%);
-                            height: calc(100%);
-                            top: 0px;
-                            left: 0px;
-                        }
+                        margin: (100% - @THUMBNAIL_SIZE_LARGE) / 2;
+                        .circular(@THUMBNAIL_SIZE_LARGE, 100%);
+                        border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
+                        border-color: lighten(@BLUE, 25%);
                         -webkit-filter: none;
                         filter: none;
                     }
                     &.selected {
-                        overlay {
-                            border-color: @ORANGE;
-                        }
-                    }
-                    overlay {
-                        .circular(@THUMBNAIL_SIZE);
-                        //2 pxs to shift borde and hide ragged edge
-                        width: calc(100% + 2px);
-                        height: calc(100% + 2px);
-                        position: relative;
-                        top: -2px;
-                        left: -2px;
-                        
-                        box-sizing: border-box;                        
-                        border: solid @THUMBNAIL_BORDER_SIZE + 3px;
-                        border-color: fade(@DARK_GREY, 80%);
+                        border-color: @ORANGE;
                     }
                 }
             }
+
             &.clear {
                 clear: both; //left starts alwyas from 'left'...
             }
@@ -86,7 +67,7 @@ section.topics {
                 &.selected {
                     display: none;
                 }
-                color: lighten(@BLUE, 25%);
+                color: lighten(white, 25%);
                 /* .colored {
                     color: @WHITE;
                 } */

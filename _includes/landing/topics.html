@@ -9,7 +9,6 @@
                     <thumbnail-wrap>
                     {% capture thumbnail %}/img/topics/{{ topic.id }}.jpg{% endcapture %}
                     <thumbnail class="{% cycle 'left', 'middle', 'right' %}" name="{{topic.title}}" style="background-image: url('{{ thumbnail |  prepend: site.baseurl }}')">
-                        <overlay></overlay>
                     </thumbnail>
                     </thumbnail-wrap>
                     <p class="thumbnail-title" name="{{topic.title}}"><b>{{ topic.title }}</b></p>
@@ -46,7 +45,7 @@
                            {% endfor %}
                         </ul>
 
-                        <p class="note"><u>Photo Credit</u>: <a href="{{ topic.credit.url }}">{{ topic.credit.title }}</a></p>
+                        <p class="note"><u>Photo Credit</u>: <a href="{{ t.credit.url }}">{{ t.credit.title }}</a></p>
                         </item>
                     {% endfor %}
                 {% endif %}
