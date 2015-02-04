@@ -47,11 +47,19 @@ $ ->
 
   drawLine()
 
+  setThumbnailSize = () ->
+    $("thumbnail-wrap").each ->
+      wrap = $(this)
+      wrap.height(wrap.width())
+
+
+  setThumbnailSize()
   ## listen when window resizes to clear lines and redrew them once finished
   resizeEnd = null
   $(window).resize ->
     clearLine()
     clearTimeout(resizeEnd)
+    setThumbnailSize()
     resizeEnd = setTimeout(drawLine,100)
 
 
