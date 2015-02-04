@@ -84,7 +84,7 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '.jekyll/**/*.html',
+          '.jekyll/**/*.html'
         ]
       }
     },
