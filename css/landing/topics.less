@@ -26,10 +26,6 @@ section.topics {
                 display: block;
                 text-align: center;
                 overflow: hidden;
-                &:hover + p.thumbnail-title {
-                    /* @TODO: set up color */
-                    color: lighten(@BLUE, 25%);
-                }
                 thumbnail {
                     margin: (100% - @THUMBNAIL_SIZE) / 2;
                     .circular(@THUMBNAIL_SIZE, 100%);
@@ -64,6 +60,10 @@ section.topics {
             p.thumbnail-title {
                 font-size: 24px;
                 font-weight: bold;
+                &.hover {
+                    /* @TODO: set up color */
+                    color: lighten(@BLUE, 25%);
+                }
                 &.selected {
                     display: none;
                 }

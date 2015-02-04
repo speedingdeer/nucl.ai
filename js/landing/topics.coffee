@@ -75,6 +75,16 @@ $ ->
       selectedTxt = $(".description[name='" + selected.attr('name') + "']")
       selectedTitle = $("item.thumbnail .thumbnail-title[name='" + selected.attr('name') + "']")
 
+
+    ## change title color on thumbnail hover
+    mouseEnter = () ->
+      $("item.thumbnail .thumbnail-title[name='" + thumbnail.attr('name') + "']").addClass("hover")
+    mouseLeave = () ->
+      $("item.thumbnail .thumbnail-title[name='" + thumbnail.attr('name') + "']").removeClass("hover")
+
+    thumbnail.hover mouseEnter, mouseLeave
+
+
     thumbnail.click ->
       thumbnail.toggleClass("selected")
       $(".description[name='" + thumbnail.attr('name') + "']").toggleClass("selected")
