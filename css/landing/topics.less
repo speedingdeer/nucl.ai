@@ -78,9 +78,13 @@ section.topics {
             .push(2);
             display: none;
             text-align: justify;
-            &:not(.last-row) { padding-bottom: 75px; }
 
+            &:not(.last-row) { padding-bottom: 75px; }
             &.selected { display: block; }
+
+            font-size: 19px;
+            color: @LIGHT_GREY;
+
             h2 {
                 color: @ORANGE;
                 &.left { text-align: left; margin-left: 10px; }
@@ -90,9 +94,12 @@ section.topics {
             }
 
             p {
-                color: @LIGHT_GREY;
-                line-height: 1.25;
-                font-size: 19px;
+                line-height: 1.25;                
+            }
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 0;
             }
         }
     }

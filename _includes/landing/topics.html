@@ -27,19 +27,28 @@
                 {% if modulo == '0' %}
                     {% for num in (1...3) %}
                         {% assign descIndex = topicsIndex | minus:4 | plus:forloop.index %}
+                        {% assign t = site.data.topics[descIndex] %}
                         {% if lastRow %}
-                            <item class="description last-row" name="{{site.data.topics[descIndex].title}}">
+                            <item class="description last-row" name="{{t.title}}">
                         {% else %}
-                            <item class="description" name="{{site.data.topics[descIndex].title}}">
+                            <item class="description" name="{{t.title}}">
                         {% endif %}
-                        <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ site.data.topics[descIndex].title }}</h2>
+                        <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ t.title }}</h2>
                         <p>
-                            {{ site.data.topics[descIndex].content }}
+                            {{ t.content }}
                         </p>
+
+                        <h3>Keywords</h3>
+                        <ul>
+                           {% for kw in t.keywords %} 
+                           <li>{{kw}}</li>
+                           {% endfor %}
+                        </ul>
+
+                        <p><u>Photo Credit</u>: <a href="{{ topic.credit.url }}">{{ topic.credit.title }}</a></p>
                         </item>
                     {% endfor %}
                 {% endif %}
-
 
             {% endfor %}
         </content>

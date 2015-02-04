@@ -12,7 +12,10 @@
     - physics-based controllers
     - procedural animation
     - modern blend trees
-  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+    - animation pipelines
+  credit:
+    - title: Marvin Rig
+    - url: http://aigamedev.com/
 
 - id: decisions
   title: "Real-time Decision Systems"
@@ -27,13 +30,18 @@
     - monte-carlo tree search
     - deep neural networks
     - tactics and strategy
-  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+  credit:
+    - title: The AI Sandbox
+    - url: http://aisandbox.com/
 
 - id: simulations
-  title: "Training Simulations"
+  title: "Training & Simulations"
   content: >
     This track focuses on AI in serious games, such as simulations for training.
   thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+  credit:
+    - title: Banished
+    - url: http://www.banishedgame.com/
 
 - id: behavior
   title: "Agent Behavior"
@@ -46,7 +54,9 @@
   keywords:
     - behavior trees
     - utility systems
-  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+  credit:
+    - title: The Sims 4
+    - url: http://sims.ea.com/
 
 - id: procedural
   title: "Procedural Content Generation"
@@ -61,15 +71,25 @@
   keywords:
     - modern content pipelines
     - procedural algorithms
-  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+  credit:
+    - title: "Sir, You're Being Hunted"
+    - url: http://sirbeinghunted.com/
 
 - id: alternate
   title: "Virtual & Augmented Reality"
   content: >
-    This track focuses on AI for emerging technology such as augmented and virtual
-    reality.
+    Recent devices for both augmented and virtual reality provide a variety of challenges
+    that can be resolved with artificial techniques.  This includes computer vision
+    algorithm, object identification, gesture recognition and motion tracking &mdash; among
+    many others.  This track focuses on AI for emerging technology such as augmented and
+    virtual reality.
   keywords:
-  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+    - computer vision
+    - object identification
+    - motion tracking
+  credit:
+    - title: Project Trains
+    - url: http://project-trains.tumblr.com/
 
 - id: ambient
   title: "Crowds & Ambient Life"
@@ -85,7 +105,9 @@
     - obstacle avoidance
     - smart objects
     - virtual effects
-  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+  credit:
+    - title: Golaem Crowd
+    - url: http://golaem.com/
 
 - id: analytics
   title: "Analytics & Data-Mining"
@@ -102,7 +124,9 @@
     - deep neural networks
     - pattern recognition
     - real-time profiling
-  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+  credit:
+    - title: Dmitriy Noznin
+    - url: 
 
 - id: systems
   title: "Systemic Design"
@@ -119,4 +143,6 @@
     - emergent behavior
     - complex systems
     - design methodologies
-  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+  credit:
+    - title: Far Cry 4
+    - url: http://ubisoft.com/farcry/
