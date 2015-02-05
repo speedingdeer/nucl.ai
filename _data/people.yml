@@ -1,17 +1,4 @@
-- name: Alex J. Champandard
-  role: org
-  title: "Co-Founder & Co-Ordinator"
-  twitter: alexjc
 
-- name: Petra Champandard-Pail
-  role: org
-  title: "Director & Co-Founder"
-
-- name: Filip Wisniewski
-  role: org
-  title: "Developer"
-  twitter: speedingdeer
-  
 - name: Clodéric Mars
   role: track
   title: "Co-Organizer & Track Chair"
@@ -35,4 +22,18 @@
 - name: Mika Vehkala
   role: track
   title: "Co-Organizer & Track Chair"
+  
+- name: Alex J. Champandard
+  role: org
+  title: "Co-Founder & Co-Ordinator"
+  twitter: alexjc
+
+- name: Petra Champandard-Pail
+  role: org
+  title: "Director & Co-Founder"
+
+- name: Filip Wisniewski
+  role: org
+  title: "Developer"
+  twitter: speedingdeer
   
