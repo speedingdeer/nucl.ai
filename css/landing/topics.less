@@ -37,16 +37,14 @@ section.topics {
                     box-sizing: border-box;
                     border: solid @THUMBNAIL_BORDER_SIZE;
                     border-color: lighten(@GREY, 5%);
-                    -webkit-filter: grayscale(100%);
-                    filter: grayscale(100%);
+                    .filter(grayscale(100%));
                     // transition: 0.2s;
                     &:hover, &.selected {
                         margin: (100% - @THUMBNAIL_SIZE_LARGE) / 2;
                         .circular(@THUMBNAIL_SIZE_LARGE, 100%);
                         border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
                         border-color: lighten(@BLUE, 25%);
-                        -webkit-filter: none;
-                        filter: none;
+                        .filter(none);
                     }
                     &.selected {
                         border-color: @ORANGE;
