@@ -21,10 +21,14 @@
 - name: Tommy Thompson
   role: track
   title: "Co-Organizer & Track Chair"
+  bio >
+    Tommy Thompson is a lecturer in computer science at the University of Derby, UK.  He is an AI researcher focussed on machine learning applications in the areas of non-player character behaviour, procedural content generation and relevant benchmarking of AI through games.  In addition, he is the programme leader for the BSc (Hons) in Computer Games Programming and working on side-projects with his team at Table Flip Games.
 
 - name: Mika Vehkala
   role: track
   title: "Co-Organizer & Track Chair"
+  bio >
+    Mika has been working in the industry since late 1999 -- including IO Interactive as Senior AI Programmer on the Hitman Absolution and Killzone Shadow Fall for Guerrilla Games. He has specialized in both game AI and animation technology for games.
 
 - name: Alex J. Champandard
   role: org
@@ -34,9 +38,10 @@
 - name: Petra Champandard-Pail
   role: org
   title: "Director & Co-Founder"
+  bio >
+    Petra has a background in business management, and worked as an International Area Manager for a large multi-million dollar corporation. She eventually got bored of that and joined Alex as the co-founder of AiGameDev.com. Petra is the creative force in the team, and takes care of business!
 
 - name: Filip Wisniewski
   role: org
   title: "Lead Developer"
   twitter: speedingdeer
-
