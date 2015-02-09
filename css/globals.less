@@ -62,6 +62,36 @@ h2 {
     -webkit-filter: @filter;
     filter: @filter;
 }
+
+/** 
+/* social media 
+*/
+ a.social {
+    width: 60px; 
+    height: 60px; 
+    display: inline-block; 
+    transform: scale(0.5);
+    margin: -15px; //because of the transform
+    &.twitter {
+        background-position: 120px 0px;
+        &:hover {
+            background-position: 120px 60px;
+        }
+    }
+    &.google {
+        &:hover {
+            background-position: 0px 60px;
+        }
+    }
+    &.facebook {
+        background-position: 60px 0px;
+        &:hover {
+            background-position: 60px 60px;
+        }
+    }
+}
+
+
 // forms
 // @TODO: use better semantic-ui
 

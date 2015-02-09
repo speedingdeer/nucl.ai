@@ -30,28 +30,8 @@ footer {
             padding: 10px 0;
             // This must be removed once links become avaialble
             padding-top: 30px;
-            a {
-                width: 60px; 
-                height: 60px; 
-                display: inline-block; 
-                transform: scale(0.5);
-                &.twitter {
-                    background-position: 120px 0px;
-                    &:hover {
-                        background-position: 120px 60px;
-                    }
-                }
-                &.google {
-                    &:hover {
-                        background-position: 0px 60px;
-                    }
-                }
-                &.facebook {
-                    background-position: 60px 0px;
-                    &:hover {
-                        background-position: 60px 60px;
-                    }
-                }
+            a.social {
+                margin: -5px; //for scalling originally is -15, here leave 10px margin which means -5px
             }
         }
 

@@ -29,8 +29,17 @@
                             <item class="description" name="{{p.name}}">
                         {% endif %}
                             <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ p.name }}</h2>
-                            <p>
+                            <p class="work-title">
                                 {{ p.title }}
+                            </p>
+
+                            <p class="links">
+                                {% if p.twitter %}
+                                <a class="social twitter" href="http://twitter.com/{{p.twitter}}"></a>
+                                {% endif %}
+                            </div>
+                            <p>
+                                {{ p.bio }}
                             </p>
                         </item>
                     {% endfor %}

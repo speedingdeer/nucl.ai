@@ -13,4 +13,4 @@ section.topics .pen { background-image: url(" {{ '/img/icons/pen.png' | prepend:
 /* icons */
 icon.megaphone {  background-image: url(" {{ '/img/icons/megaphone.png'| prepend: site.baseurl }} ");}
 
-footer a.social { background-image: url(" {{ '/img/icons/social.png'| prepend: site.baseurl }} "); } 
+a.social { background-image: url(" {{ '/img/icons/social.png'| prepend: site.baseurl }} "); } 
