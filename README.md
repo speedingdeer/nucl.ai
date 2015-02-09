@@ -1,8 +1,11 @@
 # nucl.ai
 
-Set up development enviroment
+Once [node/npm are installed](http://nodejs.org), set up development enviroment
 ```
 npm install # for grunt and related
+npm install -g grunt-cli # (as admin) for the grunt command line tool
+npm install -g bower # (as admin) for the bower command line tool
+npm install -g bundle # (as admin) for the bundle command line tool
 bower install # for bower components (lib/)
 bundle install # to test against to gh-pages gem (includes jekyll)
 ```
