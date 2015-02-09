@@ -5,7 +5,7 @@ Once [node/npm](http://nodejs.org) and [ruby](https://www.ruby-lang.org/en/downl
 npm install # for grunt and related
 npm install -g grunt-cli # (as admin) for the grunt command line tool
 npm install -g bower # (as admin) for the bower command line tool
-gem install bundle # (as admin) for the bundle command line tool
+gem install bundler # (as admin) for the bundler command line tool
 bower install # for bower components (lib/)
 bundle install # to test against to gh-pages gem (includes jekyll)
 ```
