@@ -14,14 +14,16 @@ $ ->
 
   $(".navigation a").each ->
     link = $(this)
+    anchor = $(link.attr("href"))
+
+    ##  change sections ids to remove jump effect and maintain load with section (when open from link or different page)
+    if anchor.length > 0 # if link can be found
+      anchor.attr("id", anchor.attr("id") + "-")
+
     link.click ->
       linkHref = link.attr("href")
       if linkHref.substring(0,1) == "/" # absolute
         return true;
-
-      anchor = $(link.attr("href"))
-      if anchor.length > 0 # if link can be found
-        anchor.attr("id", anchor.attr("id") + "-")
 
       scroll(link)
       return true;
@@ -35,6 +37,7 @@ $ ->
       if $(window).scrollTop() + 60  >= section.offset().top and $(window).scrollTop() + 60 < section.offset().top + section.height()
         $(".navigation item.selected").removeClass("selected")
         link.parent().addClass("selected")
+        window.location.hash = link.attr("href").split("#")[1]
         return false
 
   $(window).scroll ->
