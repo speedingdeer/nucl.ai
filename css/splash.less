@@ -5,10 +5,11 @@
 }
 
 section.splash-screen {
-    min-height: calc(100vh * 2 / 3);
+    @two_third: 100vh * 2 / 3;
+    min-height: calc(~"@{two_third} - @{NAVIGATION_HEIGHT}");
     //firefox table doesn't know min-height
     .table {
-         height: calc(100vh * 2 / 3);
+         height: calc(~"@{two_third} - @{NAVIGATION_HEIGHT}");
     } 
     background-color: @AUDIENCE_COLOR;
     splash {
@@ -64,6 +65,10 @@ section.splash-screen {
 /* Tweaks for splash screen imported into page layout */
 
 .page section.splash-screen {
-        min-height: calc(100vh / 4);
-        logo, titles { display: none; }
+    @one_third: 100vh * 2 / 3;
+    min-height: calc(~"@{one_third} - @{NAVIGATION_HEIGHT}");
+    //firefox table doesn't know min-height
+    .table {
+         height: calc(~"@{one_third} - @{NAVIGATION_HEIGHT}");
+    } 
 }

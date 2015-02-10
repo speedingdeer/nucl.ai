@@ -1,54 +1,25 @@
+{% if page.layout != "landing" %}
+    {% capture linkPrefix %}/{% endcapture %}
+{% else %}
+{% endif %}
+
 <section class="navigation">
     <div class="layer-color">
         <grid>
             <content>
-
-                <item class="logo">
-                    <a href="/" id="nav-logo" class="logo"> LOGO 
-                    <logo></logo>
-                    </a>
+                <item>
+                    <a href="#top" id="nav-logo" class="logo"></a>
+                    <a href="#top" id="nav-logo" class="logo orange"></a>
                 </item>
-
-                {% if page.name == "about.html" %}
-                    <item class="selected">
-                {% else %}
-                    <item>
-                {% endif %}
-                    <a href="/about"> About </a>
+                <item>
+                    <a name="section.topics" href="{{linkPrefix}}#topics"> Conference & Workshop Topics </a>
                 </item>
-
-                {% if page.name == "tickets.html" %}
-                    <item class="selected">
-                {% else %}
-                    <item>
-                {% endif %}
-                    <a href="#tickets"> Tickets </a>
+                <item>
+                    <a name="section.call-for-presentations" href="{{linkPrefix}}#call"> Call for Presentations </a>
                 </item>
-                
-                {% if page.name == "people.html" %}
-                    <item class="selected">
-                {% else %}
-                    <item>
-                {% endif %}
-                    <a href="/people" > People </a>
+                <item>
+                    <a name="section.people" href="{{linkPrefix}}#people"> Speakers & Organizers </a>
                 </item>
-                
-                {% if page.name == "call-for-papers.html" %}
-                    <item class="selected">
-                {% else %}
-                    <item>
-                {% endif %}
-                    <a href="/call-for-papers"> Call For Papers </a>
-                </item>
-        
-                {% if page.name == "tickets.html" %}
-                    <item  class="selected">
-                {% else %}
-                    <item>
-                {% endif %}
-                    <a href="#news"> News </a>
-                </item>
-
             </content>
         </grid>
     </div>
