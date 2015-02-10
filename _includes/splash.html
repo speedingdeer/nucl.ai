@@ -1,7 +1,7 @@
 {% comment %}
  keep wrapper to have image visiable untill gif is loaded
 {% endcomment %}
-<section class="splash-screen" id="top">
+<section class="splash-screen" id="about">
     <div class="splash-screen-wrap">
         <splash>
             <div class="table">
@@ -19,6 +19,9 @@
                     </content>
                 </div>
             </div>
+            {% comment %} Prevent navigtion from overlaping {% endcomment %}
+            <navigation-fantom></navigation-fantom>
         </splash>
     </div>
+    {% include navigation.html %}
 </section>

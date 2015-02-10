@@ -1,16 +1,21 @@
-.splash-screen-wrap {
-    min-height: inherit;
-    background: center;
-    background-size: cover;
-}
-
 section.splash-screen {
     @two_third: 100vh * 2 / 3;
-    min-height: calc(~"@{two_third} - @{NAVIGATION_HEIGHT}");
+    position: relative;
+    min-height: calc(@two_third);
+    .splash-screen-wrap {
+        min-height: calc(~"@{two_third} - @{NAVIGATION_HEIGHT}");
+        background: center;
+        background-size: cover;
+    }
     //firefox table doesn't know min-height
     .table {
          height: calc(~"@{two_third} - @{NAVIGATION_HEIGHT}");
-    } 
+    }
+    navigation-fantom {
+        display: block;
+        height: @NAVIGATION_HEIGHT;
+        width: 100%;
+    }
     background-color: @AUDIENCE_COLOR;
     splash {
         display: block; //for this who doesn't know flex

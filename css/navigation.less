@@ -1,9 +1,21 @@
 @LOGO_NAV_MARGIN: 5px;
-@MENU_TRANSITION: 0.7s;
+@MENU_TRANSITION: 0.6s;
 sections {
     section.navigation {
         min-height: @NAVIGATION_HEIGHT;
+        height: @NAVIGATION_HEIGHT;
         background-color: @BLUE;
+        z-index: 3;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        &.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            //select only if sticky
+            item.selected.nav-logo { background-color: @ORANGE; }
+        }
         div.layer-color {
             background-color: fade(@DARK_GREY, 70%);
         }
@@ -40,6 +52,8 @@ sections {
                         color: @WHITE;
                     }
                     &.selected {
+                        //select only if sticky
+                        &.nav-logo { background-color: initial; }
                         background-color: @ORANGE;
                         &:hover {
                             color: initial;
