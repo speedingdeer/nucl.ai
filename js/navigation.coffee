@@ -34,11 +34,10 @@ $ ->
       section = $(link.attr("name"))
       # little exception if link leads to the top, section isn't splash screen - it's about
       if link.attr("name") == "section.splash-screen" then section = $("section.about")
-      if $(window).scrollTop() + 60  >= section.offset().top and $(window).scrollTop() + 60 < section.offset().top + section.height()
+      if $(window).scrollTop() + navigation.height()  >= -1 + section.offset().top and $(window).scrollTop() + navigation.height() < section.offset().top + section.height()
         $(".navigation item.selected").removeClass("selected")
         link.parent().addClass("selected")
         window.location.hash = link.attr("href").split("#")[1]
-        return false
 
   $(window).scroll ->
     if $(this).scrollTop() > splash.height() - navigation.height()
