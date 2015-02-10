@@ -2,4 +2,4 @@
 ---
 
 $ ->
-  thumbnails = new Thumbnails "people"
+  thumbnails = new Thumbnails "section-people"

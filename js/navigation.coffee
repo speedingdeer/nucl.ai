@@ -10,13 +10,12 @@ $ ->
   links.each ->
     @.jQlink = $(@)
     hash = @.jQlink.attr("href").split("#")[1]
-    @.jQsection = $("#" + hash)
     @.jQscrollTo = $("#" + hash)
-    if hash == "about" then @.jQsection = $("section.about")
+    @.jQsection = $("section." + hash)
 
   scroll = (link) ->
     $('html, body').animate({
-        scrollTop: link.jQscrollTo.offset().top + 1 - navigation.height() # 1 is because offset doesn't have 100% accuracy
+        scrollTop: link.jQscrollTo.offset().top
     }, config.header.scrollSpeed);
 
   links.each ->
