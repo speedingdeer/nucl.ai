@@ -43,6 +43,12 @@ h2 {
     transform: rotate(@angle);
 }
 
+.transform(@trans) {
+    -ms-transform: @trans; /* IE 9 */
+    -webkit-transform: @trans; /* Chrome, Safari, Opera */
+    transform: @trans;
+}
+
 .columns(@columns, @gap) {
     -webkit-column-count: @columns; /* Chrome, Safari, Opera */
     -moz-column-count: @columns; /* Firefox */
@@ -70,7 +76,7 @@ h2 {
     width: 60px; 
     height: 60px; 
     display: inline-block; 
-    transform: scale(0.5);
+    .transform(scale(0.5));
     margin: -15px; //because of the transform
     &.twitter {
         background-position: 120px 0px;
