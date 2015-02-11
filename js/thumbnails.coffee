@@ -64,6 +64,11 @@ class Thumbnails
       wrap = $(this)
       wrap.height(wrap.width())
 
+    fullSize = @wraps.first().width()
+    @thumbnails.each ->
+      @.jQthumbnail.css( {"border-width": fullSize * config.thumbnails.borderSize } )
+
+
   clearLine: ->
     @svg.find("path").remove()
 
