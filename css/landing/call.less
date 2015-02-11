@@ -19,20 +19,23 @@
             color: @LIGHT_BLUE;
         }
 
-        icon.megaphone {
-            background-size: initial;
-            background-position: initial;
-            width: 105px;
-            height: 100px;
-            margin: 30px 0 30px 60px;
-            transition: 0.5s;
-            transition-property: transform;
-            float: right;
 
+        div.megaphone-paragraph-wrap {
+            icon.megaphone {
+                background-size: initial;
+                background-position: initial;
+                width: 105px;
+                height: 100px;
+                margin: 30px 0 30px 60px;
+                transition: 0.5s;
+                transition-property: transform;
+                float: right;
+            }
             &:hover { 
-                cursor: pointer; 
-                .rotate(+15deg);
-                background-position-y: -100px;
+                icon.megaphone {
+                    .rotate(+15deg);
+                    background-position-y: -100px;
+                }
             }
         }
     }
