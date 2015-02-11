@@ -28,7 +28,6 @@ class Thumbnails
       @.jQthumbnail = $(@)
       @.jQdescription = $(".description[name='" + $(@).attr('name') + "']")
       @.jQtitle = $("item.thumbnail .thumbnail-title[name='" + $(@).attr('name') + "']")
-      
       ## change title color on thumbnail hover
       t = @
       t.jQthumbnail.hover () ->
@@ -38,22 +37,47 @@ class Thumbnails
           t.jQtitle.removeClass("hover")
 
     @selected = @thumbnails.filter(".selected")
+    if @selected.length == 0 then @selected = null
+
+
+    fadeInOut = (t) ->
+      t.jQdescription.toggleClass("fadeInLeft")
+      t.jQdescription.toggleClass("fadeOutRight")
+
+    selectThumbnail = (t) ->
+      t.jQthumbnail.addClass("selected")
+      t.jQdescription.addClass("selected")
+      t.jQtitle.addClass("selected")
+
+    deselectThumbnail = (t) ->
+      t.jQthumbnail.removeClass("selected")
+      t.jQdescription.removeClass("selected")
+      t.jQtitle.removeClass("selected")
+
+
     @thumbnails.each ->
       t = @ 
       t.jQthumbnail.click ->
-        t.jQthumbnail.toggleClass("selected")
-        t.jQdescription.toggleClass("selected")
-        t.jQtitle.toggleClass("selected")
-        if t != that.selected
-          if that.selected.length != 0
-            that.selected.jQthumbnail.toggleClass("selected")
-            that.selected.jQdescription.toggleClass("selected")
-            that.selected.jQtitle.toggleClass("selected")
-          that.selected = t
+        if that.selected
+          # there was something selected
+          if t == that.selected
+            # just deselect
+            deselectThumbnail(t)
+            that.selected = null
+            that.clearLine()
+          else
+            # deselect old one first then select new one
+            that.clearLine()
+            deselectThumbnail(that.selected)
+            selectThumbnail(t)
+            that.selected = t
+            that.drawLine()
         else 
-          that.selected = []
-        that.clearLine()
-        that.drawLine()
+          # just select
+          selectThumbnail(t)
+          that.selected = t
+          that.drawLine()
+
 
      @setThumbnailSize()
 
