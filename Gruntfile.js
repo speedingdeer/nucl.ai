@@ -30,6 +30,22 @@ module.exports = function (grunt) {
       }
     },
 
+    "bower-install-simple": {
+      options: {
+        color: true,
+          directory: "lib"
+        },
+        "prod": {
+          options: {
+            production: true
+          }
+        },
+        "dev": {
+          options: {
+            production: false
+          }
+        }
+    },
     sync: {
       lib: {
         files: [
@@ -126,6 +142,7 @@ module.exports = function (grunt) {
   */
   grunt.registerTask('serve', function () {
     grunt.task.run([
+      'bower-install:dev',
       'concurrent:server',
       'connect:livereload',
       'watch'
@@ -134,10 +151,12 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', function () {
     grunt.task.run([
+      'bower-install:prod',
       'sync:lib',
       'less:compile',
     ]);
   });
 
+  grunt.registerTask("bower-install", [ "bower-install-simple" ]);
 
 }
