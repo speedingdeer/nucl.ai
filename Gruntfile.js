@@ -71,6 +71,16 @@ module.exports = function (grunt) {
           }, // includes files in path and its subdirs
         ],
         verbose: true,
+      },
+      css: {
+        files: [
+          { src: [
+              'css/app.css',
+            ],
+            dest: ".jekyll"
+          }
+        ],
+        verbose: true,
       }
     },
 
@@ -87,11 +97,14 @@ module.exports = function (grunt) {
         files: [
           'css/**/*.less'
         ],
-        tasks: ['less:compile']
+        tasks: [
+          'less:compile',
+          'sync:css'
+        ]
       },
       jekyll: {
         files: [
-          '**/*.{html,yml,md,mkd,markdown,coffee,css,png,jpg,jpeg,ico}'
+          '**/*.{html,yml,md,mkd,markdown,coffee,png,jpg,jpeg,ico}'
         ],
         tasks: ['jekyll:server']
       },
@@ -100,7 +113,8 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '.jekyll/**/*.html'
+          '.jekyll/**/*.html',
+          '.jekyll/css/*.css'
         ]
       }
     },
