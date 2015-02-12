@@ -89,7 +89,6 @@ class Thumbnails
           if that.selected
             # there was something selected
             if t == that.selected
-              console.log("case1")
               # just deselect
               deselectThumbnail(t)
               that.selected = null
@@ -100,7 +99,6 @@ class Thumbnails
                   # if it's not back selected
                   t.jQdescription.removeClass("selected")
             else
-              console.log("case2")
               # deselect old one first then select new one
               that.clearLine()
               deselectThumbnail(that.selected)
