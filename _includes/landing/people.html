@@ -25,9 +25,9 @@
                         {% assign descIndex = topicsIndex | minus:4 | plus:forloop.index %}
                         {% assign p = site.data.people[descIndex] %}
                         {% if lastRow %}
-                            <item class="description last-row" name="{{p.name}}">
+                            <item class="description last-row animated" name="{{p.name}}">
                         {% else %}
-                            <item class="description" name="{{p.name}}">
+                            <item class="description animated" name="{{p.name}}">
                         {% endif %}
                             <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ p.name }}</h2>
                             <p class="work-title">
