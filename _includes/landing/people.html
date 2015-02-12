@@ -39,9 +39,16 @@
                                 <a class="social twitter" href="http://twitter.com/{{p.twitter}}" target="_blank"></a>
                                 {% endif %}
                             </div>
-                            <p class="bio">
-                                {{ p.bio }}
-                            </p>
+                            {% if p.bio %}
+                                {% for paragraph in p.bio %}
+                                <p class="bio">
+                                    {{ paragraph }}
+                                </p>
+                                {% endfor %}
+                            {% else %} 
+                                {% comment%} put at least one even empty bio to not breake layout {% endcomment%}
+                                <p class="bio"></p>
+                            {% endif %}
                         </item>
                     {% endfor %}
                 {% endif %}
