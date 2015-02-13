@@ -25,6 +25,9 @@ section.splash-screen {
         width: 100%;
         content {
             padding: 40px 0;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                padding: 20px 0;
+            }
             display: inline-block;
             logo-wrap {
                 display: block;
@@ -40,6 +43,9 @@ section.splash-screen {
                     background-position: center;
                     width: 100%;
                     height: 200px;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        height: 80px;
+                    }
                     opacity: 0.65;
                 }
             }
@@ -49,18 +55,26 @@ section.splash-screen {
                 transition: 1.5s;
                 display: block;
                 h1 {
-                    font-size: 85pt;
+                    font-size: 7em;
                     padding: 15px 0;
                     margin: 0;
                     text-shadow: 0px 0px 4px #808080;
                     .ios & { text-shadow: none; } // ios struggles with our fonts
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        font-size: 3em;
+                        padding: 10px 0;
+                    }
                 }
                 h2 {
                     margin: 0;
-                    font-size: 14pt;
-                    padding-bottom: 15px;
+                    font-size: 1.2em;
+                    padding: 8px 0;
                     font-weight: normal;
                     opacity: 0.75;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        padding: 5px 0;
+                        font-size: 0.4em
+                    }
                 }
             }
         }
