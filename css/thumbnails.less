@@ -10,11 +10,6 @@
 .thumbnails-grid {
     position: relative;
     z-index: 1;
-
-    h2 {
-        margin-top: 20px;
-    }
-
     content {
         item.thumbnail {
             overflow: hidden;
@@ -54,9 +49,12 @@
             &.clear {
                 clear: both; //left starts alwyas from 'left'...
             }
-            p.thumbnail-title {
-                font-size: 24px;
+            .thumbnail-title {
                 font-weight: bold;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    font-weight: normal;
+                    font-size: 0.85em;
+                }
                 &.hover {
                     /* @TODO: set up color */
                     color: lighten(@BLUE, 25%);
@@ -76,11 +74,15 @@
             .animation-duration(0.5s);
             display: none;
             text-align: justify;
-
-            &:not(.last-row) { padding-bottom: 75px; }
+            font-size: 1.15em;
+            &:not(.last-row) { padding-bottom: 2.8em; 
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                   padding-bottom: 1em;
+                }
+            }
             &.selected { display: block; }
 
-            font-size: 19px;
+            font-size: 1.1em;
             color: @LIGHT_GREY;
 
             h2 {
@@ -103,9 +105,11 @@
             }
 
             h3 {
-                font-size: 24px;
                 margin-bottom: 0;
                 color: @GREY;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    font-size: 0.8em;
+                }
             }
         }
     }
