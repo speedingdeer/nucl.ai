@@ -6,7 +6,7 @@ root = exports ? this # global
 
 class Thumbnails
 
-  constructor: (sectionId, animated) ->
+  constructor: (sectionId, @animated) ->
     that = @
     @section  = $("#" + sectionId)
     if @section.length != 1 
@@ -38,120 +38,127 @@ class Thumbnails
 
     @selected = @thumbnails.filter(".selected")
     if @selected.length == 0 then @selected = null
+    animated = @animated
+    if not @animated then @thumbnailsNotAnimated() 
+    if @animated then @thumbnailsAnimated()
 
-    fadeOut =(t) ->
-      t.jQdescription.removeClass("fadeInLeft")
-      t.jQdescription.addClass("fadeOutRight")
+    @setThumbnailSize()
 
-    fadeIn = (t) ->
-      t.jQdescription.addClass("fadeInLeft")
-      t.jQdescription.removeClass("fadeOutRight")
+  ## selections / animation
 
-    selectThumbnail = (t) ->
-      t.jQthumbnail.addClass("selected")
-      t.jQtitle.addClass("selected")
-      ## select description with delay 
-      if not animated then t.jQdescription.addClass("selected")
+  fadeOut: (t) ->
+    t.jQdescription.removeClass("fadeInLeft")
+    t.jQdescription.addClass("fadeOutRight")
 
-    deselectThumbnail = (t) ->
-      t.jQthumbnail.removeClass("selected")
-      t.jQtitle.removeClass("selected")
-      ## deselecy description with delay
-      if not animated then t.jQdescription.removeClass("selected")
+  fadeIn: (t) ->
+    t.jQdescription.addClass("fadeInLeft")
+    t.jQdescription.removeClass("fadeOutRight")
 
-    if not animated 
-      @thumbnails.each ->
-        t = @ 
-        t.jQthumbnail.click ->
-          if that.selected
-            # there was something selected
-            if t == that.selected
-              # just deselect
-              deselectThumbnail(t)
-              that.selected = null
-              that.clearLine()
+  selectThumbnail: (t) ->
+    t.jQthumbnail.addClass("selected")
+    t.jQtitle.addClass("selected")
+    ## select description with delay 
+    if not @animated then t.jQdescription.addClass("selected")
+
+  deselectThumbnail: (t) ->
+    t.jQthumbnail.removeClass("selected")
+    t.jQtitle.removeClass("selected")
+    ## deselecy description with delay
+    if not @animated then t.jQdescription.removeClass("selected")
+
+  thumbnailsAnimated: ->
+    that = @
+    @thumbnails.each ->
+      t = @ 
+      t.jQthumbnail.click ->
+        if that.selected
+          # there was something selected
+          if t == that.selected
+            # just deselect
+            that.deselectThumbnail(t)
+            that.selected = null
+            that.clearLine()
+            that.fadeOut(t)
+            t.jQdescription.one animate.onAnimatedEnd, ->
+              if that.selected != t
+                # if it's not back selected
+                t.jQdescription.removeClass("selected")
+          else
+            # deselect old one first then select new one
+            that.clearLine()
+            that.deselectThumbnail(that.selected)
+            that.selectThumbnail(t)
+            wasSelected = that.selected
+            that.selected = t
+            if wasSelected.jQdescription.hasClass("fadeInLeft")
+              ##can animate
+              that.fadeOut(wasSelected)
+              wasSelected.jQdescription.one animate.onAnimatedEnd, ->
+                if that.selected != wasSelected
+                  # isn't newly selected
+                  wasSelected.jQdescription.removeClass("selected")
+                  if that.selected and that.selected.jQdescription.hasClass("fadeOutRight")
+                    # still selected but description not slided in yet
+                    wasSelected = that.selected
+                    that.selected.jQdescription.addClass("selected")
+                    that.fadeIn(that.selected)
+                    wasSelected.jQdescription.one animate.onAnimatedEnd, ->
+                      if that.selected == wasSelected and that.selected and that.selected.jQdescription.hasClass("fadeInLeft")
+                        #all animations ended, draw line if it still selected
+                        that.drawLine()
             else
-              # deselect old one first then select new one
-              that.clearLine()
-              deselectThumbnail(that.selected)
-              selectThumbnail(t)
+              t.jQdescription.addClass("selected")
+              that.fadeIn(t)
               that.selected = t
-              that.drawLine()
+              t.jQdescription.one animate.onAnimatedEnd, ->
+                if that.selected == t
+                  that.selected.jQdescription.addClass("selected")
+                  that.drawLine()
+        else
+          that.clearLine()
+          # just select
+          that.selectThumbnail(t)
+          that.selected = t
+
+          if that.section.find("item.description.selected").length == 0
+            t.jQdescription.addClass("selected")
+            that.fadeIn(t)
+            t.jQdescription.one animate.onAnimatedEnd, ->
+              if that.selected == t
+                  that.selected.jQdescription.addClass("selected")
+                  that.drawLine()
           else 
-            # just select
-            selectThumbnail(t)
+            that.section.find("item.description.selected").one animate.onAnimatedEnd, ->
+              if that.selected == t
+                that.fadeIn(t)
+                that.selected.jQdescription.addClass("selected")
+                that.selected.jQdescription.one  animate.onAnimatedEnd, ->
+                  that.drawLine()  
+
+  thumbnailsNotAnimated: ->
+    that = @
+    @thumbnails.each ->
+      t = @ 
+      t.jQthumbnail.click ->
+        if that.selected
+          # there was something selected
+          if t == that.selected
+            # just deselect
+            that.deselectThumbnail(t)
+            that.selected = null
+            that.clearLine()
+          else
+            # deselect old one first then select new one
+            that.clearLine()
+            that.deselectThumbnail(that.selected)
+            that.selectThumbnail(t)
             that.selected = t
             that.drawLine()
-    else
-      @thumbnails.each ->
-        t = @ 
-        t.jQthumbnail.click ->
-          if that.selected
-            # there was something selected
-            if t == that.selected
-              # just deselect
-              deselectThumbnail(t)
-              that.selected = null
-              that.clearLine()
-              fadeOut(t)
-              t.jQdescription.one animate.onAnimatedEnd, ->
-                if that.selected != t
-                  # if it's not back selected
-                  t.jQdescription.removeClass("selected")
-            else
-              # deselect old one first then select new one
-              that.clearLine()
-              deselectThumbnail(that.selected)
-              selectThumbnail(t)
-              wasSelected = that.selected
-              that.selected = t
-              if wasSelected.jQdescription.hasClass("fadeInLeft")
-                ##can animate
-                fadeOut(wasSelected)
-                wasSelected.jQdescription.one animate.onAnimatedEnd, ->
-                  if that.selected != wasSelected
-                    # isn't newly selected
-                    wasSelected.jQdescription.removeClass("selected")
-                    if that.selected and that.selected.jQdescription.hasClass("fadeOutRight")
-                      # still selected but description not slided in yet
-                      wasSelected = that.selected
-                      that.selected.jQdescription.addClass("selected")
-                      fadeIn(wasSelected)
-                      wasSelected.jQdescription.one animate.onAnimatedEnd, ->
-                        if that.selected == wasSelected and that.selected and that.selected.jQdescription.hasClass("fadeInLeft")
-                          #all animations ended, draw line if it still selected
-                          that.drawLine()
-              else
-                t.jQdescription.addClass("selected")
-                fadeIn(t)
-                that.selected = t
-                t.jQdescription.one animate.onAnimatedEnd, ->
-                  if that.selected == t
-                    that.selected.jQdescription.addClass("selected")
-                    that.drawLine()               
-          else 
-            that.clearLine()   
-            # just select
-            selectThumbnail(t)
-            that.selected = t
-
-            if that.section.find("item.description.selected").length == 0
-              t.jQdescription.addClass("selected")
-              fadeIn(t)
-              t.jQdescription.one animate.onAnimatedEnd, ->
-                if that.selected == t
-                    that.selected.jQdescription.addClass("selected")
-                    that.drawLine()
-            else 
-              that.section.find("item.description.selected").one animate.onAnimatedEnd, ->
-                if that.selected == t
-                  fadeIn(t)
-                  that.selected.jQdescription.addClass("selected")
-                  that.selected.jQdescription.one  animate.onAnimatedEnd, ->
-                    that.drawLine()   
-
-
-     @setThumbnailSize()
+        else 
+          # just select
+          that.selectThumbnail(t)
+          that.selected = t
+          that.drawLine()
 
   ## drawing svg
 
