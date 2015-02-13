@@ -20,9 +20,11 @@ class Thumbnails
     @thumbnails = @section.find("thumbnail")
 
     $(window).resize ->
-      that.clearLine()
       that.setThumbnailSize()
-      that.drawLine()
+      ## if there is any!
+      if that.svg.find("path").length > 0
+        that.clearLine()
+        that.drawLine()
 
     @thumbnails.each ->
       @.jQthumbnail = $(@)
@@ -124,7 +126,7 @@ class Thumbnails
             t.jQdescription.addClass("selected")
             that.fadeIn(t)
             t.jQdescription.one animate.onAnimatedEnd, ->
-              if that.selected == t
+              if that.selected == t and that.selected.jQdescription.hasClass("fadeInLeft")
                   that.selected.jQdescription.addClass("selected")
                   that.drawLine()
           else 
@@ -133,7 +135,8 @@ class Thumbnails
                 that.fadeIn(t)
                 that.selected.jQdescription.addClass("selected")
                 that.selected.jQdescription.one  animate.onAnimatedEnd, ->
-                  that.drawLine()  
+                  if that.selected  == t and that.selected.jQdescription.hasClass("fadeInLeft") # if still selected
+                    that.drawLine()  
 
   thumbnailsNotAnimated: ->
     that = @
@@ -176,11 +179,10 @@ class Thumbnails
     @svg.find("path").remove()
 
   drawLine: ->
-    thumbnail = @thumbnails.filter(".selected")
-    if thumbnail.length == 0 then return
+    thumbnail = @selected
 
-    title = thumbnail[0].jQdescription.find(".thumbnail-title")
-    thumbnail = thumbnail[0].jQthumbnail
+    title = thumbnail.jQdescription.find(".thumbnail-title")
+    thumbnail = thumbnail.jQthumbnail
 
     startY = thumbnail.offset().top - @section.offset().top + thumbnail.height()
     startX = thumbnail.offset().left + thumbnail.width() / 2
