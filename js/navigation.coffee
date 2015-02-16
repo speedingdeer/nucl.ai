@@ -35,7 +35,11 @@ $ ->
         if navigation.hasClass("sticky")
           linkToSelect = @.jQlink
     navigation.find("item.selected").removeClass("selected")
-    if linkToSelect then linkToSelect.parent().addClass("selected")
+    if linkToSelect
+      if linkToSelect.hasClass("logo")
+        # little exception it has wrapper for positioning icons on top of each other - select parent of parent
+        linkToSelect.parent().parent().addClass("selected")
+      linkToSelect.parent().addClass("selected")
 
   $(window).scroll ->
     if $(this).scrollTop() > splash.height() - navigation.height()
