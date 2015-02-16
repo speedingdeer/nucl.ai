@@ -4,7 +4,7 @@ footer {
     color: #c0c0c0;
 
     width: 100%;
-    min-height: 150px;
+    min-height: @FOOTER_HEIGHT;
 
     * {
         display: block;
@@ -30,8 +30,11 @@ footer {
             padding: 10px 0;
             // This must be removed once links become avaialble
             padding-top: 25px;
-            a.social {
-                margin: -5px; //for scalling originally is -15, here leave 10px margin which means -5px
+            icon-wrap {
+                display: inline-block;
+                width: 30px;
+                a.social {
+                }
             }
         }
     }
