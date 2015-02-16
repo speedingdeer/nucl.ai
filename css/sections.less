@@ -52,6 +52,12 @@ section {
 sections.page .page-content-sections section {
     min-height: initial;
     // reveresed color schema for page layout
+    &:nth-child(odd) {
+        .theme_blue();
+    }
+    &:nth-child(even) {
+        .theme_grey();
+    }
     &:only-child {
         min-height: calc(~"@{PAGE_FIRST_SECTION_HEIGHT} - @{FOOTER_HEIGHT} - @{NAVIGATION_HEIGHT}");
     }
