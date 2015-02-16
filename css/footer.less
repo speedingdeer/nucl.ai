@@ -2,10 +2,11 @@ footer {
     display: block;
     background-color: darken(@DARK_GREY, 5%);
     color: #c0c0c0;
-
     width: 100%;
-    min-height: @FOOTER_HEIGHT;
-
+    height: @FOOTER_HEIGHT;
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+        height: @FOOTER_HEIGHT_MOBILE;
+    }
     * {
         display: block;
         text-align: center;
@@ -23,6 +24,9 @@ footer {
                 &:last-child {
                     margin-right: 0;
                 }
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    line-height: 1em;
+                }
             }
         }
 
@@ -31,8 +35,18 @@ footer {
             // This must be removed once links become avaialble
             padding-top: 25px;
             display: inline-block;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                padding-top: 10px;
+            }
             a.social {
                 margin: 0 5px;
+            }
+        }
+
+        .copyrights {
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                margin: 0;
+                font-size: 0.6em;
             }
         }
     }
