@@ -15,6 +15,11 @@ sections {
         bottom: 0;
         &.sticky {
             position: fixed;
+            /**
+            * Covers chrome bug
+            * Described for example here http://stackoverflow.com/questions/17068361/chrome-positionfixed-inside-positionabsolute-breaking-with-iframe-video
+            */
+            -webkit-transform: translateZ(0);
             top: 0;
             left: 0;
             //select only if sticky
