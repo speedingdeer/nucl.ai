@@ -12,13 +12,27 @@
                     <a href="{{linkPrefix}}#about" id="nav-logo" class="logo orange"></a>
                 </item>
                 <item>
-                    <a href="{{linkPrefix}}#topics"> Conference & Workshop Topics </a>
+                    <a href="{{linkPrefix}}#topics"> Topics </a>
                 </item>
                 <item>
                     <a href="{{linkPrefix}}#call"> Call for Presentations </a>
                 </item>
                 <item>
-                    <a href="{{linkPrefix}}#people"> Speakers & Organizers </a>
+                    <a href="{{linkPrefix}}#people"> People </a>
+                </item>
+                {% if page.name == 'venue.html'%}
+                    <item class="selected">
+                {% else %}
+                    <item>
+                {% endif %}
+                    <a href="/venue"> Venue </a>
+                </item>
+                {% if page.name == 'audience.html'%}
+                    <item class="selected">
+                {% else %}
+                    <item>
+                {% endif %}
+                    <a href="/audience"> Audience </a>
                 </item>
             </content>
         </grid>

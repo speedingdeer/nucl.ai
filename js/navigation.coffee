@@ -30,6 +30,7 @@ $ ->
   selectNavPosition = () ->
     linkToSelect = null
     links.each ->
+      if @.jQsection.length == 0 then return # don't search for section which doesn't exist
       if $(window).scrollTop() + navigation.height()  >= -1 + @.jQsection.offset().top and $(window).scrollTop() + navigation.height() < @.jQsection.offset().top + @.jQsection.height()
         if navigation.hasClass("sticky")
           linkToSelect = @.jQlink
