@@ -4,6 +4,10 @@ sections {
     section.navigation {
         min-height: @NAVIGATION_HEIGHT;
         height: @NAVIGATION_HEIGHT;
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+            min-height: @NAVIGATION_HEIGHT_MOBILE;
+            height: @NAVIGATION_HEIGHT_MOBILE;
+        }
         background-color: @BLUE;
         z-index: 3;
         width: 100%;
@@ -50,6 +54,9 @@ sections {
                     a {
                         width: inherit;
                         height: @NAVIGATION_HEIGHT;
+                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                            height: @NAVIGATION_HEIGHT_MOBILE;
+                        }
                         display: table-cell;
                         vertical-align: middle;
                         text-align: center;
