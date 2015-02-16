@@ -144,7 +144,10 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'less:compile',
-        'sync:lib',
+        /**
+        * @TODO: Replace with https://github.com/stephenplusplus/grunt-wiredep
+        */
+        'sync:lib', 
         'jekyll:server'
       ],
     }
@@ -166,6 +169,9 @@ module.exports = function (grunt) {
   grunt.registerTask('build', function () {
     grunt.task.run([
       'bower-install:prod',
+      /**
+      * @TODO: Replace with https://github.com/stephenplusplus/grunt-wiredep
+      */
       'sync:lib',
       'less:compile',
     ]);
