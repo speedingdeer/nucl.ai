@@ -1,9 +1,23 @@
-<section id="testimonials">
-    <content>
+<section class="testimonials">
+    <h2 class="titlebar">
+        What past attendees said...
+    </h2>
+    <grid>
+        <content>
         {% for tesimonial in site.data.testimonials %}
-            <p>{{ tesimonial.author }}</p>
-            <p>{{ tesimonial.text }}</p>
-            <p>{{ tesimonial.year }}</p>
+            {% if forloop.index <= 2 %}
+                <div class="testimonial selected animated flipInX">
+            {% else %}
+                <div class="testimonial animated flipOutX">
+            {% endif %}
+                <p class="text">{{ tesimonial.text }}</p>
+                <p class="author">{{ tesimonial.author }}</p>
+                {% comment %}
+                    missing context to show the origin year
+                    <p>{{ tesimonial.year }}</p>
+                {% endcomment %}
+            </div>
         {% endfor %}
-    </content>
+        </content>
+    </grid>
 </section>
