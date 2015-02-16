@@ -35,7 +35,7 @@ sections {
             content {
                 width: 100%;
                 item {
-                    width: 18%;
+                    width: 15%;
                     display: block;
                     float: left;
                     text-align: center;
@@ -45,16 +45,24 @@ sections {
                         width: 10%;
                         line-height: 1px;
                     }
-                    .logo {
+                    div.icons-wrap {
                         display: inline-block;
-                        line-height: 1px;
-                        background-repeat: no-repeat;
-                        background-size: contain;
+                        position: relative;
+                        width: @NAVIGATION_HEIGHT;
+                        height: @NAVIGATION_HEIGHT;
                         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                            width: 80%;
+                            width: @NAVIGATION_HEIGHT_MOBILE;
                         }
-                        width: 50%;
-                        background-position: center 50%;
+                        .logo {
+                            display: block;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 80%;
+                            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                                width: 50%;
+                            }
+                            background-position: center 50%;
+                        }
                     }
                     a {
                         width: inherit;
@@ -89,7 +97,9 @@ sections {
                         }
                     }
                     .logo.orange { 
-                        margin-top: -(@NAVIGATION_HEIGHT) - 1px; //1px is for the minimum line height
+                        position: absolute;
+                        top: 0;
+                        left: 0;
                         opacity: 0;
                     }
                 }

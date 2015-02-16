@@ -2,4 +2,4 @@
 ---
 
 $ ->
-  thumbnails = new Thumbnails "section-topics", false
+  thumbnails = new Thumbnails "section-topics", true
