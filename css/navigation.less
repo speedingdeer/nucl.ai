@@ -7,6 +7,7 @@ sections {
         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
             min-height: @NAVIGATION_HEIGHT_MOBILE;
             height: @NAVIGATION_HEIGHT_MOBILE;
+            font-size: 0.3em;
         }
         background-color: @BLUE;
         z-index: 3;
@@ -72,8 +73,11 @@ sections {
                         text-align: center;
                         text-decoration: none;
                         color: @WHITE;
+                        span.long-title { display: inline-block; }
+                        span.short-title {display: none; }
                         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                            font-size: 0.6em
+                            span.long-title { display: none; }
+                            span.short-title {display: inline-block; }
                         }
                     }
                     &.selected {
