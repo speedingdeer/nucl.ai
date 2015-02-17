@@ -1,22 +1,18 @@
 section.testimonials {
     content {
     /**
-    * Dislike these differet sizes here.
-    * When is the last doesn't need to have a fixed size
+    * Dislike these differet fixed sizes here.
     */
     /*
     height: 15em;
-    @media screen and (max-width: (@SMARTPHONE_MAX_PORTRAIT * 1.8)) { 
-        height: 20em;
-    }
-    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-        height: 13em;
-    }
+    @media screen and (max-width: (@SMARTPHONE_MAX_PORTRAIT * 1.8)) { height: 20em; }
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 13em; }
     */
     .testimonial {
             line-height: 1.3em;
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                line-height: 0.7em;
+                font-size: 0.7em;
+                line-height: 1em;
             }
             .column(4);
             &.left {
