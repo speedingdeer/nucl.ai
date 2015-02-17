@@ -1,0 +1,19 @@
+<section class="sponsors inline">
+    <h2 class="titlebar">
+        Our sponsors
+    </h2>
+    <grid>
+        <content>
+        {% for sponsor in site.data.sponsors %}
+            {% if forloop.index <= 2 %}
+                <item class="{% cycle 'left', 'right' %} sponsor">
+            {% else %}
+                <item class="{% cycle 'left', 'right' %} sponsor">
+            {% endif %}
+                {% capture logo %}/img/sponsors/{{ sponsor.id }}.png{% endcapture %}
+                <icon style="background-image: url('{{ logo |  prepend: site.baseurl }}')"></icon>
+            </item>
+        {% endfor %}
+        </content>
+    </grid>
+</section>

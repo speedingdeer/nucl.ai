@@ -47,6 +47,29 @@ section {
         }
     }
 
+    &.inline {
+        /**
+        * For small sections like sponsors, testimonials
+        */
+        min-height: 0px;
+        content {
+            padding-top: 2em;
+            padding-bottom: 2em;
+            line-height: 1.2em;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                padding-top: 0.8em;
+                padding-bottom: 0.8em;
+            }
+        }
+    }
+
+}
+
+section.color-breaker {
+    /**
+    * One invisible section to keep 
+    */
+    display: none;
 }
 
 sections.page .page-content-sections section {

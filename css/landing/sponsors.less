@@ -1,0 +1,23 @@
+section.sponsors {
+    content {
+        overflow: hidden;
+        item {
+            .column(4);
+            &.left {
+                .push(1);
+                icon { background-position: right; }
+            }
+            &.right {
+                float: right;
+                .pull(1);
+                icon { background-position: left; }
+            }
+            icon {
+                height: 12em;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    height: 5em;
+                }
+            }
+        }
+    }
+}

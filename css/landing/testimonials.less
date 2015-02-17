@@ -1,10 +1,23 @@
 section.testimonials {
     content {
-        padding-top: 2em;
-        line-height: 1.2em;
-        min-height: 0px;
-        padding-bottom: 2em;
-        .testimonial {
+    /**
+    * Dislike these differet sizes here.
+    * When is the last doesn't need to have a fixed size
+    */
+    /*
+    height: 15em;
+    @media screen and (max-width: (@SMARTPHONE_MAX_PORTRAIT * 1.8)) { 
+        height: 20em;
+    }
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+        height: 13em;
+    }
+    */
+    .testimonial {
+            line-height: 1.3em;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                line-height: 0.7em;
+            }
             .column(4);
             &.left {
                 .push(1);
