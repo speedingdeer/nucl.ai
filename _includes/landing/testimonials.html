@@ -6,9 +6,9 @@
         <content>
         {% for tesimonial in site.data.testimonials %}
             {% if forloop.index <= 2 %}
-                <div class="testimonial selected animated flipInX">
+                <div class="{% cycle 'left', 'right' %} testimonial selected animated flipInX">
             {% else %}
-                <div class="testimonial animated flipOutX">
+                <div class="{% cycle 'left', 'right' %} testimonial animated flipOutX">
             {% endif %}
                 <p class="text">{{ tesimonial.text }}</p>
                 <p class="author">{{ tesimonial.author }}</p>
