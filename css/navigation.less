@@ -79,6 +79,13 @@ sections {
                             span.long-title { display: none; }
                             span.short-title {display: inline-block; }
                         }
+                        /**
+                        * For not implemented yet pages
+                        */
+                        &.disabled {
+                            cursor: default;
+                            color: @GREY;
+                        }
                     }
                     &.selected {
                         //select only if sticky
@@ -89,7 +96,7 @@ sections {
                         }
                     }
                     &:not(.selected):hover {
-                        a {
+                        a:not(.disabled) {
                             color: @ORANGE;
                             .transition(@MENU_TRANSITION);
                         }

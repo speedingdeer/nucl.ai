@@ -20,6 +20,7 @@ $ ->
 
   links.each ->
     @.jQlink.click ->
+      if @.jQlink.hasClass("disabled") then return false;
       linkHref = @.jQlink.attr("href")
       if linkHref.substring(0,1) == "/" # absolute
         return true;
