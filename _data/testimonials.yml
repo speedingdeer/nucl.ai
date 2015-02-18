@@ -1,4 +1,6 @@
 - author: Jonas Jentsch
+  jobtitle: Gamedesign Student
+  company: Mediadesign Hochschule, GERMANY
   year: 2014
   text: > 
     I had a great time attending the AI Conference and met so many amazing
@@ -7,12 +9,14 @@
 
 - author: Chris J. Rock
   year: 2014
+  company: Wooga, GERMANY
   text: > 
     The most informative and conference I've been too.
     Great value and great people. I'll be back.
 
 - author: Jurie Horneman
   year: 2014
+  jobtitle: Independent game designer / programmer
   text: > 
     This year's Game/AI Conference was the best one I've gone to so far.
     The programme was a great balance of high- and low-level, tech and design,
@@ -21,6 +25,8 @@
 
 - author: Xavier Dolci
   year: 2010
+  jobtitle: Lead AI Programmer
+  company: Ubisoft, FRANCE
   text: > 
     Awesome conferences, where professionals are sharing their knowledge,
     and their passion. 
@@ -28,6 +34,8 @@
 
 - author: Mieszko Zielinski
   year: 2010
+  jobtitle: AI Programmer
+  company: People Can Fly, POLAND
   text: > 
     This conference was a real deal — cutting edge presentations and experienced speakers.
     My take away list from this one is impressive!
@@ -35,6 +43,8 @@
 
 - author: Frederik De Caster
   year: 2010
+  jobtitle:  AI Programmer
+  company: Creative Assembly, ENGLAND
   text: > 
     I thought the conference was a great success.
     I learned a lot from the speakers at the conference,
@@ -42,6 +52,8 @@
 
 - author: Gabriel Robert
   year: 2010
+  jobtitle: Senior AI programmer
+  company: Ubisoft, PARIS
   text: > 
     Thank you for this amazing conference! Great speakers,
     interesting subjects and nice people.
@@ -50,6 +62,8 @@
 
 - author: John Lusty
   year: 2010
+  jobtitle: Lead Coder
+  company: Ninja Theory, CAMBRIDGE
   text: > 
     Well done for putting on such a great conference,
     the program was varied, interesting and inspiring.
@@ -57,12 +71,16 @@
 
 - author: Vicky Smalley
   year: 2010
+  jobtitle: Senior AI Programmer
+  company: Sony Computer Entertainment Europe
   text: > 
     The quality of the talks was consistently high and the event well organised.
     I thoroughly enjoyed the opportunity to discuss AI with so many people passionate about the subject and hope to return next year.
 
 - author: Neil Armstrong
   year: 2010
+  jobtitle: Lead AI Programmer
+  company: Blitz Games Studios, ENGLAND
   text: > 
     Thanks for organising a thoroughly enjoyable conference.
     It's nice to meet so many people with a common interest in AI.
@@ -70,6 +88,8 @@
 
 - author: David Partouche
   year: 2010
+  jobtitle: Senior AI Engineer
+  company: CCP Games, ENGLAND
   text: > 
     Thanks for hosting such an excellent conference.
     I found it great to meet such a broad cross section from the AI development community.
@@ -78,6 +98,8 @@
 
 - author: Remco Straatman
   year: 2010
+  jobtitle: Lead AI Programmer
+  company: Guerrilla Games, AMSTERDAM
   text: > 
     Congrats once again on pulling the conference off: it was by far the most inspiring work-related event I've ever been to.
     I hope it will become a regular event.

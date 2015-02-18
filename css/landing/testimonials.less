@@ -3,11 +3,11 @@ section.testimonials {
     /**
     * Dislike these differet fixed sizes here.
     */
-    /*
+
     height: 15em;
     @media screen and (max-width: (@SMARTPHONE_MAX_PORTRAIT * 1.8)) { height: 20em; }
     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 13em; }
-    */
+
     .testimonial {
             text-align: justify;
             line-height: 1.3em;
@@ -30,8 +30,17 @@ section.testimonials {
             .text {
 
             }
-            .author {
+            .company, .jobtitle, .author {
+                color: @LIGHT_BLUE;
                 text-align: right;
+            }
+
+            .author {
+                margin-bottom: 0.4em;
+            }
+
+            .company, .jobtitle {
+                margin: 0;
             }
         }
     }
