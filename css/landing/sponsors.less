@@ -12,10 +12,13 @@ section.sponsors {
                 .pull(1);
                 icon { background-position: left; }
             }
-            icon {
-                height: 12em;
+            a:extend(icon) {
+                height: 15em;
+                width: 15em;
+                display: inline-block;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                     height: 5em;
+                    width: 5em;
                 }
             }
         }
