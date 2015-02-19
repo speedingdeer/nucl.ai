@@ -6,7 +6,7 @@ $(window).load ->
   backgroundImage = "{{'/img/audience.gif' | prepend: site.baseurl }}"
   $("<img />").attr('src', backgroundImage).load ->
     #render gif when cached
-    $("div.splash-screen-wrap").css('background-image', 'url("' + backgroundImage + "?time=" + Date.now() + '")')
+    $("div.splash-screen-wrap").css('background-image', 'url("' + backgroundImage + '")')
 
 $ ->
   $('logo-wrap').addClass("rotated")
