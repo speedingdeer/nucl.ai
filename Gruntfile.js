@@ -30,48 +30,41 @@ module.exports = function (grunt) {
       }
     },
 
+    concat: {
+      bowerJs: {
+        dest: 'js/lib.js',
+          src: [
+            'lib/modernizr/modernizr.js',
+            'lib/jquery/jquery.js',
+            'lib/raphael/raphael.js'
+          ]
+      },
+      bowerCss: {
+        dest: 'css/lib.css',
+          src: [
+            'lib/animate.css/animate.css'
+          ]
+      },
+    },
+
     "bower-install-simple": {
       options: {
         color: true,
           directory: "lib"
         },
-        "prod": {
+        prod: {
           options: {
             production: true
           }
         },
-        "dev": {
+        dev: {
           options: {
             production: false
           }
         }
     },
+
     sync: {
-      lib: {
-        files: [
-          { src: [
-            'lib/**/*[\.-]min.js',
-            'lib/**/*.min.map', 
-             'lib/**/modernizr.js', //thx modernizr for not calling file min :) 
-             '!**/test/**', //don't include test files
-             '!**/*migrate*', //don't include migration files
-             '!**/less-*.min.js', //don't need less
-             ], 
-             dest: 'js' 
-          },
-          { src: [
-            'lib/**/*.min.css', 
-             ], 
-             dest: 'css' 
-          }, // picking up grid.less from semantic.gs
-          { src: [
-            'lib/semantic.gs/stylesheets/less/grid.less', 
-             ], 
-             dest: 'css/' 
-          }, // includes files in path and its subdirs
-        ],
-        verbose: true,
-      },
       css: {
         files: [
           { src: [
@@ -85,10 +78,12 @@ module.exports = function (grunt) {
     },
 
     clean: {
-      all: [ //clean all generated files
-       "js/lib", 
-        "css/lib",
-        "css/app.css"
+      all: [
+        //clean all generated files
+        "css/app.css",
+        "css/lib.css",
+        "js/lib.js",
+        "lib"
       ],
     },
 
@@ -144,11 +139,7 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'less:compile',
-        /**
-        * @TODO: Replace with https://github.com/stephenplusplus/grunt-wiredep
-        */
-        'sync:lib', 
-        'jekyll:server'
+        'jekyll:server',
       ],
     }
 
@@ -159,7 +150,8 @@ module.exports = function (grunt) {
   */
   grunt.registerTask('serve', function () {
     grunt.task.run([
-      'bower-install:dev',
+      'bower-install-simple:prod',
+      'concat',
       'concurrent:server',
       'connect:livereload',
       'watch'
@@ -168,15 +160,10 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', function () {
     grunt.task.run([
-      'bower-install:prod',
-      /**
-      * @TODO: Replace with https://github.com/stephenplusplus/grunt-wiredep
-      */
-      'sync:lib',
+      'bower-install-simple:prod',
+      'concat',
       'less:compile',
     ]);
   });
-
-  grunt.registerTask("bower-install", [ "bower-install-simple" ]);
 
 }
