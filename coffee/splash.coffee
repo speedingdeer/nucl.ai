@@ -1,9 +1,5 @@
----
----
-
 $(window).load ->
-  # make background gif animation to referesh each time the page is loaded
-  backgroundImage = "{{'/img/audience.gif' | prepend: site.baseurl }}"
+  backgroundImage = assets.audienceGif
   $("<img />").attr('src', backgroundImage).load ->
     #render gif when cached
     $("div.splash-screen-wrap").css('background-image', 'url("' + backgroundImage + '")')

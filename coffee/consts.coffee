@@ -1,6 +1,3 @@
----
----
-
 root = exports ? this # global
 
 root.animate = {

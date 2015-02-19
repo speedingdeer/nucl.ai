@@ -65,10 +65,20 @@ module.exports = function (grunt) {
     },
 
     sync: {
-      css: {
+      less: {
         files: [
           { src: [
               'css/app.css',
+            ],
+            dest: ".jekyll"
+          }
+        ],
+        verbose: true,
+      },
+      coffee: {
+        files: [
+          { src: [
+              'js/app.js',
             ],
             dest: ".jekyll"
           }
@@ -83,6 +93,7 @@ module.exports = function (grunt) {
         "css/app.css",
         "css/lib.css",
         "js/lib.js",
+        "js/app.js",
         "lib"
       ],
     },
@@ -94,12 +105,24 @@ module.exports = function (grunt) {
         ],
         tasks: [
           'less:compile',
-          'sync:css'
+          'sync:less'
+        ]
+      },
+      coffee: {
+        files: [
+          'coffee/**/*.coffee'
+        ],
+        tasks: [
+          'coffee:compile',
+          'sync:coffee'
         ]
       },
       jekyll: {
         files: [
-          '**/*.{html,yml,md,mkd,markdown,coffee,png,jpg,jpeg,ico}'
+          '**/*.{html,yml,md,mkd,markdown,js,css,png,jpg,jpeg,ico}',
+          'js/assets.coffee',
+          '!**/app.js',
+          '!**/app.css'
         ],
         tasks: ['jekyll:server']
       },
@@ -109,7 +132,8 @@ module.exports = function (grunt) {
         },
         files: [
           '.jekyll/**/*.html',
-          '.jekyll/css/*.css'
+          '.jekyll/css/*.css',
+          '.jekyll/js/*.js'
         ]
       }
     },
@@ -119,6 +143,14 @@ module.exports = function (grunt) {
         files: [{
           'css/app.css': 'css/app.less',
         }]
+      }
+    },
+
+    coffee: {
+      compile: {
+        files: {
+          'js/app.js': 'coffee/**/*.coffee' // concat then compile into single file
+        }
       }
     },
 
@@ -139,6 +171,7 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'less:compile',
+        'coffee:compile',
         'jekyll:server',
       ],
     }
@@ -151,7 +184,8 @@ module.exports = function (grunt) {
   grunt.registerTask('serve', function () {
     grunt.task.run([
       'bower-install-simple:prod',
-      'concat',
+      'concat:bowerJs',
+      'concat:bowerCss',
       'concurrent:server',
       'connect:livereload',
       'watch'
@@ -161,8 +195,10 @@ module.exports = function (grunt) {
   grunt.registerTask('build', function () {
     grunt.task.run([
       'bower-install-simple:prod',
-      'concat',
+      'concat:bowerJs',
+      'concat:bowerCss',
       'less:compile',
+      'coffee:compile'
     ]);
   });
 
