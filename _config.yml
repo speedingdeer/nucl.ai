@@ -11,4 +11,4 @@ github_username:  aigamedev
 
 # Build settings
 markdown: kramdown
-exclude: coffee 
+exclude: [coffee]
