@@ -116,11 +116,12 @@ sections {
                     @triangle_size: 15px;
                     &.expanded {
                         .dropdown { 
-                            display: block; 
+                            opacity: 1; 
                         }
                     }
                     .dropdown {
-                        display: none;
+                        opacity: 0;
+                        .transition(opacity .3s ease-in);
                         width: 100%;
                         position: absolute;
                         background-color: @BLUE;
@@ -133,10 +134,12 @@ sections {
                         .menu {
                             background-color: fade(@DARK_GREY, 70%);
                             border: solid 1px @ORANGE;
+                            .border-radius(4px);
                             div.table {
                                 height: initial;
                                 a {
                                     width: 100%;
+                                    padding: 0 5px;
                                 }
                             }
                         }

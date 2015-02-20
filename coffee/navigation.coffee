@@ -18,7 +18,7 @@ $ ->
         scrollTop: link.jQscrollTo.offset().top
     }, config.header.scrollSpeed);
 
-  expanded = $(".navigation a.expanded").parent()
+  expanded = $(".navigation a.expanded")
 
   links.each ->
     @.jQlink.click ->
@@ -26,15 +26,18 @@ $ ->
       if @.jQlink.hasClass("expandable")
         @.jQlink.toggleClass("expanded")
         @.jQlink.parent().toggleClass("expanded")
-        if expanded.length == 1 and expanded  != @.jQlink
+        if expanded.length == 1 and expanded[0]  != @.jQlink[0]
           expanded.toggleClass("expanded")
           expanded.parent().toggleClass("expanded")
-        expanded = @.jQlink
+        expanded = $(".navigation a.expanded")
         return false
       linkHref = @.jQlink.attr("href")
       if linkHref.substring(0,1) == "/" # absolute
         return true;
-
+      if expanded.length == 1 
+        expanded.toggleClass("expanded")
+        expanded.parent().toggleClass("expanded")
+        expanded = $(".navigation a.expanded")
       scroll(@)
       return false;
 
