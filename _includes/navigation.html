@@ -30,7 +30,7 @@
                 {% else %}
                     <item>
                 {% endif %}
-                    <a href="" class="expandable"> Program </a>
+                    <a href="" class="disabled"> Program </a>
                     <div class="dropdown">
                         <div class="menu">
                             <div class="table">
@@ -53,7 +53,7 @@
                 {% else %}
                     <item>
                 {% endif %}
-                    <a href="" class="expandable"> For Attendees </a>
+                    <a href="" class="disabled"> For Attendees </a>
                     <div class="dropdown">
                         <div class="menu">
                             <div class="table">
@@ -69,10 +69,10 @@
                     </div>
                 </item>
                 <item>
-                    <a href=""> Tickets </a>
+                    <a href="" class="disabled"> Tickets </a>
                 </item>
                 <item>
-                    <a href=""> Sponsors </a>
+                    <a href="{{linkPrefix}}#sponsors"> Sponsors </a>
                 </item>
             </content>
         </grid>
