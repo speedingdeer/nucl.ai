@@ -2,6 +2,7 @@
 
 sections {
     section.navigation {
+        overflow: visible;
         min-height: @NAVIGATION_HEIGHT;
         height: @NAVIGATION_HEIGHT;
         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
@@ -30,20 +31,18 @@ sections {
             background-color: fade(@DARK_GREY, 70%);
         }
         grid {
-            overflow: hidden;
-            marign: 0;
             padding: 0;
             content {
+                overflow: visible;
                 width: 100%;
                 item {
-                    width: 15%;
+                    width: 13%;
                     display: block;
                     float: left;
                     text-align: center;
-                    overflow: hidden;
                     position: relative;
                     &.nav-logo {
-                        width: 10%;
+                        width: 9%;
                         line-height: 1px;
                     }
                     div.icons-wrap {
@@ -86,17 +85,20 @@ sections {
                             cursor: default;
                             color: @GREY;
                         }
+                        &.expanded {
+                            color: @ORANGE;
+                        }
                     }
                     &.selected {
                         //select only if sticky
                         &.nav-logo { background-color: initial; }
                         background-color: @ORANGE;
-                        &:hover {
-                            color: initial;
+                        & a:hover {
+                            color: inherit;
                         }
                     }
-                    &:not(.selected):hover {
-                        a:not(.disabled) {
+                    &:not(.selected) a:hover {
+                        &:not(.disabled) {
                             color: @ORANGE;
                             .transition(@MENU_TRANSITION);
                         }
@@ -109,6 +111,35 @@ sections {
                         top: 0;
                         left: 0;
                         opacity: 0;
+                    }
+                    /** drop down menu */
+                    @triangle_size: 15px;
+                    &.expanded {
+                        .dropdown { 
+                            display: block; 
+                        }
+                    }
+                    .dropdown {
+                        display: none;
+                        width: 100%;
+                        position: absolute;
+                        background-color: @BLUE;
+                        margin-top: @triangle_size;
+                        .triangle {
+                            .triangle(@triangle_size);
+                            margin-top: calc(-@triangle_size);
+                            color: @ORANGE;
+                        }
+                        .menu {
+                            background-color: fade(@DARK_GREY, 70%);
+                            border: solid 1px @ORANGE;
+                            div.table {
+                                height: initial;
+                                a {
+                                    width: 100%;
+                                }
+                            }
+                        }
                     }
                 }
             }

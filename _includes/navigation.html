@@ -30,15 +30,49 @@
                 {% else %}
                     <item>
                 {% endif %}
-                    <a href="" class="disabled"> Audience </a>
+                    <a href="" class="expandable"> Program </a>
+                    <div class="dropdown">
+                        <div class="menu">
+                            <div class="table">
+                            <div class="triangle"></div>
+                            </div>
+                            <div class="table">
+                                <a href=""> Schedule </a>
+                            </div>
+                                <div class="table">
+                            <a href=""> Talks </a>
+                                </div>
+                            <div class="table">
+                                <a href=""> Events </a>
+                            </div>
+                        </div>
+                    </div>
                 </item>
                 {% if page.name == 'for-visitoris.html'%}
                     <item class="selected">
                 {% else %}
                     <item>
                 {% endif %}
-
-                    <a href="" class="disabled"> For Attendees </a>
+                    <a href="" class="expandable"> For Attendees </a>
+                    <div class="dropdown">
+                        <div class="menu">
+                            <div class="table">
+                            <div class="triangle"></div>
+                            </div>
+                            <div class="table">
+                                <a href=""> Target Audience </a>
+                            </div>
+                            <div class="table">
+                                <a href=""> Venue </a>
+                            </div>
+                        </div>
+                    </div>
+                </item>
+                <item>
+                    <a href="{{linkPrefix}}#tickets"> Tickets </a>
+                </item>
+                <item>
+                    <a href="{{linkPrefix}}#sponsors"> Sponsors </a>
                 </item>
             </content>
         </grid>

@@ -8,16 +8,29 @@ $ ->
     @.jQlink = $(@)
     hash = @.jQlink.attr("href").split("#")[1]
     @.jQscrollTo = $("#" + hash)
-    @.jQsection = $("section." + hash)
+    if !hash || hash == ""
+      @.jQsection = []
+    else 
+      @.jQsection = $("section." + hash)
 
   scroll = (link) ->
     $('html, body').animate({
         scrollTop: link.jQscrollTo.offset().top
     }, config.header.scrollSpeed);
 
+  expanded = $(".navigation a.expanded").parent()
+
   links.each ->
     @.jQlink.click ->
       if @.jQlink.hasClass("disabled") then return false;
+      if @.jQlink.hasClass("expandable")
+        @.jQlink.toggleClass("expanded")
+        @.jQlink.parent().toggleClass("expanded")
+        if expanded.length == 1 and expanded  != @.jQlink
+          expanded.toggleClass("expanded")
+          expanded.parent().toggleClass("expanded")
+        expanded = @.jQlink
+        return false
       linkHref = @.jQlink.attr("href")
       if linkHref.substring(0,1) == "/" # absolute
         return true;
