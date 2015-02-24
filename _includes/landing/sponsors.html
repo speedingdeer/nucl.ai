@@ -5,16 +5,12 @@
     </h2>
     <grid>
         <content>
-        {% for sponsor in site.data.sponsors %}
-            <item class="sponsor">
-                <div class="logo-wrap table">
-                    {% capture logo %}/img/sponsors/{{ sponsor.id }}.png{% endcapture %}
-                    <div class="logo-center centered-cell">
-                        <a style="background-image: url('{{ logo |  prepend: site.baseurl }}')" href="{{ sponsor.homepage }}" target="_blank"></a>
-                    </div>
-                </div>
-            </item>
+        {% for item in site.data.sponsors %}
+            {% include /landing/sponsor.html %}
         {% endfor %}
-        </content>
+        <div style="clear: both"></div>
+        {% for item in site.data.partners %}
+            {% include /landing/sponsor.html %}
+        {% endfor %}
     </grid>
 </section>
