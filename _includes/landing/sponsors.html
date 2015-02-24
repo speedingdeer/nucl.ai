@@ -1,14 +1,18 @@
 <section class="sponsors inline">
     <a class="anchor" id="sponsors"></a>
     <h2 class="titlebar">
-        Our sponsors
+        Our Sponsors & Partners
     </h2>
     <grid>
         <content>
         {% for sponsor in site.data.sponsors %}
-                <item class="{% cycle 'left', 'right' %} sponsor">
-                {% capture logo %}/img/sponsors/{{ sponsor.id }}.png{% endcapture %}
-                <a style="background-image: url('{{ logo |  prepend: site.baseurl }}')" href="{{ sponsor.homepage }}" target="_blank"></a>
+            <item class="sponsor">
+                <div class="logo-wrap table">
+                    {% capture logo %}/img/sponsors/{{ sponsor.id }}.png{% endcapture %}
+                    <div class="logo-center centered-cell">
+                        <a style="background-image: url('{{ logo |  prepend: site.baseurl }}')" href="{{ sponsor.homepage }}" target="_blank"></a>
+                    </div>
+                </div>
             </item>
         {% endfor %}
         </content>
