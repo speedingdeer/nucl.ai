@@ -12,6 +12,12 @@ section.sponsors {
                 height: 90%;
                 margin: auto;
                 div.logo-center {
+                    border: solid 0.23em white;
+                    box-sizing: border-box;
+                    .no-touch & {
+                        border-color: transparent;
+                        &:hover { border-color: white; }
+                    }
                     a:extend(icon) {
                         width: 100%;
                         height: 100%;
