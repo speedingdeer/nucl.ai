@@ -5,4 +5,7 @@
             <a style="background-image: url('{{ logo |  prepend: site.baseurl }}')" href="{{ item.homepage }}" target="_blank"></a>
         </div>
     </div>
+    {% if item.subtitle %}
+    <p class="subtitle"> {{item.subtitle}} </p>
+    {% endif %}
 </item>
