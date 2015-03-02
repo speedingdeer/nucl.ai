@@ -8,7 +8,7 @@ logo.orange, .logo.orange { background-image: url(" {{ '/img/logo_orange.png' | 
 
 /* splash screen background image (before gif is loaded) */
 div.splash-screen-wrap { background-image: url(" {{ '/img/audience-0.png' | prepend: site.baseurl }} ");}
-
+div.splash-screen-wrap.uni-campus { background-image: url(" {{ '/img/venue/uni-campus.jpg'| prepend: site.baseurl }} "); } 
 /* splash screen background image */
 section.topics .pen { background-image: url(" {{ '/img/icons/pen.png' | prepend: site.baseurl }} ");}
 
@@ -16,3 +16,8 @@ section.topics .pen { background-image: url(" {{ '/img/icons/pen.png' | prepend:
 icon.megaphone {  background-image: url(" {{ '/img/icons/megaphone.png'| prepend: site.baseurl }} ");}
 
 a.social { background-image: url(" {{ '/img/icons/social.png'| prepend: site.baseurl }} "); } 
+
+/* Venue page */
+.crowd-party { background-image: url(" {{ '/img/venue/crowd-party.jpg'| prepend: site.baseurl }} "); } 
+.uni-campus { background-image: url(" {{ '/img/venue/uni-campus.jpg'| prepend: site.baseurl }} "); } 
+.uni-amph { background-image: url(" {{ '/img/venue/uni-amph.jpg'| prepend: site.baseurl }} "); } 

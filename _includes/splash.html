@@ -2,7 +2,11 @@
  keep wrapper to have image visiable untill gif is loaded
 {% endcomment %}
 <section class="splash-screen" id="about">
-    <div class="splash-screen-wrap">
+    {% if page.name == 'venue.html'%}
+    <div class="splash-screen-wrap uni-campus">
+    {% else %}
+    <div class="splash-screen-wrap audience-gif">
+    {% endif %}
         <splash>
             <div class="table">
                 <div class="centered-cell">

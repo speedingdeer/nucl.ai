@@ -83,7 +83,7 @@ sections {
                         */
                         &.disabled {
                             cursor: default;
-                            color: @GREY;
+                            color: @GREY !important;
                         }
                         &.expanded {
                             color: @ORANGE;
@@ -93,9 +93,13 @@ sections {
                         //select only if sticky
                         &.nav-logo { background-color: initial; }
                         background-color: @ORANGE;
-                        & a:hover {
+                        a:hover {
                             color: inherit;
                         }
+                        a.expanded {
+                            color: inherit;
+                        }
+
                     }
                     &:not(.selected) a:hover {
                         &:not(.disabled) {

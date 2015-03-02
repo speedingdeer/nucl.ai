@@ -69,6 +69,14 @@ section.color-breaker {
     display: none;
 }
 
+section.separator {
+    background-size: cover;
+    min-height: @SEPARATOR_HEIGHT;
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+        min-height: @SEPARATOR_HEIGHT_SMARTPHONE;
+    }
+}
+
 sections.page .page-content-sections section {
     min-height: initial;
     // reveresed color schema for page layout
@@ -81,4 +89,5 @@ sections.page .page-content-sections section {
     &:only-child {
         min-height: calc(~"@{PAGE_FIRST_SECTION_HEIGHT} - @{FOOTER_HEIGHT} - @{NAVIGATION_HEIGHT}");
     }
+    &.separator:extend(section.separator) {}
 }

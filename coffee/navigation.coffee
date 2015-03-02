@@ -60,5 +60,7 @@ $ ->
       navigation.addClass("sticky")
     else
       navigation.removeClass("sticky")
+    # don't apply for single section pages
+    if $("sections.page").length > 0 then return
     selectNavPosition()
 

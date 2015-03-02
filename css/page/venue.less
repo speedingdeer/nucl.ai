@@ -1,0 +1,20 @@
+sections.page section.venue, sections.page section.getting-to-campus {
+    content {
+        item.text {
+            .column(8);
+        }
+        item.picture {
+            .column(4);
+            min-height: 13em;
+            background-size: cover;
+        }
+    }
+}
+
+#venue-map-canvas {
+    width: 100%;
+    height: @SEPARATOR_HEIGHT;
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+        height: @SEPARATOR_HEIGHT_SMARTPHONE;
+    }
+}

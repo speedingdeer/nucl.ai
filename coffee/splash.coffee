@@ -2,7 +2,8 @@ $(window).load ->
   backgroundImage = assets.audienceGif
   $("<img />").attr('src', backgroundImage).load ->
     #render gif when cached
-    $("div.splash-screen-wrap").css('background-image', 'url("' + backgroundImage + '")')
+    if $("div.splash-screen-wrap.audience-gif").length > 0
+      $("div.splash-screen-wrap").css('background-image', 'url("' + backgroundImage + '")')
 
 $ ->
   $('logo-wrap').addClass("rotated")
