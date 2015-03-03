@@ -21,3 +21,4 @@ a.social { background-image: url(" {{ '/img/icons/social.png'| prepend: site.bas
 .crowd-party { background-image: url(" {{ '/img/venue/crowd-party.jpg'| prepend: site.baseurl }} "); } 
 .uni-campus { background-image: url(" {{ '/img/venue/uni-campus.jpg'| prepend: site.baseurl }} "); } 
 .uni-amph { background-image: url(" {{ '/img/venue/uni-amph.jpg'| prepend: site.baseurl }} "); } 
+.registration { background-image: url(" {{ '/img/venue/registration.jpg'| prepend: site.baseurl }} "); } 

@@ -2,7 +2,7 @@ $ ->
   initialize = () ->
     mapCanvas = document.getElementById('venue-map-canvas')
     if mapCanvas == null then return
-    latLng = new google.maps.LatLng(48.2167238,16.3531977)
+    latLng = new google.maps.LatLng(48.217192, 16.353283)
     mapOptions = {
       scrollwheel: false,
       center: latLng,
