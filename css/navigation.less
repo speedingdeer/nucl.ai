@@ -119,6 +119,7 @@ sections {
                     }
                     /** drop down menu */
                     @triangle_size: 15px;
+                    @triangle_size_mobile: 5px;
                     &.expanded {
                         .dropdown { 
                             opacity: 1;
@@ -133,9 +134,14 @@ sections {
                         position: absolute;
                         top: -1000px;
                         margin-top: @triangle_size;
+                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-top: @triangle_size_mobile; }
                         .triangle {
                             .triangle(@triangle_size);
                             margin-top: calc(-@triangle_size);
+                            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                                .triangle(@triangle_size_mobile);
+                                margin-top: calc(-@triangle_size_mobile); 
+                            }
                             color: @ORANGE;
                         }
                         .menu {
