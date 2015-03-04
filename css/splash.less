@@ -1,5 +1,6 @@
 section.splash-screen {
     @two_third: 100vh * 2 / 3;
+    @third: 100vh / 3;
     position: relative;
     min-height: calc(@two_third);
     overflow: visible; //for drop down menu
@@ -8,15 +9,27 @@ section.splash-screen {
         background-position: center;
         background-size: cover;
     }
-    //firefox table doesn't know min-height
     .table {
-         height: calc(~"@{two_third} - @{NAVIGATION_HEIGHT}");
+        //firefox table doesn't know min-height
+        height: calc(~"@{two_third} - @{NAVIGATION_HEIGHT}");
     }
     navigation-fantom {
         display: block;
         height: @NAVIGATION_HEIGHT;
         width: 100%;
     }
+
+    /**
+    * For single page layout
+    */
+    .page & {
+        min-height: calc(~"@{third} + @{NAVIGATION_HEIGHT}");
+        .splash-screen-wrap { min-height: @third }
+        .table { height: @third } //firefox table doesn't know min-height
+        splash content titles h1 { margin-bottom: -5px; }
+        splash content logo { display: none; }
+    }
+
     background-color: @AUDIENCE_COLOR !important;
     splash {
         display: block; //for this who doesn't know flex
@@ -55,15 +68,18 @@ section.splash-screen {
             titles {
                 transition: 1.5s;
                 display: block;
+                padding: 15px 0;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        padding: 10px 0;
+                }
                 h1 {
                     font-size: 7em;
-                    padding: 15px 0;
                     margin: 0;
+                    padding: 0;
                     text-shadow: 0px 0px 4px #808080;
                     .ios & { text-shadow: none; } // ios struggles with our fonts
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                         font-size: 3em;
-                        padding: 10px 0;
                     }
                 }
                 h2 {
@@ -80,15 +96,4 @@ section.splash-screen {
             }
         }
     }
-}
-
-/* Tweaks for splash screen imported into page layout */
-
-.page section.splash-screen {
-    @one_third: 100vh * 2 / 3;
-    min-height: calc(~"@{one_third} - @{NAVIGATION_HEIGHT}");
-    //firefox table doesn't know min-height
-    .table {
-         height: calc(~"@{one_third} - @{NAVIGATION_HEIGHT}");
-    } 
 }
