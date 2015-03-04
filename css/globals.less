@@ -158,6 +158,10 @@ ul, p {
     display: block;
     margin-top: -(@NAVIGATION_HEIGHT);
     height: @NAVIGATION_HEIGHT;
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+        margin-top: -(@NAVIGATION_HEIGHT_MOBILE);
+        height: @NAVIGATION_HEIGHT_MOBILE;
+    }
 }
 
 // forms
