@@ -20,8 +20,16 @@ $ ->
 
   expanded = $(".navigation a.expanded")
 
+  $('html').click ->
+    expanded = $(".navigation a.expanded")
+    expanded.toggleClass("expanded")
+    expanded.parent().toggleClass("expanded")
+    expanded = $(".navigation a.expanded")
+
+
   links.each ->
-    @.jQlink.click ->
+    @.jQlink.click (event) ->
+      event.stopPropagation()
       if @.jQlink.hasClass("disabled") then return false;
       if @.jQlink.hasClass("expandable")
         @.jQlink.toggleClass("expanded")
