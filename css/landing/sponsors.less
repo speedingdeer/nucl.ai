@@ -29,11 +29,15 @@ section.sponsors {
             }
             p.subtitle {
                 position: absolute;
-                bottom: 2.3em;
-                width: 100%;
+                bottom: 20%;
+                width: 86%;
+                margin-left: 7%;
                 text-align: center;
                 font-weight: bold;
-                font-size: 1.15em;
+                font-size: 1.3vw; //vw scale look like zoom
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    font-size: 2vw;
+                }
             }
         }
     }
