@@ -5,8 +5,77 @@ permalink: /tickets/
 ---
 
 <section class="tickets">
+    <h2 class="titlebar">Tickets & Prices</h2>
     <grid>
         <content>
-        </content>
+        {% for ticket in site.data.tickets_price %}
+            {% if ticket.date and ticket.date != "" %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
+            <item class="ticket-row ticket-price {{row_class}}">
+                {% if ticket.name and ticket.name != "" or ticket.date and ticket.date != "" %} {% capture cell_class %} visible {% endcapture %} {% else %} {% capture cell_class %} invisible {% endcapture %} {% endif %}
+                <div class="name table {{cell_class}}">
+                    <div class="centered-cell">
+                        <p class="name">{{ ticket.name }} </p>
+                        <p class="date">{{ ticket.date }}</p>
+                    </div>
+                </div>
+                <div class="all-access table">
+                    <div class="centered-cell">
+                        <p>
+                            {% if ticket.all_access %}
+                                {% if forloop.first == false %}
+                                    &euro;
+                                {% endif %}
+                                {{ ticket.all_access }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+                <div class="conference table">
+                    <div class="centered-cell">
+                        <p>
+                            {% if forloop.first == false %}
+                                &euro;
+                            {% endif %}
+                            {{ ticket.conference }}
+                        </p>
+                    </div>
+                </div>
+            </item>
+        {% endfor %}
+        <content>
+    </grid>
+</section>
+<section class="none"></section>
+<section class="tickets">
+    <h2 class="titlebar">What's included in Your Ticket</h2>
+    <grid>
+        <content>
+        {% for ticket in site.data.conference_goods %}
+            {% if ticket.name.size > 50 %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
+            <item class="ticket-row conference-good {{row_class}}">
+                {% if ticket.name and ticket.name != "" %} {% capture cell_class %} visible {% endcapture %} {% else %} {% capture cell_class %} invisible {% endcapture %} {% endif %}
+                
+                
+                <div class="name table {{cell_class}}">
+                    <div class="centered-cell">
+                        <p class="name">{{ ticket.name }} </p>
+                        <p class="date">{{ ticket.date }}</p>
+                    </div>
+                </div>
+                <div class="all-access table">
+                    <div class="centered-cell">
+                        <p>{{ ticket.all_access }}</p>
+                    </div>
+                </div>
+                <div class="conference table">
+                    <div class="centered-cell">
+                        <p>{{ ticket.conference }}</p>
+                    </div>
+                </div>
+            </item>
+        {% endfor %}
+        <content>
     </grid>
 </section>

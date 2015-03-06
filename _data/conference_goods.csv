@@ -1,8 +1,9 @@
 name,type,all_access,conference
+,,All Access,Conference
 Access to the Conference Track,main,yes,yes
 Access to the Open Lab Track,main,yes,yes
 Access to the Wrokshop Track,main,yes,""
 "Complimentary Coffee Breaks, Drink Vouchers and Food Coupons for the Conference Party",extras,yes,yes*
-Invitation to the V.I.P. Dinner,extras,yes,""
-Invitation to the Networking Lunches,extras,yes,""
-Permanent Access to the Conference Recordings,extras,yes,""
+Invitation to the V.I.P. Dinner,extras,yes,
+Invitation to the Networking Lunches,extras,yes,
+Permanent Access to the Conference Recordings,extras,yes,

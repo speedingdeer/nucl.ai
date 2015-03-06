@@ -6,7 +6,7 @@ $ ->
   links = $(".navigation a")
   links.each ->
     @.jQlink = $(@)
-    hash = @.jQlink.attr("href").split("#")[1]
+    hash = if @.jQlink.attr("href") then @.jQlink.attr("href").split("#")[1] else ""
     @.jQscrollTo = $("#" + hash)
     if !hash || hash == ""
       @.jQsection = []
@@ -30,8 +30,7 @@ $ ->
   links.each ->
     @.jQlink.click (event) ->
       event.stopPropagation()
-      if @.jQlink.hasClass("disabled") then return false;
-      if @.jQlink.hasClass("expandable")
+      if @.jQlink.hasClass("expandable") && !(@.jQlink.hasClass("disabled"))
         @.jQlink.toggleClass("expanded")
         @.jQlink.parent().toggleClass("expanded")
         if expanded.length == 1 and expanded[0]  != @.jQlink[0]
@@ -39,13 +38,15 @@ $ ->
           expanded.parent().toggleClass("expanded")
         expanded = $(".navigation a.expanded")
         return false
-      linkHref = @.jQlink.attr("href")
-      if linkHref.substring(0,1) == "/" # absolute
-        return true;
       if expanded.length == 1 
         expanded.toggleClass("expanded")
         expanded.parent().toggleClass("expanded")
         expanded = $(".navigation a.expanded")
+      if @.jQlink.hasClass("disabled") then return false;
+      if !(@.jQlink.attr("href")) then return
+      linkHref = @.jQlink.attr("href")
+      if linkHref.substring(0,1) == "/" # absolute
+        return true;
       scroll(@)
       return false;
 
