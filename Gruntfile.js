@@ -119,7 +119,7 @@ module.exports = function (grunt) {
       },
       jekyll: {
         files: [
-          '**/*.{html,yml,md,mkd,markdown,js,css,png,jpg,jpeg,ico}',
+          '**/*.{html,csv,yml,md,mkd,markdown,js,css,png,jpg,jpeg,ico}',
           'js/assets.coffee',
           '!**/app.js',
           '!**/app.css'
