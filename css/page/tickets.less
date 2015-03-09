@@ -20,26 +20,48 @@ sections.page section.tickets {
                     padding-left: 1em;
                     p { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin: 0px; padding: 2px 1em 2px 0px; } }
                 }
-                background-color: @DARK_GREY;
                 &.invisible { background-color: inherit; }
             }
             div.all-access {
                 .column(3);
                 text-align: center;
-                color: @BLACK;
-                background-color: @ORANGE;
+                color: @ORANGE;
+                &.titlerow {
+                    background-color: @ORANGE;
+                    color: @WHITE;
+                    opacity: 0;
+                }
             }
             div.conference {
                 .column(3);
                 text-align: center;
-                color: @BLACK;
-                background-color: @MID_BLUE;
+                color: @MID_BLUE;
+                &.titlerow {
+                    background-color: @MID_BLUE;
+                    color: @WHITE;
+                    opacity: 0;
+                }
             }
-            &.short { div.table { 
-                min-height: @table_line_height; 
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { min-height: table_line_height_smartphone;  }
-            } }
-            div.table { .cell(); }
+            &.short { 
+                div.table { 
+                    min-height: @table_line_height; 
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { min-height: table_line_height_smartphone;  }
+                } 
+            }
+            div.table { 
+                .cell(); 
+                background-color: @DARK_GREY;
+            }
+            &.extras { div.table { background-color: fade(@DARK_GREY, 60%); } }
+        }
+        div.table-comments {
+            margin-top: 0.5em;
+            .column(6);
+            p.table-comment {
+                padding-top: 0.5em;
+                max-width: 90%;
+                margin: auto;
+            }
         }
     }
 }

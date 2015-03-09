@@ -10,7 +10,7 @@ permalink: /tickets/
         <content>
         {% for ticket in site.data.tickets_price %}
             {% if ticket.date and ticket.date != "" %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
-            <item class="ticket-row ticket-price {{row_class}}">
+            <item class="ticket-row ticket-price {{row_class}} {{ticket.type}}">
                 {% if ticket.name and ticket.name != "" or ticket.date and ticket.date != "" %} {% capture cell_class %} visible {% endcapture %} {% else %} {% capture cell_class %} invisible {% endcapture %} {% endif %}
                 <div class="name table {{cell_class}}">
                     <div class="centered-cell">
@@ -18,7 +18,11 @@ permalink: /tickets/
                         <p class="date">{{ ticket.date }}</p>
                     </div>
                 </div>
+                {% if forloop.first == false %}
                 <div class="all-access table">
+                {% else %}
+                <div class="all-access table titlerow">
+                {% endif %}
                     <div class="centered-cell">
                         <p>
                             {% if ticket.all_access %}
@@ -32,8 +36,12 @@ permalink: /tickets/
                         </p>
                     </div>
                 </div>
+                {% if forloop.first == false %}
                 <div class="conference table">
-                    <div class="centered-cell">
+                {% else %}
+                <div class="conference table titlerow">
+                {% endif %}                    
+                <div class="centered-cell">
                         <p>
                             {% if forloop.first == false %}
                                 &euro;
@@ -44,7 +52,12 @@ permalink: /tickets/
                 </div>
             </item>
         {% endfor %}
-        <content>
+        <div class="table-comments">
+            <p class="table-comment">
+                *To recive this discount contact us at events(at)aigamedev.com
+            </p>
+        </div>
+        </content>
     </grid>
 </section>
 <section class="none"></section>
@@ -54,7 +67,7 @@ permalink: /tickets/
         <content>
         {% for ticket in site.data.conference_goods %}
             {% if ticket.name.size > 50 %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
-            <item class="ticket-row conference-good {{row_class}}">
+            <item class="ticket-row conference-good {{row_class}} {{ticket.type}}">
                 {% if ticket.name and ticket.name != "" %} {% capture cell_class %} visible {% endcapture %} {% else %} {% capture cell_class %} invisible {% endcapture %} {% endif %}
                 
                 
@@ -64,18 +77,34 @@ permalink: /tickets/
                         <p class="date">{{ ticket.date }}</p>
                     </div>
                 </div>
+                {% if forloop.first == false %}
                 <div class="all-access table">
+                {% else %}
+                <div class="all-access table titlerow">
+                {% endif %}
                     <div class="centered-cell">
                         <p>{{ ticket.all_access }}</p>
                     </div>
                 </div>
+                {% if forloop.first == false %}
                 <div class="conference table">
+                {% else %}
+                <div class="conference table titlerow">
+                {% endif %}            
                     <div class="centered-cell">
                         <p>{{ ticket.conference }}</p>
                     </div>
                 </div>
             </item>
         {% endfor %}
+            <div class="table-comments">
+            <p class="table-comment">
+                See FAQs for details about discounts, included services, ticket transfer etc.
+            </p>
+            <p class="table-comment">
+                *Student tickets and single day tickets do not include vouchers/coupons
+            </p>
+        </div>
         <content>
     </grid>
 </section>
