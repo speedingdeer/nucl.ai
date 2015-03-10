@@ -49,6 +49,16 @@ sections.page section.tickets {
             div.table { 
                 .cell(); 
                 background-color: @DARK_GREY;
+                &.invisible div.centered-cell {
+                    cursor: default;
+                }
+                div.centered-cell {
+                    .transition(background-color 0.3s ease-in-out);
+                    cursor: pointer;
+                    &.hovered {
+                        background-color: fade(white, 40%);
+                    }
+                }
             }
             &.extras { div.table { background-color: fade(@DARK_GREY, 60%); } }
         }
