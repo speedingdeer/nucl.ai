@@ -105,13 +105,17 @@ sections {
                         }
 
                     }
-                    &:not(.selected) a:hover {
-                        &:not(.disabled) {
-                            color: @ORANGE;
-                            .transition(@MENU_TRANSITION);
+                    &:not(.selected) {
+                        a:hover {
+                            &:not(.disabled) {
+                                color: @ORANGE;
+                                .transition(@MENU_TRANSITION);
+                            }
                         }
-                        .logo.orange {
-                            opacity: 1;
+                        .icons-wrap:hover {
+                            .logo.orange {
+                                opacity: 1;
+                            }
                         }
                     }
                     .logo.orange { 
