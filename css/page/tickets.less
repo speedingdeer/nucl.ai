@@ -1,15 +1,18 @@
 sections.page section.tickets {
     @table_line_height: 50px;
     @table_line_height_smartphone: 25px;
+    @table_margin: 0.6%; // to overwrite too big semantic.gs margin
     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.9em; }
     .cell() {
-        margin-top: @SEMANTIC_GS_MARGIN;
-        margin-bottom: @SEMANTIC_GS_MARGIN;
+        margin: @table_margin;
+
         display: table;
         min-height: calc(2 * @table_line_height);
         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { min-height: calc(2 * @table_line_height_smartphone); }
     }
     content {
+        .column(10);
+        .push(1);
         item.ticket-row {
             width: 100%;
             float: left;
@@ -56,7 +59,7 @@ sections.page section.tickets {
                     .transition(background-color 0.3s ease-in-out);
                     cursor: pointer;
                     &.hovered {
-                        background-color: fade(white, 40%);
+                        background-color: fade(white, 11%);
                     }
                 }
             }
