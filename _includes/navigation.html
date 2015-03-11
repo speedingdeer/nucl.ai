@@ -55,7 +55,7 @@
                 {% else %}
                     <item>
                 {% endif %}
-                    <a href="" class="expandable"> For Attendees </a>
+                    <a href="" class="disabled expandable"> For Attendees </a>
                     <div class="dropdown">
                         <div class="menu">
                             <div class="menu-wrap">
@@ -72,6 +72,7 @@
                         </div>
                     </div>
                 </item>
+                <!--
                 {% if page.name == 'tickets.html'%}
                     <item class="selected static">
                     <a> Tickets </a>
@@ -80,7 +81,8 @@
                     <a href="/tickets/"> Tickets </a>
                 {% endif %}
                 </item>
-                <!--
+                -->
+
                 <item>
                 <a href="" class="expandable"> Tickets </a>
                     <div class="dropdown">
@@ -96,7 +98,7 @@
                         </div>
                     </div>
                 </item>
-                -->
+
                 <item>
                     <a href="{{linkPrefix}}#sponsors"> Sponsors </a>
                 </item>
