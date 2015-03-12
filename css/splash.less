@@ -1,11 +1,11 @@
 section.splash-screen {
-    @two_third: 100vh * 2 / 3;
-    @third: 100vh / 3;
+    @two_third_vh: 100vh * 2 / 3;
+    @third_vh: 100vh / 3;
     position: relative;
-    min-height: calc(@two_third);
+    min-height: calc(@two_third_vh);
     overflow: visible; //for drop down menu
     .splash-screen-wrap {
-        min-height: calc(~"@{two_third} - @{NAVIGATION_HEIGHT}");
+        min-height: calc(~"@{two_third_vh} - @{NAVIGATION_HEIGHT}");
         background-position: center;
         background-size: cover;
         &.uni-campus-quads {
@@ -14,7 +14,7 @@ section.splash-screen {
     }
     .table {
         //firefox table doesn't know min-height
-        height: calc(~"@{two_third} - @{NAVIGATION_HEIGHT}");
+        height: calc(~"@{two_third_vh} - @{NAVIGATION_HEIGHT}");
     }
     navigation-fantom {
         display: block;
@@ -26,9 +26,9 @@ section.splash-screen {
     * For single page layout
     */
     .page & {
-        min-height: calc(~"@{third} + @{NAVIGATION_HEIGHT}");
-        .splash-screen-wrap { min-height: @third }
-        .table { height: @third } //firefox table doesn't know min-height
+        min-height: calc(~"@{third_vh} + @{NAVIGATION_HEIGHT}");
+        .splash-screen-wrap { min-height: @third_vh}
+        .table { height: @third_vh } //firefox table doesn't know min-height
         splash content titles h1 { margin-bottom: -5px; }
         splash content logo { display: none; }
     }
