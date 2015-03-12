@@ -15,25 +15,25 @@ footer {
     content {
         links {
             a {
-                opacity: 0.5;
+                &.disabled { 
+                    opacity: 0.3;
+                    cursor: default;
+                };
                 color: @LIGHT_GREY;
                 cursor: pointer;
                 display: inline-block;
                 margin-right: 125px;
-                line-height: 60px;
+                text-decoration: none;
+                line-height: 40px;
                 &:last-child {
                     margin-right: 0;
-                }
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                    line-height: 1em;
                 }
             }
         }
 
         icons {
-            padding: 10px 0;
-            // This must be removed once links become avaialble
-            padding-top: 25px;
+            padding: 20px 0;
+            padding-bottom: 17px;
             display: inline-block;
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                 padding-top: 10px;
