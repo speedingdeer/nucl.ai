@@ -24,6 +24,7 @@ sections.page section.tickets {
                     p { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin: 0px; padding: 2px 1em 2px 0px; } }
                 }
                 &.invisible { background-color: inherit; }
+                width: 49.5%; // because of overwritten semantic.gs margin, we need to make one row bigger to fill up available width
             }
             div.all-access {
                 .column(3);
@@ -62,14 +63,13 @@ sections.page section.tickets {
                         background-color: fade(white, 11%);
                     }
                 }
+                p.date { color: @GREY;}
             }
             &.extras { div.table { background-color: fade(@DARK_GREY, 60%); } }
         }
         div.table-comments {
             margin-top: 0.5em;
             .column(12);
-            p.table-comment {
-            }
         }
     }
 }
