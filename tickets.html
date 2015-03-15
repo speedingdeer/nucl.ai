@@ -5,9 +5,10 @@ permalink: /tickets/
 ---
 
 <section class="tickets">
-    <h2 class="titlebar">Tickets & Prices</h2>
+    <h2 class="titlebar">Tickets On Sale Now</h2>
     <grid>
         <content>
+        <p>Join developers from all over the world and secure your ticket now! Three days packed with 2-3 parallel tracks per day and many networking opportunities are waiting for you.</p>
         {% for ticket in site.data.tickets_price %}
             {% if ticket.date and ticket.date != "" %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
             <item class="ticket-row ticket-price {{row_class}} {{ticket.type}}">
