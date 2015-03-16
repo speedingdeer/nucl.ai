@@ -4,6 +4,27 @@ title: nucl.ai - program
 permalink: /program/
 ---
 
+<section class="program thumbnails-grid" id="section-tracks">
+    <h2>Event Tracks</h2>
+
+   <grid>
+        <content>
+            {% for topic in site.data.topics %}
+                <item class="thumbnail">
+                    <thumbnail-wrap>
+                    {% capture thumbnail %}/img/topics/{{ topic.id }}.jpeg{% endcapture %}
+                    <thumbnail name="{{topic.title}}" style="background-image: url('{{ thumbnail |  prepend: site.baseurl }}')">
+                    </thumbnail>
+                    </thumbnail-wrap>
+                    <h3 class="thumbnail-title" name="{{topic.title}}">{{ topic.title }}</h3>
+                </item>
+            {% endfor %}
+        </content>
+    </grid>
+</section>
+
+<section class="separator" style="background-image: url(/img/venue/room-upper.png); background-position: center center;"></section>
+
 <section class="room">
     <h2 class="titlebar">Main Amphitheatre</h2>
     <grid>
@@ -33,7 +54,7 @@ permalink: /program/
     </grid>
 </section>
 
-<section class="separator" style="background-image: url(/img/venue/room-upper.png); background-position: center center;"></section>
+<section class="separator" style="background-image: url(/img/venue/room-lower.png); background-position: center center;"></section>
 
 <section class="room">
     <h2 class="titlebar">Masterclass Room</h2>
@@ -58,14 +79,13 @@ permalink: /program/
 
                 <p>If you consider this masterclass room in the context of the classic AI dilemma of "exploration" vs. "exploitation" then it's definitely Exploitation!</p>
 
-                <p class="message"><u>NOTE</u>: The schedule for the topics per day will be decided by May 1st, based on a survey of Early Access ticket holders.  If you want to decide how the topics are scheduled, this is your chance!</p>
+                <p class="message"><u>NOTE</u>: The schedule for the topics per day will be decided by May 1st, based on a survey of Early Bird ticket holders.  If you want to decide how the topics are scheduled, this is your chance!</p>
             </item>
         </content>
     </grid>
 </section>
 
-<section class="separator" style="background-image: url(/img/venue/room-lower.png); background-position: center center;"></section>
-
+<section class="separator" style="background-image: url(/img/venue/room-lobby.png); background-position: center center;"></section>
 
 <section class="room">
     <h2 class="titlebar">Open Laboratories</h2>
@@ -95,5 +115,3 @@ permalink: /program/
         </content>
     </grid>
 </section>
-
-<section class="separator" style="background-image: url(/img/venue/room-lobby.png); background-position: center center;"></section>
