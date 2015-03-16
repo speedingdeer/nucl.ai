@@ -33,4 +33,5 @@ $ ->
     scrollToEventbriteTickets()
     return false
 
-  $(".all-access .centered-cell, .conference .centered-cell").click scrollToEventbriteTickets
+  if $(".tickets.prices").length == 0 then return
+  $(".tickets.prices .centered-cell").click scrollToEventbriteTickets
