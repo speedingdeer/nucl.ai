@@ -26,10 +26,10 @@ $ ->
 
   scrollToEventbriteTickets = () ->
     $('html, body').animate({
-        scrollTop: $("#buy-tickets").offset().top
+        scrollTop: $("#purchase").offset().top
     }, config.header.scrollSpeed)
 
-  $("#buy-tickets-link").click ->
+  $(".buy-tickets-link").click ->
     scrollToEventbriteTickets()
     return false
 
