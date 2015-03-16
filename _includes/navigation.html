@@ -73,7 +73,32 @@
                     </div>
                 </item>
 
-                {% if page.name == 'tickets.html'%}
+                {% if page.name == 'tickets.html' or page.name == 'eventbrite.html' %}
+                    <item class="selected static">
+                {% else %}
+                    <item>
+                {% endif %}
+                    <a href="" class="expandable"> Tickets </a>
+                    <div class="dropdown">
+                        <div class="menu">
+                            <div class="menu-wrap">
+                                <div class="table">
+                                <div class="triangle"></div>
+                                </div>
+                                <div class="table">
+                                    <a href="/tickets/"> Find Tickets </a>
+                                </div>
+                                <div class="table">
+                                    <a href="/eventbrite/" href=""> Buy Tickets </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </item>
+
+
+                <!--
+                {% if page.name == 'tickets.html' %}
                     <item class="selected static">
                     <a> Tickets </a>
                 {% else %}
@@ -81,7 +106,7 @@
                     <a href="/tickets/"> Tickets </a>
                 {% endif %}
                 </item>
-                
+                -->
                 <!--
                 <item>
                 <a href="" class="expandable"> Tickets </a>
