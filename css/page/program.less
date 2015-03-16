@@ -5,15 +5,23 @@ section.program {
 }
 section.program.separator {
     min-height: 480px !important;
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { min-height: 100px !important; }
 }
 section.program.thumbnails-grid {
     position: relative;
     z-index: 1;
+    grid {
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-bottom: 1em; } 
+    }
     content {
         .column(12);
         p {
             line-height: 1.5;
             font-size: 1.3em;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                line-height: 1.2;
+                font-size: 0.7em;
+            }
         }
         p.message { 
             opacity: 1.0;
@@ -23,10 +31,14 @@ section.program.thumbnails-grid {
             .row(10);
             margin-top: 2em;
             margin-bottom: 3em;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                margin-bottom: 2em;
+            }
         }
         item.thumbnail {
             .thumbnail-title {
                 font-size: 16px;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.7em; }
                 opacity: 0.75;
                 &.selected {
                     display: block;
@@ -38,8 +50,6 @@ section.program.thumbnails-grid {
                 margin-left: 11.25%;
             }
             overflow: visible;
-            height: 200px;
-            width: 200px;
             .column(2,10);
         }
     }
@@ -54,7 +64,11 @@ sections.page section.room {
 
             line-height: 1.5;
             font-size: 1.3em;
-         
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                line-height: 1.2;
+                font-size: 1em;
+            }
+
             p {
                 opacity: 0.85;
                 text-align: justify;
@@ -63,7 +77,13 @@ sections.page section.room {
                 opacity: 1.0;
                 color: @LIGHT_BLUE;
             }
-            img { width: 400px; float: right; }
+            img { 
+                width: 400px; float: right; 
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    width: 100%;
+                    padding-bottom: 15px; 
+                }
+            }
         }
     }
 }
