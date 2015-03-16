@@ -25,6 +25,17 @@
                 <item>
                     <a href="{{linkPrefix}}#people"> People </a>
                 </item>
+
+                {% if page.name == 'program.html' %}
+                    <item class="selected static">
+                    <a> Program </a>
+                {% else %}
+                    <item>
+                    <a href="/program/"> Program </a>
+                {% endif %}
+                </item>
+
+                <!--
                 {% if page.name == 'audience.html'%}
                     <item class="selected">
                 {% else %}
@@ -50,6 +61,7 @@
                         </div>
                     </div>
                 </item>
+                -->
                 {% if page.name == 'venue.html'%}
                     <item class="selected static">
                 {% else %}

@@ -1,8 +1,7 @@
 name,type,date,all_access,conference
 "",main,"",All Access,Conference
-Early Bird,main,Available until April 30th,€ 799,€ 249
-Early Worm,main,May 1st until June 15th,€ 899,€ 299
+Early Bird (limited),main,Available at the latest until April 30th.,€ 799,€ 249
+Early Worm (limited),main,Available at the latest until June 15th.,€ 899,€ 299
 Regular,main,Until July 20th,€ 999,€ 359
-Student Pass*,extras,Until July 12th,"~70% off Regular","~70% off Regular"
-Indies or Unemployed Devs**,extras,Until July 12th,"45% off Regular","45% off Regular"
-Members or Returnees**,extras,Until July 12th,€ 899,€ 299
+Student Pass*,extras,Until July 12th,"60% off above","60% off above"
+Indies or Unemployed Devs**,extras,Until July 12th,"40% off above","20% off above"
