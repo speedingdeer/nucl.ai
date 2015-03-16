@@ -67,7 +67,7 @@ permalink: /tickets/
     <grid>
         <content>
         {% for ticket in site.data.conference_goods %}
-            {% if ticket.name.size > 50 %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
+            {% if ticket.name.size > 40 %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
             <item class="ticket-row conference-good {{row_class}} {{ticket.type}}">
                 {% if ticket.name and ticket.name != "" %} {% capture cell_class %} visible {% endcapture %} {% else %} {% capture cell_class %} invisible {% endcapture %} {% endif %}
                 
