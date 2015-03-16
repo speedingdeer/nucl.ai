@@ -27,9 +27,6 @@ permalink: /tickets/
                     <div class="centered-cell">
                         <p>
                             {% if ticket.all_access %}
-                                {% if forloop.first == false %}
-                                    &euro;
-                                {% endif %}
                                 {{ ticket.all_access }}
                             {% else %}
                                 -
@@ -44,9 +41,6 @@ permalink: /tickets/
                 {% endif %}                    
                 <div class="centered-cell">
                         <p>
-                            {% if forloop.first == false %}
-                                &euro;
-                            {% endif %}
                             {{ ticket.conference }}
                         </p>
                     </div>
