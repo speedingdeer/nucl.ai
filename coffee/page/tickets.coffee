@@ -23,3 +23,14 @@ $ ->
 
 
   $("div.table").hover hoverIn, hoverOut
+
+  scrollToEventbriteTickets = () ->
+    $('html, body').animate({
+        scrollTop: $("#buy-tickets").offset().top
+    }, config.header.scrollSpeed)
+
+  $("#buy-tickets-link").click ->
+    scrollToEventbriteTickets()
+    return false
+
+  $(".all-access .centered-cell, .conference .centered-cell").click scrollToEventbriteTickets
