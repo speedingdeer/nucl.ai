@@ -18,10 +18,14 @@
                 {% capture modulo %}{{ forloop.index | modulo:3 }}{% endcapture %}
                 {% assign topicsIndex = forloop.index %}
                 {% assign lastRow = forloop.last %}
-
                 {% if modulo == '0' %}
-                    {% for num in (1...3) %}
-                        {% assign descIndex = topicsIndex | minus:4 | plus:forloop.index %}
+                    {% assign descriptions = 3 %}
+                {% else %}
+                    {% assign descriptions = forloop.index | modulo:3 %}
+                {% endif %}
+                {% if modulo == '0' %}
+                    {% for num in (1...descriptions) %}
+                        {% assign descIndex = topicsIndex | minus:forloop.index %}
                         {% assign t = site.data.topics[descIndex] %}
                         {% if lastRow %}
                             <item class="description last-row animated fadeOutRight" name="{{t.title}}">

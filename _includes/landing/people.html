@@ -20,8 +20,13 @@
                 {% assign topicsIndex = forloop.index %}
                 {% assign lastRow = forloop.last %}
                 {% if modulo == '0' or forloop.last == true %}
-                    {% for num in (1...3) %}
-                        {% assign descIndex = topicsIndex | minus:4 | plus:forloop.index %}
+                    {% if modulo == '0' %}
+                        {% assign descriptions = 3 %}
+                    {% else %}
+                        {% assign descriptions = forloop.index | modulo:3 %}
+                    {% endif %}
+                    {% for num in (1...descriptions) %}
+                        {% assign descIndex = topicsIndex | minus:forloop.index %}
                         {% assign p = site.data.people[descIndex] %}
                         {% if lastRow %}
                             <item class="description last-row animated fadeOutRight" name="{{p.name | escape}}">
