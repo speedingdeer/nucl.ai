@@ -1,5 +1,6 @@
 sections.page section.tickets {
-    @table_line_height: 50px;
+
+    @table_line_height: 86px;
     @table_line_height_smartphone: 25px;
     @table_margin: 0.6%; // to overwrite too big semantic.gs margin
     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.9em; }
@@ -7,7 +8,10 @@ sections.page section.tickets {
         margin: @table_margin;
 
         display: table;
-        height: calc(2 * @table_line_height);
+        height: calc(1.2 * @table_line_height);
+        //quick fix for fresh chanfes
+        @media screen and (max-width: 800px) { height: calc(1.5 * @table_line_height); }
+        @media screen and (max-width: 500px) { height: calc(2 * @table_line_height); }
         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: calc(2 * @table_line_height_smartphone); }
     }
     content {
@@ -27,7 +31,8 @@ sections.page section.tickets {
                 .column(6);
                 .centered-cell {
                     text-align: left;
-                    padding-left: 1em;
+                    padding-left: 0.5em;
+                    padding-right: 0.5em;
                     p { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin: 0px; padding: 2px 1em 2px 0px; } }
                 }
                 &.invisible { background-color: inherit; }
@@ -54,6 +59,8 @@ sections.page section.tickets {
             &.short { 
                 div.table { 
                     height: @table_line_height; 
+                    table-layout: fixed;
+                    @media screen and (max-width: 500px) { height: calc(1.5 * @table_line_height); }
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: table_line_height_smartphone;  }
                 } 
             }
