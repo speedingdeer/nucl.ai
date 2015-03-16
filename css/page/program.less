@@ -5,15 +5,16 @@ section.program.thumbnails-grid {
     position: relative;
     z-index: 1;
     content {
-        .row(10);
+        .column(12);
         p {
-            .column(10,10);
+            
             line-height: 1.5;
             font-size: 1.3em;
         }
         div.thumbnails {
-            .column(10,10);
-            margin: 2em 0 3em 0;
+            .row(10);
+            margin-top: 2em;
+            margin-bottom: 3em;
         }
         item.thumbnail {
             .thumbnail-title {
