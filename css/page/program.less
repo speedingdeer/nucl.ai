@@ -1,0 +1,23 @@
+sections.page section.room {
+    content {
+        .column(12);
+
+        item.text {
+            // TODO: Inherit this from the page style?  Mobile support?
+            .column(12);
+
+            line-height: 1.5;
+            font-size: 1.3em;
+         
+            p {
+                opacity: 0.85;
+                text-align: justify;
+            }
+            p.message { 
+                opacity: 1.0;
+                color: @LIGHT_BLUE;
+            }
+            img { width: 400px; float: right; }
+        }
+    }
+}
