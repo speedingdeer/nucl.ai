@@ -20,7 +20,7 @@ icon.megaphone {  background-image: url(" {{ '/img/icons/megaphone.png'| prepend
 a.social { background-image: url(" {{ '/img/icons/social.png'| prepend: site.baseurl }} "); } 
 
 /* Venue page */
-.crowd-party { background-image: url(" {{ '/img/venue/crowd-party.jpg'| prepend: site.baseurl }} "); } 
+.crowd-party { background-image: url(" {{ '/img/venue/crowd-party.JPG'| prepend: site.baseurl }} "); } 
 .uni-amph { background-image: url(" {{ '/img/venue/uni-amph.jpg'| prepend: site.baseurl }} "); } 
 .registration { background-image: url(" {{ '/img/venue/registration.jpg'| prepend: site.baseurl }} "); } 
 
