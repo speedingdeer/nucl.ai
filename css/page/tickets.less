@@ -17,10 +17,11 @@ sections.page section.tickets {
     content {
         .column(12);
 
-        font-size: 1.3em;
-
         & > p, .table-comments p {
             line-height: 1.5;
+        }
+        & > p, p.name {
+            font-size: 1.3em;
         }
 
         item.ticket-row {
@@ -99,26 +100,31 @@ sections.page section.tickets {
     }
 }
 
-sections.page section.tickets-faq {
+sections.page section.faq {
     content {
-        line-height: 1.34;
-        font-size: 1.1em;
         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.9em; }
         .column(12);
+
         item.tickets-review {
+            & > p {
+                opacity: 0.85;
+                line-height: 1.5;
+                font-size: 1.3em;
+            }
             float: left;
             .table {
                 float: right;
-                padding: 0 10%;
+                padding: 32px 10% 32px 10%;
                 text-align: center;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 8%; }
                 .title {
-                    .circular(130px, 100%);
+                    .circular(192px, 100%);
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                         .circular(60px, 100%);
                         display: table-cell;
                         vertical-align: middle;
                     }
+                    font-size: 20pt;
                     display: table-cell;
                     font-weight: bold;
                     background-color: @MID_BLUE;
@@ -126,6 +132,7 @@ sections.page section.tickets-faq {
                     
                 }
                 &.all-access {
+                    padding-top: 64px;
                     float: left;
                     .title {
                         background-color: @DIRTY_ORANGE;
@@ -133,10 +140,14 @@ sections.page section.tickets-faq {
                 }
             }
         }
-        .question {
+        h3.question {
             display: block;
             font-weight: bold;
             padding-bottom: 0.3em;
+            font-size: 1.5em;
+        }
+        p.answer {
+            opacity: 0.75;
         }
     }
 }
