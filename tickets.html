@@ -8,7 +8,8 @@ permalink: /tickets/
     <h2 class="titlebar">Tickets Now On Sale!</h2>
     <grid>
         <content>
-        <p>Join developers from all over the world and secure your ticket now! Three days packed with 2-3 parallel tracks per day and many networking opportunities are waiting for you.</p>
+        <p>Join developers from all over the world and secure your ticket for <a href="/">nucl.ai '15</a> now!  Three days of artificial intelligence theory and practice packed into three parallel tracks per day with many networking opportunities are waiting for you in Vienna.</p>
+
         {% for ticket in site.data.tickets_price %}
             {% if ticket.date and ticket.date != "" %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
             <item class="ticket-row ticket-price {{row_class}} {{ticket.type}}">
@@ -56,7 +57,7 @@ permalink: /tickets/
             </p>
         </div>
         <div class="ticket-button-wrap">
-            <a href="/tickets#buy-tickets" id="buy-tickets-link"> Buy Tickets </a>
+            <a href="/tickets/#purchase" id="buy-tickets-link"> Buy Your Tickets Now! </a>
         </div>
         </content>
     </grid>
@@ -113,8 +114,8 @@ permalink: /tickets/
 
 <section class="none"></section>
 <section >
-    <a class="anchor" id="buy-tickets"></a>
-    <h2 class="titlebar">Buy Tickets</h2>
+    <a class="anchor" id="purchase"></a>
+    <h2 class="titlebar">Purchase Event Tickets</h2>
     <grid>
         <content>
             <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=15842431138&ref=etckt" frameborder="0" height="460" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe></div>
@@ -181,6 +182,10 @@ permalink: /tickets/
             <p class="answer">
                 Please note our <a href="/legal/">terms and conditions</a>. 
             </p>
+
+            <div class="ticket-button-wrap">
+                <a href="/tickets/#purchase" id="buy-tickets-link"> Buy Your Tickets Now! </a>
+            </div>
         <content>
     </grid>
 </section>

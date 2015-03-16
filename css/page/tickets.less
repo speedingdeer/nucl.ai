@@ -31,7 +31,7 @@ sections.page section.tickets {
                 .column(6);
                 .centered-cell {
                     text-align: left;
-                    padding-left: 0.5em;
+                    padding-left: 1.5em;
                     padding-right: 0.5em;
                     p { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin: 0px; padding: 2px 1em 2px 0px; } }
                 }
@@ -43,6 +43,7 @@ sections.page section.tickets {
                 text-align: center;
                 color: @ORANGE;
                 &.titlerow {
+                    font-size: 1.3em;                    
                     background-color: @DIRTY_ORANGE;
                     color: @WHITE;
                 }
@@ -52,6 +53,7 @@ sections.page section.tickets {
                 text-align: center;
                 color: @MID_BLUE;
                 &.titlerow {
+                    font-size: 1.3em;
                     background-color: @MID_BLUE;
                     color: @WHITE;
                 }
@@ -87,14 +89,18 @@ sections.page section.tickets {
             .column(12);
         }
         div.ticket-button-wrap {
-            padding-top: 2em;
+            margin-top: 2em;
             width: 100%;
             float: left;
             text-align: center;
+            overflow: visible;
             a {
-                color: @ORANGE;
+                display: inline-block;
+                padding: 1em 2em;
+                background-color: @DIRTY_ORANGE;
+                color: white;
                 text-decoration: none;
-                font-size: 1.5em;
+                font-size: 1.3em;
             }
         }
     }
