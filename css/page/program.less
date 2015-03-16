@@ -2,21 +2,28 @@ section.program.thumbnails-grid {
     position: relative;
     z-index: 1;
     content {
-        .row(9);
+        .row(10);
         p {
+            .column(10,10);
             line-height: 1.5;
             font-size: 1.3em;
         }
+        div.thumbnails {
+            .column(10,10);
+            margin: 2em 0 3em 0;
+        }
         item.thumbnail {
             .thumbnail-title {
-                font-weight: normal;
                 font-size: 16px;
                 opacity: 0.75;
+            }
+            &.topic-alternate {
+                margin-left: 10%;
             }
             overflow: visible;
             height: 200px;
             width: 200px;
-            .column(1,9);
+            .column(2,10);
         }
     }
 }
