@@ -11,8 +11,14 @@ sections.page section.tickets {
         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: calc(2 * @table_line_height_smartphone); }
     }
     content {
-        .column(10);
-        .push(1);
+        .column(12);
+
+        font-size: 1.3em;
+
+        & > p, .table-comments p {
+            line-height: 1.5;
+        }
+
         item.ticket-row {
             width: 100%;
             float: left;
