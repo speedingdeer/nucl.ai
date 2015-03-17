@@ -8,16 +8,16 @@ permalink: /tickets/
     <h2 class="titlebar">Tickets Now On Sale!</h2>
     <grid>
         <content>
-        <p>Join developers from all over the world and secure your ticket for <a href="/">nucl.ai '15</a> now!  Three days of artificial intelligence theory and practice packed into three parallel tracks per day with many networking opportunities are waiting for you in Vienna.</p>
+        <p class="bigger wider">Join developers from all over the world and secure your ticket for <a href="/">nucl.ai '15</a> now!  Three days of artificial intelligence theory and practice packed into three parallel tracks per day with many networking opportunities are waiting for you in Vienna.</p>
 
         {% for ticket in site.data.tickets_price %}
             {% if ticket.date and ticket.date != "" %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
-            <item class="ticket-row ticket-price {{row_class}} {{ticket.type}}">
+            <item class="ticket-row ticket-price {{row_class}} {{ticket.type}} bigger">
                 {% if ticket.name and ticket.name != "" or ticket.date and ticket.date != "" %} {% capture cell_class %} visible {% endcapture %} {% else %} {% capture cell_class %} invisible {% endcapture %} {% endif %}
                 <div class="name table {{cell_class}}">
                     <div class="centered-cell">
                         <p class="name">{{ ticket.name }} </p>
-                        <p class="date">{{ ticket.date }}</p>
+                        <p class="date smaller">{{ ticket.date }}</p>
                     </div>
                 </div>
                 {% if forloop.first == false %}
@@ -25,7 +25,7 @@ permalink: /tickets/
                 {% else %}
                 <div class="all-access table titlerow">
                 {% endif %}
-                    <div class="centered-cell">
+                    <div class="centered-cell smaller">
                         <p>
                             {% if ticket.all_access %}
                                 {{ ticket.all_access }}
@@ -40,7 +40,7 @@ permalink: /tickets/
                 {% else %}
                 <div class="conference table titlerow">
                 {% endif %}                    
-                <div class="centered-cell">
+                <div class="centered-cell smaller">
                         <p>
                             {{ ticket.conference }}
                         </p>
@@ -48,7 +48,7 @@ permalink: /tickets/
                 </div>
             </item>
         {% endfor %}
-        <div class="table-comments">
+        <div class="table-comments wider">
             <p class="table-comment">
                 * If you're in full-time education you are eligible for the Student ticket. Contact us at events(at)aigamedev.com to receive your promotional code.</br>
             </p>
@@ -56,7 +56,7 @@ permalink: /tickets/
                 ** For very small teams (those without cappuccino machines :-) or if your are between jobs you can apply for this discount at events(at)aigamedev.com. 
             </p>
         </div>
-        <div class="ticket-button-wrap">
+        <div class="ticket-button-wrap bigger">
             <a href="/tickets/#purchase" class="buy-tickets-link"> Buy Your Tickets Now! </a>
         </div>
         </content>
@@ -69,10 +69,9 @@ permalink: /tickets/
         <content>
         {% for ticket in site.data.conference_goods %}
             {% if ticket.name.size > 40 %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
-            <item class="ticket-row conference-good {{row_class}} {{ticket.type}}">
+            <item class="ticket-row conference-good {{row_class}} {{ticket.type}} bigger">
                 {% if ticket.name and ticket.name != "" %} {% capture cell_class %} visible {% endcapture %} {% else %} {% capture cell_class %} invisible {% endcapture %} {% endif %}
-                
-                
+
                 <div class="name table {{cell_class}}">
                     <div class="centered-cell">
                         <p class="name">{{ ticket.name }} </p>
@@ -84,7 +83,7 @@ permalink: /tickets/
                 {% else %}
                 <div class="all-access table titlerow">
                 {% endif %}
-                    <div class="centered-cell">
+                    <div class="centered-cell smaller">
                         <p>{{ ticket.all_access }}</p>
                     </div>
                 </div>
@@ -93,7 +92,7 @@ permalink: /tickets/
                 {% else %}
                 <div class="conference table titlerow">
                 {% endif %}            
-                    <div class="centered-cell">
+                    <div class="centered-cell smaller">
                         <p>{{ ticket.conference }}</p>
                     </div>
                 </div>
@@ -130,23 +129,23 @@ permalink: /tickets/
             <item class="tickets-review">
                 <div class="table">
                     <div class="title conference centered-cell">
-                        <p>Conference</p>
+                        <h3>Conference</h3>
                     </div>
                 </div>
-                <p>If you want to get a broad selection of sessions about what's new and innovative in AI, inspiring and entertaining keynotes, or techniques/algorithms implemented into recent games, then the Conference ticket is the best choice for you.</p>
+                <p class="bigger wider">If you want to get a broad selection of sessions about what's new and innovative in AI, inspiring and entertaining keynotes, or techniques/algorithms implemented into recent games, then the Conference ticket is the best choice for you.</p>
 
-                <p>It also gives you many opportunities to catch up with fellow AI enthusiasts and get inspired by the many new fields that currently influence AI.</p>
+                <p class="bigger wider">It also gives you many opportunities to catch up with fellow AI enthusiasts and get inspired by the many new fields that currently influence AI.</p>
                 </p>
             </item>
             <item class="tickets-review">
                 <div class="table all-access">
-                    <div class="title conference all-access">
-                        <p>All Access</p>
+                    <div class="title centered-cell all-access">
+                        <h3>All Access</h3>
                     </div>
                 </div>
-                <p>Go All Access if you want to dive into the topics deeper with specialized masterclasses, in-depth tutorials, and advanced panel discussions. Also, this ticket gives you additional networking opportunities (e.g. over lunch) with experts in the field and time to exchange with the speakers.</p>
+                <p class="bigger wider">Go All Access if you want to dive into the topics deeper with specialized masterclasses, in-depth tutorials, and advanced panel discussions. Also, this ticket gives you additional networking opportunities (e.g. over lunch) with experts in the field and time to exchange with the speakers.</p>
 
-                <p>Also, you never need to worry about missing a session; you can always catch up with it later by watching the recordings online!</p>
+                <p class="bigger wider">Also, you never need to worry about missing a session; you can always catch up with it later by watching the recordings online!</p>
             </item>
         </content>
     </grid>
@@ -157,33 +156,33 @@ permalink: /tickets/
     <grid>
         <content>
             <h3 class="question">Ticket Upgrade</h3>
-            <p class="answer">
+            <p class="answer bigger wider">
                 If you'd like to upgrade the ticket you have purchased please go to <a href="http://nuclai.eventbrite.com/">EventBrite.com</a> and update your order information. You can also find the link to your order in the section "Your Account" of your confirmation email.
             </p>
 
             <h3 class="question">Ticket Transfer</h3>
-            <p class="answer">
+            <p class="answer bigger wider">
                 Tickets can be transferred to an other person free of charge until July 6th. To do so please update your order information with the new attendee's information on <a href="http://nuclai.eventbrite.com/">EventBrite.com</a>. You can also find the link to your order in the section "Your Account" of your confirmation email.
                 If you have received a special discount such as Student, Member, or Indie you must contact us before transferring as the new attendee needs to be eligible for this discount as well. 
                 <a href="http://help.eventbrite.com/customer/en_us/portal/articles/430100-how-to-update-your-ticket-registration-information">How to transfer your ticket in EventBrite.</a>
             </p>
 
             <h3 class="question">Ticket Refund</h3>
-            <p class="answer">
+            <p class="answer bigger wider">
                 If you need a ticket refund please contact us at team(at)aigamedev.com. Conference tickets can be refunded until June 20th minus a service charge of € 15. All Access tickets can be refunded until July 6th minus a service charge of € 15. After these dates or in case of a no-show of the attendee ticket price refunds are not possible. 
             </p>
 
             <h3 class="question">Help?</h3>
-            <p class="answer">
+            <p class="answer bigger wider">
                 If you need any assistance, we're happy to help! You can contact us at events (at) aigamedev.com
             </p>
 
             <h3 class="question">Terms and Conditions</h3>
-            <p class="answer">
+            <p class="answer bigger wider">
                 Please note our <a href="/legal/">terms and conditions</a>. 
             </p>
 
-            <div class="ticket-button-wrap">
+            <div class="ticket-button-wrap bigger wider">
                 <a href="/tickets/#purchase" class="buy-tickets-link"> Buy Your Tickets Now! </a>
             </div>
         <content>

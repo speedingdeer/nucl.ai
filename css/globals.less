@@ -44,14 +44,36 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    padding-bottom: 0.3em;
     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
 
 ul, li, p {
     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
         font-size: 0.8em;
+    }
+}
+
+.wider {
+    line-height: 1.5;
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+        line-height: 1.2
+    }
+}
+
+.bigger {
+    font-size: 1.3em;
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+        font-size: 0.8em;
+    }
+}
+
+.smaller {
+    font-size: 0.8em;
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+        font-size: 0.6em;
     }
 }
 

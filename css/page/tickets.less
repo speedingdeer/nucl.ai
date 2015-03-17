@@ -3,29 +3,17 @@ sections.page section.tickets {
     @table_line_height: 86px;
     @table_line_height_smartphone: 50px;
     @table_margin: 0.6%; // to overwrite too big semantic.gs margin
-    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.9em; }
     .cell() {
         margin: @table_margin;
-
         display: table;
         height: calc(1.2 * @table_line_height);
-        //quick fix for fresh chanfes
+        //quick fix for make table keep equal size
         @media screen and (max-width: 800px) { height: calc(1.5 * @table_line_height); }
         @media screen and (max-width: 500px) { height: calc(2 * @table_line_height); }
         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: calc(1.3 * @table_line_height_smartphone); }
     }
     content {
         .column(12);
-
-        & > p, .table-comments p {
-            line-height: 1.5;
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { line-height: 1.2em; }
-        }
-        & > p, p.name {
-            font-size: 1.3em;
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.8em; }
-        }
-
         item.ticket-row {
             width: 100%;
             float: left;
@@ -33,8 +21,7 @@ sections.page section.tickets {
                 .column(6);
                 .centered-cell {
                     text-align: left;
-                    p.name { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-bottom: 5px; } }
-                    p.data { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-top: 0px; } }
+                    p.name { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin: 5px 0px; } }
                 }
                 &.invisible { background-color: inherit; }
                 width: 49.5%; // because of overwritten semantic.gs margin, we need to make one row bigger to fill up available width
@@ -44,8 +31,6 @@ sections.page section.tickets {
                 text-align: center;
                 color: @ORANGE;
                 &.titlerow {
-                    font-size: 1.3em;
-                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 1em; }
                     background-color: @DIRTY_ORANGE;
                     color: @WHITE;
                 }
@@ -55,8 +40,6 @@ sections.page section.tickets {
                 text-align: center;
                 color: @MID_BLUE;
                 &.titlerow {
-                    font-size: 1.3em;
-                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 1em; }
                     background-color: @MID_BLUE;
                     color: @WHITE;
                 }
@@ -108,11 +91,7 @@ sections.page section.tickets {
                 background-color: @DIRTY_ORANGE;
                 color: white;
                 text-decoration: none;
-                font-size: 1.3em;
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                    font-size: 1em; 
-                    padding: 0.75em 1.5em;
-                }
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {  padding: 0.75em 1.5em; }
             }
         }
     }
@@ -124,43 +103,33 @@ sections.page section.faq {
         item.tickets-review {
             & > p {
                 opacity: 0.85;
-                line-height: 1.5;
-                font-size: 1.3em;
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                    font-size: 0.8em; 
-                    line-height: 1.1em;
-                }
             }
             float: left;
             .table {
                 float: right;
-                padding: 32px 10% 32px 10%;
+                padding: 32px 10%;
                 text-align: center;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                        width: 100%;
-                        padding: 0;
-                        margin-bottom: 10px;
-                        p {
-                            font-size: 0.7em;
-                            margin: 0.4em 0;
-                        }
-                    }
+                    width: 100%;
+                    padding: 0;
+                    margin-bottom: 10px;
+                    p { margin: 0.4em 0; }
+                }
                 .title {
                     @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) { 
                         .circular(192px, 100%); 
                         display: table-cell;
                     }
-                    font-size: 20pt;
-                    font-weight: bold;
                     background-color: @MID_BLUE;
                     vertical-align: middle;
-                    
+                    h3 {
+                        padding: 0;
+                    }
                 }
                 &.all-access {
                     padding-top: 64px;
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                         padding-top: 5px;
-                        p { display: inline-block; }
                     }
                     float: left;
                     .title {
@@ -168,13 +137,6 @@ sections.page section.faq {
                     }
                 }
             }
-        }
-        h3.question {
-            display: block;
-            font-weight: bold;
-            padding-bottom: 0.3em;
-            font-size: 1.5em;
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.9em}  
         }
         p.answer {
             opacity: 0.75;
