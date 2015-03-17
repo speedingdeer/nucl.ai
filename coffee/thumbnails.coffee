@@ -170,6 +170,7 @@ class Thumbnails
     fullSize = @wraps.first().width()
     @thumbnails.each ->
       @.jQthumbnail.css( {"border-width": fullSize * config.thumbnails.borderSize } )
+      @.jQthumbnail.css( { "opacity": 1 } )
 
 
   clearLine: ->

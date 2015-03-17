@@ -17,6 +17,11 @@ section {
     &:nth-child(odd) {
         .theme_grey();
     }
+    &:last-child {
+        grid {
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-bottom: 2em; }
+        }
+    }
 
     .titlebar {
         //small used in single page about (I don't know if it will be published)
@@ -33,6 +38,7 @@ section {
         margin: auto;
         display: block;
         padding-bottom: 2em;
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-bottom: 1.5em; }
         .clearfix();
         content {
             display: block;

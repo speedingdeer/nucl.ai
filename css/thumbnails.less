@@ -21,6 +21,8 @@
                 text-align: center;
                 overflow: hidden;
                 thumbnail {
+                    opacity: 0;
+                    .transition(opacity .7s ease-in);
                     margin: (100% - @THUMBNAIL_SIZE) / 2;
                     .circular(@THUMBNAIL_SIZE, 100%);
                     cursor: pointer;
@@ -32,7 +34,6 @@
                     border: solid @THUMBNAIL_BORDER_SIZE;
                     border-color: lighten(@GREY, 5%);
                     .filter(grayscale(100%));
-                    // transition: 0.2s;
                     &:hover, &.selected {
                         margin: (100% - @THUMBNAIL_SIZE_LARGE) / 2;
                         .circular(@THUMBNAIL_SIZE_LARGE, 100%);
