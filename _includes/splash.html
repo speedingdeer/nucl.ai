@@ -4,6 +4,8 @@
 <section class="splash-screen" id="about">
     {% if page.name == 'venue.html' or page.name == 'tickets.html' %}
     <div class="splash-screen-wrap uni-campus-quads">
+    {% elsif page.name == 'program.html' %}
+    <div class="splash-screen-wrap" style="background-image: url('{{ '/img/venue/room-lower.png' | prepend: site.baseurl }}' ); background-position: center center;">
     {% else %}
     <div class="splash-screen-wrap audience-gif">
     {% endif %}
