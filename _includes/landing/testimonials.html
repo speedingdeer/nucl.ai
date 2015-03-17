@@ -3,7 +3,7 @@
         What past attendees said...
     </h2>
     <grid>
-        <content>
+        <content class="wide">
         {% for testimonial in site.data.testimonials %}
             {% if forloop.index <= 2 %}
                 <div class="{% cycle 'left', 'right' %} testimonial selected animated flipInX">

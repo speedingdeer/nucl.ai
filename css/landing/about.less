@@ -17,7 +17,6 @@
                     color: @ORANGE;
                 }
                 .column(12);
-                font-size: 1.3em;
                 font-weight: bold;
                 padding-top: 1em;
                 text-align: center;
@@ -25,18 +24,16 @@
             }
             h2 {
                 text-align: center;
-                line-height: 125%;
                 padding: 1.5em 0;
                 text-shadow: 0px 0px 8px @BLUE;
                 .ios & { text-shadow: none; } // ios struggles with our fonts
             }
 
             h3 {
-                .column(12);                
+                .column(12); 
                 font-weight: normal;
                 text-align: center;
                 opacity: 0.75;
-                line-height: 125%;
                 text-shadow: 0px 0px 4px @BLUE;
                 .ios & { text-shadow: none; } // ios struggles with our fonts
             }
@@ -49,11 +46,10 @@
                 text-align: justify;
                 color: #ffffff;
                 font-size: 17px;
-                line-height: 1.25;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                     .column(12);
+                    font-size: 11px;
                     margin-top: 4ex;
-                    font-size: 0.7em;
                 }
             }
         }
