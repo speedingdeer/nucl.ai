@@ -41,32 +41,23 @@
                         border-color: lighten(@BLUE, 25%);
                         .filter(none);
                     }
-                    &.selected {
-                        border-color: @ORANGE;
-                    }
+                    &.selected { border-color: @ORANGE; }
                 }
             }
 
             &.clear {
-                clear: both; //left starts alwyas from 'left'...
+                clear: both;
             }
             .thumbnail-title {
                 font-weight: bold;
+                color: lighten(white, 25%);
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                     font-weight: normal;
                     font-size: 0.85em;
                 }
-                &.hover {
-                    /* @TODO: set up color */
-                    color: lighten(@BLUE, 25%);
+                &.hover { color: lighten(@BLUE, 25%);
                 }
-                &.selected {
-                    display: none;
-                }
-                color: lighten(white, 25%);
-                /* .colored {
-                    color: @WHITE;
-                } */
+                &.selected { display: none; }
             }
         }
         item.description {
@@ -76,16 +67,14 @@
             display: none;
             text-align: justify;
             font-size: 1.15em;
-            &:not(.last-row) { padding-bottom: 2.8em; 
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                   padding-bottom: 1em;
-                }
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {  font-size: 0.8em; }
+            &:not(.last-row) { 
+                padding-bottom: 2.8em; 
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {  padding-bottom: 1em; }
             }
             &.selected { display: block; }
-
             font-size: 1.1em;
             color: @LIGHT_GREY;
-
             h2 {
                 color: @ORANGE;
                 &.left { text-align: left; margin-left: 10px; }
@@ -93,9 +82,8 @@
                 &.right { text-align: right; margin-right: 10px;}
                 padding: 0.5em 0 0.5em;
             }
-
             p {
-                line-height: 1.25;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {  line-height: 1.1 }
                 &.note {
                     color: @GREY;
                     a {
@@ -108,9 +96,6 @@
             h3 {
                 margin-bottom: 0;
                 color: @GREY;
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                    font-size: 0.8em;
-                }
             }
         }
     }
