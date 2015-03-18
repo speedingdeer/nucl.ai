@@ -1,7 +1,7 @@
 {% if lastRow %} {% capture lastRow %}last-row{% endcapture %} {% endif %}
 <item class="description {{lastRow}} animated fadeOutRight" name="{{desc.title}}">
 <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ desc.title }}</h2>
-<p> {{ desc.content }} </p>
+<p class="wide"> {{ desc.content }} </p>
 <h3>Keywords</h3>
 <ul>
     {% for kw in desc.keywords %} 
