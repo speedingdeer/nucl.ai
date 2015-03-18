@@ -75,11 +75,13 @@
 
 - name: Piotr Andruszkiewicz
   role: speaker
+  title: Speaker
   affiliation: The Creative Assembly
   bio: ""
 
 - name: Bill Grosso
   role: speaker
+  title: Speaker
   affiliation: Scientific Revenue
   bio: >
     Bill is the founder and CEO of Scientific Revenue, the leading provider of dynamic pricing for in-app purchases. 
