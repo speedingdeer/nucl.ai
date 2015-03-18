@@ -14,7 +14,7 @@ class Thumbnails
     ## select jquery object
     @svg = @section.find("svg")
     @wraps =  @section.find("thumbnail-wrap")
-    @thumbnails = @section.find("thumbnail")
+    @thumbnails = @section.find("a.thumbnail")
 
     $(window).resize ->
       that.setThumbnailSize()
@@ -137,7 +137,8 @@ class Thumbnails
                 that.selected.jQdescription.addClass("selected")
                 that.selected.jQdescription.one  animate.onAnimatedEnd, ->
                   if that.selected  == t and that.selected.jQdescription.hasClass("fadeInLeft") # if still selected
-                    that.drawLine()  
+                    that.drawLine()
+        return false
 
   thumbnailsNotAnimated: ->
     that = @
