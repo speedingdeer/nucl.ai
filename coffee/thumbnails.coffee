@@ -3,7 +3,7 @@ root = exports ? this # global
 
 class Thumbnails
 
-  constructor: (sectionId, @animated) ->
+  constructor: (sectionId, @animated, @justSize) ->
     that = @
     @section  = $("#" + sectionId)
     if @section.length != 1 
@@ -35,13 +35,17 @@ class Thumbnails
         () ->
           t.jQtitle.removeClass("hover")
 
+    @setThumbnailSize()
+
+    if @justSize then return;
+
     @selected = @thumbnails.filter(".selected")
     if @selected.length == 0 then @selected = null
     animated = @animated
     if not @animated then @thumbnailsNotAnimated() 
     if @animated then @thumbnailsAnimated()
 
-    @setThumbnailSize()
+
 
   ## selections / animation
 

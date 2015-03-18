@@ -3,7 +3,6 @@
 * This value must be replicated it config.coffee. Thumbnail needs to know its final size to listen for transitionEnd if size isn't final 
 */
 @THUMBNAIL_SIZE_LARGE: 90%;
-@THUMBNAIL_SIZE_SMALLER_LARGE: 85%;
 
 /****************************/
 @THUMBNAIL_BORDER_SIZE: 0.3em;
@@ -13,6 +12,28 @@
     position: relative;
     z-index: 1;
     content {
+
+        /** for small tracks thumbnails */
+        .small-tracks {
+            item.thumbnail {
+                padding-bottom: 0;
+                overflow: visible;
+                .column(2,10);
+                .thumbnail-title {
+                    font-size: 16px;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.7em; }
+                    opacity: 0.75;
+                    &.selected {
+                        display: block;
+                        color: @ORANGE;
+                        opacity: 1.0;
+                    }
+                }
+                &.alternate { margin-left: 11.25%; }
+            }
+        }
+
+
         item.thumbnail {
             overflow: hidden;
             padding-bottom: 1em;
@@ -44,12 +65,6 @@
                         .filter(none);
                     }
                     &.selected { border-color: @ORANGE; }
-                    &.small {
-                        &:hover, &.selected {
-                            margin: (100% - @THUMBNAIL_SIZE_SMALLER_LARGE) / 2;
-                            .circular(@THUMBNAIL_SIZE_SMALLER_LARGE, 100%);
-                        }
-                    }
                 }
             }
             .thumbnail-title {

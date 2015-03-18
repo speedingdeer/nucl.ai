@@ -1,0 +1,39 @@
+---
+layout: page
+title: nucl.ai - tracks
+permalink: /program/tracks/
+---
+
+<section class="program thumbnails-grid tracks" id="section-tracks-menu">
+    <h2>Parallel Tracks</h2>
+    <grid>
+        <content class="bigger wider">
+            <div class="thumbnails small-tracks">
+            {% assign items = site.data.topics %}
+            {% assign dataType = "topics" %}
+            {% assign thumbnailClass = "small" %}
+            {% assign attachDescription = false %}
+            {% include thumbnails.html %}
+            {% comment %}
+            {% for topic in site.data.topics %}
+                <item class="thumbnail topic-{{topic.id}}">
+                    <thumbnail-wrap>
+                    {% capture thumbnail %}/img/topics/{{ topic.id }}.jpeg{% endcapture %}
+                    <thumbnail name="{{topic.title}}" style="background-image: url('{{ thumbnail |  prepend: site.baseurl }}')">
+                    </thumbnail>
+                    </thumbnail-wrap>
+                    <h3 class="thumbnail-title" name="{{topic.title}}">{{ topic.title }}</h3>
+                </item>
+            {% endfor %}
+            {% endcomment %}
+            </div>
+
+            <p>Generally speaking, <a href="/">nucl.ai</a> is made up of nine day-long tracks on specific topics, with three running in parallel each day over three days.  The current topics are as follows, and will be finalized by May 1st when single-day tickets become available:</p>
+
+            <p>Each of these tracks consists of an inspiring keynote and/or presentations from high-profile applications, specialized masterclasses and in-depth tutorials, panel discussions and expert Q&amp;A, and (if applicable) an open laboratory in workshop-style.  The different types of sessions are scheduled in different rooms throughout the day.</p>
+
+            <p class="message">IMPORTANT: Those of you that attended the <a href="http://gameaiconf.com/">Game/AI Conference</a> or Workshops in their previous iterations will find the same experience over three days in one of the rooms described below...</p>
+        </content>
+    </grid>
+
+</section>

@@ -21,23 +21,8 @@ section.program.thumbnails-grid {
         }
         div.thumbnails {
             .row(10);
-            margin: 2em 0 3em;
-        }
-        item.thumbnail {
-            padding-bottom: 0;
-            overflow: visible;
-            .column(2,10);
-            .thumbnail-title {
-                font-size: 16px;
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.7em; }
-                opacity: 0.75;
-                &.selected {
-                    display: block;
-                    color: @ORANGE;
-                    opacity: 1.0;
-                }
-            }
-            &.alternate { margin-left: 11.25%; }
+            margin-top: 2em;
+            margin-bottom: 3em;
         }
     }
 }
