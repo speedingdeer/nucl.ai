@@ -3,6 +3,8 @@
 * This value must be replicated it config.coffee. Thumbnail needs to know its final size to listen for transitionEnd if size isn't final 
 */
 @THUMBNAIL_SIZE_LARGE: 90%;
+@THUMBNAIL_SIZE_SMALLER_LARGE: 85%;
+
 /****************************/
 @THUMBNAIL_BORDER_SIZE: 0.3em;
 @THUMBNAIL_BORDER_SIZE_SELECTED: 0.3em;
@@ -42,6 +44,12 @@
                         .filter(none);
                     }
                     &.selected { border-color: @ORANGE; }
+                    &.small {
+                        &:hover, &.selected {
+                            margin: (100% - @THUMBNAIL_SIZE_SMALLER_LARGE) / 2;
+                            .circular(@THUMBNAIL_SIZE_SMALLER_LARGE, 100%);
+                        }
+                    }
                 }
             }
             .thumbnail-title {
