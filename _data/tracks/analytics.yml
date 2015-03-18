@@ -3,9 +3,4 @@
     Dynamic pricing originated in the airline industry almost 50 years ago. Since then, it has spread to the hospitality industry, to consumer packaged goods, and to retail. The rise of In-App-Purchases within gaming (more generally, the rise of digital goods, bought and sold via mobile devices), and the rapid evolution of "big data" infrastructure, presents new challenges and opportunities for dynamic pricing, both in theory and in practice. The challenge is to make sense of large masses of noisy data, in a way that is actionable for "the business side of the house" (e.g. the people who set prices). The opportunity is to reinvent how we look at data, and automate the process of sifting for information. We can take notions that are intuitively "obvious" to old-school marketers (for example: "stickershock") or endlessly discussed in economic texts (for example: "Intertemporal Price Discrimination"), make them precise, and then see, automatically and across automatically derived clusters, whether the definitions actually capture actionable differences in consumer behavior.
     In this talk, we will outline how Scientific Revenue approaches the problem of setting prices for In-App-Purchases in gaming, with illustrations and examples from the field. 
   speakers:
-    - name: Bill Grosso
-      affiliation: Scientific Revenue
-      biography: >
-        Bill is the founder and CEO of Scientific Revenue, the leading provider of dynamic pricing for in-app purchases. 
-        Prior to starting Scientific Revenue, Bill ran a consulting company focused on business intelligence and predictive analytics, and was an entrepreneur in residence at Rustic Canyon Venture Partners. Prior to those positions, he held senior positions in engineering and product at various companies, where he was well known for building high-performance organizations which shipped innovative products on time. 
-        He has also written two books on software design, has worked as a research scientist in artificial intelligence, and is the author or co-author of over 40 academic journal articles.
+    - Bill Grosso

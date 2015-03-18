@@ -4,6 +4,4 @@
     this talk would give more details about our MCTS based tactical coordination system and 
     the changes we made to maximize the number of iterations executed without deteriorating performance.
   speakers:
-    - name: Piotr Andruszkiewicz
-    - affiliation: The Creative Assembly
-    - biography: "-"
+    - Piotr Andruszkiewicz
