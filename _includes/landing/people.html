@@ -8,7 +8,7 @@
             {% for person in site.data.people %}
                 <item class="thumbnail {% cycle 'clear', 'no', 'no' %}">
                     <thumbnail-wrap>
-                        {% capture thumbnail %}/img/people/{{ person.name }}.jpg{% endcapture %}
+                        {% capture thumbnail %}/img/people/{{ person.name | escape }}.jpg{% endcapture %}
                         <thumbnail class="{% cycle 'left', 'middle', 'right' %}" name="{{person.name | escape}}" style="background-image: url('{{ thumbnail | escape |  prepend: site.baseurl }}')">
                         </thumbnail>
                     </thumbnail-wrap>
