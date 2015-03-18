@@ -1,0 +1,21 @@
+{% if lastRow %} {% capture lastRow %}last-row{% endcapture %} {% endif %}
+<item class="description {{lastRow}} animated fadeOutRight" name="{{ desc.name | escape}}">
+    <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ desc.name }}</h2>
+    <p class="work-title"> {{ desc.title }} </p>
+    <p class="links"> 
+    {% if desc.twitter %}
+        <a class="social twitter" href="http://twitter.com/{{desc.twitter}}" target="_blank"></a>
+    {% endif %}
+    </p>
+    {% if desc.bio %}
+        {% for paragraph in desc.bio %}
+            <p class="bio">
+                {{ paragraph }}
+            </p>
+        {% endfor %}
+    {% else %} 
+        {% comment%} put at least one even empty bio to not breake layout {% endcomment%}
+        <p class="bio"></p>
+    {% endif %}
+</item>
+

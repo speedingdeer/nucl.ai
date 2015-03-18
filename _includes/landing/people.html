@@ -5,58 +5,10 @@
     </h2>
     <grid>
         <content>
-            {% for person in site.data.people %}
-                <item class="thumbnail {% cycle 'clear', 'no', 'no' %}">
-                    <thumbnail-wrap>
-                        {% capture thumbnail %}/img/people/{{ person.name | escape }}.jpg{% endcapture %}
-                        <thumbnail class="{% cycle 'left', 'middle', 'right' %}" name="{{person.name | escape}}" style="background-image: url('{{ thumbnail | escape |  prepend: site.baseurl }}')">
-                        </thumbnail>
-                    </thumbnail-wrap>
-                    <h3 class="thumbnail-title" name="{{person.name | escape}}">{{ person.name }}</h3>
-                </item>
-
-    
-                {% capture modulo %}{{ forloop.index | modulo:3 }}{% endcapture %}
-                {% assign topicsIndex = forloop.index %}
-                {% assign lastRow = forloop.last %}
-                {% if modulo == '0' or forloop.last == true %}
-                    {% if modulo == '0' %}
-                        {% assign descriptions = 3 %}
-                    {% else %}
-                        {% assign descriptions = forloop.index | modulo:3 %}
-                    {% endif %}
-                    {% for num in (1...descriptions) %}
-                        {% assign descIndex = topicsIndex | minus:forloop.index %}
-                        {% assign p = site.data.people[descIndex] %}
-                        {% if lastRow %}
-                            <item class="description last-row animated fadeOutRight" name="{{p.name | escape}}">
-                        {% else %}
-                            <item class="description animated fadeOutRight" name="{{p.name | escape}}">
-                        {% endif %}
-                            <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ p.name }}</h2>
-                            <p class="work-title">
-                                {{ p.title }}
-                            </p>
-
-                            <p class="links">
-                                {% if p.twitter %}
-                                <a class="social twitter" href="http://twitter.com/{{p.twitter}}" target="_blank"></a>
-                                {% endif %}
-                            </div>
-                            {% if p.bio %}
-                                {% for paragraph in p.bio %}
-                                <p class="bio">
-                                    {{ paragraph }}
-                                </p>
-                                {% endfor %}
-                            {% else %} 
-                                {% comment%} put at least one even empty bio to not breake layout {% endcomment%}
-                                <p class="bio"></p>
-                            {% endif %}
-                        </item>
-                    {% endfor %}
-                {% endif %}
-            {% endfor %}
+            {% assign items = site.data.people %}
+            {% assign dataType = "people" %}
+            {% assign attachDescription = true %}
+            {% include thumbnails.html %}
         </content>
     </grid>
 </section>

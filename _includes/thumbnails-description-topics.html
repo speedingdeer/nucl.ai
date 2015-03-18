@@ -1,0 +1,12 @@
+{% if lastRow %} {% capture lastRow %}last-row{% endcapture %} {% endif %}
+<item class="description {{lastRow}} animated fadeOutRight" name="{{desc.title}}">
+<h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ desc.title }}</h2>
+<p> {{ desc.content }} </p>
+<h3>Keywords</h3>
+<ul>
+    {% for kw in desc.keywords %} 
+        <li>{{kw}}</li>
+    {% endfor %}
+</ul>
+<p class="note"><u>Photo Credit</u>: <a href="{{ desc.credit.url }}" target="_blank">{{ desc.credit.title }}</a></p>
+</item>
