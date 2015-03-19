@@ -4,18 +4,4 @@ title: nucl.ai - tracks
 permalink: /program/tracks/alternate/
 ---
 
-
-<section class="thumbnails-grid tracks" id="section-tracks-menu">
-    <grid>
-        <content class="bigger wider">
-            <div class="program thumbnails small-tracks">
-            {% assign items = site.data.topics %}
-            {% assign dataType = "topics" %}
-            {% assign thumbnailClass = "small" %}
-            {% assign attachDescription = false %}
-            {% include thumbnails.html %}
-            </div>
-        </content>
-    </grid>
-    <h2>PUT TITLE HERE AND CHANGE PADDING</h2>
-</section>
+{% include page/tracks/header.html %}

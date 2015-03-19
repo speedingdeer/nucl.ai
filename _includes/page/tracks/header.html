@@ -1,0 +1,26 @@
+{% comment %}
+    Assign id and item
+{% endcomment %}
+
+{% assign id = page.name | split: '.html' | first %}
+{% assign items = site.data.topics %}
+
+{% for i in items %}
+    {% if i.id == id %}
+        {% assign item = i %}
+    {% endif %}
+{% endfor %}
+
+<section class="thumbnails-grid tracks" id="section-tracks-menu">
+    <grid>
+        <content class="bigger wider">
+            <div class="program thumbnails small-tracks">
+            {% assign dataType = "topics" %}
+            {% assign thumbnailClass = "swmall" %}
+            {% assign attachDescription = false %}
+            {% include thumbnails.html %}
+            </div>
+        </content>
+        <h2> {{item.title}} </h2>
+    </grid>
+</section>

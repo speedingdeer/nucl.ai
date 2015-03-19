@@ -11,10 +11,11 @@
             {% capture href %}/program/tracks/{{ item.id | escape }}{% endcapture %}
     {% endcase %}
 
+    {% if item.id == id %} {% assign selected="selected" %} {% else %} {% assign selected="" %} {% endif %}
 
     <item class="thumbnail {{item.id}}">
         <thumbnail-wrap>
-            <a href="{{href}}"class="thumbnail {% cycle 'left', 'middle', 'right' %} {{thumbnailClass}}" name="{{name | escape}}" style="background-image: url('{{ thumbnail | escape |  prepend: site.baseurl }}')"></a>
+            <a href="{{href}}"class="thumbnail {% cycle 'left', 'middle', 'right' %} {{thumbnailClass}} {{selected}}" name="{{name | escape}}" style="background-image: url('{{ thumbnail | escape |  prepend: site.baseurl }}')"></a>
         </thumbnail-wrap>
         <h3 class="thumbnail-title" name="{{name | escape}}">{{ name }}</h3>
     </item>
