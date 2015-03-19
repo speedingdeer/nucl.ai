@@ -1,14 +1,25 @@
+{% if items != site.data.people %} {% comment %} items are filtered {% endcomment %}
+    {% for person in site.data.people %}
+        {% if person.name == desc %}
+            {% assign d = person %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    {% assign d = desc %}
+{% endif %}
+
 {% if lastRow %} {% capture lastRow %}last-row{% endcapture %} {% endif %}
-<item class="description {{lastRow}} animated fadeOutRight" name="{{ desc.name | escape}}">
-    <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ desc.name }}</h2>
-    <p class="work-title"> {{ desc.title }} </p>
+
+<item class="description {{lastRow}} animated fadeOutRight" name="{{ d.name | escape}}">
+    <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ d.name }}</h2>
+    <p class="work-title"> {{ d.title }} </p>
     <p class="links"> 
-    {% if desc.twitter %}
-        <a class="social twitter" href="http://twitter.com/{{desc.twitter}}" target="_blank"></a>
+    {% if d.twitter %}
+        <a class="social twitter" href="http://twitter.com/{{d.twitter}}" target="_blank"></a>
     {% endif %}
     </p>
-    {% if desc.bio %}
-        {% for paragraph in desc.bio %}
+    {% if d.bio %}
+        {% for paragraph in d.bio %}
             <p class="bio wide">
                 {{ paragraph }}
             </p>
@@ -18,4 +29,3 @@
         <p class="bio"></p>
     {% endif %}
 </item>
-

@@ -1,9 +1,12 @@
 section.thumbnails-grid.tracks {
+    h2 { color: @ORANGE; }
     content {
         div.thumbnails {
             .row(10);
             margin-top: 2em;
             margin-bottom: 0em;
+        }
+        item.talk {
         }
     }
     &.program {
@@ -12,6 +15,15 @@ section.thumbnails-grid.tracks {
                 margin-top: 1em;
                 margin-bottom: 2em;
             }
+        }
+    }
+}
+
+section.thumbnails-grid.tracks-content {
+    content {
+        .thumbnails item.thumbnail { 
+            float: right; 
+            h3 { margin-top: 5px; }
         }
     }
 }

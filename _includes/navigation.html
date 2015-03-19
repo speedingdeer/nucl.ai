@@ -25,7 +25,7 @@
                 <item>
                     <a href="{{linkPrefix}}#people"> People </a>
                 </item>
-
+                <!--
                 {% if page.name == 'program.html' %}
                     <item class="selected static">
                 {% else %}
@@ -33,34 +33,37 @@
                 {% endif %}
                     <a href="/program/"> Program </a>
                 </item>
+                -->
 
-                <!--
-                {% if page.name == 'audience.html'%}
+                
+                {% if page.name == 'events.html' || page.name == 'tracks.html' %}
                     <item class="selected">
                 {% else %}
                     <item>
                 {% endif %}
-                    <a href="" class="disabled expandable"> Program </a>
+                    <a href="" class="expandable"> Program </a>
                     <div class="dropdown">
                         <div class="menu">
                             <div class="menu-wrap">
                                 <div class="table">
-                                <div class="triangle"></div>
+                                    <div class="triangle"></div>
                                 </div>
+                                <!--
                                 <div class="table">
                                     <a href=""> Schedule </a>
                                 </div>
-                                    <div class="table">
-                                <a href=""> Talks </a>
-                                    </div>
+                                -->
                                 <div class="table">
-                                    <a href=""> Events </a>
+                                    <a href="/program/events/"> Events </a>
+                                </div>
+                                <div class="table">
+                                    <a href="/program/tracks/"> Tracks </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </item>
-                -->
+                
                 <!--
                 {% if page.name == 'venue.html'%}
                     <item class="selected static">

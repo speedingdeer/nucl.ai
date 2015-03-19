@@ -1,23 +1,33 @@
-{% for item in items %}
+{% for it in items %}
 
     {% case dataType %}
         {% when "people" %}
-            {% assign name = item.name %}
-            {% capture thumbnail %}/img/people/{{ name | escape }}.jpg{% endcapture %}
-            {% capture href %}nowhere{% endcapture %}
+            {% if items != site.data.people %} {% comment %} items are filtered {% endcomment %}
+                {% for person in site.data.people %}
+                    {% if person.name == it %}
+                        {% assign thumbnail = person %}
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                {% assign thumbnail = it %}
+            {% endif %}
+            {% assign name = thumbnail.name %}
+            {% capture picture %}/img/people/{{ name | escape }}.jpg{% endcapture %}
+            {% capture href %}/#people{{ thumbnail.id | escape }}{% endcapture %}
         {% when "topics" %}
-            {% assign name = item.title %}
-            {% capture thumbnail %}/img/topics/{{ item.id | escape }}.jpg{% endcapture %}
-            {% capture href %}/program/tracks/{{ item.id | escape }}{% endcapture %}
+            {% assign thumbnail = it %}
+            {% assign name = thumbnail.title %}
+            {% capture picture %}/img/topics/{{ thumbnail.id | escape }}.jpg{% endcapture %}
+            {% capture href %}/program/tracks/{{ thumbnail.id | escape }}{% endcapture %}
     {% endcase %}
 
-    {% if item.id == id %} {% assign selected="selected" %} {% else %} {% assign selected="" %} {% endif %}
+    {% if thumbnail.id == id %} {% assign selected="selected" %} {% else %} {% assign selected="" %} {% endif %}
 
-    <item class="thumbnail {{item.id}}">
+    <item class="thumbnail {{thumbnail.id}}">
         <thumbnail-wrap>
-            <a href="{{href}}"class="thumbnail {% cycle 'left', 'middle', 'right' %} {{thumbnailClass}} {{selected}}" name="{{name | escape}}" style="background-image: url('{{ thumbnail | escape |  prepend: site.baseurl }}')"></a>
+            <a href="{{href}}"class="thumbnail {% cycle 'left', 'middle', 'right' %} {{thumbnailClass}} {{selected}}" name="{{name | escape}}" style="background-image: url('{{ picture | escape |  prepend: site.baseurl }}')"></a>
         </thumbnail-wrap>
-        <h3 class="thumbnail-title" name="{{name | escape}}">{{ name }}</h3>
+        <h3 class="thumbnail-title {{selected}}" name="{{name | escape}}">{{ name }}</h3>
     </item>
 
     {% if attachDescription %}
@@ -43,6 +53,7 @@
                         {% include thumbnails-description-topics.html %}
                 {% endcase %}
             {% endfor %}
+            <div style="clear: both; width: 100%;"></div>
         {% endif %}
 
     {% endif %}

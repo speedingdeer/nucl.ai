@@ -1,0 +1,19 @@
+<section class="thumbnails-grid tracks-content " id="track-content">
+    <grid>
+        {% assign items = site.data.tracks[item.id] %}
+        <content>
+                {% for item in items %}
+                <item class="talk">
+                    <h3>{{item.title}}</h3>
+                    {% assign items = item.speakers %}
+                    {% assign dataType = "people" %}
+                    {% assign attachDescription = true %}
+                    <p class="description wide">{{item.description}}</p>
+                    <div class="thumbnails small-thumbnails">
+                        {% include thumbnails.html %}
+                    </div>
+                </item>
+            {% endfor %}
+        </content>
+    </grid>
+</section>
