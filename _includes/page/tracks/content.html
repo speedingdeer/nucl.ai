@@ -1,5 +1,9 @@
+{% include page/tracks/assign.html %}
+
+
 <section class="thumbnails-grid tracks-content " id="track-content">
     <grid>
+        <h2 class="titlebar"> {{item.title}} </h2>
         {% assign items = site.data.tracks[item.id] %}
         <content>
                 {% for item in items %}

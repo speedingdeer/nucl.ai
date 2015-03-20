@@ -1,0 +1,12 @@
+{% comment %}
+    Assign id and item
+{% endcomment %}
+
+{% assign id = page.name | split: '.html' | first %}
+{% assign items = site.data.topics %}
+
+{% for i in items %}
+    {% if i.id == id %}
+        {% assign item = i %}
+    {% endif %}
+{% endfor %}
