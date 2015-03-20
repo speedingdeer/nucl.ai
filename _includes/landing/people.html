@@ -1,15 +1,70 @@
-<section class="people thumbnails-grid" id="section-people">
+<section class="people thumbnails-grid" id="section-people-track-chairs">
     <a class="anchor" id="people"></a>
     <h2 class="titlebar">
-        Speakers &amp; Organizers
+        Co-Organizers & Track Chairs
     </h2>
     <grid>
         <content>
-            {% assign items = site.data.people %}
+            {% assign filterPeopleType = "track" %}
+            {% include people/filtered.html %}
             {% assign dataType = "people" %}
-            {% assign id = "people" %}
-            {% assign attachDescription = true %}
-            {% include thumbnails.html %}
+            {% assign itemsInRow = 6 %}
+            <div class="thumbnails thumbnails-6-in-row">
+                {% include thumbnails.html %}
+            </div>
+        </content>
+    </grid>
+</section>
+
+<section class="people thumbnails-grid" id="section-people-speakers">
+    <a class="anchor" id="people"></a>
+    <h2 class="titlebar">
+        Speakers
+    </h2>
+    <grid>
+        <content>
+            {% assign filterPeopleType = "speaker" %}
+            {% include people/filtered.html %}
+            {% assign dataType = "people" %}
+            {% assign itemsInRow = 6 %}
+            <div class="thumbnails thumbnails-6-in-row">
+                {% include thumbnails.html %}
+            </div>
+        </content>
+    </grid>
+</section>
+
+<section class="people thumbnails-grid" id="section-people-advisors">
+    <a class="anchor" id="people"></a>
+    <h2 class="titlebar">
+        Advisors
+    </h2>
+    <grid>
+        <content>
+            {% assign filterPeopleType = "advisory" %}
+            {% include people/filtered.html %}
+            {% assign dataType = "people" %}
+            {% assign itemsInRow = 6 %}
+            <div class="thumbnails thumbnails-6-in-row">
+                {% include thumbnails.html %}
+            </div>
+        </content>
+    </grid>
+</section>
+<section class="people thumbnails-grid" id="section-people-organizers">
+    <a class="anchor" id="people"></a>
+    <h2 class="titlebar">
+        Organizers
+    </h2>
+    <grid>
+        <content>
+            {% assign filterPeopleType = "org" %}
+            {% include people/filtered.html %}
+            {% assign dataType = "people" %}
+            {% assign itemsInRow = 6 %}
+            <div class="thumbnails thumbnails-6-in-row">
+                {% include thumbnails.html %}
+            </div>
         </content>
     </grid>
 </section>

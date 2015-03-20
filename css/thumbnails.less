@@ -14,11 +14,10 @@
     content {
 
         /** for small thumbnails */
-        .small-thumbnails {
+        .small-thumbnails() {
             item.thumbnail {
                 padding-bottom: 0;
                 overflow: visible;
-                .column(2,10);
                 .thumbnail-title {
                     font-size: 16px;
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.7em; }
@@ -30,6 +29,19 @@
                     }
                 }
                 &.alternate { margin-left: 11.25%; }
+            }
+        }
+        .thumbnails-5-in-row {
+            .small-thumbnails();
+            item.thumbnail {
+                .column(2,10);
+                &.alternate { margin-left: 11.25%; } //@TODO move me to program / tracks
+            }
+        }
+        .thumbnails-6-in-row {
+            .small-thumbnails();
+            item.thumbnail {
+                .column(2,12);
             }
         }
 

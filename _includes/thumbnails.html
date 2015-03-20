@@ -1,5 +1,4 @@
 {% for it in items %}
-
     {% case dataType %}
         {% when "people" %}
             {% if items != site.data.people %} {% comment %} items are filtered {% endcomment %}
@@ -21,7 +20,7 @@
             {% capture href %}/program/tracks/{{ thumbnail.id | escape }}{% endcapture %}
     {% endcase %}
 
-    {% if thumbnail.id == id %} {% assign selected="selected" %} {% else %} {% assign selected="" %} {% endif %}
+    {% if thumbnail.id and thumbnail.id == id %} {% assign selected="selected" %} {% else %} {% assign selected="" %} {% endif %}
 
     <item class="thumbnail {{thumbnail.id}}">
         <thumbnail-wrap>
@@ -31,16 +30,18 @@
     </item>
 
     {% if attachDescription %}
-
-        {% capture modulo %}{{ forloop.index | modulo:3 }}{% endcapture %}
+    1
+        {% if itemsInRow %} {% else %} {% assign itemsInRow = 3 %} {% endif %}
+2
+        {% capture modulo %}{{ forloop.index | modulo:itemsInRow }}{% endcapture %}
         {% assign topicsIndex = forloop.index %}
         {% assign lastRow = forloop.last %}
-
+3
         {% if modulo == '0' or forloop.last == true %}
             {% if modulo == '0' %}
-                {% assign descriptions = 3 %}
+                {% assign descriptions = itemsInRow %}
             {% else %}
-                {% assign descriptions = forloop.index | modulo:3 %}
+                {% assign descriptions = forloop.index | modulo:itemsInRow %}
             {% endif %}
             <div style="clear: both; width: 100%;"></div>
             {% for num in (1...descriptions) %}

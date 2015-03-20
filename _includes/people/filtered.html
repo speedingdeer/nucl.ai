@@ -1,0 +1,7 @@
+{% assign names = "" %}
+{% for person in site.data.people %}
+    {% if person.role == filterPeopleType %}
+        {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+    {% endif %}
+{% endfor %}
+{% assign items = names | split:"," %}
