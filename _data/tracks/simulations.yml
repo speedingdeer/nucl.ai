@@ -1,11 +1,13 @@
 - title: "Behavior design for an operational military simulation"
   description: >
-    This talk will focus on the process to create behavior for military training simulations. 
-    When using simulations to confront trainees to face complex situations, 
-    the modeling of realistic automated forces becomes essential. 
-    From analysis of miltary decisional processes to behavior modeling, 
-    testing and validation the process necessitates the collaboration between the simulation and the operationnal experts. 
-    This talk will be illustrated by example from MASA SWORD, a training simulation used throughout the world.
+    For armies, training is both very important and expensive and potentially dangerous to do in the real worlds; 
+    the use of simulations is therefore widespread. When using simulations to confront trainees to face complex situations, 
+    the modeling of realistic automated forces becomes essential. This implies the construction of behavior models 
+    to make automated forces behave in the simulated environment.
+    This talk will focus on this construction process, from the analysis of military doctrine and the end user needs 
+    to the behavior modeling by specialists and finally the test and validation process. 
+    MASA SWORD, a simulation for command post training used by many armies throughout will serve as an illustration for 
+    this presentation.
   
 - title: "Orchestration of virtual environments for training in complex sociotechnical situations"
   description: >
