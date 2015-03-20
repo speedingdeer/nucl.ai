@@ -30,13 +30,10 @@
     </item>
 
     {% if attachDescription %}
-    1
         {% if itemsInRow %} {% else %} {% assign itemsInRow = 3 %} {% endif %}
-2
         {% capture modulo %}{{ forloop.index | modulo:itemsInRow }}{% endcapture %}
         {% assign topicsIndex = forloop.index %}
         {% assign lastRow = forloop.last %}
-3
         {% if modulo == '0' or forloop.last == true %}
             {% if modulo == '0' %}
                 {% assign descriptions = itemsInRow %}
@@ -56,7 +53,5 @@
             {% endfor %}
             <div style="clear: both; width: 100%;"></div>
         {% endif %}
-
     {% endif %}
-
 {% endfor %}
