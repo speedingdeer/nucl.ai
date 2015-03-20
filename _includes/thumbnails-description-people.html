@@ -11,7 +11,12 @@
 {% if lastRow %} {% capture lastRow %}last-row{% endcapture %} {% endif %}
 
 <item class="description {{lastRow}} animated fadeOutRight" name="{{ d.name | escape}}">
-    <h2 class="thumbnail-title {% cycle 'left', 'middle', 'right' %}">{{ d.name }}</h2>
+    <h2 class="thumbnail-title 
+    {% if itemsInRow == 3 %}
+        {% cycle 'left', 'middle', 'right' %} 
+    {% endif %}
+    ">
+    {{ d.name }}</h2>
     <p class="work-title"> {{ d.title }} </p>
     <p class="links"> 
     {% if d.twitter %}
