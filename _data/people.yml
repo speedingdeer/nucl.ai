@@ -1,6 +1,7 @@
 
 - name: Clodéric Mars
   role: track
+  track: animation
   title: "Co-Organizer & Track Chair"
   twitter: clodericmars
   bio: >
@@ -12,16 +13,19 @@
 
 - name: Diego Perez
   role: track
+  track: decisions
   title: "Co-Organizer & Track Chair"
   twitter: diego_pliebana
 
 - name: Michaël Rouillé
   role: track
+  track: simulations
   title: "Co-Organizer & Track Chair"
   twitter: michaelrouille
 
 - name: Heather Stark
   role: track
+  track: behavior
   title: "Co-Organizer & Track Chair"
   twitter: hastark
   bio: >
@@ -32,6 +36,7 @@
 
 - name: Tommy Thompson
   role: track
+  track: procedural
   title: "Co-Organizer & Track Chair"
   bio: >
     Tommy Thompson is a lecturer in computer science at the University of Derby, UK.
@@ -41,6 +46,7 @@
 
 - name: Mika Vehkala
   role: track
+  track: alternate
   title: "Co-Organizer & Track Chair"
   bio: >
     Mika has been working in the industry since late 1999 -- including IO Interactive as Senior AI Programmer on the Hitman: Absolution and Killzone: Shadow Fall for Guerrilla Games.
@@ -48,6 +54,7 @@
 
 - name: Emil "AngryAnt" Johansen
   role: advisory
+  track: ambient
   title: "Advisory Board Member"
   twitter: AngryAnt
   bio: >
