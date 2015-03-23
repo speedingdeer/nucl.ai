@@ -5,8 +5,8 @@ $(window).load ->
 
   $(window).scroll ->
     if window.location.hash != ""
-      if history.pushState 
-        history.pushState null, null, ' '
+      if history.replaceState
+        history.replaceState null, null, ' '
 
   ## fake click if soemthing selected in url hash
   if (! @selected || @selected.length == 0) && window.location.hash != ""
