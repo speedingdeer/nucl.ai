@@ -5,9 +5,13 @@
             <div class="program thumbnails thumbnails-6-in-row">
                 {% assign names = "" %}
 
-                {% comment %}
-                    @TODO attach track chair as the first spekaer
-                {% endcomment %}
+                {% for person in site.data.people %}
+                    {% for track in person.tracks %}
+                        {% if track == item.id %}
+                            {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
 
                 {% assign talks = site.data.tracks[item.id] %}
                 {% for talk in talks %}
