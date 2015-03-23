@@ -3,7 +3,7 @@ root = exports ? this # global
 
 class Thumbnails
 
-  constructor: (sectionId, @animated, @justSize) ->
+  constructor: (sectionId, @animated, @justSize, @drawSvg) ->
     that = @
     @section  = $("#" + sectionId)
     if @section.length != 1 
@@ -12,14 +12,14 @@ class Thumbnails
     ## buid svg
     @paper = Raphael(sectionId, "100%", "100%")
     ## select jquery object
-    @svg = @section.find("svg")
+    @svg = if @drawSvg then @section.find("svg") else null
     @wraps =  @section.find("thumbnail-wrap")
     @thumbnails = @section.find("a.thumbnail")
 
     $(window).resize ->
       that.setThumbnailSize()
       ## if there is any!
-      if that.svg.find("path").length > 0
+      if that.svg and that.svg.find("path").length > 0
         that.clearLine()
         that.drawLine()
 
@@ -179,9 +179,11 @@ class Thumbnails
 
 
   clearLine: ->
+    if ! @svg then return # don't try to draw i svg isn't defined
     @svg.find("path").remove()
 
   drawLine: ->
+    if ! @svg then return # don't try to draw i svg isn't defined
     thumbnail = @selected
 
     title = thumbnail.jQdescription.find(".thumbnail-title")

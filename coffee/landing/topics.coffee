@@ -1,3 +1,3 @@
 $ ->
   if $("#section-topics").length == 0 then return
-  thumbnails = new Thumbnails "section-topics", true
+  thumbnails = new Thumbnails "section-topics", true, false, true
