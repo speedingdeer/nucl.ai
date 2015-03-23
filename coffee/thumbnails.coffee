@@ -214,8 +214,8 @@ class Thumbnails
     startX = thumbnail.offset().left + thumbnail.width() / 2
 
     #check if line intersects title
-    if thumbnail.hasClass("left") and title.offset().left <= startX then return
-    if thumbnail.hasClass("right") and title.offset().left >= startX then return
+    if thumbnail.hasClass("column-first") and title.offset().left <= startX then return
+    if thumbnail.hasClass("column-last") and title.offset().left >= startX then return
 
     #calculate vertical line
     endY = title.offset().top + title.outerHeight() - @section.offset().top
@@ -224,17 +224,17 @@ class Thumbnails
     originalEndY = endY
 
     # calculate horizontal leftLine
-    if thumbnail.hasClass("left")
+    if thumbnail.hasClass("column-first")
       endX = title.offset().left + title.width()
-    else if thumbnail.hasClass("right") 
+    else if thumbnail.hasClass("column-last") 
       endX = title.offset().left
     else
       endY = endY - title.outerHeight()
 
-    if thumbnail.hasClass("left") || thumbnail.hasClass("right") || thumbnail.hasClass("middle") 
+    if thumbnail.hasClass("column-first") || thumbnail.hasClass("column-last") || thumbnail.hasClass("middle") 
       line = @paper.path("M" + startX + " " + startY + "L " + startX + " " + endY + " L " + endX + " " + endY)
 
-    if ! thumbnail.hasClass("left") && ! thumbnail.hasClass("right")
+    if ! thumbnail.hasClass("column-first") && ! thumbnail.hasClass("column-last")
       #draw disconnected horizontal line
       @paper.path("M " + title.offset().left + " " + originalEndY + "L " + (title.offset().left + title.width()) + " " + originalEndY)
 

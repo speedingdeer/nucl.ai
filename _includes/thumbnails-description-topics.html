@@ -1,9 +1,11 @@
 {% if lastRow %} {% capture lastRow %}last-row{% endcapture %} {% endif %}
 <item class="description {{lastRow}} animated fadeOutRight" name="{{desc.title}}">
     <h2 class="thumbnail-title
-    {% if itemsInRow == 3 %}
-        {% cycle 'left', 'middle', 'right' %} 
-    {% endif %}
+        column-{{ descModulo}}
+        {% if descModulo == '1' %} column-first 
+        {% elsif descModulo == '0' %} column-last
+        {% elsif itemsInRow == '3' %} column-middle
+        {% endif %}
     ">{{ desc.title }}</h2>
     <p class="wide"> {{ desc.content }} </p>
     <h3>Keywords</h3>

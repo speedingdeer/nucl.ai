@@ -27,15 +27,14 @@
 
     {% if thumbnail.id and thumbnail.id == id %} {% assign selected="selected allows-selcted" %} {% else %} {% assign selected="" %} {% endif %}
 
+    {% capture modulo %}{{ forloop.index | modulo:itemsInRow }}{% endcapture %}
+
     <item class="thumbnail {{thumbnail.id}}">
         <thumbnail-wrap>
             <a id="thumbnail-id-{{thumbnailId}}"href="{{href}}"class="thumbnail 
-                {% if itemsInRow == 3 %}
-                    {% cycle 'left', 'middle', 'right' %} 
-                {% endif %}
-                {% if itemsInRow == 6 %}
-                    {% cycle 'left', 'none','none','none','none', 'right' %} 
-                {% endif %}
+                column-{{ forloop.index | modulo:itemsInRow }}
+                {% if modulo == '1' %} column-first {% endif %}
+                {% if modulo == '0' %} column-last {% endif %}
                 {{thumbnailClass}} {{selected}}" name="{{name | escape}}" style="background-image: url('{{ picture | escape |  prepend: site.baseurl }}')">
             </a>
         </thumbnail-wrap>
