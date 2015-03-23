@@ -5,7 +5,30 @@
   speakers:
     - Bill Grosso
 
-- title: "Streaming architectures and algorithms"
-  description: ""
+- title: "Fast > Perfect: Practical approximation examples for mobile game analytics using Spark Streaming"
+  description: >
+    For mobile games, constant tweaks are the difference between success and failure. 
+    Game designers need metrics like DAU, new users and ARPDAU in real-time to be able to tweak quickly. 
+    But calculating, for example, uniqueness or newness of a data point requires a list of seen data points - 
+    both memory intensive and tricky when using real-time stream processing like Spark Streaming. 
+    Probabilistic data structures allow approximation of these properties with a fixed memory representation 
+    and are very well suited for stream processing. 
+    Getting from the theory of approximation to a practical useful metric at a low error rate even for many millions of users 
+    is another story. In this talk we will look at ways to achieve it:
+    <ul>
+    <li>
+    Which approximation we use for selection of useful metrics
+    </li>
+    <li>
+    Why we picked a specific probabilistic data structure
+    </li>
+    <li>
+    How we store it in Cassandra as a time series
+    </li>
+    <li>
+    How we implemented it in Spark Streaming
+    </li>
+    </ul>
   speakers:
     - Kevin Schmidt
+    - Luis Angel Vicente Sanchez

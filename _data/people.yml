@@ -88,11 +88,25 @@
     Prior to starting Scientific Revenue, Bill ran a consulting company focused on business intelligence and predictive analytics, and was an entrepreneur in residence at Rustic Canyon Venture Partners. Prior to those positions, he held senior positions in engineering and product at various companies, where he was well known for building high-performance organizations which shipped innovative products on time. 
     He has also written two books on software design, has worked as a research scientist in artificial intelligence, and is the author or co-author of over 40 academic journal articles.
     
+- name: Luis Angel Vicente Sanchez
+  role: speaker
+  title: Speaker
+  affiliation: Mind Candy
+  bio: >
+    Luis is Senior Data Engineer at Mind Candy, was the first to introduce Spark Streaming at the company and is responsible 
+    for the real-time mobile analytics platform. He has more than 10 years of experience in software engineering and 
+    architecture, and has made contributions to open source projects like twitter/algebird, datastax/spark-cassandra-connector 
+    and spray/spray.
+ 
 - name: Kevin Schmidt
   role: speaker
   title: Speaker
   affiliation: Mind Candy
-  bio: ""
+  bio: >
+    Kevin built up the data science and engineering team at Mind Candy and with the team created a scalable architecture 
+    for mobile game analytics based on Apache Spark. Before Mind Candy, Kevin was heading the data and back-end services 
+    team at Last.fm using Hadoop to work with ten years of music listening data from millions of users as well as spending 
+    four years working on private clouds and service architecture at Goldman Sachs.
 
 - name: Michael Büttner
   role: speaker
