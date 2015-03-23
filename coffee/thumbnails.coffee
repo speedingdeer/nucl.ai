@@ -47,8 +47,6 @@ class Thumbnails
     if not @animated then @thumbnailsNotAnimated() 
     if @animated then @thumbnailsAnimated()
 
-
-
   ## selections / animation
 
   fadeOut: (t) ->

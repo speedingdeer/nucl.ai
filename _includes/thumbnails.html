@@ -13,12 +13,14 @@
                 {% assign thumbnail = it %}
             {% endif %}
             {% assign name = thumbnail.name %}
+            {% capture thumbnailId %}{{thumbnail.name | escape | replace:' ','-' | downcase}}{% endcapture %}
             {% capture picture %}/img/people/{{ name | escape }}.jpg{% endcapture %}
-            {% capture href %}/#{{thumbnail.name | escape | replace:' ','-' | downcase}}{% endcapture %}
+            {% capture href %}/#{{thumbnailId}}{% endcapture %}
             {% if page.name == "index.html" %} <a class="anchor" id="{{thumbnail.name | escape | replace:' ','-' | downcase}}"></a> {% endif %}
         {% when "topics" %}
             {% assign thumbnail = it %}
             {% assign name = thumbnail.title %}
+            {% capture thumbnailId %}{{thumbnail.id}}{% endcapture %}
             {% capture picture %}/img/topics/{{ thumbnail.id | escape }}.jpg{% endcapture %}
             {% capture href %}/program/tracks/{{ thumbnail.id | escape }}{% endcapture %}
     {% endcase %}
@@ -27,7 +29,7 @@
 
     <item class="thumbnail {{thumbnail.id}}">
         <thumbnail-wrap>
-            <a href="{{href}}"class="thumbnail 
+            <a id="thumbnail-id-{{thumbnailId}}"href="{{href}}"class="thumbnail 
                 {% if itemsInRow == 3 %}
                     {% cycle 'left', 'middle', 'right' %} 
                 {% endif %}

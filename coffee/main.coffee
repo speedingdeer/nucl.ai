@@ -7,3 +7,8 @@ $(window).load ->
     if window.location.hash != ""
       if history.pushState 
         history.pushState null, null, ' '
+
+  ## fake click if soemthing selected in url hash
+  if (! @selected || @selected.length == 0) && window.location.hash != ""
+    selectedId = window.location.hash.substring(1)
+    $("#thumbnail-id-" + selectedId).click()
