@@ -178,7 +178,8 @@ class Thumbnails
           $(@).remove(); # prevent memory leaks
         .error ->
           $(@).remove(); # prevent memory leaks
-          thumbnail.css("background-image", "url(/img/logo.png)")
+          thumbnail.css("background-image", "")
+          thumbnail.addClass("logo")
 
 
   ## drawing svg
