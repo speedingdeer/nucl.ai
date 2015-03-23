@@ -25,18 +25,14 @@
                 <item>
                     <a href="{{linkPrefix}}#people"> People </a>
                 </item>
-                <!--
-                {% if page.name == 'program.html' %}
-                    <item class="selected static">
-                {% else %}
-                    <item>
-                {% endif %}
-                    <a href="/program/"> Program </a>
-                </item>
-                -->
-
-                
-                {% if page.name == 'events.html' || page.name == 'tracks.html' %}
+       
+                {% for topic in site.data.topics %}
+                    {% capture pageName %}{{topic.id}}.html{% endcapture %}
+                    {% if pageName == page.name %}
+                        {% assign isTrackPage = true %}
+                    {% endif %}
+                {% endfor %}
+                {% if page.name == 'events.html' or page.name == 'tracks.html' or isTrackPage %}
                     <item class="selected">
                 {% else %}
                     <item>
@@ -53,10 +49,18 @@
                                     <a href=""> Schedule </a>
                                 </div>
                                 -->
-                                <div class="table">
+                                {% if page.name == 'events.html' %}
+                                    <div class="table selected item">
+                                {% else %}
+                                    <div class="table item">
+                                {% endif %}
                                     <a href="/program/events/"> Events </a>
                                 </div>
-                                <div class="table">
+                                {% if page.name == 'tracks.html' %}
+                                    <div class="table selected item">
+                                {% else %}
+                                    <div class="table item">
+                                {% endif %}
                                     <a href="/program/tracks/"> Tracks </a>
                                 </div>
                             </div>

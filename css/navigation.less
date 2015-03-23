@@ -35,35 +35,10 @@ sections {
             content {
                 overflow: visible;
                 width: 100%;
-                item {
-                    width: 15%;
-                    //width: 13%;
-                    display: block;
-                    float: left;
-                    text-align: center;
-                    position: relative;
-                    &.nav-logo {
-                        width: 10%;
-                        //width: 9%;
-                        line-height: 1px;
-                    }
-                    div.icons-wrap {
-                        display: inline-block;
-                        position: relative;
-                        width: @NAVIGATION_HEIGHT - 28px;
-                        height: @NAVIGATION_HEIGHT;
-                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                            width: @NAVIGATION_HEIGHT_MOBILE - 20px;
-                            height: @NAVIGATION_HEIGHT_MOBILE;
-                        }
-                        .logo {
-                            display: block;
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            width: 100%;
-                            background-position: center 50%;
-                        }
-                    }
+
+                /* link inside item */
+                div.item { width: 100% }
+                item, div.item {
                     a {
                         width: inherit;
                         height: @NAVIGATION_HEIGHT;
@@ -114,6 +89,37 @@ sections {
                             .logo.orange {
                                 opacity: 1;
                             }
+                        }
+                    }
+                }
+
+                item {
+                    width: 15%;
+                    //width: 13%;
+                    display: block;
+                    float: left;
+                    text-align: center;
+                    position: relative;
+                    &.nav-logo {
+                        width: 10%;
+                        //width: 9%;
+                        line-height: 1px;
+                    }
+                    div.icons-wrap {
+                        display: inline-block;
+                        position: relative;
+                        width: @NAVIGATION_HEIGHT - 28px;
+                        height: @NAVIGATION_HEIGHT;
+                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                            width: @NAVIGATION_HEIGHT_MOBILE - 20px;
+                            height: @NAVIGATION_HEIGHT_MOBILE;
+                        }
+                        .logo {
+                            display: block;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 100%;
+                            background-position: center 50%;
                         }
                     }
                     .logo.orange { 
