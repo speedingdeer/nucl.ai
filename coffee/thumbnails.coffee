@@ -47,6 +47,12 @@ class Thumbnails
     if not @animated then @thumbnailsNotAnimated() 
     if @animated then @thumbnailsAnimated()
 
+    ## fake click if soemthing selected in url hash
+    if (! @selected || @selected.length == 0) && window.location.hash != ""
+      selectedId = window.location.hash.substring(1)
+      @section.find("#thumbnail-id-" + selectedId).click()
+
+
   ## selections / animation
 
   fadeOut: (t) ->
