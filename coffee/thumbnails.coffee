@@ -27,8 +27,8 @@ class Thumbnails
 
     @thumbnails.each ->
       @.jQthumbnail = $(@)
-      @.jQdescription = $(".description[name='" + $(@).attr('name') + "']")
-      @.jQtitle = $("item.thumbnail .thumbnail-title[name='" + $(@).attr('name') + "']")
+      @.jQdescription = that.section.find(".description[name='" + $(@).attr('name') + "']")
+      @.jQtitle = that.section.find("item.thumbnail .thumbnail-title[name='" + $(@).attr('name') + "']")
       ## change title color on thumbnail hover
       t = @
       t.jQthumbnail.hover () ->

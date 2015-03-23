@@ -14,18 +14,6 @@ permalink: /program/tracks/
             {% assign thumbnailClass = "small" %}
             {% assign attachDescription = false %}
             {% include thumbnails.html %}
-            {% comment %}
-            {% for topic in site.data.topics %}
-                <item class="thumbnail topic-{{topic.id}}">
-                    <thumbnail-wrap>
-                    {% capture thumbnail %}/img/topics/{{ topic.id }}.jpeg{% endcapture %}
-                    <thumbnail name="{{topic.title}}" style="background-image: url('{{ thumbnail |  prepend: site.baseurl }}')">
-                    </thumbnail>
-                    </thumbnail-wrap>
-                    <h3 class="thumbnail-title" name="{{topic.title}}">{{ topic.title }}</h3>
-                </item>
-            {% endfor %}
-            {% endcomment %}
             </div>
 
             <p>Generally speaking, <a href="/">nucl.ai</a> is made up of nine day-long tracks on specific topics, with three running in parallel each day over three days.  The current topics are as follows, and will be finalized by May 1st when single-day tickets become available:</p>

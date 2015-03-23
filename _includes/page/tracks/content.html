@@ -18,7 +18,9 @@
                     <h3>{{item.title}}</h3>
                     {% assign items = item.speakers %}
                     {% assign dataType = "people" %}
-                    <p class="description wide big">{{item.description}}</p>
+                    <div class="description wide big">
+                    <p >{{item.description}}</p>
+                    </div>
                     <div class="thumbnails thumbnails-5-in-row">
                         {% include thumbnails.html %}
                     </div>
