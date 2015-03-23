@@ -4,3 +4,6 @@ $ ->
 
   if $("#track-content").length > 0
     thumbnails = new Thumbnails "track-content", true, true, false
+
+  if $("#section-tracks-people").length > 0
+    thumbnails = new Thumbnails "section-tracks-people", true, true, false

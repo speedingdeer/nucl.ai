@@ -1,0 +1,27 @@
+<section class="tracks-people thumbnails-grid" id="section-tracks-people">
+    <grid>
+        <h2 class="titlebar">People</h2>
+        <content>
+            <div class="program thumbnails thumbnails-6-in-row">
+                {% assign names = "" %}
+
+                {% comment %}
+                    @TODO attach track chair as the first spekaer
+                {% endcomment %}
+
+                {% assign talks = site.data.tracks[item.id] %}
+                {% for talk in talks %}
+                    {% for spekaer in talk.speakers %}
+                        {% capture names %}{% if names != "" %}{{names}},{% endif %}{{spekaer}}{% endcapture %}
+                    {% endfor %}
+                {% endfor %}
+                {% assign items = names | split:"," %}
+                {% assign dataType = "people" %}
+                {% assign itemsInRow = 6 %}
+                <div class="thumbnails thumbnails-6-in-row">
+                    {% include thumbnails.html %}
+                </div>
+            </div>
+        </content>
+    </grid>
+</section>

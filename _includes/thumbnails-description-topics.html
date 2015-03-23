@@ -1,16 +1,21 @@
 {% if lastRow %} {% capture lastRow %}last-row{% endcapture %} {% endif %}
 <item class="description {{lastRow}} animated fadeOutRight" name="{{desc.title}}">
-<h2 class="thumbnail-title
-{% if itemsInRow == 3 %}
-    {% cycle 'left', 'middle', 'right' %} 
-{% endif %}
-">{{ desc.title }}</h2>
-<p class="wide"> {{ desc.content }} </p>
-<h3>Keywords</h3>
-<ul>
-    {% for kw in desc.keywords %} 
-        <li>{{kw}}</li>
-    {% endfor %}
-</ul>
-<p class="note"><u>Photo Credit</u>: <a href="{{ desc.credit.url }}" target="_blank">{{ desc.credit.title }}</a></p>
+    <h2 class="thumbnail-title
+    {% if itemsInRow == 3 %}
+        {% cycle 'left', 'middle', 'right' %} 
+    {% endif %}
+    ">{{ desc.title }}</h2>
+    <p class="wide"> {{ desc.content }} </p>
+    <h3>Keywords</h3>
+    <ul>
+        {% for kw in desc.keywords %} 
+            <li>{{kw}}</li>
+        {% endfor %}
+    </ul>
+    <p class="note">
+        <u>Photo Credit</u>: <a href="{{ desc.credit.url }}" target="_blank">{{ desc.credit.title }}</a>
+    </p>
+    <p class="note">
+        <a href="/program/tracks/{{desc.id}}" class="ready-more">Read about track's talks and speakers</a>
+    </p>
 </item>

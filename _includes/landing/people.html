@@ -1,69 +1,47 @@
 <section class="people thumbnails-grid" id="section-people-track-chairs">
     <a class="anchor" id="people"></a>
-    <h2 class="titlebar">
-        Co-Organizers & Track Chairs
-    </h2>
+    <h2 class="titlebar"> People </h2>
     <grid>
         <content>
-            {% assign filterPeopleType = "track" %}
-            {% include people/filtered.html %}
-            {% assign dataType = "people" %}
-            {% assign itemsInRow = 6 %}
-            <div class="thumbnails thumbnails-6-in-row">
-                {% include thumbnails.html %}
+            <div class="subsection">
+                <h3> Track Chairs </h3>
+                {% assign filterPeopleType = "track" %}
+                {% include people/filtered.html %}
+                {% assign dataType = "people" %}
+                {% assign itemsInRow = 6 %}
+                <div class="thumbnails thumbnails-6-in-row">
+                    {% include thumbnails.html %}
+                </div>
             </div>
-        </content>
-    </grid>
-</section>
-
-<section class="people thumbnails-grid" id="section-people-speakers">
-    <a class="anchor" id="people"></a>
-    <h2 class="titlebar">
-        Speakers
-    </h2>
-    <grid>
-        <content>
-            {% assign filterPeopleType = "speaker" %}
-            {% include people/filtered.html %}
-            {% assign dataType = "people" %}
-            {% assign itemsInRow = 6 %}
-            <div class="thumbnails thumbnails-6-in-row">
-                {% include thumbnails.html %}
+            <div class="subsection">
+                <h3> Speakers </h3>
+                {% assign filterPeopleType = "speaker" %}
+                {% include people/filtered.html %}
+                {% assign dataType = "people" %}
+                {% assign itemsInRow = 6 %}
+                <div class="thumbnails thumbnails-6-in-row" style="clear: both;">
+                    {% include thumbnails.html %}
+                </div>
             </div>
-        </content>
-    </grid>
-</section>
-
-<section class="people thumbnails-grid" id="section-people-advisors">
-    <a class="anchor" id="people"></a>
-    <h2 class="titlebar">
-        Advisors
-    </h2>
-    <grid>
-        <content>
-            {% assign filterPeopleType = "advisory" %}
-            {% include people/filtered.html %}
-            {% assign dataType = "people" %}
-            {% assign itemsInRow = 6 %}
-            <div class="thumbnails thumbnails-6-in-row">
-                {% include thumbnails.html %}
+            <div class="subsection">
+                <h3> Advisors </h3>
+                {% assign filterPeopleType = "advisory" %}
+                {% include people/filtered.html %}
+                {% assign dataType = "people" %}
+                {% assign itemsInRow = 6 %}
+                <div class="thumbnails thumbnails-6-in-row" style="clear: both;">
+                    {% include thumbnails.html %}
+                </div>
             </div>
-        </content>
-    </grid>
-</section>
-<section class="people thumbnails-grid" id="section-people-organizers">
-    <a class="anchor" id="people"></a>
-    <h2 class="titlebar">
-        Organizers
-    </h2>
-    <grid>
-        <content>
-            {% assign filterPeopleType = "org" %}
-            {% include people/filtered.html %}
-            {% assign dataType = "people" %}
-            {% assign itemsInRow = 6 %}
-            <div class="thumbnails thumbnails-6-in-row">
-                {% include thumbnails.html %}
+            <div class="subsection">
+            <h3> Organizers </h3>
+                {% assign filterPeopleType = "org" %}
+                {% include people/filtered.html %}
+                {% assign dataType = "people" %}
+                {% assign itemsInRow = 6 %}
+                <div class="thumbnails thumbnails-6-in-row" style="clear: both;">
+                    {% include thumbnails.html %}
+                </div>
             </div>
         </content>
     </grid>

@@ -6,12 +6,19 @@
         <h2 class="titlebar"> {{item.title}} </h2>
         {% assign items = site.data.tracks[item.id] %}
         <content>
+                <p class="wide big">
+                    {% for topic in site.data.topics %}
+                        {% if topic.id == item.id %}
+                            {{ topic.content }}
+                        {% endif %}
+                    {% endfor %}
+                </p>
                 {% for item in items %}
                 <item class="talk">
                     <h3>{{item.title}}</h3>
                     {% assign items = item.speakers %}
                     {% assign dataType = "people" %}
-                    <p class="description wide">{{item.description}}</p>
+                    <p class="description wide big">{{item.description}}</p>
                     <div class="thumbnails thumbnails-5-in-row">
                         {% include thumbnails.html %}
                     </div>
