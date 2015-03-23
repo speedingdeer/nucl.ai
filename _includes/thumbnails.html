@@ -14,7 +14,8 @@
             {% endif %}
             {% assign name = thumbnail.name %}
             {% capture picture %}/img/people/{{ name | escape }}.jpg{% endcapture %}
-            {% capture href %}/#people{{ thumbnail.id | escape }}{% endcapture %}
+            {% capture href %}/#{{thumbnail.name | replace:' ','-' | downcase}}{% endcapture %}
+            {% if page.name == "index.html" %} <a class="anchor" id="{{thumbnail.name | replace:' ','-' | downcase}}"></a> {% endif %}
         {% when "topics" %}
             {% assign thumbnail = it %}
             {% assign name = thumbnail.title %}
