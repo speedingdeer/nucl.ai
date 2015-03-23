@@ -2,3 +2,8 @@
 $(window).load ->
   if navigator.userAgent.match(/(iPad|iPhone|iPod)/g)
     $("html").addClass("ios")
+
+  $(window).scroll ->
+    if window.location.hash != ""
+      if history.pushState 
+        history.pushState null, null, ' '
