@@ -16,6 +16,8 @@ class Thumbnails
     @wraps =  @section.find("thumbnail-wrap")
     @thumbnails = @section.find("a.thumbnail")
 
+    @checkBckgImg()
+
     $(window).resize ->
       that.setThumbnailSize()
       ## if there is any!
@@ -164,6 +166,20 @@ class Thumbnails
           that.selectThumbnail(t)
           that.selected = t
           that.drawLine()
+
+  ## check background image
+  checkBckgImg: ->
+    @thumbnails.each ->
+      thumbnail = $(@)
+      thumbnailBckgImg = thumbnail.css("background-image")
+      thumbnailUrl = thumbnailBckgImg.substring(4, thumbnailBckgImg.length - 1)
+      $('<img/>').attr('src', thumbnailUrl)
+        .load ->
+          $(@).remove(); # prevent memory leaks
+        .error ->
+          $(@).remove(); # prevent memory leaks
+          thumbnail.css("background-image", "url(/img/logo.png)")
+
 
   ## drawing svg
 
