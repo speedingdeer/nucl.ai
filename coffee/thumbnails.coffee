@@ -12,7 +12,7 @@ class Thumbnails
     ## buid svg
     @paper = Raphael(sectionId, "100%", "100%")
     ## select jquery object
-    @svg = if @drawSvg then @section.find("svg") else null
+    @svg = @section.find("svg")
     @wraps =  @section.find("thumbnail-wrap")
     @thumbnails = @section.find("a.thumbnail")
 
@@ -210,7 +210,7 @@ class Thumbnails
     title = thumbnail.jQdescription.find(".thumbnail-title")
     thumbnail = thumbnail.jQthumbnail
 
-    startY = thumbnail.offset().top - @section.offset().top + thumbnail.height()
+    startY = thumbnail.offset().top - @section.offset().top + thumbnail.outerHeight()
     startX = thumbnail.offset().left + thumbnail.width() / 2
 
     #check if line intersects title
@@ -224,13 +224,17 @@ class Thumbnails
     originalEndY = endY
 
     # calculate horizontal leftLine
-    if thumbnail.hasClass("left") then endX = title.offset().left + title.width()
-    if thumbnail.hasClass("right") then endX = title.offset().left
-    if thumbnail.hasClass("middle") then endY = endY - title.outerHeight()
+    if thumbnail.hasClass("left")
+      endX = title.offset().left + title.width()
+    else if thumbnail.hasClass("right") 
+      endX = title.offset().left
+    else
+      endY = endY - title.outerHeight()
 
-    line = @paper.path("M" + startX + " " + startY + "L " + startX + " " + endY + " L " + endX + " " + endY)
+    if thumbnail.hasClass("left") || thumbnail.hasClass("right") || thumbnail.hasClass("middle") 
+      line = @paper.path("M" + startX + " " + startY + "L " + startX + " " + endY + " L " + endX + " " + endY)
 
-    if thumbnail.hasClass("middle")
+    if ! thumbnail.hasClass("left") && ! thumbnail.hasClass("right")
       #draw disconnected horizontal line
       @paper.path("M " + title.offset().left + " " + originalEndY + "L " + (title.offset().left + title.width()) + " " + originalEndY)
 

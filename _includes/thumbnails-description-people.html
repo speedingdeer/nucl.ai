@@ -15,6 +15,9 @@
     {% if itemsInRow == 3 %}
         {% cycle 'left', 'middle', 'right' %} 
     {% endif %}
+    {% if itemsInRow == 6 %}
+                    {% cycle 'left', 'none','none','none','none', 'right' %} 
+    {% endif %}
     ">
     {{ d.name }}</h2>
     <p class="work-title"> {{ d.title }} </p>

@@ -33,6 +33,9 @@
                 {% if itemsInRow == 3 %}
                     {% cycle 'left', 'middle', 'right' %} 
                 {% endif %}
+                {% if itemsInRow == 6 %}
+                    {% cycle 'left', 'none','none','none','none', 'right' %} 
+                {% endif %}
                 {{thumbnailClass}} {{selected}}" name="{{name | escape}}" style="background-image: url('{{ picture | escape |  prepend: site.baseurl }}')">
             </a>
         </thumbnail-wrap>
