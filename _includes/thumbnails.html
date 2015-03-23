@@ -25,7 +25,7 @@
             {% capture href %}/program/tracks/{{ thumbnail.id | escape }}{% endcapture %}
     {% endcase %}
 
-    {% if thumbnail.id and thumbnail.id == id %} {% assign selected="selected" %} {% else %} {% assign selected="" %} {% endif %}
+    {% if thumbnail.id and thumbnail.id == id %} {% assign selected="selected allows-selcted" %} {% else %} {% assign selected="" %} {% endif %}
 
     <item class="thumbnail {{thumbnail.id}}">
         <thumbnail-wrap>
