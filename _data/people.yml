@@ -63,10 +63,12 @@
   role: org
   title: "Co-Founder & Co-Ordinator"
   twitter: alexjc
+  affiliation: The AiGameDev.com
 
 - name: Petra Champandard-Pail
   role: org
   title: "Director & Co-Founder"
+  affiliation: The AiGameDev.com
   bio: >
     Petra has a background in business management, and worked as an International Area Manager for a large multi-million dollar corporation.
     She eventually moved on and joined Alex as the co-founder of AiGameDev.com. Petra is the creative force in the team, and takes care of business!
@@ -75,6 +77,7 @@
   role: org
   title: "Lead Developer"
   twitter: speedingdeer
+  affiliation: The AiGameDev.com
   bio: >
     Filip worked previously in semantic web research for a couple of years and after a brief start-up interlude he now found his calling in digital entertainment and teaching.
     He helped to organize Game/AI Game/AI Conference in 2014 and presented there with AiGameDev.com team tutorial about Monto-Carlo Tree Search.
