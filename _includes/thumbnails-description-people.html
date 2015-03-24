@@ -9,7 +9,6 @@
 {% endif %}
 
 {% if lastRow %} {% capture lastRow %}last-row{% endcapture %} {% endif %}
-
 {% assign descModulo = descIndex | plus:1 | modulo:itemsInRow %}
 
 <item class="description {{lastRow}} animated fadeOutRight" name="{{ d.name | escape}}">
@@ -24,6 +23,33 @@
     ">
     {{ d.name }}</h2>
     <p class="work-title"> {{ d.title }} </p>
+
+    {% comment %} get speaker talks {% endcomment %}
+    {% for topic in site.data.topics %}
+        {% assign talks = site.data.tracks[topic.id] %}
+        {% for talk in talks %}
+            {% for speaker in talk.speakers %}
+                {% if speaker == d.name %}
+                    <p class="track-topic">
+                    <a href="/program/tracks/{{topic.id}}">{{topic.title}}</a> -
+                    <a href="/program/tracks/{{topic.id}}#{{talk.title | escape | replace:' ','-' | downcase}}">{{talk.title}}</a>
+                    </p>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+
+    {% comment %} get Tracks Chairs tracks {% endcomment %}
+    {% for topic in site.data.topics %}
+        {% for track in d.tracks %}
+            {% if track == topic.id %}
+                <p class="track-topic">
+                    <a href="/program/tracks/{{topic.id}}">{{topic.title}}</a>
+                </p>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+
     <p class="links"> 
     {% if d.twitter %}
         <a class="social twitter" href="http://twitter.com/{{d.twitter}}" target="_blank"></a>
@@ -39,4 +65,5 @@
         {% comment%} put at least one even empty bio to not breake layout {% endcomment%}
         <p class="bio"></p>
     {% endif %}
+
 </item>

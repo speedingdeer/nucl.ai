@@ -1,10 +1,16 @@
 {% comment %}
  keep wrapper to have image visiable untill gif is loaded
 {% endcomment %}
+{% for topic in site.data.topics %}
+    {% capture pageName %}{{topic.id}}.html{% endcapture %}
+    {% if pageName == page.name %}
+        {% assign isTrackPage = true %}
+    {% endif %}
+{% endfor %}
 <section class="splash-screen" id="about">
     {% if page.name == 'venue.html' or page.name == 'tickets.html' %}
     <div class="splash-screen-wrap uni-campus-quads">
-    {% elsif page.name == 'program.html' %}
+    {% elsif page.name == 'overview.html' or page.name == 'tracks.html' page.name == 'events.html' page.name == 'schedule.html' or isTrackPage %}
     <div class="splash-screen-wrap" style="background-image: url('{{ '/img/venue/room-lower.png' | prepend: site.baseurl }}' ); background-position: center center;">
     {% else %}
     <div class="splash-screen-wrap audience-gif">

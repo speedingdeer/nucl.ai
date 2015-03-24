@@ -26,12 +26,6 @@
                     <a href="{{linkPrefix}}#people"> People </a>
                 </item>
        
-                {% for topic in site.data.topics %}
-                    {% capture pageName %}{{topic.id}}.html{% endcapture %}
-                    {% if pageName == page.name %}
-                        {% assign isTrackPage = true %}
-                    {% endif %}
-                {% endfor %}
                 {% if page.name == 'events.html' or page.name == 'tracks.html' or isTrackPage %}
                     <item class="selected">
                 {% else %}
