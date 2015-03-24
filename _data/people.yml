@@ -52,13 +52,6 @@
     Mika has been working in the industry since late 1999 -- including IO Interactive as Senior AI Programmer on the Hitman: Absolution and Killzone: Shadow Fall for Guerrilla Games.
     He has specialized in both game AI and animation technology for games.
 
-- name: Emil "AngryAnt" Johansen
-  role: advisory
-  title: "Advisory Board Member"
-  twitter: AngryAnt
-  bio: >
-    A freelance game developer with a specialisation in AI, and author of the "Behave" AI middleware solution, Emil brings experience from a host of client projects as well as a four-year stint at Unity Technologies. A preference for behavioural logic, but a wide appetite for new and exciting challenges.
-
 - name: Alex J. Champandard
   role: org
   title: "Co-Founder & Co-Ordinator"
@@ -72,6 +65,13 @@
   bio: >
     Petra has a background in business management, and worked as an International Area Manager for a large multi-million dollar corporation.
     She eventually moved on and joined Alex as the co-founder of AiGameDev.com. Petra is the creative force in the team, and takes care of business!
+
+- name: Emil "AngryAnt" Johansen
+  role: advisory
+  title: "Advisory Board Member"
+  twitter: AngryAnt
+  bio: >
+    A freelance game developer with a specialisation in AI, and author of the "Behave" AI middleware solution, Emil brings experience from a host of client projects as well as a four-year stint at Unity Technologies. A preference for behavioural logic, but a wide appetite for new and exciting challenges.
 
 - name: Filip Wisniewski
   role: org

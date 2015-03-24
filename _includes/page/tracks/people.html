@@ -21,8 +21,8 @@
                 {% endfor %}
                 {% assign items = names | split:"," %}
                 {% assign dataType = "people" %}
-                {% assign itemsInRow = 6 %}
-                <div class="thumbnails thumbnails-6-in-row">
+                {% assign itemsInRow = 5 %}
+                <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
                     {% include thumbnails.html %}
                 </div>
             </div>

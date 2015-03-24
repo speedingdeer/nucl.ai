@@ -3,13 +3,13 @@
     <h2 class="titlebar"> People </h2>
     <grid>
         <content>
+            {% assign itemsInRow = 5 %}
             <div class="subsection">
                 <h3> Track Chairs </h3>
                 {% assign filterPeopleType = "track" %}
                 {% include people/filtered.html %}
                 {% assign dataType = "people" %}
-                {% assign itemsInRow = 6 %}
-                <div class="thumbnails thumbnails-6-in-row">
+                <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
                     {% include thumbnails.html %}
                 </div>
             </div>
@@ -18,28 +18,16 @@
                 {% assign filterPeopleType = "speaker" %}
                 {% include people/filtered.html %}
                 {% assign dataType = "people" %}
-                {% assign itemsInRow = 6 %}
-                <div class="thumbnails thumbnails-6-in-row" style="clear: both;">
+                <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
                     {% include thumbnails.html %}
                 </div>
             </div>
             <div class="subsection">
-                <h3> Advisors </h3>
-                {% assign filterPeopleType = "advisory" %}
+                <h3> Organizers & Advisors</h3>
+                {% assign filterPeopleType = "org,advisory" %}
                 {% include people/filtered.html %}
                 {% assign dataType = "people" %}
-                {% assign itemsInRow = 6 %}
-                <div class="thumbnails thumbnails-6-in-row" style="clear: both;">
-                    {% include thumbnails.html %}
-                </div>
-            </div>
-            <div class="subsection">
-            <h3> Organizers </h3>
-                {% assign filterPeopleType = "org" %}
-                {% include people/filtered.html %}
-                {% assign dataType = "people" %}
-                {% assign itemsInRow = 6 %}
-                <div class="thumbnails thumbnails-6-in-row" style="clear: both;">
+                <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
                     {% include thumbnails.html %}
                 </div>
             </div>

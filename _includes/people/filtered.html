@@ -1,7 +1,11 @@
 {% assign names = "" %}
+{% assign filters = filterPeopleType | split:"," %}
+
 {% for person in site.data.people %}
-    {% if person.role == filterPeopleType %}
-        {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
-    {% endif %}
+    {% for filter in filters%}
+        {% if person.role == filter %}
+            {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+        {% endif %}
+    {% endfor %}
 {% endfor %}
 {% assign items = names | split:"," %}

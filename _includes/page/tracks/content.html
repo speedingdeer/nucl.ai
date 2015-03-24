@@ -21,7 +21,8 @@
                     <div class="description wide big">
                     <p >{{item.description}}</p>
                     </div>
-                    <div class="thumbnails thumbnails-5-in-row">
+                    {% assign itemsInRow = 5 %}
+                    <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
                         {% include thumbnails.html %}
                     </div>
                 </item>
