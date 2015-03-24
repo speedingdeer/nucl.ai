@@ -23,6 +23,14 @@
     ">
     {{ d.name }}</h2>
     <p class="work-title"> {{ d.title }} </p>
+    <p class="links"> 
+    {% if d.twitter %}
+        <a class="social twitter" href="http://twitter.com/{{d.twitter}}" target="_blank"></a>
+    {% endif %}
+    </p>
+    <p class="affiliation">
+        <a href="{{d.affiliation.url}}" target="_blank">{{>d.affiliation.name}}</a>
+    </p>
 
     {% comment %} get speaker talks {% endcomment %}
     {% for topic in site.data.topics %}
@@ -50,11 +58,6 @@
         {% endfor %}
     {% endfor %}
 
-    <p class="links"> 
-    {% if d.twitter %}
-        <a class="social twitter" href="http://twitter.com/{{d.twitter}}" target="_blank"></a>
-    {% endif %}
-    </p>
     {% if d.bio %}
         {% for paragraph in d.bio %}
             <p class="bio wide">
