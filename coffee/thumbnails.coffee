@@ -177,6 +177,8 @@ class Thumbnails
       thumbnail = $(@)
       thumbnailBckgImg = thumbnail.css("background-image")
       thumbnailUrl = thumbnailBckgImg.substring(4, thumbnailBckgImg.length - 1)
+      ## Firefox gives url with apostrophes
+      if thumbnailUrl.charAt(0) == '"' || thumbnailUrl.charAt(0) == "'" then thumbnailUrl = thumbnailUrl.slice(1, -1)
       $('<img/>').attr('src', thumbnailUrl)
         .load ->
           $(@).remove(); # prevent memory leaks
