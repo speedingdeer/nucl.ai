@@ -233,7 +233,7 @@ class Thumbnails
     else
       endY = endY - title.outerHeight()
 
-    if thumbnail.hasClass("column-first") || thumbnail.hasClass("column-last") || thumbnail.hasClass("middle") 
+    if thumbnail.hasClass("column-first") || thumbnail.hasClass("column-last") || thumbnail.hasClass("column-middle") 
       line = @paper.path("M" + startX + " " + startY + "L " + startX + " " + endY + " L " + endX + " " + endY)
 
     if ! thumbnail.hasClass("column-first") && ! thumbnail.hasClass("column-last")
