@@ -52,8 +52,12 @@
                                 {% endif %}
                                     <a href="/program/tracks/"> Tracks </a>
                                 </div>
-                                <div class="table">
-                                    <a class="disabled" href=""> Schedule </a>
+                                {% if page.name == 'schedule.html' %}
+                                    <div class="table selected item">
+                                {% else %}
+                                    <div class="table item">
+                                {% endif %}
+                                    <a href="/program/schedule/"> Schedule </a>
                                 </div>
                                 <div class="table">
                                     <a class="disabled" href=""> Events </a>
