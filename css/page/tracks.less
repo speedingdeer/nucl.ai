@@ -22,13 +22,20 @@ section.thumbnails-grid.tracks {
 
 section.thumbnails-grid.tracks-content {
     content {
+        .column(12);
         item.talk {
-            .column(12);
             .description { text-align: justify; }
+            float: left;
+            clear: both;
         }
         .thumbnails item.thumbnail { 
             float: right; 
             h3 { margin-top: 5px; }
+        }
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+            .big ul {
+                font-size: 1em;
+            }
         }
     }
 }
