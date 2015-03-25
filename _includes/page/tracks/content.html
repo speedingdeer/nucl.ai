@@ -1,7 +1,7 @@
 {% include page/tracks/assign.html %}
 
 
-<section class="thumbnails-grid tracks-content " id="track-content">
+<section class="thumbnails-grid tracks-content">
     <grid>
         <h2 class="titlebar"> {{item.title}} </h2>
         {% assign items = site.data.tracks[item.id] %}
@@ -13,6 +13,14 @@
                         {% endif %}
                     {% endfor %}
                 </p>
+        </content>
+    </grid>
+</section>
+
+<section class="thumbnails-grid tracks-content" id="track-content">
+    <grid>
+        <h2 class="titlebar"> Talks </h2>
+        <content>
                 {% for item in items %}
                 <item class="talk">
                     <a class="anchor" id="{{item.title | escape | replace:' ','-' | downcase}}"></a>
@@ -22,9 +30,14 @@
                     <div class="description wide big">
                     <p >{{item.description}}</p>
                     </div>
-                    {% assign itemsInRow = 5 %}
+                    
                     {% assign attachDescription = false %}
-                    <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
+                    {% if item.speakers.first == item.speakers.last %}
+                        {% assign itemsInRow = 3 %}
+                    {% else %}
+                        {% assign itemsInRow = 4 %}
+                    {% endif %}
+                        <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
                         {% include thumbnails.html %}
                     </div>
                 </item>
