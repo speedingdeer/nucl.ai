@@ -197,7 +197,9 @@ class Thumbnails
 
     fullSize = @wraps.first().width()
     @thumbnails.each ->
-      @.jQthumbnail.css( {"border-width": fullSize * config.thumbnails.borderSize } )
+      borderWidth = fullSize * config.thumbnails.borderSize
+      if borderWidth < 1 then borderWidth = 1
+      @.jQthumbnail.css( {"border-width": borderWidth } )
       @.jQthumbnail.css( { "opacity": 1 } )
 
 

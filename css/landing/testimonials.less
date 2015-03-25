@@ -8,10 +8,19 @@ section.testimonials {
             */
             height: 15em;
             @media screen and (max-width: (@SMARTPHONE_MAX_PORTRAIT * 1.8)) { height: 20em; }
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 13em; }
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 16em; }
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { .row(11); }
             .testimonial {
                 text-align: justify;
                 .column(4);
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    .column(4,11); 
+                    display: none;
+                    &.selected {
+                        display: inline-block;
+                    }
+                
+                }
                 &.left {
                     .push(1);
                 }
