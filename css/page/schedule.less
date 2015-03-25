@@ -19,11 +19,12 @@ section.program-schedule {
             padding-bottom: 3em;
             padding-top: 1em;
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                margin-bottom: 2em;
-                padding-bottom: 1em;
+                margin-bottom: 1em;
+                padding-bottom: 0.5em;
                 padding-top: 0em;
             }
             h3 {
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-top: 0.5em; }
                 border-bottom: 1px solid white;
                 padding-bottom: 0.5em;
             }
@@ -31,7 +32,7 @@ section.program-schedule {
             .button-wrap {
                 .column(1);
                 padding-top: 2.4em;
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-top: 1.5em; }
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-top: 1em; }
                 text-align: right;
                 .button-expand {
                     color: @GREY;
@@ -47,7 +48,7 @@ section.program-schedule {
                 .column(11);
                 .content-wrap {
                     padding: 0 1em;
-                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0 0.5em; }
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0 0.25em; }
                 }
             }
 
@@ -70,6 +71,7 @@ section.program-schedule {
                 }
                 .track-name {
                     padding-left: 1em;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-left: 0.5em; }
                     display: table-cell;
                     height: @marker-height;
                     vertical-align: middle;
@@ -117,6 +119,7 @@ section.program-schedule {
         }
     }
 
-    .note { opacity: 0.6; }
-
+    .note { opacity: 0.6; 
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.65em; }
+    }
 }
