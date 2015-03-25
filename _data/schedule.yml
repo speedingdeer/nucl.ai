@@ -1,28 +1,19 @@
 - title: "Day 1: Monday, July 20th"
   tracks:
-    - id: alternate
-      color:
-    - id: ambient
-      color:
-    - id: procedural
-      color:
+    - alternate
+    - ambient
+    - procedural
 
-- title: "Day 2: Tuesday, July 20st"
+- title: "Day 2: Tuesday, July 21st"
   tracks:
-    - id: behavior
-      color:
-    - id: analytics
-      color:
-    - id: decisions
-      color:
+    - behavior
+    - analytics
+    - decisions
 
 - title: "Day 3: Wednesday, July 22nd"
   tracks:
-    - id: systems
-      color:
-    - id: animation
-      color:
-    - id: simulations
-      color:
+    - systems
+    - animation
+    - simulations
 
 

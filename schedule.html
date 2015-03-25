@@ -8,23 +8,41 @@ permalink: /program/schedule/
     <grid>
         <h2 class="titlebar">Schedule</h2>
         <content>
-            <table> 
-                <tr>
-                    <td>
-                    <div class="button-wrap"> B </div>
-                    <div class="titlebar-wrap">
-                        <h3>
-                            Day 1: Monday, July 20th
-                        </h3>
-                        <div class="legend">
-                            <p>Tracks*:</p>
-                            <div class="track">
+            {% for day in site.data.schedule %}
+                <table> 
+                    <tr>
+                        <td>
+                            <div class="button-wrap"> 
+                                <div class="button-expand"></div>
                             </div>
-                        </div>
-                    </div>
-                    </td>
-                </tr>
-            </table>
+                            <div class="titlebar-wrap">
+                                <div class="content-wrap">
+                                    <h3>
+                                        {{day.title}}
+                                    </h3>
+                                    <div class="legend">
+                                        <p>Tracks*:</p>
+                                        {% for track in day.tracks %}
+                                            <div class="track-wrap">
+                                                    {% for topic in site.data.topics %}
+                                                        {% if topic.id == track %}
+                                                            <div class="track {{track}}">
+                                                                        <div class="marker"></div>
+                                                                        <p class="track-name"> {{topic.title}} </p>
+                                                            </div>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            {% endfor %}
+            <p class="note"> *Please note that this schedule may still change. </p>
         </content>
     </grid>
 </section>
+

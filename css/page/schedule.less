@@ -1,13 +1,106 @@
+@COLOR_TRACK_ALTERNATE: #fedd2c;
+@COLOR_TRACK_AMBIENT: #00ffd8;
+@COLOR_TRACK_PROCEDUREAL: #853bca;
+@COLOR_TRACK_BEHAVIOR: #e31977;
+@COLOR_TRACK_ANALYTICS: #00789f;
+@COLOR_TRACK_DECISIONS: #ccff00;
+@COLOR_TRACK_SYSTEMS: #5cb214;
+@COLOR_TRACK_ANIMATION: #ff0031;
+@COLOR_TRACK_SIMULATIONS: white;
+
 section.program-schedule {
     content {
         table {
+
+            background-color: @DARK_GREY;
             width: 100%;
+            margin-bottom: 3em;
+            padding-bottom: 3em;
+            padding-top: 1em;
+
+            h3 {
+                border-bottom: 1px solid white;
+                margin-right: 1.5em;
+                padding-bottom: 0.5em;
+            }
+
             .button-wrap {
-                .column(2);
+                .column(1);
+                padding-top: 2.4em;
+                text-align: right;
+                .button-expand {
+                    color: @GREY;
+                    .triangle(1em);
+                    border-bottom: 1.5em solid;
+                    display: inline-block;
+                }
             }
             .titlebar-wrap {
-                .column(10);
+                .column(11);
+                .content-wrap {
+                    padding-left: 1em;
+                }
             }
+
+            .legend {
+                .track-wrap {
+                    .column(4);
+                }
+                @marker-height: 2em;
+                .marker {
+                    width: 1.5em;
+                    height: @marker-height;
+                    display: table-cell;
+                }
+                .track-name {
+                    padding-left: 1em;
+                    display: table-cell;
+                    height: @marker-height;
+                    vertical-align: middle;
+                }
+
+            }
+
+            .track.alternate {
+              color: @COLOR_TRACK_ALTERNATE;
+              .marker { background-color: @COLOR_TRACK_ALTERNATE; }
+            }
+            .track.ambient {
+              color: @COLOR_TRACK_AMBIENT;
+              .marker { background-color: @COLOR_TRACK_AMBIENT; }
+            }
+            .track.procedural {
+              color: @COLOR_TRACK_PROCEDUREAL;
+              .marker { background-color: @COLOR_TRACK_PROCEDUREAL; }
+            }
+            .track.behavior {
+              color: @COLOR_TRACK_BEHAVIOR;
+              .marker { background-color: @COLOR_TRACK_BEHAVIOR; }
+            }
+            .track.analytics {
+              color: @COLOR_TRACK_ANALYTICS;
+              .marker { background-color: @COLOR_TRACK_ANALYTICS; }
+            }
+            .track.decisions {
+              color: @COLOR_TRACK_DECISIONS;
+              .marker { background-color: @COLOR_TRACK_DECISIONS; }
+            }
+            .track.systems {
+              color: @COLOR_TRACK_SYSTEMS;
+              .marker { background-color: @COLOR_TRACK_SYSTEMS; }
+            }
+            .track.animation {
+              color: @COLOR_TRACK_ANIMATION;
+              .marker { background-color: @COLOR_TRACK_ANIMATION; }
+            }
+            .track.simulations{
+              color: @COLOR_TRACK_SIMULATIONS;
+              .marker { background-color: @COLOR_TRACK_SIMULATIONS; }
+            }
+
         }
     }
+
+    .note { opacity: 0.6; }
+
 }
