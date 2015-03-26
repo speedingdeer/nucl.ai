@@ -2,6 +2,9 @@
 
 <section class="thumbnails-grid tracks" id="section-tracks-menu">
     <grid>
+        {% if titlebar %}
+        <h2 class="titlebar"> {{titlebar}} </h2>
+        {% endif %}
         <content class="bigger wider">
             <div class="program thumbnails thumbnails-5-in-row">
             {% assign dataType = "topics" %}
