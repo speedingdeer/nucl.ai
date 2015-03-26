@@ -92,3 +92,12 @@ sections.page .page-content-sections section {
 }
 
 section.none { display: none }
+
+/** for nice section enter effect */
+section {
+    grid { 
+        opacity: 0;
+        .transition(opacity .5s ease-in);
+        &.visited { opacity: 1; }
+    }
+}
