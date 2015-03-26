@@ -4,7 +4,7 @@ enableSections = () ->
   bottomEdge = $(window).scrollTop() + $(window).height()
   $("section").each ->
     if $(@).offset().top < bottomEdge
-      $(@).find("grid").addClass("visited")
+      $(@).find("content, h2.titlebar").addClass("visited")
 
 $(window).load ->
   if navigator.userAgent.match(/(iPad|iPhone|iPod)/g)

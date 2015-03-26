@@ -95,9 +95,14 @@ section.none { display: none }
 
 /** for nice section enter effect */
 section {
-    grid { 
+    content, h2.titlebar { 
         opacity: 0;
-        .transition(opacity .5s ease-in);
+        .transition(opacity .65s ease-in-out);
         &.visited { opacity: 1; }
+    }
+    &:first-child {
+        content, h2.titlebar { 
+            opacity: 1;
+        }
     }
 }
