@@ -1,15 +1,14 @@
 # detect ios (ios struggles with our font if used both bold and box-shadow)
+enableSections = () ->
+  if $("grid").length == $("grid.visited").length then return # don't check anything if all sections are enabled 
+  bottomEdge = $(window).scrollTop() + $(window).height()
+  $("section").each ->
+    if $(@).offset().top < bottomEdge
+      $(@).find("grid").addClass("visited")
+
 $(window).load ->
   if navigator.userAgent.match(/(iPad|iPhone|iPod)/g)
     $("html").addClass("ios")
-
-  enableSections = () ->
-    if $("grid").length == $("grid.visited").length then return # don't check anything if all sections are enabled 
-    bottomEdge = $(window).scrollTop() + $(window).height()
-    $("section").each ->
-      if $(@).offset().top < bottomEdge
-        $(@).find("grid").addClass("visited")
-
   $(window).scroll ->
     enableSections()
     if window.location.hash != ""
@@ -17,3 +16,4 @@ $(window).load ->
         history.replaceState null, null, ' '
 
   enableSections()
+enableSections()
