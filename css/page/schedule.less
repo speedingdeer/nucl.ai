@@ -12,7 +12,6 @@ section.program-schedule {
     content {
       .column(12);
         table {
-
             background-color: @DARK_GREY;
             width: 100%;
             margin-bottom: 3em;
@@ -22,11 +21,14 @@ section.program-schedule {
                 margin-bottom: 1em;
                 padding-bottom: 0.5em;
                 padding-top: 0em;
+                font-size: 0.9em; //make it smaller then text
             }
             h3 {
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-top: 0.5em; }
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    margin-top: 0.5em;
+                    margin-bottom: 0;
+                }
                 border-bottom: 1px solid white;
-                padding-bottom: 0.5em;
             }
 
             .button-wrap {
@@ -54,6 +56,9 @@ section.program-schedule {
 
             .legend {
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.8em; }
+                p {
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { line-height: 1em; }
+                }
                 .track-wrap {
                     .column(4);
                 }

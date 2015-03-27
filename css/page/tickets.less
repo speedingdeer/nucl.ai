@@ -21,7 +21,10 @@ sections.page section.tickets {
                 .column(6);
                 .centered-cell {
                     text-align: left;
-                    p.name { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin: 5px 0px; } }
+                    p.name { 
+                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin: 5px 0px; } 
+                        font-size: 0.7em;
+                    }
                 }
                 &.invisible { background-color: inherit; }
                 width: 49.5%; // because of overwritten semantic.gs margin, we need to make one row bigger to fill up available width
