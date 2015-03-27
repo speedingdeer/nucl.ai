@@ -13,6 +13,8 @@
                     {% include thumbnails.html %}
                 </div>
             </div>
+            {% comment %} 
+            Temporary hide spekaers
             <div class="subsection">
                 <h3> Speakers </h3>
                 {% assign filterPeopleType = "speaker" %}
@@ -22,6 +24,7 @@
                     {% include thumbnails.html %}
                 </div>
             </div>
+            {% endcomment %}
             <div class="subsection">
                 <h3> Organizers & Advisors</h3>
                 {% assign filterPeopleType = "org,advisory" %}

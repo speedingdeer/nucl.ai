@@ -17,7 +17,7 @@ permalink: /tickets/
                 <div class="name table {{cell_class}}">
                     <div class="centered-cell">
                         <p class="name">{{ ticket.name }} </p>
-                        <p class="date smaller">{{ ticket.date }}</p>
+                        <p class="date small">{{ ticket.date }}</p>
                     </div>
                 </div>
                 {% if forloop.first == false %}
@@ -25,7 +25,7 @@ permalink: /tickets/
                 {% else %}
                 <div class="all-access table titlerow">
                 {% endif %}
-                    <div class="centered-cell smaller">
+                    <div class="centered-cell small">
                         <p>
                             {% if ticket.all_access %}
                                 {{ ticket.all_access }}
@@ -40,7 +40,7 @@ permalink: /tickets/
                 {% else %}
                 <div class="conference table titlerow">
                 {% endif %}                    
-                <div class="centered-cell smaller">
+                <div class="centered-cell small">
                         <p>
                             {{ ticket.conference }}
                         </p>
@@ -83,7 +83,7 @@ permalink: /tickets/
                 {% else %}
                 <div class="all-access table titlerow">
                 {% endif %}
-                    <div class="centered-cell smaller">
+                    <div class="centered-cell small">
                         <p>{{ ticket.all_access }}</p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ permalink: /tickets/
                 {% else %}
                 <div class="conference table titlerow">
                 {% endif %}            
-                    <div class="centered-cell smaller">
+                    <div class="centered-cell small">
                         <p>{{ ticket.conference }}</p>
                     </div>
                 </div>

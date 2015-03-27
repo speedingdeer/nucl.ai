@@ -10,8 +10,8 @@
             {% else %}
                 <div class="{% cycle 'left', 'right' %} testimonial animated flipOutX">
             {% endif %}
-                <p class="text">{{ testimonial.text }}</p>
-                <p class="author">{{ testimonial.author }}</p>
+                <p class="text small">{{ testimonial.text }}</p>
+                <p class="author small">{{ testimonial.author }}</p>
                 {% comment %}
                     missing context to show the origin year
                     <p>{{ testimonial.year }}</p>
