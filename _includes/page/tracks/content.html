@@ -11,27 +11,37 @@
         <h2> {{item.title}} </h2>
         {% assign items = site.data.tracks[item.id] %}
         <content>
-                <p>Now in its 7th edition, the <a href="/">nucl.ai Conference</a> brings together hundreds of Artificial Intelligence developers from creative industries and interactive media to address the biggest technical and design problems.  One of the tracks focuses specifically on <b>{{item.title}}</b> for an entire day.</p>
+                <p>Now in its 7th edition, the <a href="/">nucl.ai Conference</a> brings together hundreds of developers from creative industries and interactive media to resolve the biggest technical and design problems with Artificial Intelligence.  One of the tracks focuses specifically on <b>{{item.title}}</b> for an entire day.</p>
 
                 {{track.content}}
         </content>
     </grid>
 </section>
 
-<section class="tracks-content tracks-text">
+<section class="tracks-content tracks-text call">
     <grid>
         <h2>Call For Presentations</h2>
         <content>
+            <div class="megaphone-paragraph-wrap">
+            <icon class="megaphone"></icon>
+
+            <p>If you've been working on projects with <b>{{item.title}}</b>, do you have a cool applications to show off?  Did you work on interesting prototypes?  Have you learned something to share with others?  This is your chance to interact with an audience of your peers and make an impact on the field!</p>
+            </div>
+
+            <p><a href="/">nucl.ai</a> welcomes submissions for presentations about AI techniques used in commercial products, ranging from independent games to mobile applications or AAA titles and simulations, even interactive exhibits.  Deep dive post-mortems and technology-specific tutorials about R&amp;D are also ideal.  Out of experience, the best sessions at the event try to balanced design and technology &mdash; and both are of course welcome in 2015.</p>
+
             <ul>
             {% for keyword in track.keywords %}
                 <li>{{ keyword }}</li>
             {% endfor %}
             </ul>
+
+            <p>If you'd like to participate in this track of the <a href="/">nucl.ai</a> Conference, on the topics listed above or any other you find appropriate, then get in touch...  Either submit a proposal <a href="https://docs.google.com/forms/d/171vIIRy1FcOABlRuyC6zJ0zDF6HrM3paNRXz1iEwuio/viewform">via this form</a> or send an email to <tt>&lt;events</tt> at <tt>aigamedev.com&gt;</tt>.  We're looking forward to reading your submission!</p>
         </content>
     </grid>
 </section>
 
-{% capture backgroundImg %}/img/topics/{{item.id}}.jpeg{% endcapture %}
+{% capture backgroundImg %}/img/tracks/{{item.id}}.png{% endcapture %}
 <section class="program separator" style="background-image: url('{{  backgroundImg | prepend: site.baseurl }}'); background-position: center center;"></section>
 
 <section class="none separator"></section>

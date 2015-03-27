@@ -86,14 +86,23 @@
     url: http://aigamedev.com
   bio: >
     Filip worked previously in semantic web research for a couple of years and after a brief start-up interlude he now found his calling in digital entertainment and teaching.
-    He helped to organize Game/AI Game/AI Conference in 2014 and presented there with AiGameDev.com team tutorial about Monto-Carlo Tree Search.
+    He helped to organize Game/AI Conference in 2014 and presented a tutorial about Monto-Carlo Tree Search along with the AiGameDev.com team.
 
 - name: Freyr Magnússon
   role: speaker
+  tracks: [alternate]
   title: Speaker
   affiliation:
     name: CCP Games
     url: http://www.ccpgames.com/
+
+- name: Richard Kogelnig
+  role: track
+  tracks: [alternate]
+  title: "Game Developer"
+  affiliation:
+    name: Mi'pu'mi
+  bio: ""
 
 - name: Piotr Andruszkiewicz
   role: speaker
