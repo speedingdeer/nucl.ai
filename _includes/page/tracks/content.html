@@ -1,28 +1,44 @@
 {% include page/tracks/assign.html %}
 
+{% for topic in site.data.topics %}
+    {% if topic.id == item.id %}
+        {% assign track = topic %}
+    {% endif %}
+{% endfor %}
 
-<section class="thumbnails-grid tracks-content">
+<section class="tracks-content tracks-text">
     <grid>
-        <h2 class="titlebar"> {{item.title}} </h2>
+        <h2> {{item.title}} </h2>
         {% assign items = site.data.tracks[item.id] %}
         <content>
-                <p class="wide big">Now in its 7th edition, the <a href="/">nucl.ai Conference</a> brings together hundreds of Artificial Intelligence developers from creative industries and interactive media to solve the biggest technical and design problems.  One of the tracks focuses specifically on <b>{{item.title}}</b> for an entire day.</p>
+                <p>Now in its 7th edition, the <a href="/">nucl.ai Conference</a> brings together hundreds of Artificial Intelligence developers from creative industries and interactive media to address the biggest technical and design problems.  One of the tracks focuses specifically on <b>{{item.title}}</b> for an entire day.</p>
 
-                <p class="wide big">
-                    {% for topic in site.data.topics %}
-                        {% if topic.id == item.id %}
-                            {{ topic.content }}
-                        {% endif %}
-                    {% endfor %}
-                </p>
+                {{track.content}}
         </content>
     </grid>
 </section>
 
+<section class="tracks-content tracks-text">
+    <grid>
+        <h2>Call For Presentations</h2>
+        <content>
+            <ul>
+            {% for keyword in track.keywords %}
+                <li>{{ keyword }}</li>
+            {% endfor %}
+            </ul>
+        </content>
+    </grid>
+</section>
+
+<section class="program separator" style="background-image: url( {{ '/img/tracks/'+track.id+'.png' | prepend: site.baseurl }} ); background-position: center center;"></section>
+
+<section class="none separator"></section>
+
 {% if items %}
 <section class="thumbnails-grid tracks-content" id="track-content">
     <grid>
-        <h2 class="titlebar"> Presentations </h2>
+        <h2> Presentations </h2>
         <content>
                 {% for item in items %}
                 <item class="talk">
@@ -50,4 +66,4 @@
 </section>
 {% endif %}
 
-{% assign titlebar = "All Conference Tracks" %}
+{% assign titlebar = "Conference Tracks" %}

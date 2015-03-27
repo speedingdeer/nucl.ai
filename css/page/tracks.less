@@ -6,8 +6,7 @@ section.thumbnails-grid.tracks {
     content {
         div.thumbnails {
             .row(10);
-            margin-top: 2em;
-            margin-bottom: 0em;
+            margin-bottom: 1em;
         }
     }
     &.program {
@@ -20,6 +19,15 @@ section.thumbnails-grid.tracks {
     }
 }
 
+section.tracks-content.tracks-text {
+    content {
+        .column(12);
+        img {
+            width: 100%;
+        }
+    }
+}
+
 section.thumbnails-grid.tracks-content {
     content {
         .column(12);
@@ -28,9 +36,11 @@ section.thumbnails-grid.tracks-content {
             float: left;
             clear: both;
         }
-        .thumbnails item.thumbnail { 
-            float: right; 
-            h3 { margin-top: 5px; }
+        .thumbnails {
+            item.thumbnail { 
+                float: right; 
+                h3 { margin-top: 5px; }
+            }
         }
         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
             .big ul {

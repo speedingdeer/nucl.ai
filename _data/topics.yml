@@ -78,11 +78,12 @@
 - id: alternate
   title: "Virtual & Augmented Reality"
   content: >
-    Recent devices for both augmented and virtual reality provide a variety of challenges
+    <img src="/img/tracks/EveOnline_1.jpg"/>
+    <p>Recent devices for both augmented and virtual reality provide a variety of challenges
     that can be resolved with artificial techniques.  This includes computer vision
     algorithm, object identification, gesture recognition and motion tracking &mdash; among
     many others.  This track focuses on AI for emerging technology such as augmented and
-    virtual reality. <img src="/img/tracks/EveOnline_1.jpg"/>
+    virtual reality.</p>
   keywords:
     - computer vision
     - object identification
