@@ -90,9 +90,10 @@
 
 - name: Freyr Magnússon
   role: speaker
-  tracks: alternate
-  title: "Lead AI Programmer"
-  bio: ""
+  title: Speaker
+  affiliation:
+    name: CCP Games
+    url: http://www.ccpgames.com/
 
 - name: Piotr Andruszkiewicz
   role: speaker
