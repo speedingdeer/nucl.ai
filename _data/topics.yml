@@ -1,13 +1,13 @@
 - id: animation
   title: "Character Animation"
   content: >
-    Portraying characters is one of the most challenging aspects of building an
+    <p>Portraying characters is one of the most challenging aspects of building an
     engaging 3D world.  While many low-level aspects of character animation technology
     have been resolved, there are many questions that remain open as the industry
     pushes towards more procedural blend trees.  How should gestures be controlled by
     AI?  What's a way to maintain believable yet flexible locomotion?  For developers
     building simulations or games that rely heavily on characters, this track is 
-    intended for you!
+    intended for you!</p>
   keywords:
     - physics-based controllers
     - procedural animation
@@ -20,12 +20,12 @@
 - id: decisions
   title: "Real-time Decision Systems"
   content: >
-    How do you build your simulation to respond to user input at interactive rates,
+    <p>How do you build your simulation to respond to user input at interactive rates,
     especially if it needs to make intelligent decisions?  Artificial intelligence
     techniques have evolved significantly over the past few years, allowing you to
     make choices about complex problem domains with any-time algorithms.  If you're
     creating intelligent runtime agents for your games, simulations or applications,
-    this track will help you make the most of recent advances.
+    this track will help you make the most of recent advances.</p>
   keywords:
     - monte-carlo tree search
     - deep neural networks
@@ -37,8 +37,7 @@
 - id: simulations
   title: "Training & Simulations"
   content: >
-    This track focuses on AI in serious games, such as simulations for training.
-  thumbnail: http://aigamedev.com/wp-content/blogs.dir/5/files/2012/08/RigMeshFront.png
+    <p>This track focuses on AI in serious games, such as simulations for training.</p>
   credit:
     title: Banished
     url: http://www.shiningrocksoftware.com/game/
@@ -46,11 +45,11 @@
 - id: behavior
   title: "Agent Behavior"
   content: >
-    As virtual worlds become more engaging, their number of agents is going up
+    <p>As virtual worlds become more engaging, their number of agents is going up
     tremendously. From AI directors that supervise a scene, to interactive tutors, as
     well as other actors, each of them require consistent behaviors.  In this track,
     you'll learn about best practices in the field for creating virtual actors, in
-    particular techniques such as behavior trees, planners, or utility systems. 
+    particular techniques such as behavior trees, planners, or utility systems.</p>
   keywords:
     - behavior trees
     - utility systems
@@ -61,13 +60,13 @@
 - id: procedural
   title: "Procedural Content Generation"
   content: >
-    Over the past few years, procedural generation techniques have established
+    <p>Over the past few years, procedural generation techniques have established
     themselves as not only a sensible approach but often as the default approach
     for assisting content creation.  This track focuses on the algorithms and methods
     for procedural generation, that can be applied for generating modular pieces of
     content in complex worlds or entire levels in simpler games/simulations.  If
     you're looking to improve the unique feel and replayability of your games, or
-    reduce overheads creating content, this is your day!
+    reduce overheads creating content, this is your day!</p>
   keywords:
     - modern content pipelines
     - procedural algorithms
@@ -97,12 +96,12 @@
 - id: ambient
   title: "Crowds & Ambient Life"
   content: >
-    Making a world believable almost always requires bringing it to life.  This
+    <p>Making a world believable almost always requires bringing it to life.  This
     track focuses on digital extras and entire crowds that can interact with
     their environment and perform plausible actions without taking up too much
     computation power!  Whether you're building AI technology for runtime or reusing
     tools as part of a creative process, you'll learn the tricks and techniques to
-    help your scenes come to life.
+    help your scenes come to life.</p>
   keywords:
     - crowd simulation
     - obstacle avoidance
@@ -115,13 +114,13 @@
 - id: analytics
   title: "Analytics & Data-Mining"
   content: >
-    Understanding user behavior is a component that's critical to application
+    <p>Understanding user behavior is a component that's critical to application
     development, and also increasingly important at runtime.  This track will
     cover essential concepts in behavioral analytics and user profiling and
     in particular how machine learning can help.  Whether you're building
     complex simulations, interactive applications or games, this will help you
     gain a better understanding of the tricks and techniques to apply on your
-    project!
+    project!</p>
   keywords:
     - machine learning
     - deep neural networks
@@ -134,12 +133,12 @@
 - id: systems
   title: "Systemic Design"
   content: >
-    Creating emergent simulations that go beyond scripted linear experiences has
+    <p>Creating emergent simulations that go beyond scripted linear experiences has
     proven a great way of engaging audiences.  However, there are huge challenges
     in both design and technology for implementing these.  How to combine top-down
     control and bottom-up behaviors?  What's required to keep the player experience
     entertaining?  Which design tools can be used to assist the process?  This
-    track will dig further into each of these topics.
+    track will dig further into each of these topics.</p>
   keywords:
     - open world simulation
     - ai directors
