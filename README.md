@@ -18,7 +18,8 @@ git rebase | merge master # get changes
 # (rebase or merge becasue the history is kept in master,
 #  minified files don't have to have too much sens)
 git grunt build # build generate/sync assets
-git commit # deploy to github pages
+git commit -a # commit all changes
+git push [remote] gh-pages # push to gh-pages
 ```
 
 Run Server
