@@ -22,7 +22,7 @@
             {% assign name = thumbnail.title %}
             {% capture thumbnailId %}{{thumbnail.id}}{% endcapture %}
             {% capture picture %}/img/topics/{{ thumbnail.id | escape }}.jpg{% endcapture %}
-            {% capture href %}/program/tracks/{{ thumbnail.id | escape }}{% endcapture %}
+            {% capture href %}/track/{{ thumbnail.id | escape }}{% endcapture %}
     {% endcase %}
 
     {% if thumbnail.id and thumbnail.id == id %} {% assign selected="selected allows-selcted" %} {% else %} {% assign selected="" %} {% endif %}

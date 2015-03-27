@@ -1,9 +1,16 @@
 <section class="tracks-people thumbnails-grid" id="section-tracks-people">
     <grid>
-        <h2 class="titlebar">Tracks Chair & Speakers</h2>
+        <h2 class="titlebar">Speakers &amp; Organizers</h2>
         <content>
             <div class="program thumbnails thumbnails-6-in-row">
                 {% assign names = "" %}
+
+                {% assign talks = site.data.tracks[item.id] %}
+                {% for talk in talks %}
+                    {% for speaker in talk.speakers %}
+                        {% capture names %}{% if names != "" %}{{names}},{% endif %}{{speaker}}{% endcapture %}
+                    {% endfor %}
+                {% endfor %}
 
                 {% for person in site.data.people %}
                     {% for track in person.tracks %}
@@ -13,12 +20,6 @@
                     {% endfor %}
                 {% endfor %}
 
-                {% assign talks = site.data.tracks[item.id] %}
-                {% for talk in talks %}
-                    {% for spekaer in talk.speakers %}
-                        {% capture names %}{% if names != "" %}{{names}},{% endif %}{{spekaer}}{% endcapture %}
-                    {% endfor %}
-                {% endfor %}
                 {% assign items = names | split:"," %}
                 {% assign dataType = "people" %}
                 {% assign itemsInRow = 5 %}

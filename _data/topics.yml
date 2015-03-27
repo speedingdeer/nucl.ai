@@ -82,10 +82,11 @@
     that can be resolved with artificial techniques.  This includes computer vision
     algorithm, object identification, gesture recognition and motion tracking &mdash; among
     many others.  This track focuses on AI for emerging technology such as augmented and
-    virtual reality.
+    virtual reality. <img src="/img/tracks/EveOnline_1.jpg"/>
   keywords:
     - computer vision
     - object identification
+    - gesture recognition
     - motion tracking
   credit:
     title: Project Trains

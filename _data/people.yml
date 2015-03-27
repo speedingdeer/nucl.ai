@@ -1,7 +1,6 @@
-
 - name: Clodéric Mars
   role: track
-  tracks: animation
+  tracks: behavior
   title: "Co-Organizer & Track Chair"
   twitter: clodericmars
   bio: >
@@ -46,7 +45,7 @@
 
 - name: Mika Vehkala
   role: track
-  tracks: alternate
+  tracks: [animation]
   title: "Co-Organizer & Track Chair"
   bio: >
     Mika has been working in the industry since late 1999 -- including IO Interactive as Senior AI Programmer on the Hitman: Absolution and Killzone: Shadow Fall for Guerrilla Games.
@@ -57,14 +56,15 @@
   title: "Co-Founder & Co-Ordinator"
   twitter: alexjc
   affiliation:
-    name: The AiGameDev.com
+    name: AiGameDev.com
     url: http://aigamedev.com
 
 - name: Petra Champandard-Pail
   role: org
+  tracks: [alternate]
   title: "Director & Co-Founder"
   affiliation:
-    name: The AiGameDev.com
+    name: AiGameDev.com
     url: http://aigamedev.com
   bio: >
     Petra has a background in business management, and worked as an International Area Manager for a large multi-million dollar corporation.
@@ -82,11 +82,17 @@
   title: "Lead Developer"
   twitter: speedingdeer
   affiliation:
-    name: The AiGameDev.com
+    name: AiGameDev.com
     url: http://aigamedev.com
   bio: >
     Filip worked previously in semantic web research for a couple of years and after a brief start-up interlude he now found his calling in digital entertainment and teaching.
     He helped to organize Game/AI Game/AI Conference in 2014 and presented there with AiGameDev.com team tutorial about Monto-Carlo Tree Search.
+
+- name: Freyr Magnússon
+  role: speaker
+  tracks: alternate
+  title: "Lead AI Programmer"
+  bio: ""
 
 - name: Piotr Andruszkiewicz
   role: speaker
@@ -118,7 +124,7 @@
     for the real-time mobile analytics platform. He has more than 10 years of experience in software engineering and 
     architecture, and has made contributions to open source projects like twitter/algebird, datastax/spark-cassandra-connector 
     and spray/spray.
- 
+
 - name: Kevin Schmidt
   role: speaker
   title: Speaker

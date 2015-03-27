@@ -39,8 +39,8 @@
             {% for speaker in talk.speakers %}
                 {% if speaker == d.name %}
                     <p class="track-topic">
-                    <a href="/program/tracks/{{topic.id}}">{{topic.title}}</a> -
-                    <a href="/program/tracks/{{topic.id}}#{{talk.title | escape | replace:' ','-' | downcase}}">{{talk.title}}</a>
+                    <a href="/track/{{topic.id}}">{{topic.title}}</a> -
+                    <a href="/track/{{topic.id}}#{{talk.title | escape | replace:' ','-' | downcase}}">{{talk.title}}</a>
                     </p>
                 {% endif %}
             {% endfor %}
@@ -52,7 +52,7 @@
         {% for track in d.tracks %}
             {% if track == topic.id %}
                 <p class="track-topic">
-                    <a href="/program/tracks/{{topic.id}}">{{topic.title}}</a>
+                    <a href="/track/{{topic.id}}">{{topic.title}}</a>
                 </p>
             {% endif %}
         {% endfor %}
