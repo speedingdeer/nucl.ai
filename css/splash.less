@@ -31,6 +31,7 @@ section.splash-screen {
         .table { height: @third_vh } //firefox table doesn't know min-height
         splash content titles h1 { margin-bottom: -5px; }
         splash content logo { display: none; }
+        .table, content { width: 100%; }
     }
 
     background-color: @AUDIENCE_COLOR !important;
@@ -95,6 +96,13 @@ section.splash-screen {
                         padding: 5px 0;
                         font-size: 0.4em
                     }
+                }
+                .left {
+                    .column(6);
+                }
+                .right {
+                    .column(6);
+                    :first-child { padding-top: 55px; }
                 }
             }
         }
