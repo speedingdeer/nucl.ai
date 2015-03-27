@@ -41,7 +41,8 @@
     </grid>
 </section>
 
-<section class="program separator" style="background-image: url( {{ '/img/tracks/'+track.id+'.png' | prepend: site.baseurl }} ); background-position: center center;"></section>
+{% capture backgroundImg %}/img/topics/{{item.id}}.jpeg{% endcapture %}
+<section class="program separator" style="background-image: url('{{  backgroundImg | prepend: site.baseurl }}'); background-position: center center;"></section>
 
 <section class="none separator"></section>
 
