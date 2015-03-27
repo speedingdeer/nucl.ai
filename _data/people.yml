@@ -90,6 +90,7 @@
 
 - name: Freyr Magnússon
   role: speaker
+  tracks: [alternate]
   title: Speaker
   affiliation:
     name: CCP Games
