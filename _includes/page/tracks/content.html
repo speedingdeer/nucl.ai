@@ -12,8 +12,7 @@
         {% assign items = site.data.tracks[item.id] %}
         <content>
             <p class="intro">Now in its 7th edition, the <a href="/">nucl.ai Conference</a> brings together hundreds of developers from creative industries and interactive media to resolve the biggest technical and design problems with Artificial Intelligence.  One of the event's tracks focuses specifically on <b>{{item.title}}</b> for an entire day.</p>
-
-            {{track.content}}
+            <p class="intro">{{track.content}}</p>
         </content>
     </grid>
 </section>
@@ -57,7 +56,7 @@
                     <h3>{{item.title}}</h3>
                     {% assign items = item.speakers %}
                     {% assign dataType = "people" %}
-                    <div class="description wide big">
+                    <div class="description">
                     <p >{{item.description}}</p>
                     </div>
                     
