@@ -22,8 +22,18 @@ section.thumbnails-grid.tracks {
 section.tracks-content.tracks-text {
     content {
         .column(12);
+        p, li {
+            opacity: 0.85;
+            &.intro {
+                font-size: 1.34em;
+                line-height: 1.5em;
+                text-align: justify;
+                margin: 0 4em 1em 4em;
+            }
+        }
         img {
             width: 100%;
+            margin: 1ex 0;
         }
     }
 }

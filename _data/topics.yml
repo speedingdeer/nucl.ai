@@ -79,11 +79,11 @@
   title: "Virtual & Augmented Reality"
   content: >
     <img src="/img/tracks/EveOnline_1.jpg"/>
-    <p>Recent devices for both augmented and virtual reality provide a variety of challenges
-    that can be address with artificial intelligence techniques.  This includes computer vision
-    algorithm, object identification and tracking, gesture recognition and motion tracking &mdash; among
-    many others.  This track focuses on AI for emerging technology such as augmented and
-    virtual reality.</p>
+    <p>Recent devices for both augmented and virtual reality provide a variety
+    of new challenges, many of which can be addressed with artificial intelligence
+    techniques.  This includes computer vision algorithms, object identification
+    and tracking, gesture recognition and motion tracking &mdash; among many
+    others.</p>
   keywords:
     - computer vision
     - object identification
