@@ -122,7 +122,11 @@ module.exports = function (grunt) {
           '**/*.{html,csv,yml,md,mkd,markdown,js,css,png,jpg,jpeg,ico}',
           'js/assets.coffee',
           '!**/app.js',
-          '!**/app.css'
+          '!**/app.css',
+          '!.jekyll/**',
+          '!_site/**',
+          '!lib/**'
+
         ],
         tasks: ['jekyll:server']
       },
