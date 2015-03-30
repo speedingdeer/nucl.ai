@@ -6,4 +6,4 @@ $ ->
     thumbnails = new Thumbnails "track-content", true, true
 
   if $("#section-tracks-people").length > 0
-    thumbnails = new Thumbnails "section-tracks-people", true, true
+    thumbnails = new Thumbnails "section-tracks-people", true, false
