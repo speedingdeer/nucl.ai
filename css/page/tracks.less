@@ -30,11 +30,14 @@ section.tracks-content.tracks-text {
     content {
         .column(12);
         p, li {
-            opacity: 0.85;
+            span {
+                opacity: 0.85;
+            }
             &.intro {
                 &:extend(.big);
-                font-size: 1.34em; // This is required? Size too small otherwise.
                 &:extend(.wide);
+                font-size: 1.34em; // This is required? Size too small otherwise.
+                line-height: 1.34;
                 text-align: justify;
                 margin: 0 4em 1em 4em;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 

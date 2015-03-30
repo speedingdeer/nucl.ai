@@ -3,15 +3,16 @@
 {% for topic in site.data.topics %}
     {% if topic.id == item.id %}
         {% assign track = topic %}
+        {% assign index = forloop.index %}
     {% endif %}
 {% endfor %}
 
 <section class="tracks-content tracks-text">
     <grid>
-        <h2>{{item.title}}</h2>
+        <h2>{{item.title}} (Track #{{index}})</h2>
         {% assign items = site.data.tracks[item.id] %}
         <content>
-            <p class="intro">Now in its 7th edition, the <a href="/">nucl.ai Conference</a> brings together hundreds of developers from creative industries and interactive media to resolve the biggest technical and design problems with Artificial Intelligence.  One of the event's tracks focuses specifically on <b>{{item.title}}</b> for an entire day.</p>
+            <p class="intro"><span>Now in its 7th edition, the <a href="/">nucl.ai Conference</a> brings together hundreds of developers from creative industries and interactive media to resolve the biggest technical and design problems with Artificial Intelligence.  One of the event's tracks focuses specifically on</span> <b>&ldquo;{{item.title}}&rdquo;</b> <span>for an entire day.</span></p>
             {{track.content}}
         </content>
     </grid>

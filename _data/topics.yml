@@ -44,15 +44,6 @@
     title: The AI Sandbox
     url: http://aisandbox.com/
 
-- id: simulations
-  title: "Training & Simulations"
-  description: >
-    <p>This track focuses on AI in serious games, such as simulations for training.</p>
-  credit:
-    title: Banished
-    url: http://www.shiningrocksoftware.com/game/
-  disabled: true
-
 - id: behavior
   title: "Agent Behavior"
   content: >
@@ -216,3 +207,12 @@
   credit:
     title: Far Cry 4
     url: http://far-cry.ubi.com/
+
+- id: simulations
+  title: "Training & Simulations"
+  description: >
+    <p>This track focuses on AI in serious games, such as simulations for training.</p>
+  credit:
+    title: Banished
+    url: http://www.shiningrocksoftware.com/game/
+  disabled: true
