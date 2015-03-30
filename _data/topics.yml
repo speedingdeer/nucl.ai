@@ -1,5 +1,5 @@
 - id: animation
-  title: "Character Animation"
+  title: "Character Animation Technology"
   description: >
     <p>Portraying characters is one of the most challenging aspects of building an
     engaging 3D world.  While many low-level aspects of character animation technology
@@ -29,6 +29,7 @@
     this track will help you make the most of recent advances.
   content: >
     <img src="/img/tracks/ForzaHorizon_3.jpg"/>
+    <p class="credit"><u>Image Credit</u>: Forza Motorsport 2</p> 
     <p>How do you build your simulation to respond to user input at interactive rates,
     especially if it needs to make intelligent decisions?  Artificial intelligence
     techniques have evolved significantly over the past few years, allowing you to
@@ -56,6 +57,7 @@
   title: "Agent Behavior"
   content: >
     <img src="/img/tracks/TotalWarAttila_3.jpg"/>
+    <p class="credit"><u>Image Credit</u>: Total War: Attilla</p> 
     <p>As virtual worlds become more engaging, their number of agents is going up
     tremendously. From AI directors that supervise a scene, to interactive tutors, as
     well as other actors, each of them require consistent behaviors.  In this track,
@@ -87,7 +89,8 @@
     you're looking to improve the unique feel and replayability of your games, or
     reduce overheads creating content, this is your day!
   content: >
-    <img src="/img/tracks/Witcher_1.jpg"/>  
+    <img src="/img/tracks/Witcher_1.jpg"/>
+    <p class="credit"><u>Image Credit</u>: The Witcher III</p> 
     <p>Over the past few years, procedural generation techniques have established
     themselves as not only a sensible approach but often as the default approach
     for assisting content creation.  This track focuses on the algorithms and methods
@@ -104,9 +107,10 @@
     url: http://www.big-robot.com/
 
 - id: alternate
-  title: "Virtual & Augmented Reality"
+  title: "Virtual / Augmented Reality"
   content: >
     <img src="/img/tracks/EveOnline_1.jpg"/>
+    <p class="credit"><u>Image Credit</u>: Eve Online</p> 
     <p>Recent devices for both augmented and virtual reality provide a variety
     of new challenges, many of which can be addressed with artificial intelligence
     techniques.  This includes computer vision algorithms, object identification
@@ -129,7 +133,7 @@
     url: http://project-trains.tumblr.com/
 
 - id: ambient
-  title: "Crowds & Ambient Life"
+  title: "Crowds and Ambient Life"
   description: >
     Making a world believable almost always requires bringing it to life.  This
     track focuses on digital extras and entire crowds that can interact with
@@ -139,6 +143,7 @@
     help your scenes come to life.
   content: >
     <img src="/img/tracks/Ratatouille_1.jpg"/>
+    <p class="credit"><u>Image Credit</u>: Pixar's Ratatouille</p> 
     <p>Making a world believable almost always requires bringing it to life.  This
     track focuses on digital extras and entire crowds that can interact with
     their environment and perform plausible actions without taking up too much
@@ -159,6 +164,7 @@
   title: "Advanced Analytics & Data Science"
   content: >
     <img src="/img/tracks/TopEleven_1.jpg"/>
+    <p class="credit"><u>Image Credit</u>: Top 11 Football Manager</p> 
     <p>Understanding user behavior is a component that's critical to application
     development, and also increasingly important at runtime.  This track will
     cover essential concepts in behavioral analytics and user profiling and
@@ -187,6 +193,7 @@
   title: "Systemic Design"
   content: >
     <img src="/img/tracks/Fortnite_1.jpg"/>
+    <p class="credit"><u>Image Credit</u>: Fortnite by Epic Games</p> 
     <p>Creating emergent simulations that go beyond scripted linear experiences has
     proven a great way of engaging audiences.  However, there are huge challenges
     in both design and technology for implementing these.  How to combine top-down
