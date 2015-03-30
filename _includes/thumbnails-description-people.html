@@ -39,7 +39,10 @@
             {% for speaker in talk.speakers %}
                 {% if speaker == d.name %}
                     <p class="track-topic">
-                    <a href="/track/{{topic.id}}">{{topic.title}}</a> -
+                    {% if isTrackPage %}
+                    {% else %}
+                        <a href="/track/{{topic.id}}">{{topic.title}}</a> -
+                    {% endif %}
                     <a href="/track/{{topic.id}}#{{talk.title | escape | replace:' ','-' | downcase}}">{{talk.title}}</a>
                     </p>
                 {% endif %}
@@ -47,16 +50,19 @@
         {% endfor %}
     {% endfor %}
 
-    {% comment %} get Tracks Chairs tracks {% endcomment %}
-    {% for topic in site.data.topics %}
-        {% for track in d.tracks %}
-            {% if track == topic.id %}
-                <p class="track-topic">
-                    <a href="/track/{{topic.id}}">{{topic.title}}</a>
-                </p>
-            {% endif %}
+    {% if isTrackPage %}
+    {% else %}
+        {% comment %} get Tracks Chairs tracks {% endcomment %}
+        {% for topic in site.data.topics %}
+            {% for track in d.tracks %}
+                {% if track == topic.id %}
+                    <p class="track-topic">
+                        <a href="/track/{{topic.id}}">{{topic.title}}</a>
+                    </p>
+                {% endif %}
+            {% endfor %}
         {% endfor %}
-    {% endfor %}
+    {% endif %}
 
     {% if d.bio %}
         {% for paragraph in d.bio %}
