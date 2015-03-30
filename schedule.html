@@ -8,6 +8,7 @@ permalink: /program/schedule/
     <grid>
         <h2>Schedule</h2>
         <content>
+            <p class="note"> Please note that this schedule may still change. </p>
             {% for day in site.data.schedule %}
                 <table> 
                     <tr>
@@ -21,7 +22,7 @@ permalink: /program/schedule/
                                         {{day.title}}
                                     </h3>
                                     <div class="legend">
-                                        <p>Tracks*:</p>
+                                        <p>Tracks:</p>
                                         {% for track in day.tracks %}
                                             <div class="track-wrap">
                                                     {% for topic in site.data.topics %}
@@ -41,7 +42,6 @@ permalink: /program/schedule/
                     </tr>
                 </table>
             {% endfor %}
-            <p class="note"> *Please note that this schedule may still change. </p>
         </content>
     </grid>
 </section>
