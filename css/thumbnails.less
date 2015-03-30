@@ -23,7 +23,6 @@
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.7em; }
                     opacity: 0.75;
 
-
                     &.selected.allows-selcted {
                         display: block;
                         color: @ORANGE;
@@ -31,7 +30,6 @@
                     }
 
                 }
-                &.alternate { margin-left: 11.25%; }
             }
         }
         .thumbnails-3-in-row {
@@ -50,7 +48,9 @@
             .small-thumbnails();
             item.thumbnail {
                 .column(2,10);
-                &.alternate { margin-left: 11.25%; } //@TODO move me to program / tracks
+                .thumbnail-title {
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.5em; }
+                }
             }
         }
         .thumbnails-6-in-row {
