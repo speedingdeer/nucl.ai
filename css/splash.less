@@ -4,6 +4,8 @@ section.splash-screen {
     position: relative;
     min-height: calc(@two_third_vh);
     overflow: visible; //for drop down menu
+    grid { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0px; } }
+    content { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0px; } }
     .splash-screen-wrap {
         min-height: calc(~"@{two_third_vh} - @{NAVIGATION_HEIGHT}");
         background-position: center;
@@ -98,18 +100,30 @@ section.splash-screen {
                     }
                 }
                 .left {
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { width: 100%; }
                     .column(6);
                     h1 {
                         font-size: 6.5em;
                         opacity: 0.75;
+                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                            font-size: 5.8em;
+                        }
+                    }
+                    h2 {
+                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 1em; }
                     }
                 }
                 .right {
                     .column(6);
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { width: 100%; }
                     h2 {
                         font-size: 1.5em;
                         color: #FFF;                        
                         padding-top: 35px;
+                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                            padding-top: 7px;
+                            font-size: 1em;
+                        }
                     }
                 }
             }
