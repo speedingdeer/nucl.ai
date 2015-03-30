@@ -1,34 +1,34 @@
-- title: "Dynamic Pricing in Mobile Games"
-  description: >
-    Dynamic pricing originated in the airline industry almost 50 years ago. Since then, it has spread to the hospitality industry, to consumer packaged goods, and to retail. The rise of In-App-Purchases within gaming (more generally, the rise of digital goods, bought and sold via mobile devices), and the rapid evolution of "big data" infrastructure, presents new challenges and opportunities for dynamic pricing, both in theory and in practice. The challenge is to make sense of large masses of noisy data, in a way that is actionable for "the business side of the house" (e.g. the people who set prices). The opportunity is to reinvent how we look at data, and automate the process of sifting for information. We can take notions that are intuitively "obvious" to old-school marketers (for example: "stickershock") or endlessly discussed in economic texts (for example: "Intertemporal Price Discrimination"), make them precise, and then see, automatically and across automatically derived clusters, whether the definitions actually capture actionable differences in consumer behavior.
-    In this talk, we will outline how Scientific Revenue approaches the problem of setting prices for In-App-Purchases in gaming, with illustrations and examples from the field. 
-  speakers:
-    - Bill Grosso
+# - title: "Dynamic Pricing in Mobile Games"
+#   description: >
+#     Dynamic pricing originated in the airline industry almost 50 years ago. Since then, it has spread to the hospitality industry, to consumer packaged goods, and to retail. The rise of In-App-Purchases within gaming (more generally, the rise of digital goods, bought and sold via mobile devices), and the rapid evolution of "big data" infrastructure, presents new challenges and opportunities for dynamic pricing, both in theory and in practice. The challenge is to make sense of large masses of noisy data, in a way that is actionable for "the business side of the house" (e.g. the people who set prices). The opportunity is to reinvent how we look at data, and automate the process of sifting for information. We can take notions that are intuitively "obvious" to old-school marketers (for example: "stickershock") or endlessly discussed in economic texts (for example: "Intertemporal Price Discrimination"), make them precise, and then see, automatically and across automatically derived clusters, whether the definitions actually capture actionable differences in consumer behavior.
+#     In this talk, we will outline how Scientific Revenue approaches the problem of setting prices for In-App-Purchases in gaming, with illustrations and examples from the field. 
+#   speakers:
+#     - Bill Grosso
 
-- title: "Fast > Perfect: Practical approximation examples for mobile game analytics using Spark Streaming"
-  description: >
-    For mobile games, constant tweaks are the difference between success and failure. 
-    Game designers need metrics like DAU, new users and ARPDAU in real-time to be able to tweak quickly. 
-    But calculating, for example, uniqueness or newness of a data point requires a list of seen data points - 
-    both memory intensive and tricky when using real-time stream processing like Spark Streaming. 
-    Probabilistic data structures allow approximation of these properties with a fixed memory representation 
-    and are very well suited for stream processing. 
-    Getting from the theory of approximation to a practical useful metric at a low error rate even for many millions of users 
-    is another story. In this talk we will look at ways to achieve it:
-    <ul>
-    <li>
-    Which approximation we use for selection of useful metrics
-    </li>
-    <li>
-    Why we picked a specific probabilistic data structure
-    </li>
-    <li>
-    How we store it in Cassandra as a time series
-    </li>
-    <li>
-    How we implemented it in Spark Streaming
-    </li>
-    </ul>
-  speakers:
-    - Kevin Schmidt
-    - Luis Angel Vicente Sanchez
+# - title: "Fast > Perfect: Practical approximation examples for mobile game analytics using Spark Streaming"
+#   description: >
+#     For mobile games, constant tweaks are the difference between success and failure. 
+#     Game designers need metrics like DAU, new users and ARPDAU in real-time to be able to tweak quickly. 
+#     But calculating, for example, uniqueness or newness of a data point requires a list of seen data points - 
+#     both memory intensive and tricky when using real-time stream processing like Spark Streaming. 
+#     Probabilistic data structures allow approximation of these properties with a fixed memory representation 
+#     and are very well suited for stream processing. 
+#     Getting from the theory of approximation to a practical useful metric at a low error rate even for many millions of users 
+#     is another story. In this talk we will look at ways to achieve it:
+#     <ul>
+#     <li>
+#     Which approximation we use for selection of useful metrics
+#     </li>
+#     <li>
+#     Why we picked a specific probabilistic data structure
+#     </li>
+#     <li>
+#     How we store it in Cassandra as a time series
+#     </li>
+#     <li>
+#     How we implemented it in Spark Streaming
+#     </li>
+#     </ul>
+#   speakers:
+#     - Kevin Schmidt
+#     - Luis Angel Vicente Sanchez
