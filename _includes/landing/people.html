@@ -1,11 +1,10 @@
 <section class="people thumbnails-grid" id="section-people">
     <a class="anchor" id="people"></a>
-    <h2> People </h2>
     <grid>
         <content>
             {% assign itemsInRow = 5 %}
             <div class="subsection">
-                <h3> Track Chairs </h3>
+                <h2> Co-Organizers &amp; Track Chairs </h2>
                 {% assign filterPeopleType = "track" %}
                 {% include people/filtered.html %}
                 {% assign dataType = "people" %}
@@ -14,7 +13,6 @@
                 </div>
             </div>
             {% comment %} 
-            Temporary hide spekaers
             <div class="subsection">
                 <h3> Speakers </h3>
                 {% assign filterPeopleType = "speaker" %}
@@ -26,7 +24,7 @@
             </div>
             {% endcomment %}
             <div class="subsection">
-                <h3> Organizers & Advisors</h3>
+                <h2> The Team &amp; Advisors</h2>
                 {% assign filterPeopleType = "org,advisory" %}
                 {% include people/filtered.html %}
                 {% assign dataType = "people" %}
