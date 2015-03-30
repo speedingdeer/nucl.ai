@@ -7,6 +7,12 @@ section.thumbnails-grid.tracks {
         div.thumbnails {
             .row(10);
             margin-bottom: 1em;
+            item.thumbnail {
+                &.alternate { margin-left: 11.25%; }
+                .thumbnail-title {
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.6em; } // can be bigger
+                }
+            }
         }
     }
     &.program {
@@ -14,6 +20,7 @@ section.thumbnails-grid.tracks {
             div.thumbnails {
                 margin-top: 1em;
                 margin-bottom: 2em;
+
             }
         }
     }
@@ -30,6 +37,10 @@ section.tracks-content.tracks-text {
                 &:extend(.wide);
                 text-align: justify;
                 margin: 0 4em 1em 4em;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    font-size: 1em; 
+                    margin: 0 1em 1em;
+                } 
             }
         }
         img {
