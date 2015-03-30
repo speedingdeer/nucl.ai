@@ -12,19 +12,19 @@
 
 - name: Diego Perez
   role: track
-  tracks: [analytics, procedural]
+  tracks: [decisions]
   title: "Co-Organizer & Track Chair"
   twitter: diego_pliebana
 
 - name: Michaël Rouillé
   role: track
-  tracks: simulations
+  tracks: [ambient]
   title: "Co-Organizer & Track Chair"
   twitter: michaelrouille
 
 - name: Heather Stark
   role: track
-  tracks: behavior
+  tracks: [analytics]
   title: "Co-Organizer & Track Chair"
   twitter: hastark
   bio: >
@@ -35,7 +35,7 @@
 
 - name: Tommy Thompson
   role: track
-  tracks: procedural
+  tracks: [systems, procedural]
   title: "Co-Organizer & Track Chair"
   bio: >
     Tommy Thompson is a lecturer in computer science at the University of Derby, UK.
@@ -85,7 +85,7 @@
     name: AiGameDev.com
     url: http://aigamedev.com
   bio: >
-    Filip worked previously in semantic web research for a couple of years and after a brief start-up interlude he now found his calling in digital entertainment and teaching.
+    Filip worked previously in semantic web research for Animation a couple of years and after a brief start-up interlude he now found his calling in digital entertainment and teaching.
     He helped to organize Game/AI Conference in 2014 and presented a tutorial about Monto-Carlo Tree Search along with the AiGameDev.com team.
 
 - name: Freyr Magnússon
@@ -95,6 +95,14 @@
   affiliation:
     name: CCP Games
     url: http://www.ccpgames.com/
+
+- name: Paul Kanyuk
+  role: speaker
+  tracks: [ambient]
+  title: Speaker
+  affiliation:
+    name: Pixar Animation Studios
+    url: http://www.pixar.com/
 
 - name: Richard Kogelnig
   role: track
