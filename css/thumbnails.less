@@ -92,7 +92,7 @@
                         border-color: lighten(@BLUE, 25%);
                         .filter(none);
                     }
-                    &.selected { border-color: @ORANGE; }
+                    &.selected:not(.disabled) { border-color: @ORANGE; }
                 }
             }
             .thumbnail-title {

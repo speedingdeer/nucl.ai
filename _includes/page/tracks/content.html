@@ -4,6 +4,7 @@
     {% if topic.id == item.id %}
         {% assign track = topic %}
         {% assign index = forloop.index %}
+        {% assign isTrackPage = true%}
     {% endif %}
 {% endfor %}
 
