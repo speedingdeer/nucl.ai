@@ -6,9 +6,9 @@ permalink: /program/schedule/
 
 <section class="program-schedule">
     <grid>
-        <h2>Schedule</h2>
+        <h2>Conference Schedule</h2>
         <content>
-            <p class="note"> Please note that this schedule may still change. </p>
+            <p class="note">Please note that this schedule is tentative, and allocation of tracks for each day may change.</p>
             {% for day in site.data.schedule %}
                 <table> 
                     <tr>
@@ -22,7 +22,6 @@ permalink: /program/schedule/
                                         {{day.title}}
                                     </h3>
                                     <div class="legend">
-                                        <p>Tracks:</p>
                                         {% for track in day.tracks %}
                                             <div class="track-wrap">
                                                     {% for topic in site.data.topics %}
