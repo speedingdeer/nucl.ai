@@ -30,6 +30,10 @@ section.tracks-content.tracks-text {
                 &:extend(.wide);
                 text-align: justify;
                 margin: 0 4em 1em 4em;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    font-size: 1em; 
+                    margin: 0 1em 1em;
+                } 
             }
         }
         img {
