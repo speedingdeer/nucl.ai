@@ -39,7 +39,12 @@ class Thumbnails
 
     @setThumbnailSize()
 
-    if @justSize then return;
+    if @justSize
+      @thumbnails.each ->
+        if @.jQthumbnail.hasClass("disabled")
+          @.jQthumbnail.click ->
+            return false
+      return;
 
     @selected = @thumbnails.filter(".selected")
     if @selected.length == 0 then @selected = null

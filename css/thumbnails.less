@@ -76,6 +76,7 @@
                     margin: (100% - @THUMBNAIL_SIZE) / 2;
                     .circular(@THUMBNAIL_SIZE, 100%);
                     cursor: pointer;
+                    &.disabled { cursor: default; }
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -84,7 +85,7 @@
                     border: solid @THUMBNAIL_BORDER_SIZE;
                     border-color: lighten(@GREY, 5%);
                     .filter(grayscale(100%));
-                    &:hover, &.selected {
+                    &:hover:not(.disabled), &.selected {
                         margin: (100% - @THUMBNAIL_SIZE_LARGE) / 2;
                         .circular(@THUMBNAIL_SIZE_LARGE, 100%);
                         border: solid @THUMBNAIL_BORDER_SIZE_SELECTED;
@@ -101,7 +102,7 @@
                     font-weight: normal;
                     font-size: 0.85em;
                 }
-                &.hover { color: lighten(@BLUE, 25%);
+                &.hover:not(.disabled) { color: lighten(@BLUE, 25%);
                 }
                 &.selected { display: none; }
             }
