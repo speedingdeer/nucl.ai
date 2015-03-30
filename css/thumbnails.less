@@ -126,6 +126,10 @@
                 &.column-first { text-align: left; margin-left: 10px; }
                 &.column-last { text-align: right; margin-right: 10px;}
                 padding: 0.5em 0 0.5em;
+                a {
+                    text-decoration: none;
+                    color: @ORANGE;
+                }
             }
             p {
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {  line-height: 1.1 }
@@ -136,6 +140,14 @@
                         text-decoration: none;
                     }
                 }
+            }
+            a.read-more {
+                float: right;
+                padding-bottom: 0.5em;
+                margin-top: 5px;
+                display: inline-block;
+                font-size: 22px;
+                font-weight: bold;
             }
 
             h3 {
