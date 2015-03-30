@@ -9,8 +9,21 @@
         {% elsif descModulo == 0 %} column-last
         {% elsif itemsInRow == 3 %} column-middle
         {% endif %}
-    ">{{ desc.title }}</h2>
-    <p> {{ desc.content }} </p>
+    ">
+    {% if desc.disabled %}
+        {{ desc.title }}
+    {% else %}
+        <a href="/track/{{desc.id}}/">{{desc.title}}</a>
+    {% endif %}
+    </h2>
+
+    <p>{{desc.description}}</p>
+
+    {% if desc.disabled %}
+    {% else %}
+    <a href="/track/{{desc.id}}/" class="read-more">Click for track details...</a>
+    {% endif %}
+
     <h3>Keywords</h3>
     <ul>
         {% for kw in desc.keywords %} 
@@ -20,10 +33,4 @@
     <p class="note">
         <u>Photo Credit</u>: <a href="{{ desc.credit.url }}" target="_blank">{{ desc.credit.title }}</a>
     </p>
-    {% if desc.disabled %}
-    {% else %}
-        <p>
-            <a href="/track/{{desc.id}}" class="ready-more">Read about Talks and Speakers.</a>
-        </p>
-    {% endif %}
 </item>

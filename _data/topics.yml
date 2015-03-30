@@ -1,6 +1,6 @@
 - id: animation
   title: "Character Animation"
-  content: >
+  description: >
     <p>Portraying characters is one of the most challenging aspects of building an
     engaging 3D world.  While many low-level aspects of character animation technology
     have been resolved, there are many questions that remain open as the industry
@@ -16,10 +16,11 @@
   credit:
     title: Marvin Rig
     url: http://aigamedev.com/
+  disabled: true
 
 - id: decisions
   title: "Real-time Decision Systems"
-  content: >
+  description: >
     <p>How do you build your simulation to respond to user input at interactive rates,
     especially if it needs to make intelligent decisions?  Artificial intelligence
     techniques have evolved significantly over the past few years, allowing you to
@@ -33,18 +34,20 @@
   credit:
     title: The AI Sandbox
     url: http://aisandbox.com/
+  disabled: true
 
 - id: simulations
   title: "Training & Simulations"
-  content: >
+  description: >
     <p>This track focuses on AI in serious games, such as simulations for training.</p>
   credit:
     title: Banished
     url: http://www.shiningrocksoftware.com/game/
+  disabled: true
 
 - id: behavior
   title: "Agent Behavior"
-  content: >
+  description: >
     <p>As virtual worlds become more engaging, their number of agents is going up
     tremendously. From AI directors that supervise a scene, to interactive tutors, as
     well as other actors, each of them require consistent behaviors.  In this track,
@@ -56,10 +59,11 @@
   credit:
     title: The Sims 4
     url: http://www.thesims.com/
+  disabled: true
 
 - id: procedural
   title: "Procedural Content Generation"
-  content: >
+  description: >
     <p>Over the past few years, procedural generation techniques have established
     themselves as not only a sensible approach but often as the default approach
     for assisting content creation.  This track focuses on the algorithms and methods
@@ -73,6 +77,7 @@
   credit:
     title: "Sir, You're Being Hunted"
     url: http://www.big-robot.com/
+  disabled: true
 
 - id: alternate
   title: "Virtual & Augmented Reality"
@@ -83,6 +88,12 @@
     techniques.  This includes computer vision algorithms, object identification
     and tracking, gesture recognition and motion tracking &mdash; among many
     others.</p>
+  description: >
+    Recent devices for both augmented and virtual reality provide a variety
+    of new challenges, many of which can be addressed with artificial intelligence
+    techniques.  This includes computer vision algorithms, object identification
+    and tracking, gesture recognition and motion tracking &mdash; among many
+    others.
   keywords:
     - computer vision
     - object identification
@@ -95,7 +106,7 @@
 
 - id: ambient
   title: "Crowds & Ambient Life"
-  content: >
+  description: >
     <p>Making a world believable almost always requires bringing it to life.  This
     track focuses on digital extras and entire crowds that can interact with
     their environment and perform plausible actions without taking up too much
@@ -110,10 +121,11 @@
   credit:
     title: Golaem Crowd
     url: http://golaem.com/
+  disabled: true
 
 - id: analytics
   title: "Analytics & Data-Mining"
-  content: >
+  description: >
     <p>Understanding user behavior is a component that's critical to application
     development, and also increasingly important at runtime.  This track will
     cover essential concepts in behavioral analytics and user profiling and
@@ -129,10 +141,11 @@
   credit:
     title: Dmitry Nozhnin
     url: http://www.gamasutra.com/blogs/DmitryNozhnin/417356/
+  disabled: true
 
 - id: systems
   title: "Systemic Design"
-  content: >
+  description: >
     <p>Creating emergent simulations that go beyond scripted linear experiences has
     proven a great way of engaging audiences.  However, there are huge challenges
     in both design and technology for implementing these.  How to combine top-down
@@ -148,3 +161,4 @@
   credit:
     title: Far Cry 4
     url: http://far-cry.ubi.com/
+  disabled: true
