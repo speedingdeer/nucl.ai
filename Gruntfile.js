@@ -119,10 +119,19 @@ module.exports = function (grunt) {
       },
       jekyll: {
         files: [
-          '**/*.{html,csv,yml,md,mkd,markdown,js,css,png,jpg,jpeg,ico}',
+          //'**/*.{html,csv,yml,md,mkd,markdown,js,css,png,jpg,jpeg,ico}', //consumes to many resources
+          '*.{html,ico}',
+          '_data/**/*',
+          'img/**/*',
+          'layouts/**/*',
+          'includes/**/*',
           'js/assets.coffee',
           '!**/app.js',
-          '!**/app.css'
+          '!**/app.css',
+          '!.jekyll/**',
+          '!_site/**',
+          '!lib/**'
+
         ],
         tasks: ['jekyll:server']
       },
