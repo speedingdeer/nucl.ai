@@ -141,7 +141,7 @@
                     }
                 }
             }
-            @media screen and (min-width: @SMARTPHONE_MAX_PORTRAIT + 1px) {  
+            @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) {  
                 a.read-more {
                     float: right;
                     padding-bottom: 0.5em;
@@ -150,11 +150,10 @@
                     font-size: 22px;
                     font-weight: bold;
                 }
-
-                h3 {
-                    margin-bottom: 0;
-                    color: @GREY;
-                }
+            }
+            h3 {
+                margin-bottom: 0;
+                color: @GREY;
             }
         }
     }
