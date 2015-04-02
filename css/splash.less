@@ -128,10 +128,14 @@ section.splash-screen {
                     h2 {
                         font-size: 1.5em;
                         color: #FFF;                        
-                        padding-top: 35px;
+                        @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) {  &:first-of-type { padding-top: 30px; } }
                         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                             padding-top: 7px;
                             font-size: 1em;
+                        }
+                        &.note { 
+                            opacity: 1; 
+                            a { color: @ORANGE; text-decoration: none; }
                         }
                     }
                 }
