@@ -104,6 +104,14 @@
   affiliation:
     name: Pixar Animation Studios
     url: http://www.pixar.com/
+  bio: >
+    Paul Kanyuk is a Lead Technical Director at Pixar Animation Studios with credits on Cars, Ratatouille, Wall-E, Up, Cars 2, 
+    Brave, and Monster’s University. His specialty is crowd simulation, shading, and rendering, and he is responsible for 
+    the procedural animation and rendering of numerous crowd spectacles, including the hordes of rats in Ratatouille, 
+    the deluge of falling passengers in Wall-E, and the vicious pack of talking dogs in Up. Paul earned his BSE in 
+    Digital Media Design at the University of Pennsylvania and teaches courses in RenderMan and Crowd Simulation at 
+    the Academy of Art University in San Francisco.  He is also an avid musician and plays bass guitar in the bay area 
+    rock band, Halcrow.
 
 - name: Richard Kogelnig
   role: track
@@ -120,7 +128,8 @@
     name: The Creative Assembly
     url: http://www.creative-assembly.com/
   bio: >
-    AI programmer, world conquest enthusiast. Worked on AI for the campaign portion of several Total War titles focusing on diplomacy, pathfinding, tactical planning and optimization.
+    AI programmer, world conquest enthusiast. Worked on AI for the campaign portion of several Total War titles focusing on 
+    diplomacy, pathfinding, tactical planning and optimization.
 
 - name: Csaba Toth
   role: speaker
@@ -129,7 +138,9 @@
     name: The Creative Assembly
     url: http://www.creative-assembly.com/
   bio: >
-    Designer with nearly 10 years of experience in the gaming industry and with a background in programming, worked on games from a wide variety of genres, designed and tweaked AI behaviour for racing games, shooters and most recently the campaign part of Total War: Rome2 and Total War: Attila. Apart from AI, he specialises in game balancing and systems design.
+    Designer with nearly 10 years of experience in the gaming industry and with a background in programming, worked on games 
+    from a wide variety of genres, designed and tweaked AI behaviour for racing games, shooters and most recently the campaign 
+    part of Total War: Rome2 and Total War: Attila. Apart from AI, he specialises in game balancing and systems design.
 
 - name: Bill Grosso
   role: speaker
@@ -139,8 +150,12 @@
     url: http://www.scientificrevenue.com/
   bio: >
     Bill is the founder and CEO of Scientific Revenue, the leading provider of dynamic pricing for in-app purchases. 
-    Prior to starting Scientific Revenue, Bill ran a consulting company focused on business intelligence and predictive analytics, and was an entrepreneur in residence at Rustic Canyon Venture Partners. Prior to those positions, he held senior positions in engineering and product at various companies, where he was well known for building high-performance organizations which shipped innovative products on time. 
-    He has also written two books on software design, has worked as a research scientist in artificial intelligence, and is the author or co-author of over 40 academic journal articles.
+    Prior to starting Scientific Revenue, Bill ran a consulting company focused on business intelligence and predictive 
+    analytics, and was an entrepreneur in residence at Rustic Canyon Venture Partners. Prior to those positions, he held 
+    senior positions in engineering and product at various companies, where he was well known for building high-performance 
+    organizations which shipped innovative products on time. 
+    He has also written two books on software design, has worked as a research scientist in artificial intelligence, 
+    and is the author or co-author of over 40 academic journal articles.
     
 - name: Luis Angel Vicente Sanchez
   role: speaker
@@ -180,7 +195,17 @@
   affiliation: 
     name: Institute of Digital Games (University of Malta)
     url: http://www.game.edu.mt/
-  bio: ""
+  bio: >
+    Antonios Liapis is a postdoctoral researcher at the Institute of Digital Games, University of Malta (UoM). 
+    He received his 5-year Diploma (2007) in Electrical and Computer Engineering from the National Technical University 
+    of Athens and the M.Sc. (2011) and Ph.D. (2014) in Information Technology from the IT University of Copenhagen. 
+    He does research on the crossroads of game design, artificial intelligence and computational creativity. 
+    More specifically, he explores the limits of computational input to the human-driven design process in computer-aided 
+    design tools. Beyond AI-assisted game design, his research pursuits revolve around procedural content generation, 
+    digital aesthetics, evolutionary computation, neuroevolution and constrained optimization. He has published 24 
+    international conference and workshop papers and 2 journal papers in the aforementioned fields, and has won several awards. 
+    Moreover, he has led or participated in the design and development of several games of varying scope and for different 
+    target audiences, including two FP7 ICT projects.
 
 - name: Domitile Lourdeaux
   role: speaker
