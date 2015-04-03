@@ -23,14 +23,15 @@
             {% capture thumbnailId %}{{thumbnail.id}}{% endcapture %}
             {% capture picture %}/img/topics/{{ thumbnail.id | escape }}.jpg{% endcapture %}
             {% capture href %}/track/{{ thumbnail.id | escape }}{% endcapture %}
-            {% if thumbnail.disabled %} 
-                {% capture href %}{% endcapture %}
-                {% assign status = "disabled" %}
-            {% else %}
-                 {% assign status = "enabled" %}
-            {% endif %}
             {% if attachDescription %} {% assign status = "enabled" %} {% endif %}
     {% endcase %}
+
+    {% if thumbnail.disabled or disableAll %} 
+        {% capture href %}{% endcapture %}
+        {% assign status = "disabled" %}
+    {% else %}
+        {% assign status = "enabled" %}
+    {% endif %}
 
     {% if thumbnail.id and thumbnail.id == id %} {% assign selected="selected allows-selcted" %} {% else %} {% assign selected="" %} {% endif %}
     {% capture modulo %}{{ forloop.index | modulo:itemsInRow }}{% endcapture %}
@@ -46,7 +47,13 @@
                 {{thumbnailClass}} {{selected}} {{status}}" name="{{name | escape}}" style="background-image: url('{{ picture | escape |  prepend: site.baseurl }}')">
             </a>
         </thumbnail-wrap>
-        <h3 class="thumbnail-title {{selected}} {{status}}" name="{{name | escape}}">{{ name }}</h3>
+        <h3 class="thumbnail-title {{selected}} {{status}}" name="{{name | escape}}">{{ name }}
+        {% if thumbnail.disabled or disableAll %}
+            {% if thumbnail.affiliation %}
+            , {{thumbnail.affiliation.position}} at {{thumbnail.affiliation.name}} 
+            {% endif %}
+        {% endif %}
+        </h3>
     </item>
 
     {% if attachDescription %}
