@@ -22,16 +22,21 @@
         {% endif %}
     ">
     {{ d.name }}</h2>
-    <p class="work-title"> {{ d.title }} </p>
+    {% if d.affiliation %}
+        <p class="affiliation">
+            <a href="{{d.affiliation.url}}" target="_blank">{{>d.affiliation.name}}</a>
+            {% if d.affiliation.position %}
+                , {{d.affiliation.position }}
+            {% endif %}
+        </p>
+    {% endif %}
+
+    <p class="conference-title"> {{ d.title }} </p>
     <p class="links"> 
     {% if d.twitter %}
         <a class="social twitter" href="http://twitter.com/{{d.twitter}}" target="_blank"></a>
     {% endif %}
     </p>
-    <p class="affiliation">
-        <a href="{{d.affiliation.url}}" target="_blank">{{>d.affiliation.name}}</a>
-    </p>
-
     {% comment %} get speaker talks {% endcomment %}
     {% for topic in site.data.topics %}
         {% assign talks = site.data.tracks[topic.id] %}
