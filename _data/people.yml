@@ -99,7 +99,6 @@
 
 - name: Paul Kanyuk
   role: speaker
-  tracks: [ambient]
   title: Speaker
   affiliation:
     name: Pixar Animation Studios
