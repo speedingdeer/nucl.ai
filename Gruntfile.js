@@ -36,7 +36,10 @@ module.exports = function (grunt) {
           src: [
             'lib/modernizr/modernizr.js',
             'lib/jquery/jquery.js',
-            'lib/raphael/raphael.js'
+            'lib/raphael/raphael.js',
+            'lib/jquery.easy-pie-chart/dist/easypiechart.min.js',
+            'lib/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js',
+            'lib/jquery.countdown/dist/jquery.countdown.min.js'
           ]
       },
       bowerCss: {
