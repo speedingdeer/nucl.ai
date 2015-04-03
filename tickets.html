@@ -20,6 +20,19 @@ permalink: /tickets/
                         <p class="date small">{{ ticket.date }}</p>
                     </div>
                 </div>
+                
+                {% if forloop.first == false %}
+                <div class="conference table">
+                {% else %}
+                <div class="conference table titlerow">
+                {% endif %}                    
+                <div class="centered-cell small">
+                        <p>
+                            {{ ticket.conference }}
+                        </p>
+                    </div>
+                </div>
+
                 {% if forloop.first == false %}
                 <div class="all-access table">
                 {% else %}
@@ -35,17 +48,7 @@ permalink: /tickets/
                         </p>
                     </div>
                 </div>
-                {% if forloop.first == false %}
-                <div class="conference table">
-                {% else %}
-                <div class="conference table titlerow">
-                {% endif %}                    
-                <div class="centered-cell small">
-                        <p>
-                            {{ ticket.conference }}
-                        </p>
-                    </div>
-                </div>
+
             </item>
         {% endfor %}
         <div class="table-comments wider">
@@ -78,24 +81,27 @@ permalink: /tickets/
                         <p class="date">{{ ticket.date }}</p>
                     </div>
                 </div>
+
                 {% if forloop.first == false %}
-                <div class="all-access table">
+                    <div class="conference table">
                 {% else %}
-                <div class="all-access table titlerow">
-                {% endif %}
-                    <div class="centered-cell small">
-                        <p>{{ ticket.all_access }}</p>
-                    </div>
-                </div>
-                {% if forloop.first == false %}
-                <div class="conference table">
-                {% else %}
-                <div class="conference table titlerow">
+                    <div class="conference table titlerow">
                 {% endif %}            
                     <div class="centered-cell small">
                         <p>{{ ticket.conference }}</p>
                     </div>
                 </div>
+
+                {% if forloop.first == false %}
+                    <div class="all-access table">
+                {% else %}
+                    <div class="all-access table titlerow">
+                {% endif %}
+                    <div class="centered-cell small">
+                        <p>{{ ticket.all_access }}</p>
+                    </div>
+                </div>
+
             </item>
         {% endfor %}
             <div class="table-comments">

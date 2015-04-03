@@ -34,18 +34,18 @@ sections.page section.tickets {
             div.all-access {
                 .column(3);
                 text-align: center;
-                color: @ORANGE;
+                color: @LIGHT_BLUE;
                 &.titlerow {
-                    background-color: @DIRTY_ORANGE;
+                    background-color: @MID_BLUE;
                     color: @WHITE;
                 }
             }
             div.conference {
                 .column(3);
                 text-align: center;
-                color: @LIGHT_BLUE;
+                color: @ORANGE;
                 &.titlerow {
-                    background-color: @MID_BLUE;
+                    background-color: @DIRTY_ORANGE;
                     color: @WHITE;
                 }
             }
@@ -96,6 +96,7 @@ sections.page section.tickets {
                 padding: 1em 2em; 
                 background-color: @DIRTY_ORANGE;
                 color: white;
+                &:hover { color: inherit; }
                 text-decoration: none;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {  padding: 0.75em 1.5em; }
             }
@@ -126,7 +127,7 @@ sections.page section.faq {
                         .circular(192px, 100%); 
                         display: table-cell;
                     }
-                    background-color: @MID_BLUE;
+                    background-color: @DIRTY_ORANGE;
                     vertical-align: middle;
                     h3 {
                         padding: 0;
@@ -139,7 +140,7 @@ sections.page section.faq {
                     }
                     float: left;
                     .title {
-                        background-color: @DIRTY_ORANGE;
+                        background-color: @MID_BLUE;
                     }
                 }
             }
