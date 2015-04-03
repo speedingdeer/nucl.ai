@@ -1,17 +1,17 @@
 - title: "Day #1: Monday, July 20th"
   tracks:
     - alternate
-    - procedural
+    - ambient
     - decisions
 
 - title: "Day #2: Tuesday, July 21st"
   tracks:
     - analytics
-    - ambient
+    - procedural
     - behavior
 
 - title: "Day #3: Wednesday, July 22nd"
   tracks:
-    - systems
     - simulations
+    - systems
     - animation
