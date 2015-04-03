@@ -15,5 +15,8 @@ $ ->
     },
     ).promise().done ->
         if history.replaceState
-            history.replaceState null, null, "#" + id
+          history.replaceState null, null, "#" + id
+          setTimeout ->
+            root.scrollLocked = false
+          , 300
     return false

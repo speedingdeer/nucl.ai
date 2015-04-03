@@ -1,6 +1,9 @@
+root = exports ? this # global
+root.scrollLocked = false;
+
 # detect ios (ios struggles with our font if used both bold and box-shadow)
 enableSections = () ->
-  if $("grid").length == $("grid.visited").length then return # don't check anything if all sections are enabled 
+  if $("content").length == $("content.visited").length then return # don't check anything if all sections are enabled 
   bottomEdge = $(window).scrollTop() + $(window).height()
   $("section").each ->
     if $(@).offset().top < bottomEdge
@@ -11,7 +14,7 @@ $(window).load ->
     $("html").addClass("ios")
   $(window).scroll ->
     enableSections()
-    if window.location.hash != ""
+    if !root.scrollLocked && window.location.hash != ""
       if history.replaceState
         history.replaceState null, null, ' '
 

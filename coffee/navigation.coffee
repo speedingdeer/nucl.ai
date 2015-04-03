@@ -1,3 +1,5 @@
+root = exports ? this # global
+
 $ ->
 
   navigation = $(".navigation")
@@ -14,11 +16,16 @@ $ ->
       @.jQsection = $("section." + hash)
 
   scroll = (link) ->
+    root.scrollLocked = true
     $('html, body').animate({
         scrollTop: link.jQscrollTo.offset().top
-    }, config.header.scrollSpeed).promise().done ->
+    }, config.header.scrollSpeed, ->
+      ).promise().done ->
       if history.replaceState
         history.replaceState null, null, "#" + link.jQscrollTo.attr("id")
+        setTimeout ->
+          root.scrollLocked = false
+        , 300
 
   expanded = $(".navigation a.expanded")
 
