@@ -113,7 +113,7 @@ section.splash-screen {
                             color: white;
                         }
                         font-size: 6.5em;
-                        opacity: 0.75;
+                        opacity: 0.85;
                         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                             font-size: 5.8em;
                         }
@@ -135,7 +135,12 @@ section.splash-screen {
                         }
                         &.note { 
                             opacity: 1; 
-                            a { color: @ORANGE; text-decoration: none; }
+                            a {
+                                color: @ORANGE;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                font-size: 15pt;
+                            }
                         }
                     }
                 }
