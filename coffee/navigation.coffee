@@ -16,7 +16,9 @@ $ ->
   scroll = (link) ->
     $('html, body').animate({
         scrollTop: link.jQscrollTo.offset().top
-    }, config.header.scrollSpeed);
+    }, config.header.scrollSpeed).promise().done ->
+      if history.replaceState
+        history.replaceState null, null, "#" + link.jQscrollTo.attr("id")
 
   expanded = $(".navigation a.expanded")
 

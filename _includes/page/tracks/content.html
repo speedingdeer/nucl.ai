@@ -55,7 +55,7 @@
                 {% for item in items %}
                 <item class="talk">
                     <a class="anchor" id="{{item.title | escape | replace:' ','-' | downcase}}"></a>
-                    <h3>{{item.title}}</h3>
+                    <h3><a href="/track/{{track.id}}#{{item.title | escape | replace:' ','-' | downcase}}">{{item.title}}</a></h3>
                     {% assign items = item.speakers %}
                     {% assign dataType = "people" %}
                     <div class="description">
