@@ -1,3 +1,5 @@
+root = exports ? this # global
+
 $ ->
   if $("#section-tracks-menu").length > 0
     thumbnails = new Thumbnails "section-tracks-menu", true, true
@@ -9,6 +11,7 @@ $ ->
     thumbnails = new Thumbnails "section-tracks-people", true, false
 
   $("h3 a, .scrollable").click ->
+    root.scrollLocked = true
     id = $(@).attr("href").split("#")[1]
     $('html, body').animate({
         scrollTop: $("#" + id).offset().top,
