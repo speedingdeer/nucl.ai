@@ -8,7 +8,7 @@ $ ->
   if $("#section-tracks-people").length > 0
     thumbnails = new Thumbnails "section-tracks-people", true, false
 
-  $("h3 a").click ->
+  $("h3 a, .scrollable").click ->
     id = $(@).attr("href").split("#")[1]
     $('html, body').animate({
         scrollTop: $("#" + id).offset().top,
