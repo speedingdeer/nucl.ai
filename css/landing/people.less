@@ -29,13 +29,10 @@ section.people {
     }
     content {
         .subsection {
-            &:first-of-type {
-                h3 { margin-top: 0; }
-            }
             h3 { 
                 text-align: center;
             }
-            padding: 2em 0;
+             @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) { padding: 2em 0; } // can be bigger
         }
     }
 }
