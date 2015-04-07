@@ -187,7 +187,12 @@
   affiliation: 
     name: Ubisoft
     url: http://www.ubisoft.com/
-  bio: ""
+  bio: >
+    Michael has been programming games for nearly 30 years, including lead and senior roles at Ocean Software, Infogrames 
+    Entertainment, IO Interactive, Square Enix Montreal and Ubisoft.
+    Michael joined the Ubisoft Toronto studio in 2013 as the Tech Lead for Animation & Physics.  He brought with him his 
+    passion for animation and physics programming, R&D, an innovative approach to character creation and extensive experience 
+    working with animators, laying the ground work for pushing the animation tech of Ubisoft Toronto in the future.
 
 - name: Antonios Liapis
   role: speaker
@@ -222,3 +227,32 @@
     name: "CNRS, Heudiasyc Lab"
     url: https://www.hds.utc.fr
   bio: ""
+
+- name: François Cournoyer
+  role: speaker
+  title: Speaker
+  affiliation:
+    name: Ubisoft
+    url: http://www.ubisoft.com/
+  bio: >
+    Francois has been working for 5 years as a programmer at Ubisoft Montreal. His background was originally in physics but 
+    he moved to game development and has worked in multiple fields including tools, networking, online, game play and AI. 
+    Recently, he has been focusing on designing new AI system that pushes the limit of the next generation of consoles on 
+    Assassin's Creed Unity. He has worked on the Assassin’s Creed brand since Assassin’s Creed Revelations.
+  twitter: FCournoy
+    
+- name: Antoine Fortier
+  role: speaker
+  title: Speaker
+  affiliation:
+    name: Ubisoft
+    url: http://www.ubisoft.com/
+  bio: >
+    Antoine graduated BSc from Electrical Engineering with a specialty in Computer Vision and worked as a Software Developer 
+    for 7 years in the field. He then made the move to gaming and has been working at Ubisoft Montreal for 8 years as an 
+    Engine Programmer with a specialty in AI Programming. 
+    His credited games include working on the Assassin`s Creed franchise as well as Shaun White Snowboarding and Surf`s Up. 
+    On Assassin`s Creed Brotherhood, Antoine developed the Camera Systems and on Assassin`s Creed 3 he developed the first 
+    iteration of the Massive Crowd technology which has thus progressed to become one of the largest AI systems for the NPCs 
+    on Assassin's Creed Unity.
+  twitter: mafzzz
