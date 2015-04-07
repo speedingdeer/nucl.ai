@@ -15,18 +15,6 @@ $ ->
     else 
       @.jQsection = $("section." + hash)
 
-  scroll = (link) ->
-    root.scrollLocked = true
-    $('html, body').animate({
-        scrollTop: link.jQscrollTo.offset().top
-    }, config.header.scrollSpeed, ->
-      ).promise().done ->
-      if history.replaceState
-        history.replaceState null, null, "#" + link.jQscrollTo.attr("id")
-        setTimeout ->
-          root.scrollLocked = false
-        , 300
-
   expanded = $(".navigation a.expanded")
 
   $('html').click ->
@@ -56,7 +44,7 @@ $ ->
       linkHref = @.jQlink.attr("href")
       if linkHref.substring(0,1) == "/" # absolute
         return true;
-      scroll(@)
+      root.scroll @.jQscrollTo.attr("id"), @.jQscrollTo.offset().top
       return false;
 
   selectNavPosition = () ->

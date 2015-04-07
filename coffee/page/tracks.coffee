@@ -11,15 +11,6 @@ $ ->
     thumbnails = new Thumbnails "section-tracks-people", true, false
 
   $("h3 a, .scrollable").click ->
-    root.scrollLocked = true
     id = $(@).attr("href").split("#")[1]
-    $('html, body').animate({
-        scrollTop: $("#" + id).offset().top,
-    },
-    ).promise().done ->
-        if history.replaceState
-          history.replaceState null, null, "#" + id
-          setTimeout ->
-            root.scrollLocked = false
-          , 300
+    root.scroll id, $("#" + id).offset().top
     return false
