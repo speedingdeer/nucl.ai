@@ -256,3 +256,37 @@
     iteration of the Massive Crowd technology which has thus progressed to become one of the largest AI systems for the NPCs 
     on Assassin's Creed Unity.
   twitter: mafzzz
+
+- name: Julien Pettré
+  role: speaker
+  title: Speaker
+  affiliation:
+    name: INRIA
+    url: http://www.inria.fr/
+    
+- name: Mikko Mononen
+  role: speaker
+  title: Speaker
+  affiliation: 
+    name: Unity Technologies
+    url: http://unity3d.com/company
+    
+- name: Simon Worgan
+  role: speaker
+  title: Speaker
+  affiliation:
+    name: Jagex
+    url: http://www.jagex.com/
+  bio: >
+    Simon Worgan is the Lead Data Scientist at Jagex Games Studio. In this role he has applied his machine learning expertise 
+    to a variety of challenges within the games industry, these include in-game recommendation systems, sentiment analysis, 
+    behavioural player clustering and predictive modelling. With a Computer Science Ph.D. from the University of Southampton 
+    he has over 7 years’ experience in the real world application of Data Science.
+    
+- name: Milos Milosovec
+  role: speaker
+  title: Speaker
+  affiliation:
+    name: Nordeus
+    url: http://www.nordeus.com/
+    
