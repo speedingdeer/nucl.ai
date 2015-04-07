@@ -187,7 +187,12 @@
   affiliation: 
     name: Ubisoft
     url: http://www.ubisoft.com/
-  bio: ""
+  bio: >
+    Michael has been programming games for nearly 30 years, including lead and senior roles at Ocean Software, Infogrames 
+    Entertainment, IO Interactive, Square Enix Montreal and Ubisoft.
+    Michael joined the Ubisoft Toronto studio in 2013 as the Tech Lead for Animation & Physics.  He brought with him his 
+    passion for animation and physics programming, R&D, an innovative approach to character creation and extensive experience 
+    working with animators, laying the ground work for pushing the animation tech of Ubisoft Toronto in the future.
 
 - name: Antonios Liapis
   role: speaker
