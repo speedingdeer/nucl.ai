@@ -8,6 +8,11 @@ defaultOptions = {
   animate: { duration: 1000, enabled: true }
 }
 
+mobileOptions = {
+  lineWidth: 4,
+  size: 50,
+}
+
 $ ->
 
   getScale = (clock) ->
@@ -25,8 +30,11 @@ $ ->
   $("timer-dashboard").each ->
     timer = $(@)
     clocks = []
+
+    options = if timer.parent().hasClass("mobile") then $.extend({}, defaultOptions, mobileOptions) else defaultOptions
+
     timer.find("clock").each ->
-      clocks.push $(@).easyPieChart defaultOptions
+      clocks.push $(@).easyPieChart options
 
     timer.countdown timer.attr("count-to"), (event) ->
       if event.strftime('%S') != timer.find(".seconds").find(".value").html()
