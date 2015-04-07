@@ -2,9 +2,10 @@ defaultOptions = {
   scaleColor: false,
   trackColor: 'rgba(255,255,255,0.3)',
   barColor: '#E7F7F5',
-  lineWidth: 6,
+  lineWidth: 8,
   lineCap: 'butt',
-  size: 95
+  size: 105,
+  animate: { duration: 1000, enabled: true }
 }
 
 $ ->
@@ -28,8 +29,9 @@ $ ->
       clocks.push $(@).easyPieChart defaultOptions
 
     timer.countdown timer.attr("count-to"), (event) ->
-      timer.find(".days").find(".value").html event.strftime('%D')
-      timer.find(".hours").find(".value").html event.strftime('%H')
-      timer.find(".minutes").find(".value").html event.strftime('%M')
-      timer.find(".seconds").find(".value").html event.strftime('%S')
-      update(clocks)
+      if event.strftime('%S') != timer.find(".seconds").find(".value").html()
+        timer.find(".days").find(".value").html event.strftime('%D')
+        timer.find(".hours").find(".value").html event.strftime('%H')
+        timer.find(".minutes").find(".value").html event.strftime('%M')
+        timer.find(".seconds").find(".value").html event.strftime('%S')
+        update(clocks)

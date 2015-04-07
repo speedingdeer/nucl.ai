@@ -1,3 +1,37 @@
+@clock_size: 105px; //this same vlaue duplicatd in javascript
+@unit_size: 50px;
+
 timer-dashboard {
-    
+    display: block;
+    margin-bottom: @unit_size;
+    width: 100%;
+    text-align: center;
+    h3 {
+        text-align: center;
+        color: @ORANGE;
+        font-size: 2em;
+    }
+    clock {
+        padding-left: 20px;
+        &:first-child { padding-left: 0px; }
+        display: inline-block;
+        .value-wrap-table, .unit {
+            position: absolute;
+            width: @clock_size;
+            text-align: center;
+        }
+        .value-wrap-table {
+            height: @clock_size;
+            .value {
+                margin: 0;
+                font-size: 2.5em;
+                font-weight: bold;
+            }
+        }
+
+        .unit {
+            margin-top: @clock_size;
+            line-height: @unit_size;
+        }
+    }
 }
