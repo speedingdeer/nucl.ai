@@ -4,8 +4,6 @@ gallery {
     item {
         .transition(border @gallery_transition ease-in-out);
         &.animated { .animation-duration(0.5s); }
-        &.animated { .animation-delay(0s); }
-        &.animated.animated.fadeOutRightBig, &.animated.animated.fadeOutLeftBig { .animation-delay(0.5s); } // delay only on out
         box-sizing: border-box;
         div { 
             height: 100%;
@@ -34,6 +32,7 @@ gallery {
             }
             &.selected {
                 border-color: @ORANGE !important;
+                div.cover { opacity: 0; }
             }
             .cover {
                 .filter(grayscale(100%));

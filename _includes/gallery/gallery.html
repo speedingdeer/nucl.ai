@@ -2,12 +2,13 @@
     <menu>
         {% assign firstItemClass = "selected" %}
         {% assign itemClass = "" %}
-        {% assign layout = "slides" %}
+        {% assign layout = "menu" %}
         {% include gallery/loop.html %}
     </menu>
     <slides>
         {% assign firstItemClass = "selected animated fadeInLeftBig" %}
         {% assign itemClass = "animated fadeOutRightBig" %}
+        {% assign layout = "slides" %}
         {% include gallery/loop.html %}
     </slides>
     <descriptions>

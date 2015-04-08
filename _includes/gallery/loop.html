@@ -1,16 +1,19 @@
 {% for item in items %}
     {% if forloop.first %}
         <item class="{{firstItemClass}}" name="{{item.name}}">
+        {% capture coverClass %}animated fadeOut{% endcapture %}
     {% else %}
         <item class="{{itemClass}}" name="{{item.name}}">
+        {% capture coverClass %}animated fadeIn{% endcapture %}
     {% endif %}
-        {% if layout == "slides" %}
+        {% if layout == "slides" or layout == "menu" %}
+        {% if layout == "menu" %} {% capture coverClass %}{% endcapture %} {% endif %}
         {% if slide.cover %}
             {% capture cover %}{{ item.cover }}{% endcapture %} 
         {% else %}
             {% capture cover %}{{ item.picture | replace:'.png','_q.png' | replace:'.jpg','_q.jpg' }}{% endcapture %} 
         {% endif %}
-        <div class="cover" style="background-image: url('{{ cover | prepend: site.baseurl }}')"></div>
+        <div class="cover {{coverClass}}" style="background-image: url('{{ cover | prepend: site.baseurl }}')"></div>
         <div class="picture" style="background-image: url('{{ item.picture | prepend: site.baseurl }}')"></div>
         {% else %}
             <h3> {{item.name}} </h3>

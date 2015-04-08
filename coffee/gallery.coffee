@@ -9,23 +9,37 @@ descriptionOutClass = "fadeOutLeftBig"
 
 $ ->
 
+  
+
   select = (collection, menu, clicked, inClass, outClass) ->
+
     selected = collection.find("item.selected")
-    selected.find("div.cover").css {"opacity": "1"}
-    selected.removeClass(inClass)
-    selected.addClass(outClass)
-    selected.one animate.onAnimatedEnd, ->
-      if ! menu.find("item[name='" + selected.attr('name') + "']" ).hasClass("selected")
-        # it wasn't reselected meantime
-        selected.removeClass("selected")
-      if clicked.hasClass("selected")
-        # if it's still selected
-        selected = collection.find("item[name='" + clicked.attr('name') + "']" )
-        selected.removeClass(outClass)
-        selected.addClass("selected " + inClass)
+
+    slideIn = () ->
+      if selected.hasClass("selected")  
+        selected.removeClass(inClass) 
+        selected.addClass(outClass)
         selected.one animate.onAnimatedEnd, ->
-          if clicked.hasClass("selected") # if it's still selected
-            selected.find("div.cover").css {"opacity": "0"}
+          if ! menu.find("item[name='" + selected.attr('name') + "']" ).hasClass("selected")
+            # it wasn't reselected meantime
+            selected.removeClass("selected")
+          if clicked.hasClass("selected")
+            # if it's still selected
+            selected = collection.find("item[name='" + clicked.attr('name') + "']" )
+            selected.removeClass(outClass)
+            selected.addClass("selected " + inClass)
+            selected.one animate.onAnimatedEnd, ->
+              if clicked.hasClass("selected") # if it's still selected
+                selected.find("div.cover").removeClass("fadeIn")
+                selected.find("div.cover").addClass("fadeOut")
+
+    if selected.find("div.cover").hasClass("fadeOut")
+      selected.find("div.cover").removeClass("fadeOut")
+      selected.find("div.cover").addClass("fadeIn")
+      selected.find("div.cover").one animate.onAnimatedEnd, slideIn
+    else 
+      slideIn()
+
 
   $("gallery").each ->
     galery = $(@)
