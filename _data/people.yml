@@ -71,6 +71,15 @@
     Petra has a background in business management, and worked as an International Area Manager for a large multi-million dollar corporation.
     She eventually moved on and joined Alex as the co-founder of AiGameDev.com. Petra is the creative force in the team, and takes care of business!
 
+- name: Prof. Helmut Hlavac
+  role: advisory
+  title: "University of Vienna liaison"
+  affiliation:
+    name: University of Vienna
+    url: http://entertain.univie.ac.at/~hlavacs/
+  bio: >
+    Prof. Helmut Hlavacs studied Technical Mathematics at the Technical University of Vienna, and received a PhD in 2001. He joined the University of Vienna as researcher for the EU projects BISANTE and later CODIS, and received habilitation in 2004, also being promoted to Associated Professor. He was guest professor in Spain and France, and initiated numerous projects on national and international level. He was vice chair and grant holder of the COST action IC0804, leader of industry projects with Rohde&Schwarz, Kapsch Carrier Com, T-Systems, Telekom Austria/A1, ASFINAG, member of the Research Center Telecommunications Vienna, etc., and successfully closed several basic research projects in the area of mobile video, task virtualization, energy efficiency, and traffic status measurement. Prof. Hlavacs co-authored over 150 peer-reviewed publications, published at international conferences or journals, resulting in an Erdös-Number of 4. He is author of one book, and guest editor of numerous special journal issues, one being currently reviewed. Furthermore, he has received eight best paper and distinguished paper awards at international conferences so far. He was also advisor of eight finished PhD students so far, two of whom have been awarded with prestigious PhD awards.
+
 - name: Emil "AngryAnt" Johansen
   role: advisory
   title: "Advisory Board Member"
