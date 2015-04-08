@@ -15,7 +15,8 @@ $ ->
 
     slideIn = (selected, collection, inClass, outClass) ->
       if selected.hasClass("selected")  
-        selected.removeClass(inClass) 
+        selected.addClass(outClass)
+        selected.removeClass(inClass)
         selected.addClass(outClass)
         selected.one animate.onAnimatedEnd, ->
           if ! menu.find("item[name='" + selected.attr('name') + "']" ).hasClass("selected")
@@ -32,17 +33,20 @@ $ ->
                 selected.find("div.cover").addClass("fadeOut")
 
     selected = collection.find("item.selected")
+    for extra in extras
+      extra.selected = extra.find("item.selected")
+
     if selected.find("div.cover").hasClass("fadeOut")
       selected.find("div.cover").removeClass("fadeOut")
       selected.find("div.cover").addClass("fadeIn")
       selected.one animate.onAnimatedEnd, ->
         slideIn(selected, collection, slideInClass, slideOutClass)
         for extra in extras
-          slideIn(extra.find("item.selected"), extra, descriptionInClass, descriptionOutClass)
+          slideIn(extra.selected, extra, descriptionInClass, descriptionOutClass)
     else 
       slideIn(selected, collection, slideInClass, slideOutClass)
       for extra in extras
-          slideIn(extra.find("item.selected"), extra, descriptionInClass, descriptionOutClass)
+          slideIn(extra.selected, extra, descriptionInClass, descriptionOutClass)
 
 
   $("gallery").each ->
