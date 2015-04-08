@@ -1,0 +1,24 @@
+- name: Rathaus
+  picture: /img/venue/vienna/rathaus.png
+  text: >
+    Bla bla bla lorem lorem totem bla bla bla
+
+- name: Donnerbrunnen
+  picture: /img/venue/vienna/donnerbrunnen.png
+  text: >
+    Bla bla bla lorem lorem totem bla bla bla
+
+- name: Rathaus 2
+  picture: /img/venue/vienna/rathaus.png
+  text: >
+    Bla bla bla lorem lorem totem bla bla bla
+
+- name: Donnerbrunnen 2
+  picture: /img/venue/vienna/donnerbrunnen.png
+  text: >
+    Bla bla bla lorem lorem totem bla bla bla
+
+- name: Rathaus 3
+  picture: /img/venue/vienna/rathaus.png
+  text: >
+    Bla bla bla lorem lorem totem bla bla bla

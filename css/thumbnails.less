@@ -113,7 +113,7 @@
         item.description {
             .column(8);
             .push(2);
-            .animation-duration(0.5s);
+            &.animated { .animation-duration(0.5s); }
             display: none;
             text-align: justify;
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {  font-size: 0.8em; }
