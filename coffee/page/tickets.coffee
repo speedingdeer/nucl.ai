@@ -34,4 +34,4 @@ $ ->
     return false
 
   if $(".tickets.prices").length == 0 then return
-  $(".tickets.prices .centered-cell").click scrollToEventbriteTickets
+  $(".tickets.prices .centered-cell, .conference-good .centered-cell").click scrollToEventbriteTickets
