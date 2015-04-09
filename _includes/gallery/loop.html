@@ -1,9 +1,20 @@
 {% for item in items %}
+
+    
+        {% capture modulo %}{{ forloop.index | modulo:5 }}{% endcapture %}
+        {% if modulo == "0" %}
+            {% capture iter %}fifth{% endcapture %}
+        {% elsif modulo == "1" %}
+                {% capture iter %}first{% endcapture %}
+        {% else %}
+            {% capture iter %}{% endcapture %}
+        {% endif %}
+
     {% if forloop.first %}
-        <item class="{{firstItemClass}}" name="{{item.name}}">
+        <item class="{{firstItemClass}} {{iter}}" name="{{itme.picture}}">
         {% capture coverClass %}animated fadeOut{% endcapture %}
     {% else %}
-        <item class="{{itemClass}}" name="{{item.name}}">
+        <item class="{{itemClass}} {{iter}}" name="{{item.picture}}">
         {% capture coverClass %}animated fadeIn{% endcapture %}
     {% endif %}
         {% if layout == "slides" or layout == "menu" %}
