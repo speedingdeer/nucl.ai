@@ -75,7 +75,13 @@ sections.page section.tickets {
                         padding: 0 15px; 
                     }
                 }
-                p.date { color: @GREY;}
+                p.date { 
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        margin: 0;
+                        margin-bottom: 0.2em;
+                    }
+                    color: @GREY;
+                }
             }
             &.extras { div.table { background-color: fade(@DARK_GREY, 60%); } }
         }
