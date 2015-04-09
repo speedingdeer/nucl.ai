@@ -5,18 +5,19 @@
             <div class="program thumbnails thumbnails-5-in-row">
                 {% assign names = "" %}
 
-                {% assign talks = site.data.tracks[item.id] %}
-                {% for talk in talks %}
-                    {% for speaker in talk.speakers %}
-                        {% capture names %}{% if names != "" %}{{names}},{% endif %}{{speaker}}{% endcapture %}
-                    {% endfor %}
-                {% endfor %}
 
                 {% for person in site.data.people %}
                     {% for track in person.tracks %}
                         {% if track == item.id %}
                             {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
                         {% endif %}
+                    {% endfor %}
+                {% endfor %}
+
+                {% assign talks = site.data.tracks[item.id] %}
+                {% for talk in talks %}
+                    {% for speaker in talk.speakers %}
+                        {% capture names %}{% if names != "" %}{{names}},{% endif %}{{speaker}}{% endcapture %}
                     {% endfor %}
                 {% endfor %}
 
