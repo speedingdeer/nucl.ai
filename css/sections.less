@@ -13,6 +13,10 @@
 section {
     min-height: calc(~"85vh");
     overflow: hidden;
+    h2 { 
+        padding-left: 1em;
+        padding-right: 1em;
+    }
     &:nth-child(even) {
         .theme_blue();
     }
@@ -22,13 +26,6 @@ section {
     &:last-child {
         grid {
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-bottom: 2em; }
-        }
-    }
-
-    .titlebar {
-        //small used in single page about (I don't know if it will be published)
-        &.small {
-            padding: 0.4em 0;
         }
     }
 
@@ -97,13 +94,13 @@ section.none { display: none }
 
 /** for nice section enter effect */
 section {
-    content, h2.titlebar { 
+    content, h2 { 
         opacity: 0;
         .transition(opacity .5s ease-in-out);
         &.visited { opacity: 1; }
     }
     &:first-child {
-        content, h2.titlebar { 
+        content, h2 { 
             opacity: 1;
         }
     }
