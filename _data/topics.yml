@@ -16,7 +16,6 @@
   credit:
     title: Marvin Rig
     url: http://aigamedev.com/
-  disabled: true
 
 - id: decisions
   title: "Real-time Decision Systems"

@@ -50,7 +50,11 @@
         <h3 class="thumbnail-title {{selected}} {{status}}" name="{{name | escape}}">{{ name }}
         {% if thumbnail.disabled or disableAll %}
             {% if thumbnail.affiliation %}
-            , {{thumbnail.affiliation.position}} at {{thumbnail.affiliation.name}} 
+            ,
+                {% if thumbnail.affiliation.position %}
+                    {{thumbnail.affiliation.position}} at 
+                {% endif %}
+                {{thumbnail.affiliation.name}} 
             {% endif %}
         {% endif %}
         </h3>
