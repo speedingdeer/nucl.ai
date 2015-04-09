@@ -108,6 +108,7 @@
 
 - name: Paul Kanyuk
   role: speaker
+  confirmed: true
   title: Speaker
   affiliation:
     name: Pixar Animation Studios
@@ -192,6 +193,7 @@
 
 - name: Michael Büttner
   role: speaker
+  confirmed: true
   title: Speaker
   affiliation: 
     name: Ubisoft

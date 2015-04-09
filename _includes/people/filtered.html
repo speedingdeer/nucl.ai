@@ -4,7 +4,13 @@
 {% for person in site.data.people %}
     {% for filter in filters%}
         {% if person.role == filter %}
-            {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+            {% if filter == "speaker" %}
+                {% if person.confirmed %}
+                    {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+                {% endif %}
+            {% else %}
+                {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+            {% endif %}
         {% endif %}
     {% endfor %}
 {% endfor %}
