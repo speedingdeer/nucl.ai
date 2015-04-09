@@ -133,6 +133,7 @@
 
 - name: Piotr Andruszkiewicz
   role: speaker
+  confirmed: true
   title: Speaker
   affiliation: 
     name: The Creative Assembly
@@ -143,6 +144,7 @@
 
 - name: Csaba Toth
   role: speaker
+  confirmed: true
   title: Speaker
   affiliation: 
     name: The Creative Assembly
