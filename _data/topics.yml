@@ -1,6 +1,15 @@
 - id: animation
   title: "Character Animation Technology"
   description: >
+    Portraying characters is one of the most challenging aspects of building an
+    engaging 3D world.  While many low-level aspects of character animation technology
+    have been resolved, there are many questions that remain open as the industry
+    pushes towards more procedural blend trees.  How should gestures be controlled by
+    AI?  What's a way to maintain believable yet flexible locomotion?  For developers
+    building simulations or games that rely heavily on characters, this track is 
+    intended for you!
+  content: >
+    <img src="/img/tracks/animation.jpg"/>
     <p>Portraying characters is one of the most challenging aspects of building an
     engaging 3D world.  While many low-level aspects of character animation technology
     have been resolved, there are many questions that remain open as the industry
