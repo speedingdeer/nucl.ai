@@ -11,7 +11,7 @@
         {% if slide.cover %}
             {% capture cover %}{{ item.cover }}{% endcapture %} 
         {% else %}
-            {% capture cover %}{{ item.picture | replace:'.png','_q.png' | replace:'.jpg','_q.jpg' }}{% endcapture %} 
+            {% capture cover %}{{ item.picture | replace:'.jpg','.png' }}{% endcapture %} 
         {% endif %}
         <div class="cover {{coverClass}}" style="background-image: url('{{ cover | prepend: site.baseurl }}')"></div>
         <div class="picture" style="background-image: url('{{ item.picture | prepend: site.baseurl }}')"></div>
