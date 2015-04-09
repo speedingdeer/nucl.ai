@@ -272,7 +272,14 @@
   affiliation:
     name: INRIA
     url: http://www.inria.fr/
-    
+  bio: >
+    Julien Pettré is research scientist at INRIA, the French National Institute for Research in Computer Science and Control 
+    (www.inria.fr) since 2006. He received M.S. degree in 2000. He prepared his thesis under the supervision of Jean-Paul 
+    Laumond and obtained his Ph.D. in 2003 from the University of Toulouse III in France. He then spent one 18 months post doc 
+    at VRlab, EPFL, Switzerland, headed by Daniel Thalmann. At INRIA in Rennes, he joined the Bunraku team headed by G. Dumont. 
+    His research interests are : crowd simulation, motion planning, autonomous virtual humans, computer animation and virtual 
+    reality.
+  
 - name: Mikko Mononen
   role: speaker
   title: Speaker
