@@ -8,7 +8,7 @@
 #      creation of game levels and scripts via game editors which automate mundane tasks such as pathfinding. Computer-aided design tools 
 #      are used in almost all creative tasks in order to minimize development time and cost, reduce human effort, support collaboration among 
 #      members of a design team or elicit a user's creativity.
-      
+
 #      While computer-aided design tools are extending their functionalities to allow for the creation of more and more elaborate and complete games, 
 #      the learning curve for a novice user becomes steeper. This talk will present methods for using Artificial Intelligence to assist a novice user 
 #      in getting acquainted with the interface and the task of designing, as well as automate the more tedious or challenging development tasks. 
