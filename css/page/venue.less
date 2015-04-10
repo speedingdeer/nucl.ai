@@ -1,38 +1,12 @@
 sections.page section.venue, sections.page section.getting-to-campus {
     content {
-        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-            .column(12);
-        }
-        item.text {
-            @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1)) { 
-                .column(8);
-            }
-            line-height: 1.34;
-            font-size: 1.2em;
-            p.message { 
-                color: @LIGHT_BLUE;
-            }
-        }
-        item.picture { 
-            display: none;
-            margin-top: 1em;
-            @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1)) { 
-                &.outer {
-                    min-height: 13em;
-                    .column(4);
-                }
-            }
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                &.inner {
-                    display: block;
-                    width: 9em;
-                    height: 9em;
-                    float: right;
-                    margin-top: 0.7em;
-                }
-            }
-            background-size: cover;
-            background-position: center;
+        .column(12);
+        //@TODO is copied from stye for tracks page
+        //unify maybe?
+        p { margin: 0 4em 1em 4em; }
+        img {
+            width: 100%;
+            margin: 2em 0;
         }
     }
 }
