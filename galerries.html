@@ -1,0 +1,24 @@
+---
+layout: page
+title: nucl.ai Conference
+permalink: /galleries/
+---
+{% include landing/passed-events.html %}
+<section class="venue-gallery">
+    <h2>Vienna <3</h2>
+    <grid>
+        <content>
+            {% assign items = site.data.galleries.vienna_guide %}
+            {% include gallery/gallery.html %}
+        </content>
+    </grid>
+</section>
+<section class="venue-gallery">
+    <h2>The Fancy Venue bla bla bla</h2>
+    <grid>
+        <content>
+            {% assign items = site.data.galleries.venue %}
+            {% include gallery/gallery.html %}
+        </content>
+    </grid>
+</section>
