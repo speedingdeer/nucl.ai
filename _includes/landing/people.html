@@ -4,16 +4,6 @@
         <content>
             {% assign itemsInRow = 5 %}
             <div class="subsection">
-                <h2> Co-Organizers &amp; Track Chairs </h2>
-                {% assign filterPeopleType = "track" %}
-                {% include people/filtered.html %}
-                {% assign dataType = "people" %}
-                <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
-                    {% include thumbnails.html %}
-                </div>
-            </div>
-            
-            <div class="subsection">
                 <h2> Speakers </h2>
                 {% assign filterPeopleType = "speaker" %}
                 {% include people/filtered.html %}
@@ -22,7 +12,15 @@
                     {% include thumbnails.html %}
                 </div>
             </div>
-            
+            <div class="subsection">
+                <h2> Co-Organizers &amp; Track Chairs </h2>
+                {% assign filterPeopleType = "track" %}
+                {% include people/filtered.html %}
+                {% assign dataType = "people" %}
+                <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
+                    {% include thumbnails.html %}
+                </div>
+            </div>
             <div class="subsection">
                 <h2> The Team &amp; Advisors</h2>
                 {% assign filterPeopleType = "org,advisory" %}
