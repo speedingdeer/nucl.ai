@@ -21,6 +21,17 @@
   tracks: [ambient]
   title: "Co-Organizer & Track Chair"
   twitter: michaelrouille
+  bio: >
+    Michaël Rouillé is the CTO of Golaem, a company he co-founded in 2009. Golaem develop Golaem Crowd, a character animation 
+    software for artists of vfx, animation & game studios who need to populate backgrounds & midgrounds of films, tv series, 
+    commercials and video games. Michaël defines himself as a programmer, an art he has been trying to master for the last 25 
+    years. First as a hobby making Z80 assembly demos in mid-schools, C games in high-school and C++ 3D game engines in 
+    university. Then as a profession, developing the kernel and the 3D visualization of a distributed simulation platform at 
+    Inria; designing and developing a real-time 3D visualization engine for civil and military simulators at Thales Training 
+    and Simulation; designing and developing a human behaviors modeling language, authoring tool and execution engine for 
+    virtual humans at Inria; founding Golaem and developing artist-friendly tools to animate digital characters. Apart from 3D, 
+    Michaël's professional interests include AI, animation and game engines. Michaël's personal interests lie in visual arts, 
+    he has been to art school, and love to torture himself with how to bridge between the programming & art worlds.
 
 - name: Heather Stark
   role: track
