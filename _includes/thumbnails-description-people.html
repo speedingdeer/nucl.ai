@@ -48,7 +48,7 @@
                     {% else %}
                         <a href="/track/{{topic.id}}">{{topic.title}}</a> -
                     {% endif %}
-                    <a href="/track/{{topic.id}}#{{talk.title | escape | replace:' ','-' | downcase}}">{{talk.title}}</a>
+                    <a href="/track/{{topic.id}}#{{talk.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">{{talk.title}}</a>
                     </p>
                 {% endif %}
             {% endfor %}
