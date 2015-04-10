@@ -16,7 +16,7 @@
             {% capture thumbnailId %}{{thumbnail.name | escape | replace:' ','-' | downcase}}{% endcapture %}
             {% capture picture %}/img/people/{{ name | escape }}.jpg{% endcapture %}
             {% capture href %}/#{{thumbnailId}}{% endcapture %}
-            {% if page.name == "index.html" %} <a class="anchor" id="{{thumbnail.name | escape | replace:' ','-' | downcase}}"></a> {% endif %}
+            <a class="anchor" id="{{thumbnail.name | escape | replace:' ','-' | downcase}}"></a>
         {% when "topics" %}
             {% assign thumbnail = it %}
             {% assign name = thumbnail.title %}
@@ -40,6 +40,7 @@
             <a id="thumbnail-id-{{thumbnailId}}"href="{{href}}"class="thumbnail 
                 column-{{modulo}}
                 {{itemsInRow}}-in-row
+                {{aClass}}
                 {% if modulo == '1' %} column-first 
                 {% elsif modulo == '0' %} column-last
                 {% elsif itemsInRow == 3 %} column-middle

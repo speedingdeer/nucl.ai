@@ -74,8 +74,8 @@
                     <div class="description">
                     <p >{{item.description}}</p>
                     </div>
-                    {% assign disableAll = true %}
                     {% assign attachDescription = false %}
+                    {% assign aClass = "scrollable" %}
                     {% if item.speakers.first == item.speakers.last %}
                         {% assign itemsInRow = 3 %}
                     {% else %}
@@ -92,4 +92,5 @@
 {% endif %}
 
 {% assign disableAll = false %}
+{% assign aClass = "" %}
 {% assign titlebar = "Browse Conference Tracks" %}

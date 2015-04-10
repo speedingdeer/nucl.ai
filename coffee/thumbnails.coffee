@@ -44,7 +44,14 @@ class Thumbnails
         if @.jQthumbnail.hasClass("disabled")
           @.jQthumbnail.click ->
             return false
-      return;
+        if @.jQthumbnail.hasClass("scrollable")
+          @.jQthumbnail.click ->
+            id = $(@).attr("href").split("#")[1]
+            root.scroll(id, $(".tracks-people #" + id).offset().top).done ->
+              if ! $(".tracks-people #thumbnail-id-" + id).hasClass("selected")
+                $(".tracks-people #thumbnail-id-" + id).click()
+            return false
+      return
 
     @selected = @thumbnails.filter(".selected")
     if @selected.length == 0 then @selected = null
@@ -53,7 +60,7 @@ class Thumbnails
     if @animated then @thumbnailsAnimated()
 
     ## fake click if soemthing selected in url hash
-    if (! @selected || @selected.length == 0) && window.location.hash != ""
+    if window.location.hash != ""
       selectedId = window.location.hash.substring(1)
       @section.find("#thumbnail-id-" + selectedId).click()
 

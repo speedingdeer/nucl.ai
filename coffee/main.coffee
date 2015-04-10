@@ -5,10 +5,11 @@ root.scrollLocked = false;
 
 scroll = (id, scrollTo) ->
   root.scrollLocked = true
-  $('html, body').animate({
+  promise = $('html, body').animate({
       scrollTop: scrollTo
   }, config.header.scrollSpeed, ->
-    ).promise().done ->
+    ).promise()
+  promise.done ->
     if history.replaceState
       history.replaceState null, null, "#" + id
       setTimeout ->
