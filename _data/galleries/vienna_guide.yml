@@ -1,24 +1,19 @@
 - name: Rathaus
   picture: /img/vienna/rathaus.jpg
-  text: >
-    Bla bla bla lorem lorem totem bla bla bla
+  text:
 
 - name: Donnerbrunnen
   picture: /img/vienna/donnerbrunnen.jpg
-  text: >
-    Bla bla bla lorem lorem totem bla bla bla
+  text:
 
 - name: Viennas Amazing Palaces
   picture: /img/vienna/Viennas-amazing-palaces-3.jpg
-  text: >
-    Bla bla bla lorem lorem totem bla bla bla
+  text:
 
 - name: Parliament
   picture: /img/vienna/pallas_athene_fountain_parliament_building_vienna_austria.jpg
-  text: >
-    Bla bla bla lorem lorem totem bla bla bla
+  text:
 
 - name: Art History Museum
   picture: /img/vienna/art-history-museum-vienna.jpg
-  text: >
-    Bla bla bla lorem lorem totem bla bla bla
+  text: 
