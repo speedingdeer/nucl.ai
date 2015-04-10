@@ -111,6 +111,7 @@
 
 - name: Freyr Magnússon
   role: speaker
+  confirmed: true
   tracks: [alternate]
   title: Speaker
   affiliation:
@@ -254,6 +255,7 @@
 
 - name: François Cournoyer
   role: speaker
+  confirmed: true
   title: Speaker
   affiliation:
     name: Ubisoft
@@ -264,10 +266,11 @@
     Recently, he has been focusing on designing new AI system that pushes the limit of the next generation of consoles on 
     Assassin's Creed Unity. He has worked on the Assassin’s Creed brand since Assassin’s Creed Revelations.
   twitter: FCournoy
-    
+
 - name: Antoine Fortier
   role: speaker
   title: Speaker
+  confirmed: true
   affiliation:
     name: Ubisoft
     url: http://www.ubisoft.com/
