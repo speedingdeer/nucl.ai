@@ -1,6 +1,14 @@
 section.passed-events {
-    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { min-height: 0; }
+    min-height: 0;
     grid {
-        padding-bottom: 0.8em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+        descriptions {
+            display: none;
+        }
     }
 }
