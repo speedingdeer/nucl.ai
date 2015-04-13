@@ -16,12 +16,14 @@
                 <item>
                     <a href="{{linkPrefix}}#topics"> Topics </a>
                 </item>
+                <!--
                 <item>
                     <a href="{{linkPrefix}}#call"> 
                     <span class="long-title">Call Open </span>
                     <span class="short-title">Call for Papers </span>
                     </a>
                 </item>
+                -->
                 <item>
                     <a href="{{linkPrefix}}#people"> People </a>
                 </item>
@@ -97,6 +99,14 @@
                     <item>
                 {% endif %}
                     <a href="/tickets/"> Tickets </a>
+                </item>
+
+                {% if page.name == 'venue.html'%}
+                    <item class="selected static">
+                {% else %}
+                    <item>
+                {% endif %}
+                    <a href="/venue/"> Venue </a>
                 </item>
 
 
