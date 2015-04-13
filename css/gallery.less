@@ -23,6 +23,7 @@ gallery {
             float: left;
             width: 19%;
             height: 140px;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 50px; }
             cursor: pointer;
             margin-left: 1%;
             margin-bottom: 1%;
@@ -51,6 +52,7 @@ gallery {
             &.selected { display: block; }
             width: 100%;
             height: 500px;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 200px; }
         }
     }
     descriptions item { height: auto; }
