@@ -112,11 +112,14 @@
 - name: Freyr Magnússon
   role: speaker
   confirmed: true
-  tracks: [alternate]
+  tracks: [behavior]
   title: Speaker
   affiliation:
     name: CCP Games
+    position: Senior Software Engineer
     url: http://www.ccpgames.com/
+  bio: >
+    Freyr has been working for CCP Games as a gameplay programmer on the  EVE Online MMO since 2008.    Lately he has been working unwinding legacy code issues and introducing Behaviors Trees into a 15 year old codebase.
 
 - name: Paul Kanyuk
   role: speaker
