@@ -109,43 +109,6 @@
     Filip worked previously in semantic web research for Animation a couple of years and after a brief start-up interlude he now found his calling in digital entertainment and teaching.
     He helped to organize Game/AI Conference in 2014 and presented a tutorial about Monto-Carlo Tree Search along with the AiGameDev.com team.
 
-- name: Freyr Magnússon
-  role: speaker
-  confirmed: true
-  tracks: [behavior]
-  title: Speaker
-  affiliation:
-    name: CCP Games
-    position: Senior Software Engineer
-    url: http://www.ccpgames.com/
-  bio: >
-    Freyr has been working for CCP Games as a gameplay programmer on the  EVE Online MMO since 2008.    Lately he has been working unwinding legacy code issues and introducing Behaviors Trees into a 15 year old codebase.
-
-- name: Paul Kanyuk
-  role: speaker
-  confirmed: true
-  title: Speaker
-  affiliation:
-    name: Pixar Animation Studios
-    position: Technical Director
-    url: http://www.pixar.com/
-  bio: >
-    Paul Kanyuk is a Lead Technical Director at Pixar Animation Studios with credits on Cars, Ratatouille, Wall-E, Up, Cars 2, 
-    Brave, and Monster’s University. His specialty is crowd simulation, shading, and rendering, and he is responsible for 
-    the procedural animation and rendering of numerous crowd spectacles, including the hordes of rats in Ratatouille, 
-    the deluge of falling passengers in Wall-E, and the vicious pack of talking dogs in Up. Paul earned his BSE in 
-    Digital Media Design at the University of Pennsylvania and teaches courses in RenderMan and Crowd Simulation at 
-    the Academy of Art University in San Francisco.  He is also an avid musician and plays bass guitar in the bay area 
-    rock band, Halcrow.
-
-- name: Richard Kogelnig
-  role: track
-  tracks: [alternate]
-  title: "Game Developer"
-  affiliation:
-    name: Mi'pu'mi
-  bio: ""
-
 - name: Piotr Andruszkiewicz
   role: speaker
   confirmed: true
@@ -156,58 +119,6 @@
   bio: >
     AI programmer, world conquest enthusiast. Worked on AI for the campaign portion of several Total War titles focusing on 
     diplomacy, pathfinding, tactical planning and optimization.
-
-- name: Csaba Toth
-  role: speaker
-  confirmed: true
-  title: Speaker
-  tracks: [decisions]
-  affiliation: 
-    name: The Creative Assembly
-    url: http://www.creative-assembly.com/
-  bio: >
-    Designer with nearly 10 years of experience in the gaming industry and with a background in programming, worked on games 
-    from a wide variety of genres, designed and tweaked AI behaviour for racing games, shooters and most recently the campaign 
-    part of Total War: Rome2 and Total War: Attila. Apart from AI, he specialises in game balancing and systems design.
-
-- name: Bill Grosso
-  role: speaker
-  title: Speaker
-  affiliation: 
-    name: Scientific Revenue
-    url: http://www.scientificrevenue.com/
-  bio: >
-    Bill is the founder and CEO of Scientific Revenue, the leading provider of dynamic pricing for in-app purchases. 
-    Prior to starting Scientific Revenue, Bill ran a consulting company focused on business intelligence and predictive 
-    analytics, and was an entrepreneur in residence at Rustic Canyon Venture Partners. Prior to those positions, he held 
-    senior positions in engineering and product at various companies, where he was well known for building high-performance 
-    organizations which shipped innovative products on time. 
-    He has also written two books on software design, has worked as a research scientist in artificial intelligence, 
-    and is the author or co-author of over 40 academic journal articles.
-    
-- name: Luis Angel Vicente Sanchez
-  role: speaker
-  title: Speaker
-  affiliation: 
-    name: Mind Candy
-    url: http://mindcandy.com/
-  bio: >
-    Luis is Senior Data Engineer at Mind Candy, was the first to introduce Spark Streaming at the company and is responsible 
-    for the real-time mobile analytics platform. He has more than 10 years of experience in software engineering and 
-    architecture, and has made contributions to open source projects like twitter/algebird, datastax/spark-cassandra-connector 
-    and spray/spray.
-
-- name: Kevin Schmidt
-  role: speaker
-  title: Speaker
-  affiliation:
-    name: Mind Candy
-    url: http://mindcandy.com/
-  bio: >
-    Kevin built up the data science and engineering team at Mind Candy and with the team created a scalable architecture 
-    for mobile game analytics based on Apache Spark. Before Mind Candy, Kevin was heading the data and back-end services 
-    team at Last.fm using Hadoop to work with ten years of music listening data from millions of users as well as spending 
-    four years working on private clouds and service architecture at Goldman Sachs.
 
 - name: Michael Büttner
   role: speaker
@@ -223,31 +134,21 @@
     passion for animation and physics programming, R&D, an innovative approach to character creation and extensive experience 
     working with animators, laying the ground work for pushing the animation tech of Ubisoft Toronto in the future.
 
-- name: Antonios Liapis
+- name: Bill Grosso
   role: speaker
   title: Speaker
   affiliation: 
-    name: Institute of Digital Games (University of Malta)
-    url: http://www.game.edu.mt/
+    name: Scientific Revenue
+    url: http://www.scientificrevenue.com/
   bio: >
-    Antonios Liapis is a postdoctoral researcher at the Institute of Digital Games, University of Malta (UoM). 
-    He received his 5-year Diploma (2007) in Electrical and Computer Engineering from the National Technical University 
-    of Athens and the M.Sc. (2011) and Ph.D. (2014) in Information Technology from the IT University of Copenhagen. 
-    He does research on the crossroads of game design, artificial intelligence and computational creativity. 
-    More specifically, he explores the limits of computational input to the human-driven design process in computer-aided 
-    design tools. Beyond AI-assisted game design, his research pursuits revolve around procedural content generation, 
-    digital aesthetics, evolutionary computation, neuroevolution and constrained optimization. He has published 24 
-    international conference and workshop papers and 2 journal papers in the aforementioned fields, and has won several awards. 
-    Moreover, he has led or participated in the design and development of several games of varying scope and for different 
-    target audiences, including two FP7 ICT projects.
+    Bill is the founder and CEO of Scientific Revenue, the leading provider of dynamic pricing for in-app purchases. 
+    Prior to starting Scientific Revenue, Bill ran a consulting company focused on business intelligence and predictive 
+    analytics, and was an entrepreneur in residence at Rustic Canyon Venture Partners. Prior to those positions, he held 
+    senior positions in engineering and product at various companies, where he was well known for building high-performance 
+    organizations which shipped innovative products on time. 
+    He has also written two books on software design, has worked as a research scientist in artificial intelligence, 
+    and is the author or co-author of over 40 academic journal articles.
 
-- name: Domitile Lourdeaux
-  role: speaker
-  title: Speaker
-  affiliation: 
-    name: "CNRS, Heudiasyc Lab"
-    url: https://www.hds.utc.fr
-  bio: ""
 
 - name: Kevin Carpentier
   role: speaker
@@ -290,6 +191,83 @@
     on Assassin's Creed Unity.
   twitter: mafzzz
 
+- name: Paul Kanyuk
+  role: speaker
+  confirmed: true
+  title: Speaker
+  affiliation:
+    name: Pixar Animation Studios
+    position: Technical Director
+    url: http://www.pixar.com/
+  bio: >
+    Paul Kanyuk is a Lead Technical Director at Pixar Animation Studios with credits on Cars, Ratatouille, Wall-E, Up, Cars 2, 
+    Brave, and Monster’s University. His specialty is crowd simulation, shading, and rendering, and he is responsible for 
+    the procedural animation and rendering of numerous crowd spectacles, including the hordes of rats in Ratatouille, 
+    the deluge of falling passengers in Wall-E, and the vicious pack of talking dogs in Up. Paul earned his BSE in 
+    Digital Media Design at the University of Pennsylvania and teaches courses in RenderMan and Crowd Simulation at 
+    the Academy of Art University in San Francisco.  He is also an avid musician and plays bass guitar in the bay area 
+    rock band, Halcrow.
+
+- name: Richard Kogelnig
+  role: track
+  tracks: [alternate]
+  title: "Game Developer"
+  affiliation:
+    name: Mi'pu'mi
+  bio: ""
+
+- name: Antonios Liapis
+  role: speaker
+  title: Speaker
+  affiliation: 
+    name: Institute of Digital Games (University of Malta)
+    url: http://www.game.edu.mt/
+  bio: >
+    Antonios Liapis is a postdoctoral researcher at the Institute of Digital Games, University of Malta (UoM). 
+    He received his 5-year Diploma (2007) in Electrical and Computer Engineering from the National Technical University 
+    of Athens and the M.Sc. (2011) and Ph.D. (2014) in Information Technology from the IT University of Copenhagen. 
+    He does research on the crossroads of game design, artificial intelligence and computational creativity. 
+    More specifically, he explores the limits of computational input to the human-driven design process in computer-aided 
+    design tools. Beyond AI-assisted game design, his research pursuits revolve around procedural content generation, 
+    digital aesthetics, evolutionary computation, neuroevolution and constrained optimization. He has published 24 
+    international conference and workshop papers and 2 journal papers in the aforementioned fields, and has won several awards. 
+    Moreover, he has led or participated in the design and development of several games of varying scope and for different 
+    target audiences, including two FP7 ICT projects.
+
+- name: Domitile Lourdeaux
+  role: speaker
+  title: Speaker
+  affiliation: 
+    name: "CNRS, Heudiasyc Lab"
+    url: https://www.hds.utc.fr
+  bio: ""
+
+- name: Freyr Magnússon
+  role: speaker
+  confirmed: true
+  tracks: [behavior]
+  title: Speaker
+  affiliation:
+    name: CCP Games
+    position: Senior Software Engineer
+    url: http://www.ccpgames.com/
+  bio: >
+    Freyr has been working for CCP Games as a gameplay programmer on the  EVE Online MMO since 2008.    Lately he has been working unwinding legacy code issues and introducing Behaviors Trees into a 15 year old codebase.
+
+- name: Milos Milosevic
+  role: speaker
+  title: Speaker
+  affiliation:
+    name: Nordeus
+    url: http://www.nordeus.com/
+
+- name: Mikko Mononen
+  role: speaker
+  title: Speaker
+  affiliation: 
+    name: Unity Technologies
+    url: http://unity3d.com/company
+
 - name: Julien Pettré
   role: speaker
   title: Speaker
@@ -303,13 +281,43 @@
     at VRlab, EPFL, Switzerland, headed by Daniel Thalmann. At INRIA in Rennes, he joined the Bunraku team headed by G. Dumont. 
     His research interests are : crowd simulation, motion planning, autonomous virtual humans, computer animation and virtual 
     reality.
-  
-- name: Mikko Mononen
+
+- name: Luis Angel Vicente Sanchez
   role: speaker
   title: Speaker
   affiliation: 
-    name: Unity Technologies
-    url: http://unity3d.com/company
+    name: Mind Candy
+    url: http://mindcandy.com/
+  bio: >
+    Luis is Senior Data Engineer at Mind Candy, was the first to introduce Spark Streaming at the company and is responsible 
+    for the real-time mobile analytics platform. He has more than 10 years of experience in software engineering and 
+    architecture, and has made contributions to open source projects like twitter/algebird, datastax/spark-cassandra-connector 
+    and spray/spray.
+
+- name: Kevin Schmidt
+  role: speaker
+  title: Speaker
+  affiliation:
+    name: Mind Candy
+    url: http://mindcandy.com/
+  bio: >
+    Kevin built up the data science and engineering team at Mind Candy and with the team created a scalable architecture 
+    for mobile game analytics based on Apache Spark. Before Mind Candy, Kevin was heading the data and back-end services 
+    team at Last.fm using Hadoop to work with ten years of music listening data from millions of users as well as spending 
+    four years working on private clouds and service architecture at Goldman Sachs.
+
+- name: Csaba Toth
+  role: speaker
+  confirmed: true
+  title: Speaker
+  tracks: [decisions]
+  affiliation: 
+    name: The Creative Assembly
+    url: http://www.creative-assembly.com/
+  bio: >
+    Designer with nearly 10 years of experience in the gaming industry and with a background in programming, worked on games 
+    from a wide variety of genres, designed and tweaked AI behaviour for racing games, shooters and most recently the campaign 
+    part of Total War: Rome2 and Total War: Attila. Apart from AI, he specialises in game balancing and systems design.
 
 - name: Simon Worgan
   role: speaker
@@ -323,10 +331,4 @@
     behavioural player clustering and predictive modelling. With a Computer Science Ph.D. from the University of Southampton 
     he has over 7 years’ experience in the real world application of Data Science.
     
-- name: Milos Milosevic
-  role: speaker
-  title: Speaker
-  affiliation:
-    name: Nordeus
-    url: http://www.nordeus.com/
 
