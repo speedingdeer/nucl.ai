@@ -1,0 +1,5 @@
+- title: "Behavior Trees and Blackboards in EVE Online"
+  description: >
+    This talk will cover the introduction of Behavior Trees and Blackboards into EVE Online and reviewing some of the challenges involved.  Also covered some of the design choices made in order to manage behavior modularity and group behaviors while keeping behaviors reactive and event driven.
+  speakers:
+    - Freyr Magnússon
