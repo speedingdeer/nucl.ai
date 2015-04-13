@@ -112,10 +112,11 @@
 - name: Freyr Magnússon
   role: speaker
   confirmed: true
-  tracks: [alternate]
+  tracks: [behavior]
   title: Speaker
   affiliation:
     name: CCP Games
+    position: Senior Software Engineer
     url: http://www.ccpgames.com/
 
 - name: Paul Kanyuk
