@@ -25,7 +25,7 @@ enableSections = () ->
     if $(@).offset().top < bottomEdge
       $(@).find("content, h2").addClass("visited")
 
-$(window).load ->
+$ ->
   if navigator.userAgent.match(/(iPad|iPhone|iPod)/g)
     $("html").addClass("ios")
   $(window).scroll ->
