@@ -260,12 +260,17 @@
   bio: >
     Freyr has been working for CCP Games as a gameplay programmer on the  EVE Online MMO since 2008.    Lately he has been working unwinding legacy code issues and introducing Behaviors Trees into a 15 year old codebase.
 
-- name: Milos Milosevic
+- name: Miloš Milošević
   role: speaker
   title: Speaker
   affiliation:
     name: Nordeus
     url: http://www.nordeus.com/
+  bio: >
+    Miloš is a data analyst at Nordeus, multinational social network game company, best known for Top Eleven, one of the most 
+    successful cross-platform sport games in the world. His main focus are predictive machine learning models and their 
+    deployment in a live production setting, as well as maintaining and further improving the company's data pipeline. He 
+    previously worked on NLP, product data normalization and has a background in distributed systems.
 
 - name: Mikko Mononen
   role: speaker
