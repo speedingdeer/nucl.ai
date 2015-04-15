@@ -15,6 +15,12 @@
   tracks: [decisions]
   title: "Co-Organizer & Track Chair"
   twitter: diego_pliebana
+  bio: >
+    Diego Perez has recently achieved a Ph.D. in Computer Science at the University of Essex (UK), where he is now a Senior 
+    Research Officer. He has published in the domain of Game AI, with research interests on Reinforcement Learning and 
+    Evolutionary Computation. He has organized several Game AI competitions, as the Physical Travelling Salesman Problem and 
+    the General Video Game AI competitions, both held in IEEE conferences. He also has programming experience in the videogames 
+    industry with titles published for game consoles and PC.
 
 - name: Michaël Rouillé
   role: track
@@ -254,12 +260,17 @@
   bio: >
     Freyr has been working for CCP Games as a gameplay programmer on the  EVE Online MMO since 2008.    Lately he has been working unwinding legacy code issues and introducing Behaviors Trees into a 15 year old codebase.
 
-- name: Milos Milosevic
+- name: Miloš Milošević
   role: speaker
   title: Speaker
   affiliation:
     name: Nordeus
     url: http://www.nordeus.com/
+  bio: >
+    Miloš is a data analyst at Nordeus, multinational social network game company, best known for Top Eleven, one of the most 
+    successful cross-platform sport games in the world. His main focus are predictive machine learning models and their 
+    deployment in a live production setting, as well as maintaining and further improving the company's data pipeline. He 
+    previously worked on NLP, product data normalization and has a background in distributed systems.
 
 - name: Mikko Mononen
   role: speaker
