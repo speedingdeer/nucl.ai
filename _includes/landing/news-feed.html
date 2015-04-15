@@ -1,9 +1,9 @@
 <section class="news-feed">
-    <h2>News Feed</h2>
+    <h2>Recent News &amp; Announcements</h2>
     <grid>
         <content>
         <table>
-            {% for news in site.data.news_feed reversed limit:10 %}
+            {% for news in site.data.news_feed limit:10 %}
                 <tr>
                     {% if news.picture %}
                         <td class="ilustration">
@@ -11,7 +11,9 @@
                         </td>
                     {% endif %}
                     <td class="text">
-                         <a href="{{news.link}}">{{news.title}}</a><span class="date"> &mdash; {{ news.date | date: "%d %B %Y" }}</span>
+                         <span class="date">{{ news.date | date: "%d %B %Y" }}</span><br/>
+                         <a href="{{news.link}}">{{news.title}}</a><br/>
+                         <span class="author">&mdash; by {{ news.author }}</span>
                     </td>
                 </tr>
             {% endfor %}

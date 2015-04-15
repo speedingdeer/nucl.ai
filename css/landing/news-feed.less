@@ -1,18 +1,22 @@
 section.news-feed {
-    @image_size: 140px;
+    @image_size: 80px;
     @image_padding: 25px;
     min-height: 0;
     content { 
         .column(12);
         span.date { 
             white-space: nowrap;
+            color: @MID_BLUE;
+        }
+        span.author {
+            opacity: 0.75;
         }
         div.ilustration { 
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-position: center; 
             .circular(@image_size, 100%);
-            border: 2px solid @BLUE;
+            border: 2px solid @MID_BLUE;
         }
         td.text {
             padding-left: 1em;

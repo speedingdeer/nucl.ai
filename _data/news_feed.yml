@@ -1,5 +1,23 @@
-- title: >
-    "The Evolution of Crowds and AI in Feature Film Animation" Announced!
-  date:  "Apr 22, 15"
+- title: "Behavior Trees and Blackboards in EVE ONLINE"
+  author: Freyr Magnússon (CCP Games)
+  date: "Apr 13, 2015"
+  link: "/track/behavior/#behavior-trees-and-blackboards-in-eve-online"
+  picture: "/img/tracks/alternate.png"
+
+- title: "Optimizing MCTS for Tactical Coordination in TOTAL WAR: ATILLA"
+  date: "Apr 11, 2015"
+  author: Piotr Andruszkiewicz (Creative Assembly)
+  link: "http://nucl.ai/track/decisions/#optimizing-mcts-performance-for-tactical-coordination-in-total-war--atilla"
+  picture: "/img/tracks/behavior.png"
+
+- title: "MotionFields: Road to Next-Gen Animation"
+  date: "Apr 8, 2015"
+  author: Michael Büttner (Ubisoft)
+  link: "http://nucl.ai/track/animation/#motionfields---road-to-next-gen-animation"
+  picture: "/img/tracks/animation.png"
+
+- title: "The Evolution of Crowds and AI in Feature Film Animation"
+  date: "Apr 3, 2015"
+  author:  Paul Kanyuk (Pixar Animation Studios)
   link: "/track/ambient/#the-evolution-of-crowds-and-ai-in-feature-film-animation"
-  picture: "/img/topics/ambient.jpg"
+  picture: "/img/tracks/ambient.png"
