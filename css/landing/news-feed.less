@@ -1,5 +1,27 @@
 section.news-feed {
+    @image_size: 140px;
+    @image_padding: 25px;
     min-height: 0;
     content { 
+        .column(12);
+        span.date { 
+            white-space: nowrap;
+        }
+        div.ilustration { 
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center; 
+            .circular(@image_size, 100%);
+            border: 2px solid @BLUE;
+        }
+        td.text {
+            padding-left: 1em;
+        }
+        tr > td {
+            padding-bottom: 1.5em;
+        }
+        tr:last-child > td {
+            padding-bottom: 0;
+        }
     }
 }

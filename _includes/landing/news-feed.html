@@ -2,13 +2,20 @@
     <h2>News Feed</h2>
     <grid>
         <content>
-        <ul>
+        <table>
             {% for news in site.data.news_feed reversed limit:10 %}
-                <li>
-                    <span class="date">{{ news.date | date: "%d %B %Y" }}</span> - <a href="{{news.link}}">{{news.title}}</a>
-                </li>
+                <tr>
+                    {% if news.picture %}
+                        <td>
+                            <div class="ilustration icon" style="background-image: url('{{ news.picture |  prepend: site.baseurl }}')"></div>
+                        </td>
+                    {% endif %}
+                    <td class="text">
+                         <a href="{{news.link}}">{{news.title}}</a><span class="date"> &mdash; {{ news.date | date: "%d %B %Y" }}</span>
+                    </td>
+                </tr>
             {% endfor %}
-        </ul>
+        </table>
         </content>
     </grid>
 </section>
