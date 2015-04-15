@@ -3,9 +3,9 @@
     <grid>
         <content>
         <ul>
-            {% for news in site.data.news_feed %}
+            {% for news in site.data.news_feed reversed limit:10 %}
                 <li>
-                    <span class="date">{{ news.date }}</span> - <a href="{{news.link}}">{{news.title}}</a>
+                    <span class="date">{{ news.date | date: "%d %B %Y" }}</span> - <a href="{{news.link}}">{{news.title}}</a>
                 </li>
             {% endfor %}
         </ul>
