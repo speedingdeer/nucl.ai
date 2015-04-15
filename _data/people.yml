@@ -251,7 +251,6 @@
 - name: Freyr Magnússon
   role: speaker
   confirmed: true
-  tracks: [behavior]
   title: Speaker
   affiliation:
     name: CCP Games
