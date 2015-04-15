@@ -6,7 +6,7 @@
             {% for news in site.data.news_feed reversed limit:10 %}
                 <tr>
                     {% if news.picture %}
-                        <td>
+                        <td class="ilustration">
                             <div class="ilustration icon" style="background-image: url('{{ news.picture |  prepend: site.baseurl }}')"></div>
                         </td>
                     {% endif %}

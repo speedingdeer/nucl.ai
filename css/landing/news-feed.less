@@ -16,6 +16,9 @@ section.news-feed {
         }
         td.text {
             padding-left: 1em;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                padding-left: 0em;
+            }
         }
         tr > td {
             padding-bottom: 1.5em;
@@ -23,5 +26,10 @@ section.news-feed {
         tr:last-child > td {
             padding-bottom: 0;
         }
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+            td.ilustration { display: none; }
+            td { font-size: 0.7em; }
+        }
+
     }
 }
