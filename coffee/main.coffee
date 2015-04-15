@@ -25,14 +25,20 @@ enableSections = () ->
     if $(@).offset().top < bottomEdge
       $(@).find("content, h2").addClass("visited")
 
+$(window).load ->
+  root.scrollLocked = false;
+
+
+
 $ ->
   if navigator.userAgent.match(/(iPad|iPhone|iPod)/g)
     $("html").addClass("ios")
   $(window).scroll ->
     enableSections()
     if !root.scrollLocked && window.location.hash != ""
-      if history.replaceState
-        history.replaceState null, null, ' '
+      if $(window.location.hash).offset().top * 0.95 > $(window).scrollTop() || $(window.location.hash).offset().top * 1.05 < $(window).scrollTop()  
+        if history.replaceState
+          history.replaceState null, null, ' '
 
   enableSections()
 enableSections()
