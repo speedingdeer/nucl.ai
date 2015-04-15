@@ -2,8 +2,13 @@
     <h2>News Feed</h2>
     <grid>
         <content>
-            {% assign items = site.data.galleries.passed_events %}
-            {% include gallery/gallery.html %}
+        <ul>
+            {% for news in site.data.news_feed %}
+                <li>
+                    <span class="date">{{ news.date }}</span> - <a href="{{news.link}}">{{news.title}}</a>
+                </li>
+            {% endfor %}
+        </ul>
         </content>
     </grid>
 </section>
