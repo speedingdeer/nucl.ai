@@ -7,13 +7,13 @@
 - title: "Optimizing MCTS for Tactical Coordination in TOTAL WAR: ATILLA"
   date: "Apr 11, 2015"
   author: Piotr Andruszkiewicz (Creative Assembly)
-  link: "http://nucl.ai/track/decisions/#optimizing-mcts-performance-for-tactical-coordination-in-total-war--atilla"
+  link: "/track/decisions/#optimizing-mcts-performance-for-tactical-coordination-in-total-war--atilla"
   picture: "/img/tracks/behavior.png"
 
 - title: "MotionFields: Road to Next-Gen Animation"
   date: "Apr 8, 2015"
   author: Michael Büttner (Ubisoft)
-  link: "http://nucl.ai/track/animation/#motionfields---road-to-next-gen-animation"
+  link: "/track/animation/#motionfields---road-to-next-gen-animation"
   picture: "/img/tracks/animation.png"
 
 - title: "The Evolution of Crowds and AI in Feature Film Animation"
