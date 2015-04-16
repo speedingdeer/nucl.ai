@@ -131,7 +131,7 @@
   confirmed: true
   title: Speaker
   affiliation: 
-    name: Ubisoft
+    name: Ubisoft Toronto
     url: http://www.ubisoft.com/
   bio: >
     Michael has been programming games for nearly 30 years, including lead and senior roles at Ocean Software, Infogrames 
@@ -167,10 +167,9 @@
 - name: François Cournoyer
   role: speaker
   confirmed: true
-  tracks: [systems]
   title: Speaker
   affiliation:
-    name: Ubisoft
+    name: Ubisoft Montreal
     url: http://www.ubisoft.com/
   bio: >
     Francois has been working for 5 years as a programmer at Ubisoft Montreal. His background was originally in physics but 
@@ -183,9 +182,8 @@
   role: speaker
   title: Speaker
   confirmed: true
-  tracks: [systems]
   affiliation:
-    name: Ubisoft
+    name: Ubisoft Montreal
     url: http://www.ubisoft.com/
   bio: >
     Antoine graduated BSc from Electrical Engineering with a specialty in Computer Vision and worked as a Software Developer 
