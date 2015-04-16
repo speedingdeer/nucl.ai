@@ -81,7 +81,7 @@
   title: "Procedural Content Generation"
   description: >
     Over the past few years, procedural generation techniques have established
-    themselves as not only a sensible approach but often as the default approach
+    themselves as not only a sensible approach but often as the default solution
     for assisting content creation.  This track focuses on the algorithms and methods
     for procedural generation, that can be applied for generating modular pieces of
     content in complex worlds or entire levels in simpler games/simulations.  If
@@ -91,7 +91,7 @@
     <img src="/img/tracks/Witcher_1.jpg"/>
     <p class="credit"><u>Image Credit</u>: The Witcher III</p> 
     <p>Over the past few years, procedural generation techniques have established
-    themselves as not only a sensible approach but often as the default approach
+    themselves as not only a sensible approach but often as the default solution
     for assisting content creation.  This track focuses on the algorithms and methods
     for procedural generation, that can be applied for generating modular pieces of
     content in complex worlds or entire levels in simpler games/simulations.  If
