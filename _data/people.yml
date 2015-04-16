@@ -101,6 +101,7 @@
 
 - name: Verena Riedl
   role: org
+  tracks: [procedural]
   title: "Marketing Director"
   twitter: skittlesolives
   affiliation:
