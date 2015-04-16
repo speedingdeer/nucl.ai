@@ -11,15 +11,13 @@ bundle install # to test against to gh-pages gem (includes jekyll)
 
 Deploy changes (assumed they are already in master)
 ```
-grunt clean # clean all generated/synced assets
-git commit # check in changes
-git checkout gh-pages # get to the right branch
-git rebase | merge master # get changes 
-# (rebase or merge becasue the history is kept in master,
-#  minified files don't have to have too much sens)
-git grunt build # build generate/sync assets
-git commit -a # commit all changes
-git push [remote] gh-pages # push to gh-pages
+grunt clean                 # clean all generated/synced assets
+git commit                  # check in changes
+git checkout gh-pages       # get to the right branch
+git merge master            # get changes to preserve history in master
+grunt build                 # build generate/sync assets
+git commit -a               # commit all changes
+git push [remote] gh-pages  # push to gh-pages
 ```
 
 Run Server
