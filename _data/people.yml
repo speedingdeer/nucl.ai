@@ -76,6 +76,8 @@
   affiliation:
     name: AiGameDev.com
     url: http://aigamedev.com
+  bio: >
+    Alex is the mastermind behind AiGameDev.com, the largest online hub for artificial intelligence in games. He has worked in the industry as a senior AI programmer for many years, most notably for Rockstar Games. He regularly consults with leading studios in Europe, most recently on the multiplayer bots for Killzone 2-3 at Guerrilla Games. Alex authored the book "AI Game Development" and often speaks about his research. He's associate editor for the IEEE Transactions on AI in Games, and serves on the program committee for the AIIDE and CIG conferences.
 
 - name: Petra Champandard-Pail
   role: org

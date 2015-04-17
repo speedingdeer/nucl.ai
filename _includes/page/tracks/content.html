@@ -16,16 +16,18 @@
             <p class="intro"><span>Now in its 7th edition, <a href="/">nucl.ai</a> brings together hundreds of developers from creative industries and interactive media to resolve the biggest technical and design problems with Artificial Intelligence.  One of the event's tracks focuses specifically on</span> <b>&ldquo;{{item.title}}&rdquo;</b> <span>for an entire day.</span></p>
             {{track.content}}
         </content>
+
         {% if items %}
-            <content>
-                <ul>
-                {% for item in items %}
-                    <li>
-                        <a class="scrollable" href="/track/{{track.id}}#{{item.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">{{item.title}}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </content>
+        <content>
+            <h3>Confirmed Talks</h3>
+            <ul>
+            {% for item in items %}
+                <li>
+                    <a class="scrollable" href="/track/{{track.id}}#{{item.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">{{item.title}}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </content>
         {% endif %}
     </grid>
 </section>
