@@ -363,5 +363,16 @@
     to a variety of challenges within the games industry, these include in-game recommendation systems, sentiment analysis, 
     behavioural player clustering and predictive modelling. With a Computer Science Ph.D. from the University of Southampton 
     he has over 7 years’ experience in the real world application of Data Science.
-    
 
+- name: Gwaredd Mountain
+  role: speaker
+  title: Speaker
+  affiliation:
+    name: Lionhead
+    url: http://www.lionhead.com/
+  bio: >
+    Gwaredd has been making games from longer than he cares to remember. His career has spanned almost every conceivable 
+    programming role from senior management to deep in the trenches, across many platforms and for companies large and small, 
+    such as Microsoft, Criterion and Climax. Despite this he still likes making games. He is currently part of the team 
+    developing the AI for Fable Legends. Noted for his unpronounceable first name and dislike of writing bios.
+  twitter: gwareddm
