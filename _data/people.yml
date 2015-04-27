@@ -76,6 +76,8 @@
   affiliation:
     name: AiGameDev.com
     url: http://aigamedev.com
+  bio: >
+    Alex is the mastermind behind AiGameDev.com, the largest online hub for artificial intelligence in games. He has worked in the industry as a senior AI programmer for many years, most notably for Rockstar Games. He regularly consults with leading studios in Europe, most recently on the multiplayer bots for Killzone 2-3 at Guerrilla Games. Alex authored the book "AI Game Development" and often speaks about his research. He's associate editor for the IEEE Transactions on AI in Games, and serves on the program committee for the AIIDE and CIG conferences.
 
 - name: Petra Champandard-Pail
   role: org
@@ -87,6 +89,28 @@
   bio: >
     Petra has a background in business management, and worked as an International Area Manager for a large multi-million dollar corporation.
     She eventually moved on and joined Alex as the co-founder of AiGameDev.com. Petra is the creative force in the team, and takes care of business!
+
+- name: Filip Wisniewski
+  role: org
+  title: "Lead Developer"
+  twitter: speedingdeer
+  affiliation:
+    name: AiGameDev.com
+    url: http://aigamedev.com
+  bio: >
+    Filip worked previously in semantic web research for Animation a couple of years and after a brief start-up interlude he now found his calling in digital entertainment and teaching.
+    He helped organize the Game/AI Conference in 2014 and presented a tutorial about Monto-Carlo Tree Search there, along with the AiGameDev.com team.
+
+- name: Verena Riedl
+  role: org
+  tracks: [procedural]
+  title: "Marketing Director"
+  twitter: skittlesolives
+  affiliation:
+    name: AiGameDev.com
+    url: http://aigamedev.com
+  bio: >
+    Verena made her way from Urban Planning into the games industry, with inbetween stops at advertising and eventmanagement. These days she is working as a producer, game designer and marketing strategist, who has focused on mobile development in the last years. She was already part of the volunteer team at Game/ AI Conference in 2014 and joined the team now to help with the dark arts of marketing.
 
 - name: Prof. Helmut Hlavac
   role: advisory
@@ -104,16 +128,6 @@
   bio: >
     A freelance game developer with a specialisation in AI, and author of the "Behave" AI middleware solution, Emil brings experience from a host of client projects as well as a four-year stint at Unity Technologies. A preference for behavioural logic, but a wide appetite for new and exciting challenges.
 
-- name: Filip Wisniewski
-  role: org
-  title: "Lead Developer"
-  twitter: speedingdeer
-  affiliation:
-    name: AiGameDev.com
-    url: http://aigamedev.com
-  bio: >
-    Filip worked previously in semantic web research for Animation a couple of years and after a brief start-up interlude he now found his calling in digital entertainment and teaching.
-    He helped to organize Game/AI Conference in 2014 and presented a tutorial about Monto-Carlo Tree Search along with the AiGameDev.com team.
 
 - name: Piotr Andruszkiewicz
   role: speaker
@@ -125,11 +139,22 @@
     AI programmer, world conquest enthusiast. Worked on AI for the campaign portion of several Total War titles focusing on 
     diplomacy, pathfinding, tactical planning and optimization.
 
+- name: Alexander Bereznyak
+  role: speaker
+  tracks: animation
+  title: Speaker
+  url: http://alsber.com/
+  affiliation: 
+    name: Ubisoft Toronto
+    url: http://www.ubisoft.com/
+  bio: >
+    Alexander’s focus at Ubisoft is development of new technologies for the next generation of the video games – including animation tech and visual effect tech. He joined the industry some 12 years ago and worked in most of disciplines, including 3d modeling, texturing, rigging and animation, creation of particle FX, shaders and post process effects. Having spent several years as art director of outsourcing teams, he worked on projects of all types of art style targeting all types of game platforms. Game credits: Metro: Last Light, Overlord, Gauntlet: Seven Sorrows, NBA Live 2006, Need for Speed: Underground 2, Showtime Championship Boxing, Everquest 2, Pirates of Caribbean: the Legend of Jack Sparrow. Currently working on: something secret at Ubisoft
+
 - name: Michael Büttner
   role: speaker
   confirmed: true
   affiliation: 
-    name: Ubisoft
+    name: Ubisoft Toronto
     url: http://www.ubisoft.com/
   bio: >
     Michael has been programming games for nearly 30 years, including lead and senior roles at Ocean Software, Infogrames 
@@ -165,7 +190,7 @@
   confirmed: true
   tracks: [systems]
   affiliation:
-    name: Ubisoft
+    name: Ubisoft Montreal
     url: http://www.ubisoft.com/
   bio: >
     Francois has been working for 5 years as a programmer at Ubisoft Montreal. His background was originally in physics but 
@@ -177,9 +202,8 @@
 - name: Antoine Fortier
   role: speaker
   confirmed: true
-  tracks: [systems]
   affiliation:
-    name: Ubisoft
+    name: Ubisoft Montreal
     url: http://www.ubisoft.com/
   bio: >
     Antoine graduated BSc from Electrical Engineering with a specialty in Computer Vision and worked as a Software Developer 
@@ -324,5 +348,16 @@
     to a variety of challenges within the games industry, these include in-game recommendation systems, sentiment analysis, 
     behavioural player clustering and predictive modelling. With a Computer Science Ph.D. from the University of Southampton 
     he has over 7 years’ experience in the real world application of Data Science.
-    
 
+- name: Gwaredd Mountain
+  role: speaker
+  title: Speaker
+  affiliation:
+    name: Lionhead
+    url: http://www.lionhead.com/
+  bio: >
+    Gwaredd has been making games from longer than he cares to remember. His career has spanned almost every conceivable 
+    programming role from senior management to deep in the trenches, across many platforms and for companies large and small, 
+    such as Microsoft, Criterion and Climax. Despite this he still likes making games. He is currently part of the team 
+    developing the AI for Fable Legends. Noted for his unpronounceable first name and dislike of writing bios.
+  twitter: gwareddm

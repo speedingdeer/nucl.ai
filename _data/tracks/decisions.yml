@@ -8,3 +8,10 @@
     structure of the tree itself as well as some higher-level optimisations.
   speakers:
     - Piotr Andruszkiewicz
+    
+- title: "Tactical Planning in Fable Legends"
+  description: >
+    Fable Legends is a 4v1 asymmetric multi-player game, in which a team of 4 heroes compete against 1 villain. This poses some 
+    interesting design and programming challenges.
+  speakers:
+    - Gwaredd Mountain

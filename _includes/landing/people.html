@@ -3,8 +3,8 @@
     <grid>
         <content>
             {% assign itemsInRow = 5 %}
-            <div class="subsection">
-                <h2> Speakers </h2>
+            <div class="subsection" id="speakers">
+                <h2>Speakers</h2>
                 {% assign filterPeopleType = "speaker" %}
                 {% include people/filtered.html %}
                 {% assign dataType = "people" %}
@@ -12,8 +12,8 @@
                     {% include thumbnails.html %}
                 </div>
             </div>
-            <div class="subsection">
-                <h2> Co-Organizers &amp; Track Chairs </h2>
+            <div class="subsection" id="chairs">
+                <h2>Co-Organizers &amp; Track Chairs</h2>
                 {% assign filterPeopleType = "track" %}
                 {% include people/filtered.html %}
                 {% assign dataType = "people" %}
@@ -21,8 +21,8 @@
                     {% include thumbnails.html %}
                 </div>
             </div>
-            <div class="subsection">
-                <h2> The Team &amp; Advisors</h2>
+            <div class="subsection" id="team">
+                <h2>The Team &amp; Advisors</h2>
                 {% assign filterPeopleType = "org,advisory" %}
                 {% include people/filtered.html %}
                 {% assign dataType = "people" %}
