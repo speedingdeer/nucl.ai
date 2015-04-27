@@ -21,6 +21,11 @@ section.people {
             div.affiliation-wrap {
                 float: right;
                 text-align: right;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    float: none;
+                    text-align: inherit;
+                    padding-top: 25px;
+                } 
                 margin-top: 5px;
                 padding-bottom: 10px;
                 p {
@@ -30,6 +35,7 @@ section.people {
             p.affiliation {
                 a { text-decoration: none; }
             }
+            p.affiliation-position.no-data { display: none; }
             &:not(.last-row) {
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-bottom: 2em } 
             }
