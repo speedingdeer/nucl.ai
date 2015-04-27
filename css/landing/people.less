@@ -18,15 +18,22 @@ section.people {
             p.bio {
                 clear: both;
             }
+            div.affiliation-wrap {
+                float: right;
+                text-align: right;
+                margin-top: 5px;
+                padding-bottom: 10px;
+                p {
+                    margin: 0;
+                }
+            }
             p.affiliation {
-                width: 100%;
-                text-align: center;
                 a { text-decoration: none; }
-                margin-bottom: 0;
             }
             &:not(.last-row) {
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-bottom: 2em } 
             }
+            ul.talks-list { clear: both; }
         }
     }
     content {

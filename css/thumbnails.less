@@ -123,19 +123,39 @@
             }
             &.selected { display: block; }
             color: @LIGHT_GREY;
-            h2 {
+            div.thumbnail-title-wrap { margin: 10px 10px 0 10px; }
+            .thumbnail-title {
                 color: @ORANGE;
                 text-align: center;
-                &.column-first { text-align: left; margin-left: 10px; }
-                &.column-last { text-align: right; margin-right: 10px;}
-                padding: 0.5em 0 0.5em;
+                &.column-first { 
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { h2, p { text-align: left; } }
+                }
+                &.column-last { 
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { h2, p { text-align: right; } }
+                }
+                h2 { 
+                    padding: 0.5em 0 0.5em; 
+                    display: block;
+                    float: left;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        padding-bottom: 0;
+                        width: 100%; 
+                    }
+                }
                 a {
                     text-decoration: none;
                     color: @ORANGE;
                 }
+                p.affiliation {
+                    a { color: @LIGHT_BLUE; }
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        margin-top: 0;
+                        width: 100%; 
+                    }
+                }
             }
             p {
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {  line-height: 1.1 }
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { line-height: 1.1 }
                 &.note {
                     color: @GREY;
                     a {

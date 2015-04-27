@@ -13,7 +13,7 @@
 
 <item class="description {{lastRow}} animated fadeOutRight" name="{{ d.name | escape}}">
     
-    <h2 class="thumbnail-title 
+    <div class="thumbnail-title 
         column-{{descModulo}}
         {{itemsInRow}}-in-row
         {% if descModulo == 1 %} column-first 
@@ -21,15 +21,29 @@
         {% elsif itemsInRow == 3 %} column-middle
         {% endif %}
     ">
-    {{ d.name }}</h2>
-    {% if d.affiliation %}
-        <p class="affiliation">
-            <a href="{{d.affiliation.url}}" target="_blank">{{>d.affiliation.name}}</a>
+        <div class="thumbnail-title-wrap">
+            <h2> {{ d.name }} </h2>
+            <div class="affiliation-wrap">
             {% if d.affiliation.position %}
-                , {{d.affiliation.position }}
+                <p class="affiliation-position">
+                    {{>d.affiliation.position}}
+                </p>
+            {% else %}
+                <p class="affiliation-position" style="visibility:hidden;">
+                    no data
+                </p>
             {% endif %}
-        </p>
-    {% endif %}
+
+            {% if d.affiliation.name %}
+                <p class="affiliation">
+                    <a href="{{d.affiliation.url}}" target="_blank">{{>d.affiliation.name}}</a>
+                </p>
+            {% endif %}
+            </div>
+        </div>
+    <div style="clear: both"> </div>
+
+    </div>
 
     <p class="conference-title"> {{ d.title }} </p>
     <p class="links"> 
@@ -38,36 +52,22 @@
     {% endif %}
     </p>
     {% comment %} get speaker talks {% endcomment %}
-    {% for topic in site.data.topics %}
-        {% assign talks = site.data.tracks[topic.id] %}
-        {% for talk in talks %}
-            {% for speaker in talk.speakers %}
-                {% if speaker == d.name %}
-                    <p class="track-topic">
-                    {% if isTrackPage %}
-                    {% else %}
-                        <a href="/track/{{topic.id}}">{{topic.title}}</a> -
-                    {% endif %}
-                    <a href="/track/{{topic.id}}#{{talk.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">{{talk.title}}</a>
-                    </p>
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
-    {% endfor %}
-
-    {% if isTrackPage %}
-    {% else %}
-        {% comment %} get Tracks Chairs tracks {% endcomment %}
+    <ul class="talks-list">
         {% for topic in site.data.topics %}
-            {% for track in d.tracks %}
-                {% if track == topic.id %}
-                    <p class="track-topic">
-                        <a href="/track/{{topic.id}}">{{topic.title}}</a>
-                    </p>
-                {% endif %}
+            {% assign talks = site.data.tracks[topic.id] %}
+            {% for talk in talks %}
+                {% for speaker in talk.speakers %}
+                    {% if speaker == d.name %}
+                        <li>
+                            <a href="/track/{{topic.id}}#{{talk.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">
+                                {{talk.title}}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
             {% endfor %}
         {% endfor %}
-    {% endif %}
+    </ul>
 
     {% if d.bio %}
         {% for paragraph in d.bio %}
@@ -80,4 +80,39 @@
         <p class="bio"></p>
     {% endif %}
 
+    <ul>
+    {% comment %} get Tracks Chairs tracks {% endcomment %}
+    {% if isTrackPage %}
+    {% else %}
+        {% for topic in d.tracks %}
+            <li class="track-topic">
+                <a href="/track/{{topic}}">
+                {% for t in site.data.topics %}
+                    {% if t.id == topic %}
+                        <a href="/track/{{t.id}}">{{t.title}}</a>
+                    {% endif %}
+                {% endfor %}
+                </a>
+            </li>
+        {% endfor %}
+    {% endif %}
+ 
+    {% comment %} get speaker tracks {% endcomment %}
+
+    {% for topic in site.data.topics %}
+        {% assign talks = site.data.tracks[topic.id] %}
+        {% for talk in talks %}
+            {% for speaker in talk.speakers %}
+                {% if speaker == d.name %}
+                    {% if isTrackPage %}
+                    {% else %}
+                    <li class="track-topic">
+                        <a href="/track/{{topic.id}}">{{topic.title}}</a>
+                    </li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+    </ul>
 </item>

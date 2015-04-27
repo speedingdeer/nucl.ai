@@ -118,7 +118,6 @@
 - name: Piotr Andruszkiewicz
   role: speaker
   confirmed: true
-  title: Speaker
   affiliation: 
     name: The Creative Assembly
     url: http://www.creative-assembly.com/
@@ -129,7 +128,6 @@
 - name: Michael Büttner
   role: speaker
   confirmed: true
-  title: Speaker
   affiliation: 
     name: Ubisoft
     url: http://www.ubisoft.com/
@@ -142,7 +140,6 @@
 
 - name: Bill Grosso
   role: speaker
-  title: Speaker
   affiliation: 
     name: Scientific Revenue
     url: http://www.scientificrevenue.com/
@@ -158,7 +155,6 @@
 
 - name: Kevin Carpentier
   role: speaker
-  title: Speaker
   affiliation: 
     name: "CNRS, Heudiasyc Lab"
     url: https://www.hds.utc.fr
@@ -168,7 +164,6 @@
   role: speaker
   confirmed: true
   tracks: [systems]
-  title: Speaker
   affiliation:
     name: Ubisoft
     url: http://www.ubisoft.com/
@@ -181,7 +176,6 @@
 
 - name: Antoine Fortier
   role: speaker
-  title: Speaker
   confirmed: true
   tracks: [systems]
   affiliation:
@@ -200,7 +194,6 @@
 - name: Paul Kanyuk
   role: speaker
   confirmed: true
-  title: Speaker
   affiliation:
     name: Pixar Animation Studios
     position: Technical Director
@@ -217,14 +210,14 @@
 - name: Richard Kogelnig
   role: track
   tracks: [alternate]
-  title: "Game Developer"
   affiliation:
+    url: http://www.mipumi.com/
+    position: Game Developer
     name: Mi'pu'mi
   bio: ""
 
 - name: Antonios Liapis
   role: speaker
-  title: Speaker
   affiliation: 
     name: Institute of Digital Games (University of Malta)
     url: http://www.game.edu.mt/
@@ -242,7 +235,6 @@
 
 - name: Domitile Lourdeaux
   role: speaker
-  title: Speaker
   affiliation: 
     name: "CNRS, Heudiasyc Lab"
     url: https://www.hds.utc.fr
@@ -251,7 +243,6 @@
 - name: Freyr Magnússon
   role: speaker
   confirmed: true
-  title: Speaker
   affiliation:
     name: CCP Games
     position: Senior Software Engineer
@@ -261,7 +252,6 @@
 
 - name: Miloš Milošević
   role: speaker
-  title: Speaker
   affiliation:
     name: Nordeus
     url: http://www.nordeus.com/
@@ -273,14 +263,12 @@
 
 - name: Mikko Mononen
   role: speaker
-  title: Speaker
   affiliation: 
     name: Unity Technologies
     url: http://unity3d.com/company
 
 - name: Julien Pettré
   role: speaker
-  title: Speaker
   affiliation:
     name: INRIA
     url: http://www.inria.fr/
@@ -294,7 +282,6 @@
 
 - name: Luis Angel Vicente Sanchez
   role: speaker
-  title: Speaker
   affiliation: 
     name: Mind Candy
     url: http://mindcandy.com/
@@ -306,7 +293,6 @@
 
 - name: Kevin Schmidt
   role: speaker
-  title: Speaker
   affiliation:
     name: Mind Candy
     url: http://mindcandy.com/
@@ -319,7 +305,6 @@
 - name: Csaba Toth
   role: speaker
   confirmed: true
-  title: Speaker
   tracks: [decisions]
   affiliation: 
     name: The Creative Assembly
@@ -331,7 +316,6 @@
 
 - name: Simon Worgan
   role: speaker
-  title: Speaker
   affiliation:
     name: Jagex
     url: http://www.jagex.com/
