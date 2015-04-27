@@ -96,7 +96,7 @@
         {% for talk in talks %}
             {% for speaker in talk.speakers %}
                 {% if speaker == d.name %}
-                    {% if tracks contains topics.id %}
+                    {% if tracks contains topic.id %}
                     {% else %}
                     {% capture tracks %}{% if tracks != "" %}{{tracks}},{% endif %}{{topic.id}}{% endcapture %}
                     {% endif %}
