@@ -35,7 +35,9 @@ section.people {
             p.affiliation {
                 a { text-decoration: none; }
             }
-            p.affiliation-position.no-data { display: none; }
+            p.affiliation-position.no-data {
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: none; } 
+            }
             &:not(.last-row) {
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-bottom: 2em } 
             }
