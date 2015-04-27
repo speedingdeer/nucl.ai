@@ -81,38 +81,41 @@
     {% endif %}
 
     <ul>
-    {% comment %} get Tracks Chairs tracks {% endcomment %}
-    {% if isTrackPage %}
-    {% else %}
-        {% for topic in d.tracks %}
-            <li class="track-topic">
-                <a href="/track/{{topic}}">
-                {% for t in site.data.topics %}
-                    {% if t.id == topic %}
-                        <a href="/track/{{t.id}}">{{t.title}}</a>
-                    {% endif %}
-                {% endfor %}
-                </a>
-            </li>
-        {% endfor %}
-    {% endif %}
- 
-    {% comment %} get speaker tracks {% endcomment %}
+
+    {% assign tracks = "" %}
+
+    {% for topic in d.tracks %}
+        {% if tracks contains topics %}
+        {% else %}
+        {% capture tracks %}{% if tracks != "" %}{{tracks}},{% endif %}{{topic}}{% endcapture %}
+        {% endif %}
+    {% endfor %}
 
     {% for topic in site.data.topics %}
         {% assign talks = site.data.tracks[topic.id] %}
         {% for talk in talks %}
             {% for speaker in talk.speakers %}
                 {% if speaker == d.name %}
-                    {% if isTrackPage %}
+                    {% if tracks contains topics.id %}
                     {% else %}
-                    <li class="track-topic">
-                        <a href="/track/{{topic.id}}">{{topic.title}}</a>
-                    </li>
+                    {% capture tracks %}{% if tracks != "" %}{{tracks}},{% endif %}{{topic.id}}{% endcapture %}
                     {% endif %}
                 {% endif %}
             {% endfor %}
         {% endfor %}
     {% endfor %}
+    {% assign tracksArray = tracks | split:","%}
+    {% for topic in tracksArray | split:"," %}
+        <li class="track">
+            <a href="/track/{{topic}}">
+                {% for t in site.data.topics %}
+                    {% if t.id == topic %}
+                        {{t.title}}
+                    {% endif %}
+                {% endfor %}
+            </a>
+        </li>
+    {% endfor %}
+
     </ul>
 </item>
