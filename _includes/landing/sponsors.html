@@ -1,16 +1,21 @@
 <section class="sponsors inline">
     <a class="anchor" id="sponsors"></a>
-    <h2>
-        Our Sponsors & Partners
-    </h2>
     <grid>
+        <h2>
+            Our Sponsors
+        </h2>
         <content>
         {% for item in site.data.sponsors %}
             {% include /landing/sponsor.html %}
         {% endfor %}
-        <div style="clear: both"></div>
+        </content>
+        <h2>
+            Our Partners
+        </h2>
+        <content>
         {% for item in site.data.partners %}
             {% include /landing/sponsor.html %}
         {% endfor %}
+        </content>
     </grid>
 </section>
