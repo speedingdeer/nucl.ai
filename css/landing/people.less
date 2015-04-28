@@ -8,13 +8,17 @@ section.people {
                 vertical-align: middle;
                 height: inherit;
                 h3 { padding-bottom: 0; }
-            }
-        }
-        item.short-bio {
-            p.text, h3 {
+                p.text, h3 {
                 color: lighten(@GREY, 10%)
+                }
+                a { opacity: 0.85; }
             }
-            a { opacity: 0.85; }
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: none; }
+        }
+        item.short-bio-mobile {
+            display: none;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: block; }
+            font-size: 0.8em;
         }
         item.description {
             p.conference-title {
