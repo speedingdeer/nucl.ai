@@ -1,6 +1,10 @@
 <item class="sponsor">
     <div class="logo-wrap table">
-        {% capture logo %}/img/sponsors/{{ item.id }}.png{% endcapture %}
+        {% if item.logo %}
+            {% capture logo %}/img/sponsors/{{ item.logo }}{% endcapture %}
+        {% else %}
+            {% capture logo %}/img/sponsors/{{ item.id }}.png{% endcapture %}
+        {% endif %}
         <div class="logo-center centered-cell">
             <a style="background-image: url('{{ logo |  prepend: site.baseurl }}')" href="{{ item.homepage }}" target="_blank"></a>
         </div>

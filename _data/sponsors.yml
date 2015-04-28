@@ -2,6 +2,12 @@
   name: "Masa Group"
   homepage: http://www.masalife.net/
 
+- id: ca
+  name: "Creative Assembly"
+  logo: ca.gif
+  homepage: http://www.creative-assembly.com/
+
+
 - id: sproing
   name: "Sproing"
   homepage: http://www.sproing.com/

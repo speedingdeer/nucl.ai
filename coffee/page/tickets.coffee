@@ -38,8 +38,11 @@ $ ->
     
     if $(@).parent().parent().attr("name") == "Access to the Main Amphitheatre"
       window.location = "/program/overview/#main-amphitheatre"
+      return false
     if $(@).parent().parent().attr("name") == "Access to the Masterclass Room"
       window.location = "/program/overview/#masterclass-room"
+      return false
     if $(@).parent().parent().attr("name") == "Access to the Open Laboratory"
       window.location = "/program/overview/#open-laboratories"
+      return false
     scrollToEventbriteTickets()
