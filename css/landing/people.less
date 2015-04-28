@@ -1,6 +1,15 @@
 section.people {
     min-height: 0px;
     &.thumbnails-grid content {
+        div.short-bio-wrap {
+            .column(8,12);
+            item.short-bio {
+                display: table-cell;
+                vertical-align: middle;
+                height: inherit;
+                h3 { padding-bottom: 0; }
+            }
+        }
         item.description {
             p.conference-title {
                 display: inline-block;
@@ -26,13 +35,14 @@ section.people {
                     text-align: inherit;
                     padding-top: 25px;
                 } 
-                margin-top: 5px;
+                padding-top: 5px;
                 padding-bottom: 10px;
                 p {
                     margin: 0;
                 }
             }
             p.affiliation {
+                @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) { padding-left: 10px; }
                 a { text-decoration: none; }
             }
             p.affiliation-position.no-data {

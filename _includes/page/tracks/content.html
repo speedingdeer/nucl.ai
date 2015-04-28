@@ -65,7 +65,7 @@
 <section class="none separator"></section>
 
 {% if items %}
-<section class="thumbnails-grid tracks-content" id="track-content">
+<section class="thumbnails-grid tracks-content people left-side-thumbnail" id="track-content">
     <grid>
         <h2> Keynotes and Presentations </h2>
         <content>
@@ -82,9 +82,11 @@
                     {% assign aClass = "scrollable" %}
                     {% if item.speakers.first == item.speakers.last %}
                         {% assign itemsInRow = 3 %}
+                        {% assign shortBio = true %}
                     {% else %}
                         {% assign itemsInRow = 4 %}
                     {% endif %}
+                        {% assign disableAll = true %}
                         <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
                         {% include thumbnails.html %}
                     </div>
@@ -96,5 +98,6 @@
 {% endif %}
 
 {% assign disableAll = false %}
+{% assign shortBio = false %}
 {% assign aClass = "" %}
 {% assign titlebar = "Browse Conference Tracks" %}

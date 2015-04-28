@@ -69,16 +69,7 @@
         {% endfor %}
     </ul>
 
-    {% if d.bio %}
-        {% for paragraph in d.bio %}
-            <p class="bio">
-                {{ paragraph }}
-            </p>
-        {% endfor %}
-    {% else %} 
-        {% comment%} put at least one even empty bio to not breake layout {% endcomment%}
-        <p class="bio"></p>
-    {% endif %}
+    <p class="bio"> {{ d.bio }} </p>
 
     <ul>
 
@@ -104,7 +95,7 @@
             {% endfor %}
         {% endfor %}
     {% endfor %}
-    {% assign tracksArray = tracks | split:","%}
+    {% assign tracksArray = tracks | split:"," %}
     {% for topic in tracksArray | split:"," %}
         <li class="track">
             <a href="/track/{{topic}}">

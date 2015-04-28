@@ -35,6 +35,7 @@
 
     {% if thumbnail.id and thumbnail.id == id %} {% assign selected="selected allows-selcted" %} {% else %} {% assign selected="" %} {% endif %}
     {% capture modulo %}{{ forloop.index | modulo:itemsInRow }}{% endcapture %}
+
     <item class="thumbnail {{thumbnail.id}}">
         <thumbnail-wrap>
             <a id="thumbnail-id-{{thumbnailId}}"href="{{href}}"class="thumbnail 
@@ -48,18 +49,35 @@
                 {{thumbnailClass}} {{selected}} {{status}}" name="{{name | escape}}" style="background-image: url('{{ picture | escape |  prepend: site.baseurl }}')">
             </a>
         </thumbnail-wrap>
-        <h3 class="thumbnail-title {{selected}} {{status}}" name="{{name | escape}}">{{ name }}
-        {% if thumbnail.disabled or disableAll %}
-            {% if thumbnail.affiliation %}
-            ,
-                {% if thumbnail.affiliation.position %}
-                    {{thumbnail.affiliation.position}} at 
+        {% if shortBio %}
+        {% else %}
+            <h3 class="thumbnail-title {{selected}} {{status}}" name="{{name | escape}}">{{ name }}
+            {% if thumbnail.disabled or disableAll %}
+                {% if thumbnail.affiliation %}
+                ,
+                    {% if thumbnail.affiliation.position %}
+                        {{thumbnail.affiliation.position}} at 
+                    {% endif %}
+                    {{thumbnail.affiliation.name}} 
                 {% endif %}
-                {{thumbnail.affiliation.name}} 
             {% endif %}
+            </h3>
         {% endif %}
-        </h3>
     </item>
+
+    {% if shortBio %}
+        <div class="short-bio-wrap">
+            <item class="short-bio">
+                <h3>{{name}}</h3>
+                <p>
+                {{thumbnail.bio | truncatewords:50 }}
+                </p>
+                <p>
+                    <a href="/#{{thumbnailId}}"> Read all about {{thumbnail.name}}</a>
+                </p>
+            </item>
+        </div>
+    {% endif %}
 
     {% if attachDescription %}
         {% capture modulo %}{{ forloop.index | modulo:itemsInRow }}{% endcapture %}

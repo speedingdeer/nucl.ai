@@ -14,6 +14,7 @@ class Thumbnails
     ## select jquery object
     @svg = @section.find("svg")
     @wraps =  @section.find("thumbnail-wrap")
+    @shortBios = @section.find("div.short-bio-wrap")
     @thumbnails = @section.find("a.thumbnail")
 
     @checkBckgImg()
@@ -213,7 +214,10 @@ class Thumbnails
       if borderWidth < 1 then borderWidth = 1
       @.jQthumbnail.css( {"border-width": borderWidth } )
       @.jQthumbnail.css( { "opacity": 1 } )
-
+    
+    height = @wraps.first().height()
+    @shortBios.each ->
+      $(@).height(height)
 
   clearLine: ->
     if ! @svg then return # don't try to draw i svg isn't defined
