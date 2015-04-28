@@ -80,12 +80,8 @@
                     </div>
                     {% assign attachDescription = false %}
                     {% assign aClass = "scrollable" %}
-                    {% if item.speakers.first == item.speakers.last %}
                         {% assign itemsInRow = 3 %}
                         {% assign shortBio = true %}
-                    {% else %}
-                        {% assign itemsInRow = 4 %}
-                    {% endif %}
                         {% assign disableAll = true %}
                         <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
                         {% include thumbnails.html %}
