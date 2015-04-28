@@ -725,7 +725,12 @@ section.splash-screen splash content titles .right h2.note span {
   display: block;
 }
 .thumbnails-grid content item.description div.thumbnail-title-wrap {
-  margin: 15px 0;
+  margin: 15px 0 5px;
+}
+@media screen and (max-width: 432px) {
+  .thumbnails-grid content item.description div.thumbnail-title-wrap {
+    margin: 15px 0 0 0;
+  }
 }
 .thumbnails-grid content item.description .thumbnail-title {
   color: #ff9300;
@@ -1470,12 +1475,26 @@ section.people.thumbnails-grid content div.short-bio-wrap item.short-bio {
 section.people.thumbnails-grid content div.short-bio-wrap item.short-bio h3 {
   padding-bottom: 0;
 }
-section.people.thumbnails-grid content item.short-bio p.text,
-section.people.thumbnails-grid content item.short-bio h3 {
+section.people.thumbnails-grid content div.short-bio-wrap item.short-bio p.text,
+section.people.thumbnails-grid content div.short-bio-wrap item.short-bio h3 {
   color: #9a9a9a;
 }
-section.people.thumbnails-grid content item.short-bio a {
+section.people.thumbnails-grid content div.short-bio-wrap item.short-bio a {
   opacity: 0.85;
+}
+@media screen and (max-width: 432px) {
+  section.people.thumbnails-grid content div.short-bio-wrap {
+    display: none;
+  }
+}
+section.people.thumbnails-grid content item.short-bio-mobile {
+  display: none;
+  font-size: 0.8em;
+}
+@media screen and (max-width: 432px) {
+  section.people.thumbnails-grid content item.short-bio-mobile {
+    display: block;
+  }
 }
 section.people.thumbnails-grid content item.description p.conference-title {
   display: inline-block;
@@ -1490,10 +1509,16 @@ section.people.thumbnails-grid content item.description p.track-topic a {
 section.people.thumbnails-grid content item.description p.links {
   display: inline-block;
   float: right;
+  margin-bottom: 0;
 }
 section.people.thumbnails-grid content item.description p.links a.twitter {
   margin-left: 15px;
   margin-top: -7px;
+}
+@media screen and (max-width: 432px) {
+  section.people.thumbnails-grid content item.description p.links a.twitter {
+    margin-top: -3px;
+  }
 }
 section.people.thumbnails-grid content item.description p.bio {
   clear: both;
