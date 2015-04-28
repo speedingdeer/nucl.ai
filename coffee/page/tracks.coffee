@@ -8,7 +8,7 @@ $ ->
     thumbnails = new Thumbnails "track-content", true, true
 
   if $("#section-tracks-people").length > 0
-    thumbnails = new Thumbnails "section-tracks-people", true, false
+    thumbnails = new Thumbnails "section-tracks-people", true, true
 
   $("h3 a, li a.scrollable").click ->
     id = $(@).attr("href").split("#")[1]
