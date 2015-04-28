@@ -1,9 +1,38 @@
 form.newsletter-form {
+    margin: 3em 0 2em 0;
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {
+        margin: 2em 0 1em 0;
+    }
     input[type="text"], input[type="email"] {
-        width: calc(~"100% - 2 * @{INPUT_FIELD_HORIZONTAL_PADDING}");
+        font-size: 1em;
+        padding: 0.8em;
+        margin-left: -0.8em;
+        margin-bottom: 1em;
+        width: 100%;
+        color: lighten(@BLACK, 25%);
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {
+            font-size: 0.8em;
+            padding: 0.4em;
+            margin-left: -0.4em;
+        }
     }
     input[type="submit"] {
-        margin-top: 10px;
+        margin-top: 2em;
+        font-size: 1.1em;
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {
+            margin: 1em 0;
+            font-size: 0.9em;
+        }
+        color: @WHITE;
+        font-weight: normal;
+    }
+
+    div.fieldgroup {
+        @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) { 
+            .column(8);
+            .push(2);
+        }
+        .column(12);
     }
 
     div.submit-holder {
