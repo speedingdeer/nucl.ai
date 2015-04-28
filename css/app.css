@@ -177,17 +177,9 @@ a.social.facebook:hover {
     height: 40px;
   }
 }
-form .fieldgroup {
-  padding-bottom: 10px;
-}
 form input {
   border: none;
   outline: none;
-}
-form input[type="text"],
-form input[type="email"] {
-  padding: 5px 10px;
-  font-size: 11pt;
 }
 form input[type="button"],
 form input[type="submit"] {
@@ -1145,12 +1137,57 @@ section:first-child content,
 section:first-child h2 {
   opacity: 1;
 }
+form.newsletter-form {
+  margin: 3em 0 2em 0;
+}
+@media screen and (max-width: 432px) {
+  form.newsletter-form {
+    margin: 2em 0 1em 0;
+  }
+}
 form.newsletter-form input[type="text"],
 form.newsletter-form input[type="email"] {
-  width: calc(100% - 2 * 10px);
+  font-size: 1em;
+  padding: 0.8em;
+  margin-left: -0.8em;
+  margin-bottom: 1em;
+  width: 100%;
+  color: #404040;
+}
+@media screen and (max-width: 432px) {
+  form.newsletter-form input[type="text"],
+  form.newsletter-form input[type="email"] {
+    font-size: 0.8em;
+    padding: 0.4em;
+    margin-left: -0.4em;
+  }
 }
 form.newsletter-form input[type="submit"] {
-  margin-top: 10px;
+  margin-top: 2em;
+  font-size: 1.1em;
+  color: #ffffff;
+  font-weight: normal;
+}
+@media screen and (max-width: 432px) {
+  form.newsletter-form input[type="submit"] {
+    margin: 1em 0;
+    font-size: 0.9em;
+  }
+}
+form.newsletter-form div.fieldgroup {
+  display: inline;
+  float: left;
+  width: 97.91666667%;
+  margin: 0 1.04166667%;
+}
+@media screen and (min-width: 433px) {
+  form.newsletter-form div.fieldgroup {
+    display: inline;
+    float: left;
+    width: 64.58333333%;
+    margin: 0 1.04166667%;
+    margin-left: 17.70833333%;
+  }
 }
 form.newsletter-form div.submit-holder {
   text-align: center;
@@ -1797,11 +1834,20 @@ section.news-feed content tr:last-child > td {
 sections.page section.contact content {
   display: inline;
   float: left;
-  width: 97.91666667%;
+  width: 64.58333333%;
   margin: 0 1.04166667%;
+  margin-left: 17.70833333%;
 }
 sections.page section.contact content span.channel {
   color: #a5cce9;
+  white-space: nowrap;
+}
+section.stay-informed content {
+  display: inline;
+  float: left;
+  width: 64.58333333%;
+  margin: 0 1.04166667%;
+  margin-left: 17.70833333%;
 }
 sections.page section.venue content,
 sections.page section.getting-to-campus content {
@@ -2223,24 +2269,6 @@ sections.page section.faq content item.tickets-review .table.all-access .title {
 }
 sections.page section.faq content p.answer {
   opacity: 0.75;
-}
-sections.page section.terms-and-conditions content {
-  display: inline;
-  float: left;
-  width: 97.91666667%;
-  margin: 0 1.04166667%;
-}
-sections.page section.terms-and-conditions content p {
-  line-height: 1.25;
-}
-@media screen and (max-width: 432px) {
-  sections.page section.terms-and-conditions content p {
-    line-height: 1em;
-    font-size: 0.7em;
-  }
-}
-sections.page section.terms-and-conditions content p.note {
-  padding: 1.5em 0;
 }
 section.program-schedule content {
   display: inline;
