@@ -8,13 +8,17 @@ section.people {
                 vertical-align: middle;
                 height: inherit;
                 h3 { padding-bottom: 0; }
-            }
-        }
-        item.short-bio {
-            p.text, h3 {
+                p.text, h3 {
                 color: lighten(@GREY, 10%)
+                }
+                a { opacity: 0.85; }
             }
-            a { opacity: 0.85; }
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: none; }
+        }
+        item.short-bio-mobile {
+            display: none;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: block; }
+            font-size: 0.8em;
         }
         item.description {
             p.conference-title {
@@ -28,7 +32,12 @@ section.people {
             p.links {
                 display: inline-block;
                 float: right;
-                a.twitter { margin-left: 15px; margin-top: -7px; }
+                margin-bottom: 0;
+                a.twitter {
+                    margin-left: 15px;
+                    margin-top: -7px; 
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-top: -3px; }
+                }
             }
             p.bio {
                 clear: both;
