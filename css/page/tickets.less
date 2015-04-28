@@ -58,6 +58,15 @@ sections.page section.tickets {
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: @table_line_height_smartphone;  }
                 } 
             }
+            //@TODO do it better please
+            &[name="Access to the Main Amphitheatre"], &[name="Access to the Masterclass Room"], &[name="Access to the Open Laboratory"]  {
+                div.table { 
+                     div.centered-cell.hovered {
+                        background-color: fade(@LIGHT_BLUE, 50%);
+                     }
+                }
+            }
+
             div.table { 
                 .cell(); 
                 background-color: @DARK_GREY;

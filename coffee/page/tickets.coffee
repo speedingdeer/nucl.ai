@@ -34,4 +34,12 @@ $ ->
     return false
 
   if $(".tickets.prices").length == 0 then return
-  $(".tickets.prices .centered-cell, .conference-good .centered-cell").click scrollToEventbriteTickets
+  $(".tickets.prices .centered-cell, .conference-good .centered-cell").click ->
+    
+    if $(@).parent().parent().attr("name") == "Access to the Main Amphitheatre"
+      window.location = "/program/overview/#main-amphitheatre"
+    if $(@).parent().parent().attr("name") == "Access to the Masterclass Room"
+      window.location = "/program/overview/#masterclass-room"
+    if $(@).parent().parent().attr("name") == "Access to the Open Laboratory"
+      window.location = "/program/overview/#open-laboratories"
+    scrollToEventbriteTickets()
