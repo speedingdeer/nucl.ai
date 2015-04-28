@@ -9,7 +9,10 @@
                 {% for person in site.data.people %}
                     {% for track in person.tracks %}
                         {% if track == item.id %}
-                            {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+                            {% if names contains person.name %}
+                            {% else %}
+                                {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+                            {% endif %}
                         {% endif %}
                     {% endfor %}
                 {% endfor %}
@@ -17,7 +20,10 @@
                 {% assign talks = site.data.tracks[item.id] %}
                 {% for talk in talks %}
                     {% for speaker in talk.speakers %}
-                        {% capture names %}{% if names != "" %}{{names}},{% endif %}{{speaker}}{% endcapture %}
+                        {% if names contains speaker %}
+                        {% else %}
+                            {% capture names %}{% if names != "" %}{{names}},{% endif %}{{speaker}}{% endcapture %}
+                        {% endif %}
                     {% endfor %}
                 {% endfor %}
 
