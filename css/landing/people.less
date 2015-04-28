@@ -32,7 +32,12 @@ section.people {
             p.links {
                 display: inline-block;
                 float: right;
-                a.twitter { margin-left: 15px; margin-top: -7px; }
+                margin-bottom: 0;
+                a.twitter {
+                    margin-left: 15px;
+                    margin-top: -7px; 
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-top: -3px; }
+                }
             }
             p.bio {
                 clear: both;
