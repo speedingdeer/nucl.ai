@@ -1,3 +1,21 @@
+- title: "Inside Watson: How IBM Is Making Computers Understand Language"
+  author: Dale Lane (IBM Watson)
+  date: "Apr 29, 2015"
+  link: "/track/cognitive/"
+  picture: "/img/tracks/WatsonIBM_1.jpg"
+
+- title: "The AI Systems in Fortnite and its Director"
+  author: John Abercrombie (Epic Games)
+  date: "Apr 25, 2015"
+  link: "/track/systems/"
+  picture: "/img/tracks/Fortnite_1.jpg"
+
+- title: "Tactical Planning with Real-time MCTS in Fable Legends"
+  author: Gwaredd Mountain (Lionhead)
+  date: "Apr 21, 2015"
+  link: "/track/decisions/#tactical-planning-in-fable-legends"
+  picture: "/img/tracks/FableLegends_2.jpg"
+
 - title: "Building the Massive Crowds of Assassin's Creed Unity"
   author: François Cournoyer and Antoine Fortier (Ubisoft Montreal)
   date: "Apr 16, 2015"

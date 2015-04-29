@@ -17,7 +17,7 @@ permalink: /tickets/
         {% endcomment %}
         <content>
 
-        <p class="bigger wider">Join developers from all over the world and secure your ticket for this year's<a href="/">nucl.ai</a> now!  Three days of artificial intelligence theory and practice packed into three parallel tracks per day with many networking opportunities are waiting for you in Vienna.</p>
+        <p class="bigger wider">Join developers from all over the world and secure your ticket for this year's <a href="/">nucl.ai</a> now!  Three days of artificial intelligence theory and practice packed into three parallel tracks per day with many networking opportunities are waiting for you in Vienna.</p>
 
         {% for ticket in site.data.tickets_price %}
             {% if ticket.date and ticket.date != "" %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}

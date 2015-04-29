@@ -70,7 +70,7 @@
 
 - name: Alex J. Champandard
   role: org
-  tracks: [procedural]
+  tracks: [procedural, cognition]
   title: "Co-Founder & Co-Ordinator"
   twitter: alexjc
   affiliation:
@@ -351,7 +351,7 @@
 
 - name: Gwaredd Mountain
   role: speaker
-  title: Speaker
+  confirmed: true
   affiliation:
     name: Lionhead
     url: http://www.lionhead.com/
@@ -361,3 +361,12 @@
     such as Microsoft, Criterion and Climax. Despite this he still likes making games. He is currently part of the team 
     developing the AI for Fable Legends. Noted for his unpronounceable first name and dislike of writing bios.
   twitter: gwareddm
+
+- name: Dale Lane
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: IBM
+    url: http://www.ibm.com/
+    position: IBM Watson Developer
+  twitter: dalelane

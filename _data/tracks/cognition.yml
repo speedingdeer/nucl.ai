@@ -1,0 +1,7 @@
+- title: "Inside Watson: How IBM Is Making Computers Understand Language"
+  description: >
+    For decades, our books, movies and television programmes have portrayed a vision of a future where we can interact with our computers naturally, using our own languages like English. But this still isn't the reality for our day-to-day interactions with most computers. Why do our computers still not understand us?
+    Dale will talk about why this is taking so long, and describe his work as a developer on the IBM Watson project: IBM's latest attempt to move us a little closer towards this vision of computers able to understand questions from people in natural language.  He will explain the architecture behind Watson, and describe the way that Watson answers questions - how it tries to extract the meaning behind a question and uses this to identify and evaluate specific answers. 
+    Watson became better known when it was entered into the US television game show Jeopardy in 2011. Dale will show how Watson has changed since then, and some of the ways the technology has been put to use since.  
+  speakers:
+    - Dale Lane
