@@ -20,7 +20,9 @@
                         {% if track == item.id %}
                             {% if names contains person.name %}
                             {% else %}
-                                {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+                                {% if person.role != "speaker" %}
+                                    {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+                                {% endif %}
                             {% endif %}
                         {% endif %}
                     {% endfor %}
