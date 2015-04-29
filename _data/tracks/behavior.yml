@@ -3,3 +3,14 @@
     This talk will cover the introduction of Behavior Trees and Blackboards into EVE Online and reviewing some of the challenges involved.  Also covered some of the design choices made in order to manage behavior modularity and group behaviors while keeping behaviors reactive and event driven.
   speakers:
     - Freyr Magnússon
+
+#- title: "Behavior design for an operational military simulation"
+#  description: >
+#    For armies, training is both very important and expensive and potentially dangerous to do in the real worlds; 
+#    the use of simulations is therefore widespread. When using simulations to confront trainees to face complex situations, 
+#    the modeling of realistic automated forces becomes essential. This implies the construction of behavior models 
+#    to make automated forces behave in the simulated environment.
+#    This talk will focus on this construction process, from the analysis of military doctrine and the end user needs 
+#    to the behavior modeling by specialists and finally the test and validation process. 
+#    MASA SWORD, a simulation for command post training used by many armies throughout will serve as an illustration for 
+#    this presentation.

@@ -218,9 +218,13 @@
 
 - id: cognition
   title: "Cognitive Bots & Language"
+  content: >
+    <img src="/img/tracks/WatsonIBM_1.jpg"/>
+    <p class="credit"><u>Image Credit</u>: IBM Watson on Jeopardy</p> 
+    <p></p>
   description: >
     This track focuses on cognitive reasoning, natural language processing and generation, 
     and chatbots.
   credit:
-    title: Banished
-    url: http://www.shiningrocksoftware.com/game/
+    title: IBM Watson
+    url: http://www.ibm.com/smarterplanet/us/en/ibmwatson/
