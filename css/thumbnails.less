@@ -20,7 +20,9 @@
                 overflow: visible;
                 .thumbnail-title {
                     font-size: 16px;
-                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.5em; }
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        font-size: 0.5em;
+                    }
                     opacity: 0.75;
 
                     &.selected.allows-selcted {
@@ -123,7 +125,10 @@
             }
             &.selected { display: block; }
             color: @LIGHT_GREY;
-            div.thumbnail-title-wrap { margin: 15px 0; }
+            div.thumbnail-title-wrap { 
+                margin: 15px 0 5px;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin: 15px 0 0 0; }
+            }
             .thumbnail-title {
                 color: @ORANGE;
                 text-align: center;

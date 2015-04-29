@@ -46,11 +46,11 @@
     </div>
 
     <p class="conference-title"> {{ d.title }} </p>
-    <p class="links"> 
     {% if d.twitter %}
-        <a class="social twitter" href="http://twitter.com/{{d.twitter}}" target="_blank"></a>
+        <p class="links"> 
+            <a class="social twitter" href="http://twitter.com/{{d.twitter}}" target="_blank"></a>
+        </p>
     {% endif %}
-    </p>
     {% comment %} get speaker talks {% endcomment %}
     <ul class="talks-list">
         {% for topic in site.data.topics %}

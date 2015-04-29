@@ -77,6 +77,15 @@
                 </p>
             </item>
         </div>
+        <item class="short-bio-mobile">
+                <h3>{{name}}</h3>
+                <p class="text">
+                {{thumbnail.bio | truncatewords:50 }}
+                </p>
+                <p>
+                    <a href="/#{{thumbnailId}}"> Read full bio &raquo; {{thumbnail.name}}</a>
+                </p>
+            </item>
     {% endif %}
 
     {% if attachDescription %}
