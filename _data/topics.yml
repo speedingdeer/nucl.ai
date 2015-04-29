@@ -27,7 +27,7 @@
     url: http://aigamedev.com/
 
 - id: decisions
-  title: "Real-time Decision Systems"
+  title: "Real-time Decisions"
   description: >
     How do you build your simulation to respond to user input at interactive rates,
     especially if it needs to make intelligent decisions?  Artificial intelligence
@@ -189,7 +189,7 @@
     url: http://www.gamasutra.com/blogs/DmitryNozhnin/417356/
 
 - id: systems
-  title: "Systemic Design"
+  title: "Systemic Design, AI Directors"
   content: >
     <img src="/img/tracks/Fortnite_1.jpg"/>
     <p class="credit"><u>Image Credit</u>: Fortnite by Epic Games</p> 
@@ -216,11 +216,11 @@
     title: Far Cry 4
     url: http://far-cry.ubi.com/
 
-- id: simulations
-  title: "Training & Simulations"
+- id: cognitive
+  title: "Cognitive Bots & Language"
   description: >
-    <p>This track focuses on AI in serious games, such as simulations for training.</p>
+    This track focuses on cognitive reasoning, natural language processing and generation, 
+    and chatbots.
   credit:
     title: Banished
     url: http://www.shiningrocksoftware.com/game/
-  disabled: true
