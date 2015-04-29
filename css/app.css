@@ -1820,7 +1820,7 @@ section.news-feed content td.text {
   }
 }
 section.news-feed content tr > td {
-  padding-bottom: 1.5em;
+  padding-bottom: 0.5em;
 }
 section.news-feed content tr:last-child > td {
   padding-bottom: 0;
