@@ -351,7 +351,7 @@
 
 - name: Gwaredd Mountain
   role: speaker
-  title: Speaker
+  confirmed: true
   affiliation:
     name: Lionhead
     url: http://www.lionhead.com/
@@ -364,8 +364,9 @@
 
 - name: Dale Lane
   role: speaker
-  title: IBM Watson Developer
+  confirmed: true
   affiliation:
     name: IBM
     url: http://www.ibm.com/
+    position: IBM Watson Developer
   twitter: dalelane
