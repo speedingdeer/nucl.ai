@@ -66,9 +66,15 @@
     </item>
 
     {% if shortBio %}
+
+        {% assign affiliation=""%}
+        {% if thumbnail.affiliation.name %}
+            {% capture affiliation %}, {{thumbnail.affiliation.name}}{% endcapture %}
+        {% endif %}
+
         <div class="short-bio-wrap">
             <item class="short-bio">
-                <h3>{{name}}</h3>
+                <h3>{{name}}{{affiliation}}</h3>
                 <p class="text">
                 {{thumbnail.bio | truncatewords:50 }}
                 </p>
@@ -78,7 +84,7 @@
             </item>
         </div>
         <item class="short-bio-mobile">
-                <h3>{{name}}</h3>
+                <h3>{{name}}{{affiliation}}</h3>
                 <p class="text">
                 {{thumbnail.bio | truncatewords:50 }}
                 </p>
