@@ -221,10 +221,26 @@
   content: >
     <img src="/img/tracks/WatsonIBM_1.jpg"/>
     <p class="credit"><u>Image Credit</u>: IBM Watson on Jeopardy</p> 
-    <p></p>
+    <p>Some of the biggest challenges for AI involve interacting with humans, understanding
+    and modeling their cognitive process, and using natural language as part of the process!
+    There are many challenges involved here, and there's a lot to learn from early applications
+    ranging from Chat Bots to Twitter agents, and their embodied counterparts that can process
+    speech patterns and speak sentences!</p>
+    <p>This track investigates the techniques and approaches to building characters or bots that
+    can interact over text and voice.  What are common patterns and libraries to use?  How does
+    this fit with common behavioral techniques?  Which tools can help assist the process?</p>
+  keywords:
+    - cognitive reasoning
+    - speech recognition
+    - natural language processing
+    - natural language generation
+    - voice synthesis
   description: >
-    This track focuses on cognitive reasoning, natural language processing and generation, 
-    and chatbots.
+    Some of the biggest challenges for AI involve interacting with humans, understanding
+    and modeling their cognitive process, and using natural language as part of the process!
+    There are many challenges involved here, and there's a lot to learn from early applications
+    ranging from Chat Bots to Twitter agents, and their embodied counterparts that can process
+    speech patterns and speak sentences!
   credit:
     title: IBM Watson
     url: http://www.ibm.com/smarterplanet/us/en/ibmwatson/
