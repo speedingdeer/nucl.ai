@@ -10,36 +10,68 @@ permalink: /program/schedule/
         <content>
             <p class="note">Please note that this schedule is tentative, and allocation of tracks for each day may change.</p>
             {% for day in site.data.schedule %}
-                <table> 
-                    <tr>
-                        <td>
-                            <div class="button-wrap"> 
-                                <div class="button-expand"></div>
-                            </div>
-                            <div class="titlebar-wrap">
-                                <div class="content-wrap">
-                                    <h3>
-                                        {{day.title}}
-                                    </h3>
-                                    <div class="legend">
-                                        {% for track in day.tracks %}
-                                            <div class="track-wrap">
-                                                    {% for topic in site.data.topics %}
-                                                        {% if topic.id == track %}
-                                                            <div class="track {{track}}">
-                                                                        <div class="marker"></div>
-                                                                        <p class="track-name"> {{topic.title}} </p>
-                                                            </div>
-                                                        {% endif %}
-                                                    {% endfor %}
-                                            </div>
-                                        {% endfor %}
+                <div class="day-wrap">
+                    <table> 
+                        <tr>
+                            <td>
+                                <div class="button-wrap"> 
+                                    <div class="button-expand"></div>
+                                </div>
+                                <div class="titlebar-wrap">
+                                    <div class="content-wrap">
+                                        <h3>
+                                            {{day.title}}
+                                        </h3>
+                                        <div class="legend">
+                                            {% for track in day.tracks %}
+                                                <div class="track-wrap">
+                                                        {% for topic in site.data.topics %}
+                                                            {% if topic.id == track %}
+                                                                <div class="track {{track}}">
+                                                                    <div class="marker"></div>
+                                                                    <p class="track-name"> {{topic.title}} </p>
+                                                                </div>
+                                                            {% endif %}
+                                                        {% endfor %}
+                                                </div>
+                                            {% endfor %}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="talks-list">
+                        {% comment %} Get all talks per day {% endcomment %}
+                        <tr>
+                            <td>
+                                {% for track in day.tracks %}
+                                    {% for talk in site.data.tracks[track] %}
+                                        <div class="track {{track}}" time="{{talk.time}}">
+                                            <p class="speakers"> 
+                                            {% assign firstSpeaker = true %}
+                                            {% for speaker in talk.speakers %}
+                                                {% for s in site.data.people %}
+                                                    {% if speaker == s.name %}
+                                                        <span="speker-name">
+                                                        {% if firstSpeaker  %}
+                                                        {% else %}
+                                                            and
+                                                        {% endif %}
+                                                        {{ s.name }}</span><span class="studio">, {{ s.affiliation.name }}</span>
+                                                        {% assign firstSpeaker = false %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endfor %}
+                                            </p>
+                                            <p class="title">{{talk.title}}</p>
+                                        </div>
+                                    {% endfor %}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             {% endfor %}
         </content>
     </grid>

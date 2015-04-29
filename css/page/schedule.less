@@ -6,19 +6,23 @@
 @COLOR_TRACK_DECISIONS: #ccff00;
 @COLOR_TRACK_SYSTEMS: #5cb214;
 @COLOR_TRACK_ANIMATION: #ff0031;
-@COLOR_TRACK_SIMULATIONS: white;
+@COLOR_TRACK_COGNITION: white;
 
 section.program-schedule {
     content {
       .column(12);
+        div.day-wrap { 
+            margin-bottom: 3em;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                margin-bottom: 1em;
+            }
+        }
         table {
             background-color: @DARK_GREY;
             width: 100%;
-            margin-bottom: 3em;
             padding-bottom: 3em;
             padding-top: 1em;
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                margin-bottom: 1em;
                 padding-bottom: 0.5em;
                 padding-top: 0em;
                 font-size: 0.9em; //make it smaller then text
@@ -116,17 +120,33 @@ section.program-schedule {
               color: @COLOR_TRACK_ANIMATION;
               .marker { background-color: @COLOR_TRACK_ANIMATION; }
             }
-            .track.simulations{
-              color: @COLOR_TRACK_SIMULATIONS;
-              .marker { background-color: @COLOR_TRACK_SIMULATIONS; }
+            .track.cognition {
+              color: @COLOR_TRACK_COGNITION;
+              .marker { background-color: @COLOR_TRACK_COGNITION; }
             }
 
         }
-    }
 
-    .note {
-        opacity: 0.6; 
-        font-size: 1em;
-        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.65em; }
+        table.talks-list {
+            margin-top: 1em;
+            padding-bottom: 1em; 
+            div.track {
+                padding: 0 6em;
+                p.speakers {
+                    font-size: 1em;
+                    margin-bottom: 0;
+                }
+                p.title {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .note {
+            opacity: 0.6; 
+            font-size: 1em;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.65em; }
+        }
+
     }
 }
