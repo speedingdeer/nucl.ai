@@ -1,3 +1,4 @@
+root = exports ? this # global
 
 $ ->
   speakers = $("section.program-schedule p.speakers")
@@ -26,5 +27,18 @@ $ ->
     day.find("td").html("")
     # sort by time and append
     day.append(talksArray)
-  
-    
+    day.removeClass("not-initialized")
+
+  $(".button-expand").click ->
+    button = $(@)
+    button.toggleClass "expanded"
+    name = $(@).attr "name"
+    talksList = $("table.talks-list[name='" + name + "']")
+    talksList.removeClass "not-expanded"
+    if ! button.hasClass("expanded")
+      talksList.addClass "zoomOut"
+    else
+      talksList.removeClass "zoomOut"
+    talksList.one animate.onAnimatedEnd, ->
+      if ! button.hasClass("expanded")
+        talksList.addClass("not-expanded")

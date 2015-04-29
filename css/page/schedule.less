@@ -30,7 +30,7 @@ section.program-schedule {
             h3 {
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                     margin-top: 0.5em;
-                    margin-bottom: 0;
+                    margin-bottom: 0.5em;
                 }
                 border-bottom: 1px solid white;
             }
@@ -48,6 +48,9 @@ section.program-schedule {
                         .triangle(0.5em); border-bottom: 0.8em solid;
                     }
                     display: inline-block;
+                    transition: 0.5s;
+                    &:hover { cursor: pointer; }
+                    &.expanded { .transform(rotate(180deg)); }
                 }
             }
             .titlebar-wrap {
@@ -128,16 +131,21 @@ section.program-schedule {
         }
 
         table.talks-list {
+            &.not-initialized { display: none !important; }
+            &.not-expanded { display: none; }
             margin-top: 1em;
             padding-bottom: 1em; 
             div.track {
                 padding: 0 6em;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0 2em; }
                 p.speakers {
                     font-size: 1em;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.7em; }
                     margin-bottom: 0;
                 }
                 p.title {
                     margin-top: 0;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.8em; }
                 }
             }
         }

@@ -10,12 +10,12 @@ permalink: /program/schedule/
         <content>
             <p class="note">Please note that this schedule is tentative, and allocation of tracks for each day may change.</p>
             {% for day in site.data.schedule %}
-                <div class="day-wrap">
+                <div class="day-wrap" name="{{day.title}}">
                     <table> 
                         <tr>
                             <td>
                                 <div class="button-wrap"> 
-                                    <div class="button-expand"></div>
+                                    <div class="button-expand" name="{{day.title}}"></div>
                                 </div>
                                 <div class="titlebar-wrap">
                                     <div class="content-wrap">
@@ -41,7 +41,7 @@ permalink: /program/schedule/
                             </td>
                         </tr>
                     </table>
-                    <table class="talks-list">
+                    <table class="talks-list not-initialized not-expanded animated zoomIn" name="{{day.title}}">
                         {% comment %} Get all talks per day {% endcomment %}
                         <tr>
                             <td>
@@ -64,7 +64,7 @@ permalink: /program/schedule/
                                                 {% endfor %}
                                             {% endfor %}
                                             </p>
-                                            <p class="title">{{talk.title}}</p>
+                                            <p class="title">{{talk.time}} {{talk.title}}</p>
                                         </div>
                                     {% endfor %}
                                 {% endfor %}
