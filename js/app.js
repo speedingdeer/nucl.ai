@@ -395,7 +395,74 @@
 }).call(this);
 
 (function() {
+  var root;
 
+  root = typeof exports !== "undefined" && exports !== null ? exports : this;
+
+  $(function() {
+    var days, speakers;
+    speakers = $("section.program-schedule p.speakers");
+    speakers.each(function() {
+      var idx, studio, studios, _i, _len, _results;
+      if ($(this).find(".studio").length > 1) {
+        studios = [];
+        $(this).find(".studio").each(function() {
+          return studios.push($(this));
+        });
+        _results = [];
+        for (idx = _i = 0, _len = studios.length; _i < _len; idx = ++_i) {
+          studio = studios[idx];
+          if (idx < studios.length - 1) {
+            if (studio.html() === studios[idx + 1].html()) {
+              _results.push(studio.remove());
+            } else {
+              _results.push(void 0);
+            }
+          } else {
+            _results.push(void 0);
+          }
+        }
+        return _results;
+      }
+    });
+    days = $("section.program-schedule table.talks-list");
+    days.each(function() {
+      var day, talks, talksArray;
+      day = $(this);
+      talks = day.find("div.track");
+      talksArray = [];
+      talks.each(function() {
+        return talksArray.push($(this));
+      });
+      talksArray.sort(function(a, b) {
+        var aTime, bTime;
+        aTime = a.attr("time") !== "" ? a.attr("time") : "11:59 pm";
+        bTime = b.attr("time") !== "" ? b.attr("time") : "11:59 pm";
+        return new Date("2001/01/01 " + aTime) - new Date("2001/01/01 " + bTime);
+      });
+      day.find("td").html("");
+      day.append(talksArray);
+      return day.removeClass("not-initialized");
+    });
+    return $(".button-expand").click(function() {
+      var button, name, talksList;
+      button = $(this);
+      button.toggleClass("expanded");
+      name = $(this).attr("name");
+      talksList = $("table.talks-list[name='" + name + "']");
+      talksList.removeClass("not-expanded");
+      if (!button.hasClass("expanded")) {
+        talksList.addClass("zoomOut");
+      } else {
+        talksList.removeClass("zoomOut");
+      }
+      return talksList.one(animate.onAnimatedEnd, function() {
+        if (!button.hasClass("expanded")) {
+          return talksList.addClass("not-expanded");
+        }
+      });
+    });
+  });
 
 }).call(this);
 

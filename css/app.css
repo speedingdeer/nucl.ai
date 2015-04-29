@@ -2278,16 +2278,22 @@ section.program-schedule content {
   width: 97.91666667%;
   margin: 0 1.04166667%;
 }
+section.program-schedule content div.day-wrap {
+  margin-bottom: 3em;
+}
+@media screen and (max-width: 432px) {
+  section.program-schedule content div.day-wrap {
+    margin-bottom: 1em;
+  }
+}
 section.program-schedule content table {
   background-color: #333333;
   width: 100%;
-  margin-bottom: 3em;
   padding-bottom: 3em;
   padding-top: 1em;
 }
 @media screen and (max-width: 432px) {
   section.program-schedule content table {
-    margin-bottom: 1em;
     padding-bottom: 0.5em;
     padding-top: 0em;
     font-size: 0.9em;
@@ -2299,7 +2305,7 @@ section.program-schedule content table h3 {
 @media screen and (max-width: 432px) {
   section.program-schedule content table h3 {
     margin-top: 0.5em;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
   }
 }
 section.program-schedule content table .button-wrap {
@@ -2324,6 +2330,7 @@ section.program-schedule content table .button-wrap .button-expand {
   border-bottom: 1em solid;
   border-bottom: 1.5em solid;
   display: inline-block;
+  transition: 0.5s;
 }
 @media screen and (max-width: 432px) {
   section.program-schedule content table .button-wrap .button-expand {
@@ -2334,6 +2341,16 @@ section.program-schedule content table .button-wrap .button-expand {
     border-bottom: 0.5em solid;
     border-bottom: 0.8em solid;
   }
+}
+section.program-schedule content table .button-wrap .button-expand:hover {
+  cursor: pointer;
+}
+section.program-schedule content table .button-wrap .button-expand.expanded {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
 }
 section.program-schedule content table .titlebar-wrap {
   display: inline;
@@ -2436,18 +2453,53 @@ section.program-schedule content table .track.animation {
 section.program-schedule content table .track.animation .marker {
   background-color: #ff0031;
 }
-section.program-schedule content table .track.simulations {
+section.program-schedule content table .track.cognition {
   color: white;
 }
-section.program-schedule content table .track.simulations .marker {
+section.program-schedule content table .track.cognition .marker {
   background-color: white;
 }
-section.program-schedule .note {
+section.program-schedule content table.talks-list {
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+section.program-schedule content table.talks-list.not-initialized {
+  display: none !important;
+}
+section.program-schedule content table.talks-list.not-expanded {
+  display: none;
+}
+section.program-schedule content table.talks-list div.track {
+  padding: 0 6em;
+}
+@media screen and (max-width: 432px) {
+  section.program-schedule content table.talks-list div.track {
+    padding: 0 2em;
+  }
+}
+section.program-schedule content table.talks-list div.track p.speakers {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 432px) {
+  section.program-schedule content table.talks-list div.track p.speakers {
+    font-size: 0.7em;
+  }
+}
+section.program-schedule content table.talks-list div.track p.title {
+  margin-top: 0;
+}
+@media screen and (max-width: 432px) {
+  section.program-schedule content table.talks-list div.track p.title {
+    font-size: 0.8em;
+  }
+}
+section.program-schedule content .note {
   opacity: 0.6;
   font-size: 1em;
 }
 @media screen and (max-width: 432px) {
-  section.program-schedule .note {
+  section.program-schedule content .note {
     font-size: 0.65em;
   }
 }
