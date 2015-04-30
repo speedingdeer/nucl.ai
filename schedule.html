@@ -64,7 +64,7 @@ permalink: /program/schedule/
                                                 {% endfor %}
                                             {% endfor %}
                                             </p>
-                                            <p class="title">{{talk.time}} {{talk.title}}</p>
+                                            <p class="title"><a href="/track/{{track}}/#{{talk.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">{{talk.time}} {{talk.title}}</a></p>
                                         </div>
                                     {% endfor %}
                                 {% endfor %}
