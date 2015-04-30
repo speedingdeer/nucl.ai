@@ -2489,6 +2489,10 @@ section.program-schedule content table.talks-list div.track p.speakers {
 section.program-schedule content table.talks-list div.track p.title {
   margin-top: 0;
 }
+section.program-schedule content table.talks-list div.track p.title a {
+  color: inherit;
+  text-decoration: none;
+}
 @media screen and (max-width: 432px) {
   section.program-schedule content table.talks-list div.track p.title {
     font-size: 0.8em;
