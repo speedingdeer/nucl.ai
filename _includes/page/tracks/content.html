@@ -15,10 +15,16 @@
         <content>
             <p class="intro"><span>Now in its 7th edition, <a href="/">nucl.ai</a> brings together hundreds of developers from creative industries and interactive media to resolve the biggest technical and design problems with Artificial Intelligence.  One of the event's tracks focuses specifically on</span> <b>&ldquo;{{item.title}}&rdquo;</b> <span>for an entire day.</span></p>
             {{track.content}}
-        </content>
+
+            <h3>Keywords</h3>
+            
+            <ul id="keywords">
+            {% for keyword in track.keywords %}
+                <li>{{ keyword }}</li>
+            {% endfor %}
+            </ul>
 
         {% if items %}
-        <content>
             <h3>Confirmed Talks</h3>
             <ul>
             {% for item in items %}
@@ -27,11 +33,12 @@
                 </li>
             {% endfor %}
             </ul>
-        </content>
         {% endif %}
+        </content>
     </grid>
 </section>
 
+{% comment %}
 <section class="tracks-content tracks-text call">
     <grid>
         <h2>Call For Presentations</h2>
@@ -56,6 +63,7 @@
         </content>
     </grid>
 </section>
+{% endcomment %}
 
 {% capture backgroundImg %}/img/tracks/{{item.id}}.png{% endcapture %}
 <section class="program separator" style="background-image: url('{{  backgroundImg | prepend: site.baseurl }}'); background-position: center center;">
