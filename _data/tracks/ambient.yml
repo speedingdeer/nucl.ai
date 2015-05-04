@@ -7,22 +7,41 @@
   speakers:
     - Paul Kanyuk
 
-#- title: "Crowds patches"
-#  description: >
-#    We traverse virtual worlds more and more often. Their size is always getting larger, up to the entire earth in the eaxmple 
-#    of virtual globes. Populating such virtual worlds remain a difficult challenge. Populating virtual cities like Los Santos 
-#    (GTA V) raise huge design, animation and coding efforts. Crowd simulations systems are generally used in such contexts, 
-#    and raise many difficulties for their users. In this talk, we present the crowd patches solution to populate large virtual 
-#    environments. Crowd patches are sort 3D animated textures which capture elements of precomputed crowd animations. Internal 
-#    animation trajectories are computed so that they periodic in time and have controlled boundary conditions. This way, 
-#    patches can be assembled together to form large animation, while their content can be endlessly played in loops thanks to 
-#    periodicity. In the computational point of view, animation costs are reduced to data replay. The talk we put into evidence 
-#    that the main difficulty when using crowd patches is the way to compute internal trajectories, that have to pass through 
-#    sets of spatiotemporal waypoints to satisfy some imposed boundary conditions. The talk will also demonstrate that, beyond 
-#    those difficulties, crowd patches offer opportunities for designers to design crowd animations and to populate virtual 
-#    places according to new paradigms, high level control, without need of expertise on crowd animation systems. 
-#  speakers:
-#    - Julien Pettré
+- title: "Building the Massive Crowds of Assassin’s Creed Unity"
+  description: >
+    With the limit of 40 real AIs and 120 high resolution models, we could create scenes in Assassin’s Creed Unity where 10000 
+    crowd NPCs are on screen at the same time. In this presentation, we will introduce a new technique of AI Level of Detail 
+    that has allowed us to create thousands of replicated, persistent, interactive NPCs at very low cost. We will go over how 
+    we created a pooling system that allowed us to swap a small number of legacy NPC with cheap low resolution NPCs without the 
+    player noticing. This talk will then explain how to create a simplistic AI brain to handle the behavior systems of the cheap 
+    NPCs. We will also give insights on the problems that came with integrating this technology in a huge legacy system.
+  speakers:
+    - François Cournoyer
+    - Antoine Fortier
+
+- title: "Crowds Patches"
+  description: >
+    We traverse virtual worlds more and more often. Their size is always getting larger, up to the entire earth in the eaxmple 
+    of virtual globes. Populating such virtual worlds remain a difficult challenge. Populating virtual cities like Los Santos 
+    (GTA V) raise huge design, animation and coding efforts. Crowd simulations systems are generally used in such contexts, 
+    and raise many difficulties for their users. In this talk, we present the crowd patches solution to populate large virtual 
+    environments. Crowd patches are sort 3D animated textures which capture elements of precomputed crowd animations. Internal 
+    animation trajectories are computed so that they periodic in time and have controlled boundary conditions. This way, 
+    patches can be assembled together to form large animation, while their content can be endlessly played in loops thanks to 
+    periodicity. In the computational point of view, animation costs are reduced to data replay. The talk we put into evidence 
+    that the main difficulty when using crowd patches is the way to compute internal trajectories, that have to pass through 
+    sets of spatiotemporal waypoints to satisfy some imposed boundary conditions. The talk will also demonstrate that, beyond 
+    those difficulties, crowd patches offer opportunities for designers to design crowd animations and to populate virtual 
+    places according to new paradigms, high level control, without need of expertise on crowd animation systems. 
+  speakers:
+    - Julien Pettré
+
+- title: "Creating The Epic Sky Battle In Guardians of the Galaxy"
+  description: >
+    A look at how MPC used new and old technology to create both highly art directable and autonomous simulations during the
+    final sky battle for Marvels Guardians of the Galaxy.
+  speakers:
+    - Adam Davis
 
 #- title: "Avoidance & locomotion"
 #  speakers:

@@ -1,15 +1,3 @@
-- title: "Building the Massive Crowds of Assassin’s Creed Unity"
-  description: >
-    With the limit of 40 real AIs and 120 high resolution models, we could create scenes in Assassin’s Creed Unity where 10000 
-    crowd NPCs are on screen at the same time. In this presentation, we will introduce a new technique of AI Level of Detail 
-    that has allowed us to create thousands of replicated, persistent, interactive NPCs at very low cost. We will go over how 
-    we created a pooling system that allowed us to swap a small number of legacy NPC with cheap low resolution NPCs without the 
-    player noticing. This talk will then explain how to create a simplistic AI brain to handle the behavior systems of the cheap 
-    NPCs. We will also give insights on the problems that came with integrating this technology in a huge legacy system.
-  speakers:
-   - François Cournoyer
-   - Antoine Fortier
-
 # - title: "Designing CAD tools for novices: can algorithms enhance productivity or foster creativity?"
 #   description: >
 #    As the number and the size of computer games continues to expand, game companies handle rising demand by extending their cadre, 
