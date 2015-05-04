@@ -8,10 +8,20 @@
     structure of the tree itself as well as some higher-level optimisations.
   speakers:
     - Piotr Andruszkiewicz
-    
+
 - title: "Tactical Planning and Real-time MCTS in Fable Legends"
   description: >
     Fable Legends is a 4v1 asymmetric multi-player game, in which a team of 4 heroes compete against 1 villain. This poses some 
     interesting design and programming challenges.
   speakers:
     - Gwaredd Mountain
+
+- title: "Drivatar and Machine Learning Racing Skills in the Forza Series"
+  description: >
+    The Forza Drivatar technology powering games in the Forza Horizon and Forza Motorsport series
+    is based on machine learning. It enables gameplay beyond robotic drivers and ghost replays by
+    learning player- and style-specific Drivatars that can compete with friends.  This presentation
+    will go behind the scenes in the development of Forza Drivatar, explaining the approach from a
+    technical perspective as well as the design and integration with the gameplay.
+  speakers:
+    - Jeffrey Schlimmer

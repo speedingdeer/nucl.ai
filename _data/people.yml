@@ -370,3 +370,18 @@
     url: http://www.ibm.com/
     position: IBM Watson Developer
   twitter: dalelane
+
+- name: Jeffrey Schlimmer
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: Turn 10 Studios
+    url: http://www.forzamotorsport.net/en-us/turn10
+    position: Principal AI Programmer
+  bio: >
+    Jeffrey Schlimmer is a principal AI programmer at Turn 10 and has a PhD in artificial intelligence.
+    Turn 10 Studios is the creator of the Forza Motorsport franchise. Founded in 2001 as a first-party
+    Microsoft studio, Turn 10 released the original Forza Motorsport for Xbox in 2005. The studio has
+    since gone on to release five Forza Motorsport games on various Xbox platforms, as well as two entries
+    in the Forza Horizon series. The studio’s latest game, Forza Motorsport 6 for Xbox One, was announced
+    in January 2015.
