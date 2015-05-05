@@ -65,12 +65,23 @@
   tracks: [animation]
   title: "Co-Organizer & Track Chair"
   bio: >
-    Mika has been working in the industry since late 1999 -- including IO Interactive as Senior AI Programmer on the Hitman: Absolution and Killzone: Shadow Fall for Guerrilla Games.
+    Mika has been working in the industry since late 1999 – including IO Interactive as Senior AI
+    Programmer on the Hitman: Absolution and Killzone: Shadow Fall for Guerrilla Games.
     He has specialized in both game AI and animation technology for games.
+
+- name: Noor Shaker
+  role: track
+  tracks: [procedural]
+  title: "Co-Organizer & Track Chair"
+  bio: >
+    Noor Shaker is a Postdoctoral researcher at the Center for Culture and Games at IT University
+    of Copenhagen. Her research interests include player modeling, procedural content generation,
+    computational creativity, affective computing and player behavior imitation. She is organizing
+    the Platformerai competition and chairing the IEEE task force on Player Modeling.
 
 - name: Alex J. Champandard
   role: org
-  tracks: [procedural, cognition]
+  tracks: [cognition]
   title: "Co-Founder & Co-Ordinator"
   twitter: alexjc
   affiliation:
