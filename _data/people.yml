@@ -1,7 +1,6 @@
 - name: Clodéric Mars
   role: track
   tracks: behavior
-  title: "Co-Organizer & Track Chair"
   twitter: clodericmars
   bio: >
     Clodéric is the product manager of MASA LIFE, an AI creative suite and middleware; he previously worked at the INRIA and Golaem on a navigation
@@ -13,7 +12,6 @@
 - name: Diego Perez
   role: track
   tracks: [decisions]
-  title: "Co-Organizer & Track Chair"
   twitter: diego_pliebana
   bio: >
     Diego Perez has recently achieved a Ph.D. in Computer Science at the University of Essex (UK), where he is now a Senior 
@@ -25,7 +23,6 @@
 - name: Michaël Rouillé
   role: track
   tracks: [ambient]
-  title: "Co-Organizer & Track Chair"
   twitter: michaelrouille
   bio: >
     Michaël Rouillé is the CTO of Golaem, a company he co-founded in 2009. Golaem develop Golaem Crowd, a character animation 
@@ -42,7 +39,6 @@
 - name: Heather Stark
   role: track
   tracks: [analytics]
-  title: "Co-Organizer & Track Chair"
   twitter: hastark
   bio: >
     Heather is lead analyst at Splash Damage, the indepedent UK-based developer known for its multiplayer fps titles.  
@@ -53,7 +49,6 @@
 - name: Tommy Thompson
   role: track
   tracks: [systems]
-  title: "Co-Organizer & Track Chair"
   twitter: get_tuda_choppa
   bio: >
     Tommy Thompson is a lecturer in computer science at the University of Derby, UK.
@@ -64,7 +59,6 @@
 - name: Mika Vehkala
   role: track
   tracks: [animation]
-  title: "Co-Organizer & Track Chair"
   twitter: mikavehkala
   bio: >
     Mika has been working in the industry since late 1999 – including IO Interactive as Senior AI
@@ -74,7 +68,6 @@
 - name: Noor Shaker
   role: track
   tracks: [procedural]
-  title: "Co-Organizer & Track Chair"
   twitter: noorshak
   bio: >
     Noor Shaker is a Postdoctoral researcher at the Center for Culture and Games at IT University
@@ -85,9 +78,9 @@
 - name: Alex J. Champandard
   role: org
   tracks: [cognition]
-  title: "Co-Founder & Co-Ordinator"
   twitter: alexjc
   affiliation:
+    position: "Conference Co-Ordinator & Co-Founder"
     name: AiGameDev.com
     url: http://aigamedev.com
   bio: >
@@ -96,8 +89,8 @@
 - name: Petra Champandard-Pail
   role: org
   tracks: [alternate]
-  title: "Director & Co-Founder"
   affiliation:
+    position: "Conference Director & Co-Founder"
     name: AiGameDev.com
     url: http://aigamedev.com
   bio: >
@@ -106,9 +99,9 @@
 
 - name: Filip Wisniewski
   role: org
-  title: "Lead Developer"
   twitter: speedingdeer
   affiliation:
+    position: "Lead Developer"
     name: AiGameDev.com
     url: http://aigamedev.com
   bio: >
@@ -118,26 +111,25 @@
 - name: Verena Riedl
   role: org
   tracks: [procedural]
-  title: "Marketing Director"
   twitter: skittlesolives
   affiliation:
+    position: "Marketing Director"
     name: AiGameDev.com
     url: http://aigamedev.com
   bio: >
     Verena made her way from Urban Planning into the games industry, with inbetween stops at advertising and eventmanagement. These days she is working as a producer, game designer and marketing strategist, who has focused on mobile development in the last years. She was already part of the volunteer team at Game/ AI Conference in 2014 and joined the team now to help with the dark arts of marketing.
 
 - name: Prof. Helmut Hlavac
-  role: advisory
-  title: "University of Vienna liaison"
+  role: advisor
   affiliation:
+    title: "Professor of Computer Science"
     name: University of Vienna
     url: http://entertain.univie.ac.at/~hlavacs/
   bio: >
     Prof. Helmut Hlavacs studied Technical Mathematics at the Technical University of Vienna, and received a PhD in 2001. He joined the University of Vienna as researcher for the EU projects BISANTE and later CODIS, and received habilitation in 2004, also being promoted to Associated Professor. He was guest professor in Spain and France, and initiated numerous projects on national and international level. He was vice chair and grant holder of the COST action IC0804, leader of industry projects with Rohde&Schwarz, Kapsch Carrier Com, T-Systems, Telekom Austria/A1, ASFINAG, member of the Research Center Telecommunications Vienna, etc., and successfully closed several basic research projects in the area of mobile video, task virtualization, energy efficiency, and traffic status measurement. Prof. Hlavacs co-authored over 150 peer-reviewed publications, published at international conferences or journals, resulting in an Erdös-Number of 4. He is author of one book, and guest editor of numerous special journal issues, one being currently reviewed. Furthermore, he has received eight best paper and distinguished paper awards at international conferences so far. He was also advisor of eight finished PhD students so far, two of whom have been awarded with prestigious PhD awards.
 
 - name: Emil "AngryAnt" Johansen
-  role: advisory
-  title: "Advisory Board Member"
+  role: advisor
   twitter: AngryAnt
   bio: >
     A freelance game developer with a specialisation in AI, and author of the "Behave" AI middleware solution, Emil brings experience from a host of client projects as well as a four-year stint at Unity Technologies. A preference for behavioural logic, but a wide appetite for new and exciting challenges.
