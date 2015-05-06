@@ -29,10 +29,10 @@ $ ->
     day.append(talksArray)
     day.removeClass("not-initialized")
 
-  $(".button-expand").click ->
-    button = $(@)
+  $("section.program-schedule table").click ->
+    button = $(@).find(".button-expand")
     button.toggleClass "expanded"
-    name = $(@).attr "name"
+    name = button.attr "name"
     talksList = $("table.talks-list[name='" + name + "']")
     talksList.removeClass "not-expanded"
     if ! button.hasClass("expanded")
