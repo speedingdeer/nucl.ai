@@ -34,18 +34,18 @@
 #     - Luis Angel Vicente Sanchez
 
 - title: "Extending Recommendation Systems to Offer a Personalised in-game Experience"
- description: >
-   We will present the fundamentals and practical challenges of building a recommendation system for your online game, 
-   taking you through the established approaches of Collaborative Filtering, Content Based and Latent Factor based systems. 
-   After briefly discussing how to design, evaluate and deploy these algorithms we will demonstrate how recommendation 
-   systems can move beyond store front inventories to offer your players a personalised in-game experience. Currently 
-   deployed within RuneScape, the world’s largest free-to-play massively multiplayer online game, we will go behind the 
-   scenes and present the details of the "lucky challenge" system, an adaption of recommendation approaches to highlight 
-   personally relevant content to players exploring the world of Gielinor. Attempting to balance engagement, enjoyment and 
-   spend through a second-order set of real-time recommendations present unique challenges in terms of scalability, messaging, 
-   monitoring and algorithm design and our presentation will give a snapshot of our current solutions and future plans.
- speakers: 
-   - Simon Worgan
+  description: >
+    We will present the fundamentals and practical challenges of building a recommendation system for your online game, 
+    taking you through the established approaches of Collaborative Filtering, Content Based and Latent Factor based systems. 
+    After briefly discussing how to design, evaluate and deploy these algorithms we will demonstrate how recommendation 
+    systems can move beyond store front inventories to offer your players a personalised in-game experience. Currently 
+    deployed within RuneScape, the world’s largest free-to-play massively multiplayer online game, we will go behind the 
+    scenes and present the details of the "lucky challenge" system, an adaption of recommendation approaches to highlight 
+    personally relevant content to players exploring the world of Gielinor. Attempting to balance engagement, enjoyment and 
+    spend through a second-order set of real-time recommendations present unique challenges in terms of scalability, messaging, 
+    monitoring and algorithm design and our presentation will give a snapshot of our current solutions and future plans.
+  speakers: 
+    - Simon Worgan
 
 #- title: "Early churn prediction and personalised interventions"
 #  description: >
