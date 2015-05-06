@@ -1,0 +1,42 @@
+<div class="day-wrap" name="{{day.title}}">
+    <table class="clickable"> 
+        <tr>
+            <td>
+                <div class="button-wrap"> 
+                    <div class="button-expand" name="{{day.title}}"></div>
+                </div>
+                <div class="titlebar-wrap">
+                    <div class="content-wrap">
+                        <h3>
+                            {{day.title}}
+                        </h3>
+                        <div class="legend">
+                            {% for track in day.tracks %}
+                                <div class="track-wrap">
+                                    {% for topic in site.data.topics %}
+                                        {% if topic.id == track %}
+                                            <div class="track {{track}}">
+                                                <div class="marker"></div>
+                                                <p class="track-name"> {{topic.title}} </p>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table class="talks-list not-initialized not-expanded animated zoomIn" name="{{day.title}}">
+        {% comment %} Get all talks per day {% endcomment %}
+        <tr>
+            <td>
+                {% for track in day.tracks %}
+                    {% include schedule/track.html %}
+                {% endfor %}
+            </td>
+        </tr>
+    </table>
+</div>

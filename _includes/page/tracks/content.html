@@ -38,6 +38,23 @@
     </grid>
 </section>
 
+
+<section class="program-schedule track-schedule">
+    <grid>
+        <h2> Talks schedule </h2>
+        <content>
+            {% comment %} Find day {% endcomment %}
+            {% for day in site.data.schedule %}
+                {% for item in day.tracks %}
+                    {% if item == track.id %}
+                        {% include schedule/day.html %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </content>
+    </grid>
+</section>
+
 {% comment %}
 <section class="tracks-content tracks-text call">
     <grid>
