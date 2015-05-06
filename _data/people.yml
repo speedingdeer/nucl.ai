@@ -303,6 +303,9 @@
   affiliation: 
     name: Unity Technologies
     url: http://unity3d.com/company
+  bio: >
+    Mikko Mononen has been working on AI for almost 10 years. He is the author of Recast and Detour, a widely used open source 
+    pathfinding library. Mikko works at Unity and is working on AI navigation tools.
 
 - name: Julien Pettré
   role: speaker
