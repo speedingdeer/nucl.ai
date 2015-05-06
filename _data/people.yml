@@ -52,7 +52,7 @@
 
 - name: Tommy Thompson
   role: track
-  tracks: [systems, procedural]
+  tracks: [systems]
   title: "Co-Organizer & Track Chair"
   twitter: get_tuda_choppa
   bio: >
@@ -201,7 +201,6 @@
 - name: François Cournoyer
   role: speaker
   confirmed: true
-  tracks: [systems]
   affiliation:
     name: Ubisoft Montreal
     url: http://www.ubisoft.com/
