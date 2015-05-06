@@ -1,16 +1,49 @@
+
+- title: "Not Just Planning: STRIPs for Ambient NPC Interactions in Final Fantasy XV"
+  description: >
+    Ambient characters are part of many current game titles. Yet, the intrinsic necessity and difficulty to model interactions of these characters with the environment and with each other is not easily overcome. The well-known smart object semantics introduced in The Sims has been widely adapted for its flexibility and scalability. However, classic smart objects lack the ability to deal with multiple characters, and thus are not adequate to fully bring characters to life.
+    We present an interaction-centric approach, in which smart objects instruct multiple characters by means of adaptive scripts formulated based on STRIPs-like rules. Instead of inferring possible world-states as is done in planning, the rules are used to communicate changed attitudes and circumstances between characters via a blackboard. The resulting scripting language constitutes a simple yet powerful way to express multi-character interactions situated in the environment.
+    This approach has been employed to model ambient interactions in Final Fantasy XV: Episode Duscae and is being extended for Final Fantasy XV. Drawing examples from this game, we show the flexibility and expressiveness of the resulting scripting system.
+  speakers:
+    - Hendrik Skubch
+
 - title: "Behavior Trees and Blackboards in EVE Online"
   description: >
     This talk will cover the introduction of Behavior Trees and Blackboards into EVE Online and reviewing some of the challenges involved.  Also covered some of the design choices made in order to manage behavior modularity and group behaviors while keeping behaviors reactive and event driven.
   speakers:
     - Freyr Magnússon
 
-#- title: "Behavior design for an operational military simulation"
-#  description: >
-#    For armies, training is both very important and expensive and potentially dangerous to do in the real worlds; 
-#    the use of simulations is therefore widespread. When using simulations to confront trainees to face complex situations, 
-#    the modeling of realistic automated forces becomes essential. This implies the construction of behavior models 
-#    to make automated forces behave in the simulated environment.
-#    This talk will focus on this construction process, from the analysis of military doctrine and the end user needs 
-#    to the behavior modeling by specialists and finally the test and validation process. 
-#    MASA SWORD, a simulation for command post training used by many armies throughout will serve as an illustration for 
-#    this presentation.
+- title: "Case-based Reasoning for Player Behavior Cloning in Killer Instinct"
+  description: >
+    This talk digs into the design and implementation of Shadows, a system for cloning player behavior in Killer Instinct. Our implementation of case-based reasoning is discussed, as well as the challenges faced implementing such a system in a fighting game.
+    The techniques we use are broadly applicable, and during the talk we will delve into topics like feature selection and creating distance functions capable of reproducing complex behaviors. Examples of such behaviors include avoiding projectiles dynamically, how the player approaches the fight differently from different ranges, and capturing how a player adapts to their opponent’s strategy during a match. 
+  speakers:
+    - Bruce Hayles
+
+- title: "Behavior Design for an Operational Military Simulation"
+  description: >
+    For armies, training is both very important and expensive and potentially dangerous to do in the real worlds; 
+    the use of simulations is therefore widespread. When using simulations to confront trainees to face complex situations, 
+    the modeling of realistic automated forces becomes essential. This implies the construction of behavior models 
+    to make automated forces behave in the simulated environment.
+    This talk will focus on this construction process, from the analysis of military doctrine and the end user needs 
+    to the behavior modeling by specialists and finally the test and validation process. 
+    MASA SWORD, a simulation for command post training used by many armies throughout will serve as an illustration for 
+    this presentation.
+  takeaways:
+    -
+    - 
+    - 
+  speakers:
+    - Newfel Messouci
+
+- title: "Abstraction in Behavior Trees"
+  description: >
+    Usually abstraction in behavior trees (BT) means the ability to define a tree that can then be reused as a subtree in other trees. That is equivalent to defining a nonparametric function returning evaluation status in standard programming languages. While useful it is a very limited abstraction. We propose a way how to bring more powerful abstractions from standard programming languages into behavior trees.
+    Attendees will learn how to bring abstraction from standard programming languages into behavior trees and how those abstraction could make the creation of behavior trees easier and less error­prone.
+  takeaways:
+    -
+    - 
+    - 
+  speakers:
+    - Juraj Blaho

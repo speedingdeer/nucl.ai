@@ -415,3 +415,40 @@
     On Stranger Tides, Prometheus, Skyfall, The Lone Ranger, Man of Steel, World War Z and Guardians of the Galaxy.
     Most recently Adam lead the team delivering complex crowd simulations for Ridley Scott’s biblical epic Exodus.
     Adam is currently leading MPC’s Crowd team on movies including Disney’s The Jungle Book, Terminator: Genysis and Fantastic Four.
+
+- name: Bruce Hayles
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: Iron Galaxy Studio
+    url: http://irongalaxystudios.com/
+    position: Software Engineer
+  bio: >
+    Bruce got his start as a bioinformatics researcher at University of South Florida. After a brief stint at Monster Media creating interactive advertisements using technologies like motion sensing and facial recognition, he transitioned to Iron Galaxy Studios as a game programmer. For the last several years, he has worked on wide range of projects like Batman: Arkham Origins and Killer Instinct in a variety of capacities including optimization, rendering, porting, gameplay programming, and AI.
+
+- name: Hendrik Skubch
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: Square Enix
+    url: http://www.square-enix.com/
+    position: AI Researcher
+  bio: >
+
+- name: Juraj Blaho
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: Bohemia Interactive Simulations
+    url: https://www.bistudio.com/
+    position: Senior AI Developer
+  bio: >
+
+- name: Newfel Messouci
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: MASA Group
+    url: https://www.masagroup.com/
+    position: Programmer
+  bio: >
