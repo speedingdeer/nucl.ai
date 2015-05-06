@@ -6,3 +6,22 @@
     <p>At every step of the simulation, our method uses the current pose of the character and a number of desired goals to find the best pose to transition into. For example, goals can be desired direction and velocity based on stick input for player-controller characters or desired position and facing for AI-controlled characters. Goals are transformed into a prediction model that is matched against available animation poses in the motion library. We use a novel rating scheme to balance quality against responsiveness of the system.</p>
   speakers:
     - Michael Büttner
+    
+- title: "IK Rig"
+  description: >
+    <p>IK Rig is the technology designed to transfer motion between rigs of varying sizes and skeleton hierarchies, plus amend 
+    the motion to represent the current rig’s size, weight etc.</p>
+    <p>The idea is that any character can be represented as a set of IK chains. If we can create a set of IK chains that is 
+    suitable for multiple characters, we can use this medium to share their animation data.</p>
+    <p>Also, the IK representation provides us with tools to intelligently modify the motion sets to produce deviations, such as 
+    different navigation states, object interaction, etc.</p>
+    <p>This technology can be applied offline or at runtime:</p>
+    <ul>
+    <li>From a single set of walking motion capture, create alternative sets of same motion in crouch, limp, being hurt etc etc.</li>
+    <li>Interaction with level, props and other characters.</li>
+    <li>Use dog mocap to create same motions of cat, horse, or Star Wars tank.</li>
+    <li>IK Rig tech is perfect for uneven terrain navigation, since the change of terrain level and character velocity affects full body of the character, producing natural seamless motion.</li>
+    <li>Runtime application helps transition the character between IK states, allowing intelligent transition between navigation modes.</li>
+    </ul>
+  speakers:
+    - Alexander Bereznyak
