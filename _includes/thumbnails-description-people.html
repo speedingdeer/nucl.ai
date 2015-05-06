@@ -24,16 +24,6 @@
         <div class="thumbnail-title-wrap">
             <h2> {{ d.name }} </h2>
             <div class="affiliation-wrap">
-            {% if d.affiliation.position %}
-                <p class="affiliation-position">
-                    {{>d.affiliation.position}}
-                </p>
-            {% else %}
-                <p class="affiliation-position no-data" style="visibility:hidden;">
-                    no data
-                </p>
-            {% endif %}
-
             {% if d.affiliation.name %}
                 <p class="affiliation">
                     <a href="{{d.affiliation.url}}" target="_blank">{{>d.affiliation.name}}</a>
@@ -45,33 +35,42 @@
 
     </div>
 
-    <p class="conference-title"> {{ d.title }} </p>
+    {% if d.affiliation.position %}
+    <p class="affiliation-position">
+        {{>d.affiliation.position}}
+    </p>
+    {% endif %}
+
     {% if d.twitter %}
         <p class="links"> 
             <a class="social twitter" href="http://twitter.com/{{d.twitter}}" target="_blank"></a>
         </p>
     {% endif %}
+
+    <p class="bio"> {{ d.bio }} </p>
+
+    {% if d.role == 'track' %}
+    <p class="role">Track Chair and Co-Organizer</p>
+    {% endif %}
+    {% if d.role == 'speaker' %}
+    <p class="role">Conference Speaker</p>
+    {% endif %}
+
+    <ul>
+
     {% comment %} get speaker talks {% endcomment %}
-    <ul class="talks-list">
         {% for topic in site.data.topics %}
             {% assign talks = site.data.tracks[topic.id] %}
             {% for talk in talks %}
                 {% for speaker in talk.speakers %}
                     {% if speaker == d.name %}
                         <li class="track-topic">
-                            <a href="/track/{{topic.id}}#{{talk.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">
-                                {{talk.title}}
-                            </a>
+                            <a href="/track/{{topic.id}}#{{talk.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">{{talk.title}}</a> (Presentation)
                         </li>
                     {% endif %}
                 {% endfor %}
             {% endfor %}
         {% endfor %}
-    </ul>
-
-    <p class="bio"> {{ d.bio }} </p>
-
-    <ul>
 
     {% assign tracks = "" %}
 
@@ -95,16 +94,13 @@
             {% endfor %}
         {% endfor %}
     {% endfor %}
+
     {% assign tracksArray = tracks | split:"," %}
     {% for topic in tracksArray | split:"," %}
         <li class="track">
-            <a href="/track/{{topic}}">
-                {% for t in site.data.topics %}
-                    {% if t.id == topic %}
-                        {{t.title}}
-                    {% endif %}
-                {% endfor %}
-            </a>
+            {% for t in site.data.topics %}
+                {% if t.id == topic %}<a href="/track/{{topic}}">{{t.title}}</a> (Track){% endif %}
+            {% endfor %}
         </li>
     {% endfor %}
 

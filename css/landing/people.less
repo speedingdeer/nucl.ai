@@ -21,13 +21,14 @@ section.people {
             font-size: 0.8em;
         }
         item.description {
-            p.conference-title {
+            p.affiliation-position {
                 display: inline-block;
                 float: left;
             }
             p.track-topic { 
                 clear: both; 
-            a { text-decoration: none; }
+                text-align: left;
+                a { text-decoration: none; }
             }
             p.links {
                 display: inline-block;
@@ -42,6 +43,10 @@ section.people {
             p.bio {
                 clear: both;
             }
+            p.role {
+                font-weight: bold;
+                color: @WHITE;
+            }
             div.affiliation-wrap {
                 float: right;
                 text-align: right;
@@ -49,19 +54,19 @@ section.people {
                     float: none;
                     text-align: inherit;
                     padding-top: 25px;
-                } 
-                padding-top: 5px;
+                }
+                padding-top: 30px;
                 padding-bottom: 10px;
                 p {
                     margin: 0;
+                    a {
+                        color: @ORANGE;
+                    }
                 }
             }
             p.affiliation {
                 @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) { padding-left: 10px; }
                 a { text-decoration: none; }
-            }
-            p.affiliation-position.no-data {
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: none; } 
             }
             &:not(.last-row) {
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-bottom: 2em } 
