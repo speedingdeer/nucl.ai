@@ -54,6 +54,7 @@
   role: track
   tracks: [systems, procedural]
   title: "Co-Organizer & Track Chair"
+  twitter: get_tuda_choppa
   bio: >
     Tommy Thompson is a lecturer in computer science at the University of Derby, UK.
     He is an AI researcher focussed on machine learning applications in the areas of non-player character behaviour,
@@ -64,6 +65,7 @@
   role: track
   tracks: [animation]
   title: "Co-Organizer & Track Chair"
+  twitter: mikavehkala
   bio: >
     Mika has been working in the industry since late 1999 – including IO Interactive as Senior AI
     Programmer on the Hitman: Absolution and Killzone: Shadow Fall for Guerrilla Games.
@@ -73,6 +75,7 @@
   role: track
   tracks: [procedural]
   title: "Co-Organizer & Track Chair"
+  twitter: noorshak
   bio: >
     Noor Shaker is a Postdoctoral researcher at the Center for Culture and Games at IT University
     of Copenhagen. Her research interests include player modeling, procedural content generation,
