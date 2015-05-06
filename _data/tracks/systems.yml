@@ -37,3 +37,20 @@
 #  speakers:
 #    - Domitile Lourdeaux
 #    - Kevin Carpentier
+
+- title: "Spawn Trees — Inside The Witcher 3: Wild Hunt's Communities"
+  description: >
+    When approaching The Witcher 3: Wild Hunt community module design, we knew that we needed a scalable system capable of powering everything from the large city of Novigrad, to a small woodcutter's hut in the middle of nowhere, to ancient catacombs filled with undead monsters. 
+    It will be my privilege to talk about SpawnTrees, our internal system utilizing decision trees to define open world communities. I'll share with you the story of how we arrived at the current solution, what were the problems along the road, and how Spawn Trees worked with other AI systems. 
+    Finally, we will take a broader and more general look on the usage of AI system design principles outside of NPC behavior.
+  speakers:
+    - Michał Słapa
+
+- title: Epic AI Systems and Director in Fortnite
+  description: >
+    Fortnite is Epic Game's upcoming free-to-play title with fort building and an AI director that spawns procedural
+    hordes of enemies towards the player.  In this talk, John will dig into the various systems that go into the game
+    from both a technical and design perspective, and how they are being brought together into a coherent and fun
+    experience!
+  speakers:
+    - John Abercrombie

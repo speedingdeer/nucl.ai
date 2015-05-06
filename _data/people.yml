@@ -446,3 +446,24 @@
     url: https://www.masagroup.com/
     position: Programmer
   bio: >
+
+- name: Michał Słapa
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: CD Projekt RED
+    url: http://www.cdprojektred.com/
+    position: Developer
+  bio: >
+    AI and gameplay programmer from Poland, working in the industry for over 9 years. Started career with
+    The Witcher, later worked on Hard Reset, Shadow Warrior, and now The Witcher 3: Wild Hunt. Specializes
+    in AI and navigation fields.
+
+- name: John Abercrombie
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: Epic Games
+    url: http://www.epicgames.com/
+    position: Lead Programmer
+  bio: >
