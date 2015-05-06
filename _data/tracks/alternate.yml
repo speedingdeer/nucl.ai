@@ -4,3 +4,10 @@
     <p>This short tutorial about <a href="http://project-trains.tumblr.com/">Project Trains</a> will show some of the biggest lessons learned from building an interactive living room experience from two kids, from the computer vision aspect to the crafting (litterally) of a projector-based experience with augmented toy tracks.</p>
   speakers:
     - Alex J. Champandard
+    
+- title: "Interactive Installations"
+  description: >
+    <p>What goes into creating a multi-user multi-Kinect interactive installation to convey a somewhat abstract message, other than blood, sweat, and a lot of development time?</p>
+    <p>I’ll discuss the process, our use of both open-source and off-the-shelf AI libraries, as well as when we roll our own. I’ll go over the challenges of building them, with a distributed team, with fuzzy design requirements to convey even fuzzier concepts, and against fixed and very tight deadlines.</p>
+  speakers:
+    - Ricardo J. Méndez
