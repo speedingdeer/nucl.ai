@@ -10,13 +10,9 @@ $ ->
   if $("#section-tracks-people").length > 0
     thumbnails = new Thumbnails "section-tracks-people", true, true
 
-  $("h3 a, li a.scrollable").click ->
-    id = $(@).attr("href").split("#")[1]
-    root.scroll id, $("#" + id).offset().top
-    return false
 
-  $(".tracks-people .track-topic a").click ->
+  $("h3 a, li a.scrollable, .tracks-people .track-topic a, .talks-list a").click ->
     id = $(@).attr("href").split("#")[1]
     if $("#" + id).length > 0
       root.scroll id, $("#" + id).offset().top
-    return false
+      return false;
