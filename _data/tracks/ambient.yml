@@ -44,5 +44,11 @@
     - Adam Davis
 
 #- title: "Avoidance & locomotion"
+#  description: >
+#    Creating believable and responsive locomotion animation for simulated agents is a common problem for small indie projects 
+#    as well as large productions. In this presentation we will take a peek at recent R&D from Unity where we have explored a 
+#    solution to the locomotion animation problem. The talk will take a close look at both the velocity based obstacle avoidance 
+#    as well as parametric animation controller to find a common interface. We will propose a method that can be quickly set up 
+#    for a small project with limited resources, and allows fine tuning for better quality animation.
 #  speakers:
 #    - Mikko Mononen
