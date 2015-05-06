@@ -6,8 +6,8 @@
     <p>At every step of the simulation, our method uses the current pose of the character and a number of desired goals to find the best pose to transition into. For example, goals can be desired direction and velocity based on stick input for player-controller characters or desired position and facing for AI-controlled characters. Goals are transformed into a prediction model that is matched against available animation poses in the motion library. We use a novel rating scheme to balance quality against responsiveness of the system.</p>
   speakers:
     - Michael Büttner
-    
-- title: "IK Rig"
+
+- title: "Runtime Inverse Kinematic Rig"
   description: >
     <p>IK Rig is the technology designed to transfer motion between rigs of varying sizes and skeleton hierarchies, plus amend 
     the motion to represent the current rig’s size, weight etc.</p>
