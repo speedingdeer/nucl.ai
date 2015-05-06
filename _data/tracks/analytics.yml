@@ -1,19 +1,9 @@
-# - title: "Dynamic Pricing in Mobile Games"
-#   description: >
-#     Dynamic pricing originated in the airline industry almost 50 years ago. Since then, it has spread to the hospitality 
-#     industry, to consumer packaged goods, and to retail. The rise of In-App-Purchases within gaming (more generally, the 
-#     rise of digital goods, bought and sold via mobile devices), and the rapid evolution of "big data" infrastructure, 
-#     presents new challenges and opportunities for dynamic pricing, both in theory and in practice. The challenge is to make 
-#     sense of large masses of noisy data, in a way that is actionable for "the business side of the house" (e.g. the people 
-#     who set prices). The opportunity is to reinvent how we look at data, and automate the process of sifting for information. 
-#     We can take notions that are intuitively "obvious" to old-school marketers (for example: "stickershock") or endlessly 
-#     discussed in economic texts (for example: "Intertemporal Price Discrimination"), make them precise, and then see, 
-#     automatically and across automatically derived clusters, whether the definitions actually capture actionable differences 
-#     in consumer behavior.
-#     In this talk, we will outline how Scientific Revenue approaches the problem of setting prices for In-App-Purchases in 
-#     gaming, with illustrations and examples from the field. 
-#   speakers:
-#     - Bill Grosso
+- title: "Dynamic Pricing in Mobile Games"
+  description: >
+    <p>Dynamic pricing techniques are at the forefront of adaptive systems in games.  How can we better understand individual players and the player-base as a whole?  What's necessary to design and tune a dynamic system that remains reliable even when operating without supervision?  Which technologies are necessary to process the large quantities of data and extract meaningful models?</p>
+    <p>Originating in the airline industry almost 50 years ago, dynamic pricing has spread to the many other industries including retail, as well as In-App-Purchases within games or mobile applications. This talk will explain the challenges and investigate the opportunities: to reinvent how we look at data, and automate the process of sifting for information. We can take notions that are intuitively "obvious" to old-school marketers and automatically check whether the definitions actually capture actionable differences in consumer behavior.</p>
+  speakers:
+    - Bill Grosso
 
 # - title: "Fast > Perfect: Practical approximation examples for mobile game analytics using Spark Streaming"
 #   description: >
@@ -43,19 +33,19 @@
 #     - Kevin Schmidt
 #     - Luis Angel Vicente Sanchez
 
-#- title: "Extending recommendation systems to offer a personalised in-game experience"
-#  description: >
-#    We will present the fundamentals and practical challenges of building a recommendation system for your online game, 
-#    taking you through the established approaches of Collaborative Filtering, Content Based and Latent Factor based systems. 
-#    After briefly discussing how to design, evaluate and deploy these algorithms we will demonstrate how recommendation 
-#    systems can move beyond store front inventories to offer your players a personalised in-game experience. Currently 
-#    deployed within RuneScape, the world’s largest free-to-play massively multiplayer online game, we will go behind the 
-#    scenes and present the details of the "lucky challenge" system, an adaption of recommendation approaches to highlight 
-#    personally relevant content to players exploring the world of Gielinor. Attempting to balance engagement, enjoyment and 
-#    spend through a second-order set of real-time recommendations present unique challenges in terms of scalability, messaging, 
-#    monitoring and algorithm design and our presentation will give a snapshot of our current solutions and future plans.
-#  speakers: 
-#    - Simon Worgan
+- title: "Extending Recommendation Systems to Offer a Personalised in-game Experience"
+ description: >
+   We will present the fundamentals and practical challenges of building a recommendation system for your online game, 
+   taking you through the established approaches of Collaborative Filtering, Content Based and Latent Factor based systems. 
+   After briefly discussing how to design, evaluate and deploy these algorithms we will demonstrate how recommendation 
+   systems can move beyond store front inventories to offer your players a personalised in-game experience. Currently 
+   deployed within RuneScape, the world’s largest free-to-play massively multiplayer online game, we will go behind the 
+   scenes and present the details of the "lucky challenge" system, an adaption of recommendation approaches to highlight 
+   personally relevant content to players exploring the world of Gielinor. Attempting to balance engagement, enjoyment and 
+   spend through a second-order set of real-time recommendations present unique challenges in terms of scalability, messaging, 
+   monitoring and algorithm design and our presentation will give a snapshot of our current solutions and future plans.
+ speakers: 
+   - Simon Worgan
 
 #- title: "Early churn prediction and personalised interventions"
 #  description: >
