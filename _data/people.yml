@@ -467,3 +467,9 @@
     url: http://www.epicgames.com/
     position: Lead Programmer
   bio: >
+
+- name: Ricardo J. Méndez
+  role: speaker
+  confirmed: true
+  bio: >
+    Ricardo has moved from financial analysis on large banking systems, to juggling around medical data, to performing financial sensitivity analysis for bank overseers, to building games and tools.  He's currently working large interactive installations, maintaining Unity-related open source projects and generally trying to keep himself entertained.
