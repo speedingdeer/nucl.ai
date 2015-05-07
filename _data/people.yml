@@ -482,3 +482,12 @@
     url: https://www.bistudio.com/
     position: Programmer
   bio: >
+
+- name: Christopher Laubach
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: Riot Games
+    url: http://www.riotgames.com/
+    position: Senior Animation Engineer
+  bio: >
