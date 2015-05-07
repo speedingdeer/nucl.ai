@@ -1,13 +1,13 @@
-- title: "Living-Room Augmented Reality and Project Trains"
-  description: >
-    <p>As goggle-based AR slowly matures, there's a window of opportunity for projector-based AR experiences.  It's also a great way to learn about the technology and the impacts on design required to pull off augmented reality in practice &mdash; with a setup that works reliably now already!</p>
-    <p>This short tutorial about <a href="http://project-trains.tumblr.com/">Project Trains</a> will show some of the biggest lessons learned from building an interactive living room experience from two kids, from the computer vision aspect to the crafting (litterally) of a projector-based experience with augmented toy tracks.</p>
-  speakers:
-    - Alex J. Champandard
-
 - title: "Multi-Kinect Motion Tracking and Interactive Installations"
   description: >
     <p>What goes into creating a multi-user multi-Kinect interactive installation to convey a somewhat abstract message, other than blood, sweat, and a lot of development time?</p>
     <p>I’ll discuss the process, our use of both open-source and off-the-shelf AI libraries, as well as when we roll our own. I’ll go over the challenges of building them, with a distributed team, with fuzzy design requirements to convey even fuzzier concepts, and against fixed and very tight deadlines.</p>
   speakers:
     - Ricardo J. Méndez
+
+- title: "Living-Room Augmented Reality and Project Trains"
+  description: >
+    <p>As goggle-based AR slowly matures, there's a window of opportunity for projector-based AR experiences.  It's also a great way to learn about the technology and the impacts on design required to pull off augmented reality in practice &mdash; with a setup that works reliably now already!</p>
+    <p>This short tutorial about <a href="http://project-trains.tumblr.com/">Project Trains</a> will show some of the biggest lessons learned from building an interactive living room experience from two kids, from the computer vision aspect to the crafting (litterally) of a projector-based experience with augmented toy tracks.</p>
+  speakers:
+    - Alex J. Champandard
