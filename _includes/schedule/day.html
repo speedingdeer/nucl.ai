@@ -1,9 +1,18 @@
+{% assign expanded = 'not-expanded' %}
+{% assign isTrackPage = false %}
+{% for topic in site.data.topics %}
+    {% capture pageName %}{{topic.id}}.html{% endcapture %}
+    {% if page.name == pageName %} 
+        {% assign expanded = 'expanded' %}
+        {% assign isTrackPage = true %}
+    {% endif %}
+{% endfor %}
 <div class="day-wrap" name="{{day.title}}">
-    <table class="clickable"> 
+    <table class="clickable header-table"> 
         <tr>
             <td>
                 <div class="button-wrap"> 
-                    <div class="button-expand" name="{{day.title}}"></div>
+                    <div class="button-expand {{expanded}}" name="{{day.title}}"></div>
                 </div>
                 <div class="titlebar-wrap">
                     <div class="content-wrap">
@@ -29,13 +38,18 @@
             </td>
         </tr>
     </table>
-    <table class="talks-list not-initialized not-expanded animated zoomIn" name="{{day.title}}">
+    <table class="talks-list not-initialized animated zoomIn {{expanded}}" name="{{day.title}}">
         {% comment %} Get all talks per day {% endcomment %}
         <tr>
             <td>
-                {% for track in day.tracks %}
+                {% if isTrackPage %}
+                    {% assign track = "animation" %}
                     {% include schedule/track.html %}
-                {% endfor %}
+                {% else %}
+                    {% for track in day.tracks %}
+                        {% include schedule/track.html %}
+                    {% endfor %}
+                {% endif %}
             </td>
         </tr>
     </table>
