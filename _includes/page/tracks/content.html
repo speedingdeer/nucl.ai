@@ -23,17 +23,6 @@
                 <li>{{ keyword }}</li>
             {% endfor %}
             </ul>
-
-        {% if items %}
-            <h3>Confirmed Talks</h3>
-            <ul>
-            {% for item in items %}
-                <li>
-                    <a class="scrollable" href="/track/{{track.id}}#{{item.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">{{item.title}}</a>
-                </li>
-            {% endfor %}
-            </ul>
-        {% endif %}
         </content>
     </grid>
 </section>
