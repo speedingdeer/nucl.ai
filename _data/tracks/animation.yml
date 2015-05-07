@@ -7,6 +7,12 @@
   speakers:
     - Michael Büttner
 
+- title: "Exploring the Relationship Between Gameplay and Animaion"
+  description: >
+    We examine the demands of animation and gameplay that can be at odds during game development, through the lens of working on League of Legends. We consider the tradeoffs and range of available prioritizations between the two, and what consequences result. Concrete examples from League are presented and discussed.
+  speakers:
+    - Christopher Laubach
+
 - title: "Runtime Inverse Kinematic Rig"
   description: >
     <p>IK Rig is the technology designed to transfer motion between rigs of varying sizes and skeleton hierarchies, plus amend 

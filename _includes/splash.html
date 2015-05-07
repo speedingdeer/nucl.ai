@@ -41,12 +41,12 @@
                                     <h2>Conference on Artificial Intelligence<br/>
                                         in Creative Industries</h2>
                                     
-                                    {% capture ticketsLeft %}{{site.data.tickets_left.type}} Sale Ended! {{site.data.tickets_left.count}} tickets over quota :) {% endcapture %}
+                                    {% capture ticketBanner %}{{site.data.tickets_left.type}} and Day Tickets now available.{% endcapture %}
                                     <h2 class="note">
                                     {% if page.name == 'tickets.html' %}
-                                    <span href="/tickets">{{ticketsLeft}}</span>    
+                                    <span href="/tickets">{{ticketBanner}}</span>    
                                     {% else %}
-                                    <a href="/tickets">{{ticketsLeft}}</a>
+                                    <a href="/tickets">{{ticketBanner}}</a>
                                     {% endif %}
                                     </h2>
 
