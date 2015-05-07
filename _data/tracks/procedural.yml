@@ -1,0 +1,6 @@
+- title: "Procedural Generation of Biotopes for Large Realistic Terrains"
+  description: >
+    <p>The VBS 3 engine, based on Bohemia Interactive's ARMA, is famous for its realistic depiction of large terrains in training and simulations.  To reach that level of quality with low-overheads, the team relies on a variety of procedural tools and techniques.</p>
+    <p>This talk will dig into techniques for synthesizing biotopes in the terrain, what tools are necessary to do so, which parameters are exposed and used.  Also, how can techniques be split for runtime use and which are used during development only?</p>
+  speakers:
+    - Vladimir Nejedly
