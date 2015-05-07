@@ -43,8 +43,8 @@
         <tr>
             <td>
                 {% if isTrackPage %}
-                    {% assign track = "animation" %}
-                    {% include schedule/track.html %}
+                    {% capture track %}{{page.name | remove: ".html" }}{% endcapture %}
+                    {% include schedule/track.html %}}
                 {% else %}
                     {% for track in day.tracks %}
                         {% include schedule/track.html %}
