@@ -4,9 +4,11 @@
     <p>Originating in the airline industry almost 50 years ago, dynamic pricing has spread to the many other industries including retail, as well as In-App-Purchases within games or mobile applications. This talk will explain the challenges and investigate the opportunities: to reinvent how we look at data, and automate the process of sifting for information. We can take notions that are intuitively "obvious" to old-school marketers and automatically check whether the definitions actually capture actionable differences in consumer behavior.</p>
   speakers:
     - Bill Grosso
-  room:
-    - amphitheatre
-    
+  room: amphitheatre
+  time:
+    start: 12:00
+    finish: 12:45
+
 # - title: "Fast > Perfect: Practical approximation examples for mobile game analytics using Spark Streaming"
 #   description: >
 #     For mobile games, constant tweaks are the difference between success and failure. 
@@ -48,8 +50,10 @@
     monitoring and algorithm design and our presentation will give a snapshot of our current solutions and future plans.
   speakers: 
     - Simon Worgan
-  room:
-    - masterclass
+  room: masterclass
+  time:
+    start: 14:00
+    finish: 14:45
 
 #- title: "Early churn prediction and personalised interventions"
 #  description: >

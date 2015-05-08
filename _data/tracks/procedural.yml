@@ -4,5 +4,7 @@
     <p>This talk will dig into techniques for synthesizing biotopes in the terrain, what tools are necessary to do so, which parameters are exposed and used.  Also, how can techniques be split for runtime use and which are used during development only?</p>
   speakers:
     - Vladimir Nejedly
-  room:
-    - masterclass
+  room: masterclass
+  time:
+    start: 16:00
+    finish: 16:30
