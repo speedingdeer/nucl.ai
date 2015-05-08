@@ -44,10 +44,10 @@
     start: 12:30
     finish: 13:00
 
-- title: "Abstraction in Behavior Trees"
+- title: "Reusability and abstraction: the next evolution for Behavior Trees"
   description: >
-    Usually abstraction in behavior trees (BT) means the ability to define a tree that can then be reused as a subtree in other trees. That is equivalent to defining a nonparametric function returning evaluation status in standard programming languages. While useful it is a very limited abstraction. We propose a way how to bring more powerful abstractions from standard programming languages into behavior trees.
-    Attendees will learn how to bring abstraction from standard programming languages into behavior trees and how those abstraction could make the creation of behavior trees easier and less error­prone.
+    Behavior trees (BT), are now commonly used to create autonomous behaviors in games and simulation. While, in practice, a visual programming language, they’re abstraction are limited to the reuse of subtrees in other trees, the equivalent of defining a nonparametric function. While useful it is a very limited abstraction.
+    In this talk, we propose a way to bring more powerful abstractions from general programming languages to BTs. Attendees will learn how local variables and parameterized subtrees are one of the key to make the creation of reusable behavior trees both easier and less error­ prone.
   speakers:
     - Juraj Blaho
   room: masterclass
