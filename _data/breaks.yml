@@ -1,29 +1,32 @@
 - day: "1"
-  - name: Coffee Pause
-    time:
-      start: 11:00
-      end: 11:40
-  - name: Launch Break
-    time:
-      start: 13:00
-      end: 14:00
+  brakes:
+    - name: Coffee Pause
+      time:
+        start: 11:00
+        finish: 11:40
+    - name: Launch Break
+      time:
+        start: 13:00
+        end: 14:00
+
+- day: "2"
+  brakes:
+    - name: Coffee Pause
+      time:
+        start: 11:00
+        finish: 11:40
+    - name: Launch Break
+      time:
+        start: 13:00
+        end: 14:00
 
 - day: "3"
-  - name: Coffee Pause
-    time:
-      start: 11:00
-      end: 11:40
-  - name: Launch Break
-    time:
-      start: 13:00
-      end: 14:00
-
-- day: "3"
-  - name: Coffee Pause
-    time:
-      start: 11:00
-      end: 11:40
-  - name: Launch Break
-    time:
-      start: 13:00
-      end: 14:00
+  brakes:
+    - name: Coffee Pause
+      time:
+        start: 11:00
+        finish: 11:40
+    - name: Launch Break
+      time:
+        start: 13:00
+        end: 14:00
