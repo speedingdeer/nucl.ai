@@ -6,8 +6,10 @@
     usages in service of Animation.
   speakers:
     - Paul Kanyuk
-  room:
-    - amphitheatre
+  room: amphitheatre
+  time:
+    start: 16:30
+    finish: 17:30
 
 - title: "Building the Massive Crowds of Assassin’s Creed Unity"
   description: >
@@ -20,8 +22,10 @@
   speakers:
     - François Cournoyer
     - Antoine Fortier
-  room:
-    - amphitheatre
+  room: amphitheatre
+  time:
+    start: 14:00
+    finish: 15:00
 
 - title: "Crowds Patches for Populating Virtual Worlds"
   description: >
@@ -39,8 +43,10 @@
     places according to new paradigms, high level control, without need of expertise on crowd animation systems. 
   speakers:
     - Julien Pettré
-  room:
-    - masterclass
+  room: masterclass
+  time:
+    start: 12:00
+    finish: 12:45
 
 - title: "Creating The Epic Sky Battle In Guardians of the Galaxy"
   description: >
@@ -48,8 +54,10 @@
     final sky battle for Marvels Guardians of the Galaxy.
   speakers:
     - Adam Davis
-  room:
-    - amphitheatre
+  room: amphitheatre
+  time:
+    start: 10:00
+    finish: 11:00
 
 - title: "Believable and Responsive Locomotion for Simulated Agents"
   description: >
@@ -60,5 +68,7 @@
     for a small project with limited resources, and allows fine tuning for better quality animation.
   speakers:
     - Mikko Mononen
-  room:
-    - masterclass
+  room: masterclass
+  time:
+    start: 14:45
+    finish: 15:30
