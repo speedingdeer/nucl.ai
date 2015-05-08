@@ -32,16 +32,11 @@
     start: 10:00
     finish: 11:00
 
-- title: "Behavior Design for an Operational Military Simulation"
+- title: "Designing realistic behaviors for a military training simulation"
   description: >
-    For armies, training is both very important and expensive and potentially dangerous to do in the real worlds; 
-    the use of simulations is therefore widespread. When using simulations to confront trainees to face complex situations, 
-    the modeling of realistic automated forces becomes essential. This implies the construction of behavior models 
-    to make automated forces behave in the simulated environment.
-    This talk will focus on this construction process, from the analysis of military doctrine and the end user needs 
-    to the behavior modeling by specialists and finally the test and validation process. 
-    MASA SWORD, a simulation for command post training used by many armies throughout will serve as an illustration for 
-    this presentation.
+    Simulation is a one of the main tools for armies’ training; it is used to confront trainees to complex situations that would be expensive and potentially dangerous to do in the real world. In this context the modeling of realistic automated forces becomes essential.
+    This talk will focus on the behavior modeling process, from the analysis of the operational requirements and the military doctrine to the actual implementation and finally the test and validation process. Attendees will learn what are the main guidelines to build a maintainable library of behaviors that are both perceived and measured as realistics.
+    MASA SWORD, a simulation for command post training used by many armies throughout the world will serve as an illustration for this presentation.
   speakers:
     - Newfel Messouci
   room: masterclass
