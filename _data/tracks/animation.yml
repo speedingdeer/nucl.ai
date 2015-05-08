@@ -6,16 +6,20 @@
     <p>At every step of the simulation, our method uses the current pose of the character and a number of desired goals to find the best pose to transition into. For example, goals can be desired direction and velocity based on stick input for player-controller characters or desired position and facing for AI-controlled characters. Goals are transformed into a prediction model that is matched against available animation poses in the motion library. We use a novel rating scheme to balance quality against responsiveness of the system.</p>
   speakers:
     - Michael Büttner
-  room:
-    - amphitheatre
-    
+  room: amphitheatre
+  time:
+    start: 14:45
+    finish: 15:45
+
 - title: "Exploring the Relationship Between Gameplay and Animaion"
   description: >
     We examine the demands of animation and gameplay that can be at odds during game development, through the lens of working on League of Legends. We consider the tradeoffs and range of available prioritizations between the two, and what consequences result. Concrete examples from League are presented and discussed.
   speakers:
     - Christopher Laubach
-  room:
-    - amphitheatre
+  room: amphitheatre
+  time:
+    start: 12:00
+    finish: 12:45
 
 - title: "Runtime Inverse Kinematic Rig"
   description: >
@@ -35,5 +39,7 @@
     </ul>
   speakers:
     - Alexander Bereznyak
-  room:
-    - amphitheatre
+  room: amphitheatre
+  time:
+    start: 10:00
+    finish: 10:45
