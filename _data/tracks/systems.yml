@@ -5,6 +5,8 @@
     Finally, we will take a broader and more general look on the usage of AI system design principles outside of NPC behavior.
   speakers:
     - Michał Słapa
+  room:
+    - amphitheatre
 
 - title: Epic AI Systems and Director in Fortnite
   description: >
@@ -14,6 +16,8 @@
     experience!
   speakers:
     - John Abercrombie
+  room:
+    - amphitheatre
 
 # - title: "Designing CAD Tools for Novices: Can Algorithms Enhance productivity or foster creativity?"
 #   description: >

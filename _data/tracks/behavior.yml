@@ -6,12 +6,16 @@
     This approach has been employed to model ambient interactions in Final Fantasy XV: Episode Duscae and is being extended for Final Fantasy XV. Drawing examples from this game, we show the flexibility and expressiveness of the resulting scripting system.
   speakers:
     - Hendrik Skubch
+  room:
+    - amphitheatre
 
 - title: "Behavior Trees and Blackboards in EVE Online"
   description: >
     This talk will cover the introduction of Behavior Trees and Blackboards into EVE Online and reviewing some of the challenges involved.  Also covered some of the design choices made in order to manage behavior modularity and group behaviors while keeping behaviors reactive and event driven.
   speakers:
     - Freyr Magnússon
+  room:
+    - amphitheatre
 
 - title: "Case-based Reasoning for Player Behavior Cloning in Killer Instinct"
   description: >
@@ -19,6 +23,8 @@
     The techniques we use are broadly applicable, and during the talk we will delve into topics like feature selection and creating distance functions capable of reproducing complex behaviors. Examples of such behaviors include avoiding projectiles dynamically, how the player approaches the fight differently from different ranges, and capturing how a player adapts to their opponent’s strategy during a match. 
   speakers:
     - Bruce Hayles
+  room:
+    - amphitheatre
 
 - title: "Behavior Design for an Operational Military Simulation"
   description: >
@@ -30,20 +36,16 @@
     to the behavior modeling by specialists and finally the test and validation process. 
     MASA SWORD, a simulation for command post training used by many armies throughout will serve as an illustration for 
     this presentation.
-  takeaways:
-    -
-    - 
-    - 
   speakers:
     - Newfel Messouci
+  room:
+    - masterclass
 
 - title: "Abstraction in Behavior Trees"
   description: >
     Usually abstraction in behavior trees (BT) means the ability to define a tree that can then be reused as a subtree in other trees. That is equivalent to defining a nonparametric function returning evaluation status in standard programming languages. While useful it is a very limited abstraction. We propose a way how to bring more powerful abstractions from standard programming languages into behavior trees.
     Attendees will learn how to bring abstraction from standard programming languages into behavior trees and how those abstraction could make the creation of behavior trees easier and less error­prone.
-  takeaways:
-    -
-    - 
-    - 
   speakers:
     - Juraj Blaho
+  room:
+    - masterclass

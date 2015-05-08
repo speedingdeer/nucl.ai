@@ -8,6 +8,8 @@
     structure of the tree itself as well as some higher-level optimisations.
   speakers:
     - Piotr Andruszkiewicz
+  room:
+    - masterclass
 
 - title: "Tactical Planning and Real-time MCTS in Fable Legends"
   description: >
@@ -15,6 +17,8 @@
     interesting design and programming challenges.
   speakers:
     - Gwaredd Mountain
+  room:
+    - amphitheatre
 
 - title: "Drivatar and Machine Learning Racing Skills in the Forza Series"
   description: >
@@ -25,3 +29,5 @@
     technical perspective as well as the design and integration with the gameplay.
   speakers:
     - Jeffrey Schlimmer
+  room:
+    - amphitheatre
