@@ -20,14 +20,16 @@ $ ->
     talks.each ->
       talksArray.push $(@)
     talksArray.sort (a,b) ->
-      aTime = if a.attr("time") != "" then a.attr("time") else "11:59 pm"
-      bTime = if b.attr("time") != "" then b.attr("time") else "11:59 pm" 
+      aTime = if a.attr("time-start") != "" then a.attr("time-start") else "11:59 pm"
+      bTime = if b.attr("time-start") != "" then b.attr("time-start") else "11:59 pm" 
       new Date("2001/01/01 " + aTime) - new Date("2001/01/01 " + bTime) 
     # remove all html
     day.find("td").html("")
     # sort by time and append
     day.append(talksArray)
     day.removeClass("not-initialized")
+
+
 
   $("section.program-schedule table").click ->
     button = $(@).find(".button-expand")

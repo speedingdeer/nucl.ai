@@ -1,5 +1,5 @@
 {% for talk in site.data.tracks[track] %}
-    <div class="track {{track}}" time="{{talk.time.start}}">
+    <div class="track {{track}}" time-start="{{talk.time.start}}" time-end="{{talk.time.end}}" room="talk.room">
         <p class="speakers"> 
             {% assign firstSpeaker = true %}
             {% for speaker in talk.speakers %}
