@@ -8,6 +8,7 @@
 @COLOR_TRACK_ANIMATION: #ff0031;
 @COLOR_TRACK_COGNITION: #e0e0e0;
 
+
 section.program-schedule.track-schedule {
     content {
         div.day-wrap { margin: 0; }
@@ -180,5 +181,16 @@ section.program-schedule {
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.65em; }
         }
 
+    }
+}
+
+section.rooms-schedule.program-schedule {
+    content {
+        table.talks-list {
+            div.track {
+                padding: 0 2em;
+            }
+            tr { vertical-align: top; }
+        }
     }
 }

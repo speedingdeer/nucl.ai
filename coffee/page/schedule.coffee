@@ -20,6 +20,16 @@ $ ->
     talks.each ->
       talksArray.push $(@)
 
+    #set duration attribute
+    for talk in talksArray
+      if talk.attr("time-start") != "" && talk.attr("time-finish") != ""
+        startTime = talk.attr("time-start")
+        finishTime = talk.attr("time-finish")
+        startDate = new Date("2001/01/01 " + startTime)
+        finishDate = new Date("2001/01/01 " + finishTime)
+        duration = (finishDate.getHours() * 60 + finishDate.getMinutes()) - (startDate.getHours() * 60 + startDate.getMinutes())
+        talk.attr("duration", duration)
+
     # sort by time and append
     talksArray.sort (a,b) ->
       aTime = if a.attr("time-start") != "" then a.attr("time-start") else "11:59 pm"
@@ -30,7 +40,6 @@ $ ->
       day.find("td.talks-list").remove()
       for talk in talksArray
         room = talk.attr("room")
-        console.log(room)
         day.find("td." + room).append(talk)
     else
       # simple append
