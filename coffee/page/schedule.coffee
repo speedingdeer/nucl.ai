@@ -48,6 +48,13 @@ $ ->
 
     day.removeClass("not-initialized")
 
+  #calculate time / height ratio
+  maxHeightDurationRatio = 0
+  $("table.talks-list div.track").each ->
+    height = $(@).height()
+    duration = $(@).attr("duration")
+    ratio = height / duration
+    if ratio > maxHeightDurationRatio then maxHeightDurationRatio = ratio
 
 
   $("section.program-schedule table").click ->
