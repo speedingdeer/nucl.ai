@@ -19,14 +19,24 @@ $ ->
     talksArray = []
     talks.each ->
       talksArray.push $(@)
+
+    # sort by time and append
     talksArray.sort (a,b) ->
       aTime = if a.attr("time-start") != "" then a.attr("time-start") else "11:59 pm"
       bTime = if b.attr("time-start") != "" then b.attr("time-start") else "11:59 pm" 
       new Date("2001/01/01 " + aTime) - new Date("2001/01/01 " + bTime) 
-    # remove all html
-    day.find("td").html("")
-    # sort by time and append
-    day.append(talksArray)
+    if $("section.rooms-schedule").length > 0 
+      # append all talks to rooms
+      day.find("td.talks-list").remove()
+      for talk in talksArray
+        room = talk.attr("room")
+        console.log(room)
+        day.find("td." + room).append(talk)
+    else
+      # simple append
+      day.find("td.talks-list").html("")
+      day.append(talksArray)
+
     day.removeClass("not-initialized")
 
 

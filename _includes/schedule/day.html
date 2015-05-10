@@ -39,7 +39,7 @@
     <table class="talks-list not-initialized animated zoomIn expanded" name="{{day.title}}">
         {% comment %} Get all talks per day {% endcomment %}
         <tr>
-            <td>
+            <td class="talks-list">
                 {% if isTrackPage %}
                     {% capture track %}{{page.name | remove: ".html" }}{% endcapture %}
                     {% include schedule/track.html %}}
@@ -49,6 +49,9 @@
                     {% endfor %}
                 {% endif %}
             </td>
+            <td class="masterclass">
+            <td class="amphitheatre">
+            <td class="laboratories">
         </tr>
     </table>
 </div>
