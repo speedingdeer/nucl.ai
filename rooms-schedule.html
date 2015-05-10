@@ -1,0 +1,18 @@
+---
+layout: page
+title: nucl.ai Schedule
+permalink: /program/rooms-schedule/
+---
+
+<section class="program-schedule rooms-schedule">
+    <grid>
+        <h2>Conference Schedule</h2>
+        <content>
+            {% assign printTime = false %}
+
+            {% for day in site.data.schedule %}
+                {% include schedule/day.html %}
+            {% endfor %}
+        </content>
+    </grid>
+</section>
