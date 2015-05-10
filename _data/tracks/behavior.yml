@@ -8,8 +8,8 @@
     - Hendrik Skubch
   room: amphitheatre
   time:
-    start: 16:45
-    finish: 17:30
+    start: "16:45"
+    finish: "17:30"
 
 - title: "Behavior Trees and Blackboards in EVE Online"
   description: >
@@ -18,8 +18,8 @@
     - Freyr Magnússon
   room: amphitheatre
   time:
-    start: 14:00
-    finish: 14:45
+    start: "14:00"
+    finish: "14:45"
 
 - title: "Case-based Reasoning for Player Behavior Cloning in Killer Instinct"
   description: >
@@ -29,8 +29,8 @@
     - Bruce Hayles
   room: amphitheatre
   time:
-    start: 10:00
-    finish: 11:00
+    start: "10:00"
+    finish: "11:00"
 
 - title: "Designing realistic behaviors for a military training simulation"
   description: >
@@ -41,8 +41,8 @@
     - Newfel Messouci
   room: masterclass
   time:
-    start: 12:30
-    finish: 13:00
+    start: "12:30"
+    finish: "13:00"
 
 - title: "Reusability and abstraction: the next evolution for Behavior Trees"
   description: >
@@ -52,5 +52,5 @@
     - Juraj Blaho
   room: masterclass
   time:
-    start: 12:00
-    finish: 12:30
+    start: "12:00"
+    finish: "12:30"

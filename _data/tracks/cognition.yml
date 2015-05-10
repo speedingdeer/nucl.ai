@@ -7,5 +7,5 @@
     - Dale Lane
   room: amphitheatre
   time:
-    start: 16:45
-    finish: 17:45
+    start: "16:45"
+    finish: "17:45"

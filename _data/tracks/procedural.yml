@@ -6,5 +6,5 @@
     - Vladimir Nejedly
   room: masterclass
   time:
-    start: 16:00
-    finish: 16:30
+    start: "16:00"
+    finish: "16:30"
