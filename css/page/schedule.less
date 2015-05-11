@@ -155,6 +155,14 @@ section.program-schedule {
             &.not-expanded { display: none; }
             margin-top: 1em;
             padding-bottom: 1em; 
+            td.timeline {
+                div.pattern { display: none; }
+                div.interval {
+                    p.interval-time {
+                        margin: 0;
+                    }
+                }
+            }
             div.track {
                 padding: 0 6em;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0 2em; }
@@ -187,8 +195,14 @@ section.program-schedule {
 section.rooms-schedule.program-schedule {
     content {
         table.talks-list {
+            td { 
+                position: relative; 
+                width: 300px;
+                &.timeline { width: 100px; }
+            }
             div.track {
-                padding: 0 2em;
+                padding: 0 1em;
+                position: absolute;
                 div.talk-cell-wrap {
                     display: table-cell;
                     height: inherit;
