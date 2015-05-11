@@ -12,8 +12,10 @@ $ ->
         if idx < studios.length - 1
             if studio.html() == studios[idx+1].html() then studio.remove()
 
+  dCount = 0
   days = $("section.program-schedule table.talks-list")
   days.each ->
+    dCount++
     day = $(@)
     talks = day.find("div.track")
     talksArray = []
@@ -22,31 +24,48 @@ $ ->
 
     #set duration attribute
     for talk in talksArray
-      if talk.attr("time-start") != "" && talk.attr("time-finish") != ""
-        startTime = talk.attr("time-start")
-        finishTime = talk.attr("time-finish")
-        startDate = new Date("2001/01/01 " + startTime)
-        finishDate = new Date("2001/01/01 " + finishTime)
-        duration = (finishDate.getHours() * 60 + finishDate.getMinutes()) - (startDate.getHours() * 60 + startDate.getMinutes())
-        talk.attr("duration", duration)
+      startTime = talk.attr("time-start")
+      finishTime = talk.attr("time-finish")
+      startDate = new Date("2001/01/01 " + startTime)
+      finishDate = new Date("2001/01/01 " + finishTime)
+      duration = (finishDate.getHours() * 60 + finishDate.getMinutes()) - (startDate.getHours() * 60 + startDate.getMinutes())
+      talk.attr("duration", duration)
 
     # sort by time and append
+    # and remember first start and last end
+    talksStartTime = null
+    talksFinishTime = null
     talksArray.sort (a,b) ->
-      aTime = if a.attr("time-start") != "" then a.attr("time-start") else "11:59 pm"
-      bTime = if b.attr("time-start") != "" then b.attr("time-start") else "11:59 pm" 
-      new Date("2001/01/01 " + aTime) - new Date("2001/01/01 " + bTime) 
+      aStartTime = new Date("2001/01/01 " + a.attr("time-start"))
+      bStartTime = new Date("2001/01/01 " + b.attr("time-start"))
+      aFinishTime = new Date("2001/01/01 " + a.attr("time-finish"))
+      bFinishTime = new Date("2001/01/01 " + b.attr("time-finish"))
+
+      if talksStartTime == null || talksStartTime > aStartTime then talksStartTime = aStartTime
+      if talksStartTime == null || talksStartTime > bStartTime then talksStartTime = bStartTime
+
+      if talksFinishTime == null || talksFinishTime < aFinishTime then talksFinishTime = aFinishTime
+      if talksFinishTime == null || talksFinishTime < bFinishTime then talksFinishTime = bFinishTime
+
+      aStartTime - bStartTime
+
+
     if $("section.rooms-schedule").length > 0 
       # append all talks to rooms
       day.find("td.talks-list").remove()
       for talk in talksArray
         room = talk.attr("room")
         day.find("td." + room).append(talk)
+        #set up timeline
+        
     else
-      # simple append
+      # simple append and set up timeline duration
       day.find("td.talks-list").html("")
       day.append(talksArray)
-
     day.removeClass("not-initialized")
+    
+
+  if $("section.rooms-schedule").length == 0 then return
 
   #calculate time / height ratio
   maxHeightDurationRatio = 0
@@ -56,6 +75,12 @@ $ ->
     ratio = height / duration
     if ratio > maxHeightDurationRatio then maxHeightDurationRatio = ratio
 
+  #set up ratio based size
+  $("table.talks-list div.track").each ->
+    duration = $(@).attr("duration")
+    $(@).height( duration * maxHeightDurationRatio )
+
+  #set up timeline
 
   $("section.program-schedule table").click ->
     button = $(@).find(".button-expand")

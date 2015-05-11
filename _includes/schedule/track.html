@@ -1,5 +1,6 @@
 {% for talk in site.data.tracks[track] %}
     <div class="track {{track}}" time-start="{{talk.time.start}}" time-finish="{{talk.time.finish}}" room="{{talk.room}}">
+        <div class="talk-cell-wrap">
         <p class="speakers"> 
             {% assign firstSpeaker = true %}
             {% for speaker in talk.speakers %}
@@ -21,5 +22,6 @@
             {{talk.time.start}}
         {% endif %}
         {{talk.title}}</a></p>
+        </div>
     </div>
 {% endfor %}
