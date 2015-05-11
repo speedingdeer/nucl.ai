@@ -17,7 +17,7 @@
     This presentation focuses on an advanced AI search technique called Monte-Carlo Tree Search,
     and its improvements for the latest iteration of the TOTAL WAR franchise.  Introduced 
     previously in ROME 2, the tactical coordination system saw some major improvements to
-    maximize the maximize the number of iterations executed without deteriorating performance.
+    maximize the number of iterations executed without deteriorating performance.
     Piotr will dig into techniques that helped improve performance, for example in the
     structure of the tree itself as well as some higher-level optimisations.
   speakers:
