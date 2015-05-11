@@ -1,5 +1,9 @@
 - id: animation
   title: "Character Animation Technology"
+  subtitle: >
+    Join experts from Ubisoft, Riot Games and Pixar for a masterclass on state-of-the-art
+    techniques from runtime IK rigs to gameplay integration, and forward looking technology
+    to break down the finite-state machine.
   description: >
     Portraying characters is one of the most challenging aspects of building an
     engaging 3D world.  While many low-level aspects of character animation technology
@@ -28,6 +32,11 @@
 
 - id: decisions
   title: "Real-time Decisions"
+  subtitle: >
+    Join experts from Microsoft Studios, Creative Assembly, Lionhead and the Universities
+    of Essex and Dortmund for a masterclass on state-of-the-art techniques in decision making
+    from Monte-Carlo Tree Search to Deep Reinforcement Learning or neural networks, why and
+    how they can be applied in interactive applications.
   description: >
     How do you build your simulation to respond to user input at interactive rates,
     especially if it needs to make intelligent decisions?  Artificial intelligence
@@ -54,6 +63,11 @@
 
 - id: behavior
   title: "Agent Behavior"
+  subtitle: >
+    Join experts from Epic, Bohemia Interactive Simulations, CCP Games for a masterclass on
+    state-of-the-art techniques in behavior and control, including coordination of multiple
+    agents, reuse of logic and command hierarchies.  You'll learn tips and tricks to apply
+    behavior trees into your own games, simulations and applications. 
   content: >
     <img src="/img/tracks/TotalWarAttila_3.jpg"/>
     <p class="credit"><u>Image Credit</u>: Total War: Attilla</p> 

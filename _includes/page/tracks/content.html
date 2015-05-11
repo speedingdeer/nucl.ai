@@ -8,21 +8,86 @@
     {% endif %}
 {% endfor %}
 
-<section class="tracks-content tracks-text">
+<section class="tracks-content tracks-text tickets">
     <grid>
         <h2>{{item.title}} (Track #{{index}})</h2>
+
         {% assign items = site.data.tracks[item.id] %}
         <content>
+            <h4>{{item.subtitle}}</h4>
+
             <p class="intro"><span>Now in its 7th edition, <a href="/">nucl.ai</a> brings together hundreds of developers from creative industries and interactive media to resolve the biggest technical and design problems with Artificial Intelligence.  One of the event's tracks focuses specifically on</span> <b>&ldquo;{{item.title}}&rdquo;</b> <span>for an entire day.</span></p>
+
+        {% for ticket in site.data.track_price %}
+            {% if ticket.date and ticket.date != "" %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
+            <item class="ticket-row ticket-price {{row_class}} {{ticket.type}} bigger">
+                {% if ticket.name and ticket.name != "" or ticket.date and ticket.date != "" %} {% capture cell_class %} visible {% endcapture %} {% else %} {% capture cell_class %} invisible {% endcapture %} {% endif %}
+                <div class="name table {{cell_class}}">
+                    <div class="centered-cell">
+                        <p class="name">{{ ticket.name }} </p>
+                        <p class="date small">{{ ticket.date }}</p>
+                    </div>
+                </div>
+                
+                {% if forloop.first == false %}
+                <div class="conference table">
+                {% else %}
+                <div class="conference table titlerow">
+                {% endif %}                    
+                <div class="centered-cell small">
+                        <p>
+                            {{ ticket.conference }}
+                        </p>
+                    </div>
+                </div>
+
+                {% if forloop.first == false %}
+                <div class="all-access table">
+                {% else %}
+                <div class="all-access table titlerow">
+                {% endif %}
+                    <div class="centered-cell small">
+                        <p>
+                            {% if ticket.all_access %}
+                                {{ ticket.all_access }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+
+            </item>
+        {% endfor %}
+        
+        <div class="table-comments wider">
+            <p class="table-comment">
+                NOTE: Discounts are available for small teams and for those between jobs; email events(at)aigamedev.com for a coupon code. 
+            </p>
+        </div>
+
             {{track.content}}
 
+            <div class="block">
             <h3>Keywords</h3>
             
-            <ul id="keywords">
+            <ul>
             {% for keyword in track.keywords %}
                 <li>{{ keyword }}</li>
             {% endfor %}
             </ul>
+            </div>
+            
+            <div class="block">
+            <h3>Format</h3>
+            
+            <ul>
+                <li>Keynote</li>
+                <li>Presentations</li>
+                <li>Panel Discussion</li>
+                <li>Expert Q&A</li>
+            </ul>
+            </div>
         </content>
     </grid>
 </section>
@@ -33,7 +98,7 @@
     {% for day in site.data.schedule %}
         {% for item in day.tracks %}
             {% if item == track.id %}
-            <h2>Day Schedule (Track #{{index}})</h2>
+            <h2>Track #{{index}} Schedule</h2>
             <content>
                     {% include schedule/day.html %}
             </content>
