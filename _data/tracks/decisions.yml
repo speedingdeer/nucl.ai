@@ -29,8 +29,7 @@
 
 - title: "Tactical Planning and Real-time MCTS in Fable Legends"
   description: >
-    Fable Legends is a 4v1 asymmetric multi-player game, in which a team of 4 heroes compete against 1 villain. This poses some 
-    interesting design and programming challenges.
+    Fable Legends is a 4v1 asymetric multiplayer game, in which a team of 4 heroes compete against 1 villain. This poses some interesting design and programming challenges. Tactical decisions (e.g. revive a team mate or go for the objective) are not necessarily straight forward when there are a wide range of characters, abilities, constantly changing designs and different game modes. The aim was to create a robust tactical AI that could adapt to any situation and create interesting challenges for players. One that could come up with strategies on its own and surprise us as players. Rather than go a more traditional route (utility scoring, planners/HTN) we implemented a simulation based approach, which involved modelling the game play and using MCTS to search the potential plan space. Overall this worked well, has interesting characteristics and has a number of potential opportunities not readily available with other techniques (e.g. feeding in telemetry data, learning player behaviour, statistical analysis). Being able to update the model and have the system automatically find new strategies is very advantageous. This talk would be a deep dive of the implementation, challenges, performance and result as well as future plans.
   speakers:
     - Gwaredd Mountain
   room: amphitheatre
