@@ -6,8 +6,8 @@
     - Ricardo J. Méndez
   room: masterclass
   time:
-    start: 11:15
-    finish: 12:00
+    start: "11:15"
+    finish: "12:00"
 
 - title: "Living-Room Augmented Reality and Project Trains"
   description: >
@@ -17,5 +17,5 @@
     - Alex J. Champandard
   room: masterclass
   time:
-    start: 16:00
-    finish: 16:30
+    start: "16:00"
+    finish: "16:30"

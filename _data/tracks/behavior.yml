@@ -8,8 +8,8 @@
     - Hendrik Skubch
   room: amphitheatre
   time:
-    start: 16:45
-    finish: 17:30
+    start: "16:45"
+    finish: "17:30"
 
 - title: "Behavior Trees and Blackboards in EVE Online"
   description: >
@@ -18,19 +18,20 @@
     - Freyr Magnússon
   room: amphitheatre
   time:
-    start: 14:00
-    finish: 14:45
+    start: "14:00"
+    finish: "14:45"
 
 - title: "Case-based Reasoning for Player Behavior Cloning in Killer Instinct"
   description: >
-    This talk digs into the design and implementation of Shadows, a system for cloning player behavior in Killer Instinct. Our implementation of case-based reasoning is discussed, as well as the challenges faced implementing such a system in a fighting game.
-    The techniques we use are broadly applicable, and during the talk we will delve into topics like feature selection and creating distance functions capable of reproducing complex behaviors. Examples of such behaviors include avoiding projectiles dynamically, how the player approaches the fight differently from different ranges, and capturing how a player adapts to their opponent’s strategy during a match. 
+    Fighting game players exhibit a wide variety of play styles that evolve with the metagame. Traditional fighting game AIs, however, typically use reactive agents whose difficulty comes from superhuman reaction times and do not attempt to model player behavior.
+    Transitioning from single to multiplayer is a frustrating experience for a lot of players since fighting the default AI is nothing like fighting another player. In Killer Instinct we address this by cloning player behavior, creating living replays of players called Shadows. Players can challenge Shadows of varying skill levels and play styles. This gives players the opportunity to have fun and learn the game without the pressure of online matches.
+    This talk covers the design and implementation of Shadows, a system for player behavior cloning in Killer Instinct. Our implementation of case-based reasoning is discussed, as well as the challenges faced implementing such a system in a fighting game.
   speakers:
     - Bruce Hayles
   room: amphitheatre
   time:
-    start: 10:00
-    finish: 11:00
+    start: "10:00"
+    finish: "11:00"
 
 - title: "Designing realistic behaviors for a military training simulation"
   description: >
@@ -41,16 +42,16 @@
     - Newfel Messouci
   room: masterclass
   time:
-    start: 12:30
-    finish: 13:00
+    start: "12:30"
+    finish: "13:00"
 
 - title: "Reusability and abstraction: the next evolution for Behavior Trees"
   description: >
-    Behavior trees (BT), are now commonly used to create autonomous behaviors in games and simulation. While, in practice, a visual programming language, they’re abstraction are limited to the reuse of subtrees in other trees, the equivalent of defining a nonparametric function. While useful it is a very limited abstraction.
+    Behavior trees (BTs) are now commonly used to create autonomous behaviors in games and simulation. While, in practice, a visual programming language, their abstractions are commonly limited to the reuse of subtrees in other trees, the equivalent of defining a nonparametric function. While useful it is still a very limited abstraction.
     In this talk, we propose a way to bring more powerful abstractions from general programming languages to BTs. Attendees will learn how local variables and parameterized subtrees are one of the key to make the creation of reusable behavior trees both easier and less error­ prone.
   speakers:
     - Juraj Blaho
   room: masterclass
   time:
-    start: 12:00
-    finish: 12:30
+    start: "12:00"
+    finish: "12:30"

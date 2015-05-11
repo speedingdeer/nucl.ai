@@ -8,8 +8,8 @@
     - Michael Büttner
   room: amphitheatre
   time:
-    start: 14:45
-    finish: 15:45
+    start: "14:45"
+    finish: "15:45"
 
 - title: "Exploring the Relationship Between Gameplay and Animaion"
   description: >
@@ -18,8 +18,8 @@
     - Christopher Laubach
   room: amphitheatre
   time:
-    start: 12:00
-    finish: 12:45
+    start: "12:00"
+    finish: "12:45"
 
 - title: "Runtime Inverse Kinematic Rig"
   description: >
@@ -41,5 +41,5 @@
     - Alexander Bereznyak
   room: amphitheatre
   time:
-    start: 10:00
-    finish: 10:45
+    start: "10:00"
+    finish: "10:45"

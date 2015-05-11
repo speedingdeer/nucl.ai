@@ -8,8 +8,8 @@
     - Paul Kanyuk
   room: amphitheatre
   time:
-    start: 16:30
-    finish: 17:30
+    start: "16:30"
+    finish: "17:30"
 
 - title: "Building the Massive Crowds of Assassin’s Creed Unity"
   description: >
@@ -24,8 +24,8 @@
     - Antoine Fortier
   room: amphitheatre
   time:
-    start: 14:00
-    finish: 15:00
+    start: "14:00"
+    finish: "15:00"
 
 - title: "Crowds Patches for Populating Virtual Worlds"
   description: >
@@ -45,8 +45,8 @@
     - Julien Pettré
   room: masterclass
   time:
-    start: 12:00
-    finish: 12:45
+    start: "12:00"
+    finish: "12:45"
 
 - title: "Creating The Epic Sky Battle In Guardians of the Galaxy"
   description: >
@@ -56,8 +56,8 @@
     - Adam Davis
   room: amphitheatre
   time:
-    start: 10:00
-    finish: 11:00
+    start: "10:00"
+    finish: "11:00"
 
 - title: "Believable and Responsive Locomotion for Simulated Agents"
   description: >
@@ -70,5 +70,5 @@
     - Mikko Mononen
   room: masterclass
   time:
-    start: 14:45
-    finish: 15:30
+    start: "14:45"
+    finish: "15:30"

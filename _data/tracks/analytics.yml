@@ -6,8 +6,8 @@
     - Bill Grosso
   room: amphitheatre
   time:
-    start: 12:00
-    finish: 12:45
+    start: "12:00"
+    finish: "12:45"
 
 # - title: "Fast > Perfect: Practical approximation examples for mobile game analytics using Spark Streaming"
 #   description: >
@@ -52,8 +52,8 @@
     - Simon Worgan
   room: masterclass
   time:
-    start: 14:00
-    finish: 14:45
+    start: "14:00"
+    finish: "14:45"
 
 #- title: "Early churn prediction and personalised interventions"
 #  description: >
