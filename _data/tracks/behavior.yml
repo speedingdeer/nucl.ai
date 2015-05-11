@@ -23,8 +23,9 @@
 
 - title: "Case-based Reasoning for Player Behavior Cloning in Killer Instinct"
   description: >
-    This talk digs into the design and implementation of Shadows, a system for cloning player behavior in Killer Instinct. Our implementation of case-based reasoning is discussed, as well as the challenges faced implementing such a system in a fighting game.
-    The techniques we use are broadly applicable, and during the talk we will delve into topics like feature selection and creating distance functions capable of reproducing complex behaviors. Examples of such behaviors include avoiding projectiles dynamically, how the player approaches the fight differently from different ranges, and capturing how a player adapts to their opponent’s strategy during a match. 
+    Fighting game players exhibit a wide variety of play styles that evolve with the metagame. Traditional fighting game AIs, however, typically use reactive agents whose difficulty comes from superhuman reaction times and do not attempt to model player behavior.
+    Transitioning from single to multiplayer is a frustrating experience for a lot of players since fighting the default AI is nothing like fighting another player. In Killer Instinct we address this by cloning player behavior, creating living replays of players called Shadows. Players can challenge Shadows of varying skill levels and play styles. This gives players the opportunity to have fun and learn the game without the pressure of online matches.
+    This talk covers the design and implementation of Shadows, a system for player behavior cloning in Killer Instinct. Our implementation of case-based reasoning is discussed, as well as the challenges faced implementing such a system in a fighting game.
   speakers:
     - Bruce Hayles
   room: amphitheatre
