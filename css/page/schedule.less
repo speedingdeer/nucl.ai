@@ -8,6 +8,7 @@
 @COLOR_TRACK_ANIMATION: #ff0031;
 @COLOR_TRACK_COGNITION: #e0e0e0;
 
+@LIGHTEN_BLUE: lighten(@BLUE, 20%);
 
 section.program-schedule.track-schedule {
     content {
@@ -201,6 +202,11 @@ section.rooms-schedule.program-schedule {
         table.talks-list {
             padding-top: 0;
             border-spacing: 0;
+            th {
+                color: @LIGHTEN_BLUE;
+                &.masterclass { color: @ORANGE; }
+                h3 { border: none; }
+            }
             td { 
                 position: relative; 
                 width: 300px; //remaining space will set up itself anyway
