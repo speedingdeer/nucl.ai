@@ -154,12 +154,16 @@ section.program-schedule {
             &.not-initialized { display: none !important; }
             &.not-expanded { display: none; }
             margin-top: 1em;
-            padding-bottom: 1em; 
+            padding-bottom: 2em; 
             td.timeline {
                 div.pattern { display: none; }
                 div.interval {
+                    position: relative;
                     p.interval-time {
+                        position: absolute;
                         margin: 0;
+                        &.start { top: 0px; }
+                        &.finish { bottom: 0px; } //reset in coffescript anyway
                     }
                 }
             }
@@ -197,12 +201,13 @@ section.rooms-schedule.program-schedule {
         table.talks-list {
             td { 
                 position: relative; 
-                width: 300px;
-                &.timeline { width: 100px; }
+                width: 300px; //remaining space will set up itself anyway
+                &.timeline { width: 65px; }
             }
             div.track {
                 padding: 0 1em;
                 position: absolute;
+                background-color: @DARK_BLUE;
                 div.talk-cell-wrap {
                     display: table-cell;
                     height: inherit;

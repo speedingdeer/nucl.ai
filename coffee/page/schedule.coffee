@@ -111,9 +111,12 @@ $ ->
       #marginTop = positionTop - (track.offset().top - top)
       #track.css("margin-top", marginTop)
 
+  #set up interval scale
   intervalHeight = timelineIntervalRange * maxHeightDurationRatio
   $("table.talks-list td.timeline div.interval").each ->
     $(@).height(intervalHeight)
+    $(@).find(".finish").css("bottom", "-" + $(@).find(".finish").height() + "px")
+
 
 
   $("section.program-schedule table").click ->
