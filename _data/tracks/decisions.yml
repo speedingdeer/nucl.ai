@@ -1,3 +1,17 @@
+- title: "Drivatar and Machine Learning Racing Skills in the Forza Series"
+  description: >
+    The Forza Drivatar technology powering games in the Forza Horizon and Forza Motorsport series
+    is based on machine learning. It enables gameplay beyond robotic drivers and ghost replays by
+    learning player- and style-specific Drivatars that can compete with friends.  This presentation
+    will go behind the scenes in the development of Forza Drivatar, explaining the approach from a
+    technical perspective as well as the design and integration with the gameplay.
+  speakers:
+    - Jeffrey Schlimmer
+  room: amphitheatre
+  time:
+    start: "12:00"
+    finish: "13:00"
+
 - title: "Optimizing MCTS Performance for Tactical Coordination in TOTAL WAR: ATILLA"
   description: >
     This presentation focuses on an advanced AI search technique called Monte-Carlo Tree Search,
@@ -23,17 +37,3 @@
   time:
     start: "11:15"
     finish: "12:00"
-
-- title: "Drivatar and Machine Learning Racing Skills in the Forza Series"
-  description: >
-    The Forza Drivatar technology powering games in the Forza Horizon and Forza Motorsport series
-    is based on machine learning. It enables gameplay beyond robotic drivers and ghost replays by
-    learning player- and style-specific Drivatars that can compete with friends.  This presentation
-    will go behind the scenes in the development of Forza Drivatar, explaining the approach from a
-    technical perspective as well as the design and integration with the gameplay.
-  speakers:
-    - Jeffrey Schlimmer
-  room: amphitheatre
-  time:
-    start: "12:00"
-    finish: "13:00"
