@@ -1,5 +1,7 @@
 root = exports ? this # global
 
+timelineIntervalRange = 15
+
 $ ->
   speakers = $("section.program-schedule p.speakers")
   # pre parse text firt
@@ -12,24 +14,13 @@ $ ->
         if idx < studios.length - 1
             if studio.html() == studios[idx+1].html() then studio.remove()
 
-  dCount = 0
   days = $("section.program-schedule table.talks-list")
   days.each ->
-    dCount++
     day = $(@)
     talks = day.find("div.track")
     talksArray = []
     talks.each ->
       talksArray.push $(@)
-
-    #set duration attribute
-    for talk in talksArray
-      startTime = talk.attr("time-start")
-      finishTime = talk.attr("time-finish")
-      startDate = new Date("2001/01/01 " + startTime)
-      finishDate = new Date("2001/01/01 " + finishTime)
-      duration = (finishDate.getHours() * 60 + finishDate.getMinutes()) - (startDate.getHours() * 60 + startDate.getMinutes())
-      talk.attr("duration", duration)
 
     # sort by time and append
     # and remember first start and last end
@@ -49,6 +40,17 @@ $ ->
 
       aStartTime - bStartTime
 
+    #set duration attribute
+    for talk in talksArray
+      startTime = talk.attr("time-start")
+      finishTime = talk.attr("time-finish")
+      startDate = new Date("2001/01/01 " + startTime)
+      finishDate = new Date("2001/01/01 " + finishTime)
+      duration = (finishDate.getHours() * 60 + finishDate.getMinutes()) - (startDate.getHours() * 60 + startDate.getMinutes())
+      talk.attr("duration", duration)
+      offset = (startDate.getHours() * 60 + startDate.getMinutes()) - (talksStartTime.getHours() * 60 + talksStartTime.getMinutes())
+      talk.attr("offset", offset)
+
 
     if $("section.rooms-schedule").length > 0 
       # append all talks to rooms
@@ -57,7 +59,23 @@ $ ->
         room = talk.attr("room")
         day.find("td." + room).append(talk)
         #set up timeline
-        
+      talksDuration = (talksFinishTime.getHours() * 60 + talksFinishTime.getMinutes()) - (talksStartTime.getHours() * 60 + talksStartTime.getMinutes())
+      intervalsCount = talksDuration / timelineIntervalRange
+      for idx in [0...intervalsCount]
+        intervalDate = new Date(talksStartTime)
+        intervalDate.setMinutes(intervalDate.getMinutes() + idx * timelineIntervalRange)
+        minutes = if intervalDate.getMinutes() >= 10 then intervalDate.getMinutes() else "0" + intervalDate.getMinutes() 
+        startTime = intervalDate.getHours() + ":" + minutes
+        intervalDate.setMinutes(intervalDate.getMinutes() +  timelineIntervalRange)
+        minutes = if intervalDate.getMinutes() >= 10 then intervalDate.getMinutes() else "0" + intervalDate.getMinutes() 
+        finishTime = intervalDate.getHours() + ":" + minutes
+        interval = day.find("td.timeline div.interval.pattern").clone().removeClass("pattern")
+        interval.find(".interval-time.start").text(startTime)
+        if idx == intervalsCount - 1
+          interval.find(".interval-time.finish").text(finishTime)
+        day.find("td.timeline").append(interval)
+
+
     else
       # simple append and set up timeline duration
       day.find("td.talks-list").html("")
@@ -79,8 +97,27 @@ $ ->
   $("table.talks-list div.track").each ->
     duration = $(@).attr("duration")
     $(@).height( duration * maxHeightDurationRatio )
+  
 
-  #set up timeline
+  #allign top position
+  days.each -> 
+    day = $(@)
+    #top = $(day.find("div.track[offset=0]")[0]).offset().top
+    day.find("div.track").each ->
+      track = $(@)
+      offset = track.attr("offset")
+      positionTop = offset * maxHeightDurationRatio 
+      track.css("top", positionTop + "px")
+      #marginTop = positionTop - (track.offset().top - top)
+      #track.css("margin-top", marginTop)
+
+  #set up interval scale
+  intervalHeight = timelineIntervalRange * maxHeightDurationRatio
+  $("table.talks-list td.timeline div.interval").each ->
+    $(@).height(intervalHeight)
+    $(@).find(".finish").css("bottom", "-" + $(@).find(".finish").height() + "px")
+
+
 
   $("section.program-schedule table").click ->
     button = $(@).find(".button-expand")

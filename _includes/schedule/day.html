@@ -36,7 +36,7 @@
             </td>
         </tr>
     </table>
-    <table class="talks-list not-initialized animated zoomIn expanded" name="{{day.title}}">
+    <table class="talks-list not-initialized animated expanded" name="{{day.title}}">
         {% comment %} Get all talks per day {% endcomment %}
         <tr>
             <td class="talks-list">
@@ -49,7 +49,12 @@
                     {% endfor %}
                 {% endif %}
             </td>
-            <td class="timeline"></td>
+            <td class="timeline">
+                <div class="interval pattern">
+                    <p class="interval-time start"></p>
+                    <p class="interval-time finish"></p>
+                </div>
+            </td>
             <td class="masterclass"></td>
             <td class="amphitheatre"></td>
             <td class="laboratories"></td>
