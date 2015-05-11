@@ -199,16 +199,18 @@ section.program-schedule {
 section.rooms-schedule.program-schedule {
     content {
         table.talks-list {
+            padding-top: 0;
+            border-spacing: 0;
             td { 
                 position: relative; 
                 width: 300px; //remaining space will set up itself anyway
                 &.timeline { width: 65px; }
             }
             div.track {
-                padding: 0 1em;
+                padding: 0;
                 position: absolute;
-                background-color: @DARK_BLUE;
                 div.talk-cell-wrap {
+                    background-color: @DARK_BLUE;
                     display: table-cell;
                     height: inherit;
                     vertical-align: middle;
