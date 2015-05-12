@@ -252,6 +252,11 @@ section.rooms-schedule.program-schedule {
                 display: table;
                 padding: 0;
                 position: absolute;
+                &.hovered {
+                    div.talk-cell-wrap {
+                        background-color: lighten(@DARK_BLUE, 20%);
+                    }
+                }
                 div.talk-cell-wrap {
                     background-color: @DARK_BLUE;
                     display: table-cell;
@@ -259,6 +264,9 @@ section.rooms-schedule.program-schedule {
                     vertical-align: middle;
                     padding: 0 0.5em;
                     font-size: 0.8em;
+                    p {
+                        margin: 0;
+                    }
                 }
             }
             tr { vertical-align: top; }
