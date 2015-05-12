@@ -40,7 +40,10 @@
         {% comment %} Get all talks per day {% endcomment %}
         {% if roomsLayout %}
             <tr> 
-                <th class="timeline titlerow"> {%comment %} one empty header for timeline {% endcomment %} </th>
+                <th class="timeline titlerow">
+                    {%comment %} one empty header for timeline {% endcomment %}
+                    <div class="titlecell-wrap cell-content"><div class="tite-wrap"><h3 style="color: transparent;">i</h3></div></div>
+                </th>
                 {% for room in site.data.rooms %}
                     <th class="{{room.id}} titlerow">
                         <div class="titlecell-wrap cell-content">
@@ -61,12 +64,16 @@
                     {% endfor %}
                 {% endif %}
             </td>
-            <td class="timeline">
-                <div class="interval pattern cell-content">
-                    <p class="interval-time start"></p>
-                    <p class="interval-time finish"></p>
-                </div>
-            </td>
+            {% if roomsLayout %}
+                <td class="timeline">
+                    <div class="interval cell-content cover-empty"></div>
+                    <div class="interval pattern cell-content">
+                        <p class="interval-time start"></p>
+                        <p class="interval-time finish"></p>
+                        <p class="interval-time ellipsis">...</p>
+                    </div>
+                </td>
+            {% endif %}
             {% for room in site.data.rooms %}
                <td class="{{room.id}}"></td>
             {% endfor %}

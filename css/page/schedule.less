@@ -156,7 +156,6 @@ section.program-schedule {
             &.not-expanded { display: none; }
             margin-top: 1em;
             padding-bottom: 2em;
-            background: none;
             .cell-content { background-color: @DARK_GREY; }
             div.track {
                 padding: 0 6em;
@@ -192,6 +191,7 @@ section.rooms-schedule.program-schedule {
         table.talks-list {
             padding-top: 0;
             border-spacing: 0;
+            background: none;
             .cell-content {
                 width: calc(~"100% - 5px");
             }
@@ -217,20 +217,34 @@ section.rooms-schedule.program-schedule {
                 &.timeline { border: none; }
             }
             td.timeline {
-                padding-top: @BORDER_SIZE;
                 font-size: 0.8em;
                 div.pattern { display: none; }
                 div.interval {
                     position: relative;
                     padding-top: @BORDER_SIZE;
+                    &.cover-empty {
+                        height: 0;
+                    }
                     p.interval-time {
                         position: absolute;
                         margin: 0;
                         opacity: 0.7;
-                        left: 5px; //this value is taken from web - inspector - maybe better to set up in js?
+                        width: 100%;
+                        text-align: center;
                         &.start { top: 0px; }
                         &.finish { bottom: 0px; }
+                        &.ellipsis { 
+                            display: none;
+                            padding-top: 50%;
+                            left: 0;
+                            width: 100%;
+                        }
                     }
+                    &.empty { p.ellipsis { display: initial; } }
+                    &.orhpaned-empty { 
+                        p.ellipsis { display: none; }
+                    }
+                    &.next-empty { display: none; }
                 }
             }
             div.track {
