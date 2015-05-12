@@ -29,6 +29,13 @@ section.thumbnails-grid.tracks {
 section.tracks-content.tracks-text {
     content {
         .column(12);
+        h4 {
+            font-size: 1.34em;
+            line-height: 1.34;
+            text-align: justify;
+            margin: 1em 0 2em 0;
+            color: @LIGHT_BLUE;
+        }
         p, li {
             span {
                 opacity: 0.85;
@@ -39,7 +46,7 @@ section.tracks-content.tracks-text {
                 font-size: 1.34em; // This is required? Size too small otherwise.
                 line-height: 1.34;
                 text-align: justify;
-                margin: 0 4em 1em 4em;
+                margin: 1em 0 2em 0;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                     font-size: 1em; 
                     margin: 0 1em 1em;
@@ -57,8 +64,12 @@ section.tracks-content.tracks-text {
             color: #808080;
         }
     }
-    ul#keywords {
-        opacity: 0.85;
+    div.block {
+        float: left;
+        width: 50%;
+        ul {
+            opacity: 0.85;
+        }
     }
 }
 
