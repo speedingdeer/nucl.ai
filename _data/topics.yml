@@ -64,10 +64,11 @@
 - id: behavior
   title: "Agent Behavior"
   subtitle: >
-    Join experts from Epic, Bohemia Interactive Simulations, CCP Games for a masterclass on
-    state-of-the-art techniques in behavior and control, including coordination of multiple
-    agents, reuse of logic and command hierarchies.  You'll learn tips and tricks to apply
-    behavior trees into your own games, simulations and applications. 
+    Join experts from Square Enix, Epic, Bohemia Interactive Simulations, CCP Games for a
+    masterclass on state-of-the-art techniques in behavior and control, including coordination
+    of multiple agents, reuse of logic and command hierarchies.  Learn how to integrate
+    Behavior Trees and other techniques into your games and simulations, for results that are
+    easy to author and control.
   content: >
     <img src="/img/tracks/TotalWarAttila_3.jpg"/>
     <p class="credit"><u>Image Credit</u>: Total War: Attilla</p> 
@@ -93,6 +94,8 @@
 
 - id: procedural
   title: "Procedural Content Generation"
+  subtitle: >
+    .
   description: >
     Over the past few years, procedural generation techniques have established
     themselves as not only a sensible approach but often as the default solution
@@ -121,6 +124,8 @@
 
 - id: alternate
   title: "Virtual / Augmented Reality"
+  subtitle: >
+    .
   content: >
     <img src="/img/tracks/EveOnline_1.jpg"/>
     <p class="credit"><u>Image Credit</u>: Eve Online</p> 
@@ -147,6 +152,12 @@
 
 - id: ambient
   title: "Crowds and Ambient Life"
+  subtitle: >
+    Join experts from Pixar Animation Studios, Ubisoft Montreal, MPC, Unity Technologies
+    and the INRIA labs for a masterclass on industry-leading applications of locomotion
+    and avoidance algorithms in groups, whether in constrained environments or crowds in
+    open spaces.  Find out about the techniques used in real-time games and simulations
+    for visual effects.
   description: >
     Making a world believable almost always requires bringing it to life.  This
     track focuses on digital extras and entire crowds that can interact with
@@ -175,6 +186,11 @@
 
 - id: analytics
   title: "Advanced Analytics & Data Science"
+  subtitle: >
+    Join experts from Lionhead Studios, King.com, Nordeus, Jagex, Mind Candy and Scientific
+    Revenue for these masterclasses on state-of-the-art applications of analytics techniques
+    using pattern recognition and machine learning.  Learn how to setup player profiling and
+    apply them for dynamic pricing or reducing churn in your game or application.
   content: >
     <img src="/img/tracks/TopEleven_1.jpg"/>
     <p class="credit"><u>Image Credit</u>: Top 11 Football Manager</p> 
@@ -204,6 +220,12 @@
 
 - id: systems
   title: "Systemic Design, AI Directors"
+  subtitle: >
+    Join experts from Epic Games, CD Projekt Red, Creative Assembly for these
+    masterclasses on industry-leading applications that balance emergent behaviors
+    (bottom-up) with designer control and narrative (top-down).  Learn how to use
+    AI techniques and design methodologies to control your simulations and guide
+    them to provide the desired results for your players — at runtime.
   content: >
     <img src="/img/tracks/Fortnite_1.jpg"/>
     <p class="credit"><u>Image Credit</u>: Fortnite by Epic Games</p> 
@@ -232,6 +254,8 @@
 
 - id: cognition
   title: "Cognitive Bots & Language"
+  subtitle: >
+    .
   content: >
     <img src="/img/tracks/WatsonIBM_1.jpg"/>
     <p class="credit"><u>Image Credit</u>: IBM Watson on Jeopardy</p> 
