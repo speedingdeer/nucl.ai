@@ -9,7 +9,7 @@
 @COLOR_TRACK_COGNITION: #e0e0e0;
 
 @LIGHTEN_BLUE: lighten(@BLUE, 20%);
-
+@BORDER_SIZE: 4px;
 section.program-schedule.track-schedule {
     content {
         div.day-wrap { margin: 0; }
@@ -155,7 +155,9 @@ section.program-schedule {
             &.not-initialized { display: none !important; }
             &.not-expanded { display: none; }
             margin-top: 1em;
-            padding-bottom: 2em; 
+            padding-bottom: 2em;
+            background: none;
+            .cell-content { background-color: @DARK_GREY; }
             td.timeline {
                 div.pattern { display: none; }
                 div.interval {
@@ -202,17 +204,32 @@ section.rooms-schedule.program-schedule {
         table.talks-list {
             padding-top: 0;
             border-spacing: 0;
-            th {
+            .cell-content {
+                width: calc(~"100% - 5px");
+            }
+            th.titlerow {
+                .titlecell-wrap { display: table; }
                 color: @LIGHTEN_BLUE;
-                &.masterclass { color: @ORANGE; }
+                > div {
+                    display: inline-block;
+                }
+                &.masterclass { 
+                    color: @ORANGE; 
+                }
                 h3 { border: none; }
             }
             td { 
                 position: relative; 
                 width: 300px; //remaining space will set up itself anyway
-                &.timeline { width: 65px; }
+                &.timeline { width: 73px; } //this value is taken from web - inspector - maybe better to set up in js?
+            }
+            th, td { //borders
+                border-left: solid @BORDER_SIZE @LIGHTEN_BLUE;
+                &.masterclass { border-left: solid @BORDER_SIZE @ORANGE; }
+                &.timeline { border: none; }
             }
             div.track {
+                display: table;
                 padding: 0;
                 position: absolute;
                 div.talk-cell-wrap {

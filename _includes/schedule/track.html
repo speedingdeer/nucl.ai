@@ -1,5 +1,5 @@
 {% for talk in site.data.tracks[track] %}
-    <div class="track {{track}}" time-start="{{talk.time.start}}" time-finish="{{talk.time.finish}}" room="{{talk.room}}">
+    <div class="track {{track}} cell-content" time-start="{{talk.time.start}}" time-finish="{{talk.time.finish}}" room="{{talk.room}}">
         <div class="talk-cell-wrap">
         <p class="speakers"> 
             {% assign firstSpeaker = true %}
@@ -13,12 +13,13 @@
                         {% endif %}
                         {{ s.name }}</span><span class="studio">, {{ s.affiliation.name }}</span>
                         {% assign firstSpeaker = false %}
-                    {% endif %}
+                    {% endif %} 
                 {% endfor %}
             {% endfor %}
         </p>
         <p class="title"><a href="/track/{{track}}/#{{talk.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">
-        {% if printTime %}
+        {% if roomsLayout %}
+        {% else %}
             {{talk.time.start}}
         {% endif %}
         {{talk.title}}</a></p>
