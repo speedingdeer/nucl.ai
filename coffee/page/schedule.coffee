@@ -138,8 +138,8 @@ $ ->
     currentHeight = $(@).height()
     $(@).height currentHeight + timeLineExtenstion + parseInt(cellMargin)
 
-    #allign top position
-  for day, idx in days
+  #allign top position
+  for day in days
 
     emptyIntervals = (talk) ->
       empty = 0
@@ -157,6 +157,30 @@ $ ->
       positionTop = positionTop - emptyIntervals(talk) * cellMargin
       talk.css("top", positionTop + "px")
 
+  assignIntervals = (talk) ->
+    talk.intervals = []
+    for interval in day.intervals
+      if interval.startDate >= talk.startDate and interval.finishDate <= talk.finishDate
+        talk.intervals.push(interval)
+
+  talkHoverStart = (talk) ->
+    for interval in talk.intervals
+      interval.addClass("hovered")
+    talk.addClass("hovered")
+  talkHoverEnd = (talk) ->
+    for interval in talk.intervals
+      interval.removeClass("hovered")
+    talk.removeClass("hovered")
+
+  #set up on hover effect
+  for day in days
+    for talk in day.talks
+      talk.hover () ->
+        console.log talk
+      ,
+        () ->
+        console.log talk
+
 
   $("section.program-schedule table").click ->
     button = $(@).find(".button-expand")
@@ -171,3 +195,4 @@ $ ->
     talksList.one animate.onAnimatedEnd, ->
       if ! button.hasClass("expanded")
         talksList.addClass("not-expanded")
+
