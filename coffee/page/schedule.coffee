@@ -15,6 +15,8 @@ $ ->
             if studio.html() == studios[idx+1].html() then studio.remove()
 
   days = $("section.program-schedule table.talks-list")
+  cellMargin = $("div.interval").first().css("margin-top").split("px")[0]
+
   days.each ->
     day = $(@)
     talks = day.find("div.track")
@@ -50,6 +52,8 @@ $ ->
       talk.attr("duration", duration)
       offset = (startDate.getHours() * 60 + startDate.getMinutes()) - (talksStartTime.getHours() * 60 + talksStartTime.getMinutes())
       talk.attr("offset", offset)
+      if finishDate.getHours() == talksFinishTime.getHours() && finishDate.getMinutes() == talksFinishTime.getMinutes()
+        talk.attr("last", "true")
 
 
     if $("section.rooms-schedule").length > 0 
@@ -96,7 +100,8 @@ $ ->
   #set up ratio based size
   $("table.talks-list div.track").each ->
     duration = $(@).attr("duration")
-    $(@).height( duration * maxHeightDurationRatio )
+    timelineAlignment = ((duration / timelineIntervalRange) - 1 ) * cellMargin
+    $(@).height( (duration * maxHeightDurationRatio) + timelineAlignment )
   
 
   #allign top position
@@ -106,17 +111,23 @@ $ ->
     day.find("div.track").each ->
       track = $(@)
       offset = track.attr("offset")
-      positionTop = offset * maxHeightDurationRatio 
+      positionTop = offset * maxHeightDurationRatio
+      margin = ((offset / timelineIntervalRange) + 1 ) * cellMargin
+      positionTop = positionTop + margin
       track.css("top", positionTop + "px")
-      #marginTop = positionTop - (track.offset().top - top)
-      #track.css("margin-top", marginTop)
 
   #set up interval scale
   intervalHeight = timelineIntervalRange * maxHeightDurationRatio
   $("table.talks-list td.timeline div.interval").each ->
     $(@).height(intervalHeight)
-    $(@).find(".finish").css("bottom", "-" + $(@).find(".finish").height() + "px")
-
+  timeLineExtenstion = null 
+  $("table.talks-list td.timeline div.interval:last-child").each ->
+    if timeLineExtenstion == null then timeLineExtenstion = $(@).find(".finish").height()
+    currentHeight = $(@).height()
+    $(@).height timeLineExtenstion + currentHeight
+  $("div.track[last='true']").each ->
+    currentHeight = $(@).height()
+    $(@).height currentHeight + timeLineExtenstion
 
 
   $("section.program-schedule table").click ->

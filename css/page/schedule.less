@@ -158,18 +158,6 @@ section.program-schedule {
             padding-bottom: 2em;
             background: none;
             .cell-content { background-color: @DARK_GREY; }
-            td.timeline {
-                div.pattern { display: none; }
-                div.interval {
-                    position: relative;
-                    p.interval-time {
-                        position: absolute;
-                        margin: 0;
-                        &.start { top: 0px; }
-                        &.finish { bottom: 0px; } //reset in coffescript anyway
-                    }
-                }
-            }
             div.track {
                 padding: 0 6em;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0 2em; }
@@ -227,6 +215,19 @@ section.rooms-schedule.program-schedule {
                 border-left: solid @BORDER_SIZE @LIGHTEN_BLUE;
                 &.masterclass { border-left: solid @BORDER_SIZE @ORANGE; }
                 &.timeline { border: none; }
+            }
+            td.timeline {
+                div.pattern { display: none; }
+                div.interval {
+                    position: relative;
+                    margin-top: @BORDER_SIZE;
+                    p.interval-time {
+                        position: absolute;
+                        margin: 0;
+                        &.start { top: 0px; }
+                        &.finish { bottom: 0px; } //reset in coffescript anyway
+                    }
+                }
             }
             div.track {
                 display: table;
