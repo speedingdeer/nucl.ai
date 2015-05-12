@@ -223,6 +223,7 @@ section.rooms-schedule.program-schedule {
                 div.interval {
                     position: relative;
                     padding-top: @BORDER_SIZE;
+                    &.hovered { background-color: lighten(@DARK_GREY, 10%); }
                     &.cover-empty {
                         height: 0;
                     }
@@ -254,7 +255,7 @@ section.rooms-schedule.program-schedule {
                 position: absolute;
                 &.hovered {
                     div.talk-cell-wrap {
-                        background-color: lighten(@DARK_BLUE, 100%);
+                        background-color: lighten(@DARK_BLUE, 10%);
                     }
                 }
                 div.talk-cell-wrap {

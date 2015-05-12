@@ -19,7 +19,7 @@ $ ->
   $("section.program-schedule table.talks-list").each ->
     days.push $(@)
 
-  for day in days
+  for day, dayIdx in days
     talks = day.find("div.track")
     day.talks = []
     talks.each ->
@@ -44,8 +44,10 @@ $ ->
 
       a.startDate - b.startDate
 
-    #set duration attribute
-    for talk in day.talks
+    #set duration and idx attributes
+    for talk, idx in day.talks
+      talk.attr("idx", idx)
+      talk.attr("day", dayIdx)
       duration = (talk.finishDate.getHours() * 60 + talk.finishDate.getMinutes()) - (talk.startDate.getHours() * 60 + talk.startDate.getMinutes())
       talk.attr("duration", duration)
       offset = (talk.startDate.getHours() * 60 + talk.startDate.getMinutes()) - (talksStartTime.getHours() * 60 + talksStartTime.getMinutes())
@@ -163,23 +165,29 @@ $ ->
       if interval.startDate >= talk.startDate and interval.finishDate <= talk.finishDate
         talk.intervals.push(interval)
 
-  talkHoverStart = (talk) ->
+  talkHoverStart = (evt) ->
+    idx = $(@).attr("idx")
+    day = $(@).attr("day")
+    talk = days[day].talks[idx]
     for interval in talk.intervals
       interval.addClass("hovered")
     talk.addClass("hovered")
-  talkHoverEnd = (talk) ->
+
+  talkHoverEnd = (evt) ->
+    idx = $(@).attr("idx")
+    day = $(@).attr("day")
+    talk = days[day].talks[idx]
     for interval in talk.intervals
       interval.removeClass("hovered")
     talk.removeClass("hovered")
+       
 
   #set up on hover effect
   for day in days
     for talk in day.talks
-      talk.hover () ->
-        console.log talk
-      ,
-        () ->
-        console.log talk
+      assignIntervals(talk)
+      talk.hover talkHoverStart, talkHoverEnd
+
 
 
   $("section.program-schedule table").click ->
