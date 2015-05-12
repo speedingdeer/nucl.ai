@@ -1,6 +1,6 @@
-- id: masterclass
-  name: Master Class
 - id: amphitheatre
   name: Amphitheatre
+- id: masterclass
+  name: Master Class
 - id: laboratories
   name: Laboratories
