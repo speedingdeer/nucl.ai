@@ -209,7 +209,7 @@ section.rooms-schedule.program-schedule {
             td { 
                 position: relative; 
                 width: 300px; //remaining space will set up itself anyway
-                &.timeline { width: 73px; } //this value is taken from web - inspector - maybe better to set up in js?
+                &.timeline { width: 60px; font-size: 0.8em; } //this value is taken from web - inspector - maybe better to set up in js?
             }
             th, td { //borders
                 border-left: solid @BORDER_SIZE @LIGHTEN_BLUE;
@@ -217,15 +217,18 @@ section.rooms-schedule.program-schedule {
                 &.timeline { border: none; }
             }
             td.timeline {
+                padding-top: @BORDER_SIZE;
+                font-size: 0.8em;
                 div.pattern { display: none; }
                 div.interval {
                     position: relative;
-                    margin-top: @BORDER_SIZE;
+                    padding-top: @BORDER_SIZE;
                     p.interval-time {
                         position: absolute;
                         margin: 0;
+                        left: 5px; //this value is taken from web - inspector - maybe better to set up in js?
                         &.start { top: 0px; }
-                        &.finish { bottom: 0px; } //reset in coffescript anyway
+                        &.finish { bottom: 0px; }
                     }
                 }
             }
@@ -238,6 +241,8 @@ section.rooms-schedule.program-schedule {
                     display: table-cell;
                     height: inherit;
                     vertical-align: middle;
+                    padding: 0 0.5em;
+                    font-size: 0.8em;
                 }
             }
             tr { vertical-align: top; }

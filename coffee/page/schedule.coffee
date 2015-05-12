@@ -15,7 +15,7 @@ $ ->
             if studio.html() == studios[idx+1].html() then studio.remove()
 
   days = $("section.program-schedule table.talks-list")
-  cellMargin = $("div.interval").first().css("margin-top").split("px")[0]
+  cellMargin = $("div.interval").first().css("padding-top").split("px")[0]
 
   days.each ->
     day = $(@)
@@ -127,7 +127,7 @@ $ ->
     $(@).height timeLineExtenstion + currentHeight
   $("div.track[last='true']").each ->
     currentHeight = $(@).height()
-    $(@).height currentHeight + timeLineExtenstion
+    $(@).height currentHeight + timeLineExtenstion + parseInt(cellMargin)
 
 
   $("section.program-schedule table").click ->
