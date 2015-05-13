@@ -32,6 +32,17 @@
         {% else %}
         </a>
         {% endif %}
+        {% if roomsLayout %}
+        {% else %}
+            <span class="room"> 
+                {% for room in site.data.rooms %}
+                    {% if room.id == talk.room %}
+                        ({{room.name}})
+                    {% endif %}
+                {% endfor %}
+            </span>
+        {% endif %}
+
         </p>
 
         {% if roomsLayout %}

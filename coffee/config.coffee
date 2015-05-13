@@ -1,6 +1,9 @@
 root = exports ? this # global
 
 root.config = {
+  mobile: {
+    size: 432,
+  },
   header: {
     scrollSpeed: 500
   },

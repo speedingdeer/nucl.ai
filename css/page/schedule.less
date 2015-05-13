@@ -186,7 +186,13 @@ section.program-schedule {
     }
 }
 
+section.list-schedule.program-schedule {
+    display: none;
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: block; }
+}
+
 section.rooms-schedule.program-schedule {
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: none; }
     content {
         table.header-table { font-size: 0.8em; }
         table.talks-list {
