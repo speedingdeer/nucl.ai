@@ -43,3 +43,19 @@
   time:
     start: "10:00"
     finish: "10:45"
+
+- title: Best Practices in Animation Runtimes
+  description: >
+    This panel follows-up on the Runtime Rig talk with advanced issues of animation runtimes,
+    with experiences from developers in the trenches. How can IK be optimized to run
+    efficently enough by default on all characters at runtime?  Which new opportunities does
+    this open up?  What are the major challenges in practice?  How can runtimes and blend-trees
+    be prepared for more advanced animation techniques like Motion Fields?
+  speakers:
+    - Simon Clavet
+    - Alexander Bereznyak
+    - Mika Vehkala
+  room: masterclass
+  time:
+    start: "11:15"
+    finish: "12:00"

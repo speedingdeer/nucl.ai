@@ -384,6 +384,16 @@
     name: IBM
     url: http://www.ibm.com/
     position: IBM Watson Developer
+  bio: >
+    Dale has been a developer of IBM Watson since early 2011, after the work started to
+    transition Watson from a Research project demonstrated on a quiz show to a commercial
+    platform ready for industry. He now works on how we understand why Watson comes up with
+    the answers that it does and what we can do to improve it, and the transition of the
+    technology to an extensible platform.
+    Prior to this, Dale spent several years as a member of IBM's Emerging Technologies division,
+    creating prototypes and proof-of-concepts in social web and mobile, augmented and virtual
+    realities, biometrics, the mining and analysis of Big Data, and technologies such as MQTT to
+    build the infrastructure to enable the Internet of Things.
   twitter: dalelane
 
 - name: Jeffrey Schlimmer
@@ -502,3 +512,8 @@
     url: http://www.riotgames.com/
     position: Senior Animation Engineer
   bio: >
+
+- name: Michael Sellers
+  role: speaker
+  bio: >
+  
