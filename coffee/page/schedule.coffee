@@ -83,7 +83,7 @@ $ ->
           #clear intervals 
           day.find("td.timeline div.interval").each ->
             interval = $(@)
-            if !interval.hasClass("pattern") and !interval.hasClass("initial")
+            if !interval.hasClass("pattern") and !interval.hasClass("cover-empty")
               interval.remove()
 
           for idx in [0...intervalsCount]
@@ -199,8 +199,8 @@ $ ->
           assignIntervals(talk)
           talk.hover talkHoverStart, talkHoverEnd
 
-  buildSchedule()
 
+  buildSchedule()
 
   tableDisplayed = $("section.rooms-schedule").css("display")
   $(window).resize ->

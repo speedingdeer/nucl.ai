@@ -1,12 +1,5 @@
 {% include page/tracks/assign.html %}
-
-{% for topic in site.data.topics %}
-    {% if topic.id == item.id %}
-        {% assign track = topic %}
-        {% assign index = forloop.index %}
-        {% assign isTrackPage = true%}
-    {% endif %}
-{% endfor %}
+{% include page/tracks/get_track.html %}
 
 <section class="tracks-content tracks-text tickets">
     <grid>
@@ -92,21 +85,27 @@
     </grid>
 </section>
 
-<section class="program-schedule track-schedule">
+
+{% include page/tracks/get_track.html %}
+{% assign roomsLayout = true %}
+<section class="program-schedule track-schedule rooms-schedule">
     <grid>
-    {% comment %} Find day {% endcomment %}
-    {% for day in site.data.schedule %}
-        {% for item in day.tracks %}
-            {% if item == track.id %}
-            <h2>Track #{{index}} Schedule</h2>
-            <content>
-                    {% include schedule/day.html %}
-            </content>
-            {% endif %}
-        {% endfor %}
-    {% endfor %}
+        {% include page/tracks/schedule.html %}
     </grid>
 </section>
+
+{% include page/tracks/get_track.html %}
+{% assign roomsLayout = false %}
+<section class="program-schedule track-schedule list-schedule">
+    <grid>
+        {% include page/tracks/schedule.html %}
+    </grid>
+</section>
+
+
+
+
+
 
 {% comment %}
 <section class="tracks-content tracks-text call">

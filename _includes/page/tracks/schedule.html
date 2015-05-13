@@ -1,0 +1,11 @@
+
+{% for day in site.data.schedule %}
+    {% for item in day.tracks %}
+        {% if item == track.id %}
+        <h2>Track #{{index}} Schedule</h2>
+        <content>
+                {% include schedule/day.html %}
+        </content>
+        {% endif %}
+    {% endfor %}
+{% endfor %}

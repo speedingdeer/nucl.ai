@@ -57,7 +57,7 @@
             <td class="talks-list">
                 {% if isTrackPage %}
                     {% capture track %}{{page.name | remove: ".html" }}{% endcapture %}
-                    {% include schedule/track.html %}}
+                    {% include schedule/track.html %}
                 {% else %}
                     {% for track in day.tracks %}
                         {% include schedule/track.html %}
