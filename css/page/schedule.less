@@ -149,7 +149,7 @@ section.program-schedule {
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0 2em; }
                 p.speakers {
                     font-size: 1em;
-                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.7em; }
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.8em; }
                     margin-bottom: 0;
                     opacity: 0.80;
                 }
@@ -160,7 +160,7 @@ section.program-schedule {
                         color: inherit;
                         text-decoration: none;
                     }
-                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.8em; }
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.9em; }
                 }
             }
         }
@@ -235,14 +235,16 @@ section.rooms-schedule.program-schedule {
                         text-align: center;
                         line-height: 1;
                         &.start { top: 0px; }
-                        &.finish { bottom: 0px;  opacity: 0.7; }
-                        &.ellipsis { 
+                        &.finish { bottom: 5px;  opacity: 0.7; }
+                        &.ellipsis {
+                            opacity: 0.2; 
                             display: none;
                             left: 0;
                             width: 100%;
                         }
                     }
-                    &.edge { p.interval-time { opacity: 0.7; } }
+                    &.edge { p.interval-time { opacity: 0.7;          &.ellipsis {
+                            opacity: 0.5; } } }
                     &.empty { p.ellipsis { display: initial; } }
                     &.orhpaned-empty { 
                         p.ellipsis { display: none; }
@@ -262,7 +264,7 @@ section.rooms-schedule.program-schedule {
                     &.track.analytics { .track-hovered(@COLOR_TRACK_ANALYTICS, @DARK_BLUE); }
                     &.track.decisions { .track-hovered(@COLOR_TRACK_DECISIONS, @WHITE); }
                     &.track.systems { .track-hovered(@COLOR_TRACK_SYSTEMS, @WHITE); }
-                    &.track.animation { .track-hovered(@COLOR_TRACK_ANIMATION, @WHITE); }
+                    &.track.animation { .track-hovered(@COLOR_TRACK_ANIMATION, @DARK_GREY); }
                     &.track.cognition { .track-hovered(@COLOR_TRACK_COGNITION, @DARK_GREY); }
                 }
                 .talk-cell-wrap {
