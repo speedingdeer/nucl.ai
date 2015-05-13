@@ -95,7 +95,10 @@
 - id: procedural
   title: "Procedural Content Generation"
   subtitle: >
-    .
+    Join professional developers in creative industries to learn more about algorithm-based
+    generation of content, from individual 3D meshes to full worlds and terrains, as well as
+    character details.  Get up-to-speed on modern techniques for procgen and find out what
+    the leading studios are doing in practice!
   description: >
     Over the past few years, procedural generation techniques have established
     themselves as not only a sensible approach but often as the default solution
@@ -125,7 +128,10 @@
 - id: alternate
   title: "Virtual / Augmented Reality"
   subtitle: >
-    .
+    Join professional developers in creative industries to learn about making your AR and VR applications
+    more interactive!  What machine learning, motion tracking and computer vision techniques can be used
+    to improve the experiences and how can modern devices such as Kinect 2 or Leap Motion help?  Discover
+    it all during this nucl.ai track.
   content: >
     <img src="/img/tracks/EveOnline_1.jpg"/>
     <p class="credit"><u>Image Credit</u>: Eve Online</p> 
@@ -255,7 +261,10 @@
 - id: cognition
   title: "Cognitive Bots & Language"
   subtitle: >
-    .
+    Join other professionals in creative industries for a set of masterclasses on cognitive
+    reasoning, natural language processing and chatbots.  Learn how to integrate speech
+    recognition and speech synthesis into your applications, see how leading companies are
+    using AI techniques to create human-like bots, and more...
   content: >
     <img src="/img/tracks/WatsonIBM_1.jpg"/>
     <p class="credit"><u>Image Credit</u>: IBM Watson on Jeopardy</p> 
