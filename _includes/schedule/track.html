@@ -1,6 +1,9 @@
 {% for talk in site.data.tracks[track] %}
     <div class="track {{track}} cell-content" time-start="{{talk.time.start}}" time-finish="{{talk.time.finish}}" room="{{talk.room}}">
         <div class="talk-cell-wrap">
+        {% if roomsLayout %}
+        <a class="link-wrap" href="/track/{{track}}/#{{talk.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">
+        {% endif %}
         <p class="speakers"> 
             {% assign firstSpeaker = true %}
             {% for speaker in talk.speakers %}
@@ -17,12 +20,23 @@
                 {% endfor %}
             {% endfor %}
         </p>
-        <p class="title"><a href="/track/{{track}}/#{{talk.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">
+        <p class="title">
+
         {% if roomsLayout %}
         {% else %}
+        <a href="/track/{{track}}/#{{talk.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">
             {{talk.time.start}}
         {% endif %}
-        {{talk.title}}</a></p>
+        {{talk.title}}
+             {% if roomsLayout %}
+        {% else %}
+        </a>
+        {% endif %}
+        </p>
+
+        {% if roomsLayout %}
+            </a>
+        {% endif %}
         </div>
     </div>
 {% endfor %}

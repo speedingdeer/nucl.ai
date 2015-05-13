@@ -196,6 +196,15 @@ section.rooms-schedule.program-schedule {
             .cell-content {
                 width: calc(~"100% - 5px");
             }
+            //make the whole cell clickable
+            a.link-wrap {
+                display: table-cell;
+                width: 100%;
+                height: inherit;
+                vertical-align: middle;
+                color: inherit;
+                text-decoration: none;
+            }
             th.titlerow {
                 .titlecell-wrap { display: table; }
                 color: @ORANGE;
