@@ -140,17 +140,20 @@ $ ->
 
       #set up interval scale
       intervalHeight = timelineIntervalRange * maxHeightDurationRatio
+      timeLineHeight = null 
       schedule.find("table.talks-list td.timeline div.interval:not(.cover-empty)").each ->
         $(@).height(intervalHeight)
-      timeLineExtenstion = null 
+      timeLineHeight = schedule.find("table.talks-list td.timeline div.interval:last-child .finish").height()
       schedule.find("table.talks-list td.timeline div.interval:last-child").each ->
-        if timeLineExtenstion == null then timeLineExtenstion = $(@).find(".finish").height()
         currentHeight = $(@).height()
-        $(@).height timeLineExtenstion + currentHeight
+        $(@).height timeLineHeight + currentHeight
       schedule.find("div.track[last='true']").each ->
         currentHeight = $(@).height()
-        $(@).height currentHeight + timeLineExtenstion + parseInt(cellMargin)
+        $(@).height currentHeight + timeLineHeight + parseInt(cellMargin)
+      ellipsisBottom = Math.floor( (intervalHeight - timeLineHeight) / 2)
 
+      schedule.find("table.talks-list td.timeline div.interval .ellipsis").each ->
+        $(@).css("bottom",ellipsisBottom)
       #allign top position
       for day in days
 
@@ -208,6 +211,7 @@ $ ->
   buildSchedule()
 
   tableDisplayed = $("section.rooms-schedule").css("display")
+  #rebuild in case switch from mobile to full view
   $(window).resize ->
     if tableDisplayed == "none"
       displayed = $("section.rooms-schedule").css("display")
