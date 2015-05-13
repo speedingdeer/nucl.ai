@@ -73,7 +73,15 @@
     Noor Shaker is a Postdoctoral researcher at the Center for Culture and Games at IT University
     of Copenhagen. Her research interests include player modeling, procedural content generation,
     computational creativity, affective computing and player behavior imitation. She is organizing
-    the Platformerai competition and chairing the IEEE task force on Player Modeling.
+    the Platformer AI competition and chairing the IEEE task force on Player Modeling.
+
+
+- name: Josh McCoy
+  role: track
+  tracks: [cognition]
+  twitter: joshua_mccoy
+  bio: >
+    Josh McCoy is a game developer, computer scientist and cross-disciplinary researcher whose work lies at the confluence of game technology, social science, artificial intelligence and design. His goal is to create playable experiences that communicate to broad audiences and critically address the challenges present in our society while expanding the boundaries of technology. The most recent products of his research involve combining artificial intelligence techniques with social science to create meaningful, responsive and socially engaging game experiences. He was a lead on the experimental video game Prom Week, a game that enables a new level of social interaction between characters via an artificial intelligence system that leverages social science to make social behavior playable. This work has been nominated for the Technical Excellence award in the Independent Games Festival and an IndieCade award. Additionally, his research has been used in a DARPA-funded project to enable trainees to engage socially responsive characters with full-bodied interaction for the purpose of teaching good stranger behavior to soldiers in foreign lands.
 
 - name: Alex J. Champandard
   role: org
