@@ -205,14 +205,6 @@ section.rooms-schedule.program-schedule {
                 width: calc(~"100% - 5px");
             }
             //make the whole cell clickable
-            a.link-wrap {
-                display: table-cell;
-                width: 100%;
-                height: inherit;
-                vertical-align: middle;
-                color: inherit;
-                text-decoration: none;
-            }
             th.titlerow {
                 .titlecell-wrap { display: table; }
                 //color: @ORANGE;
@@ -247,11 +239,11 @@ section.rooms-schedule.program-schedule {
                     p.interval-time {
                         position: absolute;
                         margin: 0;
-                        opacity: 0.7;
+                        opacity: 0.2;
                         width: 100%;
                         text-align: center;
                         &.start { top: 0px; }
-                        &.finish { bottom: 0px; }
+                        &.finish { bottom: 0px;  opacity: 0.7; }
                         &.ellipsis { 
                             display: none;
                             padding-top: 25%;
@@ -259,6 +251,7 @@ section.rooms-schedule.program-schedule {
                             width: 100%;
                         }
                     }
+                    &.edge { p.interval-time { opacity: 0.7; } }
                     &.empty { p.ellipsis { display: initial; } }
                     &.orhpaned-empty { 
                         p.ellipsis { display: none; }
@@ -271,17 +264,19 @@ section.rooms-schedule.program-schedule {
                 padding: 0;
                 position: absolute;
                 &.hovered {
-                    div.talk-cell-wrap {
+                    .talk-cell-wrap {
                         background-color: lighten(@DARK_BLUE, 10%);
                     }
                 }
-                div.talk-cell-wrap {
+                .talk-cell-wrap {
                     background-color: @DARK_BLUE;
                     display: table-cell;
                     height: inherit;
                     vertical-align: middle;
                     padding: 0 0.5em;
                     font-size: 0.8em;
+                    color: inherit;
+                    text-decoration: none;
                     p {
                         margin: 0;
                         &.title { font-size: initial; font-weight: bold; }

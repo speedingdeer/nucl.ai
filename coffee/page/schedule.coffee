@@ -173,6 +173,11 @@ $ ->
       assignIntervals = (talk) ->
         talk.intervals = []
         for interval in day.intervals
+          # mark edges
+          if interval.startDate.getHours() == talk.startDate.getHours() and interval.startDate.getMinutes() == talk.startDate.getMinutes() or
+          interval.startDate.getHours() == talk.finishDate.getHours() and interval.startDate.getMinutes() == talk.finishDate.getMinutes()
+            interval.addClass("edge") 
+          #assign all to talk
           if interval.startDate >= talk.startDate and interval.finishDate <= talk.finishDate
             talk.intervals.push(interval)
 
