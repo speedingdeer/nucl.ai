@@ -24,8 +24,8 @@
     - Antoine Fortier
   room: amphitheatre
   time:
-    start: "14:00"
-    finish: "15:00"
+    start: "14:45"
+    finish: "15:45"
 
 - title: "Crowds Patches for Populating Virtual Worlds"
   description: >
@@ -70,5 +70,5 @@
     - Mikko Mononen
   room: masterclass
   time:
-    start: "14:45"
-    finish: "15:30"
+    start: "14:00"
+    finish: "14:45"
