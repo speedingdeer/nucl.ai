@@ -45,8 +45,8 @@
     - Julien Pettré
   room: masterclass
   time:
-    start: "11:15"
-    finish: "12:00"
+    start: "14:00"
+    finish: "14:45"
 
 - title: "Creating The Epic Sky Battle In Guardians of the Galaxy"
   description: >
@@ -70,11 +70,21 @@
     - Mikko Mononen
   room: masterclass
   time:
-    start: "14:00"
-    finish: "14:45"
+    start: "11:15"
+    finish: "12:00"
 
 - title: "Cross-Polination Panel: VFX, Simulation, Games"
   room: laboratories
+  speakers:
+    - Michaël Rouillé 
   time:
     start: "16:00"
     finish: "16:45"
+
+- title: "Unity Navigation Mesh and Pathfinding Clinic"
+  room: laboratories
+  speakers:
+    - Mikko Mononen
+  time:
+    start: "12:00"
+    finish: "13:00"
