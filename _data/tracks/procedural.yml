@@ -5,8 +5,8 @@
     - Hazel McKendrick
   room: amphitheatre
   time:
-    start: "14:45"
-    finish: "15:30"
+    start: "12:00"
+    finish: "12:45"
 
 - title: "Ultima Ratio Regum"
   description: >
@@ -15,8 +15,8 @@
     - Mark Johnson
   room: amphitheatre
   time:
-    start: "11:15"
-    finish: "12:00"
+    start: "14:45"
+    finish: "15:30"
   
 - title: "Procedural Generation of Biotopes for Large Realistic Terrains"
   description: >
@@ -27,4 +27,12 @@
   room: masterclass
   time:
     start: "16:00"
-    finish: "16:30"
+    finish: "16:45"
+
+- title: "Generating Geometry Algorithmically in Houdini (Workshop)"
+  description: >
+    .
+  room: laboratories
+  time:
+    start: "10:00"
+    finish: "12:00"
