@@ -9,3 +9,37 @@
   time:
     start: "16:45"
     finish: "17:45"
+
+- title: event[0] and Game Design for Natural Language
+  description: >
+    This masterclass is yet to be announced.
+  room: amphitheatre
+  time:
+    start: "14:00"
+    finish: "14:45"
+
+- title: Social Media Bots Masterclass<br/> (To Be Announced)
+  description: >
+    This masterclass is yet to be announced.
+  room: masterclass
+  time:
+    start: "12:00"
+    finish: "12:45"
+    
+- title: Language Interaction Masterclass<br/> (To Be Announced)
+  description: >
+    This masterclass is yet to be announced.
+  room: masterclass
+  time:
+    start: "16:00"
+    finish: "16:45"
+
+- title: Speech Recognition and Synthesis Tutorial (To Be Confirmed)
+  description: >
+    This tutorial is yet to be announced.
+  room: laboratories
+  speakers:
+    - Alex J. Champandard
+  time:
+    start: "10:00"
+    finish: "12:00"

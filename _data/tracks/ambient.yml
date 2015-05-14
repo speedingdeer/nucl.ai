@@ -8,8 +8,8 @@
     - Paul Kanyuk
   room: amphitheatre
   time:
-    start: "16:30"
-    finish: "17:30"
+    start: "16:45"
+    finish: "17:45"
 
 - title: "Building the Massive Crowds of Assassin’s Creed Unity"
   description: >
@@ -45,8 +45,8 @@
     - Julien Pettré
   room: masterclass
   time:
-    start: "12:00"
-    finish: "12:45"
+    start: "11:15"
+    finish: "12:00"
 
 - title: "Creating The Epic Sky Battle In Guardians of the Galaxy"
   description: >
@@ -72,3 +72,9 @@
   time:
     start: "14:00"
     finish: "14:45"
+
+- title: "Cross-Polination Panel: VFX, Simulation, Games"
+  room: laboratories
+  time:
+    start: "16:00"
+    finish: "16:45"
