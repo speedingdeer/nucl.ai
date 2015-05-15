@@ -29,6 +29,10 @@
     time articulating exactly what it is. This talk will provide useful, practical definitions of
     important concepts like systems, emergence, and interactivity. A cohesive framework for creating
     systems and systemic effects in game and AI design will also be presented.
+	<ul>
+		<li>Systems and system design are vital areas for games and simulations. And yet, terms like "systems," "emergence," and "interaction" remain ill-defined despite their broad use.</li> 
+		<li>Come away from this talk with a clearer theoretical and practical understanding of these concepts to improve your ability to construct and recognize interactive systems.</li>
+	</ul>
   speakers:
     - Michael Sellers
   room: masterclass
@@ -48,25 +52,21 @@
 
 # - title: "Designing CAD Tools for Novices: Can Algorithms Enhance productivity or foster creativity?"
 #   description: >
-#     As the number and the size of computer games continues to expand, game companies handle rising demand by extending their cadre, 
-#     compressing development cycles and reusing code or assets. To limit development time and reduce the cost of content creation, 
-#     commercial game engines and procedural content generation are popular shortcuts among game companies. Low-level engine features 
-#     such as physics simulation and game-independent content such as vegetation are often handled by third-party middleware. 
-#     For content more contingent on a game's theme, mechanics and quests, most commercial game engines assist in the fast and intuitive 
-#     creation of game levels and scripts via game editors which automate mundane tasks such as pathfinding. Computer-aided design tools 
-#     are used in almost all creative tasks in order to minimize development time and cost, reduce human effort, support collaboration among 
-#     members of a design team or elicit a user's creativity.
-#     While computer-aided design tools are extending their functionalities to allow for the creation of more and more elaborate and complete games, 
-#     the learning curve for a novice user becomes steeper. This talk will present methods for using Artificial Intelligence to assist a novice user 
-#     in getting acquainted with the interface and the task of designing, as well as automate the more tedious or challenging development tasks. 
-#     The talk will cover mixed-initiative design where both the human and the computer proactively contribute to the problem solution, although 
-#     the two initiatives do not need to contribute to the same degree. Mixed-initiative design tools should both support a user in their design 
-#     process (enhancing productivity) but also contribute with novel ideas (fostering creativity). In the generation of such ideas, a mixed-initiative 
-#     tool should recognize the user's intentions, aesthetic preferences and design process; its suggestions should either be the next logical step 
-#     towards the user's perceived goal or present an unexpected alternative which the designer hadn't thought of. In order to make either type of 
-#     suggestion meaningful, the computer must be able to capture the user's perceptual and cognitive mechanisms, and apply this knowledge to incite 
-#     the creativity of the designer. The talk will conclude with promising directions (and low-hanging fruit) for commercial tool development wishing 
+#     Mixed-initiative design tools both support users in their design process (enhancing productivity) but also contribute with novel ideas (fostering creativity). 
+#	  In the generation of such ideas, a mixed-initiative tool should recognize the user's intentions, aesthetic preferences and design process; suggesting either the next logical step 
+#     towards the user's perceived goal or present an unexpected alternative which the designer hadn't thought of. 
+#
+#     This talk will cover mixed-initiative design where both human and computer proactively contribute to the problem solution. Furthermore , we will present methods for using and how Artificial Intelligence can assist a novice user 
+#     in getting acquainted with task of designing, as well as automate the more tedious or challenging development tasks. 
+#	  We will conclude with promising directions (and low-hanging fruit) for commercial tool development wishing 
 #     to incorporate AI-assisted and mixed-initiative design paradigms.
+#		<ul>
+#			<li>Can intelligent CAD tools design game content with or without human collaborators, and what is the difference? </li>
+#			<li>How do human designers react to proactive systems, and how can the CAD system minimize frustration and maximize output? </li>
+#			<li>There are specific phases of development where AI can contribute to the creativity of a dev team.</li>
+#			<li>Speeding up development during crunch does not need elaborate artificial intelligence; in contrast, fostering human creativity during brainstorming requires several layers or fine-tuned AI and UI.</li>
+#			<li>Interface design of intelligent development tools is an ongoing balancing act between reducing a novice's cognitive load and increasing human users' control over created content.</li>
+#		</ul>
 #   speakers:
 #     - Antonios Liapis
 
