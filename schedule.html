@@ -4,13 +4,26 @@ title: nucl.ai Schedule
 permalink: /program/schedule/
 ---
 
-<section class="program-schedule list-schedule">
-    <grid>
+<section class="program-schedule">
+
+    <grid class="rooms-schedule">
         <h2>Conference Schedule</h2>
         <content>
             <p class="note">NOTE: The assignment of Tracks to Days has been finalized (as of May 7th), but we expect the times for specific talks within the day to change.</p>
 
             {% assign roomsLayout = true %}
+
+            {% for day in site.data.schedule %}
+                {% include schedule/day.html %}
+            {% endfor %}
+        </content>
+    </grid>
+
+    <grid class="list-schedule">
+        <h2>Conference Schedule</h2>
+        <content>
+            <p class="note">NOTE: The assignment of Tracks to Days has been finalized (as of May 7th), but we expect the times for specific talks within the day to change.</p>
+
             {% assign roomsLayout = false %}
 
             {% for day in site.data.schedule %}
@@ -18,21 +31,6 @@ permalink: /program/schedule/
             {% endfor %}
         </content>
     </grid>
-</section>
 
-<section class="none"></section>
-
-<section class="program-schedule rooms-schedule">
-    <grid>
-        <h2>Conference Schedule</h2>
-        <content>
-            <p class="note">NOTE: The assignment of Tracks to Days has been finalized (as of May 7th), but we expect the times for specific talks within the day to change.</p>
-            {% assign roomsLayout = true %}
-
-            {% for day in site.data.schedule %}
-                {% include schedule/day.html %}
-            {% endfor %}
-        </content>
-    </grid>
 </section>
 

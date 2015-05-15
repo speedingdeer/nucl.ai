@@ -90,24 +90,20 @@
 </section>
 
 
-{% include page/tracks/get_track.html %}
-{% assign roomsLayout = true %}
-<section class="program-schedule track-schedule rooms-schedule">
+
+<section class="program-schedule track-schedule">
     <a class="anchor" id="schedule"></a>
-    <grid>
+    <grid class="rooms-schedule">
+        {% include page/tracks/get_track.html %}
+        {% assign roomsLayout = true %}
+        {% include page/tracks/schedule.html %}
+    </grid>
+    <grid class="list-schedule">
+        {% include page/tracks/get_track.html %}
+        {% assign roomsLayout = false %}
         {% include page/tracks/schedule.html %}
     </grid>
 </section>
-
-{% include page/tracks/get_track.html %}
-{% assign roomsLayout = false %}
-<section class="program-schedule track-schedule list-schedule">
-    <a class="anchor" id="schedule"></a>
-    <grid>
-        {% include page/tracks/schedule.html %}
-    </grid>
-</section>
-
 
 
 

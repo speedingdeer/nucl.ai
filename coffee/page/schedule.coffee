@@ -16,7 +16,7 @@ $ ->
             if studio.html() == studios[idx+1].html() then studio.remove()
 
   buildSchedule = () ->
-    $("section.program-schedule").each ->
+    $("section.program-schedule grid").each ->
       schedule = $(@)
       days = []
       schedule.find("table.talks-list").length
@@ -210,11 +210,11 @@ $ ->
 
   buildSchedule()
 
-  tableDisplayed = $("section.rooms-schedule").css("display")
+  tableDisplayed = $("section grid.rooms-schedule").css("display")
   #rebuild in case switch from mobile to full view
   $(window).resize ->
     if tableDisplayed == "none"
-      displayed = $("section.rooms-schedule").css("display")
+      displayed = $("section grid.rooms-schedule").css("display")
       if displayed != tableDisplayed
         tableDisplayed = displayed
         buildSchedule()
