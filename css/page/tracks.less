@@ -8,7 +8,10 @@ section.thumbnails-grid.tracks {
             .row(10);
             margin-bottom: 1em;
             item.thumbnail {
-                &.ambient { margin-left: 11.25%; }
+                &.ambient {
+                    margin-left: 11.25%;
+                    clear: both; //for safari handling overflow differently
+                }
                 .thumbnail-title {
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.6em; } // can be bigger
                 }
