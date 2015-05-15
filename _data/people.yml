@@ -54,8 +54,7 @@
     Tommy Thompson is a lecturer in computer science at the University of Derby, UK.
     He is an AI researcher focussed on machine learning applications in the areas of non-player character behaviour,
     procedural content generation and relevant benchmarking of AI through games.
-    In addition, he is the programme leader for the BSc (Hons) in Computer Games Programming and working on side-projects with his team at Table Flip Games.
-
+    
 - name: Mika Vehkala
   role: track
   tracks: [animation]
@@ -514,10 +513,15 @@
   bio: >
     An accomplished Data Scientist in applications of Cognitive Computing technology, Poulin is the Principal Partner of Patterns and Predictions. While he was recently Director of The Durkheim Project, a non-profit big data collaboration with the U.S. VA and Facebook, Inc. Where Fast Company said "This may be the most vital use of big data we’ve ever seen." He was recently Co-Director of the Dartmouth Metalearning Working Group at Dartmouth College, working on large scale machine learning. He has also lectured in artificial intelligence at the U.S. Naval War College. At Nucl.ai, he will be illustrating successful Deep Reinforcement Learning applications.
 
-# TODO: Tommy
 - name: Michael Sellers
   role: speaker
+  confirmed: true
+  affiliation:
+    name: Indiana University
+    url: http://www.indiana.edu/
+    position: Professor of Practice
   bio: >
+    Mike Sellers is a Professor of Practice at Indiana University. He has spent more than twenty years working in the games industry and has been a founder of three successful independent game companies. He has been a Lead Designer, Creative Director, and General Manager in AAA game companies, and has extensive experience in designing and producing MMO, social, and mobile games. Past titles he has led include Meridian 59, The Sims 2, and Realm of the Mad God. He has also conducted and published original research in social artificial intelligence funded in part by DARPA. Professional interests include MMOs, virtual worlds, community formation, artificial intelligence, and emotions.
   
 - name: Simon Lucas
   role: speaker
