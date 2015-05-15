@@ -98,8 +98,8 @@
     - Ivan Encinas
   room: masterclass
   time:
-    start: "14:00"
-    finish: "14:45"
+    start: "16:45"
+    finish: "17:30"
 
 - title: "Standup Session and Open Q&A"
   description: >
@@ -108,6 +108,6 @@
     - Heather Stark
   room: laboratories
   time:
-    start: "16:45"
-    finish: "17:30"
+    start: "14:00"
+    finish: "14:45"
 
