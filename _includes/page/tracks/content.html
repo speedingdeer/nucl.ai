@@ -151,7 +151,9 @@
         <h2> Keynotes and Presentations </h2>
         <content>
                 {% for item in items %}
-                <item class="talk">
+                {% assign descSize = item.description | size %}
+                {% if descSize < 3 %} {% capture wipClass%}wip{% endcapture %} {% else %} {% capture wipClass%} {% endcapture %} {% endif %}
+                <item class="talk {{wipClass}}">
                     <a class="anchor" id="{{item.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}"></a>
                     <h3><a href="/track/{{track.id}}#{{item.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">{{item.title}}</a></h3>
                     {% assign items = item.speakers %}

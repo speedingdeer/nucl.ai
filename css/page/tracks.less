@@ -90,6 +90,12 @@ section.thumbnails-grid.tracks-content {
             }
             float: left;
             clear: both;
+            &.wip {
+                // work in progress talks
+                opacity: 0.8;
+                .thumbnails { display: none; }
+                div.description {display: none; }
+            }
         }
         .thumbnails {
             item.thumbnail { 
