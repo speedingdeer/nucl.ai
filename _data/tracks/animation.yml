@@ -59,3 +59,22 @@
   time:
     start: "11:15"
     finish: "12:00"
+
+# Considering Paul for his pipeline/animation material. 
+- title: Visual Effects Animation Masterclass<br/> (To Be Announced)
+  description: >
+    This masterclass is yet to be announced.
+  room: masterclass
+  time:
+    start: "14:00"
+    finish: "14:45"
+    
+- title: Breaking Out of the Finite-State-Machine (To Be Confirmed)
+  description: >
+    This laboratory and open discussion is yet to be confirmed.
+  room: laboratories
+  speakers:
+    -
+  time:
+    start: "16:00"
+    finish: "17:30"

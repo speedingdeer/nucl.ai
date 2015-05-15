@@ -512,8 +512,75 @@
     url: http://www.riotgames.com/
     position: Senior Animation Engineer
   bio: >
+    An accomplished Data Scientist in applications of Cognitive Computing technology, Poulin is the Principal Partner of Patterns and Predictions. While he was recently Director of The Durkheim Project, a non-profit big data collaboration with the U.S. VA and Facebook, Inc. Where Fast Company said "This may be the most vital use of big data we’ve ever seen." He was recently Co-Director of the Dartmouth Metalearning Working Group at Dartmouth College, working on large scale machine learning. He has also lectured in artificial intelligence at the U.S. Naval War College. At Nucl.ai, he will be illustrating successful Deep Reinforcement Learning applications.
 
+# TODO: Tommy
 - name: Michael Sellers
   role: speaker
   bio: >
   
+- name: Simon Lucas
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: University of Essex
+    url: http://www.essex.ac.uk
+    position: Head of School of Computer Science and Electronic Engineering
+  bio: >
+    Simon Lucas is a Professor of Computer Science at the University of Essex where he is currently head of the School of Computer Science and Electronic Engineering and leads the Game Intelligence Group. Simon is the founding editor-in-chief of the IEEE Transactions on Computational Intelligence and Games, and co-founded the IEEE Conference on Computational Intelligence in Games. His recent research focusses on general game AI and the development of real-time decision making algorithms. He believes we ain’t seen nothing yet when it comes to Game AI, and is very much looking forward to the advances we can expect over the next decade or two which will lead to a new era of super-immersive games.
+
+
+# TODO: Diego
+- name: Chris Poulin
+  role: speaker
+  bio: >
+    ...
+
+# TODO: Diego
+- name: Mike Preuss
+  role: speaker
+  bio: >
+    ...
+
+# TODO: Diego
+- name: Spyridon Samothrakis
+  role: speaker
+  bio: >
+    ...
+    
+# TODO: Heather.
+- name: Milos Milosovec
+  role: speaker
+  bio: >
+    ...
+    
+# TODO: Heather.
+- name: John Hearty
+  role: speaker
+  bio: >
+    ...
+    
+# TODO: Heather.
+- name: Ivan Encinas
+  role: speaker
+  bio: >
+    ...
+
+# TODO: Cloderic.
+- name: Mieszko Zielinski
+  role: speaker
+  bio: >
+    ...
+    
+# TODO: Noor.
+- name: Hazel McKendrick
+  role: speaker
+  bio: >
+    ...
+    
+# TODO: Noor.
+- name: Mark Johnson
+  role: speaker
+  bio: >
+    ...
+

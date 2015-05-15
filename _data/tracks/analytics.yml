@@ -6,36 +6,32 @@
     - Bill Grosso
   room: amphitheatre
   time:
-    start: "12:00"
-    finish: "12:45"
+    start: "11:15"
+    finish: "12:00"
 
-# - title: "Fast > Perfect: Practical approximation examples for mobile game analytics using Spark Streaming"
-#   description: >
-#     For mobile games, constant tweaks are the difference between success and failure. 
-#     Game designers need metrics like DAU, new users and ARPDAU in real-time to be able to tweak quickly. 
-#     But calculating, for example, uniqueness or newness of a data point requires a list of seen data points - 
-#     both memory intensive and tricky when using real-time stream processing like Spark Streaming. 
-#     Probabilistic data structures allow approximation of these properties with a fixed memory representation 
-#     and are very well suited for stream processing. 
-#     Getting from the theory of approximation to a practical useful metric at a low error rate even for many millions of users 
-#     is another story. In this talk we will look at ways to achieve it:
-#     <ul>
-#     <li>
-#     Which approximation we use for selection of useful metrics
-#     </li>
-#     <li>
-#     Why we picked a specific probabilistic data structure
-#     </li>
-#     <li>
-#     How we store it in Cassandra as a time series
-#     </li>
-#     <li>
-#     How we implemented it in Spark Streaming
-#     </li>
-#     </ul>
-#   speakers:
-#     - Kevin Schmidt
-#     - Luis Angel Vicente Sanchez
+- title: "Fast > Perfect: Practical approximation examples for mobile game analytics using Spark Streaming"
+  description: >
+    For mobile games, constant tweaks are the difference between success and failure. 
+    Game designers need metrics like DAU, new users and ARPDAU in real-time to be able to tweak quickly. 
+    But calculating, for example, uniqueness or newness of a data point requires a list of seen data points - 
+    both memory intensive and tricky when using real-time stream processing like Spark Streaming. 
+    Probabilistic data structures allow approximation of these properties with a fixed memory representation 
+    and are very well suited for stream processing. 
+    Getting from the theory of approximation to a practical useful metric at a low error rate even for many millions of users 
+    is another story. In this talk we will look at ways to achieve it:
+    <ul>
+      <li>Which approximation we use for selection of useful metrics</li>
+      <li>Why we picked a specific probabilistic data structure</li>
+      <li>How we store it in Cassandra as a time series</li>
+      <li>How we implemented it in Spark Streaming</li>
+    </ul>
+  speakers:
+    - Kevin Schmidt
+    - Luis Angel Vicente Sanchez
+  room: masterclass
+  time:
+    start: "10:00"
+    finish: "10:45"
 
 - title: "Extending Recommendation Systems to Offer a Personalised in-game Experience"
   description: >
@@ -52,17 +48,66 @@
     - Simon Worgan
   room: masterclass
   time:
+    start: "14:45"
+    finish: "15:30"
+
+- title: "Early Churn Prediction and Personalised Interventions"
+  description: >
+    How to tackle the problem of early churners, and define a strategy to overcome this issue. An approach to early churn 
+    prediction using machine learning algorithms is shared. Various machine learning models were tested, along with feature 
+    selection procedures. A clustering technique is introduced that segments users according to their first day gameplay habits. 
+    Also, a notification sending engine is described, which combines the knowledge gathered from the two previously mentioned 
+    methods, and targets the predicted churners with different types of personalized messages. This allows us to decrease early 
+    churn rate, while significantly increasing first day retention as well as boosting other metrics. We will also touch upon 
+    the underlying system infrastructure to deal with the scalability issues that occur when working with big data.
+  speakers:
+    - Milos Milosovec
+  room: amphitheatre
+  time:
+    start: "16:00"
+    finish: "16:45"
+
+- title: "Measuring Player Skill at Complex Team Games in Fable Legends"
+  description: >
+    When attempting to quantify player skill for segmentation or matchmaking within complex competitive games, it is crucial to
+    find effective ways to describe a player’s skill in a given context. However, standard methods of measuring and inferring skill
+    don’t work very well in this type of problem domain.  We describe our approach to modelling player skill in the complex contexts
+    that arise in Fable Legends, Lionhead’s upcoming action-RPG vs. RTS competitive title. Fable Legends has taken a number of
+    innovative design decisions, from asymmetrical team sizes to dramatically varied player roles, varied enemy creature selections,
+    abilities, items and map topologies. These design aspects raised some new challenges for the Legends data team, which has
+    responsibility for providing quantitative support to game balancing and design.
+    This talk discusses the challenges we faced and the learnings we gained from the modelling process. We initially found that
+    modelling player skill using standard techniques proved to be time-consuming and ineffective. Recognising this, we dived deeper
+    to improve the accuracy of our models,creatively building feature sets and moving from individual models to ensembles built using
+    multiple techniques (including regression models, supervised learning and deep learning techniques). We also present an overview
+    of applications of these techniques, with particular focus on how skill scoring enabled designers to target player skill levels
+    (“pro gamers”, “casual gamers”) for balance and design changes.
+  room: masterclass
+  speakers:
+    - John Hearty
+  time:
+    start: "12:15"
+    finish: "13:00"
+
+- title: "Skill vs. Luck in Casual Games"
+  description: >
+    Levels in casual games usually are parametrized by its difficulty (the probability that a user wins the level in one attempt).
+    We propose 2 other parameter obtained by observational data to describe levels: besides the probability of passing , the other
+    two are: how random is the level (or how important is the user skill to the success), and a discovery factor.
+  speakers:
+    - Ivan Encinas
+  room: masterclass
+  time:
+    start: "16:45"
+    finish: "17:30"
+
+- title: "Standup Session and Open Q&A"
+  description: >
+    .
+  speakers:
+    - Heather Stark
+  room: laboratories
+  time:
     start: "14:00"
     finish: "14:45"
 
-#- title: "Early churn prediction and personalised interventions"
-#  description: >
-#    How to tackle the problem of early churners, and define a strategy to overcome this issue. An approach to early churn 
-#    prediction using machine learning algorithms is shared. Various machine learning models were tested, along with feature 
-#    selection procedures. A clustering technique is introduced that segments users according to their first day gameplay habits. 
-#    Also, a notification sending engine is described, which combines the knowledge gathered from the two previously mentioned 
-#    methods, and targets the predicted churners with different types of personalized messages. This allows us to decrease early 
-#    churn rate, while significantly increasing first day retention as well as boosting other metrics. We will also touch upon 
-#    the underlying system infrastructure to deal with the scalability issues that occur when working with big data.
-#  speakers:
-#    - Milos Milosovec

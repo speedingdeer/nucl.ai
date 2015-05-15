@@ -33,6 +33,16 @@
     start: "10:00"
     finish: "11:00"
 
+# - title: "Design of TOTAL WAR: ATTILA"
+#   description: >
+#     .
+#   speakers:
+#     - Csaba Toth
+#   room: amphitheatre
+#   time:
+#     start: "09:00"
+#     finish: "09:30"
+
 - title: "Designing realistic behaviors for a military training simulation"
   description: >
     Simulation is a one of the main tools for armies’ training; it is used to confront trainees to complex situations that would be expensive and potentially dangerous to do in the real world. In this context the modeling of realistic automated forces becomes essential.
@@ -42,8 +52,8 @@
     - Newfel Messouci
   room: masterclass
   time:
-    start: "12:30"
-    finish: "13:00"
+    start: "11:45"
+    finish: "12:15"
 
 - title: "Reusability and abstraction: the next evolution for Behavior Trees"
   description: >
@@ -53,5 +63,15 @@
     - Juraj Blaho
   room: masterclass
   time:
-    start: "12:00"
-    finish: "12:30"
+    start: "11:15"
+    finish: "11:45"
+
+- title: "Injecting Behavior Trees into Unreal Tournament's Bots (Workshop)"
+  description: >
+    
+  speakers:
+    - Mieszko Zielinski
+  room: laboratories
+  time:
+    start: "14:45"
+    finish: "16:45"

@@ -36,6 +36,16 @@
     start: "10:00"
     finish: "10:45"
 
+- title: "Coordinating Open World Systems and Emergent Gameplay (Expert Panel)"
+  description: >
+    .
+  speakers:
+    - Tommy Thompson
+  room: laboratories
+  time:
+    start: "14:45"
+    finish: "15:45"
+
 # - title: "Designing CAD Tools for Novices: Can Algorithms Enhance productivity or foster creativity?"
 #   description: >
 #     As the number and the size of computer games continues to expand, game companies handle rising demand by extending their cadre, 

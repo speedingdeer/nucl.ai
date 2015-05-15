@@ -36,3 +36,57 @@
   time:
     start: "11:15"
     finish: "12:00"
+
+- title: "MCTS and Related Algorithms for Real-Time Games"
+  description: >
+    MCTS has revolutionised AI for classic board games such as Go, and more recently has been applied with some excellent results to controlling agents in real-time video games. However, there are many cases where vanilla MCTS fails to produce satisfactory results for a number of reasons, including massive branching factors, limited horizon depth, limited roll-out budget and flat reward landscape.  While these problems are not insurmountable, they may involve significant expertise and effort to overcome.  On the other hand, there are a number of alternative and similarly general approaches such as neural networks (trained using evolution or temporal difference learning) and rolling horizon evolutionary algorithms that have their own strengths and weaknesses.  In this talk I’ll outline the main factors to consider when choosing these methods, and also describe how they can be combined to provide even better solutions.  I’ll also discuss initial results from our General Video Game AI server (http://gvgai.net), and how this could create an efficient marketplace for agent AI.
+  speakers:
+    - Simon Lucas
+  room: amphitheatre
+  time:
+    start: "16:15"
+    finish: "16:45"
+
+- title: "Deep Reinforcement Learning In Practice"
+  description: >
+    .
+  speakers:
+    - Chris Poulin
+  room: masterclass
+  time:
+    start: "15:15"
+    finish: "15:45"
+
+- title: "Techniques and Algorithms for RTS AI"
+  description: >
+    .
+  speakers:
+    - Mike Preuss
+  room: masterclass
+  time:
+    start: "14:45"
+    finish: "15:15"
+
+
+- title: "Applying Deep Learning: A Python Tutorial"
+  description: >
+    .
+  speakers:
+    - Spyridon Samothrakis
+  room: laboratories
+  time:
+    start: "13:45"
+    finish: "14:45"
+
+- title: "Open Discussion on Challenges in Modern AI"
+  description: >
+    .
+  speakers:
+    - Diego Perez
+    - Gwaredd Mountain
+    - Piotr Andruszkiewicz
+    - Simon Lucas
+  room: laboratories
+  time:
+    start: "16:45"
+    finish: "17:30"

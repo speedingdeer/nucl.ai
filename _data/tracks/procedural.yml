@@ -1,3 +1,23 @@
+- title: "No Man's Sky #procgen By Example"
+  description: >
+    .
+  speakers:
+    - Hazel McKendrick
+  room: amphitheatre
+  time:
+    start: "12:00"
+    finish: "12:45"
+
+- title: "Ultima Ratio Regum"
+  description: >
+    .
+  speakers:
+    - Mark Johnson
+  room: amphitheatre
+  time:
+    start: "14:45"
+    finish: "15:30"
+  
 - title: "Procedural Generation of Biotopes for Large Realistic Terrains"
   description: >
     <p>The VBS 3 engine, based on Bohemia Interactive's ARMA, is famous for its realistic depiction of large terrains in training and simulations.  To reach that level of quality with low-overheads, the team relies on a variety of procedural tools and techniques.</p>
@@ -7,4 +27,12 @@
   room: masterclass
   time:
     start: "16:00"
-    finish: "16:30"
+    finish: "16:45"
+
+- title: "Generating Geometry Algorithmically in Houdini (Workshop)"
+  description: >
+    .
+  room: laboratories
+  time:
+    start: "10:00"
+    finish: "12:00"
