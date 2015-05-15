@@ -8,7 +8,10 @@ permalink: /program/schedule/
     <grid>
         <h2>Conference Schedule</h2>
         <content>
-        {% assign roomsLayout = false %}
+            <p class="note">NOTE: The assignment of Tracks to Days has been finalized (as of May 7th), but we expect the times for specific talks within the day to change.</p>
+
+            {% assign roomsLayout = true %}
+            {% assign roomsLayout = false %}
 
             {% for day in site.data.schedule %}
                 {% include schedule/day.html %}

@@ -174,113 +174,118 @@ section.program-schedule {
     }
 }
 
-section.list-schedule.program-schedule {
+section.rooms-schedule.program-schedule {
+    grid:not(.list-schedule) {
+        content {
+            table.header-table { font-size: 0.8em; }
+            table.talks-list {
+                padding-top: 0;
+                border-spacing: 0;
+                background: none;
+                .cell-content {
+                    width: calc(~"100% - 5px");
+                }
+                //make the whole cell clickable
+                th.titlerow {
+                    .titlecell-wrap { display: table; }
+                    //color: @ORANGE;
+                    > div {
+                        display: inline-block;
+                    }
+                    &.masterclass { 
+                        //color: @LIGHTEN_BLUE; 
+                    }
+                    h3 { border: none; }
+                    
+                    &.laboratories {
+                    }
+                }
+                td { 
+                    position: relative; 
+                    width: 300px; //remaining space will set up itself anyway
+                    &.timeline { width: 60px; font-size: 0.8em; } //this value is taken from web - inspector - maybe better to set up in js?
+                }
+                th, td { //borders
+                    //border-left: solid @BORDER_SIZE @ORANGE;
+                    //&.masterclass { border-left: solid @BORDER_SIZE @LIGHTEN_BLUE; }
+                    &.timeline { border: none; }
+                }
+                td.timeline {
+                    font-size: 0.8em;
+                    div.pattern { display: none; }
+                    div.interval {
+                        position: relative;
+                        padding-top: @BORDER_SIZE;
+                        &.hovered { background-color: lighten(@DARK_GREY, 10%); }
+                        &.cover-empty {
+                            height: 0;
+                        }
+                        p.interval-time {
+                            position: absolute;
+                            margin: 0;
+                            opacity: 0.2;
+                            width: 100%;
+                            text-align: center;
+                            line-height: 1;
+                            &.start { top: 0px; }
+                            &.finish { bottom: 5px;  opacity: 0.7; }
+                            &.ellipsis {
+                                opacity: 0.2; 
+                                display: none;
+                                left: 0;
+                                width: 100%;
+                            }
+                        }
+                        &.edge { p.interval-time { opacity: 0.7;          &.ellipsis {
+                                opacity: 0.5; } } }
+                        &.empty { p.ellipsis { display: initial; } }
+                        &.orhpaned-empty { 
+                            p.ellipsis { display: none; }
+                        }
+                        &.next-empty { display: none; }
+                    }
+                }
+                div.track {
+                    display: table;
+                    padding: 0;
+                    position: absolute;
+                    &.hovered {
+                        &.track.alternate { .track-hovered(@COLOR_TRACK_ALTERNATE, @DARK_GREY); }
+                        &.track.ambient { .track-hovered(@COLOR_TRACK_AMBIENT, @DARK_GREY); }
+                        &.track.procedural { .track-hovered(@COLOR_TRACK_PROCEDUREAL, @WHITE); }
+                        &.track.behavior { .track-hovered(@COLOR_TRACK_BEHAVIOR, @DARK_BLUE); }
+                        &.track.analytics { .track-hovered(@COLOR_TRACK_ANALYTICS, @DARK_BLUE); }
+                        &.track.decisions { .track-hovered(@COLOR_TRACK_DECISIONS, @WHITE); }
+                        &.track.systems { .track-hovered(@COLOR_TRACK_SYSTEMS, @WHITE); }
+                        &.track.animation { .track-hovered(@COLOR_TRACK_ANIMATION, @DARK_GREY); }
+                        &.track.cognition { .track-hovered(@COLOR_TRACK_COGNITION, @DARK_GREY); }
+                    }
+                    .talk-cell-wrap {
+                        background-color: @DARK_BLUE;
+                        display: table-cell;
+                        height: inherit;
+                        vertical-align: middle;
+                        padding: 0 0.5em;
+                        font-size: 0.8em;
+                        color: inherit;
+                        text-decoration: none;
+                        p {
+                            margin: 0;
+                            &.title { font-size: initial; font-weight: bold; }
+                        }
+                    }
+                }
+                tr { vertical-align: top; }
+            }
+        }
+    }
+}
+
+// switching schedules betweens mobile and full screen
+.list-schedule {
     display: none;
     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: block; }
 }
-
-section.rooms-schedule.program-schedule {
+.rooms-schedule{
     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: none; }
-    content {
-        table.header-table { font-size: 0.8em; }
-        table.talks-list {
-            padding-top: 0;
-            border-spacing: 0;
-            background: none;
-            .cell-content {
-                width: calc(~"100% - 5px");
-            }
-            //make the whole cell clickable
-            th.titlerow {
-                .titlecell-wrap { display: table; }
-                //color: @ORANGE;
-                > div {
-                    display: inline-block;
-                }
-                &.masterclass { 
-                    //color: @LIGHTEN_BLUE; 
-                }
-                h3 { border: none; }
-                
-                &.laboratories {
-                }
-            }
-            td { 
-                position: relative; 
-                width: 300px; //remaining space will set up itself anyway
-                &.timeline { width: 60px; font-size: 0.8em; } //this value is taken from web - inspector - maybe better to set up in js?
-            }
-            th, td { //borders
-                //border-left: solid @BORDER_SIZE @ORANGE;
-                //&.masterclass { border-left: solid @BORDER_SIZE @LIGHTEN_BLUE; }
-                &.timeline { border: none; }
-            }
-            td.timeline {
-                font-size: 0.8em;
-                div.pattern { display: none; }
-                div.interval {
-                    position: relative;
-                    padding-top: @BORDER_SIZE;
-                    &.hovered { background-color: lighten(@DARK_GREY, 10%); }
-                    &.cover-empty {
-                        height: 0;
-                    }
-                    p.interval-time {
-                        position: absolute;
-                        margin: 0;
-                        opacity: 0.2;
-                        width: 100%;
-                        text-align: center;
-                        line-height: 1;
-                        &.start { top: 0px; }
-                        &.finish { bottom: 5px;  opacity: 0.7; }
-                        &.ellipsis {
-                            opacity: 0.2; 
-                            display: none;
-                            left: 0;
-                            width: 100%;
-                        }
-                    }
-                    &.edge { p.interval-time { opacity: 0.7;          &.ellipsis {
-                            opacity: 0.5; } } }
-                    &.empty { p.ellipsis { display: initial; } }
-                    &.orhpaned-empty { 
-                        p.ellipsis { display: none; }
-                    }
-                    &.next-empty { display: none; }
-                }
-            }
-            div.track {
-                display: table;
-                padding: 0;
-                position: absolute;
-                &.hovered {
-                    &.track.alternate { .track-hovered(@COLOR_TRACK_ALTERNATE, @DARK_GREY); }
-                    &.track.ambient { .track-hovered(@COLOR_TRACK_AMBIENT, @DARK_GREY); }
-                    &.track.procedural { .track-hovered(@COLOR_TRACK_PROCEDUREAL, @WHITE); }
-                    &.track.behavior { .track-hovered(@COLOR_TRACK_BEHAVIOR, @DARK_BLUE); }
-                    &.track.analytics { .track-hovered(@COLOR_TRACK_ANALYTICS, @DARK_BLUE); }
-                    &.track.decisions { .track-hovered(@COLOR_TRACK_DECISIONS, @WHITE); }
-                    &.track.systems { .track-hovered(@COLOR_TRACK_SYSTEMS, @WHITE); }
-                    &.track.animation { .track-hovered(@COLOR_TRACK_ANIMATION, @DARK_GREY); }
-                    &.track.cognition { .track-hovered(@COLOR_TRACK_COGNITION, @DARK_GREY); }
-                }
-                .talk-cell-wrap {
-                    background-color: @DARK_BLUE;
-                    display: table-cell;
-                    height: inherit;
-                    vertical-align: middle;
-                    padding: 0 0.5em;
-                    font-size: 0.8em;
-                    color: inherit;
-                    text-decoration: none;
-                    p {
-                        margin: 0;
-                        &.title { font-size: initial; font-weight: bold; }
-                    }
-                }
-            }
-            tr { vertical-align: top; }
-        }
-    }
 }

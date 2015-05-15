@@ -217,7 +217,6 @@ $ ->
       displayed = $("section.rooms-schedule").css("display")
       if displayed != tableDisplayed
         tableDisplayed = displayed
-        console.log("buildSchedule")
         buildSchedule()
 
 
