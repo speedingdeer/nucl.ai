@@ -29,10 +29,10 @@
     time articulating exactly what it is. This talk will provide useful, practical definitions of
     important concepts like systems, emergence, and interactivity. A cohesive framework for creating
     systems and systemic effects in game and AI design will also be presented.
-	<ul>
-		<li>Systems and system design are vital areas for games and simulations. And yet, terms like "systems," "emergence," and "interaction" remain ill-defined despite their broad use.</li> 
-		<li>Come away from this talk with a clearer theoretical and practical understanding of these concepts to improve your ability to construct and recognize interactive systems.</li>
-	</ul>
+    <ul>
+      <li>Systems and system design are vital areas for games and simulations. And yet, terms like "systems," "emergence," and "interaction" remain ill-defined despite their broad use.</li> 
+      <li>Come away from this talk with a clearer theoretical and practical understanding of these concepts to improve your ability to construct and recognize interactive systems.</li>
+    </ul>
   speakers:
     - Michael Sellers
   room: masterclass
