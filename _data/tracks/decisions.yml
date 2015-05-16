@@ -57,9 +57,9 @@
     start: "15:15"
     finish: "15:45"
 
-- title: "Techniques and Algorithms for RTS AI"
+- title: "Can modern AI get RTS games out of their niche?"
   description: >
-    .
+    While MOBA and casual games attract more and more users, RTS games seem to be left a bit behind. On base of recent game AI developments and the outcome Starcraft bot tournaments of the last years, we argue that this can be remedied at least partly by improving bot AI towards being much more flexible and communicative. Especially in the light of swift online updates, another important aspect of strategy games is balancing. Recent works show that a multi-objective approach can be helfpul here. We also discuss what input academic research needs from industry in order to effectively transfer algorithmic improvements and adapt them for newly developed games.
   speakers:
     - Mike Preuss
   room: masterclass
