@@ -47,9 +47,9 @@
     start: "16:15"
     finish: "16:45"
 
-- title: "Deep Reinforcement Learning In Practice"
+- title: "Deep Reinforcement Learning In Practice: the DRL library, and Predictus API"
   description: >
-    .
+    The DeepMind (now Google) team had recently proposed their Deep Reinforcement Learning solution 'DQN' as a solution to human level game playing, using a variant of Q-Learning.  With credit to this prior project, our research group has also decided to develop a solution which would be 'at' or 'better' performance in playing video games. Our initial goals were for our agent to similarly reach or exceed human levels of performance, and then to create an open source library for broader use by the research community. These first goals met, we have named this library 'DRL'.  And now our current work is to build a dedicated network around agents of this type, eventually making this available for the general public via an existing machine learning API, called Predictus®. 
   speakers:
     - Chris Poulin
   room: masterclass
