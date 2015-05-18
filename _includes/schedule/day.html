@@ -1,4 +1,5 @@
 {% assign isTrackPage = false %}
+{% assign dayIdx = forloop.index %}
 {% for topic in site.data.topics %}
     {% capture pageName %}{{topic.id}}.html{% endcapture %}
     {% if page.name == pageName %} 
@@ -53,7 +54,7 @@
                 {% endfor %}
             </tr>
         {% endif %}
-        <tr>
+        <tr class="talk-list-row">
             <td class="talks-list">
                 {% if isTrackPage %}
                     {% capture track %}{{page.name | remove: ".html" }}{% endcapture %}
@@ -63,6 +64,21 @@
                         {% include schedule/track.html %}
                     {% endfor %}
                 {% endif %}
+
+                {% comment %} Append all breakes if no track page {% endcomment %}
+                {% if isTrackPage %} 
+                {% else %}
+                    {% for d in site.data.breaks %}
+                        {% if d.day == dayIdx %}
+                            {% for break in d.breaks %}
+                                <div class="track cell-content break table" time-start="{{break.time.start}}" time-finish="{{break.time.finish}}" room="all">
+                                    <div class="centered-cell talk-cell-wrap"><p>{{break.name}}</p></div>
+                                </div>
+                            {% endfor %}                
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+
             </td>
             {% if roomsLayout %}
                 <td class="timeline">
@@ -77,6 +93,7 @@
             {% for room in site.data.rooms %}
                <td class="{{room.id}}"></td>
             {% endfor %}
+                <td class="breaks"></td>
         </tr>
     </table>
 </div>

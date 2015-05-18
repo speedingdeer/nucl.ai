@@ -1,6 +1,6 @@
 {% for talk in site.data.tracks[track] %}
-    <div class="track {{track}} cell-content" time-start="{{talk.time.start}}" time-finish="{{talk.time.finish}}" room="{{talk.room}}">
 
+    <div class="track {{track}} cell-content" time-start="{{talk.time.start}}" time-finish="{{talk.time.finish}}" room="{{talk.room}}">
         {% if roomsLayout %}
             <a class="talk-cell-wrap" href="/track/{{track}}/#{{talk.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">
         {% else %}
@@ -58,6 +58,6 @@
         {% else %}
             </div>
         {% endif %}
-
     </div>
+
 {% endfor %}

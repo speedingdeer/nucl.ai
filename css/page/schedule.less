@@ -9,6 +9,7 @@
 @COLOR_TRACK_COGNITION: #e0e0e0;
 
 @LIGHTEN_BLUE: lighten(@BLUE, 20%);
+@LIGHTEN_GREY: lighten(@DARK_GREY, 10%);
 @BORDER_SIZE: 4px;
 
 .track-color(@color) {
@@ -135,6 +136,7 @@ section.program-schedule {
             .track.systems { .track-color(@COLOR_TRACK_SYSTEMS); }
             .track.animation { .track-color(@COLOR_TRACK_ANIMATION); }
             .track.cognition { .track-color(@COLOR_TRACK_COGNITION); }
+            .track.break { .track-color(@COLOR_TRACK_COGNITION); }
 
         }
 
@@ -177,13 +179,17 @@ section.program-schedule {
 section.program-schedule {
     grid.rooms-schedule {
         content {
-            table.header-table { font-size: 0.8em; }
+            table.header-table { 
+                font-size: 0.8em;
+                width: calc(~"100% - @{BORDER_SIZE}");
+            }
             table.talks-list {
+                tbody { position: relative; }
                 padding-top: 0;
                 border-spacing: 0;
                 background: none;
                 .cell-content {
-                    width: calc(~"100% - 5px");
+                    width: calc(~"100% - @{BORDER_SIZE}");
                 }
                 //make the whole cell clickable
                 th.titlerow {
@@ -211,12 +217,14 @@ section.program-schedule {
                     &.timeline { border: none; }
                 }
                 td.timeline {
+                    z-index: 1;
                     font-size: 0.8em;
+                    position: relative;
                     div.pattern { display: none; }
                     div.interval {
                         position: relative;
                         padding-top: @BORDER_SIZE;
-                        &.hovered { background-color: lighten(@DARK_GREY, 10%); }
+                        &.hovered { background-color: @LIGHTEN_GREY; }
                         &.cover-empty {
                             height: 0;
                         }
@@ -236,8 +244,7 @@ section.program-schedule {
                                 width: 100%;
                             }
                         }
-                        &.edge { p.interval-time { opacity: 0.7;          &.ellipsis {
-                                opacity: 0.5; } } }
+                        &.edge { p.interval-time { opacity: 0.7; &.ellipsis { opacity: 0.5; } } }
                         &.empty { p.ellipsis { display: initial; } }
                         &.orhpaned-empty { 
                             p.ellipsis { display: none; }
@@ -245,10 +252,20 @@ section.program-schedule {
                         &.next-empty { display: none; }
                     }
                 }
+                td.breaks {
+                    width:0px;
+                    position:absolute;
+                    left: 0;
+                    div.track { width: 884px; margin-left: 50px; } //harcoded -> better move to js or varrables to calcualte them
+                }
                 div.track {
                     display: table;
                     padding: 0;
                     position: absolute;
+                    &.break { 
+                        text-align: center; 
+                        .talk-cell-wrap { background-color: @DARK_GREY; }
+                    }
                     &.hovered {
                         &.track.alternate { .track-hovered(@COLOR_TRACK_ALTERNATE, @DARK_GREY); }
                         &.track.ambient { .track-hovered(@COLOR_TRACK_AMBIENT, @DARK_GREY); }
@@ -259,6 +276,9 @@ section.program-schedule {
                         &.track.systems { .track-hovered(@COLOR_TRACK_SYSTEMS, @WHITE); }
                         &.track.animation { .track-hovered(@COLOR_TRACK_ANIMATION, @DARK_GREY); }
                         &.track.cognition { .track-hovered(@COLOR_TRACK_COGNITION, @DARK_GREY); }
+                        &.track.break {
+                            .track-hovered(@LIGHTEN_GREY, initial); 
+                        }
                     }
                     .talk-cell-wrap {
                         background-color: @DARK_BLUE;
@@ -275,7 +295,10 @@ section.program-schedule {
                         }
                     }
                 }
-                tr { vertical-align: top; }
+                tr { 
+                    vertical-align: top;
+                    &.talk-list-row { posion: relative; }
+                }
             }
         }
     }

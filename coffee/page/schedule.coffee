@@ -73,7 +73,10 @@ $ ->
           day.find("td.talks-list").remove()
           for talk in day.talks
             room = talk.attr("room")
-            day.find("td." + room).append(talk)
+            if !room or room == "" or room == "all"
+              day.find("td.breaks").append(talk)
+            else
+              day.find("td." + room).append(talk)
             #set up timeline
           talksDuration = (talksFinishTime.getHours() * 60 + talksFinishTime.getMinutes()) - (talksStartTime.getHours() * 60 + talksStartTime.getMinutes())
           intervalsCount = talksDuration / timelineIntervalRange
@@ -93,11 +96,13 @@ $ ->
             interval.startDate = new Date(intervalDate)
             minutes = if intervalDate.getMinutes() >= 10 then intervalDate.getMinutes() else "0" + intervalDate.getMinutes() 
             startTime = intervalDate.getHours() + ":" + minutes
+            interval.addClass(intervalDate.getHours() + "_" + minutes)
             intervalDate.setMinutes(intervalDate.getMinutes() +  timelineIntervalRange)
             interval.finishDate = new Date(intervalDate)
             minutes = if intervalDate.getMinutes() >= 10 then intervalDate.getMinutes() else "0" + intervalDate.getMinutes() 
             finishTime = intervalDate.getHours() + ":" + minutes
             interval.find(".interval-time.start").text(startTime)
+
             if idx == intervalsCount - 1
               interval.find(".interval-time.finish").text(finishTime)
             if disableEmptyIntervals
@@ -154,9 +159,9 @@ $ ->
 
       schedule.find("table.talks-list td.timeline div.interval .ellipsis").each ->
         $(@).css("bottom",ellipsisBottom)
-      #allign top position
+      
       for day in days
-
+        #allign top position
         emptyIntervals = (talk) ->
           empty = 0
           for interval in day.intervals
