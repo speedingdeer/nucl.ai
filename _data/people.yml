@@ -95,7 +95,6 @@
 
 - name: Petra Champandard-Pail
   role: org
-  tracks: [alternate]
   affiliation:
     position: "Conference Director & Co-Founder"
     name: AiGameDev.com
@@ -533,18 +532,25 @@
   bio: >
     Simon Lucas is a Professor of Computer Science at the University of Essex where he is currently head of the School of Computer Science and Electronic Engineering and leads the Game Intelligence Group. Simon is the founding editor-in-chief of the IEEE Transactions on Computational Intelligence and Games, and co-founded the IEEE Conference on Computational Intelligence in Games. His recent research focusses on general game AI and the development of real-time decision making algorithms. He believes we ain’t seen nothing yet when it comes to Game AI, and is very much looking forward to the advances we can expect over the next decade or two which will lead to a new era of super-immersive games.
 
-
-# TODO: Diego
 - name: Chris Poulin
   role: speaker
+  confirmed: true
+  affiliation:
+    name: Patterns and Predictions 
+    url: http://patternsandpredictions.com/ 
+    position: Data Scientist and Principal Partner of Patterns and Predictions
   bio: >
-    ...
+    An accomplished Data Scientist in applications of Cognitive Computing technology, Poulin is the Principal Partner of Patterns and Predictions. While he was recently Director of The Durkheim Project, a non-profit big data collaboration with the U.S. VA and Facebook, Inc. Where Fast Company said "This may be the most vital use of big data we’ve ever seen." He was recently Co-Director of the Dartmouth Metalearning Working Group at Dartmouth College, working on large scale machine learning. He has also lectured in artificial intelligence at the U.S. Naval War College. At Nucl.ai, he will be illustrating successful Deep Reinforcement Learning applications.
 
-# TODO: Diego
 - name: Mike Preuss
+  confirmed: true
   role: speaker
+  affiliation:
+    name: University of Muenster, Germany 
+    url: https://www.uni-muenster.de/en/ 
+    position: Research Associate 
   bio: >
-    ...
+    Mike Preuss is Research Associate at ERCIS, University of Muenster, Germany. He obtained a PhD in Evolutionary Computation from the Chair of Algorithm Engineering at TU Dortmund in 2013. His research interests focus on further developing and applying multimodal and multiobjective optimization in the context of game AI, namely for procedural content generation (PGC) and realtime strategy games (RTS). He was involved in founding the EvoGames track at Evo* and the Digital Entertainment Technologies and Arts (DETA) track at GECCO and is currently the Chair of the Games Technical Committee of the IEEE Computational Intelligence Society.
 
 # TODO: Diego
 - name: Spyridon Samothrakis
