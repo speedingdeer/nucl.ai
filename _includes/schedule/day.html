@@ -88,7 +88,7 @@
                         <div class="interval-inner">
                             <p class="interval-time start"></p>
                             <p class="interval-time finish"></p>
-                            <p class="interval-time ellipsis">...</p>
+                            {% if isTrackPage %} {% else %} <p class="interval-time ellipsis">...</p> {% endif %}
                         </div>
                     </div>
                 </td>
