@@ -193,8 +193,9 @@ $ ->
         idx = $(@).attr("idx")
         day = $(@).attr("day")
         talk = days[day].talks[idx]
-        for interval in talk.intervals
+        for interval, idx in talk.intervals
           interval.addClass("hovered")
+          if idx == talk.intervals.length - 1 then interval.addClass("hovered-edge")
         talk.addClass("hovered")
 
       talkHoverEnd = (evt) ->
@@ -203,6 +204,7 @@ $ ->
         talk = days[day].talks[idx]
         for interval in talk.intervals
           interval.removeClass("hovered")
+          interval.removeClass("hovered-edge")
         talk.removeClass("hovered")
            
 

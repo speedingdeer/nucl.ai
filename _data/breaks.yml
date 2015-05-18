@@ -1,9 +1,9 @@
-- day: 1
-  breaks:
-    - name: Coffee Pause
-      time:
-        start: "13:00"
-        finish: "13:30"
+#- day: 1
+#  breaks:
+#    - name: Coffee Pause
+#      time:
+#        start: "13:00"
+#        finish: "13:30"
 
 #- day: 2
 #  breaks:

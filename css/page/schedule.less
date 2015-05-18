@@ -224,7 +224,15 @@ section.program-schedule {
                     div.interval {
                         position: relative;
                         padding-top: @BORDER_SIZE;
-                        &.hovered { background-color: @LIGHTEN_GREY; }
+                        &.hovered { 
+                            background-color: @LIGHTEN_GREY; 
+                            &.hovered-edge { 
+                                background-color: @DARK_GREY;
+                                .interval-inner {
+                                    background-color: @LIGHTEN_GREY;
+                                }
+                            }
+                        }
                         &.cover-empty {
                             height: 0;
                         }
@@ -250,6 +258,11 @@ section.program-schedule {
                             p.ellipsis { display: none; }
                         }
                         &.next-empty { display: none; }
+                        .interval-inner {
+                            width: 100%;
+                            height: 100%;
+                            margin-top: -(@BORDER_SIZE);
+                        }
                     }
                 }
                 td.breaks {
