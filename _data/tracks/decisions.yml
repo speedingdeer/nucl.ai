@@ -68,14 +68,14 @@
     finish: "15:15"
 
 
-- title: "Applying Deep Learning: A Python Tutorial"
+- title: "Applying Deep Learning: A Python Tutorial (Workshop) **"
   description: >
     .
   speakers:
     - Spyridon Samothrakis
   room: laboratories
   time:
-    start: "13:45"
+    start: "13:00"
     finish: "14:45"
 
 - title: "Open Discussion on Challenges in Modern AI"

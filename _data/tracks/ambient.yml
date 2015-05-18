@@ -81,10 +81,10 @@
     start: "16:00"
     finish: "16:45"
 
-- title: "Unity Navigation Mesh and Pathfinding Clinic"
+- title: "Navigation Mesh and Pathfinding Clinic **"
   room: laboratories
-  speakers:
-    - Mikko Mononen
+  # speakers:
+  #   - Mikko Mononen
   time:
     start: "12:00"
     finish: "13:00"

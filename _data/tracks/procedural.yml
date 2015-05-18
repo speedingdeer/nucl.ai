@@ -8,7 +8,7 @@
     start: "12:00"
     finish: "12:45"
 
-- title: "Ultima Ratio Regum"
+- title: "Procedural Generation of Global Cultures and Characters in ULTIMA RATIO REGUM"
   description: >
     .
   speakers:
@@ -29,9 +29,9 @@
     start: "16:00"
     finish: "16:45"
 
-- title: "Generating Geometry Algorithmically in Houdini (Workshop)"
+- title: "Generating Geometry Algorithmically in $TOOL (Workshop) **"
   description: >
-    .
+    ...
   room: laboratories
   time:
     start: "10:00"
