@@ -45,7 +45,7 @@
     start: "10:00"
     finish: "10:45"
 
-- title: Best Practices in Animation Runtimes
+- title: Best Practices in Animation Runtimes **
   description: >
     This panel follows-up on the Runtime Rig talk with advanced issues of animation runtimes,
     with experiences from developers in the trenches. How can IK be optimized to run
@@ -62,7 +62,7 @@
     finish: "12:00"
 
 # Considering Paul for his pipeline/animation material. 
-- title: Animation in Visual Effects **
+- title: Animation in Visual Effects Masterclass **
   description: >
     ...
   room: masterclass
@@ -70,7 +70,7 @@
     start: "13:45"
     finish: "14:30"
     
-- title: Breaking Out of the Finite-State-Machine and Beyond **
+- title: Breaking Out of the Finite-State-Machine and Beyond (Expert Panel) **
   description: >
     ...
   room: laboratories
@@ -78,4 +78,4 @@
     -
   time:
     start: "16:00"
-    finish: "17:30"
+    finish: "17:00"

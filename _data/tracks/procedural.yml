@@ -1,23 +1,23 @@
-- title: "No Man's Sky #procgen By Example"
+- title: "No Man's Sky Procedural Generation By Example"
   description: >
     .
   speakers:
     - Hazel McKendrick
   room: amphitheatre
   time:
-    start: "12:00"
-    finish: "12:45"
+    start: "14:45"
+    finish: "15:30"
 
-- title: "Procedural Generation of Global Cultures and Characters in ULTIMA RATIO REGUM"
+- title: "Generating Global Cultures and Characters in ULTIMA RATIO REGUM"
   description: >
     .
   speakers:
     - Mark Johnson
   room: amphitheatre
   time:
-    start: "14:45"
-    finish: "15:30"
-  
+    start: "12:00"
+    finish: "12:45"
+
 - title: "Procedural Generation of Biotopes for Large Realistic Terrains"
   description: >
     <p>The VBS 3 engine, based on Bohemia Interactive's ARMA, is famous for its realistic depiction of large terrains in training and simulations.  To reach that level of quality with low-overheads, the team relies on a variety of procedural tools and techniques.</p>
