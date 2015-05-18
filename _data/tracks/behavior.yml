@@ -33,15 +33,15 @@
     start: "10:00"
     finish: "11:00"
 
-# - title: "Design of TOTAL WAR: ATTILA"
-#   description: >
-#     .
-#   speakers:
-#     - Csaba Toth
-#   room: amphitheatre
-#   time:
-#     start: "09:00"
-#     finish: "09:30"
+- title: "Design of TOTAL WAR: ATTILA"
+  description: >
+    .
+  speakers:
+    - Csaba Toth
+  room: amphitheatre
+  time:
+    start: "12:45"
+    finish: "13:15"
 
 - title: "Designing realistic behaviors for a military training simulation"
   description: >
