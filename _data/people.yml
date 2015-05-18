@@ -37,7 +37,8 @@
     he has been to art school, and love to torture himself with how to bridge between the programming & art worlds.
 
 - name: Heather Stark
-  role: track
+  role: [track, speaker]
+  confirmed: true
   tracks: [analytics]
   twitter: hastark
   bio: >
@@ -65,9 +66,10 @@
     He has specialized in both game AI and animation technology for games.
 
 - name: Noor Shaker
-  role: track
+  role: [track, speaker]
   tracks: [procedural]
   twitter: noorshak
+  confirmed: true
   bio: >
     Noor Shaker is a Postdoctoral researcher at the Center for Culture and Games at IT University
     of Copenhagen. Her research interests include player modeling, procedural content generation,

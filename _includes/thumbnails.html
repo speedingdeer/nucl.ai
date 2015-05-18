@@ -93,9 +93,12 @@
                 </p>
             </item>
     {% endif %}
-
+    
+    {% capture modulo %}{{ forloop.index | modulo:itemsInRow }}{% endcapture %}
+    {% if modulo == '0' or forloop.last == true %}
+        <div style="clear: both; width: 100%;"></div>
+    {% endif %}
     {% if attachDescription %}
-        {% capture modulo %}{{ forloop.index | modulo:itemsInRow }}{% endcapture %}
         {% assign topicsIndex = forloop.index %}
         {% assign lastRow = forloop.last %}
         {% if modulo == '0' or forloop.last == true %}
@@ -104,7 +107,6 @@
             {% else %}
                 {% assign descriptions = forloop.index | modulo:itemsInRow %}
             {% endif %}
-            <div style="clear: both; width: 100%;"></div>
             {% for num in (1...descriptions) %}
                 {% assign descIndex = topicsIndex | minus:forloop.index %}
                 {% assign desc = items[descIndex] %}

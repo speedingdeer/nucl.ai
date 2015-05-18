@@ -3,7 +3,13 @@
 
 {% for person in site.data.people %}
     {% for filter in filters%}
-        {% if person.role == filter %}
+        {% assign hasRole = false %}
+        {% for r in person.role %}
+            {% if r == filter %}
+                {% assign hasRole = true %}
+            {% endif %}
+        {% endfor %}
+        {% if hasRole %}
             {% if filter == "speaker" %}
                 {% if person.confirmed %}
                     {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
