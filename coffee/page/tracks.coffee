@@ -13,6 +13,7 @@ $ ->
 
   $("h3 a, li a.scrollable, .tracks-people .track-topic a, .talks-list a").click ->
     id = $(@).attr("href").split("#")[1]
+    if $(@).hasClass("wip") then return false
     if $("#" + id).length > 0
       root.scroll id, $("#" + id).offset().top
-      return false;
+      return false

@@ -9,8 +9,6 @@ descriptionOutClass = "fadeOutLeftBig"
 
 $ ->
 
-  
-
   select = (collection, extras, menu, clicked, inClass, outClass) ->
 
     slideIn = (selected, collection, inClass, outClass) ->

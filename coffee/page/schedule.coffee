@@ -123,6 +123,7 @@ $ ->
           day.find("td.talks-list").html("")
           day.append(day.talks)
         day.removeClass("not-initialized")
+        root.disableWip()
         
 
       if !schedule.hasClass("rooms-schedule") then return
@@ -211,6 +212,7 @@ $ ->
       #set up on hover effect
       for day in days
         for talk in day.talks
+          if talk.find("a").hasClass("wip") then continue
           assignIntervals(talk)
           talk.hover talkHoverStart, talkHoverEnd
 

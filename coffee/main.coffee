@@ -29,6 +29,10 @@ $(window).load ->
   root.scrollLocked = false;
 
 
+disableWip = () ->
+  $("a.wip").click ->
+      return false
+
 
 $ ->
   if navigator.userAgent.match(/(iPad|iPhone|iPod)/g)
@@ -41,4 +45,8 @@ $ ->
           history.replaceState null, null, ' '
 
   enableSections()
+  disableWip()
+
 enableSections()
+
+root.disableWip = disableWip

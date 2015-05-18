@@ -65,7 +65,8 @@
                 {% for speaker in talk.speakers %}
                     {% if speaker == d.name %}
                         <li class="track-topic">
-                            <a href="/track/{{topic.id}}#{{talk.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | downcase}}">{{talk.title}}</a> (Presentation)
+                            {% include wip-link.html %}
+                            <a class="{{wipClass}}" href="/track/{{topic.id}}#{{talk.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | replace:'*', '' | downcase}}">{{talk.title}}</a> (Presentation)
                         </li>
                     {% endif %}
                 {% endfor %}
