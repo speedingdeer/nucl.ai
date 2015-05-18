@@ -184,6 +184,10 @@ section.program-schedule {
                 width: calc(~"100% - @{BORDER_SIZE}");
             }
             table.talks-list {
+                th { 
+                    background-color: @DARK_GREY; 
+                    &.last { background-color: transparent; } //for padding
+                }
                 tbody { position: relative; }
                 padding-top: 0;
                 border-spacing: 0;
@@ -210,6 +214,7 @@ section.program-schedule {
                     position: relative; 
                     width: 300px; //remaining space will set up itself anyway
                     &.timeline { width: 60px; font-size: 0.8em; } //this value is taken from web - inspector - maybe better to set up in js?
+                    z-index: 1;
                 }
                 th, td { //borders
                     //border-left: solid @BORDER_SIZE @ORANGE;
@@ -217,7 +222,6 @@ section.program-schedule {
                     &.timeline { border: none; }
                 }
                 td.timeline {
-                    z-index: 1;
                     font-size: 0.8em;
                     position: relative;
                     div.pattern { display: none; }
@@ -266,11 +270,11 @@ section.program-schedule {
                     }
                 }
                 td.breaks {
-                    z-index: -1;
                     width:0px;
                     position:absolute;
                     left: 0;
                     div.track { width: 884px; margin-left: 50px; } //harcoded -> better move to js or varrables to calcualte them
+                    z-index: 0;
                 }
                 div.track {
                     display: table;

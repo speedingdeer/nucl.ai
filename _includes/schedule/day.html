@@ -46,7 +46,8 @@
                     <div class="titlecell-wrap cell-content"><div class="tite-wrap"><h3 style="color: transparent;">i</h3></div></div>
                 </th>
                 {% for room in site.data.rooms %}
-                    <th class="{{room.id}} titlerow">
+                    {% if forloop.last %} {% assign last="last" %} {% else %} {% assign last="" %} {% endif %}
+                    <th class="{{room.id}} titlerow {{last}}">
                         <div class="titlecell-wrap cell-content">
                             <div class="tite-wrap"><h3>{{room.name}}</h3></div>
                         </div>
@@ -95,7 +96,7 @@
             {% for room in site.data.rooms %}
                <td class="{{room.id}}"></td>
             {% endfor %}
-                <td class="breaks"></td>
+            <td class="breaks"></td>
         </tr>
     </table>
 </div>
