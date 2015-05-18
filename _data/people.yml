@@ -95,7 +95,6 @@
 
 - name: Petra Champandard-Pail
   role: org
-  tracks: [alternate]
   affiliation:
     position: "Conference Director & Co-Founder"
     name: AiGameDev.com
