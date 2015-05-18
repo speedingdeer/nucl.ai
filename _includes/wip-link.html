@@ -1,0 +1,7 @@
+{% if talk %}
+{% assign linkItem = talk %}
+{% else %}
+    {% assign linkItem = item %}
+{% endif %}
+{% assign descSize = linkItem.description | size %}
+{% if descSize < 5 %} {% capture wipClass%}wip{% endcapture %} {% else %} {% capture wipClass%} no-{{descSize}}{% endcapture %} {% endif %}
