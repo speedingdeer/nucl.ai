@@ -30,9 +30,9 @@
     start: "16:15"
     finish: "16:45"
 
-- title: Object Recognition with Neural Networks
+- title: Object Recognition with Neural Networks (Workshop) **
   description: >
-    This tutorial is yet to be confirmed.
+    ...
   room: laboratories
   speakers:
     - Spyridon Samothrakis
@@ -40,7 +40,7 @@
     start: "10:00"
     finish: "12:00"
 
-- title: AR/VR Demo Time in the Conference Lobby!
+- title: AR/VR Demo Time in the Conference Lobby! **
   description: >
     This demo is yet to be confirmed.
   room: laboratories

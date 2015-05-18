@@ -43,9 +43,9 @@
         finish: "11:15"
     - name: Lunch Break
       time:
-        start: "13:00"
-        finish: "14:00"
+        start: "12:45"
+        finish: "13:45"
     - name: Coffee Pause
       time:
-        start: "15:45"
-        finish: "16:15"
+        start: "15:30"
+        finish: "16:00"
