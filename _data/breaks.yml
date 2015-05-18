@@ -2,27 +2,43 @@
   breaks:
     - name: Coffee Pause
       time:
+        start: "10:45"
+        finish: "11:15"
+    - name: Lunch Break
+      time:
         start: "13:00"
-        finish: "13:30"
+        finish: "14:00"
+    - name: Coffee Pause
+      time:
+        start: "15:45"
+        finish: "16:15"
 
-#- day: 2
-#  breaks:
-#    - name: Coffee Pause
-#      time:
-#        start: 11:00
-#        finish: 11:40
-#    - name: Launch Break
-#      time:
-#        start: 13:00
-#        end: 14:00
+- day: 2
+  breaks:
+    - name: Coffee Pause
+      time:
+        start: "10:45"
+        finish: "11:15"
+    - name: Lunch Break
+      time:
+        start: "13:00"
+        finish: "14:00"
+    - name: Coffee Pause
+      time:
+        start: "15:30"
+        finish: "16:00"
 
-#- day: 3
-#  breaks:
-#    - name: Coffee Pause
-#      time:
-#        start: 11:00
-#        finish: 11:40
-#    - name: Launch Break
-#      time:
-#        start: 13:00
-#        end: 14:00
+- day: 3
+  breaks:
+    - name: Coffee Pause
+      time:
+        start: "10:45"
+        finish: "11:15"
+    - name: Lunch Break
+      time:
+        start: "13:00"
+        finish: "14:00"
+    - name: Coffee Pause
+      time:
+        start: "15:45"
+        finish: "16:15"
