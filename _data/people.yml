@@ -36,6 +36,19 @@
     Michaël's professional interests include AI, animation and game engines. Michaël's personal interests lie in visual arts, 
     he has been to art school, and love to torture himself with how to bridge between the programming & art worlds.
 
+- name: Michael Büttner
+  role: speaker
+  confirmed: true
+  affiliation: 
+    name: Ubisoft Toronto
+    url: http://www.ubisoft.com/
+  bio: >
+    Michael has been programming games for nearly 30 years, including lead and senior roles at Ocean Software, Infogrames 
+    Entertainment, IO Interactive, Square Enix Montreal and Ubisoft.
+    Michael joined the Ubisoft Toronto studio in 2013 as the Tech Lead for Animation & Physics.  He brought with him his 
+    passion for animation and physics programming, R&D, an innovative approach to character creation and extensive experience 
+    working with animators, laying the ground work for pushing the animation tech of Ubisoft Toronto in the future.
+
 - name: Heather Stark
   role: [track, speaker]
   confirmed: true
@@ -64,18 +77,6 @@
     Mika has been working in the industry since late 1999 – including IO Interactive as Senior AI
     Programmer on the Hitman: Absolution and Killzone: Shadow Fall for Guerrilla Games.
     He has specialized in both game AI and animation technology for games.
-
-- name: Noor Shaker
-  role: [track, speaker]
-  tracks: [procedural]
-  twitter: noorshak
-  confirmed: true
-  bio: >
-    Noor Shaker is a Postdoctoral researcher at the Center for Culture and Games at IT University
-    of Copenhagen. Her research interests include player modeling, procedural content generation,
-    computational creativity, affective computing and player behavior imitation. She is organizing
-    the Platformer AI competition and chairing the IEEE task force on Player Modeling.
-
 
 - name: Josh McCoy
   role: track
@@ -163,26 +164,12 @@
   bio: >
     Alexander’s focus at Ubisoft is development of new technologies for the next generation of the video games – including animation tech and visual effect tech. He joined the industry some 12 years ago and worked in most of disciplines, including 3d modeling, texturing, rigging and animation, creation of particle FX, shaders and post process effects. Having spent several years as art director of outsourcing teams, he worked on projects of all types of art style targeting all types of game platforms. Game credits: Metro: Last Light, Overlord, Gauntlet: Seven Sorrows, NBA Live 2006, Need for Speed: Underground 2, Showtime Championship Boxing, Everquest 2, Pirates of Caribbean: the Legend of Jack Sparrow. Currently working on: something secret at Ubisoft
 
-- name: Michael Büttner
-  role: speaker
-  confirmed: true
-  affiliation: 
-    name: Ubisoft Toronto
-    url: http://www.ubisoft.com/
-  bio: >
-    Michael has been programming games for nearly 30 years, including lead and senior roles at Ocean Software, Infogrames 
-    Entertainment, IO Interactive, Square Enix Montreal and Ubisoft.
-    Michael joined the Ubisoft Toronto studio in 2013 as the Tech Lead for Animation & Physics.  He brought with him his 
-    passion for animation and physics programming, R&D, an innovative approach to character creation and extensive experience 
-    working with animators, laying the ground work for pushing the animation tech of Ubisoft Toronto in the future.
-
 - name: Simon Clavet
   role: speaker
   affiliation:
     name: Ubisoft Montreal
     url: http://www.ubisoft.com/
   bio: >
-    
 
 - name: Bill Grosso
   role: speaker
@@ -360,6 +347,17 @@
     Designer with nearly 10 years of experience in the gaming industry and with a background in programming, worked on games 
     from a wide variety of genres, designed and tweaked AI behaviour for racing games, shooters and most recently the campaign 
     part of Total War: Rome2 and Total War: Attila. Apart from AI, he specialises in game balancing and systems design.
+
+- name: Noor Shaker
+  role: [track, speaker]
+  tracks: [procedural]
+  twitter: noorshak
+  confirmed: true
+  bio: >
+    Noor Shaker is a Postdoctoral researcher at the Center for Culture and Games at IT University
+    of Copenhagen. Her research interests include player modeling, procedural content generation,
+    computational creativity, affective computing and player behavior imitation. She is organizing
+    the Platformer AI competition and chairing the IEEE task force on Player Modeling.
 
 - name: Simon Worgan
   role: speaker

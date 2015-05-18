@@ -96,7 +96,7 @@
     
     {% capture modulo %}{{ forloop.index | modulo:itemsInRow }}{% endcapture %}
     {% if modulo == '0' or forloop.last == true %}
-        <div style="clear: both; width: 100%;"></div>
+        <div class="brk" style="clear: both; width: 100%;"></div>
     {% endif %}
     {% if attachDescription %}
         {% assign topicsIndex = forloop.index %}
@@ -117,7 +117,7 @@
                         {% include thumbnails-description-topics.html %}
                 {% endcase %}
             {% endfor %}
-            <div style="clear: both; width: 100%;"></div>
+            <div class="brk" style="clear: both; width: 100%;"></div>
         {% endif %}
     {% endif %}
 {% endfor %}

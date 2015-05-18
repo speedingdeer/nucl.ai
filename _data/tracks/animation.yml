@@ -1,4 +1,4 @@
-- title: "MotionFields - Road to Next-Gen Animation"
+- title: "MotionFields: The Road to Next-Gen Animation"
   description: >
     <p>In order to create a high-quality character animation conventional animation systems require a large amount of individual animation clips to get organized into hand-crafted blend-trees and state-machines. Technical Animators need to work together with Programmers to carefully design a blend-structure for certain types of movement and Animators need to follow precise rules when they create the assets. It usually takes a large amount of time to produce the assets and the blend-structure to achieve high-quality results. Once such a structure is created it is rather difficult to organize it differently due to the dependency on the assets.</p>
     <p>This presentation will introduce a novel approach for creating character animation that does not rely on any superimposed structure but uses raw motion capture data instead. It does not require any pre-processing steps and produces a level of visual fidelity that equals the quality of the provided input animations. It is just a matter of creating the required animation to produce movements that would be either extremely difficult or impossible to produce with traditional animation systems.</p>
@@ -6,10 +6,21 @@
     <p>At every step of the simulation, our method uses the current pose of the character and a number of desired goals to find the best pose to transition into. For example, goals can be desired direction and velocity based on stick input for player-controller characters or desired position and facing for AI-controlled characters. Goals are transformed into a prediction model that is matched against available animation poses in the motion library. We use a novel rating scheme to balance quality against responsiveness of the system.</p>
   speakers:
     - Michael Büttner
-    - Simon Clavet
   room: amphitheatre
   time:
     start: "14:30"
+    finish: "15:15"
+
+- title: "Applying Motion Fields in $TITLE at Ubisoft"
+  description: >
+    This talk will go into the details of applying motion field animation into one of Ubisoft's AAA titles,
+    yet to be annonunced.  Find out how this technology is making its way into the hands of consumers and
+    what kind of impact it has on the game.
+  speakers:
+    - Simon Clavet
+  room: amphitheatre
+  time:
+    start: "15:15"
     finish: "15:45"
 
 - title: "Exploring the Relationship Between Gameplay and Animation"
@@ -53,7 +64,6 @@
     this open up?  What are the major challenges in practice?  How can runtimes and blend-trees
     be prepared for more advanced animation techniques like Motion Fields?
   speakers:
-    - Simon Clavet
     - Alexander Bereznyak
     - Mika Vehkala
   room: masterclass
