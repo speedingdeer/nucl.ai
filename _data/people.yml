@@ -283,6 +283,7 @@
 
 - name: Miloš Milošević
   role: speaker
+  confirmed: true
   affiliation:
     name: Nordeus
     url: http://www.nordeus.com/
