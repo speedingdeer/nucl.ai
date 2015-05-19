@@ -14,11 +14,12 @@
 
 .track-color(@color) {
   color: @color;
-  .marker { background-color: @color; }
+  .marker { background-color: @color; };
 }
 
 .track-hovered(@bckg_color, @font_color) {
     .talk-cell-wrap {
+        .transition(.5s ease-out);
         background-color: @bckg_color;
         color: @font_color;
     }
@@ -230,9 +231,12 @@ section.program-schedule {
                         padding-top: @BORDER_SIZE;
                         &.hovered { 
                             background-color: @LIGHTEN_GREY; 
+                            .transition(.5s ease-out);
                             &.hovered-edge { 
+                                .transition(.5s ease-out);
                                 background-color: @DARK_GREY;
                                 .interval-inner {
+                                    .transition(.5s ease-out);
                                     background-color: @LIGHTEN_GREY;
                                 }
                             }
