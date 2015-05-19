@@ -61,7 +61,7 @@
     churn rate, while significantly increasing first day retention as well as boosting other metrics. We will also touch upon 
     the underlying system infrastructure to deal with the scalability issues that occur when working with big data.
   speakers:
-    - Milos Milosovec
+    - Miloš Milošević
   room: amphitheatre
   time:
     start: "16:00"
@@ -110,4 +110,3 @@
   time:
     start: "14:00"
     finish: "14:45"
-
