@@ -63,7 +63,9 @@ class Thumbnails
     ## fake click if soemthing selected in url hash
     if window.location.hash != ""
       selectedId = window.location.hash.substring(1)
-      @section.find("#thumbnail-id-" + selectedId).click()
+      # check globally if there is no one selected already
+      if $("#thumbnail-id-" + selectedId + ".selected").length == 0
+        @section.find("#thumbnail-id-" + selectedId).click()
 
 
   ## selections / animation

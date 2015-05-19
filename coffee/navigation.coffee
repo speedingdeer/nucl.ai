@@ -14,7 +14,6 @@ $ ->
       @.jQsection = []
     else 
       @.jQsection = $("section." + hash)
-
   expanded = $(".navigation a.expanded")
 
   $('html').click ->
@@ -51,7 +50,8 @@ $ ->
     linkToSelect = null
     links.each ->
       if @.jQsection.length == 0 then return # don't search for section which doesn't exist
-      if $(window).scrollTop() + navigation.height()  >= -1 + @.jQsection.offset().top and $(window).scrollTop() + navigation.height() < @.jQsection.offset().top + @.jQsection.height()
+
+      if $(window).scrollTop() + navigation.height()  >= -1 + @.jQsection.first().offset().top and $(window).scrollTop() + navigation.height() < @.jQsection.last().offset().top + @.jQsection.last().height()
         if navigation.hasClass("sticky")
           linkToSelect = @.jQlink
     navigation.find("item.selected").removeClass("selected")

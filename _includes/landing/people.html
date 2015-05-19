@@ -1,40 +1,38 @@
-<section class="people thumbnails-grid" id="section-people">
+{% assign itemsInRow = 5 %}
+<section class="people thumbnails-grid" id="speakers-section">
     <a class="anchor" id="people"></a>
     <grid>
+        <h2>Speakers</h2>
         <content>
-            {% assign itemsInRow = 5 %}
-            <div class="subsection" id="speakers">
-                <h2>Speakers</h2>
-                {% assign filterPeopleType = "speaker" %}
-                {% include people/filtered.html %}
-                {% assign dataType = "people" %}
-                <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
-                    {% include thumbnails.html %}
-                </div>
-                <script type="text/javascript">
-                    $.fn.shuffle = function () {
-                        var j;
-                        for (var i = 0; i < this.length; i++) {
-                            j = Math.floor(Math.random() * this.length);
-                            $(this[i]).before($(this[j]));
-                        }
-                        return this;
-                    };
-                    // $('#speakers .thumbnails .brk').remove();
-                    // $('#speakers .thumbnails item').shuffle();
-                </script>
+            {% assign filterPeopleType = "speaker" %}
+            {% include people/filtered.html %}
+            {% assign dataType = "people" %}
+            <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
+                {% include thumbnails.html %}
             </div>
-            <div class="subsection" id="chairs">
-                <h2>Co-Organizers &amp; Track Chairs</h2>
-                {% assign filterPeopleType = "track" %}
-                {% include people/filtered.html %}
-                {% assign dataType = "people" %}
-                <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
-                    {% include thumbnails.html %}
-                </div>
+        </content>
+    </grid>
+</section>
+<section class="none"></section>
+<section class="people thumbnails-grid" id="chairs-section">
+    <grid>
+        <h2>Co-Organizers &amp; Track Chairs</h2>
+        <content>
+            {% assign filterPeopleType = "track" %}
+            {% include people/filtered.html %}
+            {% assign dataType = "people" %}
+            <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
+                {% include thumbnails.html %}
             </div>
-            <div class="subsection" id="team">
-                <h2>The Team &amp; Advisors</h2>
+        </content>
+    </grid>
+</section>
+<section class="none"></section>
+<section class="people thumbnails-grid" id="team-section">
+    <grid>
+        <h2>The Team &amp; Advisors</h2>
+        <content>
+            <div class="subsection" id="team-section">
                 {% assign filterPeopleType = "org,advisor" %}
                 {% include people/filtered.html %}
                 {% assign dataType = "people" %}
@@ -45,3 +43,18 @@
         </content>
     </grid>
 </section>
+
+{% comment %}
+    <script type="text/javascript">
+            $.fn.shuffle = function () {
+            var j;
+            for (var i = 0; i < this.length; i++) {
+                j = Math.floor(Math.random() * this.length);
+                $(this[i]).before($(this[j]));
+            }
+            return this;
+        };
+        // $('#speakers .thumbnails .brk').remove();
+        // $('#speakers .thumbnails item').shuffle();
+    </script>
+{% endcomment %}
