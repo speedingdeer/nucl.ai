@@ -11,6 +11,18 @@
                 <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
                     {% include thumbnails.html %}
                 </div>
+                <script type="text/javascript">
+                    $.fn.shuffle = function () {
+                        var j;
+                        for (var i = 0; i < this.length; i++) {
+                            j = Math.floor(Math.random() * this.length);
+                            $(this[i]).before($(this[j]));
+                        }
+                        return this;
+                    };
+                    // $('#speakers .thumbnails .brk').remove();
+                    // $('#speakers .thumbnails item').shuffle();
+                </script>
             </div>
             <div class="subsection" id="chairs">
                 <h2>Co-Organizers &amp; Track Chairs</h2>
