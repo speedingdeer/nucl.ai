@@ -3,9 +3,18 @@
 
 {% assign currenttrack = item %}
 
+{% for day in site.data.schedule %}
+    {% for t in day.tracks %}
+        {% if t == item.id %}
+            {% assign date = day.title %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
 <section class="tracks-content tracks-text tickets">
     <grid>
         <h2>{{item.title}} (Track #{{index}})</h2>
+        <h3 class="date">{{date}}</h3>
 
         {% assign items = site.data.tracks[item.id] %}
         <content>
