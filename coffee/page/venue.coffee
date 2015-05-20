@@ -1,4 +1,7 @@
 $ ->
+
+  if $("section.venu").lenght == 0 then return
+
   initialize = () ->
     mapCanvas = document.getElementById('venue-map-canvas')
     if mapCanvas == null then return

@@ -1,4 +1,9 @@
+root = exports ? this # global
+
 $ ->
+
+  if $("section.tickets").length == 0 then return
+
   hoverIn = () ->
     hoverToggle("in", $(@)) 
 
@@ -25,16 +30,16 @@ $ ->
   $("div.table").hover hoverIn, hoverOut
 
   scrollToEventbriteTickets = () ->
-    $('html, body').animate({
-        scrollTop: $("#purchase").offset().top
-    }, config.header.scrollSpeed)
+    console.log "click"
+    if $("#purchase").length == 0 then window.location = "/tickets/#purchase"
+    return root.scroll "purchase", $("#purchase").offset().top
 
   $(".buy-tickets-link").click ->
     scrollToEventbriteTickets()
     return false
 
-  if $(".tickets.prices").length == 0 then return
-  $(".tickets.prices .centered-cell, .conference-good .centered-cell").click ->
+  if $(".tickets.prices, .tracks-content.tickets").length == 0 then return
+  $(".tickets.prices .centered-cell, .conference-good .centered-cell, .tracks-content.tickets .centered-cell").click ->
     
     if $(@).parent().parent().attr("name") == "Access to the Main Amphitheatre"
       window.location = "/program/overview/#main-amphitheatre"

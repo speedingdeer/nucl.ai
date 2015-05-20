@@ -1,18 +1,18 @@
-- title: "Day #1: Monday, July 20th"
+- title: "<span class='date-day'>Day #1: Monday, </span>July 20th"
   tracks:
     - day1
     - ambient
     - decisions
     - alternate
 
-- title: "Day #2: Tuesday, July 21st"
+- title: "<span class='date-day'>Day #2: Tuesday, </span>July 21st"
   tracks:
     - day2
     - procedural
     - behavior
     - analytics
 
-- title: "Day #3: Wednesday, July 22nd"
+- title: "<span class='date-day'>Day #3: Wednesday, </span>July 22nd"
   tracks:
     - day3
     - systems
