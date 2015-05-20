@@ -47,7 +47,10 @@
         </p>
     {% endif %}
 
-    <p class="bio"> {{ d.bio }} </p>
+    {% assign bioSize =  d.bio | size %}
+    {% if bioSize > 5 %}
+        <p class="bio"> {{ d.bio }} </p>
+    {% endif %}
 
     {% if d.role == 'track' %}
     <p class="role">Track Chair and Co-Organizer</p>

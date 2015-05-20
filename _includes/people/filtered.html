@@ -13,6 +13,20 @@
             {% if filter == "speaker" %}
                 {% if person.confirmed %}
                     {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+                {% else %} {% comment %} Check if has talk confirmed {% endcomment %}
+                {% assign hasTalk = false %}
+                {% for t in site.data.topics %}
+                    {% for tt in site.data.tracks[t.id] %}
+                        {% for p in tt.speakers %}
+                            {% if p == person.name %}
+                                {% assign hasTalk = true %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
+                {% if hasTalk %}
+                    {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
+                {% endif %}
                 {% endif %}
             {% else %}
                 {% capture names %}{% if names != "" %}{{names}},{% endif %}{{person.name}}{% endcapture %}
