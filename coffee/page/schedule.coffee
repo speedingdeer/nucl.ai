@@ -24,6 +24,9 @@ $ ->
         days.push $(@)
 
       for day, dayIdx in days
+        day.addClass("not-initialized")
+        day.addClass("not-positioned")
+
         talks = day.find("div.track")
         day.talks = []
         talks.each ->
@@ -215,7 +218,7 @@ $ ->
           if talk.find("a").hasClass("wip") then continue
           assignIntervals(talk)
           talk.hover talkHoverStart, talkHoverEnd
-
+          day.removeClass("not-positioned")
 
 
 
