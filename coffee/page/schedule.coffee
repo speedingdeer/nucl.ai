@@ -125,6 +125,8 @@ $ ->
           # simple append and set up timeline duration
           day.find("td.talks-list").html("")
           day.append(day.talks)
+          day.removeClass("not-positioned")
+
         day.removeClass("not-initialized")
         root.disableWip()
         
