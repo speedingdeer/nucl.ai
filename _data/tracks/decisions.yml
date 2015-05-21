@@ -68,9 +68,9 @@
     finish: "15:15"
 
 
-- title: "Applying Deep Learning: A Python Tutorial (Workshop) **"
+- title: "Imitating Human Play from Game Logs (Workshop) **"
   description: >
-    .
+    Can human-style play be imitated by NPCs? Can you infer how "average" players behave in given scenarios? To what extend can knowledge mined be incorporated into a game?  Provided that logs of user actions are available, one can use supervised learning methods to imitate these expert actions. We will show how this can be achieved, either by creating explicit preferences between actions or labelling states according to some reward scheme. We will examine both methods in the context of DOTA 2, and show how one can train neural networks to learn how to imitate expert user actions, with concrete examples in Python.
   speakers:
     - Spyridon Samothrakis
   room: laboratories
