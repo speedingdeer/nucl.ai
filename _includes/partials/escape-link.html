@@ -1,0 +1,1 @@
+{% capture escaped %}{{ escape  | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | replace:'*', '' | downcase }}{% endcapture %}

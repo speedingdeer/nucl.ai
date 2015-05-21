@@ -16,7 +16,7 @@
             {% capture thumbnailId %}{{thumbnail.name | escape | replace:' ','-' | replace:'.','-' | downcase}}{% endcapture %}
             {% capture picture %}/img/people/{{ name | escape }}.jpg{% endcapture %}
             {% capture href %}/#{{thumbnailId}}{% endcapture %}
-            <a class="anchor" id="{{thumbnail.name | escape | replace:' ','-' | replace:'.','-' | downcase}}"></a>
+
         {% when "topics" %}
             {% assign thumbnail = it %}
             {% assign name = thumbnail.title %}
@@ -36,6 +36,12 @@
     {% if thumbnail.id and thumbnail.id == id %} {% assign selected="selected allows-selcted" %} {% else %} {% assign selected="" %} {% endif %}
     {% capture modulo %}{{ forloop.index | modulo:itemsInRow }}{% endcapture %}
 
+    {% assign escape = name %}
+    {% include partials/escape-link.html %}
+    {% assign escapedName = escaped %}
+
+    <a class="anchor" id="{{escapedName}}"></a>
+
     <item class="thumbnail {{thumbnail.id}}">
         <thumbnail-wrap>
             <a id="thumbnail-id-{{thumbnailId}}"href="{{href}}"class="thumbnail 
@@ -46,12 +52,12 @@
                 {% elsif modulo == '0' %} column-last
                 {% elsif itemsInRow == 3 %} column-middle
                 {% endif %}
-                {{thumbnailClass}} {{selected}} {{status}}" name="{{name | escape}}" style="background-image: url('{{ picture | escape |  prepend: site.baseurl }}')">
+                {{thumbnailClass}} {{selected}} {{status}}" name="{{escapedName}}" style="background-image: url('{{ picture | escape |  prepend: site.baseurl }}')">
             </a>
         </thumbnail-wrap>
         {% if shortBio %}
         {% else %}
-            <h3 class="thumbnail-title {{selected}} {{status}}" name="{{name | escape}}">{{ name }}
+            <h3 class="thumbnail-title {{selected}} {{status}}" name="{{escapedName}}">{{ name }}
             {% if thumbnail.disabled or disableAll %}
                 {% if thumbnail.affiliation %}
                 ,

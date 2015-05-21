@@ -11,7 +11,11 @@
 {% if lastRow %} {% capture lastRow %}last-row{% endcapture %} {% endif %}
 {% assign descModulo = descIndex | plus:1 | modulo:itemsInRow %}
 
-<item class="description {{lastRow}} animated fadeOutRight" name="{{ d.name | escape}}">
+{% assign escape = d.name %}
+{% include partials/escape-link.html %}
+{% assign escapedDName = escaped %}
+
+<item class="description {{lastRow}} animated fadeOutRight" name="{{ escapedDName }}">
     
     <div class="thumbnail-title 
         column-{{descModulo}}
@@ -69,7 +73,12 @@
                     {% if speaker == d.name %}
                         <li class="track-topic">
                             {% include partials/wip-link.html %}
-                            <a class="{{wipClass}}" href="/track/{{topic.id}}#{{talk.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | replace:'*', '' | downcase}}">{{talk.title}}</a> (Presentation)
+
+                            {% assign escape = talk.title %}
+                            {% include partials/escape-link.html %}
+                            {% assign escapedTalkTitle = escaped %}
+
+                            <a class="{{wipClass}}" href="/track/{{topic.id}}#{{escapedTalkTitle}}">{{talk.title}}</a> (Presentation)
                         </li>
                     {% endif %}
                 {% endfor %}
