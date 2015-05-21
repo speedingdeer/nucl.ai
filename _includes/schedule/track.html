@@ -2,9 +2,13 @@
     {% include partials/wip-link.html %}
     {% if track == "day1" or track == "day2" or track == "day3" %} {% assign link = false %} {% else %} {% assign link = true %} {% endif %}
 
+    {% assign escape = talk.title %}
+    {% include partials/escape-link.html %}
+    {% assign escapedTalkTitle = escaped %}
+
     <div class="track {{track}} cell-content" time-start="{{talk.time.start}}" time-finish="{{talk.time.finish}}" room="{{talk.room}}">
         {% if roomsLayout and link %}
-            <a class="{{wipClass}} talk-cell-wrap" href="/track/{{track}}/#{{talk.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | replace:'*', '' | downcase}}">
+            <a class="{{wipClass}} talk-cell-wrap" href="/track/{{track}}/#{{escapedTalkTitle}}">
         {% else %}
             <div class="talk-cell-wrap">
         {% endif %}
@@ -34,7 +38,7 @@
 
         {% if roomsLayout %}
         {% else %}
-        <a class="{{wipClass}}" href="/track/{{track}}/#{{talk.title| replace:':','-' | replace:'&','and' | escape | replace:' ','-' | replace:'*', '' | downcase}}">
+        <a class="{{wipClass}}" href="/track/{{track}}/#{{escapedTalkTitle}}">
             {{talk.time.start}}
         {% endif %}
         {{talk.title}}
