@@ -25,7 +25,10 @@ $ ->
       wrap.find(".conference .centered-cell").each ->
         if inOut == "in" then $(@).addClass("hovered")
         if inOut == "out" then $(@).removeClass("hovered")
-
+    if cell.hasClass("single-day")
+      wrap.find(".single-day .centered-cell").each ->
+        if inOut == "in" then $(@).addClass("hovered")
+        if inOut == "out" then $(@).removeClass("hovered")
 
   $("div.table").hover hoverIn, hoverOut
 
