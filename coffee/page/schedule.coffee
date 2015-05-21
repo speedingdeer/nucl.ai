@@ -217,6 +217,8 @@ $ ->
           talk.hover talkHoverStart, talkHoverEnd
 
 
+
+
   buildSchedule()
 
   tableDisplayed = $("section grid.rooms-schedule").css("display")
