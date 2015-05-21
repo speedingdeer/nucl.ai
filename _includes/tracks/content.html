@@ -1,5 +1,5 @@
-{% include page/tracks/assign.html %}
-{% include page/tracks/get_track.html %}
+{% include tracks/assign.html %}
+{% include tracks/get_track.html %}
 
 {% assign currenttrack = item %}
 
@@ -104,14 +104,14 @@
 <section class="program-schedule track-schedule">
     <a class="anchor" id="schedule"></a>
     <grid class="rooms-schedule">
-        {% include page/tracks/get_track.html %}
+        {% include tracks/get_track.html %}
         {% assign roomsLayout = true %}
-        {% include page/tracks/schedule.html %}
+        {% include tracks/schedule.html %}
     </grid>
     <grid class="list-schedule">
-        {% include page/tracks/get_track.html %}
+        {% include tracks/get_track.html %}
         {% assign roomsLayout = false %}
-        {% include page/tracks/schedule.html %}
+        {% include tracks/schedule.html %}
     </grid>
 </section>
 
