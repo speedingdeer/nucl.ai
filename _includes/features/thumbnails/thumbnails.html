@@ -112,9 +112,9 @@
                 {% assign desc = items[descIndex] %}
                 {% case dataType %}
                     {% when "people" %}
-                        {% include thumbnails-description-people.html %}
+                        {% include features/thumbnails/thumbnails-description-people.html %}
                     {% when "topics" %}
-                        {% include thumbnails-description-topics.html %}
+                        {% include features/thumbnails/thumbnails-description-topics.html %}
                 {% endcase %}
             {% endfor %}
             <div class="brk" style="clear: both; width: 100%;"></div>

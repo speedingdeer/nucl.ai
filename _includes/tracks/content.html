@@ -159,7 +159,7 @@
         <h2> Keynotes and Presentations </h2>
         <content>
                 {% for item in items %}
-                {% include wip-link.html %}
+                {% include partials/wip-link.html %}
                 <item class="talk {{wipClass}}">
                     <a class="anchor" id="{{item.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | replace:'*', '' | downcase}}"></a>
                     <h3><a class="{{wipClass}}" href="/track/{{currenttrack.id}}#{{item.title | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | replace:'*', ''| downcase}}">{{item.title}}</a></h3>
@@ -182,7 +182,7 @@
                     {% assign aClass = "scrollable" %}
                         {% assign disableAll = true %}
                         <div class="thumbnails thumbnails-{{itemsInRow}}-in-row">
-                        {% include thumbnails.html %}
+                        {% include features/thumbnails/thumbnails.html %}
                     </div>
                 </item>
             {% endfor %}

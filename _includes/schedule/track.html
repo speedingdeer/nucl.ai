@@ -1,5 +1,5 @@
 {% for talk in site.data.tracks[track] %}
-    {% include wip-link.html %}
+    {% include partials/wip-link.html %}
     {% if track == "day1" or track == "day2" or track == "day3" %} {% assign link = false %} {% else %} {% assign link = true %} {% endif %}
 
     <div class="track {{track}} cell-content" time-start="{{talk.time.start}}" time-finish="{{talk.time.finish}}" room="{{talk.room}}">
