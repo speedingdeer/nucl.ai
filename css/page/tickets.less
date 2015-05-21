@@ -33,7 +33,7 @@ sections.page section.tickets {
                 width: 49.5%; // because of overwritten semantic.gs margin, we need to make one row bigger to fill up available width
             }
             div.all-access {
-                .column(3);
+                .column(2);
                 text-align: center;
                 color: @LIGHT_BLUE;
                 &.titlerow {
@@ -42,12 +42,29 @@ sections.page section.tickets {
                 }
             }
             div.conference {
-                .column(3);
+                .column(2);
                 text-align: center;
                 color: @ORANGE;
                 &.titlerow {
                     background-color: @DIRTY_ORANGE;
                     color: @WHITE;
+                }
+            }
+            div.single-day {
+                .column(2);
+                text-align: center;
+                color: darken(@WHITE, 15%);
+                &.titlerow {
+                    background-color: @BLACK;
+                    color: darken(@WHITE, 15%);
+                }
+                /* little hack to keep X tickets available in line */
+                &.table { 
+                    div.centered-cell {
+                        p {
+                            padding: 0;
+                        }
+                    }
                 }
             }
             &.short { 
@@ -66,7 +83,6 @@ sections.page section.tickets {
                      }
                 }
             }
-
             div.table { 
                 .cell(); 
                 background-color: @DARK_GREY;
@@ -84,13 +100,14 @@ sections.page section.tickets {
                         padding: 0 15px; 
                     }
                 }
-                p.date { 
+                p.date , span.comment { 
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                         margin: 0;
                         margin-bottom: 0.2em;
                     }
                     color: @GREY;
                 }
+                span.comment { font-size: 0.8em; }
             }
             &.extras { div.table { background-color: fade(@DARK_GREY, 60%); } }
         }

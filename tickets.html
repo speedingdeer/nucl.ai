@@ -58,6 +58,22 @@ permalink: /tickets/
                     </div>
                 </div>
 
+                {% if forloop.first == false %}
+                <div class="single-day table">
+                {% else %}
+                <div class="single-day table titlerow">
+                {% endif %}
+                    <div class="centered-cell small">
+                        <p>
+                            {% if ticket.single_day %}
+                                {{ ticket.single_day }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+
             </item>
         {% endfor %}
         <div class="table-comments wider">
@@ -110,6 +126,17 @@ permalink: /tickets/
                         <p>{{ ticket.all_access }}</p>
                     </div>
                 </div>
+
+                {% if forloop.first == false %}
+                    <div class="single-day table">
+                {% else %}
+                    <div class="single-day table titlerow">
+                {% endif %}
+                    <div class="centered-cell small">
+                        <p>{{ ticket.single_day }}</p>
+                    </div>
+                </div>
+
 
             </item>
         {% endfor %}

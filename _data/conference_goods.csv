@@ -1,9 +1,9 @@
-name,type,all_access,conference
-,,All Access,Conference
-Access to the Main Amphitheatre,main,yes,yes
-Access to the Masterclass Room,main,yes,-
-Access to the Open Laboratory,main,yes,yes
-"Complimentary Coffee Breaks, Drink Vouchers and Food Coupons for the Conference Party***",extras,yes,yes
-"Invitation to the V.I.P. Dinner***",extras,yes,-
+name,type,all_access,conference,single_day
+,,All Access (3 Days),Conference (3 Days),Single Day Ticket
+Access to the Main Amphitheatre,main,yes,yes,yes
+Access to the Masterclass Room,main,yes,-,yes
+Access to the Open Laboratory,main,yes,yes,yes
+"Complimentary Coffee Breaks, Drink Vouchers and Food Coupons for the Conference Party***",extras,yes,yes,yes
+"Invitation to the V.I.P. Dinner***",extras,yes,-,-
 "Invitation to the Networking Lunches***",extras,yes,-
-Permanent Access to the Conference Recordings,main,yes,-
+Permanent Access to the Conference Recordings,main,yes,-,yes***
