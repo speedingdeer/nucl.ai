@@ -19,10 +19,11 @@
     "grunt-contrib-less": "~1.0.0",
     "grunt-contrib-watch": "git://github.com/gruntjs/grunt-contrib-watch.git#b884948805940c663b1cbb91a3c28ba8afdebf78",
     "grunt-jekyll": "~0.4.1",
+    "grunt-nightwatch": "^0.4.6",
+    "grunt-selenium-server": "^0.1.2",
     "load-grunt-tasks": "~0.2.0",
     "nightwatch": "^0.6.12",
     "phantomjs2": "^2.0.0",
-    "grunt-selenium-server": "^0.1.2",
     "time-grunt": "~0.2.8"
   },
   "engines": {
