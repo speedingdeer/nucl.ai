@@ -178,7 +178,9 @@
     name: Ubisoft Montreal
     url: http://www.ubisoft.com/
   bio: >
-
+    Simon has been programming animation systems at Ubisoft Montreal for the last 10 years. He is interested in responsive character control and realistic
+    animation synthesis. He spends most of his time trying to come up with new ways to animate a character so that it 1) moves realistically and fluidly;
+    2) is fun and easy to control with buttons and thumbsticks.
 - name: Bill Grosso
   role: speaker
   affiliation: 

@@ -11,11 +11,9 @@
     start: "14:30"
     finish: "15:15"
 
-- title: "Applying Motion Fields in $TITLE at Ubisoft"
+- title: "Motion Fields and Animation Warping for Pixel-Perfect Animation"
   description: >
-    This talk will go into the details of applying motion field animation into one of Ubisoft's AAA titles,
-    yet to be annonunced.  Find out how this technology is making its way into the hands of consumers and
-    what kind of impact it has on the game.
+    This talk explains how to take the resulting animation stream of a Motion Field animation synthesizer, and procedurally warp it so that it perfectly fits the environment and the gameplay requirements.
   speakers:
     - Simon Clavet
   room: amphitheatre
