@@ -4,4 +4,9 @@ _site/
 .jekyll/
 node_modules/
 /lib/
+/tmp/
+/reports/
 npm-debug.log
+phantomjsdriver.log
+selenium-debug.log
+

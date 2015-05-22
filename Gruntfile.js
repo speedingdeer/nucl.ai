@@ -186,9 +186,40 @@ module.exports = function (grunt) {
         'coffee:compile',
         'jekyll:server',
       ],
+    },
+
+    /** e2e tests config */
+
+    nightwatch: {
+      options: {
+        standalone: false,
+        jar_path: 'bin/selenium.jar',
+          desiredCapabilities : {
+          "browserName" : "phantomjs",
+          "javascriptEnabled" : true,
+          "acceptSslCerts" : true,
+          "phantomjs.binary.path" : "node_modules/phantomjs2/lib/phantom/bin/phantomjs"
+        }
+      }
+    },
+
+    'start-selenium-server': {
+      dev: {
+        options: {
+          downloadUrl: 'https://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.2.jar',
+          downloadLocation: '/tmp',
+          serverOptions: {},
+          systemProperties: {}
+        }
+      }
+    },
+    'stop-selenium-server': {
+      dev: { }
     }
 
   });
+
+
 
   /**
   * Define tasks
@@ -213,5 +244,17 @@ module.exports = function (grunt) {
       'coffee:compile'
     ]);
   });
+
+  grunt.registerTask('test', function () {
+    grunt.task.run([
+      'start-selenium-server',
+      'nightwatch',
+      'stop-selenium-server'
+    ]);
+  });
+
+  grunt.loadNpmTasks('grunt-nightwatch');
+  grunt.loadNpmTasks('grunt-selenium-server');
+
 
 }
