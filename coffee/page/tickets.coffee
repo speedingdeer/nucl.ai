@@ -33,7 +33,6 @@ $ ->
   $("div.table").hover hoverIn, hoverOut
 
   scrollToEventbriteTickets = () ->
-    console.log "click"
     if $("#purchase").length == 0 then window.location = "/tickets/#purchase"
     return root.scroll "purchase", $("#purchase").offset().top
 
