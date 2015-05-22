@@ -6,7 +6,6 @@ module.exports = function (grunt) {
   // Load all Grunt tasks
   require('load-grunt-tasks')(grunt);
 
-
   /**
   * Set up configuration
   */
@@ -191,7 +190,7 @@ module.exports = function (grunt) {
     /** e2e tests config */
 
     nightwatch: {
-      options: {
+      phantom: {
         standalone: false,
         jar_path: 'bin/selenium.jar',
           desiredCapabilities : {
@@ -200,6 +199,10 @@ module.exports = function (grunt) {
           "acceptSslCerts" : true,
           "phantomjs.binary.path" : "node_modules/phantomjs2/lib/phantom/bin/phantomjs"
         }
+      },
+      browser: {
+        standalone: false,
+        jar_path: 'bin/selenium.jar',
       }
     },
 
@@ -247,12 +250,17 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('test', function () {
-    grunt.option("force",true); //always close selenium even if error ocurred
+    var browser = "phantom";
+    if (grunt.option("headless") == false) {
+      //the only way to run default browser
+      browser = "browser";
+    }
     grunt.task.run([
       'start-selenium-server',
-      'nightwatch',
+      'nightwatch:' + browser,
       'stop-selenium-server'
     ]);
+  
   });
 
 }
