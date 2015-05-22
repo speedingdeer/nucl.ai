@@ -29,3 +29,15 @@ Execute Jekyll out of Grunt
 ```
 bundle exec jekyll (build/serve)
 ```
+
+Run Test
+```
+grunt serve # run server and watch for file changes
+# open new tab and type
+grunt test # execute nightwatch tests
+```
+
+Execute Jekyll out of Grunt
+```
+bundle exec jekyll (build/serve)
+```

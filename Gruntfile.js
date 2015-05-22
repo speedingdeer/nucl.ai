@@ -213,6 +213,7 @@ module.exports = function (grunt) {
         }
       }
     },
+
     'stop-selenium-server': {
       dev: { }
     }
@@ -246,6 +247,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('test', function () {
+    grunt.option("force",true); //always close selenium even if error ocurred
     grunt.task.run([
       'start-selenium-server',
       'nightwatch',
