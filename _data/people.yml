@@ -128,6 +128,14 @@
   bio: >
     Verena made her way from Urban Planning into the games industry, with inbetween stops at advertising and eventmanagement. These days she is working as a producer, game designer and marketing strategist, who has focused on mobile development in the last years. She was already part of the volunteer team at Game/ AI Conference in 2014 and joined the team now to help with the dark arts of marketing.
 
+- name: Juliette Lemaitre
+  role: org
+  affiliation:
+    position: "PhD student"
+    name: MASA Group
+  bio: >
+    Juliette lemaitre is a PhD student at MASA Group and Heudiasyc (Université de Technologie de Compiègne), working on the modelization of strategical artificial intelligence to simplify the work of game developers of creating opponents in games with complex environments and mechanics like Civilization.
+
 - name: Prof. Helmut Hlavac
   role: advisor
   affiliation:
