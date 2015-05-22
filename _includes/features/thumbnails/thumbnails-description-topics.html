@@ -1,7 +1,12 @@
 {% if lastRow %} {% capture lastRow %}last-row{% endcapture %} {% endif %}
 {% assign descModulo = descIndex | plus:1 | modulo:itemsInRow %}
 
-<item class="description {{lastRow}} animated fadeOutRight" name="{{desc.title}}">
+{% assign escape = desc.title %}
+{% include partials/escape-link.html %}
+{% assign escapedName = escaped %}
+
+
+<item class="description {{lastRow}} animated fadeOutRight" name="{{escapedName}}">
     <h2 class="thumbnail-title
         column-{{ descModulo}}
         {{itemsInRow}}-in-row
