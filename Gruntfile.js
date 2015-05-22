@@ -255,8 +255,4 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.loadNpmTasks('grunt-nightwatch');
-  grunt.loadNpmTasks('grunt-selenium-server');
-
-
 }
