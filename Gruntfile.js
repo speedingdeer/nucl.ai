@@ -190,10 +190,10 @@ module.exports = function (grunt) {
     /** e2e tests config */
 
     nightwatch: {
-    options: {
-        globals_path: 'nightwatch/globals.js',
-        src_folders : ["nightwatch/tests"],
-      },
+      options: {
+          globals_path: 'nightwatch/globals.js',
+          src_folders : ["nightwatch/tests"],
+        },
       phantom: {
           desiredCapabilities : {
           "browserName" : "phantomjs",

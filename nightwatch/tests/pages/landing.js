@@ -1,7 +1,7 @@
 module.exports = {
   'Check Basic': function(browser) {
     browser
-      .url('http://127.0.0.1:9000/')
+      .url(browser.globals.domain)
       .assert.containsText("h1", "nucl.ai", "It's nucl.ai!")
       .end();
   }
