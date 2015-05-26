@@ -251,6 +251,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', function () {
     var browser = "phantom";
+    grunt.option("force", true); //to always close selenium properly
     if (grunt.option("headless") == false) {
       //the only way to run default browser
       browser = "browser";
