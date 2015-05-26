@@ -190,26 +190,24 @@ module.exports = function (grunt) {
     /** e2e tests config */
 
     nightwatch: {
+    options: {
+        globals_path: 'nightwatch/globals.js',
+        src_folders : ["nightwatch/tests"],
+      },
       phantom: {
-        standalone: false,
-        jar_path: 'bin/selenium.jar',
           desiredCapabilities : {
           "browserName" : "phantomjs",
-          "javascriptEnabled" : true,
-          "acceptSslCerts" : true,
           "phantomjs.binary.path" : "node_modules/phantomjs2/lib/phantom/bin/phantomjs"
         }
       },
       browser: {
-        standalone: false,
-        jar_path: 'bin/selenium.jar',
       }
     },
 
     'start-selenium-server': {
       dev: {
         options: {
-          downloadUrl: 'https://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.2.jar',
+          downloadUrl: 'https://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar',
           downloadLocation: '/tmp',
           serverOptions: {},
           systemProperties: {}
