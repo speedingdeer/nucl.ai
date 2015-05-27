@@ -4,10 +4,11 @@
 {% assign currenttrack = item %}
 
 {% for day in site.data.schedule %}
+    {% assign currentDayIds = forloop.index %}
     {% for t in day.tracks %}
         {% if t == item.id %}
             {% assign date = day.title %}
-            {% assign dayIdx = forloop.index %}
+            {% assign dayIdx = currentDayIds %}
         {% endif %}
     {% endfor %}
 {% endfor %}
