@@ -1,1 +1,1 @@
-{% capture escaped %}{{ escape  | replace:':','-' | replace:'&','and' | escape | replace:' ','-' | replace:'*', '' | downcase }}{% endcapture %}
+{% capture escaped %}{{ escape  | replace:':','-' | replace:'&','and' | replace:' ','-' | replace:'.', '' | replace:'*', '' | escape | downcase }}{% endcapture %}

@@ -12,8 +12,13 @@
             {% else %}
                 {% assign thumbnail = it %}
             {% endif %}
+
             {% assign name = thumbnail.name %}
-            {% capture thumbnailId %}{{thumbnail.name | escape | replace:' ','-' | replace:'.','-' | downcase}}{% endcapture %}
+            {% assign escape = name %}
+            {% include partials/escape-link.html %}
+            {% assign escapedName = escaped %}
+
+            {% capture thumbnailId %}{{escapedName}}{% endcapture %}
             {% capture picture %}/img/people/{{ name | escape }}.jpg{% endcapture %}
             {% capture href %}/#{{thumbnailId}}{% endcapture %}
 
@@ -44,7 +49,7 @@
 
     <item class="thumbnail {{thumbnail.id}}">
         <thumbnail-wrap>
-            <a id="thumbnail-id-{{thumbnailId}}"href="{{href}}"class="thumbnail 
+            <a id="thumbnail-id-{{thumbnailId}}" href="{{href}}"class="thumbnail 
                 column-{{modulo}}
                 {{itemsInRow}}-in-row
                 {{aClass}}
