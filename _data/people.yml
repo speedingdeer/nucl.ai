@@ -201,7 +201,10 @@
   affiliation: 
     name: "CNRS, Heudiasyc Lab"
     url: https://www.hds.utc.fr
-  bio: ""
+  bio: >
+   Kevin Carpentier is a fresh PhD from Heudiasyc (Université de Technologie de Compiègne). 
+   He works on the orchestration of virtual environment for learning purposes. 
+   His main concern is to ease the production process of a virtual environment by procedurally generating scenario according to expert knowledge.
 
 - name: François Cournoyer
   role: speaker
