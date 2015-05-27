@@ -72,15 +72,7 @@
 
 #- title: "Orchestration of virtual environments for training in complex sociotechnical situations"
 #  description: >
-#    The current state-of-the-art on virtual environments allows us to envision their use for training purposes. 
-#    We can conceive autonomous worlds where learners can experiment, discover and learn the outcomes of their decisions. 
-#    Though, it is important that this autonomy stay manageable to achieve pedagogical relevance and coherency of the world.
-
-#    The talk will present the HUMANS platform (Human models based Artificial eNvironments Software platform) whose purpose is
-#    to dynamically orchestrate a virtual environment towards learning situations without impairing the world coherency nor the
-#    emergence of new and unpredicted situations. The HUMANS platform relies on the modelling of human and social activities
-#    leveraging highly complex artificial intelligence techniques in various domains, such as knowledge representation (ontologies),
-#    uncertainty processing in complex systems and decisional artificial intelligence (automated planning, plan recognition, multiagent systems).
+#	 The talk will present the HUMANS platform (Human models based Artificial eNvironments Software platform): a system to orchestrate virtual environments for learning.  HUMANS generate these environments dynamically and without impairing the world coherency nor the emergence of new and unpredicted situations. 
+#	 The HUMANS platform relies on the modelling of human and social activities leveraging highly complex artificial intelligence techniques such as knowledge representation, uncertainty processing and decisional artificial intelligence.
 #  speakers:
-#    - Domitile Lourdeaux
 #    - Kevin Carpentier
