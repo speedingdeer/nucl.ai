@@ -66,7 +66,10 @@
                     <item>
                 {% endif %}
                     <a href="/tickets/"> Tickets </a>
+
                 </item>
+
+                {% comment %}
 
                 {% if page.name == 'venue.html'%}
                     <item class="selected static">
@@ -76,6 +79,39 @@
                     <a href="/venue/"> Venue </a>
                 </item>
 
+                {% endcomment %}
+
+
+                {% if page.name == 'audience.html' or page.name == 'venue.html' %}
+                    <item class="selected">
+                {% else %}
+                    <item>
+                {% endif %}
+                    <a href="" class="expandable"> For Attendees </a>
+                    <div class="dropdown">
+                        <div class="menu">
+                            <div class="menu-wrap">
+                                <div class="table">
+                                    <div class="triangle"></div>
+                                </div>
+                                {% if page.name == 'venue.html' %}
+                                    <div class="table selected item">
+                                {% else %}
+                                    <div class="table item">
+                                {% endif %}
+                                    <a href="/venue/"> Venue </a>
+                                </div>
+                                {% if page.name == 'audience.html' %}
+                                    <div class="table selected item">
+                                {% else %}
+                                    <div class="table item">
+                                {% endif %}
+                                    <a href="/audience/"> Target Audience </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </item>
 
                 <item>
                     <a href="{{linkPrefix}}#sponsors"> Sponsors </a>
