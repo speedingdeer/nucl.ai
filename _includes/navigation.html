@@ -69,7 +69,6 @@
 
                 </item>
 
-                {% comment %}
 
                 {% if page.name == 'venue.html'%}
                     <item class="selected static">
@@ -79,8 +78,8 @@
                     <a href="/venue/"> Venue </a>
                 </item>
 
-                {% endcomment %}
 
+                {% comment %}
 
                 {% if page.name == 'audience.html' or page.name == 'venue.html' %}
                     <item class="selected">
@@ -112,6 +111,8 @@
                         </div>
                     </div>
                 </item>
+
+                {% endcomment %}
 
                 <item>
                     <a href="{{linkPrefix}}#sponsors"> Sponsors </a>
