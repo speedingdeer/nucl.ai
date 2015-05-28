@@ -1,13 +1,84 @@
 ---
 layout: page
-title: Systemic Design — nucl.ai Conference
+title: Press & Promo Materials — nucl.ai Conference
 permalink: /press/
 ---
 
 <section class="press">
-    <h2>Press</h2>
+    <grid>
+        <h2>Press Kit</h2>
+        <content>
+            <a href="/img/nuclai_logo.png">
+            <img src="/img/nuclai_logo.png" style="float: right; width: 256px;"/>
+            </a>
+        
+            <h3>Description</h3>
+            
+            <p>nucl.ai is the largest worldwide conference about Artificial Intelligence applications
+in interactive media, training & simulations, and digital entertainment. It brings together hundreds
+of professional developers and enthusiasts, and reaches thousands of programmers and designers online
+via its stream.</p>
+            <br/><br/>
+            
+            <h3>Fact Sheet</h3>
+            
+            <div class="block">
+                <ul>                    
+                    <li><b>Dates</b>: July 20th to 22nd</li>
+                    <li><b>Language</b>: English</li>
+                    <li><b>Location</b>: Vienna, Austria</li>
+                    <li><b>Venue</b>: <a href="/venue/">University Campus</a> (9<sup>th</sup> District)</li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <ul>
+                    <li><b>Twitter</b>: <a href="http://twitter.com/nuclai">@nuclai</a></li>
+                    <li><b>Facebook</b>: <a href="http://facebook.com/nuclai">nucl.ai</a></li>
+                    <li><b>Email</b>: <tt>&lt;events</tt> at <tt>aigamedev.com&gt;</tt></li>
+                    <li><b>Phone</b>: +43 (0) 650 9110118</li>
+                </ul>
+            </div>         
+        </content>
+    </grid>
+</section>
+
+<section class="press">
+    <h2>Photo Gallery</h2>
     <grid>
         <content>
+            {% assign items = site.data.galleries.passed_events %}
+            {% include features/gallery/gallery.html %}
+        </content>
+    </grid>
+</section>
+
+<section class="press">
+    <h2>Presenters & Attendees</h2>
+    <grid>
+        <content>
+            <div class="block">
+                <ul>
+                    <li>Pixar Animation Studios</li>
+                    <li>Ubisoft Studios</li>
+                    <li>IBM Watson</li>
+                    <li>Moving Picture Company</li>
+                    <li>Microsoft Studios</li>
+                    <li>Unity Technologies</li>
+                    <li>Epic Games</li>
+                </ul>
+            </div>   
+
+            <div class="block">
+                <ul>
+                    <li>CCP Games</li>
+                    <li>Creative Assembly</li>                    
+                    <li>Rare Ltd.</li>
+                    <li>Rockstar North</li>
+                    <li>Guerrilla Games</li>
+                    <li>...</li>
+                </ul>
+            </div>
         </content>
     </grid>
 </section>

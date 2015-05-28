@@ -42,7 +42,14 @@ section {
         content {
             display: block;
             overflow: hidden;
-        }
+            div.block {
+                float: left;
+                width: 50%;
+                ul {
+                    opacity: 0.85;
+                }
+            }
+        } 
     }
     &:last-child {
         min-height: calc(~"100vh - @{FOOTER_HEIGHT}  - @{NAVIGATION_HEIGHT}");
