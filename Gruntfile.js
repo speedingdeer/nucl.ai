@@ -191,6 +191,7 @@ module.exports = function (grunt) {
 
     nightwatch: {
       options: {
+          custom_commands_path : "nightwatch/commands",
           globals_path: 'nightwatch/globals.js',
           src_folders : ["nightwatch/tests"],
         },
