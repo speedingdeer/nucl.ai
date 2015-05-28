@@ -18,8 +18,10 @@ gallery {
             background-size: cover;
             background-position: center;
             .transition(opacity @gallery_transition ease-in-out);
-                &.cover { float: left; }
-            }
+            &.cover { float: left; }
+        }
+        img { display: none; }
+
     }
     menu {
         padding: 0;
@@ -56,7 +58,10 @@ gallery {
         display: block;
         item {
             display: none;
-            &.selected { display: block; }
+            &.selected { 
+                display: block;
+                img { display: initial; }
+            }
             width: 100%;
             height: 500px;
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 200px; }
