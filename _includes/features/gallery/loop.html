@@ -24,8 +24,11 @@
         {% else %}
             {% capture cover %}{{ item.picture | replace:'.jpg','.png' | replace:'.JPG','.png' }}{% endcapture %} 
         {% endif %}
-        <div class="cover {{coverClass}}" style="background-image: url('{{ cover | prepend: site.baseurl }}')"></div>
-        <div class="picture" style="background-image: url('{{ item.picture | prepend: site.baseurl }}')"></div>
+            <div class="cover {{coverClass}}" style="background-image: url('{{ cover | prepend: site.baseurl }}')"></div>
+            <div class="picture" style="background-image: url('{{ item.picture | prepend: site.baseurl }}')"></div>
+        {% if linkable %}
+            <img class="picture" src='{{ item.picture | prepend: site.baseurl }}' align="middle"/>
+        {% endif %}
         {% else %}
             <h3> {{item.name}} </h3>
             <p> {{item.text}} </p>

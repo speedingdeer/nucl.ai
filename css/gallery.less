@@ -1,11 +1,18 @@
 @gallery_transition: .5s;
 
 gallery {
+    img { 
+        display: block;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
     item {
         .transition(border @gallery_transition ease-in-out);
         &.animated { .animation-duration(0.5s); }
         box-sizing: border-box;
-        div { 
+        div, img { 
+            display: block;
             height: 100%;
             width: 100%;
             background-size: cover;

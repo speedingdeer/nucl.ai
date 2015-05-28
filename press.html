@@ -48,7 +48,9 @@ via its stream.</p>
     <grid>
         <content>
             {% assign items = site.data.galleries.passed_events %}
+            {% assign linkable = true %}
             {% include features/gallery/gallery.html %}
+            {% assign linkable = false %}
         </content>
     </grid>
 </section>
