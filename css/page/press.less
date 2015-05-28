@@ -1,6 +1,12 @@
 sections.page section.press {
-	h3 {
-		margin-bottom: 0;
-	}
-	p { opacity: 0.85; }
+    content {
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {
+            a#logo-link { display: none; }
+        }
+        .column(12);
+        h3 {
+            margin-bottom: 0;
+        }
+        p { opacity: 0.85; }
+    }
 }
