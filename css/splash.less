@@ -110,12 +110,16 @@ section.splash-screen {
                     @media screen and (max-width: @max_two_columns) { width: 100%; }
                     .column(6);
                     h1 {
-                        a {
+                        a, a:hover {
                             text-decoration: none;
                             color: white;
                         }
+                        transition: all 0.5s;
                         font-size: 6.5em;
                         opacity: 0.85;
+                        &:hover {
+                            opacity: 1.0;
+                        }
                         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                             font-size: 5.8em;
                         }
