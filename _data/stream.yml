@@ -1,0 +1,8 @@
+livestream: "https://livestream.com/accounts/1422055"
+days:
+  - start: "2015/07/20 8:30"
+    finish: "2015/07/20 18:00"
+  - start: "2015/07/21 8:30"
+    finish: "2015/07/21 18:00"
+  - start: "2015/07/22 8:30"
+    finish: "2015/07/22 18:00"

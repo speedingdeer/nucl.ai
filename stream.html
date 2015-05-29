@@ -9,42 +9,17 @@ permalink: /stream/
         <content>
 
             {% assign timer_title = "CONFERENCE LIVE STREAM STARTS IN:" %}
-            {% assign timer_on_finish = "window.location='https://livestream.com/accounts/1422055'" %}
+            {% capture timer_on_finish %}window.location='{{site.data.stream.livestream}};'{% endcapture %}
 
-            {% comment %} DAY 1 {% endcomment %}
-
-            {% assign timer_name = "day-1-starts" %}
-            
-            {% assign timer_off = "2015/07/20 18:00" %}
-            {% assign timer_count_to = "2015/07/20 8:30" %}
-
-            {% include features/timers/timer.html %}
-            <div class="mobile">
+            {% for day in site.data.stream.days %}
+                {% capture timer_name %}day-{{forloop.index}}-starts{% endcapture %}
+                {% assign timer_off = day.finish %}
+                {% assign timer_count_to = day.start %}
                 {% include features/timers/timer.html %}
-            </div>
-
-            {% comment %} DAY 2 {% endcomment %}
-
-            {% assign timer_name = "day-2-starts" %}
-            {% assign timer_off = "2015/07/21 18:00" %}
-            {% assign timer_count_to = "2015/07/21 8:30" %}
-
-            {% include features/timers/timer.html %}
-            <div class="mobile">
-                {% include features/timers/timer.html %}
-            </div>
-
-            {% comment %} DAY 3 {% endcomment %}
-
-            {% assign timer_name = "day-3-starts" %}
-            {% assign timer_off = "2015/07/22 18:00" %}
-            {% assign timer_count_to = "2015/07/22 8:30" %}
-
-            {% include features/timers/timer.html %}
-            <div class="mobile">
-                {% include features/timers/timer.html %}
-            </div>
-
+                <div class="mobile">
+                    {% include features/timers/timer.html %}
+                </div>
+            {% endfor %}
 
         </content>
     <grid>
