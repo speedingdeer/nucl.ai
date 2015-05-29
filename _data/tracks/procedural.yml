@@ -10,7 +10,7 @@
 
 - title: "Generating Global Cultures and Characters in ULTIMA RATIO REGUM"
   description: >
-    .
+    This talk explores the extensive and highly unusual procedural generation in the in-development roguelike game Ultima Ratio Regum, the systems underlying the game's creation of a vast range of possible national, cultural and religious identities, and how the game's AI actors draw upon these cultural identities and logics when making their decisions. The talk will explore: the fundamental generation algorithms underlying the construction of the world map, settlements, and the interiors of buildings; the variants of these generators and the interaction of hand-made content into the procedural generators; resolving conflicts at the macro, meso and micro scale in the world's construction; the procedural generation of "culture"; the integration of AIs with these procedural cultures; and handling decision-making for large numbers of AI actors whose decisions must factor in a range of semantic, linguistic, religious and national concerns.
   speakers:
     - Mark Johnson
   room: amphitheatre
