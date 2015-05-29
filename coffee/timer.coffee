@@ -37,6 +37,8 @@ $ ->
       clocks.push $(@).easyPieChart options
 
     timer.countdown timer.attr("count-to"), (event) ->
+      if event.type == "finish" && timer.attr("on-finish")
+        eval(timer.attr("on-finish"))
       if event.strftime('%S') != timer.find(".seconds").find(".value").html()
         timer.find(".days").find(".value").html event.strftime('%D')
         timer.find(".hours").find(".value").html event.strftime('%H')
