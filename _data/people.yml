@@ -258,7 +258,10 @@
     url: http://www.mipumi.com/
     position: Game Developer
     name: Mi'pu'mi
-  bio: ""
+  bio: >
+    Richard is currently working at Mi'pu'mi Games (mipumi.com) on an unannounced AAA title. 
+    His main interests include Artificial Intelligence, Procedural Generation and Virtual Reality. 
+    Before joining Mipumi he worked as a freelancer and was part of the AiGamedev.com team. 
 
 - name: Antonios Liapis
   role: speaker
