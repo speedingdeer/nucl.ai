@@ -42,7 +42,13 @@
 
 - title: "Coordinating Open World Systems and Emergent Gameplay (Expert Panel) **"
   description: >
-    .
+    As new ideas emerge and hardware continues to evolve, the size and complexity of video game worlds are growing into vast 
+    and rich environments.  2015 alone is filled with examples of such wide and expansive worlds from CD Projekt Red's 
+    'Witcher 3: Wild Hunt' to Rocksteady's 'Batman: Arkham Knight'.  These worlds provide new affordances for player experience, 
+    but present interesting challenges not only in creating AI systems that craft these experiences, but also in building the 
+    environment to begin with.  Systemic design and the adoption of director systems can provide solutions across both of these 
+    fronts, but there are many challenges still to be met.  In this panel we will discuss with a collection of our speakers from 
+    the track the open challenges of the field and how AI can continue to innovate in this area.
   speakers:
     - Tommy Thompson
   room: laboratories
