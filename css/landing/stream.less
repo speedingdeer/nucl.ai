@@ -12,6 +12,15 @@ section.stream {
             }
             span.announcement {
                 display: none;
+                &.block {
+                    display: block;
+                    font-size: 1.5em;
+                    padding-top: 1em;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        font-size: 0.8em;
+                    }
+                }
+
             }
         }
     }
