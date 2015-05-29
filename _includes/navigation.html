@@ -16,12 +16,6 @@
                         <a href="{{linkPrefix}}#stream" class="logo" style="display:none;"></a>
                     </div>
                 </item>
-                <item>
-                    <a href="{{linkPrefix}}#topics"> Topics </a>
-                </item>
-                <item>
-                    <a href="{{linkPrefix}}#people"> People </a>
-                </item>
        
                 {% if page.name == 'overview.html' or page.name == 'events.html' or page.name == 'tracks.html' or isTrackPage %}
                     <item class="selected">
@@ -63,63 +57,62 @@
                         </div>
                     </div>
                 </item>
-                {% if page.name == 'tickets.html'%}
-                    <item class="selected static">
-                {% else %}
-                    <item>
-                {% endif %}
-                    <a href="/tickets/"> Tickets </a>
-
-                </item>
-
-
-                {% if page.name == 'venue.html'%}
-                    <item class="selected static">
-                {% else %}
-                    <item>
-                {% endif %}
-                    <a href="/venue/"> Venue </a>
-                </item>
-
-
-                {% comment %}
 
                 {% if page.name == 'audience.html' or page.name == 'venue.html' %}
                     <item class="selected">
                 {% else %}
                     <item>
                 {% endif %}
-                    <a href="" class="expandable"> For Attendees </a>
+                    <a href="" class="expandable"> Attend </a>
                     <div class="dropdown">
                         <div class="menu">
                             <div class="menu-wrap">
                                 <div class="table">
                                     <div class="triangle"></div>
                                 </div>
+                                {% if page.name == 'attend.html' %}
+                                    <div class="table selected item">
+                                {% else %}
+                                    <div class="table item">
+                                {% endif %}
+                                    <a href="/attend/"> Why Attend? </a>
+                                </div>
                                 {% if page.name == 'venue.html' %}
                                     <div class="table selected item">
                                 {% else %}
                                     <div class="table item">
                                 {% endif %}
-                                    <a href="/venue/"> Venue </a>
+                                    <a href="/venue/"> The Venue </a>
                                 </div>
-                                {% if page.name == 'audience.html' %}
+                                {% if page.name == 'tickets.html' %}
                                     <div class="table selected item">
                                 {% else %}
                                     <div class="table item">
                                 {% endif %}
-                                    <a href="/audience/"> Target Audience </a>
+                                    <a href="/tickets/"> Get Tickets </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </item>
 
-                {% endcomment %}
+                <item>
+                    <a href="{{linkPrefix}}#people"> People </a>
+                </item>
 
                 <item>
                     <a href="{{linkPrefix}}#sponsors"> Sponsors </a>
                 </item>
+
+
+                {% if page.name == 'tickets.html'%}
+                    <item class="selected static">
+                {% else %}
+                    <item>
+                {% endif %}
+                    <a href="/tickets/" style="font-weight: bold;"> &raquo; &nbsp; Tickets! &nbsp; &laquo; </a>
+                </item>
+
             </content>
         </grid>
     </div>
