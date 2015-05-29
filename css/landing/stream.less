@@ -1,0 +1,18 @@
+section.stream {
+    min-height: 0px;
+    content {
+        text-align: center;
+        a {
+            cursor: pointer;
+            span.button {
+                font-size: 3em;
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    font-size: 1.25em;
+                }
+            }
+            span.announcement {
+                display: none;
+            }
+        }
+    }
+}

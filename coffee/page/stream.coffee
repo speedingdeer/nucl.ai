@@ -2,4 +2,4 @@ root = exports ? this # global
 
 $ ->
 
-  if $("section.stream").length == 0 then return
+  if $("sections.page section.stream").length == 0 then return
