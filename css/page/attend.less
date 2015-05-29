@@ -1,8 +1,50 @@
 sections.page section.attend {
+    &.our-audience {
+        img {
+            float: right;
+            margin: 40px 0 0 30px;
+            width: 320px;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                margin: 0;
+                float: none;
+                width: 100%;
+            }
+        }
+    }
+    &.why-attend {
+        .block {
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                width: 100%;
+            }
+            &.img {
+                background-position: center;
+                &.long {
+                    height: 244px;
+                }
+                &.short {
+                    height: 228px;
+                }
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    &.long, &.short { height: 8em; }
+                }
+                &.mobile {
+                    display: none;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        display: block;
+                    }
+                }
+                &.full {
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     content {
+        .column(12);
         p { opacity: 0.85; }
         &>p { text-align: justify; }
-        
         .block { width: 44.5%; padding: 0 1.0% 0 4.0%; }
     }
 }
