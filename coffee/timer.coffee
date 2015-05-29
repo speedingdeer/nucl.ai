@@ -26,10 +26,22 @@ $ ->
       clock.data('easyPieChart').update(percents);
       setTimeout ->
 
+  timerName = null;
 
   $("timer-dashboard").each ->
     timer = $(@)
     clocks = []
+
+    if $(".single-timer").length > 0 && timerName != null && timerName != timer.attr("name") 
+      # for having multiple timers on one page and switching them automatically
+      timer.remove()
+      return
+
+    if timer.attr("off") and (new Date(timer.attr("off")) < new Date())
+      timer.remove()
+      return
+
+    timerName = timer.attr("name")
 
     options = if timer.parent().hasClass("mobile") then $.extend({}, defaultOptions, mobileOptions) else defaultOptions
 
@@ -45,3 +57,4 @@ $ ->
         timer.find(".minutes").find(".value").html event.strftime('%M')
         timer.find(".seconds").find(".value").html event.strftime('%S')
         update(clocks)
+

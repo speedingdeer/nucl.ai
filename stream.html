@@ -3,14 +3,51 @@ layout: page
 title: Live Stream — nucl.ai Conference
 permalink: /stream/
 ---
-<section class="stream">
+<section class="stream single-timer">
     <grid>
         <h2>Live Stream</h2>
         <content>
-            {% include features/timers/stream.html %}
+
+            {% assign timer_title = "CONFERENCE LIVE STREAM STARTS IN:" %}
+            {% assign timer_on_finish = "window.location='https://livestream.com/accounts/1422055'" %}
+
+            {% comment %} DAY 1 {% endcomment %}
+
+            {% assign timer_name = "day-1-starts" %}
+            
+            {% assign timer_off = "2015/07/20 18:00" %}
+            {% assign timer_count_to = "2015/07/20 8:30" %}
+
+            {% include features/timers/timer.html %}
             <div class="mobile">
-                {% include features/timers/stream.html %}
+                {% include features/timers/timer.html %}
             </div>
+
+            {% comment %} DAY 2 {% endcomment %}
+
+            {% assign timer_name = "day-2-starts" %}
+            {% assign timer_off = "2015/07/21 18:00" %}
+            {% assign timer_count_to = "2015/07/21 8:30" %}
+
+            {% include features/timers/timer.html %}
+            <div class="mobile">
+                {% include features/timers/timer.html %}
+            </div>
+
+            {% comment %} DAY 3 {% endcomment %}
+
+            {% assign timer_name = "day-3-starts" %}
+            {% assign timer_off = "2015/07/22 18:00" %}
+            {% assign timer_count_to = "2015/07/22 8:30" %}
+
+            {% include features/timers/timer.html %}
+            <div class="mobile">
+                {% include features/timers/timer.html %}
+            </div>
+
+
         </content>
     <grid>
 </grid>
+
+{% include features/timers/clean.html %}

@@ -7,14 +7,17 @@ permalink: /tickets/
 <section class="tickets prices">
     <h2>Tickets Now On Sale!</h2>
     <grid>
-        {% comment %}
         <content>
-            {% include features/timers/early-birds.html %}
+            
+            {% assign timer_title = "EARLY WORM SALE ENDS IN:" %}
+            {% assign timer_count_to = "2015/06/16" %}
+
+            {% include features/timers/timer.html %}
             <div class="mobile">
-            {% include features/timers/early-birds.html %}
+                {% include features/timers/timer.html %}
             </div>
         </content>
-        {% endcomment %}
+        {% include features/timers/clean.html %}
         <content>
 
         <p class="bigger wider">Join developers from all over the world and secure your ticket for this year's <a href="/">nucl.ai</a> now!  Three days of artificial intelligence theory and practice packed into three parallel tracks per day with many networking opportunities are waiting for you in Vienna.</p>
