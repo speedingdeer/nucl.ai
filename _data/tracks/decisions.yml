@@ -80,7 +80,7 @@
 
 - title: "Open Discussion on Challenges in Modern AI"
   description: >
-    .
+    After many years of research in games, a big boom in academia has changed the way Game AI is done, first after the emergence of Monte Carlo Tree Search, and more recently with Deep Neural Network architectures. Naturally, the video-games industry has taken advantage of these advances featuring MCTS in several titles, and it is reasonable to wonder if DDN can burst into video-games as well. Are we at the birth of a new era for Game AI? Modern AI can help us building better and faster Real-Time decision systems. Follow us into this panel where we will discuss the current open challenges of these techniques, the future directions in the field, and how the interaction between industry and academia can boost and spread modern AI.
   speakers:
     - Diego Perez
     - Gwaredd Mountain
