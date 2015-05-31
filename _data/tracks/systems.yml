@@ -13,9 +13,8 @@
 - title: Epic AI Systems and Director in Fortnite
   description: >
     Fortnite is Epic Game's upcoming free-to-play title with fort building and an AI director that spawns procedural
-    hordes of enemies towards the player.  In this talk, John will dig into the various systems that go into the game
-    from both a technical and design perspective, and how they are being brought together into a coherent and fun
-    experience!
+    hordes of enemies towards the player.  In this talk, John will dig into various systems that go into the game
+    from both a technical and design perspective, including runtime procedural navigation meshes, behaviour trees and goal management. With a focus on how bringing it all together makes for a coherent and fun gameplay experience!
   speakers:
     - John Abercrombie
   room: amphitheatre
@@ -25,10 +24,9 @@
 
 - title: Building a Systemic Understanding of Systemic Design
   description: >
-    Systemic design is for many of us like water to fish: we swim in it daily, but we have a difficult
-    time articulating exactly what it is. This talk will provide useful, practical definitions of
-    important concepts like systems, emergence, and interactivity. A cohesive framework for creating
-    systems and systemic effects in game and AI design will also be presented.
+   Systemic design is for many of us like water to fish: we swim in it daily, but we have a difficult time articulating exactly what it is. This talk will provide useful, practical definitions of important concepts and a cohesive framework for creating systems and systemic effects in game and AI design will also be presented.
+   
+   Despite a lot more attention being given to systemic design, many professional designers still have only a hazy idea of what a system actually is -- and whether whether they're even building one. This talk will help game designers at all levels understand how to build and recognize systems, and to make sure their systems are both grounded enough to be implemented and relevant enough to add meaning to a game.
     <ul>
       <li>Systems and system design are vital areas for games and simulations. And yet, terms like "systems," "emergence," and "interaction" remain ill-defined despite their broad use.</li> 
       <li>Come away from this talk with a clearer theoretical and practical understanding of these concepts to improve your ability to construct and recognize interactive systems.</li>
@@ -58,12 +56,12 @@
 
 # - title: "Designing CAD Tools for Novices: Can Algorithms Enhance productivity or foster creativity?"
 #   description: >
-#     Mixed-initiative design tools both support users in their design process (enhancing productivity) but also contribute with novel ideas (fostering creativity). 
-#	  In the generation of such ideas, a mixed-initiative tool should recognize the user's intentions, aesthetic preferences and design process; suggesting either the next logical step 
-#     towards the user's perceived goal or present an unexpected alternative which the designer hadn't thought of. 
+#     Mixed-initiative design tools both support users in their design process but also contribute with novel ideas. 
+#	  A mixed-initiative tool should recognize the user's intentions, aesthetic preferences and design process; suggesting either the next logical  
+#     step towards the user's perceived goal or present an unexpected alternative which the designer hadn't thought of. 
 #
-#     This talk will cover mixed-initiative design where both human and computer proactively contribute to the problem solution. Furthermore , we will present methods for using and how Artificial Intelligence can assist a novice user 
-#     in getting acquainted with task of designing, as well as automate the more tedious or challenging development tasks. 
+#     This talk will cover mixed-initiative design where both human and computer proactively contribute to the solution. Furthermore , we will  
+#     present methods how Artificial Intelligence can assist a novice user in getting acquainted with the task of designing. 
 #	  We will conclude with promising directions (and low-hanging fruit) for commercial tool development wishing 
 #     to incorporate AI-assisted and mixed-initiative design paradigms.
 #		<ul>
