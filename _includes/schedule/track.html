@@ -19,11 +19,8 @@
                 {% for s in site.data.people %}
                     {% if speaker == s.name %}
                         {% if firstSpeaker  %}
-                        {% else %}
-                            {% if talk.speakers.size == 2 %}and{% endif %}
-                            {% if talk.speakers.size > 2 %},{% endif %}
-                        {% endif %}                    
-                        <span="speker-name">
+                        {% else %}{% if talk.speakers.size == 2 %}and{% endif %}{% if talk.speakers.size > 2 %},{% endif %}{% endif %}                    
+                        <span class="speker-name">
                         {% if talk.speakers.size == 1 %}
                             {{ s.name }}</span><span class="studio">, {{ s.affiliation.name }}</span>
                         {% else %}
@@ -39,9 +36,9 @@
         {% if roomsLayout %}
         {% else %}
         <a class="{{wipClass}}" href="/track/{{track}}/#{{escapedTalkTitle}}">
-            {{talk.time.start}}
+            <span class="time"> {{talk.time.start}} </span>
         {% endif %}
-        {{talk.title}}
+        <span class="title"> {{talk.title}} </span>
              {% if roomsLayout %}
         {% else %}
         </a>
@@ -51,7 +48,7 @@
             <span class="room"> 
                 {% for room in site.data.rooms %}
                     {% if room.id == talk.room %}
-                        ({{room.name}})
+                        (<span class="room-name">{{room.name}}</span>)
                     {% endif %}
                 {% endfor %}
             </span>

@@ -1,4 +1,5 @@
 - title: "<span class='date-day'>Day #1: Monday, </span>July 20th"
+  date: "2015/07/20"
   tracks:
     - day1
     - ambient
@@ -6,6 +7,7 @@
     - alternate
 
 - title: "<span class='date-day'>Day #2: Tuesday, </span>July 21st"
+  date: "2015/07/21"
   tracks:
     - day2
     - procedural
@@ -13,6 +15,7 @@
     - analytics
 
 - title: "<span class='date-day'>Day #3: Wednesday, </span>July 22nd"
+  date: "2015/07/22"
   tracks:
     - day3
     - systems

@@ -38,7 +38,9 @@ module.exports = function (grunt) {
             'lib/raphael/raphael.js',
             'lib/jquery.easy-pie-chart/dist/easypiechart.min.js',
             'lib/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js',
-            'lib/jquery.countdown/dist/jquery.countdown.min.js'
+            'lib/jquery.countdown/dist/jquery.countdown.min.js',
+            'lib/FileSaver/FileSaver.min.js',
+            'lib/ics.js/ics.min.js'
           ]
       },
       bowerCss: {
