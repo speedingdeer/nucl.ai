@@ -4,7 +4,8 @@
         {% if item == track.id %}
         <h2>Track Schedule ({{date}})</h2>
         <content>
-                {% include schedule/day.html %}
+            {% include schedule/day.html %}
+            <a href="" class="ical-button" source="" filename="{{item}}">Download {{track.title}} schedule in .ics format.</a>
         </content>
         {% endif %}
     {% endfor %}

@@ -6,7 +6,7 @@
         {% assign isTrackPage = true %}
     {% endif %}
 {% endfor %}
-<div class="day-wrap" name="{{day.title}}">
+<div id="day-idx-{{forloop.index}}" class="day-wrap" name="{{day.title}}">
     <table class="clickable header-table"> 
         <tr>
             <td>
