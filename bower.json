@@ -10,6 +10,7 @@
     "jquery.easy-pie-chart": "~2.1.6",
     "bower": "*",
     "install": "~1.0.4",
-    "jquery.countdown": "~2.0.4"
+    "jquery.countdown": "~2.0.4",
+    "ics.js": "https://github.com/nwcell/ics.js.git#~0.1.3"
   }
 }
