@@ -16,12 +16,16 @@ $ ->
 
 
         location = $(@).find("p.title span.room-name").text().trim().replace(/\s+/g, ' ')
-        subject = $(@).find("p.title span.title").text().trim().replace(/\s+/g, ' ')
-        description = $(@).find("p.speakers").text().trim().replace(/\s+/g, ' ')
+        speakers = $(@).find("p.speakers").text().trim().replace(/\s+/g, ' ')
+        subject =  $(@).find("p.title span.title").text().trim().replace(/\s+/g, ' ')
+        if speakers
+          subject = subject + " [" + speakers + "]"
+        description = window.location.host + $(@).find("p.title a").attr("href")
+        if $(@).find("p.title a").hasClass("wip") then description = ""
         if $(@).hasClass "break"
           subject = $(@).text().trim().replace(/\s+/g, ' ')
           description = ""
           location = ""
         day.ical.addEvent subject, description, location, begin, end
-      #day.ical.download(filename)
+      day.ical.download(filename)
 
