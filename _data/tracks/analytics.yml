@@ -91,9 +91,20 @@
 
 - title: "Skill vs. Luck in Casual Games"
   description: >
-    Levels in casual games usually are parametrized by its difficulty (the probability that a user wins the level in one attempt).
-    We propose 2 other parameter obtained by observational data to describe levels: besides the probability of passing , the other
-    two are: how random is the level (or how important is the user skill to the success), and a discovery factor.
+    In casual games, players typically face an independent, concatenated set of game boards with different puzzles on them. 
+    These challenges are typically called levels. In characterising the differences between levels, the most common parameter 
+    used in the industry is the level’s success rate, an observational parameter that measures the probability of solving a 
+    level in one attempt.   
+    This talk investigates additional empirically grounded ways to characterise differences between levels. We use both 
+    analytical characterisation of the game space, and empirical data from player experience in our investigation.   
+    We can characterise levels by considering how their play patterns are affected by the mixture of player skill and 
+    randomness. We propose (and provide model-based justication for two more parameters which can help us understand what is 
+    important about the design of a casual game level:
+    <ul>
+      <li>A way of describing the randomness of a level</li>
+      <li>A ‘discovery’ factor, related to the player’s exploration of the interaction possibilities within a level</li>
+    </ul>
+    The discovery factor initially appeared a residual of the analysis, but relates strongly to both design practice and theory.
   speakers:
     - Ivan Encinas
   room: masterclass
