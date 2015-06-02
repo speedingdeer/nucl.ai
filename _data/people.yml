@@ -510,6 +510,7 @@
     url: http://www.epicgames.com/
     position: Lead Programmer
   bio: >
+   John Abercrombie currently works on the AI for Fortnite at Epic Games.  Previously he directed the work for the companion character Elizabeth in Bioshock Infinite, and led the AI teams working on Bioshock & SWAT 4.
 
 - name: Ricardo J. Méndez
   role: speaker
@@ -594,17 +595,8 @@
 # TODO: Heather.
 - name: Ivan Encinas
   role: speaker
-  affiliation:
-    name: King
-    url: https://king.com/
   bio: >
-    As a Senior Data Scientist, Ivan works on the Casual Game Performance Team, where provides analytical and model support to 
-    understand about the casual games at King, and their performance drivers. 
-    At King he has worked with several game teams: Papa Pear, Diamond Digger and Bubble Witch 2. He has spent the last 15 years 
-    working in a wide range of fields, from linguistics to economics. In the last 5 years, he has worked along 
-    Business Intelligence analysis with big databases in on-line & e-commerce companies. He graduated from the 
-    Polytechnic University of Catalunya (Universitat Politècnica de Catalunya -UPC), Barcelona.
- 
+    ...
 
 # TODO: Cloderic.
 - name: Mieszko Zielinski
