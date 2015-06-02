@@ -85,6 +85,16 @@
   bio: >
     Josh McCoy is a game developer, computer scientist and cross-disciplinary researcher whose work lies at the confluence of game technology, social science, artificial intelligence and design. His goal is to create playable experiences that communicate to broad audiences and critically address the challenges present in our society while expanding the boundaries of technology. The most recent products of his research involve combining artificial intelligence techniques with social science to create meaningful, responsive and socially engaging game experiences. He was a lead on the experimental video game Prom Week, a game that enables a new level of social interaction between characters via an artificial intelligence system that leverages social science to make social behavior playable. This work has been nominated for the Technical Excellence award in the Independent Games Festival and an IndieCade award. Additionally, his research has been used in a DARPA-funded project to enable trainees to engage socially responsive characters with full-bodied interaction for the purpose of teaching good stranger behavior to soldiers in foreign lands.
 
+- name: Petra Champandard-Pail
+  role: org
+  affiliation:
+    position: "Conference Director & Co-Founder"
+    name: AiGameDev.com
+    url: http://aigamedev.com
+  bio: >
+    Petra has a background in business management, and worked as an International Area Manager for a large multi-million dollar corporation.
+    She eventually moved on and joined Alex as the co-founder of AiGameDev.com. Petra is the creative force in the team, and takes care of business!
+
 - name: Alex J. Champandard
   role: org
   tracks: [cognition]
@@ -96,15 +106,15 @@
   bio: >
     Alex is the mastermind behind AiGameDev.com, the largest online hub for artificial intelligence in games. He has worked in the industry as a senior AI programmer for many years, most notably for Rockstar Games. He regularly consults with leading studios in Europe, most recently on the multiplayer bots for Killzone 2-3 at Guerrilla Games. Alex authored the book "AI Game Development" and often speaks about his research. He's associate editor for the IEEE Transactions on AI in Games, and serves on the program committee for the AIIDE and CIG conferences.
 
-- name: Petra Champandard-Pail
+- name: Verena Riedl
   role: org
+  twitter: skittlesolives
   affiliation:
-    position: "Conference Director & Co-Founder"
+    position: "Marketing Director"
     name: AiGameDev.com
     url: http://aigamedev.com
   bio: >
-    Petra has a background in business management, and worked as an International Area Manager for a large multi-million dollar corporation.
-    She eventually moved on and joined Alex as the co-founder of AiGameDev.com. Petra is the creative force in the team, and takes care of business!
+    Verena made her way from Urban Planning into the games industry, with inbetween stops at advertising and eventmanagement. These days she is working as a producer, game designer and marketing strategist, who has focused on mobile development in the last years. She was already part of the volunteer team at Game/ AI Conference in 2014 and joined the team now to help with the dark arts of marketing.
 
 - name: Filip Wisniewski
   role: org
@@ -116,17 +126,6 @@
   bio: >
     Filip worked previously in semantic web research for Animation a couple of years and after a brief start-up interlude he now found his calling in digital entertainment and teaching.
     He helped organize the Game/AI Conference in 2014 and presented a tutorial about Monto-Carlo Tree Search there, along with the AiGameDev.com team.
-
-- name: Verena Riedl
-  role: org
-  tracks: [procedural]
-  twitter: skittlesolives
-  affiliation:
-    position: "Marketing Director"
-    name: AiGameDev.com
-    url: http://aigamedev.com
-  bio: >
-    Verena made her way from Urban Planning into the games industry, with inbetween stops at advertising and eventmanagement. These days she is working as a producer, game designer and marketing strategist, who has focused on mobile development in the last years. She was already part of the volunteer team at Game/ AI Conference in 2014 and joined the team now to help with the dark arts of marketing.
 
 - name: Juliette Lemaitre
   role: org

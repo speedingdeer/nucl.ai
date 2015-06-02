@@ -31,7 +31,7 @@
     start: "12:00"
     finish: "12:45"
 
-- title: "Runtime Inverse Kinematic Rig"
+- title: "IK Rig: Procedural Pose Animation"
   description: >
     <p>IK Rig is the technology designed to transfer motion between rigs of varying sizes and skeleton hierarchies, plus amend 
     the motion to represent the current rig’s size, weight etc.</p>
