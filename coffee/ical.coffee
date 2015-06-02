@@ -16,13 +16,12 @@ $ ->
 
 
         location = $(@).find("p.title span.room-name").text().trim().replace(/\s+/g, ' ')
-        subject = $(@).find("p.title span.title").text().trim().replace(/\s+/g, ' ').replace(/\*/g,'')
+        subject = $(@).find("p.title span.title").text().trim().replace(/\s+/g, ' ')
         description = $(@).find("p.speakers").text().trim().replace(/\s+/g, ' ')
         if $(@).hasClass "break"
           subject = $(@).text().trim().replace(/\s+/g, ' ')
           description = ""
           location = ""
-        if begin.getHours() == 16
-          day.ical.addEvent "", "", "", begin.toString(), end.toString()
-      # day.ical.download(filename)
+        day.ical.addEvent subject, description, location, begin, end
+      #day.ical.download(filename)
 
