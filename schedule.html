@@ -9,12 +9,7 @@ permalink: /program/schedule/
     <grid class="rooms-schedule">
         <h2>Conference Schedule</h2>
         <content>
-            <p class="note">NOTE: The assignment of Tracks to Days has been finalized (as of May 7th), but we expect the times for specific talks within the day to change.  Slots marked ** are tentative and provided as indication.</p>
-
-            <a href="" class="ical-button" source="" filename="nucl.ai">Download full conference schedule in .ics format.</a>
-            {% for day in site.data.schedule %}
-                <a href="" class="ical-button" source="#day-idx-{{forloop.index}}" filename="nucl.ai_day_{{forloop.index}}">Download {{day.title}} schedule in .ics format.</a>
-            {% endfor %}
+            {% include schedule/preamble.html %}
 
             {% assign roomsLayout = true %}
 
@@ -27,13 +22,7 @@ permalink: /program/schedule/
     <grid class="list-schedule">
         <h2>Conference Schedule</h2>
         <content>
-            <p class="note">NOTE: The assignment of Tracks to Days has been finalized (as of May 7th), but we expect the times for specific talks within the day to change.</p>
-
-            <a href="" class="ical-button" source="" filename="nucl.ai">Download full conference schedule in .ics format.</a>
-            {% for day in site.data.schedule %}
-                <a href="" class="ical-button" source="#day-idx-{{forloop.index}}" filename="nucl.ai_day_{{forloop.index}}">Download {{day.title}} schedule in .ics format.</a>
-            {% endfor %}
-
+            {% include schedule/preamble.html %}
 
             {% assign roomsLayout = false %}
 
