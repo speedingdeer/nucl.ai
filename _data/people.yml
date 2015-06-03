@@ -590,7 +590,7 @@
 - name: John Hearty
   role: speaker
   bio: >
-    ...
+    John works as a Data Scientist at Lionhead Studios, where he leads a cross-functional team in building a TB-scale analytics architecture. He also works closely with game design and product management stakeholders, providing modelling and analysis to support Fable Legends’ balance and design. He is currently authoring a book on Deep Learning for a well-known technical publisher. He has yet to successfully clone himself, but continues to hope.
     
 # TODO: Heather.
 - name: Ivan Encinas
