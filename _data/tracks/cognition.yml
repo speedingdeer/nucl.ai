@@ -10,13 +10,17 @@
     start: "16:45"
     finish: "17:45"
 
-- title: Indie Game Design for Natural Language
+
+- title: "Turning a Chatbot into a Narrative Game: Language Interaction in Event[0]"
   description: >
-    ...
+    Event[0] is a first person narrative exploration game where the player has to chat with a computer to get the latter to do what they want. The game is entirely dialogue-based, and the dialogue is made with natural language processing. The chatbot in the game is flawed, just like any chatbot is. This talk will explain how we have managed to turn these flaws into features and turn the AI's rough edges into a meaningful gameplay experience.
+  speakers:
+    - Sergey Mohov
   room: amphitheatre
   time:
     start: "13:45"
     finish: "14:30"
+
 
 - title: Creative Social Media Bots **
   description: >
@@ -25,6 +29,7 @@
   time:
     start: "12:00"
     finish: "12:45"
+
 
 - title: Language Interaction in Simulations and Training Scenarios **
   description: >
@@ -43,9 +48,3 @@
   time:
     start: "10:00"
     finish: "12:00"
-
-- title: "Turning a Chatbot into a Video Game: Narrative and Natural Language Interaction in Event[0]"
-  description: >
-    Event[0] is a first person narrative exploration game where the player has to chat with a computer to get the latter to do what they want. The game is entirely dialogue-based, and the dialogue is made with natural language processing. The chatbot in the game is flawed, just like any chatbot is. This talk will explain how we have managed to turn these flaws into features and turn the AI's rough edges into a meaningful gameplay experience.
-  speakers:
-    - Sergey Mohov
