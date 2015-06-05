@@ -29,7 +29,7 @@ $ ->
         talks = day.find("div.track")
         day.talks = []
         talks.each ->
-          day.talks.push $(@)
+          if $(@).attr("time-start") && $(@).attr("time-finish") then day.talks.push $(@) # talks with undefined time are ignored
 
         # sort by time and append
         # and remember first start and last end
