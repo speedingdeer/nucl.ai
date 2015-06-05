@@ -526,6 +526,12 @@
     url: https://www.bistudio.com/
     position: Programmer
   bio: >
+    Vladimir Nejedly studied computer graphics at Faculty of Mathematics and Physics of Charles
+    University in Prague. After his graduation in 2001, he joined Bohemia Interactive Studio. He
+    worked as a programmer in the graphics department and worked on titles Operation
+    Flashpoint Elite (XBOX version), ArmA1 and ArmA2. In 2008, he transitioned to Bohemia
+    Interactive Simulations where he worked on VBS2 as a lead programmer. Since 2014, has
+    been working on a new version of VBS as a lead engine architect.
 
 - name: Christopher Laubach
   role: speaker
