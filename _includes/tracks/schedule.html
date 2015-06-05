@@ -6,9 +6,7 @@
         <h2>Track Schedule ({{date}})</h2>
         <content>
             {% include schedule/day.html %}
-            {% comment %}
             <a href="" class="ical-button" source="" filename="{{item}}">Download {{trackT}} schedule in .ics format.</a>
-            {% endcomment %}
         </content>
         {% endif %}
     {% endfor %}
