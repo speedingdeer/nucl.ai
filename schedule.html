@@ -16,6 +16,8 @@ permalink: /program/schedule/
             {% for day in site.data.schedule %}
                 {% include schedule/day.html %}
             {% endfor %}
+
+            {% include schedule/ical.html %}
         </content>
     </grid>
 
@@ -29,6 +31,8 @@ permalink: /program/schedule/
             {% for day in site.data.schedule %}
                 {% include schedule/day.html %}
             {% endfor %}
+
+            {% include schedule/ical.html %}
         </content>
     </grid>
 

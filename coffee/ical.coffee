@@ -8,7 +8,6 @@ $ ->
     days = []
     $(".list-schedule " + source + " table.talks-list").each ->
       days.push $(@)
-      console.log("ss")
     for day in days
       dateStr = day.attr("date")
       filename = dateStr.replace("/","-")
