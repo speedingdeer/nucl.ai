@@ -29,9 +29,10 @@
     start: "16:15"
     finish: "16:45"
 
-- title: Object Recognition with Neural Networks (Workshop) **
+- title: Object Recognition with Neural Networks (Workshop)
   description: >
-    ...
+    <p>This workshop is a tutorial for recognizing images of objects with modern neural networks.  You'll use open-source libraries and get up-to-speed with Deep Learning, understanding how to apply deep neural networks in practice as both classifiers (to predict labels from input features) or regressors (to predict an output based on inputs).</p>
+    <p>This hands-on tutarial will show you how to get up and running on your own laptop, how to train neural networks and adjust their parameters, and how to "augment" input datasets for better results.  You'll see how this works in code, at your own pace, and with help and advice from the authors of a popular open-source library.</p>  
   room: laboratories
   speakers:
     - Spyridon Samothrakis
