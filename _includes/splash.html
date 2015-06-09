@@ -22,6 +22,11 @@
             <grid>
                 <div class="table">
                     <div class="centered-cell">
+                        <content class="video-link top splash-video">
+                            <h2>
+                                &#9658; <span class="text">Watch conference video</span>
+                            </h2>
+                        </content>
                         <content>
                             <logo-wrap class="opacity0">
                                 <logo></logo>
@@ -56,17 +61,21 @@
                                 {% endif %}
                             </titles>
                         </content>
+                        <content class="video-link splash-video">
+                            <h2>
+                                <a href="{% include videos/splash-link.html %}">
+                                    &#9658; <span class="text">Watch Conference ideo</span>
+                                </a>
+                            </h2>
+                        </content>
                     </div>
 
-                    {% comment %}
-                        {% if page.name == 'index.html' %}
-                            <div class="centered-cell video-cell">
-                                <div class="video">
-                                    {% include videos/splash.html %}
-                                </div>
-                            </div>
-                        {% endif %}
-                    {% endcomment %}
+
+                    {% if page.name == 'index.html' %}
+                        <div class="centered-cell video-cell splash-video">
+                            {% include videos/splash.html %}
+                        </div>
+                    {% endif %}
 
 
                 </div>

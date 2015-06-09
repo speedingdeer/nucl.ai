@@ -1,6 +1,9 @@
 @max_two_columns: 650px;
 
 section.splash-screen {
+
+    .splash-video { display: none !important; }
+
     @two_third_vh: 100vh * 2 / 3;
     @third_vh: 100vh / 3;
     position: relative;
@@ -9,6 +12,19 @@ section.splash-screen {
     overflow: visible; //for drop down menu
     grid { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0px; } }
     content { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0px; } }
+    content.video-link.top { visibility: hidden; margin-top: -3.5em; }
+    content.video-link {
+        padding: 0;
+        margin-top: -1em;
+        a { text-decoration: none; }
+        span.text {
+            width: 100%;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        display: none;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: block; }
+    }
     .splash-screen-wrap {
         min-height: calc(~"@{two_third_vh} - @{NAVIGATION_HEIGHT}");
         background-position: center;
@@ -17,7 +33,9 @@ section.splash-screen {
             background-position-y: 100%;
         }
     }
-    .video-cell { display: none; }
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {
+        .video-cell { display: none; }
+    }
     .table {
         //firefox table doesn't know min-height
         height: calc(~"@{two_third_vh} - @{NAVIGATION_HEIGHT}");
