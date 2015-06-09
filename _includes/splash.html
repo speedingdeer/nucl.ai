@@ -19,46 +19,55 @@
     <div class="splash-screen-wrap audience-gif">
     {% endif %}
         <splash>
-            <div class="table">
-                <div class="centered-cell">
-                    <content>
-                        <logo-wrap class="opacity0">
-                            <logo></logo>
-                        </logo-wrap>
-                        <titles  class="opacity0">
-                            {% if page.name == 'index.html' %}
-                            <h1>nucl.ai</h1>
-                            <h2>
-                                July 20<sup>th</sup> to 22<sup>nd</sup>, Vienna / AUSTRIA.
-                            </h2>
-                            {% else %}
-                            <grid>
-                                <div class="left">
-                                    <h1><a href="/">nucl.ai</a></h1>
-                                    <h2>July 20th to 22nd, Vienna / AUSTRIA.</h2>
-                                </div>
-                                <div class="right">
-                                    <h2>Conference on Artificial Intelligence<br/>
-                                        in Creative Industries</h2>
-                                    
-                                    {% capture ticketBanner %}{{site.data.tickets_left.type}} Ticket Sale Ending Shortly!{% endcapture %}
-                                    <h2 class="note">
-                                    {% if page.name == 'tickets.html' %}
-                                    <span href="/tickets">{{ticketBanner}}</span>    
-                                    {% else %}
-                                    <a href="/tickets">{{ticketBanner}}</a>
-                                    {% endif %}
-                                    </h2>
+            <grid>
+                <div class="table">
+                    <div class="centered-cell">
+                        <content>
+                            <logo-wrap class="opacity0">
+                                <logo></logo>
+                            </logo-wrap>
+                            <titles  class="opacity0">
+                                {% if page.name == 'index.html' %}
+                                <h1>nucl.ai</h1>
+                                <h2>
+                                    July 20<sup>th</sup> to 22<sup>nd</sup>, Vienna / AUSTRIA.
+                                </h2>
+                                {% else %}
+                                <grid>
+                                    <div class="left">
+                                        <h1><a href="/">nucl.ai</a></h1>
+                                        <h2>July 20th to 22nd, Vienna / AUSTRIA.</h2>
+                                    </div>
+                                    <div class="right">
+                                        <h2>Conference on Artificial Intelligence<br/>
+                                            in Creative Industries</h2>
+                                        
+                                        {% capture ticketBanner %}{{site.data.tickets_left.type}} Ticket Sale Ending Shortly!{% endcapture %}
+                                        <h2 class="note">
+                                        {% if page.name == 'tickets.html' %}
+                                        <span href="/tickets">{{ticketBanner}}</span>    
+                                        {% else %}
+                                        <a href="/tickets">{{ticketBanner}}</a>
+                                        {% endif %}
+                                        </h2>
 
-                                </div>
-                            </grid>
-                            {% endif %}
-                        </titles>
-                    </content>
+                                    </div>
+                                </grid>
+                                {% endif %}
+                            </titles>
+                        </content>
+                    </div>
+                    {% if page.name == 'index.html' %}
+                        <div class="centered-cell">
+                            <div class="video">
+                                {% include videos/splash.html %}
+                            </div>
+                        </div>
+                    {% endif %}
                 </div>
-            </div>
-            {% comment %} Prevent navigtion from overlaping {% endcomment %}
-            <navigation-fantom></navigation-fantom>
+                {% comment %} Prevent navigtion from overlaping {% endcomment %}
+                <navigation-fantom></navigation-fantom>
+            </grid>
         </splash>
     </div>
     {% include navigation.html %}
