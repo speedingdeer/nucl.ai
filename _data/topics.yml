@@ -29,6 +29,21 @@
   credit:
     title: Marvin Rig
     url: http://aigamedev.com/
+  companies:
+    - Pixar Animation Studios
+    - Ubisoft Montreal
+    - Moving Picture Company
+    - CD Projekt Red
+    - Microsoft Game Studios
+    - Creative Assembly
+    - Bohemia Interactive
+    - Unity Technologies
+    - Epic Games
+    - Lionhead Studios
+    - INRIA Research Lab
+    - Iron Galaxy Studios
+    - MASA Group
+    - CCP Games
 
 - id: decisions
   title: "Real-time Decisions"
@@ -61,6 +76,7 @@
   credit:
     title: The AI Sandbox
     url: http://aisandbox.com/
+  companies:
 
 - id: behavior
   title: "Agent Behavior"
@@ -92,6 +108,7 @@
   credit:
     title: The Sims 4
     url: http://www.thesims.com/
+  companies:
 
 - id: procedural
   title: "Procedural Content Generation"
@@ -125,6 +142,7 @@
   credit:
     title: "Sir, You're Being Hunted"
     url: http://www.big-robot.com/
+  companies:
 
 - id: alternate
   title: "Virtual / Augmented Reality"
@@ -156,6 +174,7 @@
   credit:
     title: Project Trains
     url: http://project-trains.tumblr.com/
+  companies:
 
 - id: ambient
   title: "Crowds and Ambient Life"
@@ -190,6 +209,7 @@
   credit:
     title: Golaem Crowd
     url: http://golaem.com/
+  companies:
 
 - id: analytics
   title: "Advanced Analytics & Data Science"
@@ -224,6 +244,7 @@
   credit:
     title: Dmitry Nozhnin
     url: http://www.gamasutra.com/blogs/DmitryNozhnin/417356/
+  companies:
 
 - id: systems
   title: "Systemic Design, AI Directors"
@@ -258,6 +279,7 @@
   credit:
     title: Far Cry 4
     url: http://far-cry.ubi.com/
+  companies:
 
 - id: cognition
   title: "Cognitive Bots & Language"
@@ -292,3 +314,4 @@
   credit:
     title: IBM Watson
     url: http://www.ibm.com/smarterplanet/us/en/ibmwatson/
+  companies:

@@ -28,34 +28,28 @@
 <section class="tracks-content tracks-text testimonials single-column-testimonials">
     <grid>
         <content>
+            <h3>Attending Companies &amp; Studios</h3>            
             <div class="block">
                 <ul>
-                    <li>Pixar Animation Studios</li>
-                    <li>Ubisoft Studios</li>
-                    <li>IBM Watson</li>
-                    <li>Moving Picture Company</li>
-                    <li>CD Projekt Red</li>
-                    <li>Microsoft Game Studios</li>
-                    <li>Jagex</li>
-                    <li>Creative Assembly</li>
-                     <li>University of Essex</li>
-                    <li>Bohemia Interactive</li>
-                    <li>Turn 10 Studios</li>
+                {% for company in track.companies %}
+                    {% capture modulo %}{{ forloop.index | modulo:2}}{% endcapture %}
+                    {% if modulo == '0' %}
+                    <li>{{ company }}</li>
+                    {% else %}
+                    {% endif%}
+                {% endfor %}
                 </ul>
             </div>   
 
             <div class="block">
                 <ul>
-                    <li>Unity Technologies</li>
-                    <li>Lionhead Studios</li>
-                    <li>Epic Games</li>
-                    <li>INRIA Research Lab</li>
-                    <li>Nordeus</li>
-                    <li>Iron Galaxy Studios</li>
-                    <li>MASA Group</li>
-                    <li>University of Muenster</li>
-                    <li>King.com</li>
-                    <li>CCP Games</li>
+                {% for company in track.companies %}
+                    {% capture modulo %}{{ forloop.index | modulo:2}}{% endcapture %}
+                    {% if modulo != '0' %}
+                    <li>{{ company }}</li>
+                    {% else %}
+                    {% endif%}
+                {% endfor %}
                     <li>...</li>
                 </ul>
             </div>

@@ -22,17 +22,17 @@
   link: "/track/systems/"
   picture: "/img/tracks/AssassinsCreed_1.jpg"
 
-- title: "Behavior Trees and Blackboards in EVE ONLINE"
-  author: Freyr Magnússon (CCP Games)
-  date: "Apr 13, 2015"
-  link: "/track/behavior/#behavior-trees-and-blackboards-in-eve-online"
-  picture: "/img/tracks/alternate.png"
+# - title: "Behavior Trees and Blackboards in EVE ONLINE"
+#   author: Freyr Magnússon (CCP Games)
+#   date: "Apr 13, 2015"
+#   link: "/track/behavior/#behavior-trees-and-blackboards-in-eve-online"
+#   picture: "/img/tracks/alternate.png"
 
-- title: "Optimizing MCTS for Tactical Coordination in TOTAL WAR: ATILLA"
-  date: "Apr 11, 2015"
-  author: Piotr Andruszkiewicz (Creative Assembly)
-  link: "/track/decisions/#optimizing-mcts-performance-for-tactical-coordination-in-total-war--atilla"
-  picture: "/img/tracks/behavior.png"
+# - title: "Optimizing MCTS for Tactical Coordination in TOTAL WAR: ATILLA"
+#   date: "Apr 11, 2015"
+#   author: Piotr Andruszkiewicz (Creative Assembly)
+#   link: "/track/decisions/#optimizing-mcts-performance-for-tactical-coordination-in-total-war--atilla"
+#   picture: "/img/tracks/behavior.png"
 
 - title: "MotionFields: Road to Next-Gen Animation"
   date: "Apr 8, 2015"
