@@ -44,7 +44,6 @@ $ ->
     #get testimonials one by one
     idxCurrent = 0
     change = () ->
-      if idxCurrent == testimonials.length - 1 then idxCurrent = 0
       setTimeout select, LONG_INTERAL
 
     select = () ->

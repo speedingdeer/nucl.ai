@@ -124,7 +124,8 @@ sections.page section.thumbnails-grid.tracks-content {
 sections.page section.testimonials {
     content {
         div.block {
-            @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) { .column(4); }
+            .column(4); 
+            &.testimonials { min-height: 21.5em; }
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                 .column(12); 
                 &.testimonials { min-height: 16em; }
