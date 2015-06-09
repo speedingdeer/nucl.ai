@@ -3,6 +3,8 @@ effectOut = "flipOutX"
 SHORT_INTERVAL = 450
 LONG_INTERAL = 10000
 
+animationType = ""
+
 $ ->
   sections = []
   $("section.testimonials").each ->
@@ -34,7 +36,10 @@ $ ->
         idxCurrent =  next(idxCurrent, 1)
         change()
         $(testimonials[wasCurrent]).one animate.onAnimatedEnd, (data) ->
-          if data.type == "webkitAnimationEnd" then return
+          if animationType == ""  # use only fist animation type
+            animationType = data.type
+          else if animationType != data.type then return
+
           pair-=1;
           $(testimonials[wasCurrent]).removeClass("selected")
           $(testimonials[nextIdx]).removeClass(effectOut)
@@ -49,7 +54,10 @@ $ ->
       $(testimonials[idxCurrent]).removeClass(effectIn)
       $(testimonials[idxCurrent]).addClass(effectOut)
       $(testimonials[idxCurrent]).one animate.onAnimatedEnd, (data) ->
-        if data.type == "webkitAnimationEnd" then return
+        if animationType == ""  # use only fist animation type
+            animationType = data.type
+        else if animationType != data.type then return
+
         $(testimonials[idxCurrent]).removeClass("selected")
         idxCurrent = if idxCurrent == testimonials.length - 1 then idxCurrent = 0 else idxCurrent + 1
         $(testimonials[idxCurrent]).removeClass(effectOut)
