@@ -27,6 +27,9 @@ $ ->
           location = ""
         ical.addEvent subject, description, location, begin, end
     icalButton.click ->
-      ical.download(icalButton.attr("filename"))
+      if $("html").hasClass "safari"
+        window.alert ("Doesn't supported in Safari")
+      else
+        ical.download(icalButton.attr("filename"))
       return false
 

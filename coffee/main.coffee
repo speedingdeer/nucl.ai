@@ -37,6 +37,8 @@ disableWip = () ->
 $ ->
   if navigator.userAgent.match(/(iPad|iPhone|iPod)/g)
     $("html").addClass("ios")
+  if navigator.userAgent.toLowerCase().indexOf("safari") > -1 && navigator.userAgent.toLowerCase().indexOf("chrome") == -1
+    $("html").addClass("safari")
   $(window).scroll ->
     enableSections()
     if !root.scrollLocked && window.location.hash != ""
