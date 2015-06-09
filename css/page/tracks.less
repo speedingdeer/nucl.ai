@@ -131,10 +131,13 @@ sections.page section.testimonials {
         }
 
         div.block {
-            .column(4);
-            .testimonial {
-                opacity: 0.85;
+            .column(4); 
+            &.testimonials { min-height: 21.5em; }
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                .column(12); 
+                &.testimonials { min-height: 16em; }
             }
+            .testimonial { opacity: 0.85; }
         }
     }
 }

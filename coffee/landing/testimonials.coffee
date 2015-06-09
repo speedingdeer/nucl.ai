@@ -33,7 +33,8 @@ $ ->
         nextIdx = next(idxCurrent, 2)
         idxCurrent =  next(idxCurrent, 1)
         change()
-        $(testimonials[wasCurrent]).one animate.onAnimatedEnd, ->
+        $(testimonials[wasCurrent]).one animate.onAnimatedEnd, (data) ->
+          if data.type == "webkitAnimationEnd" then return
           pair-=1;
           $(testimonials[wasCurrent]).removeClass("selected")
           $(testimonials[nextIdx]).removeClass(effectOut)
@@ -43,18 +44,16 @@ $ ->
 
     #get testimonials one by one
     idxCurrent = 0
-    change = () ->
-      if idxCurrent == testimonials.length - 1 then idxCurrent = 0
-      setTimeout select, LONG_INTERAL
 
     select = () ->
       $(testimonials[idxCurrent]).removeClass(effectIn)
       $(testimonials[idxCurrent]).addClass(effectOut)
-      change()
-      $(testimonials[idxCurrent]).one animate.onAnimatedEnd, ->
+      $(testimonials[idxCurrent]).one animate.onAnimatedEnd, (data) ->
+        if data.type == "webkitAnimationEnd" then return
         $(testimonials[idxCurrent]).removeClass("selected")
         idxCurrent = if idxCurrent == testimonials.length - 1 then idxCurrent = 0 else idxCurrent + 1
         $(testimonials[idxCurrent]).removeClass(effectOut)
         $(testimonials[idxCurrent]).addClass("selected " + effectIn)
+        setTimeout select, LONG_INTERAL
 
-    change()
+    select()
