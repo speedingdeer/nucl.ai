@@ -24,7 +24,7 @@
         </content>
     </grid>
 </section>
-
+<section class="none"></section>
 <section class="tracks-content tracks-text testimonials single-column-testimonials">
     <grid>
         <content>
@@ -61,7 +61,9 @@
             </div>
             <div class="block">
                     {% assign testimonialsInRow = 1 %}
+                    {% assign textBig = true %}
                     {% include testimonials.html %}
+                    {% assign textBig = false %}
             </div>
         
         <br style="clear: both;"/>
