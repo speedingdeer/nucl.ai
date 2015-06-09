@@ -25,7 +25,7 @@
     </grid>
 </section>
 
-<section class="tracks-content tracks-text testimonials">
+<section class="tracks-content tracks-text testimonials single-column-testimonials">
     <grid>
         <content>
             <div class="block">
@@ -59,23 +59,10 @@
                     <li>...</li>
                 </ul>
             </div>
-            
-        {% for testimonial in site.data.testimonials %}
-            {% if forloop.index <= 1 %}
-            <div class="testimonial selected animated flipInX">
-            {% else %}
-            <div class="testimonial animated flipOutX">
-            {% endif %}
-                <p class="text small">{{ testimonial.text }}</p>
-                <p class="author small">{{ testimonial.author }}</p>
-                {% if testimonial.jobtitle %}
-                    <p class="jobtitle small">{{ testimonial.jobtitle }}</p>
-                {% endif %}
-                {% if testimonial.company %}
-                    <p class="company small">{{ testimonial.company }}</p>
-                {% endif %}
+            <div class="block">
+                    {% assign testimonialsInRow = 1 %}
+                    {% include testimonials.html %}
             </div>
-        {% endfor %}
         
         <br style="clear: both;"/>
         </content>

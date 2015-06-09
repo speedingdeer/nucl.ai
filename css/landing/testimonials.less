@@ -1,3 +1,25 @@
+section.testimonials.full-width {
+    grid {
+        content {
+            .testimonial {
+                .column(4);
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    .column(4,11); 
+                
+                }
+                &.left {
+                    .push(1);
+                }
+                &.right {
+                    float: right;
+                    .pull(1);
+                }
+                display: none;
+            }
+        }
+    }
+}
+
 section.testimonials {
     min-height: 0px;
     grid {
@@ -12,21 +34,12 @@ section.testimonials {
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { .row(11); }
             .testimonial {
                 text-align: justify;
-                .column(4);
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                    .column(4,11); 
                     display: none;
                     &.selected {
                         display: inline-block;
                     }
                 
-                }
-                &.left {
-                    .push(1);
-                }
-                &.right {
-                    float: right;
-                    .pull(1);
                 }
                 display: none;
                 &.selected {

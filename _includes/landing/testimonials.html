@@ -1,26 +1,12 @@
-<section class="testimonials inline">
+<section class="testimonials inline full-width domino">
     <a class="anchor" id="testimonials"></a>
     <h2>
         What Past Attendees Said...
     </h2>
     <grid>
         <content class="wide">
-        {% for testimonial in site.data.testimonials %}
-            {% if forloop.index <= 2 %}
-            <div class="{% cycle 'left', 'right' %} testimonial selected animated flipInX">
-            {% else %}
-            <div class="{% cycle 'left', 'right' %} testimonial animated flipOutX">
-            {% endif %}
-                <p class="text small">{{ testimonial.text }}</p>
-                <p class="author small">{{ testimonial.author }}</p>
-                {% if testimonial.jobtitle %}
-                    <p class="jobtitle small">{{ testimonial.jobtitle }}</p>
-                {% endif %}
-                {% if testimonial.company %}
-                    <p class="company small">{{ testimonial.company }}</p>
-                {% endif %}
-            </div>
-        {% endfor %}
+            {% assign testimonialsInRow = 2%}
+            {% include testimonials.html %}
         </content>
     </grid>
 </section>
