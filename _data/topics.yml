@@ -1,9 +1,9 @@
 - id: animation
   title: "Character Animation Technology"
   subtitle: >
-    Join experts from Ubisoft, Riot Games and Pixar for a masterclass on state-of-the-art
-    techniques from runtime IK rigs to gameplay integration, and forward looking technology
-    to break down the finite-state machine.
+    Join experts from Ubisoft, Riot Games and Pixar for a day-long course on state-of-the-art
+    techniques from runtime IK rigs to gameplay integration, and forward looking technology to
+    break down the finite-state machine.
   description: >
     Portraying characters is one of the most challenging aspects of building an
     engaging 3D world.  While many low-level aspects of character animation technology
@@ -34,7 +34,7 @@
   title: "Real-time Decisions"
   subtitle: >
     Join experts from Microsoft Studios, Creative Assembly, Lionhead and the Universities
-    of Essex and Dortmund for a masterclass on state-of-the-art techniques in decision making
+    of Essex and Dortmund for a day-long course on state-of-the-art techniques in decision making
     from Monte-Carlo Tree Search to Deep Reinforcement Learning or neural networks, why and
     how they can be applied in interactive applications.
   description: >
@@ -64,8 +64,8 @@
 - id: behavior
   title: "Agent Behavior"
   subtitle: >
-    Join experts from Square Enix, Epic, Bohemia Interactive Simulations, CCP Games for a
-    masterclass on state-of-the-art techniques in behavior and control, including coordination
+    Join experts from Square Enix, Epic, Bohemia Interactive Simulations, CCP Games for a day-long
+    course on state-of-the-art techniques in behavior and control, including coordination
     of multiple agents, reuse of logic and command hierarchies.  Learn how to integrate
     Behavior Trees and other techniques into your games and simulations, for results that are
     easy to author and control.
@@ -160,7 +160,7 @@
   title: "Crowds and Ambient Life"
   subtitle: >
     Join experts from Pixar Animation Studios, Ubisoft Montreal, MPC, Unity Technologies
-    and the INRIA labs for a masterclass on industry-leading applications of locomotion
+    and the INRIA labs for a day-long course on industry-leading applications of locomotion
     and avoidance algorithms in groups, whether in constrained environments or crowds in
     open spaces.  Find out about the techniques used in real-time games and simulations
     for visual effects.
@@ -194,7 +194,7 @@
   title: "Advanced Analytics & Data Science"
   subtitle: >
     Join experts from Lionhead Studios, King.com, Nordeus, Jagex, Mind Candy and Scientific
-    Revenue for these masterclasses on state-of-the-art applications of analytics techniques
+    Revenue for a day-long course on state-of-the-art applications of analytics techniques
     using pattern recognition and machine learning.  Learn how to setup player profiling and
     apply them for dynamic pricing or reducing churn in your game or application.
   content: >
@@ -227,8 +227,8 @@
 - id: systems
   title: "Systemic Design, AI Directors"
   subtitle: >
-    Join experts from Epic Games, CD Projekt Red, Creative Assembly for these
-    masterclasses on industry-leading applications that balance emergent behaviors
+    Join experts from Epic Games, CD Projekt Red, Creative Assembly for a day-long
+    course on industry-leading applications that balance emergent behaviors
     (bottom-up) with designer control and narrative (top-down).  Learn how to use
     AI techniques and design methodologies to control your simulations and guide
     them to provide the desired results for your players — at runtime.
@@ -261,7 +261,7 @@
 - id: cognition
   title: "Cognitive Bots & Language"
   subtitle: >
-    Join other professionals in creative industries for a set of masterclasses on cognitive
+    Join other professionals in creative industries for a day-long course on cognitive
     reasoning, natural language processing and chatbots.  Learn how to integrate speech
     recognition and speech synthesis into your applications, see how leading companies are
     using AI techniques to create human-like bots, and more...
