@@ -4,17 +4,13 @@
     {% else %}
         <div class="{% cycle 'left', 'right' %} testimonial animated flipOutX">
     {% endif %}
-    {% if textBig %}
-        <p class="text">{{ testimonial.text }}</p>
-    {% else %}
-        <p class="text small">{{ testimonial.text }}</p>
-    {% endif %}
+    <p class="text {{testimonialSize}}">{{ testimonial.text }}</p>
     <p class="author small">{{ testimonial.author }}</p>
     {% if testimonial.jobtitle %}
-        <p class="jobtitle small">{{ testimonial.jobtitle }}</p>
+        <p class="jobtitle {{testimonialSize}}">{{ testimonial.jobtitle }}</p>
     {% endif %}
     {% if testimonial.company %}
-        <p class="company small">{{ testimonial.company }}</p>
+        <p class="company {{testimonialSize}}">{{ testimonial.company }}</p>
     {% endif %}
     </div>
 {% endfor %}

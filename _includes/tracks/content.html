@@ -28,7 +28,7 @@
 <section class="tracks-content tracks-text testimonials single-column-testimonials">
     <grid>
         <content>
-            <h3>Attending Companies &amp; Studios <span class="tickets-left">{{track.tickets_left}} Day Tickets Left!</span></h3>
+            <h3> <span class="tickets-left">{{track.tickets_left}} Day Tickets Left!</span> Attending Companies &amp; Studios</h3>
             <div class="block">
                 <ul>
                 {% for company in track.companies %}
@@ -55,9 +55,8 @@
             </div>
             <div class="block testimonials">
                     {% assign testimonialsInRow = 1 %}
-                    {% assign textBig = true %}
+                    {% assign testimonialSize = "" %}
                     {% include testimonials.html %}
-                    {% assign textBig = false %}
             </div>
         
         <br style="clear: both;"/>
