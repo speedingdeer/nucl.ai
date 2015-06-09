@@ -123,9 +123,10 @@ sections.page section.thumbnails-grid.tracks-content {
 
 sections.page section.testimonials {
     content {
-        min-height: 22em;
         div.block {
-            .column(4);
+            @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) { 
+                .column(4);
+            }
             .testimonial { opacity: 0.85; }
         }
     }

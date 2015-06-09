@@ -1,6 +1,10 @@
 section.testimonials.full-width {
     grid {
         content {
+            height: 16em;
+            @media screen and (max-width: (@SMARTPHONE_MAX_PORTRAIT * 1.8)) { height: 20em; }
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 16em; }
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { .row(11); }
             .testimonial {
                 .column(4);
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
@@ -28,10 +32,6 @@ section.testimonials {
             /**
             * Dislike these differet fixed sizes here.
             */
-            height: 16em;
-            @media screen and (max-width: (@SMARTPHONE_MAX_PORTRAIT * 1.8)) { height: 20em; }
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 16em; }
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { .row(11); }
             .testimonial {
                 text-align: justify;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
