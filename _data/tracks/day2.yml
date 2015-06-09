@@ -7,3 +7,9 @@
   time:
     start: "09:00"
     finish: "10:00"
+
+- title: "Networking Hour in the Lobby"
+  room: laboratories
+  time:
+    start: "09:00"
+    finish: "10:00"

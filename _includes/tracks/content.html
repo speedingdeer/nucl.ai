@@ -13,7 +13,7 @@
     {% endfor %}
 {% endfor %}
 
-<section class="tracks-content tracks-text tickets">
+<section class="tracks-content tracks-text">
     <grid>
         <h2>{{item.title}} (Day #{{dayIdx}})</h2>
 
@@ -21,7 +21,71 @@
         <content>
             <h4>{{item.subtitle}}</h4>
             <p class="intro"><span>Now in its 7th edition, <a href="/">nucl.ai</a> brings together hundreds of developers from creative industries and interactive media to resolve the biggest technical and design problems with Artificial Intelligence.  One of the event's tracks focuses specifically on</span> <b>&ldquo;{{item.title}}&rdquo;</b> <span>for an entire day. ({{date}})</span></p>
+        </content>
+    </grid>
+</section>
 
+<section class="tracks-content tracks-text testimonials">
+    <grid>
+        <content>
+            <div class="block">
+                <ul>
+                    <li>Pixar Animation Studios</li>
+                    <li>Ubisoft Studios</li>
+                    <li>IBM Watson</li>
+                    <li>Moving Picture Company</li>
+                    <li>CD Projekt Red</li>
+                    <li>Microsoft Game Studios</li>
+                    <li>Jagex</li>
+                    <li>Creative Assembly</li>
+                     <li>University of Essex</li>
+                    <li>Bohemia Interactive</li>
+                    <li>Turn 10 Studios</li>
+                </ul>
+            </div>   
+
+            <div class="block">
+                <ul>
+                    <li>Unity Technologies</li>
+                    <li>Lionhead Studios</li>
+                    <li>Epic Games</li>
+                    <li>INRIA Research Lab</li>
+                    <li>Nordeus</li>
+                    <li>Iron Galaxy Studios</li>
+                    <li>MASA Group</li>
+                    <li>University of Muenster</li>
+                    <li>King.com</li>
+                    <li>CCP Games</li>
+                    <li>...</li>
+                </ul>
+            </div>
+            
+        {% for testimonial in site.data.testimonials %}
+            {% if forloop.index <= 1 %}
+            <div class="testimonial selected animated flipInX">
+            {% else %}
+            <div class="testimonial animated flipOutX">
+            {% endif %}
+                <p class="text small">{{ testimonial.text }}</p>
+                <p class="author small">{{ testimonial.author }}</p>
+                {% if testimonial.jobtitle %}
+                    <p class="jobtitle small">{{ testimonial.jobtitle }}</p>
+                {% endif %}
+                {% if testimonial.company %}
+                    <p class="company small">{{ testimonial.company }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+        
+        <br style="clear: both;"/>
+        </content>
+        <br style="clear: both;"/>
+    </grid>
+</section>
+
+<section class="tracks-content tracks-text tickets">
+    <grid>
+        <content>
         {% for ticket in site.data.track_price %}
             {% if ticket.date and ticket.date != "" %} {% capture row_class %} long {% endcapture %} {% else %} {% capture row_class %} short {% endcapture %} {% endif %}
             <item class="ticket-row ticket-price {{row_class}} {{ticket.type}} bigger">
@@ -99,7 +163,6 @@
         </content>
     </grid>
 </section>
-
 
 
 <section class="program-schedule track-schedule">

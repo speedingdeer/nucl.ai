@@ -7,16 +7,12 @@
         <content class="wide">
         {% for testimonial in site.data.testimonials %}
             {% if forloop.index <= 2 %}
-                <div class="{% cycle 'left', 'right' %} testimonial selected animated flipInX">
+            <div class="{% cycle 'left', 'right' %} testimonial selected animated flipInX">
             {% else %}
-                <div class="{% cycle 'left', 'right' %} testimonial animated flipOutX">
+            <div class="{% cycle 'left', 'right' %} testimonial animated flipOutX">
             {% endif %}
                 <p class="text small">{{ testimonial.text }}</p>
                 <p class="author small">{{ testimonial.author }}</p>
-                {% comment %}
-                    missing context to show the origin year
-                    <p>{{ testimonial.year }}</p>
-                {% endcomment %}
                 {% if testimonial.jobtitle %}
                     <p class="jobtitle small">{{ testimonial.jobtitle }}</p>
                 {% endif %}
