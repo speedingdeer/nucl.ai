@@ -7,7 +7,7 @@ logo.orange, .logo.orange { background-image: url(" {{ '/img/logo_orange.png' | 
 
 
 /* splash screen background image (before gif is loaded) */
-div.splash-screen-wrap { background-image: url(" {{ '/img/audience-0.png' | prepend: site.baseurl }} ");}
+div.splash-screen-wrap { background-image: url(" {{ '/img/audience.gif' | prepend: site.baseurl }} ");}
 div.splash-screen-wrap.uni-campus { background-image: url(" {{ '/img/venue/uni-campus.jpg'| prepend: site.baseurl }} "); } 
 div.splash-screen-wrap.uni-campus-quads { background-image: url(" {{ '/img/venue/uni-campus.png'| prepend: site.baseurl }} "); } 
 
