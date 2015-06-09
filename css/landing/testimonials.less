@@ -1,9 +1,9 @@
 section.testimonials.full-width {
     grid {
         content {
-            height: 16em;
-            @media screen and (max-width: (@SMARTPHONE_MAX_PORTRAIT * 1.8)) { height: 20em; }
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 16em; }
+            min-height: 16em;
+            @media screen and (max-width: (@SMARTPHONE_MAX_PORTRAIT * 1.8)) { min-height: 20em; }
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { min-height: 16em; }
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { .row(11); }
             .testimonial {
                 .column(4);
