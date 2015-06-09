@@ -45,6 +45,7 @@
     - Iron Galaxy Studios
     - MASA Group
     - CCP Games
+  tickets_left: 27
 
 - id: decisions
   title: "Real-time Decisions"
@@ -93,6 +94,7 @@
     - Iron Galaxy Studios
     - MASA Group
     - CCP Games
+  tickets_left: 27
 
 - id: behavior
   title: "Agent Behavior"
@@ -140,6 +142,7 @@
     - Iron Galaxy Studios
     - MASA Group
     - CCP Games
+  tickets_left: 26
 
 - id: procedural
   title: "Procedural Content Generation"
@@ -189,6 +192,7 @@
     - Iron Galaxy Studios
     - MASA Group
     - CCP Games
+  tickets_left: 26
 
 - id: alternate
   title: "Virtual / Augmented Reality"
@@ -236,6 +240,7 @@
     - Iron Galaxy Studios
     - MASA Group
     - CCP Games
+  tickets_left: 27
 
 - id: ambient
   title: "Crowds and Ambient Life"
@@ -286,6 +291,7 @@
     - Iron Galaxy Studios
     - MASA Group
     - CCP Games
+  tickets_left: 27
 
 - id: analytics
   title: "Advanced Analytics & Data Science"
@@ -336,6 +342,7 @@
     - Iron Galaxy Studios
     - MASA Group
     - CCP Games
+  tickets_left: 26
 
 - id: systems
   title: "Systemic Design, AI Directors"
@@ -386,6 +393,7 @@
     - Iron Galaxy Studios
     - MASA Group
     - CCP Games
+  tickets_left: 27
 
 - id: cognition
   title: "Cognitive Bots & Language"
@@ -436,3 +444,4 @@
     - Iron Galaxy Studios
     - MASA Group
     - CCP Games
+  tickets_left: 27
