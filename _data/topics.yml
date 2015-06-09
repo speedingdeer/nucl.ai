@@ -32,6 +32,7 @@
   companies:
     - Pixar Animation Studios
     - Ubisoft Montreal
+    - Square Enix
     - Moving Picture Company
     - CD Projekt Red
     - Microsoft Game Studios
@@ -77,6 +78,21 @@
     title: The AI Sandbox
     url: http://aisandbox.com/
   companies:
+    - Pixar Animation Studios
+    - Ubisoft Montreal
+    - Square Enix
+    - Moving Picture Company
+    - CD Projekt Red
+    - Microsoft Game Studios
+    - Creative Assembly
+    - Bohemia Interactive
+    - Unity Technologies
+    - Epic Games
+    - Lionhead Studios
+    - INRIA Research Lab
+    - Iron Galaxy Studios
+    - MASA Group
+    - CCP Games
 
 - id: behavior
   title: "Agent Behavior"
@@ -109,6 +125,21 @@
     title: The Sims 4
     url: http://www.thesims.com/
   companies:
+    - Pixar Animation Studios
+    - Ubisoft Montreal
+    - Square Enix
+    - Moving Picture Company
+    - CD Projekt Red
+    - Microsoft Game Studios
+    - Creative Assembly
+    - Bohemia Interactive
+    - Unity Technologies
+    - Epic Games
+    - Lionhead Studios
+    - INRIA Research Lab
+    - Iron Galaxy Studios
+    - MASA Group
+    - CCP Games
 
 - id: procedural
   title: "Procedural Content Generation"
@@ -143,6 +174,21 @@
     title: "Sir, You're Being Hunted"
     url: http://www.big-robot.com/
   companies:
+    - Pixar Animation Studios
+    - Ubisoft Montreal
+    - Square Enix
+    - Moving Picture Company
+    - CD Projekt Red
+    - Microsoft Game Studios
+    - Creative Assembly
+    - Bohemia Interactive
+    - Unity Technologies
+    - Epic Games
+    - Lionhead Studios
+    - INRIA Research Lab
+    - Iron Galaxy Studios
+    - MASA Group
+    - CCP Games
 
 - id: alternate
   title: "Virtual / Augmented Reality"
@@ -175,6 +221,21 @@
     title: Project Trains
     url: http://project-trains.tumblr.com/
   companies:
+    - Pixar Animation Studios
+    - Ubisoft Montreal
+    - Square Enix
+    - Moving Picture Company
+    - CD Projekt Red
+    - Microsoft Game Studios
+    - Creative Assembly
+    - Bohemia Interactive
+    - Unity Technologies
+    - Epic Games
+    - Lionhead Studios
+    - INRIA Research Lab
+    - Iron Galaxy Studios
+    - MASA Group
+    - CCP Games
 
 - id: ambient
   title: "Crowds and Ambient Life"
@@ -210,6 +271,21 @@
     title: Golaem Crowd
     url: http://golaem.com/
   companies:
+    - Pixar Animation Studios
+    - Ubisoft Montreal
+    - Square Enix
+    - Moving Picture Company
+    - CD Projekt Red
+    - Microsoft Game Studios
+    - Creative Assembly
+    - Bohemia Interactive
+    - Unity Technologies
+    - Epic Games
+    - Lionhead Studios
+    - INRIA Research Lab
+    - Iron Galaxy Studios
+    - MASA Group
+    - CCP Games
 
 - id: analytics
   title: "Advanced Analytics & Data Science"
@@ -245,6 +321,21 @@
     title: Dmitry Nozhnin
     url: http://www.gamasutra.com/blogs/DmitryNozhnin/417356/
   companies:
+    - Pixar Animation Studios
+    - Ubisoft Montreal
+    - Square Enix
+    - Moving Picture Company
+    - CD Projekt Red
+    - Microsoft Game Studios
+    - Creative Assembly
+    - Bohemia Interactive
+    - Unity Technologies
+    - Epic Games
+    - Lionhead Studios
+    - INRIA Research Lab
+    - Iron Galaxy Studios
+    - MASA Group
+    - CCP Games
 
 - id: systems
   title: "Systemic Design, AI Directors"
@@ -280,6 +371,21 @@
     title: Far Cry 4
     url: http://far-cry.ubi.com/
   companies:
+    - Pixar Animation Studios
+    - Ubisoft Montreal
+    - Square Enix
+    - Moving Picture Company
+    - CD Projekt Red
+    - Microsoft Game Studios
+    - Creative Assembly
+    - Bohemia Interactive
+    - Unity Technologies
+    - Epic Games
+    - Lionhead Studios
+    - INRIA Research Lab
+    - Iron Galaxy Studios
+    - MASA Group
+    - CCP Games
 
 - id: cognition
   title: "Cognitive Bots & Language"
@@ -315,3 +421,18 @@
     title: IBM Watson
     url: http://www.ibm.com/smarterplanet/us/en/ibmwatson/
   companies:
+    - Pixar Animation Studios
+    - Ubisoft Montreal
+    - Square Enix
+    - Moving Picture Company
+    - CD Projekt Red
+    - Microsoft Game Studios
+    - Creative Assembly
+    - Bohemia Interactive
+    - Unity Technologies
+    - Epic Games
+    - Lionhead Studios
+    - INRIA Research Lab
+    - Iron Galaxy Studios
+    - MASA Group
+    - CCP Games
