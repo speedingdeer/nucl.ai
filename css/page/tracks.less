@@ -122,11 +122,19 @@ sections.page section.thumbnails-grid.tracks-content {
 }
 
 sections.page section.testimonials {
+    margin-top: -3em;
     content {
-        min-height: 22em;
+        &:extend(.smaller);
+        min-height: 24em;
+        h3 {
+            font-size: 21.4333px
+        }
+
         div.block {
             .column(4);
-            .testimonial { opacity: 0.85; }
+            .testimonial {
+                opacity: 0.85;
+            }
         }
     }
 }
