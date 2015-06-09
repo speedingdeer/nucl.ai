@@ -57,13 +57,18 @@
                             </titles>
                         </content>
                     </div>
-                    {% if page.name == 'index.html' %}
-                        <div class="centered-cell">
-                            <div class="video">
-                                {% include videos/splash.html %}
+
+                    {% comment %}
+                        {% if page.name == 'index.html' %}
+                            <div class="centered-cell video-cell">
+                                <div class="video">
+                                    {% include videos/splash.html %}
+                                </div>
                             </div>
-                        </div>
-                    {% endif %}
+                        {% endif %}
+                    {% endcomment %}
+
+
                 </div>
                 {% comment %} Prevent navigtion from overlaping {% endcomment %}
                 <navigation-fantom></navigation-fantom>
