@@ -125,9 +125,16 @@ sections.page section.testimonials {
     margin-top: -3em;
     content {
         &:extend(.smaller);
-        min-height: 24em;
+        min-height: 20em;
         h3 {
-            font-size: 21.4333px
+            font-size: 21.4333px;
+            span.tickets-left {
+                float: right;
+                color: @ORANGE;
+                text-decoration: underline;
+                text-transform: uppercase;
+                font-size: 18px;
+            }
         }
 
         div.block {
