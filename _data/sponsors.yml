@@ -15,3 +15,7 @@
 - id: havok
   name: "Havok"
   homepage: http://www.havok.com/
+
+- id: unity
+  name: "Unity"
+  homepage: https://unity3d.com/
