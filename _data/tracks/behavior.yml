@@ -57,10 +57,15 @@
 
 - title: "Reusability and abstraction: the next evolution for Behavior Trees"
   description: >
-    Behavior trees (BTs) are now commonly used to create autonomous behaviors in games and simulation. While, in practice, a visual programming language, their abstractions are commonly limited to the reuse of subtrees in other trees, the equivalent of defining a nonparametric function. While useful it is still a very limited abstraction.
-    In this talk, we propose a way to bring more powerful abstractions from general programming languages to BTs. Attendees will learn how local variables and parameterized subtrees are one of the key to make the creation of reusable behavior trees both easier and less error­ prone.
+    Behavior trees (BTs) are now commonly used to create autonomous behaviors in games and simulation. Usually in behavior 
+    trees, the abstractions are limited to the reuse of subtrees in other trees, which is the equivalent of defining a 
+    nonparametric function in a regular programming language. While this kind of abstraction is useful, it is still very 
+    limited. In this talk, we propose a way to bring more powerful abstractions from general programming languages to BTs. 
+    Attendees will learn how local variables and parameterized subtrees are one of the key to make the creation of reusable 
+    behavior trees both easier and less error prone.
   speakers:
     - Juraj Blaho
+    - Martin Kolombo
   room: masterclass
   time:
     start: "11:15"
