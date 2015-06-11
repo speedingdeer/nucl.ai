@@ -483,8 +483,22 @@
     url: https://www.bistudio.com/
     position: Senior AI Developer
   bio: >
-    Juraj works as a Senior AI Programmer at Bohemia Interactive Simulations. He is currently developing a new AI subsystem for Virtual Battlespace 3 (VBS3), which is well known in game-based military training and simulation. He closely cooperates with game designers to address their AI needs. Previously he worked at SAAB also developing training and simulation solutions.
+    Juraj works as a Senior AI Programmer at Bohemia Interactive Simulations. He is currently developing a new AI subsystem for 
+    Virtual Battlespace 3 (VBS3), which is well known in game-based military training and simulation. He closely cooperates with 
+    game designers to address their AI needs. Previously he worked at SAAB also developing training and simulation solutions.
 
+- name: Martin Kolombo
+  role: speaker
+  confirmed: true
+  affiliation:
+    name: Bohemia Interactive
+    url: https://www.bistudio.com/
+    position: Senior Game Designer
+  bio: >
+    Martin works as a Senior Game Designer at Bohemia Interactive Simulations. He is currently the product owner of the new 
+    AI subsystem being developed in Bohemia Interactive Simulations. Previously he worked on designing many of the core 
+    gameplay features of VBS3, including advanced command and control systems, bridge laying, or advanced medical simulation.
+    
 - name: Newfel Messouci
   role: speaker
   confirmed: true
