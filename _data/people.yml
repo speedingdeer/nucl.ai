@@ -60,6 +60,10 @@
     analyst, and HCI researcher. Recently, she has been an early stage advisor for two analytics-related startups. She has 
     been forgetting  R syntax for over 30 years, dating from back when R was S. 
     When she finds shiny things she shares them on @hastark.
+  affiliation:
+    position: "Analyst"
+    name: Kinran Limited
+    url: http://kinran.com/
 
 - name: Tommy Thompson
   role: track
