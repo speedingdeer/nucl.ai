@@ -297,27 +297,17 @@
   title: "Advanced Analytics & Data Science"
   subtitle: >
     Join experts from Lionhead Studios, King.com, Nordeus, Jagex, Mind Candy and Scientific
-    Revenue for a day-long course on state-of-the-art applications of analytics techniques
-    using pattern recognition and machine learning.  Learn how to setup player profiling and
-    apply them for dynamic pricing or reducing churn in your game or application.
+    Revenue for a day-long course on the state-of-the-art of analytics techniques for
+    understanding and enhancing player experience and design choices — whether for games or
+    apps — using combinations of machine learning and clever modeling tricks!
   content: >
     <img src="/img/tracks/TopEleven_1.jpg"/>
     <p class="credit"><u>Image Credit</u>: Top 11 Football Manager</p> 
-    <p>Understanding user behavior is a component that's critical to application
-    development, and also increasingly important at runtime.  This track will
-    cover essential concepts in behavioral analytics and user profiling and
-    in particular how machine learning can help.  Whether you're building
-    complex simulations, interactive applications or games, this will help you
-    gain a better understanding of the tricks and techniques to apply on your
-    project!</p>
+    <p>In this track, you'll learn about how and why dynamic pricing impacts revenues.  Understand the special blend  of skill and luck that goes into a casual game - and the extra ingredient that is needed to explain real player results.  Discover effective computational approaches to complex balance problems, the challenges of real-time analytics, and the design of effective recommendation systems to power choices presented in game worlds.  Thrill to the never before told story of  how one studio detected and prevented early churners!</p>
+
+    <p>Applying analytics to game design is not about driving by looking in the rear view mirror while ranting about KPIs.  Analytics can be used to apply real-time or just-in-time intelligent design judgement to the logic of who sees what when,  and to the multidimensional dynamic challenges of balance and matchmaking.   Our experts explain their creative analytical solutions to a variety of challenges in game design and experience design, across a variety of platforms and genres.   Our goal is to give you some knowledge you can take home and apply.   Come join the fun!</p>
   description: >
-    Understanding user behavior is a component that's critical to application
-    development, and also increasingly important at runtime.  This track will
-    cover essential concepts in behavioral analytics and user profiling and
-    in particular how machine learning can help.  Whether you're building
-    complex simulations, interactive applications or games, this will help you
-    gain a better understanding of the tricks and techniques to apply on your
-    project!
+    In this track, you'll learn about how and why dynamic pricing impacts revenues.  Understand the special blend  of skill and luck that goes into a casual game - and the extra ingredient that is needed to explain real player results.  Discover effective computational approaches to complex balance problems, the challenges of real-time analytics, and the design of effective recommendation systems to power choices presented in game worlds.  Thrill to the never before told story of  how one studio detected and prevented early churners!
   keywords:
     - machine learning
     - adaptive systems (pricing)
@@ -327,20 +317,19 @@
     title: Dmitry Nozhnin
     url: http://www.gamasutra.com/blogs/DmitryNozhnin/417356/
   companies:
-    - Pixar Animation Studios
-    - Ubisoft Montreal
+    - King.com
+    - Nordeus
     - Square Enix
-    - Moving Picture Company
-    - CD Projekt Red
+    - Scientific Revenue
+    - Lionhead Studios
+    - Jagex
     - Microsoft Game Studios
     - Creative Assembly
+    - Ubisoft Montreal
+    - Mind Candy
     - Bohemia Interactive
-    - Unity Technologies
     - Epic Games
-    - Lionhead Studios
-    - INRIA Research Lab
-    - Iron Galaxy Studios
-    - MASA Group
+    - CD Projekt Red
     - CCP Games
   tickets_left: 26
 
