@@ -9,8 +9,8 @@
     - Jeffrey Schlimmer
   room: amphitheatre
   time:
-    start: "12:00"
-    finish: "13:00"
+    start: "11:15"
+    finish: "12:15"
 
 - title: "Optimizing MCTS Performance for Tactical Coordination in TOTAL WAR: ATILLA"
   description: >
@@ -34,8 +34,8 @@
     - Gwaredd Mountain
   room: amphitheatre
   time:
-    start: "11:15"
-    finish: "12:00"
+    start: "12:15"
+    finish: "13:00"
 
 - title: "Innovations in Search-based AI from MCTS to Evolutionary Algorithms"
   description: >
@@ -57,7 +57,7 @@
     start: "15:15"
     finish: "15:45"
 
-- title: "Multi-Objective and Fuzzy techniques for Balancing and Improving RTS AI "
+- title: "Multi-Objective and Fuzzy Techniques for Balancing and Improving RTS AI "
   description: >
     Players of strategy games (as MOBA and RTS) often express their desire for more "intelligent" opponents or bots. Recent game AI developments and the outcome of the last Starcraft AI (bot) tournaments suggest that this can be achieved by Fuzzy Logic approaches that adapt the basic strategy to the current situation.
     Additionally, another topic of that gets more and more important in the light of user or dynamically generated content and online updates is balancing.  Recent works show that a multi-objective approach can be helfpul here because balancing must often respect multiple, contradicting goals. In this talk, we will discuss how these techniques are able to provide a more intelligent and adaptive behaviour in real time strategy games.

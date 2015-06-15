@@ -69,10 +69,11 @@
     start: "11:15"
     finish: "12:00"
 
-# Considering Paul for his pipeline/animation material. 
-- title: Animation in Visual Effects Masterclass **
+- title: Animation in Visual Effects Masterclass
   description: >
     ...
+  speakers:
+    - Paul Kanyuk
   room: masterclass
   time:
     start: "13:45"
