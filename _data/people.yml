@@ -479,8 +479,8 @@
   role: speaker
   confirmed: true
   affiliation:
-    name: Bohemia Interactive
-    url: https://www.bistudio.com/
+    name: Bohemia Interactive Simulations
+    url: https://www.bisimulations.com/
     position: Senior AI Developer
   bio: >
     Juraj works as a Senior AI Programmer at Bohemia Interactive Simulations. He is currently developing a new AI subsystem for 
@@ -541,8 +541,8 @@
   role: speaker
   confirmed: true
   affiliation:
-    name: Bohemia Interactive
-    url: https://www.bistudio.com/
+    name: Bohemia Interactive Simulations
+    url: https://www.bisimulations.com/
     position: Programmer
   bio: >
     Vladimir Nejedly studied computer graphics at Faculty of Mathematics and Physics of Charles
