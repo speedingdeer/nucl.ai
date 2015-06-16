@@ -1,5 +1,5 @@
 <timer-dashboard name="{{timer_name}}" off="{{timer_off}}" count-to="{{timer_count_to}}" on-finish="{{timer_on_finish}}">
-    <h3> {{timer_title}} </h3>
+    {% if timer_title != "" %}<h3>{{timer_title}}</h3>{% endif %}
     <clock class="days">
         <div class="table value-wrap-table">
             <span class="centered-cell">

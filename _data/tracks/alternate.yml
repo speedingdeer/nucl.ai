@@ -40,11 +40,9 @@
     start: "10:00"
     finish: "12:15"
 
-- title: AR/VR Demo Time in the Conference Lobby! **
+- title: AR/VR Demo Time in the Conference Lobby!
   description: >
-    Throw fireballs in a magical fairyland brought into life by Leap Motion Hand Tracking and the Oculus Rift (DevKit 2).
-    Get your hands on the Rift, Hydra, Leap Motion and other devices. 
-    Experience what VR is all about. 
+    Throw fireballs in a magical fairyland brought into life by Leap Motion Hand Tracking and the Oculus Rift (DK2).  Get your hands on the Rift, Hydra, Leap Motion and other devices and experience what VR is about! 
   room: laboratories
   speakers:
     - Richard Kogelnig
