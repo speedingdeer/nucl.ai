@@ -202,6 +202,7 @@
 
 - name: Kevin Carpentier
   role: speaker
+  confirmed: true
   affiliation: 
     name: "CNRS, Heudiasyc Lab"
     url: https://www.hds.utc.fr
