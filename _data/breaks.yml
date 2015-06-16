@@ -28,12 +28,12 @@
         finish: "11:15"
     - name: Lunch Break
       time:
-        start: "13:00"
-        finish: "14:00"
+        start: "13:15"
+        finish: "14:15"
     - name: Coffee Pause
       time:
-        start: "15:30"
-        finish: "16:00"
+        start: "15:45"
+        finish: "16:15"
 
 - day: 3
   breaks:

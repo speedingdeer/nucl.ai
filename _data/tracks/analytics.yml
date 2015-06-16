@@ -48,8 +48,8 @@
     - Simon Worgan
   room: masterclass
   time:
-    start: "14:45"
-    finish: "15:30"
+    start: "15:00"
+    finish: "15:45"
 
 - title: "Early Churn Prediction and Personalised Interventions in TOP 11"
   description: >
@@ -64,8 +64,8 @@
     - Miloš Milošević
   room: amphitheatre
   time:
-    start: "16:00"
-    finish: "16:45"
+    start: "16:15"
+    finish: "17:00"
 
 - title: "Measuring Player Skill at Complex Team Games in Fable Legends"
   description: >
@@ -109,8 +109,8 @@
     - Ivan Encinas
   room: masterclass
   time:
-    start: "16:45"
-    finish: "17:30"
+    start: "17:00"
+    finish: "17:45"
 
 - title: "Standup Session and Open Q&A"
   description: >
@@ -119,5 +119,5 @@
     - Heather Stark
   room: laboratories
   time:
-    start: "14:00"
-    finish: "14:45"
+    start: "14:15"
+    finish: "15:00"

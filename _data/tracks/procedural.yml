@@ -5,8 +5,8 @@
     - Hazel McKendrick
   room: amphitheatre
   time:
-    start: "14:45"
-    finish: "15:30"
+    start: "15:00"
+    finish: "15:45"
 
 - title: "Generating Global Cultures and Characters in ULTIMA RATIO REGUM"
   description: >
@@ -26,8 +26,8 @@
     - Vladimir Nejedly
   room: masterclass
   time:
-    start: "16:00"
-    finish: "16:45"
+    start: "16:15"
+    finish: "17:00"
 
 - title: "Generating Geometry Algorithmically (Workshop) **"
   description: >
