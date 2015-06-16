@@ -52,8 +52,8 @@
     - Newfel Messouci
   room: masterclass
   time:
-    start: "11:45"
-    finish: "12:15"
+    start: "12:00"
+    finish: "12:30"
 
 - title: "Reusability and abstraction: the next evolution for Behavior Trees"
   description: >
@@ -69,7 +69,7 @@
   room: masterclass
   time:
     start: "11:15"
-    finish: "11:45"
+    finish: "12:00"
 
 - title: "Injecting Behavior Trees into Unreal Tournament's Bots (Workshop) **"
   description: >

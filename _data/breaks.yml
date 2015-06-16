@@ -10,7 +10,7 @@
     - name: Coffee Pause
       time:
         start: "10:45"
-        finish: "11:15"
+        finish: "11:30"
     - name: Lunch Break
       time:
         start: "13:00"

@@ -49,34 +49,33 @@
     the track the open challenges of the field and how AI can continue to innovate in this area.
   speakers:
     - Tommy Thompson
-  room: laboratories
+  room: masterclass
   time:
-    start: "14:30"
+    start: "16:45"
+    finish: "17:30"
+
+- title: "Designing CAD Tools for Productivity and Creativity"
+  description: >
+    ...
+#   Mixed-initiative design tools both support users in their design process but also contribute with novel ideas. 
+#	  A mixed-initiative tool should recognize the user's intentions, aesthetic preferences and design process; suggesting either the next logical step towards the user's perceived goal or present an unexpected alternative which the designer hadn't thought of. 
+#   This talk will cover mixed-initiative design where both human and computer proactively contribute to the solution. Furthermore , we will present methods how Artificial Intelligence can assist a novice user in getting acquainted with the task of designing. 
+#	  We will conclude with promising directions (and low-hanging fruit) for commercial tool development wishing to incorporate AI-assisted and mixed-initiative design paradigms.
+  speakers:
+    - Antonios Liapis
+  room: masterclass
+  time:
+    start: "15:00"
     finish: "15:30"
 
-# - title: "Designing CAD Tools for Novices: Can Algorithms Enhance productivity or foster creativity?"
-#   description: >
-#     Mixed-initiative design tools both support users in their design process but also contribute with novel ideas. 
-#	  A mixed-initiative tool should recognize the user's intentions, aesthetic preferences and design process; suggesting either the next logical  
-#     step towards the user's perceived goal or present an unexpected alternative which the designer hadn't thought of. 
-#
-#     This talk will cover mixed-initiative design where both human and computer proactively contribute to the solution. Furthermore , we will  
-#     present methods how Artificial Intelligence can assist a novice user in getting acquainted with the task of designing. 
-#	  We will conclude with promising directions (and low-hanging fruit) for commercial tool development wishing 
-#     to incorporate AI-assisted and mixed-initiative design paradigms.
-#		<ul>
-#			<li>Can intelligent CAD tools design game content with or without human collaborators, and what is the difference? </li>
-#			<li>How do human designers react to proactive systems, and how can the CAD system minimize frustration and maximize output? </li>
-#			<li>There are specific phases of development where AI can contribute to the creativity of a dev team.</li>
-#			<li>Speeding up development during crunch does not need elaborate artificial intelligence; in contrast, fostering human creativity during brainstorming requires several layers or fine-tuned AI and UI.</li>
-#			<li>Interface design of intelligent development tools is an ongoing balancing act between reducing a novice's cognitive load and increasing human users' control over created content.</li>
-#		</ul>
-#   speakers:
-#     - Antonios Liapis
-
-#- title: "Orchestration of virtual environments for training in complex sociotechnical situations"
-#  description: >
-#	 The talk will present the HUMANS platform (Human models based Artificial eNvironments Software platform): a system to orchestrate virtual environments for learning.  HUMANS generate these environments dynamically and without impairing the world coherency nor the emergence of new and unpredicted situations. 
-#	 The HUMANS platform relies on the modelling of human and social activities leveraging highly complex artificial intelligence techniques such as knowledge representation, uncertainty processing and decisional artificial intelligence.
-#  speakers:
-#    - Kevin Carpentier
+- title: "Techniques for Orchestration of Virtual Environments"
+  description: >
+    ...
+# The talk will present the HUMANS platform (Human models based Artificial eNvironments Software platform): a system to orchestrate virtual environments for learning.  HUMANS generate these environments dynamically and without impairing the world coherency nor the emergence of new and unpredicted situations. 
+# The HUMANS platform relies on the modelling of human and social activities leveraging highly complex artificial intelligence techniques such as knowledge representation, uncertainty processing and decisional artificial intelligence.
+  speakers:
+    - Kevin Carpentier
+  room: masterclass
+  time:
+    start: "14:30"
+    finish: "15:00"

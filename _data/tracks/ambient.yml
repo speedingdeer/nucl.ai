@@ -70,8 +70,8 @@
     - Mikko Mononen
   room: masterclass
   time:
-    start: "11:15"
-    finish: "12:00"
+    start: "11:30"
+    finish: "12:15"
 
 - title: "Cross-Polination Panel: VFX, Simulation, Games"
   room: laboratories
@@ -81,10 +81,10 @@
     start: "16:00"
     finish: "16:45"
 
-- title: "Navigation Mesh and Pathfinding Clinic **"
+- title: "Unity Navigation Mesh and Pathfinding Clinic"
   room: laboratories
-  # speakers:
-  #   - Mikko Mononen
+  speakers:
+    - Mikko Mononen
   time:
-    start: "12:00"
+    start: "12:15"
     finish: "13:00"

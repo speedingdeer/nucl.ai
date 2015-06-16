@@ -1,8 +1,8 @@
 name,type,date,all_access,conference,single_day
 "",main,"",All Access (3 Days),Conference (3 Days),Single Day Ticket
-Discounted (timed),main,See below for the exact percentages...,from € 319,from € 119, -
-Early Bird (limited),main,Limited number of tickets only!,Sold Out!,Sold Out!, € 319  </br><span class='comment'> 14 tickets left </span> 
-Early Worm (timed),main,Available at the latest until June 15th.,€ 899,€ 299,€ 359  </br><span class='comment'> 25 tickets left </span> 
-Regular,main,Until July 20th,€ 999,€ 359,€ 399 </br><span class='comment'> 25 tickets left </span>
-Student Pass*,extras,Until July 12th,"60% off above","60% off above", -
-Indies or Unemployed Devs**,extras,Until July 12th,"40% off above","20% off above","20% off above"
+Discounted (timed),main,See below for the exact percentages...,from € 399,from € 149, -
+Early Bird (limited),main,Limited number of tickets only!,Sold Out!,Sold Out., Sold Out!
+Early Worm,main,Deadline passed; some day tickets left...,Gone!,Gone.,€ 319  </br><span class='comment'> 14 tickets left </span> 
+Regular,main,Until Friday July 19th,€ 999,€ 359,€ 359 </br><span class='comment'> 25 tickets left </span>
+Student Pass*,extras,Until Friday July 12th,"60% off above","60% off above", -
+Indies or Unemployed Devs**,extras,Until Friday July 12th,"30% off above","20% off above","20% off above"

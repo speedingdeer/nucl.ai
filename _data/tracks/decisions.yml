@@ -9,8 +9,8 @@
     - Jeffrey Schlimmer
   room: amphitheatre
   time:
-    start: "12:00"
-    finish: "13:00"
+    start: "11:15"
+    finish: "12:15"
 
 - title: "Optimizing MCTS Performance for Tactical Coordination in TOTAL WAR: ATILLA"
   description: >
@@ -34,10 +34,10 @@
     - Gwaredd Mountain
   room: amphitheatre
   time:
-    start: "11:15"
-    finish: "12:00"
+    start: "12:15"
+    finish: "13:00"
 
-- title: "MCTS and Related Algorithms for Real-Time Games"
+- title: "Innovations in Search-based AI from MCTS to Evolutionary Algorithms"
   description: >
     MCTS has revolutionised AI for classic board games such as Go, and more recently has been applied with some excellent results to controlling agents in real-time video games. However, there are many cases where vanilla MCTS fails to produce satisfactory results for a number of reasons, including massive branching factors, limited horizon depth, limited roll-out budget and flat reward landscape.  While these problems are not insurmountable, they may involve significant expertise and effort to overcome.  On the other hand, there are a number of alternative and similarly general approaches such as neural networks (trained using evolution or temporal difference learning) and rolling horizon evolutionary algorithms that have their own strengths and weaknesses.  In this talk I’ll outline the main factors to consider when choosing these methods, and also describe how they can be combined to provide even better solutions.  I’ll also discuss initial results from our General Video Game AI server (http://gvgai.net), and how this could create an efficient marketplace for agent AI.
   speakers:
@@ -47,9 +47,9 @@
     start: "16:15"
     finish: "16:45"
 
-- title: "Deep Reinforcement Learning In Practice: the DRL library, and Predictus API"
+- title: "Deep Reinforcement Learning In Practice for ATARI Games"
   description: >
-    The DeepMind (now Google) team had recently proposed their Deep Reinforcement Learning solution 'DQN' as a solution to human level game playing, using a variant of Q-Learning.  With credit to this prior project, our research group has also decided to develop a solution which would be 'at' or 'better' performance in playing video games. Our initial goals were for our agent to similarly reach or exceed human levels of performance, and then to create an open source library for broader use by the research community. These first goals met, we have named this library 'DRL'.  And now our current work is to build a dedicated network around agents of this type, eventually making this available for the general public via an existing machine learning API, called Predictus®. 
+    The DeepMind (now Google) team had recently proposed their Deep Reinforcement Learning solution 'DQN' as a solution to human level game playing, using a variant of Q-Learning.  With credit to this prior project, our research group has also decided to develop a solution which would be 'at' or 'better' performance in playing video games. Our initial goals were for our agent to similarly reach or exceed human levels of performance, and then to create an open source library for broader use by the research community. These first goals met, we have named this library 'DRL'.  And now our current work is to build a dedicated network around agents of this type, eventually making this available for the general public via an existing machine learning API, called Predictus®. During this talk, we'll briefly discuss the science of Deep Reinforcement Learning, the open source DRL library and the commercial API for game development Predictus. 
   speakers:
     - Chris Poulin
   room: masterclass
@@ -57,16 +57,16 @@
     start: "15:15"
     finish: "15:45"
 
-- title: "Can modern AI get RTS games out of their niche?"
+- title: "Multi-Objective and Fuzzy Techniques for Balancing and Improving RTS AI "
   description: >
-    While MOBA and casual games attract more and more users, RTS games seem to be left a bit behind. On base of recent game AI developments and the outcome Starcraft bot tournaments of the last years, we argue that this can be remedied at least partly by improving bot AI towards being much more flexible and communicative. Especially in the light of swift online updates, another important aspect of strategy games is balancing. Recent works show that a multi-objective approach can be helfpul here. We also discuss what input academic research needs from industry in order to effectively transfer algorithmic improvements and adapt them for newly developed games.
+    Players of strategy games (as MOBA and RTS) often express their desire for more "intelligent" opponents or bots. Recent game AI developments and the outcome of the last Starcraft AI (bot) tournaments suggest that this can be achieved by Fuzzy Logic approaches that adapt the basic strategy to the current situation.
+    Additionally, another topic of that gets more and more important in the light of user or dynamically generated content and online updates is balancing.  Recent works show that a multi-objective approach can be helfpul here because balancing must often respect multiple, contradicting goals. In this talk, we will discuss how these techniques are able to provide a more intelligent and adaptive behaviour in real time strategy games.
   speakers:
     - Mike Preuss
   room: masterclass
   time:
     start: "14:45"
     finish: "15:15"
-
 
 - title: "Imitating Human Play from Game Logs (Workshop)"
   description: >
