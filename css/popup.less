@@ -1,0 +1,40 @@
+popup {
+    display: none;
+    opacity: 0;
+    border: 5px solid;
+    z-index: 100;
+    p.close {
+        margin: 0;
+        text-align: right;
+        padding: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    &.alert {
+        font-weight: bold;
+        color: @ORANGE;
+        border-color: @ORANGE;
+        p.close {
+            background-color: @ORANGE;
+            color: @WHITE;
+        }
+    }
+    background-color: @LIGHT_GREY;
+    position: fixed;
+    width: 600px;
+    min-height: 200px;
+    left: calc(~"50vw - 300px");
+    top: calc(~"50vh - 150px");
+    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+        width: 300px;
+        min-height: 100px;
+        left: calc(~"50vw - 150px");
+        top: calc(~"50vh - 50px");
+    }
+    &.active {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+    }
+    .transition(0.5s all);
+}

@@ -28,7 +28,7 @@ $ ->
         ical.addEvent subject, description, location, begin, end
     icalButton.click ->
       if $("html").hasClass "safari"
-        window.alert ("Doesn't supported in Safari")
+        $("popup.ical").addClass("active");
       else
         ical.download(icalButton.attr("filename"))
       return false

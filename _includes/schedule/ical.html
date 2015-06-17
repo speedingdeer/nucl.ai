@@ -2,3 +2,7 @@
 {% for day in site.data.schedule %}
     <a href="" class="ical-button" source="#day-idx-{{forloop.index}}" filename="nucl.ai_day_{{forloop.index}}">Download {{day.title}} schedule in .ics format.</a>
 {% endfor %}
+
+{% assign popupClass="alert ical" %}
+{% assign popupText="Not supported in your browser." %}
+{% include popup.html %}
