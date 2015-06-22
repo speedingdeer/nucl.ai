@@ -544,7 +544,7 @@
   affiliation:
     name: Bohemia Interactive Simulations
     url: https://www.bisimulations.com/
-    position: Programmer
+    position: Lead Engine Architect
   bio: >
     Vladimir Nejedly studied computer graphics at Faculty of Mathematics and Physics of Charles
     University in Prague. After his graduation in 2001, he joined Bohemia Interactive Studio. He
@@ -561,7 +561,12 @@
     url: http://www.riotgames.com/
     position: Senior Animation Engineer
   bio: >
-    An accomplished Data Scientist in applications of Cognitive Computing technology, Poulin is the Principal Partner of Patterns and Predictions. While he was recently Director of The Durkheim Project, a non-profit big data collaboration with the U.S. VA and Facebook, Inc. Where Fast Company said "This may be the most vital use of big data we’ve ever seen." He was recently Co-Director of the Dartmouth Metalearning Working Group at Dartmouth College, working on large scale machine learning. He has also lectured in artificial intelligence at the U.S. Naval War College. At Nucl.ai, he will be illustrating successful Deep Reinforcement Learning applications.
+    Chris has been programming games for 8 years, and has maintained a
+focus on animation. His passion for animation has made games like
+Prince of Persia: Sands of Time and Soul Calibur some of his
+favorites. On the Champion Team at Riot Games, he works with animators
+to push the limits of animation in League of Legends and unlock more
+complex character movement.    
 
 - name: Michael Sellers
   role: speaker
