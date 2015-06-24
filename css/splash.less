@@ -21,7 +21,17 @@ section.splash-screen {
             opacity: 0.65;
         }
     }
-
+    .right-cell {
+        width: 50%;
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: none; }
+    }
+    .bottom-cell {
+        display: none;
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+            display: block;
+            padding-bottom: 40px;
+        }
+    }
     /** navigation */
     overflow: visible; //for drop down menu
     .splash-screen-wrap {
@@ -42,7 +52,8 @@ section.splash-screen {
                 }
                 padding-bottom: 0;
                 > content {
-                    padding: 20px 0;
+                    > logo-wrap { margin-bottom: 10px; }
+                    padding: 35px 0;
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 40px 0; }
                     .transition(1.5s opacity);
                     h1 {
@@ -91,7 +102,7 @@ section.splash-screen {
                     }
                     min-height: 0px;
                     height: 0px;
-                    padding: 50px 0;
+                    padding: 100px 0;
                     content {
                         display: table;
                         width: 100%;
