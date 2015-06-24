@@ -1,4 +1,4 @@
-livestream: "https://livestream.com/accounts/1422055"
+livestream: <iframe width="560" height="315" src="https://www.youtube.com/embed/7z2UzMxTsX4" frameborder="0" allowfullscreen></iframe>
 days:
   - start: "2015/07/20 8:30"
     finish: "2015/07/20 18:00"

@@ -1,35 +1,38 @@
-<timer-dashboard name="{{timer_name}}" off="{{timer_off}}" count-to="{{timer_count_to}}" on-finish="{{timer_on_finish}}">
-    {% if timer_title != "" %}<h3>{{timer_title}}</h3>{% endif %}
-    <clock class="days">
+
+<div class="dashboard-wrap">
+    <timer-dashboard name="{{timer_name}}" off="{{timer_off}}" count-to="{{timer_count_to}}" on-finish="{{timer_on_finish}}">
+        {% if timer_title != "" %}<h3>{{timer_title}}</h3>{% endif %}
+        <clock class="days">
+            <div class="table value-wrap-table">
+                <span class="centered-cell">
+                    <p class="value">0</p>
+                </span>
+            </div>
+            <p class="unit">Days</p>
+        </clock>
+        <clock class="hours">
+            <div class="table value-wrap-table">
+                <span class="centered-cell">
+                    <p class="value">0</p>
+                </span>
+            </div>
+            <p class="unit">Hours</p>
+        </clock>
+        <clock class="minutes">
         <div class="table value-wrap-table">
             <span class="centered-cell">
                 <p class="value">0</p>
             </span>
         </div>
-        <p class="unit">Days</p>
-    </clock>
-    <clock class="hours">
-        <div class="table value-wrap-table">
-            <span class="centered-cell">
-                <p class="value">0</p>
-            </span>
-        </div>
-        <p class="unit">Hours</p>
-    </clock>
-    <clock class="minutes">
-    <div class="table value-wrap-table">
-        <span class="centered-cell">
-            <p class="value">0</p>
-        </span>
-    </div>
-    <p class="unit">Minutes</p>
-    </clock>
-    <clock class="seconds">
-        <div class="table value-wrap-table">
-            <span class="centered-cell">
-                <p class="value">0</p>
-            </span>
-        </div>
-        <p class="unit">Seconds</p>
-    </clock>
-</timer-dashboard>
+        <p class="unit">Minutes</p>
+        </clock>
+        <clock class="seconds">
+            <div class="table value-wrap-table">
+                <span class="centered-cell">
+                    <p class="value">0</p>
+                </span>
+            </div>
+            <p class="unit">Seconds</p>
+        </clock>
+    </timer-dashboard>
+</div>

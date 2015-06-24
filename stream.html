@@ -9,7 +9,7 @@ permalink: /stream/
         <content>
 
             {% assign timer_title = "CONFERENCE LIVE STREAM STARTS IN:" %}
-            {% capture timer_on_finish %}window.location='{{site.data.stream.livestream}};'{% endcapture %}
+            {% capture timer_on_finish %} $('#stream-wrap').show(); timer.remove(); {% endcapture %}
 
             {% for day in site.data.stream.days %}
                 {% capture timer_name %}day-{{forloop.index}}-starts{% endcapture %}
@@ -21,6 +21,9 @@ permalink: /stream/
                 </div>
             {% endfor %}
 
+            <div id="stream-wrap">
+                {{site.data.stream.livestream}}
+            </div>
         </content>
     <grid>
 </grid>
