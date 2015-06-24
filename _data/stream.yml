@@ -1,6 +1,6 @@
-livestream: <iframe width="560" height="315" src="https://www.youtube.com/embed/7z2UzMxTsX4" frameborder="0" allowfullscreen></iframe>
+livestream: <iframe id="yt-iframe" src="https://www.youtube.com/embed/7z2UzMxTsX4" frameborder="0" allowfullscreen></iframe>
 days:
-  - start: "2015/07/20 8:30"
+  - start: "2015/06/20 8:30"
     finish: "2015/07/20 18:00"
   - start: "2015/07/21 8:30"
     finish: "2015/07/21 18:00"
