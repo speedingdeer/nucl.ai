@@ -1,173 +1,134 @@
-@max_two_columns: 650px;
-
 section.splash-screen {
 
+    /** LOGO */
+    logo-wrap {
+        display: block;
+        transition: 1.25s;
 
-    @two_third_vh: 100vh * 2 / 3;
-    @third_vh: 100vh / 3;
-    position: relative;
-    min-height: calc(@two_third_vh);
-    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { min-height: 0px; }
-    overflow: visible; //for drop down menu
-    grid { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0px; } }
-    content { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 0px; } }
-    content.video-link.top { visibility: hidden; margin-top: -3.5em; }
-    content.video-link {
-        padding: 0;
-        margin-top: -1em;
-        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-bottom: 2em; }
-        a { text-decoration: none; }
-        span.text {
-            width: 100%;
-            display: inline-block;
-            margin: 10px 0;
+        &.rotated {
+            .rotate(144deg);
         }
-        display: none;
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { display: block; }
+        logo {
+            display: block;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 100%;
+            height: 200px;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                height: 80px;
+            }
+            opacity: 0.65;
+        }
     }
+
+    /** navigation */
+    overflow: visible; //for drop down menu
     .splash-screen-wrap {
-        min-height: calc(~"@{two_third_vh} - @{NAVIGATION_HEIGHT}");
         background-position: center;
         background-size: cover;
         &.uni-campus-quads {
             background-position-y: 100%;
         }
+        > splash {
+            display: block;
+            background-color: fade(@DARK_BLUE, 75%); 
+            > grid {
+                min-height: calc(~"@{two_third_vh} - @{NAVIGATION_HEIGHT}");
+                height: calc(~"@{two_third_vh} - @{NAVIGATION_HEIGHT}");
+                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                    min-height: 0px;
+                    height: 0px;
+                }
+                padding-bottom: 0;
+                > content {
+                    padding: 20px 0;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding: 40px 0; }
+                    .transition(1.5s opacity);
+                    h1 {
+                        font-size: 7em;
+                        margin: 0;
+                        padding: 0;
+                        text-shadow: 0px 0px 4px #808080;
+                        .ios & { text-shadow: none; } // ios struggles with our fonts
+                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                            font-size: 3em;
+                        }
+                        a, a:hover {
+                            text-decoration: none;
+                            color: white;
+                            opacity: 1.0;
+                        }
+                        transition: all 0.5s;
+                    }
+                    h2 {
+                        margin: 0;
+                        font-size: 1.2em;
+                        padding: 8px 0;
+                        font-weight: normal;
+                        opacity: 0.75;
+                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                            padding: 5px 0;
+                            font-size: 0.4em
+                        }
+                    }
+
+                }
+            }
+        }
     }
-    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {
-        .video-cell { display: none; }
-    }
-    .table {
-        //firefox table doesn't know min-height
-        height: calc(~"@{two_third_vh} - @{NAVIGATION_HEIGHT}");
-        width: 100%;
-    }
-    navigation-fantom {
-        display: block;
-        height: @NAVIGATION_HEIGHT;
-        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: @NAVIGATION_HEIGHT_MOBILE; }
-        width: 100%;
-    }
+
 
     /**
     * For single page layout
     */
     .page & {
-        min-height: calc(~"@{third_vh} + @{NAVIGATION_HEIGHT}");
-        .splash-screen-wrap { min-height: @third_vh}
-        .table { 
-            height: @third_vh; //firefox table doesn't know min-height 
-        } 
-        splash content titles h1 { margin-bottom: -5px; }
-        splash content logo { display: none; }
-        .table, content { width: 100%; }
-        content { @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 0.75em; } }
-    }
-
-    background-color: @AUDIENCE_COLOR !important;
-    splash {
-        display: block; //for this who doesn't know flex
-        background-color: fade(@DARK_BLUE, 75%);
-        min-height: inherit;
-        text-align: center;
-        width: 100%;
-        content {
-            padding: 3em 0;
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                padding: 20px 0;
-            }
-            display: inline-block;
-            logo-wrap {
-                display: block;
-                transition: 1.25s;
-
-                &.rotated {
-                    .rotate(144deg);
-                }
-                logo {
-                    display: block;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: center;
-                    width: 100%;
-                    height: 200px;
+        .splash-screen-wrap {
+            > splash {
+                > grid {
                     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                        height: 80px;
+                        padding: 35px 0;
                     }
-                    opacity: 0.65;
-                }
-            }
-            text-align: center;
-            // make min-height to be more or less 200px
-            titles {
-                transition: 1.5s;
-                display: block;
-                padding: 15px 0;
-                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                        padding: 10px 0;
-                }
-                h1 {
-                    font-size: 7em;
-                    margin: 0;
-                    padding: 0;
-                    text-shadow: 0px 0px 4px #808080;
-                    .ios & { text-shadow: none; } // ios struggles with our fonts
-                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                        font-size: 3em;
-                    }
-                }
-                h2 {
-                    margin: 0;
-                    font-size: 1.2em;
-                    padding: 8px 0;
-                    font-weight: normal;
-                    opacity: 0.75;
-                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                        padding: 5px 0;
-                        font-size: 0.4em
-                    }
-                }
-                .left {
-                    @media screen and (max-width: @max_two_columns) { width: 100%; }
-                    .column(6);
-                    h1 {
-                        a, a:hover {
-                            text-decoration: none;
-                            color: white;
-                        }
-                        transition: all 0.5s;
-                        font-size: 6.5em;
-                        opacity: 0.85;
-                        &:hover {
-                            opacity: 1.0;
+                    min-height: 0px;
+                    height: 0px;
+                    padding: 50px 0;
+                    content {
+                        display: table;
+                        width: 100%;
+                        logo-wrap {
+                            display: none;
                         }
                         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                            font-size: 5.8em;
+                            display: inline;
                         }
-                    }
-                    h2 {
-                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 1em; }
-                    }
-                }
-                .right {
-                    .column(6);
-                    @media screen and (max-width: @max_two_columns) { width: 100%; }
-                    h2 {
-                        font-size: 1.5em;
-                        color: #FFF;                        
-                        @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) {  &:first-of-type { padding-top: 30px; } }
-                        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                            padding-top: 7px;
-                            font-size: 1em;
-                        }
-                        &.note { 
-                            opacity: 1; 
-                            a, span {
-                                text-decoration: underline;
-                                color: @ORANGE;
-                                font-weight: bold;
-                                text-transform: uppercase;
-                                font-size: 13.5pt;
-                                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { font-size: 8pt; }
+                        .centered-cell { 
+
+                            width: 50%; 
+                            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                                display: inline;
+                                width: 100%;
+                            }
+                            h1 {
+                                margin-top: 0px;
+                                opacity: 0.85;
+                                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {
+                                    font-size: 4.5em;
+                                }
+                            }
+                            h2 {
+                                font-size: 1.5em;
+                                &.note { 
+                                    opacity: 1;
+                                    a { 
+                                        color: @ORANGE; 
+                                        text-transform: uppercase;
+                                        font-weight: bold;
+                                        font-size: 0.8em;
+                                    }
+                                }
+                                @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) {
+                                    font-size: 0.78em;
+                                }
                             }
                         }
                     }
@@ -175,4 +136,5 @@ section.splash-screen {
             }
         }
     }
+
 }

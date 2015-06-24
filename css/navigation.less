@@ -13,8 +13,6 @@ sections {
         background-color: @BLUE;
         z-index: 3;
         width: 100%;
-        position: absolute;
-        bottom: 0;
         &.sticky {
             position: fixed;
             /**
@@ -145,6 +143,7 @@ sections {
                         position: absolute;
                         top: -1000px;
                         margin-top: @triangle_size;
+                        z-index: 2;
                         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-top: @triangle_size_mobile; }
                         .triangle {
                             .triangle(@triangle_size);

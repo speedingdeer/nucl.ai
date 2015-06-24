@@ -8,7 +8,9 @@
         {% capture trackBackground %}/img/tracks/{{topic.id}}.png{% endcapture %}
     {% endif %}
 {% endfor %}
-<section class="splash-screen stream landing-stream" id="about">
+
+<section class="stream landing-stream splash-screen" id="about">
+
     {% if page.name == 'venue.html' or page.name == 'tickets.html' or page.name == 'attend.html' %}
     <div class="splash-screen-wrap uni-campus-quads">
     {% elsif isTrackPage %}
@@ -18,78 +20,43 @@
     {% else %}
     <div class="splash-screen-wrap audience-gif">
     {% endif %}
-        <splash>
-            <grid>
-                <div class="table">
-                    <div class="centered-cell">
-                        <content class="video-link top splash-video">
-                            {% comment %}
-                            {% include stream_link.html %}
-                            <h2>
-                                &#9658; <span class="text">Watch conference video</span>
-                            </h2>
-                            {% endcomment %}
-                        </content>
-                        <content>
-                            <logo-wrap class="opacity0">
-                                <logo></logo>
-                            </logo-wrap>
-                            <titles  class="opacity0">
-                                {% if page.name == 'index.html' %}
-                                <h1>nucl.ai</h1>
-                                <h2>
-                                    July 20<sup>th</sup> to 22<sup>nd</sup>, Vienna / AUSTRIA.
-                                </h2>
-                                {% else %}
-                                <grid>
-                                    <div class="left">
-                                        <h1><a href="/">nucl.ai</a></h1>
-                                        <h2>July 20th to 22nd, Vienna / AUSTRIA.</h2>
-                                    </div>
-                                    <div class="right">
-                                        <h2>Conference on Artificial Intelligence<br/>
-                                            in Creative Industries</h2>
-                                        
-                                        {% capture ticketBanner %}Final tickets available for online purchase.{% endcapture %}
-                                        <h2 class="note">
-                                        {% if page.name == 'tickets.html' %}
-                                        <span href="/tickets">{{ticketBanner}}</span>    
-                                        {% else %}
-                                        <a href="/tickets">{{ticketBanner}}</a>
-                                        {% endif %}
-                                        </h2>
 
-                                    </div>
-                                </grid>
-                                {% endif %}
-                            </titles>
-                        </content>
-                        <content class="video-link splash-video">
-                            {% comment %}
-                            {% include stream_link.html %}
-                            <h2>
-                                <a href="{% include videos/splash-link.html %}">
-                                    &#9658; <span class="text">Watch Conference ideo</span>
-                                </a>
-                            </h2>
-                            {% endcomment %}
-                        </content>
-                    </div>
 
+     <splash>
+            <grid class="table">
+                <content class="opacity0 centered-cell">
+
+                    <logo-wrap> <logo></logo> </logo-wrap>
 
                     {% if page.name == 'index.html' %}
-                        <div class="centered-cell video-cell splash-video">
-                            {% comment %}
-                            {% include stream_link.html %}
-                                {% include videos/splash.html %}
-                            {% endcomment %}
+
+                        <h1>nucl.ai</h1>
+                        <h2> July 20<sup>th</sup> to 22<sup>nd</sup>, Vienna / AUSTRIA. </h2>
+
+                    {% else %}
+
+                        <div class="centered-cell">
+                            <h1><a href="/">nucl.ai</a></h1>
+                            <h2>July 20th to 22nd, Vienna / AUSTRIA.</h2>
                         </div>
+                        <div class="centered-cell">
+                            <h2>Conference on Artificial Intelligence <br/> in Creative Industries</h2>
+
+                            {% capture ticketBanner %}Final tickets available for online purchase.{% endcapture %}
+
+                            <h2 class="note">
+                            {% if page.name == 'tickets.html' %}
+                                <span href="/tickets">{{ticketBanner}}</span>    
+                            {% else %}
+                                <a href="/tickets">{{ticketBanner}}</a>
+                            {% endif %}
+                            </h2>
+                        </div>
+
                     {% endif %}
 
 
-                </div>
-                {% comment %} Prevent navigtion from overlaping {% endcomment %}
-                <navigation-fantom></navigation-fantom>
+                </content>
             </grid>
         </splash>
     </div>
