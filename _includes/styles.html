@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Questrial">
-<link rel="stylesheet" type="text/css" href="{{ "/css/app.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" type="text/css" href="{{ "/css/app.css" | prepend: site.baseurl }}?ver={{ site.time | date: '%y%m%d%h%m%s'}}">
 {% comment %}
     for keeping properties which depend on url (like background images)
 {% endcomment %}
-<link rel="stylesheet" type="text/css" href="{{ "/css/assets.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" type="text/css" href="{{ "/css/assets.css" | prepend: site.baseurl }}?ver={{ site.time | date: '%y%m%d%h%m%s'}}">

@@ -8,7 +8,7 @@
         {% capture trackBackground %}/img/tracks/{{topic.id}}.png{% endcapture %}
     {% endif %}
 {% endfor %}
-<section class="splash-screen" id="about">
+<section class="splash-screen stream landing-stream" id="about">
     {% if page.name == 'venue.html' or page.name == 'tickets.html' or page.name == 'attend.html' %}
     <div class="splash-screen-wrap uni-campus-quads">
     {% elsif isTrackPage %}
@@ -23,9 +23,12 @@
                 <div class="table">
                     <div class="centered-cell">
                         <content class="video-link top splash-video">
+                            {% comment %}
+                            {% include stream_link.html %}
                             <h2>
                                 &#9658; <span class="text">Watch conference video</span>
                             </h2>
+                            {% endcomment %}
                         </content>
                         <content>
                             <logo-wrap class="opacity0">
@@ -62,18 +65,24 @@
                             </titles>
                         </content>
                         <content class="video-link splash-video">
+                            {% comment %}
+                            {% include stream_link.html %}
                             <h2>
                                 <a href="{% include videos/splash-link.html %}">
                                     &#9658; <span class="text">Watch Conference ideo</span>
                                 </a>
                             </h2>
+                            {% endcomment %}
                         </content>
                     </div>
 
 
                     {% if page.name == 'index.html' %}
                         <div class="centered-cell video-cell splash-video">
-                            {% include videos/splash.html %}
+                            {% comment %}
+                            {% include stream_link.html %}
+                                {% include videos/splash.html %}
+                            {% endcomment %}
                         </div>
                     {% endif %}
 

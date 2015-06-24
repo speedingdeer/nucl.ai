@@ -1,4 +1,4 @@
 <script src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="{{ "/js/assets.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/app.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/assets.js" | prepend: site.baseurl }}?ver={{ site.time | date: '%y%m%d%h%m%s'}}"></script>
+<script src="{{ "/js/app.js" | prepend: site.baseurl }}?ver={{ site.time | date: '%y%m%d%h%m%s'}}"></script>
 <script src="{{ "/js/boids.js" | prepend: site.baseurl }}"></script>

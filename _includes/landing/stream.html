@@ -3,17 +3,7 @@
     <h2>Conference Live Stream</h2>
     <grid>
         <content>
-            <div class="stream-data" style="display:none;">
-            {% for day in site.data.stream.days %}
-                <span class="day" date-start="{{day.start}}" date-finish="{{day.finish}}" > </span>
-            {% endfor %}
-            </div>
-            <a href="/stream/" style="text-decoration:none;">
-                <span class="button">&#9654;</span>
-                <br/>
-                <span class="announcement live"> Conference Live Stream is Online Now! </span>
-                <span class="announcement check"> Check out The Conference Live Stream! </span>
-            </a>
+        {% include stream_link.html %}
         </content>
     </grid>
 </section>
