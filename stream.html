@@ -5,10 +5,10 @@ permalink: /stream/
 ---
 <section class="stream single-timer">
     <grid>
-        <h2>Live Stream</h2>
+        <h2>Event Live Stream</h2>
         <content>
 
-            {% assign timer_title = "CONFERENCE LIVE STREAM STARTS IN:" %}
+            {% assign timer_title = "" %}
             {% capture timer_on_finish %} timer.remove(); {% endcapture %}
 
             {% for day in site.data.stream.days %}
