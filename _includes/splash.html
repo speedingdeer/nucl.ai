@@ -15,7 +15,7 @@
     <div class="splash-screen-wrap uni-campus-quads">
     {% elsif isTrackPage %}
     <div class="splash-screen-wrap" style="background-image: url('{{ trackBackground | prepend: site.baseurl }}' ); background-position: center center;">
-    {% elsif page.name == 'overview.html' or page.name == 'tracks.html' or page.name == 'events.html' or page.name == 'schedule.html' %}
+    {% elsif page.name == 'overview.html' or page.name == 'tracks.html' or page.name == 'events.html' or page.name == 'schedule.html' or page.name == 'stream.html' %}
     <div class="splash-screen-wrap" style="background-image: url('{{ '/img/venue/room-lower.png' | prepend: site.baseurl }}' ); background-position: center center;">
     {% else %}
     <div class="splash-screen-wrap audience-gif">
