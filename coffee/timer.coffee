@@ -43,7 +43,7 @@ $ ->
 
     timerName = timer.attr("name")
 
-    options = if timer.parent().hasClass("mobile") then $.extend({}, defaultOptions, mobileOptions) else defaultOptions
+    options = if timer.parent().parent().hasClass("mobile") then $.extend({}, defaultOptions, mobileOptions) else defaultOptions
 
     timer.find("clock").each ->
       clocks.push $(@).easyPieChart options

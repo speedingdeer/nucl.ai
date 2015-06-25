@@ -10,7 +10,7 @@ section.stream {
                 }
         }
         span.announcement {
-            display: none;
+           display: none;
             &.block {
                 display: block;
                 font-size: 1.5em;
@@ -22,14 +22,17 @@ section.stream {
 
         }
     }
-    #stream-wrap { display: none; }
 }
 
 #yt-iframe {
     width: 896px;
     height: 504px;
+    margin-top: 5em;
+    margin-bottom: 2em;
     @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
         width: 280px;
         height: 157px;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }

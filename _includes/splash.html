@@ -55,15 +55,17 @@
 
                     {% endif %}
                 </content>
-                    
-                <div class="centered-cell right-cell stream-link">
-                    {% include stream_link.html %}
-                </div>
-                
+                {% if page.name == 'index.html' %}
+                    <div class="centered-cell right-cell stream-link">
+                        {% include stream_link.html %}
+                    </div>
+                {% endif %}
             </grid>
-                <div class="bottom-cell stream-link">
-                    {% include stream_link.html %}
-                </div>
+                {% if page.name == 'index.html' %}
+                    <div class="bottom-cell stream-link">
+                        {% include stream_link.html %}
+                    </div>
+                {% endif %}
         </splash>
     </div>
     {% include navigation.html %}
