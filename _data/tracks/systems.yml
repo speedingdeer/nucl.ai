@@ -38,7 +38,7 @@
     start: "10:00"
     finish: "10:45"
 
-- title: "Coordinating Open World Systems and Emergent Gameplay (Expert Panel) **"
+- title: "Coordinating Open World Systems and Emergent Gameplay (Expert Panel)"
   description: >
     As new ideas emerge and hardware continues to evolve, the size and complexity of video game worlds are growing into vast 
     and rich environments.  2015 alone is filled with examples of such wide and expansive worlds from CD Projekt Red's 
@@ -49,6 +49,8 @@
     the track the open challenges of the field and how AI can continue to innovate in this area.
   speakers:
     - Tommy Thompson
+    - John Abercrombie
+    - Michał Słapa
   room: masterclass
   time:
     start: "16:45"

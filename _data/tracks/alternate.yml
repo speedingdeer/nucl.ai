@@ -21,7 +21,7 @@
 - title: Data Processing for Novel Input Devices
   description: >
     <p>Devices like the Kinect v2, Tango and FaceWare Live allow new possibilities for user input. We are working on several plugins for Unreal Engine 4 that make use of data provided by this equipment.  Since they are based on  image recognition and machine learning, one of the biggest challenges in working with these devices is that they occasionally provide unstable, undefined, unpredictable or outright unusable data.<p>
-    <p>In this talk we will discuss with demos:</p>
+    <p>In this talk we will discuss the following (based on demos shown in the nucl.ai labs):</p>
     <ul>
     <li>the common types and formats of data presented by these devices,</li>
     <li>the pre-processing these devices tend to do on their data,</li>

@@ -30,8 +30,9 @@
     title: Marvin Rig
     url: http://aigamedev.com/
   companies:
+    - Riot Games
     - Pixar Animation Studios
-    - Ubisoft Montreal
+    - Ubisoft Studios
     - Square Enix
     - Moving Picture Company
     - CD Projekt Red
@@ -79,19 +80,19 @@
     title: The AI Sandbox
     url: http://aisandbox.com/
   companies:
-    - Pixar Animation Studios
     - Ubisoft Montreal
     - Square Enix
-    - Moving Picture Company
     - CD Projekt Red
     - Microsoft Game Studios
     - Creative Assembly
+    - University of Essex
     - Bohemia Interactive
     - Unity Technologies
     - Epic Games
     - Lionhead Studios
     - INRIA Research Lab
     - Iron Galaxy Studios
+    - University of Muenster
     - MASA Group
     - CCP Games
   tickets_left: 27
@@ -126,9 +127,9 @@
   credit:
     title: The Sims 4
     url: http://www.thesims.com/
-  companies:
-    - Pixar Animation Studios
-    - Ubisoft Montreal
+  companies:  
+    - Ubisoft Studios
+    - Riot Games
     - Square Enix
     - Moving Picture Company
     - CD Projekt Red
@@ -138,6 +139,7 @@
     - Unity Technologies
     - Epic Games
     - Lionhead Studios
+    - Pixar Animation Studios
     - INRIA Research Lab
     - Iron Galaxy Studios
     - MASA Group
@@ -177,8 +179,7 @@
     title: "Sir, You're Being Hunted"
     url: http://www.big-robot.com/
   companies:
-    - Pixar Animation Studios
-    - Ubisoft Montreal
+    - Ubisoft Studios
     - Square Enix
     - Moving Picture Company
     - CD Projekt Red
@@ -187,10 +188,9 @@
     - Bohemia Interactive
     - Unity Technologies
     - Epic Games
+    - Pixar Animation Studios
     - Lionhead Studios
-    - INRIA Research Lab
     - Iron Galaxy Studios
-    - MASA Group
     - CCP Games
   tickets_left: 26
 
@@ -225,19 +225,14 @@
     title: Project Trains
     url: http://project-trains.tumblr.com/
   companies:
-    - Pixar Animation Studios
-    - Ubisoft Montreal
+    - Opaque Multimedia
+    - Ubisoft Studios
     - Square Enix
-    - Moving Picture Company
-    - CD Projekt Red
     - Microsoft Game Studios
     - Creative Assembly
-    - Bohemia Interactive
     - Unity Technologies
     - Epic Games
-    - Lionhead Studios
     - INRIA Research Lab
-    - Iron Galaxy Studios
     - MASA Group
     - CCP Games
   tickets_left: 27
@@ -323,6 +318,7 @@
     - Scientific Revenue
     - Lionhead Studios
     - Jagex
+    - Riot Games
     - Microsoft Game Studios
     - Creative Assembly
     - Natural Motion
@@ -370,7 +366,6 @@
     title: Far Cry 4
     url: http://far-cry.ubi.com/
   companies:
-    - Pixar Animation Studios
     - Ubisoft Montreal
     - Square Enix
     - Moving Picture Company
@@ -381,6 +376,7 @@
     - Unity Technologies
     - Epic Games
     - Lionhead Studios
+    - Pixar Animation Studios
     - INRIA Research Lab
     - Iron Galaxy Studios
     - MASA Group
@@ -421,19 +417,4 @@
     title: IBM Watson
     url: http://www.ibm.com/smarterplanet/us/en/ibmwatson/
   companies:
-    - Pixar Animation Studios
-    - Ubisoft Montreal
-    - Square Enix
-    - Moving Picture Company
-    - CD Projekt Red
-    - Microsoft Game Studios
-    - Creative Assembly
-    - Bohemia Interactive
-    - Unity Technologies
-    - Epic Games
-    - Lionhead Studios
-    - INRIA Research Lab
-    - Iron Galaxy Studios
-    - MASA Group
-    - CCP Games
   tickets_left: 27

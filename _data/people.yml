@@ -380,6 +380,9 @@
     of Copenhagen. Her research interests include player modeling, procedural content generation,
     computational creativity, affective computing and player behavior imitation. She is organizing
     the Platformer AI competition and chairing the IEEE task force on Player Modeling.
+  affiliation:
+    name: ITU Copenhagen
+    role: Post-Doc Researcher
 
 - name: Simon Worgan
   role: speaker
@@ -639,7 +642,10 @@
   role: speaker
   bio: >
     ...
-    
+  affiliation:
+    name: Hello Games
+    role: Programmer
+
 # TODO: Noor.
 - name: Mark Johnson
   role: speaker
@@ -668,3 +674,13 @@
     name: Opaque Multimedia
     url: http://www.opaquemultimedia.com/ 
     position: Physics Specialist 
+
+- name: Samim Winiger
+  role: speaker
+  bio: >
+    ...
+  affiliation:
+    name: samim.io
+    url: http://samim.io/
+    position: Independent Artist
+
