@@ -380,6 +380,9 @@
     of Copenhagen. Her research interests include player modeling, procedural content generation,
     computational creativity, affective computing and player behavior imitation. She is organizing
     the Platformer AI competition and chairing the IEEE task force on Player Modeling.
+  affiliation:
+    name: ITU Copenhagen
+    role: Post-Doc Researcher
 
 - name: Simon Worgan
   role: speaker
@@ -616,8 +619,7 @@
     position: Senior Research Officer 
   bio: >
     Spyros Samothrakis is currently a Senior Research Officer at the University of Essex. He holds a PhD in Computer Science with a focus on Computational Intelligence and Games from the University of Essex, an MSc in Intelligent Systems from the University of Sussex and a BSc in Computer Science from the University of Sheffield. His research interests are Reinforcement Learning, Machine Learning, Evolutionary Computation and Consciousness.
-    
-# TODO: Heather.
+
 - name: John Hearty
   role: speaker
   bio: >
@@ -640,7 +642,10 @@
   role: speaker
   bio: >
     ...
-    
+  affiliation:
+    name: Hello Games
+    role: Programmer
+
 # TODO: Noor.
 - name: Mark Johnson
   role: speaker
@@ -651,3 +656,31 @@
   role: speaker
   bio: >
     Game designer at Tequila Works and independent game developer responsible for several award-winning (and award-pending) indie games: Paradis Perdus, Dédale, Lune, Event[0], Pineapple Dreams. Author of Practical Game Design with Unity and Playmaker. Former staff writer at PC Gamer Ukraine.
+
+- name: Chris Mackenzie
+  role: speaker
+  bio: >
+    Chris Mackenzie is the Director of Experimental Development at technology and design group Opaque Multimedia where he gets to spend his time wrangling weird and wonderful emerging technologies until they're enjoyable to use. Before working with Opaque, Chris worked in game design, production and consulting for a range of health, academic and research applications, in particular working closely with the Royal Melbourne Institute of Technology Exertion Games Lab and GEELab.
+  affiliation:
+    name: Opaque Multimedia
+    url: http://www.opaquemultimedia.com/ 
+    position: Director of Experimental Development 
+
+- name: Vikram Saran
+  role: speaker
+  bio: >
+    Vikram Saran is the resident Physics Guru at Opaque Multimedia and a lecturer on game physics engines at Swinburne University. He combines the two with his research on marrying games with NUI and VR technologies. He is currently working on [redacted] and improving Kinect-based animations in Unreal Engine 4 through the use of physical models. Vikram will be presenting at nucl.ai about using IK and other physically-based techniques to improve tracking in natural user interfaces, particularly for VR.
+  affiliation:
+    name: Opaque Multimedia
+    url: http://www.opaquemultimedia.com/ 
+    position: Physics Specialist 
+
+- name: Samim Winiger
+  role: speaker
+  bio: >
+    ...
+  affiliation:
+    name: samim.io
+    url: http://samim.io/
+    position: Independent Artist
+

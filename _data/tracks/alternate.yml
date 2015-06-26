@@ -18,6 +18,25 @@
     start: "14:00"
     finish: "14:45"
 
+- title: Data Processing for Novel Input Devices
+  description: >
+    <p>Devices like the Kinect v2, Tango and FaceWare Live allow new possibilities for user input. We are working on several plugins for Unreal Engine 4 that make use of data provided by this equipment.  Since they are based on  image recognition and machine learning, one of the biggest challenges in working with these devices is that they occasionally provide unstable, undefined, unpredictable or outright unusable data.<p>
+    <p>In this talk we will discuss the following (based on demos shown in the nucl.ai labs):</p>
+    <ul>
+    <li>the common types and formats of data presented by these devices,</li>
+    <li>the pre-processing these devices tend to do on their data,</li>
+    <li>the methods we use to sanitize and sanity-check the data we make available to developers,</li>
+    <li>techniques we’re currently experimenting with as well as those we discarded,</li>
+    <li>how this data has been used in applications</li>
+    </ul>
+  speakers:
+    - Chris Mackenzie
+    - Vikram Saran
+  room: masterclass
+  time:
+    start: "16:45"
+    finish: "17:30"
+
 - title: "Living-Room Augmented Reality and Project Trains"
   description: >
     <p>As goggle-based AR slowly matures, there's a window of opportunity for projector-based AR experiences.  It's also a great way to learn about the technology and the impacts on design required to pull off augmented reality in practice &mdash; with a setup that works reliably now already!</p>

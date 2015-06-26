@@ -36,3 +36,25 @@
   time:
     start: "10:00"
     finish: "12:00"
+
+- title: "An Overview of Techniques for Procedural Generators"
+  description: >
+    ...
+  speakers:
+    - Noor Shaker
+  room: masterclass
+  time:
+    start: "14:15" 
+    finish: "15:00"
+
+- title: "Best Practices in Automated Testing of PCG (Expert Panel)"
+  description: >
+    ...
+  speakers:
+    - Vladimir Nejedly
+    - Hazel McKendrick
+    - Noor Shaker
+  room: laboratories
+  time:
+    start: "17:00" 
+    finish: "17:45"
