@@ -10,7 +10,6 @@
     start: "16:45"
     finish: "17:45"
 
-
 - title: "Turning a Chatbot into a Narrative Game: Language Interaction in Event[0]"
   description: >
     Event[0] is a first person narrative exploration game where the player has to chat with a computer to get the latter to do what they want. The game is entirely dialogue-based, and the dialogue is made with natural language processing. The chatbot in the game is flawed, just like any chatbot is. This talk will explain how we have managed to turn these flaws into features and turn the AI's rough edges into a meaningful gameplay experience.
@@ -21,15 +20,17 @@
     start: "13:45"
     finish: "14:30"
 
-
-- title: Language Interaction in Simulations and Training Scenarios
+- title: "Learning from HAL9000's Fatal Mistakes: Integrating NLP into Applications (Expert Panel)"
   description: >
     ...
-  room: masterclass
+  speakers:
+    - Josh McCoy
+    - Dale Lane
+    - Sergey Mohov
+  room: laboratories
   time:
-    start: "12:00"
-    finish: "12:45"
-
+    start: "14:30"
+    finish: "15:30"
 
 - title: Text Synthesis with Recurrent Neural Networks for Fun and Profit!
   description: >
@@ -50,3 +51,11 @@
   time:
     start: "10:00"
     finish: "12:00"
+
+- title: Language Interaction in Simulations and Training Scenarios
+  description: >
+    ...
+  room: masterclass
+  time:
+    start: "12:00"
+    finish: "12:45"
