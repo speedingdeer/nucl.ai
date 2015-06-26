@@ -651,3 +651,20 @@
   role: speaker
   bio: >
     Game designer at Tequila Works and independent game developer responsible for several award-winning (and award-pending) indie games: Paradis Perdus, Dédale, Lune, Event[0], Pineapple Dreams. Author of Practical Game Design with Unity and Playmaker. Former staff writer at PC Gamer Ukraine.
+
+- name: Chris Mackenzie
+  role: speaker
+  bio: >
+    Chris Mackenzie is the Director of Experimental Development at technology and design group Opaque Multimedia where he gets 
+    to spend his time wrangling weird and wonderful emerging technologies until they're enjoyable to use. Before working with 
+    Opaque, Chris worked in game design, production and consulting for a range of health, academic and research applications, 
+    in particular working closely with the Royal Melbourne Institute of Technology Exertion Games Lab and GEELab.
+    
+- name: Vikram Saran
+  role: speaker
+  bio: >
+    Vikram Saran is the resident Physics Guru at Opaque Multimedia and a lecturer on game physics engines at Swinburne 
+    University. He combines the two with his research on marrying games with NUI and VR technologies. He is currently working 
+    on [redacted] and improving Kinect-based animations in Unreal Engine 4 through the use of physical models. Vikram will be 
+    presenting at nucl.ai about using IK and other physically-based techniques to improve tracking in natural user interfaces, 
+    particularly for VR.
