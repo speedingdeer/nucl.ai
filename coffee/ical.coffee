@@ -12,8 +12,8 @@ $ ->
       dateStr = day.attr("date")
       filename = dateStr.replace("/","-")
       day.find(".track").each ->
-        begin = new Date (dateStr + " " + $(@).attr("time-start"))
-        end = new Date(dateStr + " " + $(@).attr("time-finish"))
+        begin = dateInVienna(dateStr + " " + $(@).attr("time-start"))
+        end = dateInVienna(dateStr + " " + $(@).attr("time-finish"))
         location = $(@).find("p.title span.room-name").text().trim().replace(/\s+/g, ' ')
         speakers = $(@).find("p.speakers").text().trim().replace(/\s+/g, ' ')
         subject =  $(@).find("p.title span.title").text().trim().replace(/\s+/g, ' ')
