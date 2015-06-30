@@ -4,7 +4,7 @@ $ ->
   thisSameDate = (date1, date2) ->
     return date1.getMonth() == date2.getMonth() && date1.getDate() == date2.getDate()
 
-  maxShowingNumber = 3 # number of current / next slots showing
+  maxShowingNumber = 1 # number of current / next slots showing
 
   update = () ->
     date = new Date() # default date
@@ -35,7 +35,7 @@ $ ->
         toShow = maxShowingNumber
 
         for slot in slots
-          if slot.dateEnd > date && toShow > 0
+          if slot.dateStart > date && toShow > 0
               slot.show()
               toShow--
               console.log slot
