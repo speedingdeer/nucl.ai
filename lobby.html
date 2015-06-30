@@ -18,6 +18,8 @@ permalink: /lobby/
 
                             {% assign dayIdx = forloop.index %}
 
+                            {% comment %}
+
                             {% for d in site.data.breaks %}
                                 {% if d.day == dayIdx %}
                                     {% for break in d.breaks %}
@@ -27,6 +29,8 @@ permalink: /lobby/
                                     {% endfor %}
                                 {% endif %}
                             {% endfor %}
+
+                            {% endcomment %}
 
                         </td>
                     </tr>
