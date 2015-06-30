@@ -1,0 +1,37 @@
+---
+layout: empty
+title: nucl.ai - venue
+permalink: /lobby/
+---
+
+<section class="program-schedule" id="section-lobby">
+    <grid>
+        <content>
+            {% for day in site.data.schedule %}
+                <table class="talks-list not-initialized animated zoomIn expanded" name="{{day.title}}" date="{{day.date}}" border="0" cellpadding="0" cellspacing="0">
+                    <tr class="talk-list-row">
+                        <td class="talks-list">
+
+                            {% for track in day.tracks %}
+                                {% include schedule/track.html %}
+                            {% endfor %}
+
+                            {% assign dayIdx = forloop.index %}
+
+                            {% for d in site.data.breaks %}
+                                {% if d.day == dayIdx %}
+                                    {% for break in d.breaks %}
+                                        <div class="track cell-content break table" time-start="{{break.time.start}}" time-finish="{{break.time.finish}}" room="all">
+                                            <div class="centered-cell talk-cell-wrap"><p>{{break.name}}</p></div>
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+
+                        </td>
+                    </tr>
+                </table>
+            {% endfor %}
+        </content>
+    </grid>
+</section>

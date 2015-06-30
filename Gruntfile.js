@@ -40,7 +40,8 @@ module.exports = function (grunt) {
             'lib/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js',
             'lib/jquery.countdown/dist/jquery.countdown.min.js',
             'lib/FileSaver/FileSaver.min.js',
-            'lib/ics.js/ics.min.js'
+            'lib/ics.js/ics.min.js',
+            'lib/js-url/url.min.js'
           ]
       },
       bowerCss: {
