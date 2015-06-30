@@ -11,3 +11,5 @@ root.config = {
     borderSize: 0.015
   }
 }
+
+moment.tz.setDefault("Europe/Austria")

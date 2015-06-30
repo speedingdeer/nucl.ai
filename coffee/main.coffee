@@ -52,3 +52,9 @@ $ ->
 enableSections()
 
 root.disableWip = disableWip
+
+root.dateInVienna = (dateString) ->
+  moment.tz.setDefault("Europe/Austria") # should be set up in config but our build doesn't promise scripts order
+  formattedDateString = dateString.replace /\//g,' '
+  d = moment(formattedDateString, "YYYY MM DD HH:mm")
+  return new Date d.toString()

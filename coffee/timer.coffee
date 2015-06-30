@@ -1,3 +1,5 @@
+root = exports ? this # global
+
 defaultOptions = {
   scaleColor: false,
   trackColor: 'rgba(255,255,255,0.3)',
@@ -36,10 +38,9 @@ $ ->
 
       if timer.attr("name") == name 
         timer.parent().show()
-
-        timer.countdown timer.attr("count-to"), (event) ->
-          tFinish = new Date timer.attr "count-to"
-          if event.type == "finish" && timer.attr("on-finish") && event.finalDate.getHours() == tFinish.getHours() && event.finalDate.getMinutes() == tFinish.getMinutes()
+        tCountTo = dateInVienna timer.attr "count-to"
+        timer.countdown tCountTo, (event) ->
+          if event.type == "finish" && timer.attr("on-finish") && event.finalDate.getHours() == tCountTo.getHours() && event.finalDate.getMinutes() == tCountTo.getMinutes()
             if timer.attr("on-finish") then eval( timer.attr("on-finish") )
           if event.strftime('%S') != timer.find(".seconds").find(".value").html()
             timer.find(".days").find(".value").html event.strftime('%D')
@@ -49,8 +50,8 @@ $ ->
             update(clocks)
 
         if timer.attr("off")
-          timer.parent().countdown timer.attr("off"), (event) ->
-            tOff = new Date timer.attr "off"
+          tOff = dateInVienna timer.attr "off"
+          timer.parent().countdown tOff, (event) ->
             if event.type == "finish" && timer.attr("on-off") && event.finalDate.getHours() == tOff.getHours() && event.finalDate.getMinutes() == tOff.getMinutes()
               eval( timer.attr("on-off") )
 
