@@ -42,7 +42,8 @@ $ ->
     timer.find("clock").each ->
       clocks.push $(@).easyPieChart options
 
-    if timers.lenght = 0 then activateTimer(timer.attr("name"))
+    if timers.length == 1 
+      activateTimer(timer.attr("name"))
 
     timer.countdown timer.attr("count-to"), (event) ->
       tFinish = new Date timer.attr "count-to"
