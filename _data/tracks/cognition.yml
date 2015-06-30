@@ -34,7 +34,7 @@
 
 - title: Text Synthesis with Recurrent Neural Networks for Fun and Profit!
   description: >
-    ...
+    Recursive Neural Networks are a fascinating tool for content generation. Recently we have seen an explosion of RNN applied to text generation: Generative TedTalks, Bible verses, Hiphop lyrics to name just a few. The talk gives an overview of recent experiments, provides a technical overview of RNNs and elaborates on usage scenarios in games or interactive simulations.
   room: masterclass
   time:
     start: "16:00"
