@@ -41,7 +41,9 @@ module.exports = function (grunt) {
             'lib/jquery.countdown/dist/jquery.countdown.min.js',
             'lib/FileSaver/FileSaver.min.js',
             'lib/ics.js/ics.min.js',
-            'lib/js-url/url.min.js'
+            'lib/js-url/url.min.js',
+            'lib/moment/moment.js',
+            'lib/moment-timezone/builds/moment-timezone-with-data.min.js'
           ]
       },
       bowerCss: {
