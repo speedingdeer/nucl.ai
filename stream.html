@@ -13,27 +13,29 @@ permalink: /stream/
             </div>
 
             {% assign timer_title = "" %}
-            {% capture timer_on_finish %} timer.hide();{% endcapture %}
 
             {% for day in site.data.stream.days %}
-                {% capture timer_name %}day-{{forloop.index}}-starts{% endcapture %}
+                {% capture timer_name %}day-{{forloop.index}}{% endcapture %}
+                {% capture timer_on_finish %} timer.hide(); $('div.timer-dependent').hide(); $('#stream-{{forloop.index}}').show(); {% endcapture %}
                 {% assign timer_off = day.finish %}
                 {% assign timer_count_to = day.start %}
                 {% include features/timers/timer.html %}
+                {% capture timer_on_off %}  $('div.timer-dependent').hide(); activateTimer('day-{{forloop.index|plus:1}}'); {% endcapture %}
                 {% if forloop.last == true %}
-                    {% capture timer_on_off %} $('.all-timers-off').show(); {% endcapture %}
+                    {% capture timer_on_off %} $('div.timer-dependent').hide(); $('.all-timers-off').show(); {% endcapture %}
                 {% endif %}
                 <div class="mobile">
                     {% include features/timers/timer.html %}
                 </div>
             {% endfor %}
 
-            <div id="stream-wrap">
-                {{site.data.stream.livestream}}
-            </div>
-
         </content>
-    <grid>
 </grid>
+
+{% for day in site.data.stream.days %}
+    <div class="stream-wrap timer-dependent" id="stream-{{forloop.index}}">
+        {{ day.livestream }}
+    </div>
+{% endfor %}
 
 {% include features/timers/clean.html %}

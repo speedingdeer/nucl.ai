@@ -29,16 +29,12 @@ section.stream {
             font-size: 1em;
         }
     }
-}
-
-#yt-iframe {
-    width: 896px;
-    height: 504px;
-    margin-top: 3em;
-    margin-bottom: 1em;
-    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-        width: 280px;
-        height: 157px;
-        margin-bottom: 0em;
+    .stream-wrap {
+        display: none;
+    }
+    iframe {
+        padding-bottom: 2em;
+        height: 1200px;
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 800px; }
     }
 }

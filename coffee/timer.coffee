@@ -26,31 +26,10 @@ $ ->
       clock.data('easyPieChart').update(percents);
       setTimeout ->
 
-  enableNext = (timers) ->
-    selected = null
-    selectedCountTo = null
-    for timer in timers
-      timerOff = new Date(timer.attr("off"))
-      countTo = new Date(timer.attr("count-to"))
-      if timerOff > new Date()
-        if selected == null
-          selected = timer
-          selectedCountTo = countTo
-        else if selectedCountTo > countTo
-          selected = timer
-          selectedCountTo = countTo
+  activateTimer = (name) ->
+    $("timer-dashboard").each ->
+      if $(@).attr("name") == name then return $(@).parent().show()
 
-    if selected == null
-      return [null, null]
-
-    for timer in timers
-      if timer.attr("name") == selected.attr("name")
-        timer.parent().show()
-
-    return [selected.attr("name"), new Date(selected.attr("off"))]
-
-  timerName = null
-  timerOff = null
   timers = []
 
   $("timer-dashboard").each ->
@@ -58,36 +37,27 @@ $ ->
     timers.push timer
     clocks = []
 
-    if timers.length == 1
-      timerName = timer.attr("name")
-      timerOff = new Date(timer.attr("off"))
-
     options = if timer.parent().parent().hasClass("mobile") then $.extend({}, defaultOptions, mobileOptions) else defaultOptions
+
     timer.find("clock").each ->
       clocks.push $(@).easyPieChart options
-    if timer.attr("name") == timerName then timer.parent().show()
-    
-    if timer.attr("off")
-      timer.parent().countdown timer.attr("off"), (event) ->
-        if event.type == "finish" && timer.attr("on-off") then eval( timer.attr("on-off") )
 
-
+    if timers.lenght = 0 then activateTimer(timer.attr("name"))
 
     timer.countdown timer.attr("count-to"), (event) ->
-      if event.type == "finish" && timer.attr("on-finish")
-        if timer.attr("name") == timerName then timerName = null
+      tFinish = new Date timer.attr "count-to"
+      if event.type == "finish" && timer.attr("on-finish") && event.finalDate.getHours() == tFinish.getHours() && event.finalDate.getMinutes() == tFinish.getMinutes()
         if timer.attr("on-finish") then eval( timer.attr("on-finish") )
 
-      if event.strftime('%S') != timer.find(".seconds").find(".value").html() && timer.attr("name") == timerName
+      if event.strftime('%S') != timer.find(".seconds").find(".value").html()
         timer.find(".days").find(".value").html event.strftime('%D')
         timer.find(".hours").find(".value").html event.strftime('%H')
         timer.find(".minutes").find(".value").html event.strftime('%M')
         timer.find(".seconds").find(".value").html event.strftime('%S')
         update(clocks)
 
-      else if timerName == null && timerOff < new Date() && $("timer-dashboard").length == timers.length && $("timer-dashboard").length > 1
-        next = enableNext timers
-        timerName = next[0]
-        timerOff = next[1]
-
-
+    if timer.attr("off")
+      timer.parent().countdown timer.attr("off"), (event) ->
+        tOff = new Date timer.attr "off"
+        if event.type == "finish" && timer.attr("on-off") && event.finalDate.getHours() == tOff.getHours() && event.finalDate.getMinutes() == tOff.getMinutes()
+          eval( timer.attr("on-off") )
