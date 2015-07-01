@@ -16,11 +16,11 @@ permalink: /stream/
 
             {% for day in site.data.stream.days %}
                 {% capture timer_name %}day-{{forloop.index}}{% endcapture %}
-                {% capture timer_on_finish %} timer.hide(); $('#stream-{{forloop.index}}').show(); {% endcapture %}
+                {% capture timer_on_finish %} $('.stream-teaser').hide(); timer.hide(); $('#stream-{{forloop.index}}').show(); {% endcapture %}
                 {% assign timer_off = day.finish %}
                 {% assign timer_count_to = day.start %}
                 {% include features/timers/timer.html %}
-                {% capture timer_on_off %}  timer.remove(); $('#stream-{{forloop.index}}').remove(); activateTimer('day-{{forloop.index|plus:1}}'); {% endcapture %}
+                {% capture timer_on_off %}  timer.remove(); $('.stream-teaser').show(); $('#stream-{{forloop.index}}').remove(); activateTimer('day-{{forloop.index|plus:1}}'); {% endcapture %}
                 {% if forloop.last == true %}
                     {% capture timer_on_off %} $('.all-timers-off').show(); {% endcapture %}
                 {% endif %}
@@ -42,8 +42,7 @@ permalink: /stream/
 </section>
 <section class="none"></section>
 
-<section class="stream stream-teaser first
-">
+<section class="stream stream-teaser first">
     <content>
         <grid>
             <div style="text-align: left;">
