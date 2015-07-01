@@ -1,4 +1,28 @@
-sections.page section.press {
+section.stream {
+    min-height: 0px;
     content {
+        .column(12);
+        img {   
+            width: 100%;
+            margin: 1em 0 0 0;
+        }
+        .all-timers-off {
+            color: @ORANGE;
+            font-size: 2.5em;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                font-size: 1em;
+            }
+        }
+    }
+    .stream-wrap {
+        display: none;
+        iframe {
+            padding-bottom: 2em;
+            height: 1200px;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 800px; }
+        }
+    }
+    &.stream-teaser.first {
+        margin-top: -2.5em;
     }
 }

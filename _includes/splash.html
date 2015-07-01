@@ -9,7 +9,7 @@
     {% endif %}
 {% endfor %}
 
-<section class="stream landing-stream splash-screen" id="about">
+<section class="stream-link landing-stream splash-screen" id="about">
 
     {% if page.name == 'venue.html' or page.name == 'tickets.html' or page.name == 'attend.html' %}
     <div class="splash-screen-wrap uni-campus-quads">
@@ -48,7 +48,6 @@
 
                             <h2 class="note">
                             {% if page.name == 'tickets.html' %}
-                                <span href="/tickets">{{ticketBanner}}</span>    
                             {% else %}
                                 <a href="/tickets">{{ticketBanner}}</a>
                             {% endif %}

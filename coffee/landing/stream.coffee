@@ -1,9 +1,10 @@
 root = exports ? this # global
 
 $ ->
-  section = $("section.stream.landing-stream")
+  section = $("section.stream-link")
+  
   if section.length == 0 then return
-
+  
   data = section.find("div.stream-data")
   live = section.find(".announcement.live")
   check = section.find(".announcement.check")

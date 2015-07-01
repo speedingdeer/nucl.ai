@@ -1,5 +1,7 @@
 section.splash-screen {
 
+    min-height: 0px;
+
     /** LOGO */
     logo-wrap {
         display: block;
@@ -22,7 +24,7 @@ section.splash-screen {
         }
     }
     
-    .stream-link { display: none; } 
+    .stream-link { display: none !important; } 
 
     .right-cell {
         width: 50%;
@@ -98,6 +100,7 @@ section.splash-screen {
     * For single page layout
     */
     .page & {
+        min-height: 0px;
         .splash-screen-wrap {
             > splash {
                 > grid {
