@@ -1,40 +1,51 @@
 section.stream {
     min-height: 0px;
-    text-align: center;
-    a {
-        cursor: pointer;
-        span.button {
-            font-size: 3em;
-            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                font-size: 1.25em;
-                }
-        }
-        span.announcement {
-           display: none;
-            &.block {
-                display: block;
-                font-size: 1.5em;
-                padding-top: 1em;
+    content {
+        .column(12);
+        min-height: 0px;
+        text-align: center;
+        a {
+            cursor: pointer;
+            span.button {
+                font-size: 3em;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                    font-size: 0.8em;
-                }
+                    font-size: 1.25em;
+                    }
             }
+            span.announcement {
+               display: none;
+                &.block {
+                    display: block;
+                    font-size: 1.5em;
+                    padding-top: 1em;
+                    @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                        font-size: 0.8em;
+                    }
+                }
 
+            }
         }
-    }
-    .all-timers-off {
-        color: @ORANGE;
-        font-size: 2.5em;
-        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-            font-size: 1em;
+        img {   
+            width: 100%;
+            margin: 1em 0 0 0;
+        }
+        .all-timers-off {
+            color: @ORANGE;
+            font-size: 2.5em;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                font-size: 1em;
+            }
         }
     }
     .stream-wrap {
         display: none;
+        iframe {
+            padding-bottom: 2em;
+            height: 1200px;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 800px; }
+        }
     }
-    iframe {
-        padding-bottom: 2em;
-        height: 1200px;
-        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 800px; }
+    &.stream-teaser.first {
+        margin-top: -2.5em;
     }
 }

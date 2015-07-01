@@ -3,7 +3,7 @@ layout: page
 title: Live Stream — nucl.ai Conference
 permalink: /stream/
 ---
-<section class="stream single-timer">
+<section class="stream">
     <grid>
         <h2>Event Live Stream</h2>
         <content>
@@ -28,40 +28,8 @@ permalink: /stream/
                     {% include features/timers/timer.html %}
                 </div>
             {% endfor %}
-            
-            <div style="text-align: left;">
-            <h3>The Schedule</h3>
-                        
-            <p>Our live stream covers all the talks in the main amphitheatre, in particular:</p>
-            
-            <ul>
-                <li><b>July 20th, Day #1</b> &mdash; Real-time Decisions, Crowd Simulation, User Interface & Devices.
-                    <p style="color: #a5cce9; opacity: 0.85; font-size: 100%;"><u>STREAMING LIVE</u>: Epic Battles in Guardians of the Galaxy, Drivatar in the Forza Series, Real-time MCTS in Fable Legends, Crowds in Assassin's Creed, The Revolution in Search-based AI, Evolution of AI at Pixar <keynote></keynote>.</p>
-                </li>
-                <li><b>July 21st, Day #2</b> &mdash; Agent Behavior, Procedural Generation, Advanced Analytics.
-                    <p style="color: #a5cce9; opacity: 0.85; font-size: 100%;"><u>STREAMING LIVE</u>: Player Cloning in Killer Instinct, Dynamic Pricing in Mobile Games, Generating Characters in Ultima Regum, Design of Total War: Attila, Behavior Trees in Eve Online, Proceduralism in No Man's Sky, Churn Prevention in Top 11, Planning for Final Fantasy XV.</p>
-                </li>
-                <li><b>July 22nd, Day #3</b> &mdash; Systemic Design, Character Animation, Cognition & Language.
-                    <p style="color: #a5cce9; opacity: 0.85; font-size: 100%;"><u>STREAMED LIVE</u>: Inverse Kinematics at Ubisoft Toronto, Population Management in The Witcher 3, Animation in League Of Legends, Chatbots in event[0], Motion Fields from prototype to production, AI Systems and Directors in Fortnite, and IBM Watson (keynote).</p>
-                </li>
-            </ul>
-
-            <p>See the <a href="/program/schedule/">full schedule</a> for more detailed information.</p>
-            
-            <h3>The Event</h3>
-            
-            <p>Of course, if you're interested in any of the sessions above you should <a href="/attend/">attend in-person</a>!  Here are many reasons why:</p>
-            
-            <ol style="opacity: 0.85;">
-                <li><b>Career Opportunities</b> &mdash; If you're looking to make a transition into artificial intelligence, nucl.ai is the place you jump to the front of the queue. Whether you're a student or looking for options, there's no substitute for meeting your future colleagues directly!<br/><br/></li>
-                <li><b>Networking &amp; Building Contacts</b> &mdash; The community at nucl.ai is very friendly, and the event is a great & easy way to meet new friends, build up your professional network, and like-minded people to contact in the future.<br/><br/></li>
-                <li><b>Recruiting and Hiring</b> &mdash; For studios or companies keen to hire, nucl.ai is one of the best places to start since it's a conference focusing on developers, not CEOs or marketers!  Meeting those programmers and designers in person one of the best ways to hire.<br/><br/></li>
-            </ol>
-            
-            <p>If you need any help or advice with any of this, the conference team is always happy to help.  Our hands-on workshops are great ways to meet others without any pressure.  The various social events, both official and unofficial, will also let you relax in great company.</p>
-            </div>
         </content>
-</grid>
+    </grid>
 
 {% for day in site.data.stream.days %}
     <div class="stream-wrap timer-dependent" id="stream-{{forloop.index}}">
@@ -70,3 +38,56 @@ permalink: /stream/
 {% endfor %}
 
 {% include features/timers/clean.html %}
+
+</section>
+<section class="none"></section>
+
+<section class="stream stream-teaser first">
+    <content>
+        <grid>
+            <div style="text-align: left;">
+                <img src="/img/stream/stream-yellow.png">
+                <h3>The Schedule</h3>
+                            
+                <p>Our live stream covers all the talks in the main amphitheatre, in particular:</p>
+                
+                <ul>
+                    <li><b>July 20th, Day #1</b> &mdash; Real-time Decisions, Crowd Simulation, User Interface & Devices.
+                        <p style="color: #a5cce9; opacity: 0.85; font-size: 100%;"><u>STREAMING LIVE</u>: Epic Battles in Guardians of the Galaxy, Drivatar in the Forza Series, Real-time MCTS in Fable Legends, Crowds in Assassin's Creed, The Revolution in Search-based AI, Evolution of AI at Pixar <keynote></keynote>.</p>
+                    </li>
+                    <li><b>July 21st, Day #2</b> &mdash; Agent Behavior, Procedural Generation, Advanced Analytics.
+                        <p style="color: #a5cce9; opacity: 0.85; font-size: 100%;"><u>STREAMING LIVE</u>: Player Cloning in Killer Instinct, Dynamic Pricing in Mobile Games, Generating Characters in Ultima Regum, Design of Total War: Attila, Behavior Trees in Eve Online, Proceduralism in No Man's Sky, Churn Prevention in Top 11, Planning for Final Fantasy XV.</p>
+                    </li>
+                    <li><b>July 22nd, Day #3</b> &mdash; Systemic Design, Character Animation, Cognition & Language.
+                        <p style="color: #a5cce9; opacity: 0.85; font-size: 100%;"><u>STREAMED LIVE</u>: Inverse Kinematics at Ubisoft Toronto, Population Management in The Witcher 3, Animation in League Of Legends, Chatbots in event[0], Motion Fields from prototype to production, AI Systems and Directors in Fortnite, and IBM Watson (keynote).</p>
+                    </li>
+                </ul>
+
+                <p>See the <a href="/program/schedule/">full schedule</a> for more detailed information.</p>
+            </div>
+        </grid>
+    </conten>
+</section>
+
+<section class="stream-teaser separator" style="background-image: url('{{'/img/stream/stream-yellow-quads.png' | prepend: site.baseurl }}' );background-position: center center;"></section>
+<section class="none"></section>
+
+<section class="stream stream-teaser">
+    <content>
+        <grid>
+            <div style="text-align: left;">
+                <h3>The Event</h3>
+                
+                <p>Of course, if you're interested in any of the sessions above you should <a href="/attend/">attend in-person</a>!  Here are many reasons why:</p>
+                
+                <ol style="opacity: 0.85;">
+                    <li><b>Career Opportunities</b> &mdash; If you're looking to make a transition into artificial intelligence, nucl.ai is the place you jump to the front of the queue. Whether you're a student or looking for options, there's no substitute for meeting your future colleagues directly!<br/><br/></li>
+                    <li><b>Networking &amp; Building Contacts</b> &mdash; The community at nucl.ai is very friendly, and the event is a great & easy way to meet new friends, build up your professional network, and like-minded people to contact in the future.<br/><br/></li>
+                    <li><b>Recruiting and Hiring</b> &mdash; For studios or companies keen to hire, nucl.ai is one of the best places to start since it's a conference focusing on developers, not CEOs or marketers!  Meeting those programmers and designers in person one of the best ways to hire.<br/><br/></li>
+                </ol>
+                
+                <p>If you need any help or advice with any of this, the conference team is always happy to help.  Our hands-on workshops are great ways to meet others without any pressure.  The various social events, both official and unofficial, will also let you relax in great company.</p>
+            </div>
+        </grid>
+    </conten>
+</section>
