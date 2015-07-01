@@ -22,8 +22,13 @@ section.stream {
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { height: 800px; }
         }
     }
-    &.stream-teaser.first {
-        margin-top: -28px;
-        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-top: -38px; }
+    &.stream-teaser {
+        padding-top: 3em;
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { padding-top: 2em; }
+        &.first {
+            padding-top: 0;
+            margin-top: -28px;
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-top: -38px; }
+        }
     }
 }
