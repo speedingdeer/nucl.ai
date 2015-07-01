@@ -22,7 +22,7 @@ permalink: /stream/
                 {% include features/timers/timer.html %}
                 {% capture timer_on_off %}  timer.remove(); $('.stream-teaser').show(); $('#stream-{{forloop.index}}').remove(); activateTimer('day-{{forloop.index|plus:1}}'); {% endcapture %}
                 {% if forloop.last == true %}
-                    {% capture timer_on_off %} $('.all-timers-off').show(); {% endcapture %}
+                    {% capture timer_on_off %} $('.all-timers-off').show(); $('#stream-{{forloop.index}}').remove(); {% endcapture %}
                 {% endif %}
                 <div class="mobile">
                     {% include features/timers/timer.html %}
