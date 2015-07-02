@@ -1,0 +1,19 @@
+---
+layout: page
+title: Live Stream — nucl.ai Conference
+permalink: /stream/day3/
+---
+<section class="stream">
+    <grid>
+        <h2>Event Live Stream Day #3 - Sign up Now!</h2>
+    </grid>
+
+    {% for day in site.data.stream.days %}
+        {% if forloop.index == 3%}
+            <div class="stream-wrap " id="stream-{{forloop.index}}" style="display:block">
+                {{ day.livestream }}
+            </div>
+        {% endif %}
+    {% endfor %}
+
+</section>
