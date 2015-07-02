@@ -28,8 +28,20 @@ $ ->
             "finish": end,
             "day": idx + 1
         }
-        day.schedule.push slot
-        schedule.push slot
+
+        filtered = false
+        if  url("?room") && url("?room") != slot.room then filtered = true
+        if  url("?day") && url("?day") != slot.day then filtered = true
+
+        if url("?duration")
+          diffMs = slot.finish - slot.start
+          minutes = Math.floor((diffMs/1000)/60);
+          if url("?duration") == "short" && minutes >= 45 then filtered = true
+          if url("?duration") == "long" && minutes < 45 then filtered = true
+
+        if !filtered
+          day.schedule.push slot
+          schedule.push slot
 
     
     
