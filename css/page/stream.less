@@ -15,6 +15,7 @@ section.stream {
         }
     }
     .stream-wrap {
+        display: none;
         iframe {
             padding-bottom: 2em;
             height: 1200px;
@@ -28,6 +29,13 @@ section.stream {
             padding-top: 0;
             margin-top: -28px;
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { margin-top: -38px; }
+        }
+    }
+    &.stream-sign-up {
+        .stream-wrap {
+            iframe {
+                padding-bottom: 0em;
+            }
         }
     }
 }

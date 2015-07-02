@@ -3,14 +3,11 @@ layout: page
 title: Live Stream — nucl.ai Conference
 permalink: /stream/day1/
 ---
-<section class="stream">
-    <grid>
-        <h2>Event Live Stream Day #1 - Sign-Up Now!</h2>
-    </grid>
+<section class="stream stream-sign-up">
 
     {% for day in site.data.stream.days %}
         {% if forloop.index == 1 %}
-            <div class="stream-wrap" id="stream-{{forloop.index}}" style="display:block">
+            <div class="stream-wrap" style="display:block">
                 {{ day.livestream }}
             </div>
         {% endif %}
