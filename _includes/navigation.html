@@ -59,7 +59,7 @@
                     </div>
                 </item>
 
-                {% if page.name == 'attend.html' or page.name == 'venue.html' %}
+                {% if page.name == 'attend.html' or page.name == 'venue.html' or page.name == 'stream.html' or page.name == 'stream-day1.html'  or page.name == 'stream-day2.html' or page.name == 'stream-day3.html'%}
                     <item class="selected">
                 {% else %}
                     <item>
@@ -71,6 +71,20 @@
                                 <div class="table">
                                     <div class="triangle"></div>
                                 </div>
+
+                                {% comment %}
+
+                                {% if page.name == 'stream.html' or page.name == 'stream-day1.html'  or page.name == 'stream-day2.html' or page.name == 'stream-day3.html' %}
+                                    <div class="table selected item">
+                                {% else %}
+                                    <div class="table item">
+                                {% endif %}
+                                    <a href="/stream/"> Stream </a>
+                                </div>
+
+                                {% endcomment %}
+
+
                                 {% if page.name == 'attend.html' %}
                                     <div class="table selected item">
                                 {% else %}
