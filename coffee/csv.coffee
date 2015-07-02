@@ -30,7 +30,6 @@ $ ->
         }
 
         filtered = false
-        console.log url("?day") , slot.day, parseInt(url("?day")) != slot.day
         if  url("?room") && url("?room") != slot.room then filtered = true
         if  url("?day") && parseInt(url("?day")) != slot.day then filtered = true
 
