@@ -5,14 +5,14 @@ permalink: /stream/
 ---
 <section class="stream">
     <grid>
-        <h2>Event Live Stream</h2>
+        <h2>Event Live Stream Starts Here In:</h2>
         <content>
 
             <div class="all-timers-off">
                 Conference Live Stream has ended. Thank you for watching!
             </div>
 
-            {% assign timer_title = "The stream audio/video will appear on this page!" %}
+            {% assign timer_title = "Sign-up here for FREE access or to set reminders..." %}
 
             {% for day in site.data.stream.days %}
                 {% capture timer_name %}day-{{forloop.index}}{% endcapture %}
@@ -28,6 +28,12 @@ permalink: /stream/
                     {% include features/timers/timer.html %}
                 </div>
             {% endfor %}
+            
+            <div id="register">
+                <a href="/stream/day1/">Day #1</a> &mdash;
+                <a href="/stream/day2/">Day #2</a> &mdash;
+                <a href="/stream/day1/">Day #3</a>
+            </div>
         </content>
     </grid>
 
@@ -53,7 +59,7 @@ permalink: /stream/
                 
                 <ul>
                     <li><b>July 20th, Day #1</b> &mdash; Real-time Decisions, Crowd Simulation, User Interface & Devices.
-                        <p style="color: #a5cce9; opacity: 0.85; font-size: 100%;"><u>STREAMING LIVE</u>: Epic Battles in Guardians of the Galaxy, Drivatar in the Forza Series, Real-time MCTS in Fable Legends, Crowds in Assassin's Creed, The Revolution in Search-based AI, Evolution of AI at Pixar <keynote></keynote>.</p>
+                        <p style="color: #a5cce9; opacity: 0.85; font-size: 100%;"><u>STREAMING LIVE</u>: Epic Battles in Guardians of the Galaxy, Drivatar in the Forza Series, Real-time MCTS in Fable Legends, Crowds in Assassin's Creed, The Revolution in Search-based AI, Evolution of AI at Pixar (keynote).</p>
                     </li>
                     <li><b>July 21st, Day #2</b> &mdash; Agent Behavior, Procedural Generation, Advanced Analytics.
                         <p style="color: #a5cce9; opacity: 0.85; font-size: 100%;"><u>STREAMING LIVE</u>: Player Cloning in Killer Instinct, Dynamic Pricing in Mobile Games, Generating Characters in Ultima Regum, Design of Total War: Attila, Behavior Trees in Eve Online, Proceduralism in No Man's Sky, Churn Prevention in Top 11, Planning for Final Fantasy XV.</p>
