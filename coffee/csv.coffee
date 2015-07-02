@@ -34,6 +34,10 @@ $ ->
     
     
     result = "topic,speakers,room,start,finish,day\r\n"
+
+    schedule.sort (a,b) ->
+      return a.start - b.start
+
     for item in schedule
       result += '"' + item.topic + '"' + "," +
         '"' + item.speakers + '"' + "," +
