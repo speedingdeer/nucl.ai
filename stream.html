@@ -38,7 +38,7 @@ permalink: /stream/
     </grid>
 
 {% for day in site.data.stream.days %}
-    <div class="stream-wrap timer-dependent" id="stream-{{forloop.index}}">
+    <div class="stream-wrap" id="stream-{{forloop.index}}">
         {{ day.livestream }}
     </div>
 {% endfor %}
@@ -94,5 +94,6 @@ permalink: /stream/
             </div>
         </grid>
     </conten>
-    <section class="stream-teaser separator" style="background-image: url('{{'/img/stream/stream-purple-quads.png' | prepend: site.baseurl }}' );background-position: center center;"></section>
 </section>
+
+<section class="stream-teaser separator" style="background-image: url('{{'/img/stream/stream-purple-quads.png' | prepend: site.baseurl }}' );background-position: center center;"></section>
