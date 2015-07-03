@@ -1,19 +1,28 @@
 section.stream-link {
     text-align: center;
+    .right-cell {
+        vertical-align: top;
+    }
     a.to-stream {
         color: @ORANGE;
         cursor: pointer;
         display: block;
-        padding: 100px 20px;
-        background-color: fade(@GREY, 80%);
-        &:hover {
-            background-color: fade(@WHITE, 80%);
+
+        .content-wrap {
+            margin: 0 80px;
+            padding: 20px;
+            margin-top: 55px;
+            background-color: fade(@DARK_BLUE, 80%);
+            &:hover {
+                background-color: fade(@WHITE, 80%);
+            }
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                padding: 10px 0;
+                margin: 0 70px; 
+            }
+            .transition(0.5s background-color);
         }
-        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-            padding: 10px 0;
-            margin: 0 10px; 
-        }
-        .transition(0.5s background-color);
+
         span.button {
             font-size: 5em;
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
@@ -25,9 +34,9 @@ section.stream-link {
             &.block {
                 display: block;
                 font-size: 1.5em;
-                padding-top: 1em;
+                padding-top: 0.25em;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                    font-size: 0.8em;
+                    font-size: 20px;
                 }
             }
         }
