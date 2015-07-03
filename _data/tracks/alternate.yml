@@ -6,8 +6,8 @@
     - Ricardo J. Méndez
   room: masterclass
   time:
-    start: "12:15"
-    finish: "13:00"
+    start: "12:00"
+    finish: "12:45"
 
 - title: "Top Secret Virtual Reality (To Be Confirmed)"
   description: >
@@ -56,8 +56,8 @@
   speakers:
     - Spyridon Samothrakis
   time:
-    start: "10:00"
-    finish: "12:15"
+    start: "9:45"
+    finish: "12:00"
 
 - title: AR/VR Demo Time in the Conference Lobby!
   description: >

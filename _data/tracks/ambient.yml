@@ -56,8 +56,8 @@
     - Adam Davis
   room: amphitheatre
   time:
-    start: "10:00"
-    finish: "11:00"
+    start: "9:45"
+    finish: "10:45"
 
 - title: "Believable and Responsive Locomotion for Simulated Agents"
   description: >
@@ -70,8 +70,8 @@
     - Mikko Mononen
   room: masterclass
   time:
-    start: "11:30"
-    finish: "12:15"
+    start: "11:15"
+    finish: "12:00"
 
 - title: "Cross-Polination Panel: VFX, Simulation, Games"
   room: laboratories
@@ -86,5 +86,5 @@
   speakers:
     - Mikko Mononen
   time:
-    start: "12:15"
-    finish: "13:00"
+    start: "12:00"
+    finish: "12:45"

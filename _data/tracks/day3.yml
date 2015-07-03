@@ -1,4 +1,4 @@
-- title: "Introduction"
+- title: "Introduction: Animation, Systemic Design, Cognitive Bots"
   speakers:
     - Mika Vehkala
     - Josh McCoy
@@ -6,10 +6,10 @@
   room: amphitheatre
   time:
     start: "09:00"
-    finish: "10:00"
+    finish: "09:45"
 
 - title: "Networking Hour in the Lobby"
   room: laboratories
   time:
-    start: "09:00"
-    finish: "10:00"
+    start: "08:45"
+    finish: "9:45"

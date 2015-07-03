@@ -7,8 +7,8 @@
     - Michał Słapa
   room: amphitheatre
   time:
-    start: "11:15"
-    finish: "12:00"
+    start: "11:00"
+    finish: "11:45"
 
 - title: Epic AI Systems and Director in Fortnite
   description: >
@@ -35,8 +35,8 @@
     - Michael Sellers
   room: masterclass
   time:
-    start: "10:00"
-    finish: "10:45"
+    start: "09:45"
+    finish: "10:30"
 
 - title: "Coordinating Open World Systems and Emergent Gameplay (Expert Panel)"
   description: >

@@ -6,10 +6,10 @@
     - Bill Grosso
   room: amphitheatre
   time:
-    start: "11:15"
-    finish: "12:00"
+    start: "11:00"
+    finish: "11:45"
 
-- title: "Fast > Perfect: Practical approximation examples for mobile game analytics using Spark Streaming"
+- title: "Fast > Perfect: Practical Approximation Examples for Analytics using Spark Streaming"
   description: >
     For mobile games, constant tweaks are the difference between success and failure. 
     Game designers need metrics like DAU, new users and ARPDAU in real-time to be able to tweak quickly. 
@@ -30,8 +30,8 @@
     - Luis Angel Vicente Sanchez
   room: masterclass
   time:
-    start: "10:00"
-    finish: "10:45"
+    start: "09:45"
+    finish: "10:30"
 
 - title: "Extending Recommendation Systems to Offer a Personalised in-game Experience"
   description: >
@@ -86,8 +86,8 @@
   speakers:
     - John Hearty
   time:
-    start: "12:30"
-    finish: "13:15"
+    start: "12:15"
+    finish: "13:00"
 
 - title: "Modeling Skill vs. Luck in Casual Game Levels"
   description: >
