@@ -30,6 +30,7 @@
 
      <splash>
             <grid class="table">
+            <tr>
                 <content class="opacity0 centered-cell">
 
                     <logo-wrap> <logo></logo> </logo-wrap>
@@ -60,10 +61,12 @@
 
                     {% endif %}
                 </content>
-                {% if page.name == 'index.html' %}
                     <div class="centered-cell right-cell stream-link">
                         {% include stream_link.html %}
                     </div>
+                </tr>
+                {% if page.name == 'index.html' %}
+                
                 {% endif %}
             </grid>
                 {% if page.name == 'index.html' %}

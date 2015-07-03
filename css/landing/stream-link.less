@@ -1,7 +1,7 @@
 section.stream-link {
     text-align: center;
-    .right-cell {
-        vertical-align: top;
+    @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) { 
+        #stream-button-wrap { height: 350px; }
     }
     a.to-stream {
         color: @ORANGE;
@@ -11,16 +11,17 @@ section.stream-link {
         .content-wrap {
             margin: 0 80px;
             padding: 20px;
-            margin-top: 55px;
-            background-color: fade(@DARK_BLUE, 80%);
-            &:hover {
-                background-color: fade(@WHITE, 80%);
+            border: 2px solid @ORANGE;
+            &:hover, .touch & {
+                background-color: fade(@ORANGE, 80%);
+                border-color: fade(@ORANGE, 80%);
+                color: @WHITE;
             }
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                 padding: 10px 0;
                 margin: 0 70px; 
             }
-            .transition(0.5s background-color);
+            .transition(0.5s all);
         }
 
         span.button {
@@ -36,7 +37,7 @@ section.stream-link {
                 font-size: 1.5em;
                 padding-top: 0.25em;
                 @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
-                    font-size: 20px;
+                    font-size: 17px;
                 }
             }
         }
