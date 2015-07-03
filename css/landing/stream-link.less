@@ -1,9 +1,21 @@
 section.stream-link {
     text-align: center;
-    a {
+    a.to-stream {
+        color: @ORANGE;
         cursor: pointer;
+        display: block;
+        padding: 100px 20px;
+        background-color: fade(@GREY, 80%);
+        &:hover {
+            background-color: fade(@WHITE, 80%);
+        }
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+            padding: 10px 0;
+            margin: 0 10px; 
+        }
+        .transition(0.5s background-color);
         span.button {
-            font-size: 3em;
+            font-size: 5em;
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                 font-size: 1.25em;
             }
