@@ -37,8 +37,8 @@
     Recursive Neural Networks are a fascinating tool for content generation. Recently we have seen an explosion of RNN applied to text generation: Generative TedTalks, Bible verses, Hiphop lyrics to name just a few. The talk gives an overview of recent experiments, provides a technical overview of RNNs and elaborates on usage scenarios in games or interactive simulations.
   room: masterclass
   time:
-    start: "16:00"
-    finish: "16:45"
+    start: "11:45"
+    finish: "12:30"
   speakers:
     - Samim Winiger
 
@@ -49,13 +49,13 @@
   # speakers:
   #   - Alex J. Champandard
   time:
-    start: "10:00"
-    finish: "12:00"
+    start: "09:45"
+    finish: "11:45"
 
-- title: Language Interaction in Simulations and Training Scenarios
-  description: >
-    ...
-  room: masterclass
-  time:
-    start: "12:00"
-    finish: "12:45"
+# - title: Language Interaction in Simulations and Training Scenarios
+#   description: >
+#     ...
+#   room: masterclass
+#   time:
+#     start: "16:00"
+#     finish: "16:45"

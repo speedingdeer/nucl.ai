@@ -9,11 +9,11 @@
   breaks:
     - name: Coffee Pause
       time:
-        start: "10:45"
-        finish: "11:30"
+        start: "10:30"
+        finish: "11:15"
     - name: Lunch Break
       time:
-        start: "13:00"
+        start: "12:45"
         finish: "14:00"
     - name: Coffee Pause
       time:
@@ -24,11 +24,11 @@
   breaks:
     - name: Coffee Pause
       time:
-        start: "10:45"
-        finish: "11:15"
+        start: "10:30"
+        finish: "11:00"
     - name: Lunch Break
       time:
-        start: "13:15"
+        start: "13:00"
         finish: "14:15"
     - name: Coffee Pause
       time:
@@ -39,11 +39,11 @@
   breaks:
     - name: Coffee Pause
       time:
-        start: "10:45"
-        finish: "11:15"
+        start: "10:30"
+        finish: "11:00"
     - name: Lunch Break
       time:
-        start: "12:45"
+        start: "12:30"
         finish: "13:45"
     - name: Coffee Pause
       time:

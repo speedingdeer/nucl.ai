@@ -9,8 +9,8 @@
     - Jeffrey Schlimmer
   room: amphitheatre
   time:
-    start: "11:15"
-    finish: "12:15"
+    start: "11:00"
+    finish: "12:00"
 
 - title: "Optimizing MCTS Performance for Tactical Coordination in TOTAL WAR: ATILLA"
   description: >
@@ -24,8 +24,8 @@
     - Piotr Andruszkiewicz
   room: masterclass
   time:
-    start: "10:00"
-    finish: "10:45"
+    start: "09:45"
+    finish: "10:30"
 
 - title: "Tactical Planning and Real-time MCTS in Fable Legends"
   description: >
@@ -34,8 +34,8 @@
     - Gwaredd Mountain
   room: amphitheatre
   time:
-    start: "12:15"
-    finish: "13:00"
+    start: "12:00"
+    finish: "12:45"
 
 - title: "Innovations in Search-based AI from MCTS to Evolutionary Algorithms"
   description: >
@@ -75,7 +75,7 @@
     - Spyridon Samothrakis
   room: laboratories
   time:
-    start: "13:00"
+    start: "12:45"
     finish: "14:45"
 
 - title: "Open Discussion on Challenges in Modern AI"

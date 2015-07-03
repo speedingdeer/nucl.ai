@@ -16,8 +16,8 @@
     - Mark Johnson
   room: amphitheatre
   time:
-    start: "12:00"
-    finish: "12:45"
+    start: "11:45"
+    finish: "12:30"
 
 - title: "Procedural Generation of Biotopes for Large Realistic Terrains"
   description: >
@@ -30,13 +30,13 @@
     start: "16:15"
     finish: "17:00"
 
-- title: "Generating Geometry Algorithmically (Workshop) **"
+- title: "Generating Geometry and Textures Algorithmically (Workshop)"
   description: >
     ...
   room: laboratories
   time:
-    start: "10:00"
-    finish: "12:00"
+    start: "09:45"
+    finish: "11:45"
 
 - title: "An Overview of Techniques for Procedural Generators"
   description: >
