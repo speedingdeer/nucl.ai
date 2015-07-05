@@ -623,6 +623,8 @@
 - name: John Hearty
   role: speaker
   position: Data Scientist
+  affiliation:
+    name: Lionhead Studios 
   bio: >
     John works as a Data Scientist at Lionhead Studios, where he leads a cross-functional team in building a TB-scale analytics architecture. He also works closely with game design and product management stakeholders, providing modelling and analysis to support Fable Legends’ balance and design. He is currently authoring a book on Deep Learning for a well-known technical publisher. He has yet to successfully clone himself, but continues to hope.
     
@@ -630,6 +632,8 @@
 - name: Ivan Encinas
   role: speaker
   position: Senior Data Scientist
+  affiliation:
+    name: King.com 
   bio: >
     As a Senior Data Scientist, Ivan works on the Casual Game Performance Team, where provides analytical and model support to understand about the casual games at King, and their performance drivers. <p> At King he has worked with several game teams: Papa Pear, Diamond Digger and Bubble Witch 2. He has spent the last 15 years working in a wide range of fields, from linguistics to economics. In the last 5 years, he has worked along Business Intelligence analysis with big databases in on-line & e-commerce companies. He graduated from the Polytechnic University of Catalunya (Universitat Politècnica de Catalunya -UPC), Barcelona.
 
