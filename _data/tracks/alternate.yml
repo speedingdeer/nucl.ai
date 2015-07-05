@@ -1,23 +1,3 @@
-- title: "Multi-Kinect Motion Tracking and Interactive Installations"
-  description: >
-    <p>What goes into creating a multi-user multi-Kinect interactive installation to convey a somewhat abstract message, other than blood, sweat, and a lot of development time?</p>
-    <p>I’ll discuss the process, our use of both open-source and off-the-shelf AI libraries, as well as when we roll our own. I’ll go over the challenges of building them, with a distributed team, with fuzzy design requirements to convey even fuzzier concepts, and against fixed and very tight deadlines.</p>
-  speakers:
-    - Ricardo J. Méndez
-  room: masterclass
-  time:
-    start: "12:00"
-    finish: "12:45"
-
-- title: "Top Secret Virtual Reality (To Be Confirmed)"
-  description: >
-    .
-  speakers:
-  room: amphitheatre
-  time:
-    start: "14:00"
-    finish: "14:45"
-
 - title: Data Processing for Novel Input Devices
   description: >
     <p>Devices like the Kinect v2, Tango and FaceWare Live allow new possibilities for user input. We are working on several plugins for Unreal Engine 4 that make use of data provided by this equipment.  Since they are based on  image recognition and machine learning, one of the biggest challenges in working with these devices is that they occasionally provide unstable, undefined, unpredictable or outright unusable data.<p>
@@ -32,6 +12,32 @@
   speakers:
     - Chris Mackenzie
     - Vikram Saran
+  room: amphitheatre
+  time:
+    start: "14:00"
+    finish: "14:45"
+
+- title: "Multi-Kinect Motion Tracking and Interactive Installations"
+  description: >
+    <p>What goes into creating a multi-user multi-Kinect interactive installation to convey a somewhat abstract message, other than blood, sweat, and a lot of development time?</p>
+    <p>I’ll discuss the process, our use of both open-source and off-the-shelf AI libraries, as well as when we roll our own. I’ll go over the challenges of building them, with a distributed team, with fuzzy design requirements to convey even fuzzier concepts, and against fixed and very tight deadlines.</p>
+  speakers:
+    - Ricardo J. Méndez
+  room: masterclass
+  time:
+    start: "12:00"
+    finish: "12:45"
+
+- title: "The Next User Interface: Beyond Gamepads and Keyboards (Expert Panel)"
+  description: >
+    <p>This group discussion among all the day's speakers will try to find common ground about problems with existing
+    devices, the best user interfaces available now, and what are the most promising ones for future games and interactive applications.</p>
+    <p>Topics will include vision-based approaches vs. depth-based cameras, single vs. multiple trackers, as well as insights how these impact design.  Questions from the audience are very welcome for all the speakers!</p>
+  speakers:
+    - Ricardo J. Méndez
+    - Vikram Saran
+    - Richard Kogelnig
+    - Alex J. Champandard
   room: masterclass
   time:
     start: "16:45"
