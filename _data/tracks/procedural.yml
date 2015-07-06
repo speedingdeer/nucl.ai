@@ -42,7 +42,7 @@
     start: "16:15"
     finish: "17:00"
 
-- title: "Shader Jam: Generating Geometry and Textures Algorithmically (Workshop)"
+- title: "Generating Geometry and Textures Algorithmically in Shaders (Workshop)"
   description: >
     <p>Procedural Generation is a creative endeavor as much as a technical one: practicing
     and sharing tricks with other practitioners is one of the best ways to learn.  In this

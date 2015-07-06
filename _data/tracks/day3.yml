@@ -13,3 +13,19 @@
   time:
     start: "08:45"
     finish: "9:45"
+
+- title: "Open Microphone: Have Your Say!"
+  speakers:
+    - Verena Riedl
+  room: laboratories
+  time:
+    start: "13:45"
+    finish: "14:30"
+
+- title: "Open Microphone: Have Your Say!"
+  speakers:
+    - Verena Riedl
+  room: laboratories
+  time:
+    start: "16:00"
+    finish: "16:45"
