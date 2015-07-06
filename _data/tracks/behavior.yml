@@ -71,9 +71,12 @@
     start: "11:00"
     finish: "11:45"
 
-- title: "Injecting Behavior Trees into Unreal Tournament's Bots (Workshop) **"
+- title: "Unreal Clinic & Focus on Behavior Trees (Workshop)"
   description: >
-    ...
+    In this open laboratory, Unreal expert and member of the AI team Mieszko Zielinski
+    will let you ask questions about the AI features in Unreal.  Whether it's the navigation
+    system, the behavior trees, or Blueprints, feel free to drop by and ask questions about
+    their usage or underlying implementation. 
   speakers:
     - Mieszko Zielinski
   room: laboratories
