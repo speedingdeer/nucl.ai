@@ -74,14 +74,24 @@
     finish: "12:00"
 
 - title: "Cross-Polination Panel: VFX, Simulation, Games"
+  description: >
+      
   room: laboratories
   speakers:
-    - Michaël Rouillé 
+    - Michaël Rouillé
+    - Adam Davis
+    - Julien Pettré
+    - François Cournoyer
   time:
     start: "16:00"
     finish: "16:45"
 
 - title: "Unity Navigation Mesh and Pathfinding Clinic"
+  description: >
+    In this open laboratory, Unity expert and AI wizzard Mikko Mononen will let you ask
+    questions about the AI features in Unity.  Whether it's the navigation system, integration
+    with animation and movement, feel free to drop by and ask questions about their usage or
+    underlying implementation.
   room: laboratories
   speakers:
     - Mikko Mononen

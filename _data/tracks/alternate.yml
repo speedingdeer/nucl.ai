@@ -28,11 +28,15 @@
     start: "12:00"
     finish: "12:45"
 
-- title: "The Next User Interface: Beyond Gamepads and Keyboards (Expert Panel)"
+- title: "Insights into the Next User Interfaces & Devices (Expert Panel)"
   description: >
-    <p>This group discussion among all the day's speakers will try to find common ground about problems with existing
-    devices, the best user interfaces available now, and what are the most promising ones for future games and interactive applications.</p>
-    <p>Topics will include vision-based approaches vs. depth-based cameras, single vs. multiple trackers, as well as insights how these impact design.  Questions from the audience are very welcome for all the speakers!</p>
+    <p>Look beyond gamepads and keyboards in this group discussion among all the day's
+    speakers will try to find common ground about problems with existing devices, the best
+    user interfaces available now, and what are the most promising ones for future games and
+    interactive applications.</p>
+    <p>Topics will include vision-based approaches vs. depth-based cameras, single vs. multiple
+    trackers, as well as insights how these impact design.  Questions from the audience are
+    very welcome for all the speakers!</p>
   speakers:
     - Ricardo J. Méndez
     - Vikram Saran
