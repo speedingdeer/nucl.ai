@@ -1,7 +1,11 @@
 - name: Clodéric Mars
   role: track
-  tracks: behavior
+  tracks: [behavior]
   twitter: clodericmars
+  affiliation: 
+    position: "Product & engineering lead"
+    name: craft ai
+    url: http://www.craft.ai/
   bio: >
     Clodéric is the product & engineering lead of craft ai, an AI engine for mobile, web, IoT and game applications; he previously
     worked on MASA LIFE, an AI middleware for Games & Simulations, and at INRIA and Golaem on a navigation engine.
@@ -13,6 +17,10 @@
   role: track
   tracks: [decisions]
   twitter: diego_pliebana
+  affiliation: 
+    position: "Senior Research Officer"
+    name: University of Essex
+    url: http://www.essex.ac.uk/
   bio: >
     Diego Perez has recently achieved a Ph.D. in Computer Science at the University of Essex (UK), where he is now a Senior 
     Research Officer. He has published in the domain of Game AI, with research interests on Reinforcement Learning and 
@@ -24,6 +32,10 @@
   role: track
   tracks: [ambient]
   twitter: michaelrouille
+  affiliation: 
+    position: "CTO"
+    name: Golaem
+    url: http://golaem.com/
   bio: >
     Michaël Rouillé is the CTO of Golaem, a company he co-founded in 2009. Golaem develop Golaem Crowd, a character animation 
     software for artists of vfx, animation & game studios who need to populate backgrounds & midgrounds of films, tv series, 
@@ -40,6 +52,7 @@
   role: speaker
   confirmed: true
   affiliation: 
+    position: Tech Lead Animation & Physics
     name: Ubisoft Toronto
     url: http://www.ubisoft.com/
   bio: >
@@ -69,6 +82,10 @@
   role: track
   tracks: [systems]
   twitter: get_tuda_choppa
+  affiliation: 
+    position: "Lecturer in computer science"
+    name: University of Derby
+    url: http://www.derby.ac.uk/
   bio: >
     Tommy Thompson is a lecturer in computer science at the University of Derby, UK.
     He is an AI researcher focussed on machine learning applications in the areas of non-player character behaviour,
