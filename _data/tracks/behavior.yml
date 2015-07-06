@@ -33,9 +33,15 @@
     start: "09:45"
     finish: "10:45"
 
-- title: "Design of TOTAL WAR: ATTILA"
+- title: "The diplomacy AI of Total War: Attila"
   description: >
-    Diplomacy plays a major role in every grand strategy game, so it’s essential to have a good, tuneable AI for handling it. Designing such an AI is a great challenge, because the system has to solve a series of difficult problems, and the implementation requires constant communication and cooperation between the designer and the programmers. Balancing such a system is also a tough nut to crack, and requires an “always think ahead” mentality throughout the implementation process. This talk will focus on the design aspect of creating and balancing the Diplomacy AI of Total War: Attila and will show you some tricks on how you can organically control game difficulty through diplomacy and how designers and programmers can work together on AI systems in an efficient way.
+    Diplomacy plays a major role in every grand strategy game, so it’s essential to have a good, tuneable AI for handling it. 
+    Designing such an AI is a great challenge, because the system has to solve a series of difficult problems, and the 
+    implementation requires constant communication and cooperation between the designer and the programmers. Balancing such a 
+    system is also a tough nut to crack, and requires an “always think ahead” mentality throughout the implementation process. 
+    This talk will focus on the design aspect of creating and balancing the Diplomacy AI of Total War: Attila and will show you 
+    some tricks on how you can organically control game difficulty through diplomacy and how designers and programmers can work 
+    together on AI systems in an efficient way.
   speakers:
     - Csaba Toth
   room: amphitheatre
