@@ -361,7 +361,6 @@
 - name: Csaba Toth
   role: speaker
   confirmed: true
-  tracks: [decisions]
   affiliation: 
     name: The Creative Assembly
     url: http://www.creative-assembly.com/
