@@ -7,30 +7,30 @@
 #        finish: "13:30"
 - day: 1
   breaks:
-    - name: Coffee Pause (fueled by The Creative Assembly)
+    - name: Coffee Pause <br> (fueled by <br> The Creative Assembly)
       time:
         start: "10:30"
         finish: "11:15"
-    - name: Lunch Break (sponsored by The Creative Assembly)
+    - name: Lunch Break <br> (sponsored by <br> The Creative Assembly)
       time:
         start: "12:45"
         finish: "14:00"
-    - name: Coffee Pause (fueled by The Creative Assembly)
+    - name: Coffee Pause <br> (fueled by The Creative Assembly)
       time:
         start: "15:45"
         finish: "16:15"
 
 - day: 2
   breaks:
-    - name: Coffee Pause (fueled by IO Interactive)
+    - name: Coffee Pause <br> (fueled by IO Interactive)
       time:
         start: "10:30"
         finish: "11:00"
-    - name: Lunch Break (sponsored by IO Interactive)
+    - name: Lunch Break <br> (sponsored by IO Interactive)
       time:
         start: "13:00"
         finish: "14:15"
-    - name: Coffee Pause (fueled by IO Interactive)
+    - name: Coffee Pause <br> (fueled by IO Interactive)
       time:
         start: "15:45"
         finish: "16:15"
