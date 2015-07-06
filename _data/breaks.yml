@@ -11,7 +11,7 @@
       time:
         start: "10:30"
         finish: "11:15"
-    - name: Lunch Break <br/> <span>sponsored by</span> <br/> The Creative Assembly
+    - name: Lunch Break
       time:
         start: "12:45"
         finish: "14:00"
@@ -26,7 +26,7 @@
       time:
         start: "10:30"
         finish: "11:00"
-    - name: Lunch Break <br/> <span>sponsored by</span> <br/> IO Interactive
+    - name: Lunch Break
       time:
         start: "13:00"
         finish: "14:15"
