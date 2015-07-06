@@ -8,6 +8,17 @@
   time:
     start: "11:00"
     finish: "11:45"
+    
+- title: "Extended Q&A on Dynamic Pricing and Conditional Offers"
+  description: >
+    <p>Following up </p>
+  speakers:
+    - Heather Stark
+    - Bill Grosso
+  room: laboratories
+  time:
+    start: "11:45"
+    finish: "12:15"
 
 - title: "Fast > Perfect: Practical Approximation Examples for Analytics using Spark Streaming"
   description: >

@@ -11,13 +11,25 @@
 
 - title: "Generating Global Cultures and Characters in ULTIMA RATIO REGUM"
   description: >
-    This talk explores the extensive and highly unusual procedural generation in the in-development roguelike game Ultima Ratio Regum, the systems underlying the game's creation of a vast range of possible national, cultural and religious identities, and how the game's AI actors draw upon these cultural identities and logics when making their decisions. The talk will explore: the fundamental generation algorithms underlying the construction of the world map, settlements, and the interiors of buildings; the variants of these generators and the interaction of hand-made content into the procedural generators; resolving conflicts at the macro, meso and micro scale in the world's construction; the procedural generation of "culture"; the integration of AIs with these procedural cultures; and handling decision-making for large numbers of AI actors whose decisions must factor in a range of semantic, linguistic, religious and national concerns.
+    <p>This talk explores the extensive and highly unusual procedural generation in the in-development roguelike game Ultima Ratio Regum, the systems underlying the game's creation of a vast range of possible national, cultural and religious identities, and how the game's AI actors draw upon these cultural identities and logics when making their decisions.</p>
+    <p>Mark will investigate the fundamental generation algorithms underlying the construction of the world map, settlements, and the interiors of buildings; the variants of these generators and the interaction of hand-made content into the procedural generators; resolving conflicts at the macro, meso and micro scale in the world's construction; the procedural generation of "culture"; the integration of AIs with these procedural cultures; and handling decision-making for large numbers of AI actors whose decisions must factor in a range of semantic, linguistic, religious and national concerns.</p>
   speakers:
     - Mark Johnson
   room: amphitheatre
   time:
     start: "11:45"
     finish: "12:30"
+
+
+- title: "Extended Q&A on Character and World Generation"
+  description: >
+    ...
+  speakers:
+    - Mark Johnson
+  room: laboratories
+  time:
+    start: "12:30"
+    finish: "13:00"
 
 - title: "Procedural Generation of Biotopes for Large Realistic Terrains"
   description: >
@@ -30,9 +42,16 @@
     start: "16:15"
     finish: "17:00"
 
-- title: "Generating Geometry and Textures Algorithmically (Workshop)"
+- title: "Shader Jam: Generating Geometry and Textures Algorithmically (Workshop)"
   description: >
-    ...
+    <p>Procedural Generation is a creative endeavor as much as a technical one: practicing
+    and sharing tricks with other practitioners is one of the best ways to learn.  In this
+    creative jam-like open laboratory, you will be starting from a simple cave shader and
+    expanding it as you see fit, creating a small procedural scene that includes algorithmic
+    geometry and textures, using common tools used in shaders such as distance fields.  Learn
+    by creating and from others around you!</p>
+  speakers:
+    - Alex J. Champandard
   room: laboratories
   time:
     start: "09:45"
