@@ -69,7 +69,11 @@
 
 - title: "Best Practices in Automated Testing of PCG (Expert Panel)"
   description: >
-    ...
+    <p>Listen to the day's speakers discuss one of the most challenging parts of procedural
+    generation: testing.  What techniques can be used in practice to help identify problems,
+    reproduce them and debug them? Whether it's full galaxies or rich believable landscapes,
+    there are common patterns behind these techniques.<p>
+    <p>Other questions from any topics discussed during the day are also very welcome!</p>
   speakers:
     - Vladimir Nejedly
     - Hazel McKendrick
