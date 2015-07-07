@@ -7,6 +7,7 @@
 @COLOR_TRACK_SYSTEMS: #5cb214;
 @COLOR_TRACK_ANIMATION: #ff0031;
 @COLOR_TRACK_COGNITION: #e0e0e0;
+@COLOR_TRACK_DEFAULT: #a18d75;
 
 @LIGHTEN_BLUE: lighten(@BLUE, 20%);
 @LIGHTEN_GREY: lighten(@DARK_GREY, 10%);
@@ -142,7 +143,8 @@ section.program-schedule {
                 }
 
             }
-
+            
+            .track { .track-color(@COLOR_TRACK_DEFAULT); }
             .track.alternate { .track-color(@COLOR_TRACK_ALTERNATE); }
             .track.ambient { .track-color(@COLOR_TRACK_AMBIENT); }
             .track.procedural { .track-color(@COLOR_TRACK_PROCEDUREAL); }
@@ -295,6 +297,7 @@ section.program-schedule {
                     left: 0;
                     div.track { width: 884px; margin-left: 50px; } //harcoded -> better move to js or varrables to calcualte them
                     z-index: 0;
+                    span { opacity: 0.5; }
                 }
                 div.track {
                     display: table;
@@ -313,7 +316,8 @@ section.program-schedule {
                         &.track.decisions { .track-hovered(@COLOR_TRACK_DECISIONS, @WHITE); }
                         &.track.systems { .track-hovered(@COLOR_TRACK_SYSTEMS, @WHITE); }
                         &.track.animation { .track-hovered(@COLOR_TRACK_ANIMATION, @DARK_GREY); }
-                        &.track.cognition, &.track.day3, &.track.day2, &.track.day1 { .track-hovered(@COLOR_TRACK_COGNITION, @DARK_GREY); }
+                        &.track.cognition { .track-hovered(@COLOR_TRACK_COGNITION, @DARK_GREY); }
+                        &.track.day3, &.track.day2, &.track.day1 { .track-hovered(@COLOR_TRACK_DEFAULT, @DARK_GREY); }
                         &.track.break {
                             .track-hovered(@LIGHTEN_GREY, initial); 
                         }

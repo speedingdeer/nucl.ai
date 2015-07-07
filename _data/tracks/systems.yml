@@ -10,6 +10,17 @@
     start: "11:00"
     finish: "11:45"
 
+- title: "Extended Q&A about Witcher 3 and Open World Population Managers"
+  description: >
+    ...
+  speakers:
+    - Tommy Tompson
+    - Michał Słapa
+  room: laboratories
+  time:
+    start: "11:45"
+    finish: "12:30"
+
 - title: Epic AI Systems and Director in Fortnite
   description: >
     Fortnite is Epic Game's upcoming free-to-play title with fort building and an AI director that spawns procedural
@@ -51,6 +62,7 @@
     - Tommy Thompson
     - John Abercrombie
     - Michał Słapa
+    - Antoine Fortier
   room: masterclass
   time:
     start: "16:45"

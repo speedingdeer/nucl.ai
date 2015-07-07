@@ -1,7 +1,11 @@
 - name: Clodéric Mars
   role: track
-  tracks: behavior
+  tracks: [behavior]
   twitter: clodericmars
+  affiliation: 
+    position: "Product & engineering lead"
+    name: craft ai
+    url: http://www.craft.ai/
   bio: >
     Clodéric is the product & engineering lead of craft ai, an AI engine for mobile, web, IoT and game applications; he previously
     worked on MASA LIFE, an AI middleware for Games & Simulations, and at INRIA and Golaem on a navigation engine.
@@ -13,6 +17,10 @@
   role: track
   tracks: [decisions]
   twitter: diego_pliebana
+  affiliation: 
+    position: "Senior Research Officer"
+    name: University of Essex
+    url: http://www.essex.ac.uk/
   bio: >
     Diego Perez has recently achieved a Ph.D. in Computer Science at the University of Essex (UK), where he is now a Senior 
     Research Officer. He has published in the domain of Game AI, with research interests on Reinforcement Learning and 
@@ -24,6 +32,10 @@
   role: track
   tracks: [ambient]
   twitter: michaelrouille
+  affiliation: 
+    position: "CTO"
+    name: Golaem
+    url: http://golaem.com/
   bio: >
     Michaël Rouillé is the CTO of Golaem, a company he co-founded in 2009. Golaem develop Golaem Crowd, a character animation 
     software for artists of vfx, animation & game studios who need to populate backgrounds & midgrounds of films, tv series, 
@@ -40,6 +52,7 @@
   role: speaker
   confirmed: true
   affiliation: 
+    position: Tech Lead Animation & Physics
     name: Ubisoft Toronto
     url: http://www.ubisoft.com/
   bio: >
@@ -69,6 +82,10 @@
   role: track
   tracks: [systems]
   twitter: get_tuda_choppa
+  affiliation: 
+    position: "Lecturer in computer science"
+    name: University of Derby
+    url: http://www.derby.ac.uk/
   bio: >
     Tommy Thompson is a lecturer in computer science at the University of Derby, UK.
     He is an AI researcher focussed on machine learning applications in the areas of non-player character behaviour,
@@ -78,6 +95,10 @@
   role: track
   tracks: [animation]
   twitter: mikavehkala
+  affiliation: 
+    position: "Game Developer"
+    name: Next Games
+    url: http://www.nextgames.com/
   bio: >
     Mika has been working in the industry since late 1999 – including IO Interactive as Senior AI
     Programmer on the Hitman: Absolution and Killzone: Shadow Fall for Guerrilla Games.
@@ -87,8 +108,21 @@
   role: track
   tracks: [cognition]
   twitter: joshua_mccoy
+  affiliation: 
+    position: "Assistant professor"
+    name: American University
+    url: http://www.american.edu/
   bio: >
-    Josh McCoy is a game developer, computer scientist and cross-disciplinary researcher whose work lies at the confluence of game technology, social science, artificial intelligence and design. His goal is to create playable experiences that communicate to broad audiences and critically address the challenges present in our society while expanding the boundaries of technology. The most recent products of his research involve combining artificial intelligence techniques with social science to create meaningful, responsive and socially engaging game experiences. He was a lead on the experimental video game Prom Week, a game that enables a new level of social interaction between characters via an artificial intelligence system that leverages social science to make social behavior playable. This work has been nominated for the Technical Excellence award in the Independent Games Festival and an IndieCade award. Additionally, his research has been used in a DARPA-funded project to enable trainees to engage socially responsive characters with full-bodied interaction for the purpose of teaching good stranger behavior to soldiers in foreign lands.
+    Josh McCoy is a game developer, computer scientist and cross-disciplinary researcher whose work lies at the confluence of 
+    game technology, social science, artificial intelligence and design. His goal is to create playable experiences that 
+    communicate to broad audiences and critically address the challenges present in our society while expanding the boundaries 
+    of technology. The most recent products of his research involve combining artificial intelligence techniques with social 
+    science to create meaningful, responsive and socially engaging game experiences. He was a lead on the experimental video game 
+    Prom Week, a game that enables a new level of social interaction between characters via an artificial intelligence system 
+    that leverages social science to make social behavior playable. This work has been nominated for the Technical Excellence 
+    award in the Independent Games Festival and an IndieCade award. Additionally, his research has been used in a DARPA-funded 
+    project to enable trainees to engage socially responsive characters with full-bodied interaction for the purpose of teaching 
+    good stranger behavior to soldiers in foreign lands.
 
 - name: Petra Champandard-Pail
   role: org
@@ -153,13 +187,15 @@
   role: advisor
   twitter: AngryAnt
   bio: >
-    A freelance game developer with a specialisation in AI, and author of the "Behave" AI middleware solution, Emil brings experience from a host of client projects as well as a four-year stint at Unity Technologies. A preference for behavioural logic, but a wide appetite for new and exciting challenges.
+    A freelance game developer with a specialisation in AI, and author of the "Behave" AI middleware solution, Emil brings 
+    experience from a host of client projects as well as a four-year stint at Unity Technologies. A preference for behavioural 
+    logic, but a wide appetite for new and exciting challenges.
 
 - name: Piotr Andruszkiewicz
   role: speaker
   confirmed: true
   affiliation: 
-    name: The Creative Assembly
+    name: Creative Assembly
     url: http://www.creative-assembly.com/
   bio: >
     AI programmer, world conquest enthusiast. Worked on AI for the campaign portion of several Total War titles focusing on 
@@ -361,12 +397,11 @@
 - name: Csaba Toth
   role: speaker
   confirmed: true
-  tracks: [decisions]
   affiliation: 
-    name: The Creative Assembly
+    name: Creative Assembly
     url: http://www.creative-assembly.com/
   bio: >
-    Designer with nearly 10 years of experience in the gaming industry and with a background in programming, worked on games 
+    Game designer with nearly 10 years of experience in the gaming industry and with a background in programming, worked on games 
     from a wide variety of genres, designed and tweaked AI behaviour for racing games, shooters and most recently the campaign 
     part of Total War: Rome2 and Total War: Attila. Apart from AI, he specialises in game balancing and systems design.
 
