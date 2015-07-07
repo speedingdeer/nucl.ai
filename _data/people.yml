@@ -95,6 +95,10 @@
   role: track
   tracks: [animation]
   twitter: mikavehkala
+  affiliation: 
+    position: "Game Developer"
+    name: Next Games
+    url: http://www.nextgames.com/
   bio: >
     Mika has been working in the industry since late 1999 – including IO Interactive as Senior AI
     Programmer on the Hitman: Absolution and Killzone: Shadow Fall for Guerrilla Games.
@@ -104,8 +108,21 @@
   role: track
   tracks: [cognition]
   twitter: joshua_mccoy
+  affiliation: 
+    position: "Assistant professor"
+    name: American University
+    url: http://www.american.edu/
   bio: >
-    Josh McCoy is a game developer, computer scientist and cross-disciplinary researcher whose work lies at the confluence of game technology, social science, artificial intelligence and design. His goal is to create playable experiences that communicate to broad audiences and critically address the challenges present in our society while expanding the boundaries of technology. The most recent products of his research involve combining artificial intelligence techniques with social science to create meaningful, responsive and socially engaging game experiences. He was a lead on the experimental video game Prom Week, a game that enables a new level of social interaction between characters via an artificial intelligence system that leverages social science to make social behavior playable. This work has been nominated for the Technical Excellence award in the Independent Games Festival and an IndieCade award. Additionally, his research has been used in a DARPA-funded project to enable trainees to engage socially responsive characters with full-bodied interaction for the purpose of teaching good stranger behavior to soldiers in foreign lands.
+    Josh McCoy is a game developer, computer scientist and cross-disciplinary researcher whose work lies at the confluence of 
+    game technology, social science, artificial intelligence and design. His goal is to create playable experiences that 
+    communicate to broad audiences and critically address the challenges present in our society while expanding the boundaries 
+    of technology. The most recent products of his research involve combining artificial intelligence techniques with social 
+    science to create meaningful, responsive and socially engaging game experiences. He was a lead on the experimental video game 
+    Prom Week, a game that enables a new level of social interaction between characters via an artificial intelligence system 
+    that leverages social science to make social behavior playable. This work has been nominated for the Technical Excellence 
+    award in the Independent Games Festival and an IndieCade award. Additionally, his research has been used in a DARPA-funded 
+    project to enable trainees to engage socially responsive characters with full-bodied interaction for the purpose of teaching 
+    good stranger behavior to soldiers in foreign lands.
 
 - name: Petra Champandard-Pail
   role: org
@@ -170,13 +187,15 @@
   role: advisor
   twitter: AngryAnt
   bio: >
-    A freelance game developer with a specialisation in AI, and author of the "Behave" AI middleware solution, Emil brings experience from a host of client projects as well as a four-year stint at Unity Technologies. A preference for behavioural logic, but a wide appetite for new and exciting challenges.
+    A freelance game developer with a specialisation in AI, and author of the "Behave" AI middleware solution, Emil brings 
+    experience from a host of client projects as well as a four-year stint at Unity Technologies. A preference for behavioural 
+    logic, but a wide appetite for new and exciting challenges.
 
 - name: Piotr Andruszkiewicz
   role: speaker
   confirmed: true
   affiliation: 
-    name: The Creative Assembly
+    name: Creative Assembly
     url: http://www.creative-assembly.com/
   bio: >
     AI programmer, world conquest enthusiast. Worked on AI for the campaign portion of several Total War titles focusing on 
