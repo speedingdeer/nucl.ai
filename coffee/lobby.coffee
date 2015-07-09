@@ -66,6 +66,7 @@ $ ->
     for day in days
       if day.date.getDate() == date.getDate()
         currentDay = day.addClass("selected")
+        day.height(day.width());
       else
         day.removeClass("selected")
 
