@@ -12,8 +12,10 @@ permalink: /lobby/
                     <div class="day" date="{{day.date}}">
                         {% for sponsor in day.sponsors %}
                             {% for item in site.data.sponsors %}
-                                {% if item.id == sponsor %}
+                                {% if item.id == sponsor.id %}
+                                    <div class="sponsor-wrap" duration="{{sponsor.duration}}">
                                     {% include /landing/sponsor.html %}
+                                    </div>
                                 {% endif %}
                             {% endfor %}    
                         {% endfor %}

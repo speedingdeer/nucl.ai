@@ -1,23 +1,32 @@
 - date: "2015/07/20"
   sponsors:
-    - craft_ai
-    - ca
-    - sproing
-    - havok
-    - unity
+    - id: craft_ai
+      duration: 20000
+    - id: ca
+      duration: 20000
 
 - date: "2015/07/21"
   sponsors:
-    - craft_ai
-    - ca
-    - sproing
-    - havok
-    - unity
+    - id: craft_ai
+      duration: 20000
+    - id: ca
+      duration: 20000
+    - id: sproing
+      duration: 20000
+    - id: havok
+      duration: 20000
+    - id: unity
+      duration: 20000
 
 - date: "2015/07/22"
   sponsors:
-    - craft_ai
-    - ca
-    - sproing
-    - havok
-    - unity
+    - id: craft_ai
+      duration: 20000
+    - id: ca
+      duration: 20000
+    - id: sproing
+      duration: 20000
+    - id: havok
+      duration: 20000
+    - id: unity
+      duration: 20000
