@@ -58,6 +58,7 @@ $ ->
     days = []
     $(".sponsors-list .day").each ->
       day = $(@)
+      day.addClass("animated zoomIn")
       day.date = new Date day.attr "date"
       days.push day
 
@@ -86,8 +87,8 @@ $ ->
       currentDay.find("item.sponsor").first().addClass("selected")
 
 
-    $("table .track item.sponsor").remove();
-    $(".track.selected").append $("item.sponsor.selected").clone()
+    # $("table .track item.sponsor").remove();
+    # $(".track.selected").append $("item.sponsor.selected").clone()
 
 
     setTimeout updateSponsor, sponsorTimeout
