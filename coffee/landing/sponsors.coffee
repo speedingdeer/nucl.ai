@@ -1,7 +1,6 @@
-$ ->
-  
+$ ->  
   setSponsorsSize = () ->
-    $("item.sponsor").each ->
+    $("section.sponsors item.sponsor").each ->
       sponsor = $(this)
       sponsor.height(sponsor.width())
 
