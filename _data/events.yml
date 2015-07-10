@@ -13,15 +13,30 @@
     <p>The venue for the party is right near the conference venue, less than a minute walk from
     the amphitheatres.  It's within the first courtyard of the campus (Hof 1):</p>
     <pre>
-    Altes AKH
-    Uni Campus, Hof 1
-    Alserstrasse 4
-    1090 Wien
+    Altes AKH<br/>
+    Uni Campus, Hof 1<br/>
+    Alserstrasse 4<br/>
+    1090 Wien<br/>
     </pre>
+    <p>See you on Monday. Prost!</p>
 
 - date: "2015/07/21"
-  name: VIP Dinner
+  name: V.I.P. Dinner
   id: levante
   location: Levante Parliament
   placeId: "ChIJ14-MbZQHbUcRoENFbCJHFTw"
   address: "Auerspergstraße 9, 1080 Wien, Austria"
+  description: >
+    <p>For All Access ticket holders and conference speakers, meet us on Tuesday, July 21<sup>st</sup>
+    for the nucl.ai 2015 V.I.P. Dinner, to be held at The Levante Parliament hotel.  The evening starts
+    shortly after the last session; dinner and one drink is included—but don't forget your badge and
+    and ticket that you received during registration.</p>
+  instructions: >
+    <p>The venue for the V.I.P. Dinner is a short walk away from the conference venue. You can easily
+    make your way directly with the map, or join the groups of people leaving after the last session.
+    Here's the official address:</p>
+    <pre>
+    Auerspergstraße 9<br/>
+    1080 Wien<br/>
+    </pre>
+    <p>See you on Tuesday. Guten Appetit!</p>
