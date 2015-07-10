@@ -48,8 +48,7 @@ $ ->
 
     setTimeout updateTalk, 1000
 
-  sponsorTimeout = 1000
-  if url("?sponsorTimeout") != null then sponsorTimeout = parseInt url("?sponsorTimeout")
+  sponsorTimeout = 10000
 
   updateSponsor = () ->
     date = new Date() # default date
@@ -71,7 +70,7 @@ $ ->
         day.removeClass("selected")
 
     sponsors = []
-    currentDay.find("item.sponsor").each ->
+    currentDay.find(".sponsor-wrap").each ->
       sponsors.push $(@)
 
     selectNext = false
@@ -84,15 +83,13 @@ $ ->
         break;
 
     # if none is selected - select first
-    if currentDay.find("item.sponsor.selected").length == 0
-      currentDay.find("item.sponsor").first().addClass("selected")
+    if currentDay.find(".sponsor-wrap.selected").length == 0
+      currentDay.find(".sponsor-wrap").first().addClass("selected")
 
+    timout = sponsorTimeout
+    if $(".sponsor-wrap.selected").attr("duration") then timeout = parseInt $(".sponsor-wrap.selected").attr("duration")
 
-    # $("table .track item.sponsor").remove();
-    # $(".track.selected").append $("item.sponsor.selected").clone()
-
-
-    setTimeout updateSponsor, sponsorTimeout
+    setTimeout updateSponsor, timeout
 
   updateTalk()
   updateSponsor()
