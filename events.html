@@ -1,10 +1,23 @@
 ---
 layout: page
-title: nucl.ai - privacy policy
-permalink: /legal/
+title: nucl.ai - events
+permalink: /events/
 ---
-<section class="events">
-    <grid>
-        <content>
-        </content>
-    </grid>
+
+{% for event in site.data.events %}
+    <section class="events">
+    <h2> {{event.name}} </h2>
+    {% for d in site.data.schedule %}
+        {% if event.date == d.date %}
+            <h3>{{event.location}} ({{d.title}})</h3>
+        {% endif %}
+    {% endfor %}
+        <div id="event-map-canvas-{{forloop.index}}" class="event map" location="{{event.address}}"></div>
+        <grid>
+            <content>
+            HERE Pics / Descriptions
+            </content>
+        </grid>
+    </section>
+
+{% endfor %}

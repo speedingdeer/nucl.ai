@@ -9,6 +9,11 @@ root.config = {
   },
   thumbnails: {
     borderSize: 0.015
+  },
+  mapOptions: {
+    scrollwheel: false,
+    zoom: 17,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
   }
 }
 

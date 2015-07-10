@@ -1,7 +1,9 @@
 - date: "2015/07/20"
   name: Welcome Party
   location: Stiegl Ambulanz
+  address:  "Alser Str. 4, 1090 Wien, Austria"
 
 - date: "2015/07/21"
   name: VIP Dinner
   location: Levante Parliament
+  address: "Auerspergstraße 9, 1080 Wien, Austria"

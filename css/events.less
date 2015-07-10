@@ -1,3 +1,10 @@
 section.events {
-    
+    h3 { .column(12); }
+    div.map.event {
+        width: 100%;
+        height: 350px;
+        @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+            height: @SEPARATOR_HEIGHT_SMARTPHONE;
+        }
+    }    
 }
