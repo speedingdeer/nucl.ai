@@ -9,10 +9,10 @@ permalink: /events/
     <h2> {{event.name}} </h2>
     {% for d in site.data.schedule %}
         {% if event.date == d.date %}
-            <h3>{{event.location}} ({{d.title}})</h3>
+            <h3>{{event.location}} — {{d.title}}</h3>
             <grid>
             <content>
-            HERE some description or pics
+            {{event.description}}
             </content>
         </grid>
         {% endif %}
@@ -20,7 +20,7 @@ permalink: /events/
         <div id="event-map-canvas-{{forloop.index}}" class="event map" location="{{event.address}}"></div>
         <grid>
             <content>
-            HERE some description or pics
+            {{event.instructions}}
             </content>
         </grid>
     </section>
