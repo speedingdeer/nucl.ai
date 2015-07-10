@@ -1,0 +1,11 @@
+- date: "2015/07/20"
+  events:
+    - name: Welcome Party
+      location: Stiegl Ambulanz
+
+- date: "2015/07/21"
+  events:
+    - name: VIP Dinner
+      location: Levante Parliament
+
+- date: "2015/07/21"
