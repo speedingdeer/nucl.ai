@@ -1,7 +1,7 @@
 ---
 layout: page
 title: nucl.ai - events
-permalink: /events/
+permalink: /program/events/
 ---
 
 {% for event in site.data.events %}
@@ -13,16 +13,14 @@ permalink: /events/
             <grid>
             <content>
             {{event.description}}
+            {% assign items = site.data.galleries[event.id] %}
+            {% include features/gallery/gallery.html %}
+            {{event.instructions}}
             </content>
         </grid>
         {% endif %}
     {% endfor %}
-        <div id="event-map-canvas-{{forloop.index}}" class="event map" location="{{event.address}}"></div>
-        <grid>
-            <content>
-            {{event.instructions}}
-            </content>
-        </grid>
+    <div id="event-map-canvas-{{forloop.index}}" class="event map" location="{{event.address}}"></div>
     </section>
 
 {% endfor %}

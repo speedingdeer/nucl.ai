@@ -1,4 +1,5 @@
 - date: "2015/07/20"
+  id: stiegl
   name: Official Party
   location: Stiegl Ambulanz
   address:  "Alser Str. 4, 1090 Wien, Austria"
@@ -20,5 +21,6 @@
 
 - date: "2015/07/21"
   name: VIP Dinner
+  id: levante
   location: Levante Parliament
   address: "Auerspergstraße 9, 1080 Wien, Austria"

@@ -1,9 +1,8 @@
 section.events {
-    grid {
-        padding-top: 2em;
-        &:first-child {
-            padding-top: 0em;
-        }
+    pre {
+        font-size: 1.5em;
+        margin: 0;
+        white-space: normal;
     }
     h3 {
         .column(12);
@@ -16,5 +15,10 @@ section.events {
         @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
             height: @SEPARATOR_HEIGHT_SMARTPHONE;
         }
-    }    
+    }
+    gallery {
+        padding-bottom: 0.4em;
+        display: block;
+        h3 { display: none; }
+    }
 }
