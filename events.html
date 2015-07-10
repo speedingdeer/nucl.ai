@@ -20,7 +20,7 @@ permalink: /program/events/
         </grid>
         {% endif %}
     {% endfor %}
-    <div id="event-map-canvas-{{forloop.index}}" class="event map" location="{{event.address}}"></div>
+    <div id="event-map-canvas-{{forloop.index}}" class="event map" placeId="{{event.placeId}}" location="{{event.address}}"></div>
     </section>
 
 {% endfor %}

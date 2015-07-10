@@ -3,7 +3,7 @@
   name: Official Party
   location: Stiegl Ambulanz
   address:  "Alser Str. 4, 1090 Wien, Austria"
-  latlng: "48.2158348, 16.3525301,17.8"
+  placeId: "ChIJn-OKb8AHbUcROmKfyYHM-Cc"
   description: >
     <p>Join us on Monday, July 20<sup>th</sup> for the nucl.ai 2015 Official Party, to be held
     at the Stiegl Ambulanz.  Join us right after the last session if you're an attendee, or at
@@ -23,4 +23,5 @@
   name: VIP Dinner
   id: levante
   location: Levante Parliament
+  placeId: "ChIJ14-MbZQHbUcRoENFbCJHFTw"
   address: "Auerspergstraße 9, 1080 Wien, Austria"
