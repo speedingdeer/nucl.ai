@@ -12,7 +12,7 @@ root.config = {
   },
   mapOptions: {
     scrollwheel: false,
-    zoom: 17,
+    zoom: 18,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
 }
