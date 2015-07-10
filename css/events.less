@@ -1,5 +1,15 @@
 section.events {
-    h3 { .column(12); }
+    grid {
+        padding-top: 2em;
+        &:first-child {
+            padding-top: 0em;
+        }
+    }
+    h3 {
+        .column(12);
+        padding-bottom: 1em;
+        text-align: center;
+    }
     div.map.event {
         width: 100%;
         height: 350px;
