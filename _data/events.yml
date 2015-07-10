@@ -2,6 +2,7 @@
   name: Welcome Party
   location: Stiegl Ambulanz
   address:  "Alser Str. 4, 1090 Wien, Austria"
+  latlng: "48.2158348, 16.3525301,17.8"
 
 - date: "2015/07/21"
   name: VIP Dinner
