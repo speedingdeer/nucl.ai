@@ -42,12 +42,12 @@
   speakers:
     - Samim Winiger
 
-- title: Speech Recognition and Voice Synthesis (Workshop) **
+- title: Speech Recognition and Voice Synthesis (Workshop)
   description: >
     ...
   room: laboratories
-  # speakers:
-  #   - Alex J. Champandard
+  speakers:
+    - Alex J. Champandard
   time:
     start: "09:45"
     finish: "11:45"
