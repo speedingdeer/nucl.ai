@@ -69,12 +69,15 @@
     start: "9:45"
     finish: "12:00"
 
-- title: AR/VR Demo Time in the Conference Lobby!
+- title: Hardware Demo Time in the Conference Lobby!
   description: >
-    Throw fireballs in a magical fairyland brought into life by Leap Motion Hand Tracking and the Oculus Rift (DK2).  Get your hands on the Rift, Hydra, Leap Motion and other devices and experience what VR is about! 
+    Try out a variety of devices from input sensors and headsets, as well as a demo for the previous talk using Kinects.
+    Also throw fireballs in a magical fairyland brought into life by Leap Motion Hand Tracking and the Oculus Rift (DK2).  Get your hands on the Rift, Hydra, Leap Motion and other devices and experience what VR is about!
   room: laboratories
   speakers:
     - Richard Kogelnig
+    - Chris Mackenzie
+    - Vikram Saran
   time:
     start: "14:45"
     finish: "15:45"
