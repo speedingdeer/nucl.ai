@@ -11,7 +11,7 @@
     "bower": "*",
     "install": "~1.0.4",
     "jquery.countdown": "~2.0.4",
-    "ics.js": "https://github.com/speedingdeer/ics.js.git#~0.1.4",
+    "ics.js": "https://github.com/speedingdeer/ics.js.git#~0.1.5",
     "js-url": "https://github.com/websanova/js-url.git#~1.8.6",
     "moment": "~2.10.3",
     "moment-timezone": "~0.4.0"
