@@ -1,6 +1,6 @@
 section#section-lobby.lobby-blue {
     background-color: @BLUE;
-    span.time, span.room, span.studio, .sponsors-list { display: none; }
+    .sponsors-list { display: none; }
     table { 
         background-color: transparent !important; 
         top: 0;
@@ -11,6 +11,34 @@ section#section-lobby.lobby-blue {
     .sponsors-list {
         div.day {
             background-color: transparent !important;
+        }
+    }
+    .slide-logo {
+        position: absolute;
+        top: 610px;
+        z-index: 10;
+        width: 230px;
+        height: 230px;
+        background-position: center center;
+        background-size: cover;
+        left: 10%;
+    }
+    .nuclai-title-wrap {
+        position: absolute;
+        bottom: 0px;
+        z-index: 10;
+        left: 11.5%;
+        color: @BLUE;
+        font-size: 3.5em;
+        font-weight: bold;
+        height: 360px;
+        vertical-align: middle;
+        margin: 0;
+        display: table;
+        .nuclai-title {
+            display: table-cell;
+            height: inherit;
+            vertical-align: middle;
         }
     }
     p.speakers {
@@ -25,11 +53,21 @@ section#section-lobby.lobby-blue {
         opacity: 1;
         width: 100%;
         text-align: right;
+        font-size: 2em;
+        border-top: 10px solid @DIRTY_ORANGE;
+        box-sizing: border-box;
+        font-weight: bold;
         .speaker-name { 
-            color: @ORANGE;
+            color: @DIRTY_ORANGE;
             display: table-cell;
             vertical-align: middle;
             height: inherit;
+            text-align: right;
+        }
+        span {
+            max-width: 45%;
+            padding-right: 10%;
+            &.studio { display: none; }
         }
     }
     p.title {
@@ -44,6 +82,7 @@ section#section-lobby.lobby-blue {
         opacity: 1;
         width: 100%;
         text-align: right;
+        font-size: 2.5em;
         a {
             display: table-cell;
             vertical-align: middle;
@@ -52,6 +91,19 @@ section#section-lobby.lobby-blue {
             &:hover {
                 color: @WHITE;
             }
+            span {
+                padding-top: 10%;
+                max-width: 45%;
+                display: block;
+                float: right;
+                padding-right: 10%;
+                &.time {
+                    display: none;
+                }
+            }
+        }
+        .room {
+            display: none;
         }
     }
 }
