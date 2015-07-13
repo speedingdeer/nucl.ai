@@ -9,6 +9,11 @@ $ ->
   updateTalk = () ->
     date = new Date() # default date
     if url("?date") != null then date = new Date decodeURIComponent url("?date")
+    offset = 0
+    if url("?offset") != null then offset = parseInt url("?offset")
+    date.setMinutes date.getMinutes() + offset
+
+    console.log date
 
     room = "all"
     if url("?room") then room = url("?room")
