@@ -1,5 +1,9 @@
+@lobby_orange: #ffad3d;
+@lobby_blue: #195183;
+@lobby_dark_blue: #0d3457;
+
 section#section-lobby.lobby-blue {
-    background-color: @BLUE;
+    background-color: @lobby_blue;
     .sponsors-list { display: none; }
     table { 
         background-color: transparent !important; 
@@ -28,7 +32,7 @@ section#section-lobby.lobby-blue {
         bottom: 0px;
         z-index: 10;
         left: 11.5%;
-        color: @BLUE;
+        color: @lobby_blue;
         font-size: 3.5em;
         font-weight: bold;
         height: 360px;
@@ -42,7 +46,7 @@ section#section-lobby.lobby-blue {
         }
     }
     p.speakers {
-        background-color: @DARK_BLUE;
+        background-color: @lobby_dark_blue;
         display: block;
         height: 360px;
         display: table;
@@ -54,11 +58,11 @@ section#section-lobby.lobby-blue {
         width: 100%;
         text-align: right;
         font-size: 2em;
-        border-top: 10px solid @DIRTY_ORANGE;
+        border-top: 10px solid @lobby_orange;
         box-sizing: border-box;
         font-weight: bold;
         .speaker-name { 
-            color: @DIRTY_ORANGE;
+            color: @lobby_orange;
             display: table-cell;
             vertical-align: middle;
             height: inherit;
@@ -71,7 +75,7 @@ section#section-lobby.lobby-blue {
         }
     }
     p.title {
-        background-color: @BLUE;
+        background-color: @lobby_blue;
         display: block;
         height: 720px;
         display: table;
