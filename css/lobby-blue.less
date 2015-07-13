@@ -1,0 +1,57 @@
+section#section-lobby.lobby-blue {
+    background-color: @BLUE;
+    span.time, span.room, span.studio, .sponsors-list { display: none; }
+    table { 
+        background-color: transparent !important; 
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .sponsors-list {
+        div.day {
+            background-color: transparent !important;
+        }
+    }
+    p.speakers {
+        background-color: @DARK_BLUE;
+        display: block;
+        height: 360px;
+        display: table;
+        margin: 0;
+        position: absolute;
+        top: 720px;
+        left: 0;
+        opacity: 1;
+        width: 100%;
+        text-align: right;
+        .speaker-name { 
+            color: @ORANGE;
+            display: table-cell;
+            vertical-align: middle;
+            height: inherit;
+        }
+    }
+    p.title {
+        background-color: @BLUE;
+        display: block;
+        height: 720px;
+        display: table;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        width: 100%;
+        text-align: right;
+        a {
+            display: table-cell;
+            vertical-align: middle;
+            height: inherit;
+            color: @WHITE;
+            &:hover {
+                color: @WHITE;
+            }
+        }
+    }
+}
