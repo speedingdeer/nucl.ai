@@ -23,7 +23,7 @@ permalink: /lobby-blue/
                 {% endfor %}
             </div>
             {% for day in site.data.schedule %}
-                <table class="talks-list not-initialized animated zoomIn expanded" name="{{day.title}}" date="{{day.date}}" border="0" cellpadding="0" cellspacing="0">
+                <table class="talks-list not-initialized expanded" name="{{day.title}}" date="{{day.date}}" border="0" cellpadding="0" cellspacing="0">
                     {% capture logoBckg %}/img/lobby/logo.png{% endcapture %}
                     <div class="slide-logo"  style="background-image: url('{{ logoBckg | prepend: site.baseurl }}' );"></div>
                     <div class="nuclai-title-wrap"><div class="nuclai-title"><p>nucl.ai</p></div>
