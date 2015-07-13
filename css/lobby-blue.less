@@ -2,6 +2,9 @@
 @lobby_blue: #195183;
 @lobby_dark_blue: #0d3457;
 
+@right_margin: 7%;
+@text_width: 55%;
+
 section#section-lobby.lobby-blue {
     background-color: @lobby_blue;
     .sponsors-list { display: none; }
@@ -61,16 +64,16 @@ section#section-lobby.lobby-blue {
         border-top: 10px solid @lobby_orange;
         box-sizing: border-box;
         font-weight: bold;
-        .speaker-name { 
+        .names-wrap { 
             color: @lobby_orange;
             display: table-cell;
             vertical-align: middle;
             height: inherit;
             text-align: right;
+            max-width: @text_width;
+            padding-right: @right_margin;
         }
         span {
-            max-width: 45%;
-            padding-right: 10%;
             &.studio { display: none; }
         }
     }
@@ -97,10 +100,10 @@ section#section-lobby.lobby-blue {
             }
             span {
                 padding-top: 10%;
-                max-width: 45%;
+                max-width: @text_width;
                 display: block;
                 float: right;
-                padding-right: 10%;
+                padding-right: @right_margin;
                 &.time {
                     display: none;
                 }
