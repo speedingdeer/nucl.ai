@@ -62,7 +62,6 @@
     this open up?  What are the major challenges in practice?  How can runtimes and blend-trees
     be prepared for more advanced animation techniques like Motion Fields?
   speakers:
-    - Alexander Bereznyak
     - Michael Büttner
     - Simon Clavet
     - Mika Vehkala
@@ -86,7 +85,9 @@
     ...
   room: laboratories
   speakers:
-    -
+    - Alexander Bereznyak
+    - Michael Buttner
+    - Simon Clavet
   time:
     start: "16:45"
     finish: "17:30"

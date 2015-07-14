@@ -1,6 +1,6 @@
 - date: "2015/07/20"
   id: stiegl
-  name: Official Party
+  name: Official Party (Open Event)
   location: Stiegl Ambulanz
   address:  "Alser Str. 4, 1090 Wien, Austria"
   placeId: "ChIJn-OKb8AHbUcROmKfyYHM-Cc"
@@ -21,7 +21,7 @@
     <p>See you on Monday. Prost!</p>
 
 - date: "2015/07/21"
-  name: V.I.P. Dinner
+  name: V.I.P. Dinner (Invitation Only, Sold Out!)
   id: levante
   location: Levante Parliament
   placeId: "ChIJ14-MbZQHbUcRoENFbCJHFTw"
@@ -30,7 +30,8 @@
     <p>For All Access ticket holders and conference speakers, meet us on Tuesday, July 21<sup>st</sup>
     for the nucl.ai 2015 V.I.P. Dinner, to be held at The Levante Parliament hotel.  The evening starts
     shortly after the last session; dinner and one drink is included—but don't forget your badge and
-    and ticket that you received during registration.</p>
+    and ticket that you received during registration. (This event is sold out, there are no +1s
+    possible.)</p>
   instructions: >
     <p>The venue for the V.I.P. Dinner is a short walk away from the conference venue. You can easily
     make your way directly with the map, or join the groups of people leaving after the last session.
