@@ -677,7 +677,11 @@
   role: speaker
   position: Senior AI Programmer
   bio: >
-      ...
+    Epic Game's Lead AI Programmer Mieszko Zielinski has been developing games for over a decade now. He found his game 
+    industry calling in 2003, when he joined a little known studio, Aidem Media, to get his foot in the industry's door. 
+    Since then, Zielinski has worked at CD Projekt Red, Crytek and People Can Fly, where he developed the AI system for 
+    "Bulletstorm" almost from scratch, with a team of great programmers. Currently he's leading efforts to implement generic 
+    AI system for Epic Games' Unreal Engine 4.
     
 # TODO: Noor.
 - name: Hazel McKendrick
