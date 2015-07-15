@@ -1,0 +1,40 @@
+section#section-lobby.lobby-talk-bckg {
+    background-color: @lobby_blue;
+    .slide-logo {
+        display: none
+    }
+    p.speakers {
+        border-top: none;
+        height: 180px;
+        top: 900px;
+        font-size: 1.2em;
+        .names-wrap {
+            &.for-4-speakers {  }
+            &.for-3-speakers {  }
+            &.for-2-speakers {  }
+            &.for-1-speakers {  }
+            span.speaker-name {
+                display: inline;
+            }
+        }
+    }
+    .nuclai-title-wrap {
+        display: none;
+    }
+    p.title {
+        background-color: @lobby_blue;
+        display: block;
+        height: 180px;
+        font-size: 1.8em;
+        a { 
+            width: 1920px;
+            span {
+                padding: 0px;
+                margin: 0px;
+                max-width: 100%;
+                float: none;
+                text-align: center;
+            }
+        }
+    }
+}
