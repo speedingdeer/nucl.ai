@@ -171,13 +171,14 @@
   affiliation:
     position: "PhD student"
     name: MASA Group
+    url: http://masa-group.biz/
   bio: >
     Juliette lemaitre is a PhD student at MASA Group and Heudiasyc (Université de Technologie de Compiègne), working on the modeling of strategical Artificial Intelligence to simplify the work of developers when creating opponents in games with complex environments and mechanisms, such as Civilization.
 
 - name: Prof. Helmut Hlavacs
   role: advisor
   affiliation:
-    title: "Professor of Computer Science"
+    position: "Professor of Computer Science"
     name: University of Vienna
     url: http://entertain.univie.ac.at/~hlavacs/
   bio: >
@@ -186,6 +187,10 @@
 - name: Emil "AngryAnt" Johansen
   role: advisor
   twitter: AngryAnt
+  affiliation:
+    position: "Freelance game developer"
+    name: AngryAnt
+    url: http://angryant.com/
   bio: >
     A freelance game developer with a specialisation in AI, and author of the "Behave" AI middleware solution, Emil brings 
     experience from a host of client projects as well as a four-year stint at Unity Technologies. A preference for behavioural 
@@ -195,6 +200,7 @@
   role: speaker
   confirmed: true
   affiliation: 
+    position: "AI Programmer"
     name: Creative Assembly
     url: http://www.creative-assembly.com/
   bio: >
@@ -207,6 +213,7 @@
   title: Speaker
   url: http://alsber.com/
   affiliation: 
+    position: "Technical Art Director"
     name: Ubisoft Toronto
     url: http://www.ubisoft.com/
   bio: >
@@ -215,15 +222,18 @@
 - name: Simon Clavet
   role: speaker
   affiliation:
+    position: "Animation/Physics Programmer"
     name: Ubisoft Montreal
     url: http://www.ubisoft.com/
   bio: >
     Simon has been programming animation systems at Ubisoft Montreal for the last 10 years. He is interested in responsive character control and realistic
     animation synthesis. He spends most of his time trying to come up with new ways to animate a character so that it 1) moves realistically and fluidly;
     2) is fun and easy to control with buttons and thumbsticks.
+    
 - name: Bill Grosso
   role: speaker
   affiliation: 
+    position: "Founder and CEO"
     name: Scientific Revenue
     url: http://www.scientificrevenue.com/
   bio: >
@@ -251,6 +261,7 @@
   role: speaker
   confirmed: true
   affiliation:
+    position: "Gameplay Programmer"
     name: Ubisoft Montreal
     url: http://www.ubisoft.com/
   bio: >
@@ -264,6 +275,7 @@
   role: speaker
   confirmed: true
   affiliation:
+    position: "AI programmer"
     name: Ubisoft Montreal
     url: http://www.ubisoft.com/
   bio: >
@@ -281,7 +293,7 @@
   confirmed: true
   affiliation:
     name: Pixar Animation Studios
-    position: Technical Director
+    position: "Technical Director"
     url: http://www.pixar.com/
   bio: >
     Paul Kanyuk is a Lead Technical Director at Pixar Animation Studios with credits on Cars, Ratatouille, Wall-E, Up, Cars 2, 
@@ -297,7 +309,7 @@
   tracks: [alternate]
   affiliation:
     url: http://www.mipumi.com/
-    position: Game Developer
+    position: "Game Developer"
     name: Mi'pu'mi
   bio: >
     Richard is currently working at Mi'pu'mi Games (mipumi.com) on an unannounced AAA title. 
@@ -307,6 +319,7 @@
 - name: Antonios Liapis
   role: speaker
   affiliation: 
+    position: "Post-Doctoral researcher"
     name: Institute of Digital Games (University of Malta)
     url: http://www.game.edu.mt/
   bio: >
@@ -321,27 +334,21 @@
     Moreover, he has led or participated in the design and development of several games of varying scope and for different 
     target audiences, including two FP7 ICT projects.
 
-- name: Domitile Lourdeaux
-  role: speaker
-  affiliation: 
-    name: "CNRS, Heudiasyc Lab"
-    url: https://www.hds.utc.fr
-  bio: ""
-
 - name: Freyr Magnússon
   role: speaker
   confirmed: true
   affiliation:
     name: CCP Games
-    position: Senior Software Engineer
+    position: "Senior Software Engineer"
     url: http://www.ccpgames.com/
   bio: >
-    Freyr has been working for CCP Games as a gameplay programmer on the  EVE Online MMO since 2008.    Lately he has been working unwinding legacy code issues and introducing Behaviors Trees into a 15 year old codebase.
+    Freyr has been working for CCP Games as a gameplay programmer on the  EVE Online MMO since 2008. Lately he has been working unwinding legacy code issues and introducing Behaviors Trees into a 15 year old codebase.
 
 - name: Miloš Milošević
   role: speaker
   confirmed: true
   affiliation:
+    position: "Data Analyst"
     name: Nordeus
     url: http://www.nordeus.com/
   bio: >
@@ -353,6 +360,7 @@
 - name: Mikko Mononen
   role: speaker
   affiliation: 
+    position: "Software Developer"
     name: Unity Technologies
     url: http://unity3d.com/company
   bio: >
@@ -362,6 +370,7 @@
 - name: Julien Pettré
   role: speaker
   affiliation:
+    position: "Research Scientist"
     name: INRIA
     url: http://www.inria.fr/
   bio: >
@@ -375,6 +384,7 @@
 - name: Luis Angel Vicente Sanchez
   role: speaker
   affiliation: 
+    position: "Senior Data Engineer"
     name: Mind Candy
     url: http://mindcandy.com/
   bio: >
@@ -386,6 +396,7 @@
 - name: Kevin Schmidt
   role: speaker
   affiliation:
+    position: "Head of Data Science"
     name: Mind Candy
     url: http://mindcandy.com/
   bio: >
@@ -398,6 +409,7 @@
   role: speaker
   confirmed: true
   affiliation: 
+    position: "Game Designer"
     name: Creative Assembly
     url: http://www.creative-assembly.com/
   bio: >
@@ -417,11 +429,13 @@
     the Platformer AI competition and chairing the IEEE task force on Player Modeling.
   affiliation:
     name: ITU Copenhagen
-    role: Post-Doc Researcher
+    url: http://www.itu.dk/en/
+    position: "Post-Doc Researcher"
 
 - name: Simon Worgan
   role: speaker
   affiliation:
+    position: "Lead Data Scientist"
     name: Jagex
     url: http://www.jagex.com/
   bio: >
@@ -434,6 +448,7 @@
   role: speaker
   confirmed: true
   affiliation:
+    position: "AI Programmer"
     name: Lionhead
     url: http://www.lionhead.com/
   bio: >
@@ -449,7 +464,7 @@
   affiliation:
     name: IBM
     url: http://www.ibm.com/
-    position: IBM Watson Developer
+    position: "IBM Watson Developer"
   bio: >
     Dale has been a developer of IBM Watson since early 2011, after the work started to
     transition Watson from a Research project demonstrated on a quiz show to a commercial
@@ -468,7 +483,7 @@
   affiliation:
     name: Turn 10 Studios
     url: http://www.forzamotorsport.net/en-us/turn10
-    position: Principal AI Programmer
+    position: "Principal AI Programmer"
   bio: >
     Jeffrey Schlimmer is a principal AI programmer at Turn 10 and has a PhD in artificial intelligence.
     Turn 10 Studios is the creator of the Forza Motorsport franchise. Founded in 2001 as a first-party
@@ -500,7 +515,7 @@
   affiliation:
     name: Iron Galaxy Studio
     url: http://irongalaxystudios.com/
-    position: Software Engineer
+    position: "Software Engineer"
   bio: >
     Bruce got his start as a bioinformatics researcher at University of South Florida. After a brief stint at Monster Media creating interactive advertisements using technologies like motion sensing and facial recognition, he transitioned to Iron Galaxy Studios as a game programmer. For the last several years, he has worked on wide range of projects like Batman: Arkham Origins and Killer Instinct in a variety of capacities including optimization, rendering, porting, gameplay programming, and AI.
 
@@ -510,7 +525,7 @@
   affiliation:
     name: Square Enix
     url: http://www.square-enix.com/
-    position: AI Researcher
+    position: "AI Researcher"
   bio: >
     After graduating a Master of Science in 2007, Hendrik worked for five years in the field of autonomous robotics, focusing on robots playing soccer in the context of RoboCup. He received his PhD in 2012 for work on multi-robot behavior modelling and coordination. In 2013, he joined Square Enix as AI Researcher in Tokyo developing AI techniques for Final Fantasy XV and other titles.
 
@@ -520,7 +535,7 @@
   affiliation:
     name: Bohemia Interactive Simulations
     url: https://www.bisimulations.com/
-    position: Senior AI Developer
+    position: "Senior AI Developer"
   bio: >
     Juraj works as a Senior AI Programmer at Bohemia Interactive Simulations. He is currently developing a new AI subsystem for 
     Virtual Battlespace 3 (VBS3), which is well known in game-based military training and simulation. He closely cooperates with 
@@ -532,7 +547,7 @@
   affiliation:
     name: Bohemia Interactive
     url: https://www.bistudio.com/
-    position: Senior Game Designer
+    position: "Senior Game Designer"
   bio: >
     Martin works as a Senior Game Designer at Bohemia Interactive Simulations. He is currently the product owner of the new 
     AI subsystem being developed in Bohemia Interactive Simulations. Previously he worked on designing many of the core 
@@ -544,7 +559,7 @@
   affiliation:
     name: MASA Group
     url: https://www.masagroup.com/
-    position: AI developer & Behavior Designer
+    position: "AI developer & Behavior Designer"
   bio: >
     Newfel is an AI developer and behavior designer at MASA Group, working on their cutting-edge constructive simulation: SWORD. He takes an active part in improving the AI engine and strives to improve the behavior customization experience. Newfel earned his Master's degree in Artificial intelligence and decision at the Université Pierre et Marie Curie (UPMC) in Paris, and also spent some time working at the National Institute of Informatics (NII) in Tokyo.
 
@@ -554,7 +569,7 @@
   affiliation:
     name: CD Projekt RED
     url: http://www.cdprojektred.com/
-    position: Developer
+    position: "Senior AI Programmer"
   bio: >
     AI and gameplay programmer from Poland, working in the industry for over 9 years. Started career with
     The Witcher, later worked on Hard Reset, Shadow Warrior, and now The Witcher 3: Wild Hunt. Specializes
@@ -566,15 +581,21 @@
   affiliation:
     name: Epic Games
     url: http://www.epicgames.com/
-    position: Lead Programmer
+    position: "Lead Programmer"
   bio: >
    John Abercrombie currently works on the AI for Fortnite at Epic Games.  Previously he directed the work for the companion character Elizabeth in Bioshock Infinite, and led the AI teams working on Bioshock & SWAT 4.
 
 - name: Ricardo J. Méndez
   role: speaker
   confirmed: true
+  affiliation:
+    name: Numergent Limited
+    url: http://numergent.com/
+    position: "Founder & Interactive Media Technologist"
   bio: >
-    Ricardo has moved from financial analysis on large banking systems, to juggling around medical data, to performing financial sensitivity analysis for bank overseers, to building games and tools.  He's currently working large interactive installations, maintaining Unity-related open source projects and generally trying to keep himself entertained.
+    Ricardo has moved from financial analysis on large banking systems, to juggling around medical data, to performing 
+    financial sensitivity analysis for bank overseers, to building games and tools.  He's currently working large interactive 
+    installations, maintaining Unity-related open source projects and generally trying to keep himself entertained.
 
 - name: Vladimir Nejedly
   role: speaker
@@ -582,7 +603,7 @@
   affiliation:
     name: Bohemia Interactive Simulations
     url: https://www.bisimulations.com/
-    position: Lead Engine Architect
+    position: "Lead Engine Architect"
   bio: >
     Vladimir Nejedly studied computer graphics at Faculty of Mathematics and Physics of Charles
     University in Prague. After his graduation in 2001, he joined Bohemia Interactive Studio. He
@@ -597,7 +618,7 @@
   affiliation:
     name: Riot Games
     url: http://www.riotgames.com/
-    position: Senior Animation Engineer
+    position: "Senior Animation Engineer"
   bio: >
     Chris has been programming games for 8 years, and has maintained a
     focus on animation. His passion for animation has made games like
@@ -612,7 +633,7 @@
   affiliation:
     name: Indiana University
     url: http://www.indiana.edu/
-    position: Professor of Practice
+    position: "Professor of Practice"
   bio: >
     Mike Sellers is a Professor of Practice at Indiana University. He has spent more than twenty years working in the games industry and has been a founder of three successful independent game companies. He has been a Lead Designer, Creative Director, and General Manager in AAA game companies, and has extensive experience in designing and producing MMO, social, and mobile games. Past titles he has led include Meridian 59, The Sims 2, and Realm of the Mad God. He has also conducted and published original research in social artificial intelligence funded in part by DARPA. Professional interests include MMOs, virtual worlds, community formation, artificial intelligence, and emotions.
   
@@ -622,7 +643,7 @@
   affiliation:
     name: University of Essex
     url: http://www.essex.ac.uk
-    position: Head of School of CS
+    position: "Head of School of CS"
   bio: >
     Simon Lucas is a Professor of Computer Science at the University of Essex where he is currently head of the School of Computer Science and Electronic Engineering and leads the Game Intelligence Group. Simon is the founding editor-in-chief of the IEEE Transactions on Computational Intelligence and Games, and co-founded the IEEE Conference on Computational Intelligence in Games. His recent research focusses on general game AI and the development of real-time decision making algorithms. He believes we ain’t seen nothing yet when it comes to Game AI, and is very much looking forward to the advances we can expect over the next decade or two which will lead to a new era of super-immersive games.
 
@@ -632,7 +653,7 @@
   affiliation:
     name: Patterns and Predictions 
     url: http://patternsandpredictions.com/ 
-    position: Data Scientist and Principal Partner of Patterns and Predictions
+    position: "Data Scientist and Principal Partner of Patterns and Predictions"
   bio: >
     An accomplished Data Scientist in applications of Cognitive Computing technology, Poulin is the Principal Partner of Patterns and Predictions. While he was recently Director of The Durkheim Project, a non-profit big data collaboration with the U.S. VA and Facebook, Inc. Where Fast Company said "This may be the most vital use of big data we’ve ever seen." He was recently Co-Director of the Dartmouth Metalearning Working Group at Dartmouth College, working on large scale machine learning. He has also lectured in artificial intelligence at the U.S. Naval War College. At Nucl.ai, he will be illustrating successful Deep Reinforcement Learning applications.
 
@@ -642,7 +663,7 @@
   affiliation:
     name: University of Muenster 
     url: https://www.uni-muenster.de/en/ 
-    position: Research Associate 
+    position: "Research Associate"
   bio: >
     Mike Preuss is Research Associate at ERCIS, University of Muenster, Germany. He obtained a PhD in Evolutionary Computation from the Chair of Algorithm Engineering at TU Dortmund in 2013. His research interests focus on further developing and applying multimodal and multiobjective optimization in the context of game AI, namely for procedural content generation (PGC) and realtime strategy games (RTS). He was involved in founding the EvoGames track at Evo* and the Digital Entertainment Technologies and Arts (DETA) track at GECCO and is currently the Chair of the Games Technical Committee of the IEEE Computational Intelligence Society.
 
@@ -651,33 +672,42 @@
   affiliation:
     name: University of Essex 
     url: https://www.essex.ac.uk 
-    position: Senior Research Officer 
+    position: "Senior Research Officer" 
   bio: >
     Spyros Samothrakis is currently a Senior Research Officer at the University of Essex. He holds a PhD in Computer Science with a focus on Computational Intelligence and Games from the University of Essex, an MSc in Intelligent Systems from the University of Sussex and a BSc in Computer Science from the University of Sheffield. His research interests are Reinforcement Learning, Machine Learning, Evolutionary Computation and Consciousness.
 
 - name: John Hearty
   role: speaker
-  position: Data Scientist
   affiliation:
     name: Lionhead Studios 
+    url: http://www.lionhead.com/
+    position: Data Scientist
   bio: >
     John works as a Data Scientist at Lionhead Studios, where he leads a cross-functional team in building a TB-scale analytics architecture. He also works closely with game design and product management stakeholders, providing modelling and analysis to support Fable Legends’ balance and design. He is currently authoring a book on Deep Learning for a well-known technical publisher. He has yet to successfully clone himself, but continues to hope.
     
 
 - name: Ivan Encinas
   role: speaker
-  position: Senior Data Scientist
   affiliation:
-    name: King.com 
+    name: King
+    url: https://king.com/fr/
+    position: Senior Data Scientist
   bio: >
-    As a Senior Data Scientist, Ivan works on the Casual Game Performance Team, where provides analytical and model support to understand about the casual games at King, and their performance drivers. <p> At King he has worked with several game teams: Papa Pear, Diamond Digger and Bubble Witch 2. He has spent the last 15 years working in a wide range of fields, from linguistics to economics. In the last 5 years, he has worked along Business Intelligence analysis with big databases in on-line & e-commerce companies. He graduated from the Polytechnic University of Catalunya (Universitat Politècnica de Catalunya -UPC), Barcelona.
+    As a Senior Data Scientist, Ivan works on the Casual Game Performance Team, where provides analytical and model support to 
+    understand about the casual games at King, and their performance drivers. <p> At King he has worked with several game teams: 
+    Papa Pear, Diamond Digger and Bubble Witch 2. He has spent the last 15 years working in a wide range of fields, from 
+    linguistics to economics. In the last 5 years, he has worked along Business Intelligence analysis with big databases in 
+    on-line & e-commerce companies. He graduated from the Polytechnic University of Catalunya (Universitat Politècnica de 
+    Catalunya -UPC), Barcelona.
 
-# TODO: Cloderic.
 - name: Mieszko Zielinski
   role: speaker
-  position: Senior AI Programmer
+  affiliation:
+    position: "Lead AI Programmer"
+    name: Epic Games
+    url: http://epicgames.com/
   bio: >
-    Epic Game's Lead AI Programmer Mieszko Zielinski has been developing games for over a decade now. He found his game 
+    Epic Games' Lead AI Programmer Mieszko Zielinski has been developing games for over a decade now. He found his game 
     industry calling in 2003, when he joined a little known studio, Aidem Media, to get his foot in the industry's door. 
     Since then, Zielinski has worked at CD Projekt Red, Crytek and People Can Fly, where he developed the AI system for 
     "Bulletstorm" almost from scratch, with a team of great programmers. Currently he's leading efforts to implement generic 
@@ -686,23 +716,36 @@
 # TODO: Noor.
 - name: Hazel McKendrick
   role: speaker
-  position: Games Programmer
+  affiliation:
+    position: "Games Programmer"
+    name: Hello Games
+    url: http://www.hellogames.org/
   bio: >
     ...
-  affiliation:
-    name: Hello Games
-    role: Programmer
 
 # TODO: Noor.
 - name: Mark Johnson
   role: speaker
+  affiliation:
+    name: University of York 
+    url: http://www.york.ac.uk/
+    position: "Postdoctoral Fellow"
   bio: >
-    Dr Mark R Johnson is a game studies researcher soon to start a postdoctoral fellowship exploring the relationship between glitches, gameplay rules, and creativity. He is also the creator of the roguelike game 'Ultima Ratio Regum', a procedurally-generated examination of historiography, semantics and metanarrative; a gaming world champion and ex-professional gamer; and a freelance games writer.
+    Dr Mark R Johnson is a game studies researcher soon to start a postdoctoral fellowship exploring the relationship between 
+    glitches, gameplay rules, and creativity. He is also the creator of the roguelike game 'Ultima Ratio Regum', a 
+    procedurally-generated examination of historiography, semantics and metanarrative; a gaming world champion and 
+    ex-professional gamer; and a freelance games writer.
 
 - name: Sergey Mohov
   role: speaker
+  affiliation:
+    position: "Game Designer"
+    name: Tequila Works
+    url: http://www.tequilaworks.com/eng
   bio: >
-    Game designer at Tequila Works and independent game developer responsible for several award-winning (and award-pending) indie games: Paradis Perdus, Dédale, Lune, Event[0], Pineapple Dreams. Author of Practical Game Design with Unity and Playmaker. Former staff writer at PC Gamer Ukraine.
+    Game designer at Tequila Works and independent game developer responsible for several award-winning (and award-pending) 
+    indie games: Paradis Perdus, Dédale, Lune, Event[0], Pineapple Dreams. Author of Practical Game Design with Unity and 
+    Playmaker. Former staff writer at PC Gamer Ukraine.
 
 - name: Chris Mackenzie
   role: speaker
@@ -711,7 +754,7 @@
   affiliation:
     name: Opaque Multimedia
     url: http://www.opaquemultimedia.com/ 
-    position: Director of Experimental Development 
+    position: "Director of Experimental Development"
 
 - name: Vikram Saran
   role: speaker
@@ -720,7 +763,7 @@
   affiliation:
     name: Opaque Multimedia
     url: http://www.opaquemultimedia.com/ 
-    position: Physics Specialist 
+    position: "Physics Specialist"
 
 - name: Samim Winiger
   role: speaker
@@ -730,5 +773,5 @@
   affiliation:
     name: samim.io
     url: http://samim.io/
-    position: Independent Researcher
+    position: "Independent Researcher"
 
