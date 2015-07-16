@@ -7,20 +7,22 @@ permalink: /program/events/
 {% for event in site.data.events %}
     <section class="events">
     <h2> {{event.name}} </h2>
-    {% for d in site.data.schedule %}
+        {% capture title %}{{event.location}}{% endcapture %}
+        {% for d in site.data.schedule %}
         {% if event.date == d.date %}
-            <h3>{{event.location}} — {{d.title}}</h3>
-            <grid>
+            {% capture title %}{{event.location}} — {{d.title}}{% endcapture %}
+        {% endif %}
+        {% endfor %}
+        <h3>{{title}}</h3>
+        <grid>
             <content>
-            {{event.description}}
-            {% assign items = site.data.galleries[event.id] %}
-            {% include features/gallery/gallery.html %}
-            {{event.instructions}}
+                {{event.description}}
+                {% assign items = site.data.galleries[event.id] %}
+                {% include features/gallery/gallery.html %}
+                {{event.instructions}}
             </content>
         </grid>
-        {% endif %}
-    {% endfor %}
-    <div id="event-map-canvas-{{forloop.index}}" class="event map" placeId="{{event.placeId}}" location="{{event.address}}"></div>
+        <div id="event-map-canvas-{{forloop.index}}" class="event map" placeId="{{event.placeId}}" location="{{event.address}}"></div>
     </section>
 
 {% endfor %}

@@ -1,3 +1,21 @@
+- date: "2015/07/19"
+  id: salettl
+  name: Sunday Beer (Open Event)
+  location: "Salettl im alten AKH — Day #0: Sunday, July 19th"
+  address:  "Alser Str. 4, 1090 Wien, Austria"
+  placeId: "ChIJn-OKb8AHbUcR8XIzU6nR0xU"
+  description: >
+    <p>CONTENT</p>
+  instructions: >
+    <p>CONTENT</p>
+    <pre>
+      Salettl im alten AKH<br/>
+      Alser Str. 4<br/>
+      1090 Wien<br/>
+    </pre>
+    <p>See you on Sunday. Prost!</p>
+
+
 - date: "2015/07/20"
   id: stiegl
   name: Official Party (Open Event)
