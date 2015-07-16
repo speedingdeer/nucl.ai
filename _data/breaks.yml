@@ -7,6 +7,10 @@
 #        finish: "13:30"
 - day: 1
   breaks:
+    - name: Registration
+      time:
+        start: "8:00"
+        finish: 8:45"
     - name: Coffee Pause <br/> <span>fueled by</span> <br/> Creative Assembly
       time:
         start: "10:30"
@@ -22,6 +26,10 @@
 
 - day: 2
   breaks:
+    - name: Registration
+      time:
+        start: "8:15"
+        finish: 8:45"
     - name: Coffee Pause <br/> <span>fueled by</span> <br/> IO Interactive
       time:
         start: "10:30"
@@ -37,6 +45,10 @@
 
 - day: 3
   breaks:
+    - name: Registration
+      time:
+        start: "8:15"
+        finish: 8:45"
     - name: Coffee Pause
       time:
         start: "10:30"
