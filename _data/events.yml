@@ -4,6 +4,7 @@
   location: "Salettl im alten AKH — Day #0: Sunday, July 19th"
   address:  "Alser Str. 4, 1090 Wien, Austria"
   placeId: "ChIJn-OKb8AHbUcR8XIzU6nR0xU"
+  anchor: welcome
   description: >
     <p>CONTENT</p>
   instructions: >
@@ -22,6 +23,7 @@
   location: Stiegl Ambulanz
   address:  "Alser Str. 4, 1090 Wien, Austria"
   placeId: "ChIJn-OKb8AHbUcROmKfyYHM-Cc"
+  anchor: party
   description: >
     <p>Join us on Monday, July 20<sup>th</sup> for the nucl.ai 2015 Official Party, to be held
     at the Stiegl Ambulanz.  It takes place right after the last session if you're an attendee,
@@ -44,6 +46,7 @@
   location: Levante Parliament
   placeId: "ChIJ14-MbZQHbUcRoENFbCJHFTw"
   address: "Auerspergstraße 9, 1080 Wien, Austria"
+  anchor: vip
   description: >
     <p>For All Access ticket holders and conference speakers only, meet us on Tuesday, July 21<sup>st</sup>
     for the nucl.ai 2015 V.I.P. Dinner, to be held at The Levante Parliament hotel.  The evening starts

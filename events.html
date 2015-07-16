@@ -6,6 +6,7 @@ permalink: /program/events/
 
 {% for event in site.data.events %}
     <section class="events">
+    <a class="anchor" id="{{event.anchor}}"></a>
     <h2> {{event.name}} </h2>
         {% capture title %}{{event.location}}{% endcapture %}
         {% for d in site.data.schedule %}
