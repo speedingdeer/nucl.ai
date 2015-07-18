@@ -18,12 +18,6 @@
                 {% endfor %}
             </div>
             {% for day in site.data.schedule %}
-
-                {% if page.name == "lobby.html" %}
-                    {% assign extra_class="animated zoomIn" %}
-                {% else %}
-                    {% assign extra_class="" %}
-                {% endif %}
                 <table class="talks-list not-initialized expanded {{extra_class}}" name="{{day.title}}" date="{{day.date}}" border="0" cellpadding="0" cellspacing="0">
 
                     {% capture logoBckg %}/img/lobby/logo.png{% endcapture %}
@@ -58,5 +52,14 @@
                     </tr>
                 </table>
             {% endfor %}
+
+            {% if page.name == "lobby-break.html" %}
+            <div class="credits table" interval-on="{{site.data.credits.lobby.interval_on}}" interval-off="{{site.data.credits.lobby.interval_off}}" show-on-start="{{site.data.credits.lobby.show_on_start}}">
+                <div class="credits-wrap centered-cell">
+                    <p>{{site.data.credits.lobby.content}}</p>
+                </div>
+            </div>
+            {% endif %}
+
         </content>
     </grid>

@@ -6,14 +6,17 @@ $ ->
 
   maxShowingNumber = 1 # number of current / next slots showing
 
+  updateCreditsSize = (slot) ->
+    if  $(".credits").length > 0 && slot
+      # adjust credists size
+      $(".credits").height slot.parent().outerHeight()
+
   updateTalk = () ->
     date = new Date() # default date
     if url("?date") != null then date = new Date decodeURIComponent url("?date")
     offset = 0
     if url("?offset") != null then offset = parseInt url("?offset")
     date.setMinutes date.getMinutes() + offset
-
-    console.log date
 
     room = "all"
     if url("?room") then room = url("?room")
@@ -40,16 +43,28 @@ $ ->
         toShow = maxShowingNumber
 
         for slot in slots
-          if slot.dateStart > date && toShow > 0
+          if $(".show-current").length > 0
+            if slot.dateStart <= date && slot.dateEnd > date && toShow > 0  
               slot.show()
+              updateCreditsSize(slot)
               slot.addClass("selected")
               toShow--
-          else 
+            else 
+              slot.hide()
+              slot.removeClass("selected")
+          else
+            if slot.dateStart >= date && toShow > 0
+              slot.show()
+              slot.addClass("selected")
+              updateCreditsSize(slot)
+              toShow--
+            else 
               slot.hide()
               slot.removeClass("selected")
       else
           $(@).hide()
           $(@).removeClass("selected")
+
 
     setTimeout updateTalk, 1000
 
@@ -62,7 +77,6 @@ $ ->
     days = []
     $(".sponsors-list .day").each ->
       day = $(@)
-      day.addClass("animated zoomIn")
       day.date = new Date day.attr "date"
       days.push day
 
@@ -95,6 +109,22 @@ $ ->
     if $(".sponsor-wrap.selected").attr("duration") then timeout = parseInt $(".sponsor-wrap.selected").attr("duration")
 
     setTimeout updateSponsor, timeout
+
+  updateCredits = () ->
+    if $(".credits").hasClass("on")
+      $(".credits").removeClass("on")
+      $(".credits").hide()
+      setTimeout updateCredits, parseInt $(".credits").attr("interval-off")
+    else
+      $(".credits").addClass("on")
+      $(".credits").show()
+      setTimeout updateCredits, parseInt $(".credits").attr("interval-on")
+
+  if $(".credits").length > 0
+    if $(".credits").attr("show-on-start") == "true"
+      updateCredits()
+    else
+      setTimeout updateCredits, parseInt $(".credits").attr("interval-off")
 
   updateTalk()
   updateSponsor()
