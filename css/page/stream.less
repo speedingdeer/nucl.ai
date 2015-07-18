@@ -1,5 +1,7 @@
-section.stream {
-    min-height: 0px;
+sections.page .page-content-sections  section.stream {
+    &.full-screen {
+        min-height: calc(~"100vh - @{FOOTER_HEIGHT}  - @{NAVIGATION_HEIGHT}");
+    }
     content {
         .column(12);
         img {   
@@ -9,6 +11,7 @@ section.stream {
         .all-timers-off {
             color: @ORANGE;
             font-size: 2.5em;
+            padding-top: 2em;
             @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
                 font-size: 1em;
             }
@@ -28,7 +31,9 @@ section.stream {
             font-size: 2em;
             margin-top: -1em;
             margin-bottom: 1em;
-            
+            @media screen and (max-width: @SMARTPHONE_MAX_PORTRAIT) { 
+                font-size: 1em;
+            }
             a {
                 display: inline-block;
                 padding: 4px 8px;
@@ -63,6 +68,23 @@ section.stream {
             iframe {
                 padding-bottom: 0em;
             }
+        }
+    }
+    &.program-schedule {
+        display: none;
+        content > p { display: none; }
+        .day-wrap { margin-bottom: 0em; }
+        .track.break { display: none; }
+        .list-schedule { display: block; }
+        span.room { display: none; }
+        table.talks-list {
+            .track { display: none; }
+            .track[room="masterclass"] { display: block; }
+            padding-bottom: 2em;
+        }
+        @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) {
+            table.talks-list { margin-top: 0; }
+            table.header-table { padding-bottom: 1em; }
         }
     }
 }
