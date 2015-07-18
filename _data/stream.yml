@@ -1,11 +1,11 @@
 days:
-  - start: "2015/07/18 18:13"
-    finish: "2015/07/18 18:14"
+  - start: "2015/07/20 8:30"
+    finish: "2015/07/20 18:00"
     livestream: <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" src="https://www.crowdcast.io/e/nuclai-2015-day1?navlinks=false&embed=true"></iframe>
-  - start: "2015/07/18 18:15"
-    finish: "2015/07/18 18:16"
+  - start: "2015/07/21 8:30"
+    finish: "2015/07/21 18:00"
     livestream: <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" src="https://www.crowdcast.io/e/nuclai-2015-day2?navlinks=false&embed=true"></iframe>
-  - start: "2015/07/18 18:17"
-    finish: "2015/07/18 18:18"
+  - start: "2015/07/22 8:30"
+    finish: "2015/07/22 18:00"
     livestream: <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" src="https://www.crowdcast.io/e/nuclai-2015-day3?navlinks=false&embed=true"></iframe>
 
