@@ -3,7 +3,9 @@ sections.page section.venue, sections.page section.getting-to-campus {
         .column(12);
         item.text.hotels { 
             display: block;
-            margin-left: 4em;
+            @media screen and (min-width: (@SMARTPHONE_MAX_PORTRAIT + 1px)) { 
+                margin-left: 4em;
+            }
         }
         //@TODO is copied from stye for tracks page
         //unify maybe?
