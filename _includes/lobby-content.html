@@ -7,7 +7,9 @@
                             {% for item in site.data.sponsors %}
                                 {% if item.id == sponsor.id %}
                                     <div class="sponsor-wrap" duration="{{sponsor.duration}}">
+                                    {% assign lobby=true %}
                                     {% include /landing/sponsor.html %}
+                                    {% assign lobby=false%}
                                     </div>
                                 {% endif %}
                             {% endfor %}    

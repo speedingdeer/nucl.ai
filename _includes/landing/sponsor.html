@@ -5,6 +5,12 @@
         {% else %}
             {% capture logo %}/img/sponsors/{{ item.id }}.png{% endcapture %}
         {% endif %}
+
+        {% if lobby %}
+            {% if item.lobby_logo %}
+                {% capture logo %}/img/sponsors/{{ item.lobby_logo }}{% endcapture %}
+            {% endif %}
+        {% endif %}
         <div class="logo-center centered-cell">
             <a style="background-image: url('{{ logo |  prepend: site.baseurl }}')" href="{{ item.homepage }}" target="_blank"></a>
         </div>

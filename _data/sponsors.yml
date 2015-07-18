@@ -6,7 +6,7 @@
   name: "Creative Assembly"
   logo: ca.gif
   homepage: http://www.creative-assembly.com/jobs/
-
+  lobby_logo: ca-lobby.png
 
 - id: sproing
   name: "Sproing"
