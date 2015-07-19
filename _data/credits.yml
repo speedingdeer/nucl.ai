@@ -1,6 +1,4 @@
 lobby:
-    interval_on: 2000
-    interval_off: 2000
-    show_on_start: true
-    content: >
-        Music CC-BY abcdefgh." and "Graphics CC-BY-NC abcdefgh.
+    duration: 20000
+    subtitle: >
+        Music CC-BY abcdefgh. and Graphics CC-BY-NC abcdefgh.

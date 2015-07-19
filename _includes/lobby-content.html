@@ -14,6 +14,10 @@
                                 {% endif %}
                             {% endfor %}    
                         {% endfor %}
+                        <div class="sponsor-wrap" duration="{{site.data.credits.lobby.duration}}">
+                            {% assign item=site.data.credits.lobby%}
+                            {% include /landing/sponsor.html %}
+                        </div>
                     </div>
                 {% endfor %}
             </div>
@@ -52,14 +56,6 @@
                     </tr>
                 </table>
             {% endfor %}
-
-            {% if page.name == "lobby-break.html" %}
-            <div class="credits table" interval-on="{{site.data.credits.lobby.interval_on}}" interval-off="{{site.data.credits.lobby.interval_off}}" show-on-start="{{site.data.credits.lobby.show_on_start}}">
-                <div class="credits-wrap centered-cell">
-                    <p>{{site.data.credits.lobby.content}}</p>
-                </div>
-            </div>
-            {% endif %}
 
         </content>
     </grid>
