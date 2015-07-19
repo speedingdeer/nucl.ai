@@ -62,6 +62,7 @@ $ ->
       linkToSelect.parent().addClass("selected")
 
   $(window).scroll ->
+    if window.location.pathname == "/stream/" then return
     if $(this).scrollTop() > splash.height() - navigation.height()
       navigation.addClass("sticky")
     else
