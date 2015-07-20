@@ -15,6 +15,6 @@ $ ->
         timeStartStr = track.attr("time-start")
         date = root.dateInVienna(dateStr + timeStartStr)
         hoursStr = if date.getHours() < 10 then "0" + date.getHours().toString() else date.getHours().toString()
-        minutesStr = if date.getminues() < 10 then "0" + date.getHours().toString() else date.getHours().toString()
+        minutesStr = if date.getMinues() < 10 then "0" + date.getMinues().toString() else date.getMinues().toString()
         track.find(".time").html hoursStr + ":" + minutesStr
 
