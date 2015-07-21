@@ -7,15 +7,9 @@
 
 - date: "2015/07/21"
   sponsors:
-    - id: craft_ai
+    - id: io_interactive
       duration: 20000
     - id: ca
-      duration: 20000
-    - id: sproing
-      duration: 20000
-    - id: havok
-      duration: 20000
-    - id: unity
       duration: 20000
 
 - date: "2015/07/22"
@@ -24,9 +18,5 @@
       duration: 20000
     - id: ca
       duration: 20000
-    - id: sproing
-      duration: 20000
-    - id: havok
-      duration: 20000
-    - id: unity
+    - id: io_interactive
       duration: 20000
