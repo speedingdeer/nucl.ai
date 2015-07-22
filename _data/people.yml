@@ -775,3 +775,22 @@
     url: http://samim.io/
     position: "Independent Researcher"
 
+- name: Mitu Khandaker-Kokoris
+  role: speaker
+  bio: >
+    I'm Mitu Khandaker-Kokoris, and I'm an independent game developer (at my currently-one-woman studio The Tiniest Shark) and videogames PhD researcher (at University of Portsmouth, UK). Basically, I make and think about videogames. Most recently, I made a game called Redshirt, a satirical sci-fi social networking simulator.
+  twitter: mituk
+  affiliation:
+    name: The Tiniest Shark
+    url: http://thetiniestshark.com/
+    position: Independent Developer
+
+- name: Paul McComas
+  role: speaker
+  bio: >
+    Senior Animation Engineer at Electronic Arts Canada with 15 years of experience.
+  twitter: sucktime
+  affiliation:
+    name: Electronic Arts Canada
+    url: http://electronicarts.com/
+    position: Senior Animation Engineer

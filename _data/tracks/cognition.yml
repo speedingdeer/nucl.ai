@@ -20,13 +20,14 @@
     start: "13:45"
     finish: "14:30"
 
-- title: "Learning from HAL9000's Fatal Mistakes: Integrating NLP into Applications (Expert Panel)"
+- title: "Learning from HAL9000's Fatal Mistakes: Integrating Language into Applications (Expert Panel)"
   description: >
     ...
   speakers:
     - Josh McCoy
     - Dale Lane
     - Sergey Mohov
+    - Mitu Khandaker-Kokoris
   room: laboratories
   time:
     start: "14:30"
