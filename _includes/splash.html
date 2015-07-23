@@ -50,12 +50,10 @@
                         <div class="centered-cell">
                             <h2>Conference on Artificial Intelligence <br/> in Creative Industries</h2>
 
-                            {% capture ticketBanner %}Tune in to the conference live stream!{% endcapture %}
-
                             <h2 class="note">
                             {% if page.name == 'tickets.html' %}
                             {% else %}
-                                <a href="/stream">{{ticketBanner}}</a>
+                                <a>Save The Date: July 18-20, 2016.</a>
                             {% endif %}
                             </h2>
                         </div>
@@ -64,15 +62,10 @@
                 </content>
                 {% if page.name == 'index.html' %}
                     <div class="centered-cell right-cell stream-link">
-                        {% include stream_link.html %}
+                        {% include thanks_link.html %}
                     </div>
                 {% endif %}
             </grid>
-                {% if page.name == 'index.html' %}
-                    <div class="bottom-cell stream-link">
-                        {% include stream_link.html %}
-                    </div>
-                {% endif %}
         </splash>
     </div>
     {% include navigation.html %}
