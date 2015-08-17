@@ -1,6 +1,6 @@
-@lobby_orange: #ffad3d;
+@lobby_orange: #9656D1;
 @lobby_blue: #195183;
-@lobby_dark_blue: #0d3457;
+@lobby_dark_blue: #061727; // #0d3457;
 
 @right_margin: 7%;
 @text_width: 55%;
@@ -8,6 +8,18 @@
 section#section-lobby.lobby-blue {
     background-color: @lobby_blue;
     .sponsors-list { display: none; }
+    .context {
+        text-align: right;
+        font-size: 18pt;
+        font-weight: bold;
+        color: @lobby_orange;
+        z-index: 100;
+        margin-top: 20px;
+        position: absolute;
+        top: 0;
+        width: 93%;
+        padding-right: 7%;
+    }
     table { 
         background-color: transparent !important; 
         top: 0;
@@ -35,7 +47,7 @@ section#section-lobby.lobby-blue {
         bottom: 0px;
         z-index: 10;
         left: 11.5%;
-        color: @lobby_blue;
+        color: lighten(@lobby_blue, 10%);
         font-size: 3.5em;
         font-weight: bold;
         height: 360px;
