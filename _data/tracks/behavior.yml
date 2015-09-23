@@ -33,7 +33,7 @@
     start: "09:45"
     finish: "10:45"
 
-- title: "The diplomacy AI of Total War: Attila"
+- title: "The Diplomacy AI of Total War: Attila"
   description: >
     Diplomacy plays a major role in every grand strategy game, so it’s essential to have a good, tuneable AI for handling it. 
     Designing such an AI is a great challenge, because the system has to solve a series of difficult problems, and the 
@@ -49,7 +49,7 @@
     start: "12:30"
     finish: "13:00"
 
-- title: "Designing realistic behaviors for a military training simulation"
+- title: "Designing Realistic Behaviors for a Military Training Simulation"
   description: >
     Simulation is one of the main tools for armies’ training; it is used to confront trainees to complex situations that would be expensive and potentially dangerous to do in the real world. In this context the modeling of realistic automated forces becomes essential.
     This talk will focus on the behavior modeling process, from the analysis of the operational requirements and the military doctrine to the actual implementation and finally the test and validation process. Attendees will learn what are the main guidelines to build a maintainable library of behaviors that are both perceived and measured as realistics.
@@ -61,7 +61,7 @@
     start: "11:45"
     finish: "12:15"
 
-- title: "Reusability and abstraction: the next evolution for Behavior Trees"
+- title: "Reusability and Abstraction: The Next Evolution for Behavior Trees"
   description: >
     Behavior trees (BTs) are now commonly used to create autonomous behaviors in games and simulation. Usually in behavior 
     trees, the abstractions are limited to the reuse of subtrees in other trees, which is the equivalent of defining a 

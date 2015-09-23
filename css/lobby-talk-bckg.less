@@ -3,6 +3,20 @@ section#section-lobby.lobby-talk-bckg {
     .slide-logo {
         display: none
     }
+    p.branding {
+        position: absolute;
+        bottom: 50px;
+        right: 110px;
+        font-size: 48px;
+        font-weight: bold;
+        padding-right: 75px;
+        color: #9656D1;
+        margin: 0;
+        background-image: url(/img/lobby/logo-purple.png);
+        background-size: 60px;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
     p.speakers {
         background-color: transparent;
         border-top: none;
@@ -13,13 +27,14 @@ section#section-lobby.lobby-talk-bckg {
         font-weight: normal;
         .names-wrap {
             text-align: left;
-            padding-left: 6%;
+            padding-left: 7%;
             &.for-4-speakers {  }
             &.for-3-speakers {  }
             &.for-2-speakers {  }
             &.for-1-speakers {  }
             span.speaker-name {
                 display: inline;
+                font-weight: bold;
             }
         }
     }
@@ -31,16 +46,17 @@ section#section-lobby.lobby-talk-bckg {
         background-color: transparent;
         display: block;
         height: 150px;
-        font-size: 1.8em;
+        font-size: 28pt;
         font-weight: normal;
         a { 
             width: 1920px;
             span {
-                padding: 0px;
-                margin: 0px;
+                padding: 0;
+                margin: 0;
                 max-width: 100%;
+                padding-left: 7%;
                 float: none;
-                text-align: center;
+                text-align: left;
             }
         }
     }
